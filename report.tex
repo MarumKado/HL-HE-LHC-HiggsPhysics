@@ -1,0 +1,155 @@
+\documentclass[11pt,twoside,a4paper]{cernrep} 
+\usepackage{rep_common,booktabs}
+\pagestyle{plain}
+
+% --
+% -- The bibliography file paths for the main volume and all parts
+% --
+\def\bibfiles{\main/bib/chapter,\main/section1/bib/section,\main/section2/bib/section,\main/section3/bib/section,\main/section4/bib/section,\main/section5/bib/section,\main/section6/bib/section,\main/section7/bib/section,\main/section8/bib/section,\main/section9/bib/section,\main/section10/bib/section}
+% --
+\providecommand{\biblio}{\nocite{article-minimal}\bibliographystyle{report}\clearpage\bibliography{\bibfiles}}  % *Modification: added `\main/` to specify relative file location.
+
+\usepackage{cancel}
+\usepackage{placeins}
+\usepackage{booktabs}
+\usepackage{subfig} % Required for creating figures with multiple parts (subfigures)
+\usepackage{amsmath,amssymb,amsthm} % For including math equations, theorems, symbols, etc
+%\usepackage{subcaption}
+\usepackage{rotating}
+\usepackage{multicol} %for columns within itemize
+\usepackage{tabulary}
+
+\begin{document}
+\newcommand{\main}{.}
+\newcommand{\code}[1]{\texttt{#1}}
+\def\ifb{\rm~fb^{-1}}
+\def\iab{\rm~ab^{-1}}
+
+\newcommand{\de}{\partial}
+\newcommand{\Mb}{\bar{M}}
+\newcommand{\Mpl}{M_{\textrm{Pl}}}
+\newcommand{\Mp}{M_{\textrm{Pl}}}
+\newcommand{\reef}[1]{(\ref{#1})}
+
+\newcommand{\abs}[1]{\left\lvert#1\right\rvert}
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cR}{\mathcal{R}}
+\newcommand{\BR}{{\rm BR}}
+\newcommand{\blu}{\color{blue}}
+\newcommand{\ros}{\color{red}}
+\newcommand{\eq}[1]{eq.~(\ref{#1})}
+\newcommand{\lag}{\mathcal{L}}
+\newcommand{\op}{\mathcal{O}}
+\newcommand{\lp}{\left(}
+\newcommand{\rp}{\right)}
+\newcommand{\nn}{\nonumber}
+\newcommand{\vev}[1]{\langle {#1} \rangle}
+\newcommand{\pslash}{\!\not\! p}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\bc}{\begin{center}}
+\newcommand{\ec}{\end{center}}
+\newcommand{\ba}{\begin{array}}
+\newcommand{\ea}{\end{array}}
+\newcommand{\noindentFR}[1]{\vspace{5mm}\noindent {\bf #1}\\}
+
+%\newcommand{\deltapt}{p_{T,WZ}}
+%\newcommand{\deltapt}{\Delta p_{T}}
+\newcommand{\deltapt}{p_{T,VV}}
+\newcommand{\met}{\cancel{E}_T}
+\newcommand{\ptvmin}{p_{T,V}^{(min)}}
+\newcommand{\thetastar}{\theta^{*}}
+\newcommand{\aq}{a_{q}^{(3)}}
+\newcommand{\ptv}{p_{T,V}}
+\newcommand{\rf}[1]{{\color{purple} #1}} 
+\newcommand{\com}[1]{{\color{red} \sffamily (#1)}} % needs the package 'color'
+\newcommand{\TeV}{\,\mathrm{TeV}}
+\newcommand{\GeV}{\,\mathrm{GeV}}
+\newcommand{\gev}{\,\mathrm{GeV}}
+\newcommand{\MeV}{\,\mathrm{MeV}}
+\newcommand{\keV}{\,\mathrm{keV}}
+%\newcommand*{\ipb}{\mbox{pb$^{-1}$}}
+\newcommand*{\lHHH}{\ensuremath{\lambda_{HHH}}}
+\newcommand*{\kl}{\ensuremath{\kappa_{\lambda}}}
+%\newcommand{\fb}{\,{\rm fb}^{-1}}
+\newcommand{\pb}{\,{\rm pb}^{-1}}
+\newcommand{\ab}{\,{\rm ab}^{-1}}
+\newcommand{\Br}{{\mathrm{Br}}}
+
+%
+\newcommand\TwoFigBottom{-2}
+%
+\newcommand{\cg}{c_{ggh}}
+\newcommand{\cgg}{c_{gghh}}
+\newcommand{\ctt}{c_{tt}}
+\newcommand{\ct}{c_{t}}
+\newcommand{\cb}{c_{b}}
+\newcommand{\chhh}{c_{hhh}}
+\newcommand{\mhh}{m_{hh}}
+
+%\newcommand{\mptvec}{{/\!\!\!\vec{ p}_T}}
+
+\def\lra#1{\overset{\text{\scriptsize$\leftrightarrow$}}{#1}}
+
+\def\biblio{}
+
+\title{HL/HE-LHC Physics Workshop Report \\[5mm]
+  Higgs physics opportunities}
+\input{authors}
+% 
+%
+% 
+
+\maketitle
+% 
+%
+% 
+\begin{abstract}
+
+
+
+
+
+
+\end{abstract}
+
+% -- Set the level of the TOC: 2 means including subsection, 1 means
+% including section 
+\setcounter{tocdepth}{3}
+\tableofcontents
+\newpage
+
+% -- List of sections
+\subfile{\main/section1/section}
+\newpage
+\subfile{\main/section2/section}
+\newpage
+\subfile{\main/section3/section}
+\newpage
+\subfile{\main/section4/section}
+\newpage
+\subfile{\main/section5/section}
+\newpage
+\subfile{\main/section6/section}
+\newpage
+\subfile{\main/section7/section}
+\newpage
+\subfile{\main/section8/section}
+\newpage
+\subfile{\main/section9/section}
+\newpage
+\subfile{\main/section10/section}
+\newpage
+
+
+% -- Add bibliography to table of contents
+%\addcontentsline{toc}{chapter}{References}
+
+% dummy reference to avoid that bibtex fails
+% -- Add volume bibliography and part specific bibliographies
+\bibliographystyle{report}
+\bibliography{\bibfiles}
+
+\end{document}

@@ -1,0 +1,116 @@
+% don't remove the folling lines, and edit the defintion of \main if needed
+\documentclass[../report.tex]{subfiles}
+\providecommand{\main}{..}
+\IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
+% until here
+
+\begin{document}
+
+\section{Introduction}
+The main repository of the report material is Overleaf. If you are not
+registered with Overleaf as yet, you can do so. Use your cern.ch mail
+acocunt, as this will give you, for free, the Professional license. This
+is needed if you want to access the full functionality, including the
+ability to grant editing rights to many people.
+
+You can create the project for your section by just cloning this
+project. It's important that you do it using your professional
+Overleaf account (namely with your cern.ch email credentials), since
+the project inherits the functionalities available to its owner.
+After creating the project, make sure you set the proper
+administration rights, listing people who will have editing
+rights. You can do this clicking on the "share" button on top of the overleaf project page. You are given various options, such as making the project read/write accessible to anyone who has the url, or just readable to anyone who has a (different) url, or restricted to users selected in a list. The same button gives you the git repository url, to download the project locally. Notice that those you give rights to cannot further assign
+rights to others. Only the owner of the project can grant access
+rights. Of course section editors can clone a new version of the whole
+chapter, leave alone the other sections to focus on their own, and
+grant access to it to their co-editors. At the end they just put
+things back into the master project.  I understood that it should be
+possible to grant rights to a CERN e-group, but I am not sure this is
+working already, I'm waiting for confirmation.
+
+You can work directly on the Overleaf version, or you can download the
+whole package locally from the git repository. You can then use the
+standard git tools to commit updated versions. Working locally is
+almost essential at the beginning of the project, when you want to
+create a complete subfolder structure to contain the various sections
+of your report. Some scripts are available (see below) to faciliate
+this task.
+
+This document can be compiled in its entirety, using the\\
+$>$ pdflatex report\\
+command from the main directory. In alternative, you can compile
+individual sections, with the command\\
+$>$ pdflatex section\\
+issued from the section subdirectory. This will generate the complete
+section, including its 
+bibliography.
+I am not sure this is possible when working directly on the web with
+Overleaf. But this works in your local version, if you input the
+pdflatex commands yourself.
+
+For this to work, you must preserve the template
+structure of the section.tex file in the directory of each
+section. You should also make sure that all style files contained in
+the main directory are present in the section directories. The
+simplest way to create a new section is to issue the command
+\begin{verbatim}
+> make newsection newfolder=new_folder_name
+\end{verbatim}
+from the main directory. Here \verb|new_folder_name| is the name of the
+directory you want to create to host the new section. A template section
+file will be created there, together with the img and bib directories
+(for figures and for the section.bib file, resp).
+All necessary style files are copied over. Now you just need to input
+the \verb|new_folder_name/section.tex| file into the main driver file,
+report.tex, with the syntax:
+\begin{verbatim}
+\newpage
+\subfile{\main/newdirectory/section}
+\end{verbatim}
+When editing the new \texttt{section.tex} file, please pay attention to the
+header of the template. There are a few weirds commands, and an
+apparently odd
+\verb|\begin{document}|
+statement. These are required to be able to compile the section as a
+stand alone object. To this end, it is important that the command
+\verb|\providecommand{\main}{..}|
+points \verb|\main| to the directory containing the main driver file,
+\texttt{report.tex}. The file paths to figures
+(Fig.~\ref{fig:higgs}) must all include this absolute
+reference, as in
+\begin{verbatim}
+\includegraphics[width=0.45\textwidth]{\main/section1/img/hgg.pdf} .
+\end{verbatim}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.75\textwidth]{\main/section1/img/hgg.pdf}
+\caption{Caption of the figure.}
+\label{fig:higgs}
+\end{figure}
+
+As for tables, please use the standard tabular environment, with the
+caption on top of the table. For cross referencing, try use lables
+such as
+\verb|\label{eq:eqname}|, \verb|\label{tab:tabname}| and
+\verb|\label{fig:figname}|. 
+
+If you need subsections, you can include them here directly, or input
+them as files, which can live in their own subdirectory. If including
+a subsection from a file, import them with the command
+\begin{verbatim}
+\subfile{\main/section1/sub1/mysubsec}
+\end{verbatim}
+where mysubsec.tex would start of course with the statement
+\verb|\begin{subsection}|.  In this case, make sure you define
+properly the path to figures and other files. This is crucial to
+guarantee compatibility of compilation of the whole Chapter and or the
+individual section. The fact that a Section compiles doesn't imply
+that the Chapter will compile, if paths are entered inaccurately. At
+this time I have not foreseen the ability to compile subsections
+standalone, I hope it is not necessary.
+
+\subfile{\main/section1/sub1/mysubsec}
+
+
+\end{document}

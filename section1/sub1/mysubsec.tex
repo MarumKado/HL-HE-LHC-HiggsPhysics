@@ -1,0 +1,21 @@
+\subsection{Bibliography}
+Keep each Section totally selfcontained, with
+its own folder(s) for figures, and its own file for
+bibliography~\cite{Mangano:2270978}.
+Use bibtex format. Please get the bibtex from Inspire, other sources
+may generate generate conflicts with the bibliography style file. For
+internal notes of the LHC experiments, get the bibtex input from CDS
+(the CERN Document Service). Each section must have its own bib
+files. These are called \texttt{section.bib}, and should stay in the
+folder
+\verb|\main/mysection/bib/section.bib}|.
+When you create a new section, add the bib file to the string
+\begin{verbatim} 
+\def\bibfiles{\main/bib/chapter,\main/section1/bib/section,\main/section2/bib/section}
+\end{verbatim}
+that is included in the main driver, report.tex.
+
+
+
+
+

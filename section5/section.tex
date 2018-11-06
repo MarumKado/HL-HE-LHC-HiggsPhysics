@@ -1,0 +1,40 @@
+% don't remove the folling lines, and edit the defintion of \main if needed
+\documentclass[../report.tex]{subfiles}
+\providecommand{\main}{..}
+\IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
+% until here
+
+\def \gHsV {{\Gamma_H}}
+\def \gHsVSM {{\Gamma_{H,{\rm SM}}}}
+\def \gHsVtoX {{\Gamma_{H\to X}}}
+\def \mhsV {{m_H}}
+
+\begin{document}
+
+\section{Higgs boson mass and width}\label{sec5}
+
+\subsection{Theory review}
+\subfile{\main/section5/sec5.1}
+
+\subsection{Measurement of the Higgs boson mass}
+
+\subsection{Direct constraints from the Higgs boson lineshape}
+\label{sec:5_mass}
+
+\subsection{Direct constraints from the Higgs boson lifetime measurements}
+\label{sec:5_lifetime}
+
+\subsection{Width from the diphoton interference rate}
+\label{sec:5_interference_real}
+
+\subfile{\main/section5/sec5.5}
+\subsection{Mass shift from the diphoton interference: constraints on the width}
+\label{sec:5_interference_imag}
+
+\subsection{Width from Off-Shell higgs boson couplings}
+\label{sec:5_offshell}
+
+%\bibliographystyle{plainnat}
+%\bibliography{\main/section5/bib/section.bib}
+
+\end{document}

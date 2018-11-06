@@ -1,0 +1,69 @@
+% don't remove the folling lines, and edit the defintion of \main if needed
+\documentclass[../report.tex]{subfiles}
+\providecommand{\main}{..}
+\IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
+% until here
+
+\begin{document}
+
+\section{Higgs boson precision measurements}
+
+\subsection{Introduction}
+\begin{center}{\it To be written by: S. Alioli, M. Duehrssen, P. Milenovic} \end{center}
+
+\subsection{Theoretical predictions for the Higgs boson production at 14 and 27 TeV}
+\begin{center}{\it To be written by: F. Caola, J. Campbell et al.} \end{center}
+\subfile{\main/section2/xsec_extrapolations.tex}
+\label{sec:2_HXSWG1}
+
+\subsubsection{PDF uncertainty expectations at the HE/HL-LHC}
+\subfile{\main/section2/PDF_extrapolations.tex}
+
+\subsubsection{Progress on Higgs boson specific MC generators}
+\begin{center} {\it To be written by: Simone Alioli, Stefan H\"oche, Fabio Maltoni and Stefan Prestel} \end{center}
+\subfile{\main/section2/higgsmc.tex}
+
+\subsection{Overview of experimental analysis for the Higgs boson measurement channels}
+\begin{center}{\it To be written by: M. Delmastro, P. Francavilla, A. de Wit} \end{center}
+\subfile{\main/section2/channels.tex}
+
+\subsection{Fiducial and differential cross-section measurements}
+\begin{center}{\it To be written by: M. Delmastro, T.Klijnsma} \end{center}
+\subfile{\main/section2/fiducial.tex}
+
+%\subsection{Channels reach in diboson decays, including fiducial and differential measurements}
+%\subsection{Channels reach in main Yukawa couplings, including fiducial and differential measurements}
+
+\subsection{Direct and indirect probing of top Yukawa coupling}
+%\begin{center}{\it by A. Calandri, M. Schr\"oder, T.Klijnsma} \end{center}
+\subfile{\main/section2/topyukawa.tex}
+
+\subsection{Combination of Higgs boson measurement projections}
+\begin{center}{\it To be written by: R. Di Nardo, A. Gilbert, H. Yang} \end{center}
+\subfile{\main/section2/exp_combination.tex}
+
+\subsection{Kappa interpretation of the combined Higgs boson measurement projections}
+\begin{center}{\it To be written by: R. Di Nardo, A. Gilbert, H. Yang} \end{center}
+\subfile{\main/section2/exp_kappa.tex}
+
+\subsection{Kappa-formalism and the nonlinear EFT}
+\label{sec:kappavsEFT}
+\begin{center}{\it by Claudius Krause and Oscar Cat\`a} \end{center}
+\subfile{\main/section2/kappavsEFT.tex}
+ 
+\subsection{Higgs couplings precision overview in the Kappa-framework and the nonlinear EFT}\label{sec2:prec}
+\begin{center}{\it by Jorge de Blas, Otto Eberhardt, and Claudius Krause} \end{center}
+\subfile{\main/section2/nonlinearEFT_couplings.tex}
+
+\subsection{Projections of Higgs boson measurements to the HE-LHC}
+{\it To be written by: J.Ellis, L.Silvestrini}
+\subfile{\main/section2/HE_combination.tex}
+
+\subsection{Probing of anomalous HVV interactions}
+%\begin{center}{\it To be written by: F. Piccinini, F. Yu, ???} \end{center}
+\subfile{\main/section2/anomHVV.tex}
+
+\subsection{Summary}
+\begin{center}{\it To be written by: S. Alioli, M. Duehrssen, P. Milenovic} \end{center}
+
+\end{document}

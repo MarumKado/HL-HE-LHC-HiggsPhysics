@@ -1,0 +1,10 @@
+\newcommand{\noopsort}[1]{} \newcommand{\printfirst}[2]{#1}
+  \newcommand{\singleletter}[1]{#1} \newcommand{\switchargs}[2]{#2#1}
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
+
+\bibitem{Mangano:2270978}
+M.~Mangano, {\em {Physics at the FCC-hh, a 100 TeV pp collider}}.
+\newblock CERN Yellow Reports: Monographs. CERN, Geneva, 2017.
+\newblock \url{https://cds.cern.ch/record/2270978}.
+
+\end{thebibliography}\endgroup

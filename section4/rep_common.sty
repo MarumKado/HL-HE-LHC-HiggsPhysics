@@ -1,0 +1,160 @@
+% **************************************************************************
+% * FCC Conceptual Design Report                                           *
+% * Copyright (C) 2017, CERN.                                              *
+% * This work is licensed under a Creative Commons                         *
+% * Attribution-NonCommercial-NoDerivatives 4.0 International License.     *
+% * File Authors: J. Gutleber                                              *
+% *                                                                        *
+% * For the licensing terms see LICENSE                                    *
+% **************************************************************************
+
+\usepackage[top=3cm,bottom=2.7cm,left=3cm,right=2cm]{geometry}
+
+\usepackage{texnames}
+\usepackage[T1]{fontenc} % permits 8 bit characters and hyphenation of accented characters
+\usepackage{hepnames}
+\usepackage{lettrine}
+\usepackage{subfiles}
+\usepackage{xstring}
+\usepackage{currfile}
+
+% -- Prefer the graphicx package. Keep epsfig for compatibility reasons if needed
+\usepackage{graphicx}
+%\usepackage{epsfig}
+	
+\usepackage{float}
+%\usepackage{subfigure}
+\usepackage{subfig}
+% -- for greek characters that can be reached with \textNAME_OF_CHAR
+\usepackage{textgreek}
+
+% -- permit highlighting text using \hl{TEXT}
+\usepackage{color,soul}
+
+% -- Package for side notes
+% -- For the CDR the following three commands are defined:
+% -- \majorcmt{} a major contents-related comment that needs to be addressed
+% -- \minorcmt{} a minor contents-related comment
+% -- \stylecmt{} a style or grammar issue
+% -- \formatcmt{} a formatting or spelling-related issue
+\usepackage[colorinlistoftodos,textsize=tiny]{todonotes} 
+% -- To hide the todonotes, comment the line before and uncomment:
+%\usepackage[disable]{todonotes}
+% -- todo notes on left side instead of right side:
+\reversemarginpar 
+\setlength{\marginparwidth}{2cm}
+\newcommand{\majorcmt}[2]{\todo[color=red,author=#1]{#2}}
+\newcommand{\minorcmt}[2]{\todo[color=orange,author=#1]{#2}}
+\newcommand{\stylecmt}[2]{\todo[color=yellow,author=#1]{#2}}
+\newcommand{\formatcmt}[2]{\todo[color=green,author=#1]{#2}}
+% --
+
+% --
+% -- Command to print the name of an institute, the short name, town, country and representatives
+% --
+\newcommand{\participant}[5]{\noindent \textbf{#1 (#2), #3, #4}, represented by {#5} \vskip \parskip}
+
+\usepackage[toc]{appendix}
+
+\usepackage[xindy]{glossaries}
+\makeglossaries
+
+%\usepackage[xindy]{imakeidx}
+%\makeindex
+
+% --
+% -- Fonts
+% \includepackage{pifont}
+% -- Set Optima on Mac as default font
+%\usepackage{classico}
+%\usepackage[sfdefault]{classico}
+% --
+
+%\setlength{\textwidth}{16cm}
+%\setlength{\textheight}{24cm}
+%\setlength{\oddsidemargin}{3cm}
+%\setlength{\evensidemargin}{3cm}
+
+% --
+% -- Remove the \part page. Parts exist only for organisational (editorial process)  purpose
+%\renewcommand{\part}[1]{\addcontentsline{toc}{part}{#1}}
+\renewcommand{\part}[1]{}
+% --
+
+% --
+% -- Include the chapter number in the section numbering
+% --
+%\renewcommand{\thesection}{\thechapter.\arabic{section}}
+
+% --
+% -- Make chapterheads right aligned, modern font, lines on top and bottom
+% -- \makechapterhead is for numbered chapters
+% -- \makeschapterhead is for unnumbered chapters
+% --
+\makeatletter % permit the at character in the macro definition text
+\renewcommand{\@makechapterhead}[1]{%
+\vspace*{10\p@}% 10 points from the top of the page
+{\parindent \z@ \raggedleft \normalfont % raggedleft is right aligned
+% --Formatting of chapter number
+\ifnum \c@secnumdepth >\m@ne
+\hrule\hfill\par % horizontal line
+\vskip 20\p@
+\huge\sf \@chapapp\space \thechapter % Chapter number
+% "Chapter #." with # being the chapter number
+% \vspace{5pt}% % adds vertical space
+\par\nobreak
+\vskip 20\p@
+\fi
+\interlinepenalty\@M
+% -- Formatting of chapter title
+\Huge \textbf {#1}\par\nobreak % chapter title is argument #1
+\vspace{4pt}% % adds vertical space
+\hrulefill\hfill\par % horizontal line
+\vskip 40\p@ % leave 40 points space to the first text line
+}}
+
+% --
+% -- makeschapterhead with an 's' is used to format unnumbered \chapter*
+% --
+\def\@makeschapterhead#1{%
+\vspace*{10\p@}% 10 points from the top of the page
+{\parindent \z@ \raggedleft \normalfont % raggedleft is right aligned
+\hrule\hfill\par % horizontal line
+\vskip 20\p@
+\interlinepenalty\@M
+% -- Formatting of chapter title
+\Huge\sf \textbf {#1}\par\nobreak % chapter title is argument #1
+\vspace{4pt}% % adds vertical space
+\hrulefill\hfill\par % horizontal line
+\vskip 40\p@ % leave 40 points space to the first text line
+}}
+
+\makeatother % make the at character again a special character
+% --
+% --
+
+% --
+% -- Make glossaryheader right aligned, modern font, lines on top and bottom
+% -- \makechapterhead is for numbered chapters
+% -- \makeschapterhead is for unnumbered chapters
+% --
+\makeatletter % permit the at character in the macro definition text
+\renewcommand{\glossarysection}[2][\theglstoctitle]{%
+	 \def\theglstoctitle{#2}%
+ 	\chapter*{#2}%
+}
+\makeatother % make the at character again a special character
+% --
+
+
+% --
+% -- Definition of floats for figures and tables
+% --
+\floatstyle{plaintop}
+\newfloat{Table}{ht}{loT}[chapter]
+
+\floatstyle{plain}
+\newfloat{Figure}{htb}{loF}[chapter]
+\newsubfloat[position=bottom,listofformat=subsimple]{Figure}
+% --
+

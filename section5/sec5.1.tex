@@ -1,0 +1,255 @@
+\begin{center}{\it F. Caola, 
+R. R\"ontsch} \end{center}
+
+The total decay width is an important property of the Higgs boson,
+as it contains information about the interactions of the Higgs with all other
+fundamental particles, and is predictable both in the Standard Model and its extensions.
+Therefore, measuring this property is an important part of Higgs studies. 
+%
+Direct measurements of the Higgs width are very challenging at hadron colliders,
+as these require a scan of the invariant mass profile of the Higgs decay
+products.
+This is limited by detector resolution to roughly $\sim 1~{\rm GeV}$,
+which is  three orders of magnitude larger than the SM prediction of  $\gHsV\sim 4~{\rm MeV}$.
+Current LHC measurements have already attained this level of precision, and no significant improvement
+is anticipated.\footnote{Lower bounds
+on the Higgs width can be obtained
+from lifetime measurements, see
+Sec.~\ref{sec:5_lifetime} for details.}
+
+Given this situation, there has been considerable interest in devising indirect probes of the
+Higgs width. In general, a standard Higgs analysis in the $H\to X$ decay channel 
+measures the production cross section times branching ratio,
+$\sigma \sim \sigma_{\rm prod}\times \gHsVtoX/\gHsV,$
+and is thus  only sensitive to a combination of the coupling and the width. Schematically,
+\begin{equation}
+\sigma \sim \frac{g_{\rm prod}^2 \times g_{\rm dec}^2}{\gHsV},
+\label{eq:width_standard}
+\end{equation}
+where $g_{\rm prod}$ and $g_{\rm dec}$ are the couplings that enter the Higgs production
+and decay channels, respectively. An independent measurement of the couplings and the decay width is 
+therefore not possible from such analyses. The idea
+behind all indirect determinations of $\gHsV$ is to find an observable whose dependence on
+$g_i$ and $\gHsV$ is different from Eq.~(\ref{eq:width_standard}), which allows one
+to lift the coupling/width degeneracy. Indirect determinations can be broadly separated in two
+classes: \emph{on-shell} methods, which rely on delicate interference effects on the Higgs resonant
+peak, and \emph{off-shell} methods, which combine on-peak and off-peak information. In the
+following, we provide a quick overview of these methods, emphasizing their strengths and weaknesses. 
+
+The starting point of the \underline{on-shell
+methods}~\cite{Dixon:2003yb,Martin:2012xc,Dixon:2013haa,Campbell:2017rke}
+is the observation that measurements in the $H\to X$ decay channel
+receive a contribution both from the signal $p p \to H \to X$ process
+and from the continuum background $p p \to X$, and the two
+interfere. Schematically, the amplitude for the process can be written
+as
+\begin{equation}
+\mathcal A_{p p \to X} = \frac{S \mhsV^2}{s-\mhsV^2 + i \mhsV\gHsV} + B,
+\end{equation}
+where $S\propto g_{\rm prod}\times g_{\rm dec}$ is the signal part and $B$ is the background 
+contribution. This leads to
+\begin{equation}
+|\mathcal A_{p p \to X}|^2 = \frac{\mhsV^4}{(s-\mhsV^2)^2 + \mhsV^2\gHsV^2}
+\times\left[
+|S|^2 + \frac{(s-\mhsV^2)}{\mhsV^2} 2{\rm Re}(S B^*) + \frac{\gHsV}{\mhsV} 2{\rm Im}(S B^*)
+\right] + |B|^2.
+\label{eq:width_gammagamma}
+\end{equation}
+Here, $|S|^2\propto g_{\rm prop}^2 \times g_{\rm dec}^2$, but 
+$SB^*\propto g_{\rm prop}\times g_{\rm dec}$, so a combined determination of the signal $|S|^2$ and
+interference $SB^*$ contributions can lift the coupling/width degenereacy of 
+Eq.~(\ref{eq:width_standard}), thus giving access to $\gHsV$. 
+For this method to be effective, one needs to consider channels where
+the interference is large. The best candidate is then the $gg\to H\to \gamma\gamma$ channel: indeed,
+in this case both the $gg\to H$ production and the $H\to\gamma\gamma$ are loop induced, as is
+the continuum contribution $gg\to\gamma\gamma$. This implies that at least naively there is a loop
+enhancement factor in the interference w.r.t. the pure signal, thus making the former noticeable. 
+
+The \emph{real part of the interference} in
+Eq.~(\ref{eq:width_gammagamma}) is antisymmetric around the Higgs peak,
+so it does not affect the total rate. However, it leads to a
+distortion in the shape of the $m_{\gamma\gamma}$ distribution around
+the Higgs peak, which in turns translates into a slight shift in the
+reconstructed Higgs mass~\cite{Martin:2012xc}.  The size of this mass
+shift is proportional to the interference contribution, whose
+dependence on couplings and width is different from
+Eq.~(\ref{eq:width_standard}). A measurement of the mass shift then
+allows for a determination of $\gHsV$. This can be done for example by
+comparing the mass extracted in the $\gamma\gamma$ channel with that
+determined in the $4l$ channel, where these interference effects are negligible. However,
+even if the $4l$ channels lead to a very good mass determination
+once high enough statistics  have been accumulated, extracting the
+mass shift from a $\gamma\gamma$ vs $4l$ comparison introduces
+additional systematics. Because of this, it is preferable to
+consider only the  $\gamma\gamma$ decay mode and to compare different kinematic regions.
+This is possible since the interference
+is strongly dependent on the transverse momentum of the Higgs~\cite{Dixon:2013haa}. 
+In particular, hard radiation tends to lessen this effect somewhat.
+Another candidate for a reference mass could be obtained from studying Higgs production
+in association with two hard jets. Indeed, in this case there are
+cancellations between the $ggF$ and $VBF$ contributions and the net result
+for the interference is very small~\cite{Coradeschi:2015tna}. Theoretical predictions for
+the mass shift are under good control, with the interference being
+known to NLO in QCD~\cite{Dixon:2013haa,deFlorian:2013psa,Martin:2013ula} 
+and matched to parton shower~\cite{Gleisberg:2008ta,Hoche:2015sya}. It turns
+out that radiative corrections deplete the interference contribution somewhat.
+Although it is well known that higher order corrections are important for 
+Higgs physics, for this analysis the main limitation comes from experimental
+systematics, namely the detector response, which must be properly modeled
+to   extract the interference contribution from the measured mass shift. 
+In the SM, the mass shift at the LHC is rather small, 
+$\Delta m_{\gamma\gamma}\sim\mathcal O(50-100)~{\rm MeV}$. This implies that
+at the HL-LHC this method could lead to bounds on $\gHsV$ of the order 
+$\gHsV \sim \mathcal O(10-50)\times \gHsVSM$. Detailed projections can be found in Sec.~\ref{sec:5_interference_imag}.
+
+The \emph{imaginary part of the interference}~\cite{Dixon:2013haa,Campbell:2017rke} 
+in Eq.~(\ref{eq:width_gammagamma})
+is symmetric around the Higgs peak, so it leads to a change in the rate. Unfortunately,
+because of helicity conservation this imaginary part is highly suppressed at LO.
+Higher order corrections provide a new mechanism to generate an imaginary part, lifting this suppression~\cite{Dixon:2013haa}.
+However, because the bulk of the interference effectively enters at NLO,
+the anticipated loop enhancement factor in the interference relative to the pure signal (mentioned above)
+is not present, and the actual size of the effect is quite small. In the SM, 
+it reduces the total rate by
+about $2\%$, 
+which makes it challenging to observe, and the effect is further diluted 
+by additional radiation~\cite{Campbell:2017rke}. Thus this technique requires very good
+control on the total rate, both experimental and theoretical. To reduce the former, it is 
+profitable to consider cross-section ratios; for example, the $\gamma\gamma$ to $4l$ ratio
+is projected to be measured at the few percent level.
+However, this introduces additional experimental and theoretical systematics, including 
+theoretical model dependence since one would need to make assumptions about the structure of Higgs 
+couplings.
+For this reason, it is again preferable to perform the interference effect extraction in 
+the $\gamma\gamma$ channel alone,
+by considering different kinematic regions.
+%
+As with the real part of the interference,  this effect is also quite sensitive to the transverse momentum of the Higgs, with the bulk of the interference effect confined to the small $p_t$ region, as shown in an NLO analysis in Ref.~\cite{Campbell:2017rke}. However, since the interference is essentially an NLO effect, as discussed above,  the residual theoretical uncertainty at this order is still quite sizable. Moreover, a fine-grained comparison of the low and high 
+Higgs $p_t$ regions requires very good theoretical control. For the former, this is notoriously
+complicated as several different effects are at play, see e.g.~\cite{Caola:2018zye} and references 
+therein for a recent discussion of this point. Because of this, 
+assuming a few percent experimental accuracy, the width extraction from this method would be
+limited by theoretical uncertainties. Although computing higher order corrections for this
+effect is well beyond our current ability, it is reasonable to assume that the situation
+will improve on the HL/HE-LHC timescale, along the lines described in Section~\ref{sec:2_HXSWG1}.
+Currently, it is expected that this technique would lead to bounds of the order
+$\gHsV \sim \mathcal O(10)\times \gHsVSM$, see section~\ref{sec:5_interference_real} for details. 
+
+The main advantage of the on-shell width determinations discussed above is that -- although
+being indirect measurements -- they require minimal theoretical assumptions on potential
+BSM effects. This is because couplings are extracted at the same energy scale, ideally
+from the same process. Unfortunately, since interference effects scale like 
+$g_{\rm prod}\times g_{\rm dec}$ at the first power, the constraints on the width are quite mild.
+Indeed, if one assumes that the on-shell rates are kept fixed, a linear dependence on the coupling 
+translates into a square root dependence on the width. 
+
+Another option to constrain the width is 
+\underline{off-shell methods}~\cite{Kauer:2012hd,Caola:2013yja,Campbell:2013una,Campbell:2013wga}, 
+which are based on the following observation.
+Schematically, the cross section can be written as
+\begin{equation}
+\sigma \sim \frac{g_{\rm prod}^2 \times g_{\rm dec}^2}{(s-\mhsV^2)^2 + \mhsV^2 \gHsV^2}.
+\label{eq:width_gensigma}
+\end{equation}
+On the resonant peak, this leads to the usual relation Eq.~(\ref{eq:width_standard}). Typically,
+most of the cross section is concentrated there. In the $VV$ decay channel though there is a sizable
+contribution from the off-shell $s \gg \mhsV^2$ region~\cite{Kauer:2012hd}: 
+indeed, Higgs decay to vector bosons is 
+strongly enhanced at high energy. In the far
+off-shell region, Eq.~(\ref{eq:width_gensigma}) reduces to 
+$\sigma\sim (g_{\rm prod}^2\times g_{\rm dec}^2)/s^4$. Assuming that the on-peak rates are kept
+fixed, this quadratic dependence on the couplings translates into a linear dependence on $\gHsV$, allowing this quantity
+to be constrained by a comparison of on- and off-shell rates. 
+
+However, it is important to stress that to extract $\gHsV$ from off-shell
+measurements one has to assume that on-shell and off-shell couplings are the same. Since the two
+are evaluated at very different energy scales, this introduces a theoretical model dependence. 
+Indeed, there are several new physics scenarios where BSM effects decorrelate on- and off- shell 
+couplings, see e.g.~\cite{Englert:2014aca,Logan:2014ppa,Englert:2014ffa}. 
+These include for example new light degrees of freedom coupled to the Higgs,
+additional Higgs states, or anomalous $HVV$ couplings. Therefore, to constrain the width using an off-shell analysis,
+ it is important to perform complementary measurements to control potential BSM effects. 
+This was studied in detail for the case of $HVV$ anomalous couplings in~\cite{Anderson:2013afp}. 
+ Projections at the HL-LHC will be presented in section~\ref{sec:5_offshell}. 
+In general, off-shell measurements offer the opportunity to investigate Higgs interactions at 
+high energy scale, thus leading to interesting information that is not limited to the width
+extraction. For example, in combination with measurements of boosted Higgs, $HH$ and $t\bar tH$, 
+an off-shell analysis can help lifting the degeneracy between $ggH$ and $t\bar tH$ 
+couplings~\cite{Azatov:2014jga}. The off-shell program will clearly benefit from the 
+increased statistics and energy of the HL/HE upgrade. For example, this would allow for 
+off-shell studies in the VBF production mode~\cite{Campbell:2015vwa}. 
+Although the rate here is very small,
+by looking at same-sign vector boson final states one can significantly reduce backgrounds. 
+%
+Although it is estimated that HL-LHC measurements in this channel would lead to constraints
+at the same level of current ones in the $ggF$ channel~\cite{Campbell:2015vwa}, 
+the completely different 
+production mechanism
+makes them complementary to the $ggF$ constraints, thus allowing for a less model dependent
+interpretation.
+%
+Aside from these considerations, it is interesting to study the potential of 
+future LHC upgrades to constrain $\gHsV$ under the assumption that 
+no large decorrelations between on- and off-shell couplings occur. Because of the linear dependence on
+the width discussed above, such constraints are quite powerful. Indeed, assuming a reasonable
+reduction in the theoretical uncertainty in the HL-LHC timescale, 
+it will be possible to probe values close to the SM value
+$\gHsV\sim 4~{\rm MeV}$. Projections under different assumptions for the theoretical uncertainty
+are reported in section~\ref{sec:5_offshell}. 
+
+A reliable theoretical description of the off-shell region is non trivial. First, there is a large
+$q\bar q \to VV$ background, which needs to be properly subtracted to access the signal yield. 
+More important, there is an irreducible $gg\to VV $ continuum background that interferes with the
+signal process $gg\to H\to VV$. The interference effect is sizable and destructive, which is a 
+consequence of the Higgs mechanism ensuring unitarity in the SM. Because of the large interference,
+it is necessary to have
+good theoretical control not only on the signal process but also on the continuum background 
+amplitude. This is non trivial, since the $gg\to VV$ process is loop induced, so higher order
+corrections -- expected to be large given the $gg$ initial state -- involve multi-loop amplitudes.
+Moreover, at large invariant masses, the contribution of virtual top quarks to the amplitude becomes
+dominant. Its proper description would then require multi-loop amplitudes involving internal massive
+states, which are extremely challenging to compute. For this reason, exact predictions for the
+background amplitude are only known to LO in the off-shell region. NLO corrections are known below
+the top threshold, and only in an approximate form 
+above~\cite{Caola:2016trd,Campbell:2016ivq,Campbell:2014gua,Caola:2015psa,Caola:2015rqy,Bonvini:2013jha,Alioli:2016xab}. 
+Nevertheless, recent developments in 
+numerical techniques~\cite{Borowka:2016ehy} 
+make NLO computations for the background feasible in the near
+future. One subtle point in this discussion is the role of quark-initiated reactions. On the one
+hand, they appear naturally in the computation of NLO corrections to $gg\to VV$ from initial
+state splitting. On the other hand this kind of contribution -- although separately finite and 
+gauge invariant -- only forms a small subset of the whole $qg \to VV q$ process at 
+$\mathcal O(\alpha_s^3)$, which are part of the genuine N$^3$LO corrections to the 
+quark-initiated $q\bar q\to VV$ process. Therefore, only including  
+the contribution coming from initial
+state splitting in the $gg\to VV$ process, although formally possible, may not entirely
+capture the correct physics. In general, this problem is not particularly relevant because
+the gluon channel provides the bulk of the contribution. This is however no longer the case if
+strong requirements on extra jet activities (typical e.g. for $WW$ analysis) are imposed. 
+Understanding this issue is an interesting theoretical problem, and the high statistics
+available at the HL/HE-LHC motivates its detailed investigation. Another issue that should be 
+investigated is the impact of electroweak corrections, which can be sizable at high energy. Once again, 
+although they are currently unknown, it is natural to expect progress in this direction within the HL-LHC timescale. 
+
+The modeling of the $gg\to H\to VV$ process is under better control than the background one. 
+Still, since
+in the far off-shell region the top loop cannot be approximated by a contact interaction,
+computations are still much harder than in the on-shell region, where such an approximation is justified. As a consequence, exact results are
+only known to NLO. A full computation of NNLO corrections would require significant advances on 
+current technology, which are however likely to occur in the HL-LHC timescale. It is reasonable
+to expect~\cite{deFlorian:2016spz} 
+that the $K$-factor for the exact theory is rather similar to that obtained from calculations in which
+the top loop is integrated out. In the absence of an exact calculation, one can use this 
+approximation to estimate rates at the HL/HE LHC. 
+
+The HL/HE-LHC upgrade will improve off-shell analysis in several ways. On the one hand,
+the larger statistics will allow for a better discrimination of the $q\bar q\to VV$ vs
+$gg\to VV$ background and -- crucially -- interference. Currently, this is done by using
+the different kinematic behavior of these contributions. Clearly, a higher statistical
+sample would allow for more powerful discrimination. Furthermore, increasing the collider
+energy would lead to a larger fraction of gluon initiated events w.r.t. quark initiated
+events. For example, the $(gg\to H\to VV)/(q\bar q\to VV)$ ratio increases by a factor of roughly
+1.5 in the off-shell region when the center-of-mass energy is increased from 14 TeV to 27 TeV. Furthermore, the increase in the total rate at the HE-LHC
+will lead to a significant number of off-shell events in the few-TeV region. This would
+allow for precise investigations of the Higgs sector in the high-energy region, which could 
+shed light on the unitarity structure of the SM. 

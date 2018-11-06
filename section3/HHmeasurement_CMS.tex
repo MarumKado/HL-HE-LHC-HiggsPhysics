@@ -1,0 +1,45 @@
+\begin{center}
+\textit{by N. De Filipis, M. Gouzevith, A. Carvalho}
+\end{center}
+
+The estimations of the di-Higgs production in the HL-LHC is done by studying the possible analyses improvements based on Delphes~\cite{Delphes} simulations. The Delphes framework was tuned to simulate the geometry of HL-LHC. 
+Five channels are studied:  $HH \rightarrow b\bar{b}b\bar{b}$, $HH \rightarrow b\bar{b}\tau\tau$ and $HH \rightarrow b\bar{b}\gamma\gamma$, $HH \rightarrow b\bar{b}ll\nu\nu$, where one of the $H$ decays as $H \rightarrow Z(ll)Z(\nu\nu)$ or $H \rightarrow W(l\nu)W(\nu)$, and $HH \rightarrow b\bar{b}ZZ(4l)$, the last two has a branching ratio of 2.1\% ans XX\% respectively.
+
+\paragraph{The $HH \rightarrow b\bar{b}b\bar{b}$ channel}
+
+Two regimes are exploited on the $b\bar{b}b\bar{b}$ final state. The first consider a resolved situation, where four b-tagged jets are reconstructed as the $H$ pair. The second considers the case where two fat jets are each one reconstructed as a boosted $H$.
+
+In the resolved scenario events are pre-selected by requiring four jets with $p_T >$ 45~GeV and $|\eta| <$ 3.5 that satisfy the medium b-tagging working point. We assume the situation of 100\% trigger, what is compatible with upgrades studies of the CMS trigger system, both at L1 and HLT, and the improvement and harmonization of online and offline b-tagging algorithms that are being  considered \cite{PAS}. Four b-tagged jets are selected and paired accordingly with proximity to the Higgs boson mass (the efficiency of the pairing exceeds 95\%), a selection around 40~GeV window around the Higgs boson mass on each di-jet pair is used to reduce background. As this is one of the analyses that most suffers with the huge size of its background, but it is also the region where most of the SM-like signal lives. To overcome this, multivariate variable (BDT) is used to best separate signal as signal extraction variable. 
+
+In the boosted scenario  is typically a good handle to investigate other $H$ couplings that not the trilinear coupling (see the comparison of the sensibility of this channel compared with the other channels on the combination of the 2016 $HH$ analyses from CMs []). For that reason, for this specific channel we will show the prospected sensitivity on the shape benchmarks already described on section XXX. The two leading-pT AK8 jets in the event, to be reconstructed each one as a Higgs boson, are required to have $p_T >$ 300~GeV and lie within $|\eta| <$ 3.0. The soft-drop [42, 43] jet grooming algorithm and n-subjetiness [XXXX] are used to remove soft and collinear components of the jet and retain the two subjets associated with the showering and hadronization of the two b quarks from the $H \rightarrow  bb$ decay and background. The background estimation follows closely the approach in Ref. [46]. The background obtained from simulations is scaled by 0.7 based on comparisons with the LHC data at $\sqrt{s} =$ 13 TeV. The main discriminating variable between the signal and the background is the invariant mass of the two selected jets and the $M_{JJ}$, which is correlated with the HH invariant mass. {\bf FIXME: Explain better the signal extraction variables}
+
+\paragraph{The $HH \rightarrow b\bar{b}\tau\tau$ channel}
+
+The $b\bar{b}\tau\tau$ final state is experimentally favourable thanks to its sizable branching fraction of 7.3\% and the moderate background contamination,
+The decay of the Higgs boson to $\tau\tau$ gives rise to six possible combinations of decay channels for the signal: $e \tau_h$, $\mu \tau_h$, $\tau_h \tau_h$, $\mu \mu$, $e \mu$, and $e e$. For this investigation, we only consider the three most frequent final states, i.e. those involving at least one $\tau_h$, that correspond to about 88\% of the total decays of the $\tau\tau$ system and provide the largest sensitivity to the HH process. Events in all the three categories above are then required to contain at least two b-tagged jets with $p_T >$ 30~GeV and $|\eta| <$ 2.4. 
+As for the case of resolved $b\bar{b}b\bar{b}$ analysis a multivariate variable is used for signal extraction. The final discriminant consists however of an ensemble of fully-connected deep neural networks (DNN), each consisting of three hidden layers of 100 neurons.
+
+\paragraph{The $HH \rightarrow b\bar{b}\gamma\gamma$ channel}
+
+Apart from the small branching fraction of this final states the $b\bar{b}\gamma\gamma$ channel was the most sensitive to a SM-like signal on CMS up to the results with 2017 data. The good resolution of the di-photon mass was one of the key factors to that. 
+In this study we assume that events selected as described below will be triggered with algorithms that require the presence of two photons and that are 100\% efficient for selected events, what is well verified in the current Run II search. 
+The two leading photons satisfying the loose working point $p_T >$ 30~GeV and $|\eta| >$ 2.5 are selected. This selection corresponds to an efficiency of about 90\%  and a jet misidentification rate of about 3\%. The $H \rightarrow bb$ candidate is built from the two leading jets that satisfy $p_T >$ 25~GeV and $|\eta| >$ 2.5. The background from light flavour jets is suppressed by requiring at least one of the jets to satisfy the medium working point of the b tagging algorithm, corresponding to a 70-80\% efficiency for a genuine b-jet (and 1\% misidentification efficiency). The dijet invariant mass is required to be between 80 and 190~GeV, we also require that both photons and both . A multivariate variable (BDT) is constructed to separate the $HH$ signal from single Higgs production, specially $ttH(\gamma\gamma)$. The signal is extracted by the four body reduced mass $M_{X} = M_{\gamma\gamma bb} - M_{\gamma\gamma} - M_{bb} + 250$~GeV (see []). {\bf FIXME: Explain better the signal extraction variables}
+
+
+\paragraph{The $HH \rightarrow b\bar{b}ll\nu\nu$ channel}
+
+
+
+\paragraph{The $HH \rightarrow b\bar{b}ZZ(4l)$ channel}
+
+Up to now, the low signal rate leads to consider mostly final states with a sizable branching ratio. In view of HL-LHC, some rare but clean processes have been re-considered because of the increasing available statistics and the challenging conditions due to the enormous number of pile-up events. 
+
+Events are required to have at least four identified and isolated (isolation < 0.7) muons (electrons) with $p_T >$ > 5(7) GeV and $|\eta| >$ 2.8, where muons (electrons) are selected if passing the Loose (Medium) Working Point identification. Z boson candidates are formed from pairs of opposite-charge leptons (...) requiring a minimum angular separation between two leptons of 0.02. At least two di-lepton pairs are required. The Z candidate with the invariant mass closest to the nominal Z mass is denoted as Z1; then, among the other opposite-sign lepton pairs, the one with the highest $p_T >$ is labelled as Z2. In order to improve the sensitivity to the Higgs boson decay, Z candidates are required to have an invariant mass in the range [40, 120] GeV (Z1) and [12, 120] GeV (Z2), respectively. At least one lepton is required to have $p_T >$ > 20 GeV and a second is required to have $p_T >$ > 10 GeV. On figure~\ref{fig:CMS_HH4l} we show the resolution of the reconstructed $H \rightarrow ZZ \rightarrow 4l$ after baseline selections. The four leptons invariant mass is requested to be in the range [120,130] GeV. At least two (but not more than three) identified b-jets, reconstructed with the anti-kT algorithm inside a cone of radius R = 0.4, are required; a B-Tag Medium working point, exploiting the presence of the MIP Timing Detector (MTD) [], is assumed. The di-jet mass is required to be in the range [80, 160] GeV and the angular distance between the 2 b-jets has to be between 0.5 and 2.3. The signal is them extracted with a cut-and-count analysis.
+
+\begin{figure}[!htb]
+\centering 
+\caption{\textcolor{red}{PLACEHOLDER} Invariant mass distribution of the four leptons selected at the end of the CMS analysis for the $bb 4l$ final state.} 
+\label{fig:CMS_HH4l} 
+\end{figure}
+
+\paragraph{Combination}

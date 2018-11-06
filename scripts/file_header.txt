@@ -1,0 +1,10 @@
+% **************************************************************************
+% * HL/HE-LHC Physics Workshop Report                                      *
+% * Copyright (C) 2017, CERN.                                              *
+% * This work is licensed under a Creative Commons                         *
+% * Attribution-NonCommercial-NoDerivatives 4.0 International License.     *
+% * File Authors: J. Gutleber                                              *
+% *                                                                        *
+% * For the licensing terms see LICENSE                                    *
+% **************************************************************************
+
