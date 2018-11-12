@@ -6,7 +6,7 @@ $(i)$ We first propose a Bayesian optimization approach to select cuts on kinema
 
 $(ii)$ We next perform a joint optimization of kinematic cuts and boosted decision trees (BDT) hyperparameters to further discriminate signal and background events.  For our calculations, we use the \texttt{XGBoost }  implementation of BDTs for Python. 
 
-\subsubsection{Signal and Backgrounds}
+\subsubsubsection{Signal and Backgrounds}
 
 For the simulation of the signal, we use {\tt MadGraph5\_aMC@NLO\_v2.3.3}~\cite{MG5}, to generate $p p \rightarrow h h$ process exclusively at the leading order (LO). The simulation of our signal
 include both the triangle and box diagrams. We scale our LO cross-section by the partial NNLO K-factor of 2.27~\cite{deFlorian:2013uza}, calculated in the large quark mass limit and use the resulting production cross section of 36.8 fb.
@@ -39,7 +39,7 @@ signal & $b\bar{b}\gamma\gamma$ & $c\bar{c}\gamma\gamma$ & $jj\gamma\gamma$ & $b
 \label{table:nevKS}
 \end{table}
 
-\subsubsection{Bayesian Optimization}
+\subsubsubsection{Bayesian Optimization}
 
 The $b\bar{b}\gamma\gamma$ channel has been studied by several groups using cut and count strategies. Once signal and background cross sections are normalized to the proper values, one finds that the analysis of any particular group does not radically outperform that of any other. For a detailed comparison, we refer to Table 2 of \cite{Alves:2017ued}. 
 
@@ -86,7 +86,7 @@ The performance of the Bayesian algorithm is also displayed in Figure~\ref{fig:B
 %
 
 
-\subsubsection{BDT Analysis}
+\subsubsubsection{BDT Analysis}
 
 We now turn to a discussion of the BDT analysis, for which we utilize the \texttt{XGBoost}  implementation of BDTs for Python. \texttt{XGBoost} is chosen for its good discrimination performance, speed and capacity of parallelization.  For our  analysis we simulated $\sim 880000$; depending on the cuts, however, the total number of events usually drops to around $100000$--$300000$ events which also turned out to be a sufficient number of samples to keep overfitting under control.
 

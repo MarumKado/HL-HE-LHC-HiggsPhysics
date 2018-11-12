@@ -1,17 +1,17 @@
-\subsubsection{$H \to \gamma\gamma$}
-{\it To be written by: M. Delmastro}
-
-\subsubsection{$H \to Z\gamma \to 2\ell\,\gamma$}
-{\it To be written by: M. Delmastro}
-
-\subsubsection{$H \to ZZ^* \to 4\ell$}
-{\it To be written by: M. Delmastro}
-
-\subsubsection{$H \to WW^* \to \ell\nu\,\ell\nu$}
-{\it To be written by: M. Delmastro}
+\input{\main/section2/channels_intro.tex}
+\input{\main/section2/higgs2bosons.tex}
 
 \subsubsection{$H \to \tau\tau$}
 {\it To be written by: P. Francavilla, ?}
+
+%dataset of the extrapolation
+The studies presented here are performed based on a previous analysis, in which the ATLAS Collaboration analyzed the 2015/2016 proton-proton collision dataset collected at $\sqrt{s} = 13\,\TeV$, which corresponds to an integrated luminosity of 36.1\fbinv \cite{}. 
+%channels
+For the Higgs boson decay products all the leptonic ($\tau_{lep}$) and hadronic ($\tau_{had}$) decays of the $\tau$' s are considered. The analysis is done by splitting events into three categories depending on the three tau final states of the decay products: ($\tau_{lep}$, $\tau_{lep}$), ($\tau_{lep}$, $\tau_{had}$) and ($\tau_{had}$, $\tau_{had}$).
+
+%backgrounds
+
+%results
 
 \subsubsection{$H \to bb$}
 {\it To be written by: P. Francavilla, A. de Wit}
@@ -26,21 +26,33 @@
 \providecommand{\wip}[1]{\textcolor{red}{\bfseries TODO: #1}\xspace}
 
 
-\wip{Text currently reflects CMS studies only. Should be updated to reflect ATLAS and CMS studies.}
+\wip{Text currently reflects CMS studies only. Should be updated to reflect ATLAS and CMS studies.
+Differences for ATLAS: 
+-> the analysis is the observation (78.9 fb-1)
+-> tagger is named MVa, and we use a 70\% WP
+-> mbb is improved with muon in jet correction and ptReco, + kinematic fit for 2 leptons
+-> add the mu for ATLAS
+-> Add the results from ATLAS
 
+}
+%dataset of the extrapolation
 The ATLAS and CMS Collaborations have both reported the observation of the $\text{H}\to\text{bb}$ decay \cite{Aaboud:2018zhk,Sirunyan:2018kst}.
 The studies presented here are performed based on a previous analysis, in which 
 the CMS Collaboration reported evidence for the $\text{H}\to\text{bb}$ decay in the $\text{VH}$ production mode using the 2016
 proton-proton collision dataset collected at $\sqrt{s} = 13\,\TeV$, which corresponds to an integrated luminosity of 35.9\fbinv \cite{HIG16044}. 
+%channels
 This analysis makes use of leptonic decays of the vector boson which is produced in association with the Higgs boson. The final states
 of the $\vh$ system covered in this analysis always contain two b-jets and either zero, one or two electrons or muons. Both leptons are required to have the same flavour in the two lepton selection.
 The b-jets are identified using a combined multivariate (CMVA) tagging algorithm. The inputs include track impact parameter and secondary vertex information from the jet. Three thresholds on the CMVA discriminant are used in the analysis, denoted tight, medium and loose, which have efficiencies for tagging b-jets ranging from $50$--$75\%$ and for light quark or gluon jets from $0.15$--$3\%$.
 
+%backgrounds
 Major backgrounds arising from SM production of vector boson plus heavy- or light-flavour jets, in addition to \ttbar production, are 
 controlled and constrained for each vector boson decay channel independently via dedicated control regions. Multivariate energy
 regression techniques are used to improve the b-jet energy resolution, and a boosted decision tree is used to improve the discrimination 
 between signal and background. The distribution of this multivariate discriminator is used as the discriminating
-variable in the signal extraction fit. The signal strength observed in this analysis is 
+variable in the signal extraction fit. 
+%results
+The signal strength observed in this analysis is 
 $\mu_{\text{VHbb}} = 1.19^{+0.21}_{-0.20}\text{ (stat) }^{+0.34}_{-0.32}\text{ (syst) }$. Here the projected uncertainty
 on the signal strength up to 3000\fbinv is reported, assuming $\mu_{\text{VHbb}} = 1$.
 

@@ -21,10 +21,25 @@ As for the case of resolved $b\bar{b}b\bar{b}$ analysis a multivariate variable 
 
 \paragraph{The $HH \rightarrow b\bar{b}\gamma\gamma$ channel}
 
-Apart from the small branching fraction of this final states the $b\bar{b}\gamma\gamma$ channel was the most sensitive to a SM-like signal on CMS up to the results with 2017 data. The good resolution of the di-photon mass was one of the key factors to that. 
-In this study we assume that events selected as described below will be triggered with algorithms that require the presence of two photons and that are 100\% efficient for selected events, what is well verified in the current Run II search. 
-The two leading photons satisfying the loose working point $p_T >$ 30~GeV and $|\eta| >$ 2.5 are selected. This selection corresponds to an efficiency of about 90\%  and a jet misidentification rate of about 3\%. The $H \rightarrow bb$ candidate is built from the two leading jets that satisfy $p_T >$ 25~GeV and $|\eta| >$ 2.5. The background from light flavour jets is suppressed by requiring at least one of the jets to satisfy the medium working point of the b tagging algorithm, corresponding to a 70-80\% efficiency for a genuine b-jet (and 1\% misidentification efficiency). The dijet invariant mass is required to be between 80 and 190~GeV, we also require that both photons and both . A multivariate variable (BDT) is constructed to separate the $HH$ signal from single Higgs production, specially $ttH(\gamma\gamma)$. The signal is extracted by the four body reduced mass $M_{X} = M_{\gamma\gamma bb} - M_{\gamma\gamma} - M_{bb} + 250$~GeV (see []). {\bf FIXME: Explain better the signal extraction variables}
+The $b\bar{b}\gamma\gamma$ channel was the most sensitive to a SM-like signal at CMS with data \cite{CMS_PAS_HIG_17-030} and remains the most sensitive for the projections. 
+The excellent resolution of the di-photon mass, clean trigger signature with 2 high $p_{\rm T}$ isolated photons, over-constrained and fully reconstructed final state is a strong asset to reduce the background contamination. The branching fraction is low compared to other channels, but still high enough to observe few 100-th of events after 3 ab$^-1$.
 
+The two leading photons satisfying the loose working point $p_{T,1} > m_{\gamma\gamma}/3$~GeV and $p_{T,2} > m_{\gamma\gamma}/4$~GeV and $|\eta| <$ 2.5 are selected 
+and we constraint $ 100 < m_{\gamma\gamma} < 150$~GeV. Fiducial region between the barrel and endcap calorimeters is rejected. For this selection defined as is Run II \cite{???} the trigger is expected to be fully efficient.
+The working point chosen for photon identification and isolation selects about 90\% of photons within the required kinematic region. 
+
+The $H \rightarrow bb$ candidate is built from the two leading jets that satisfy $p_T >$ 25~GeV and $|\eta| < 2.5$. The fiducial acceptance if this defined by Run II analysis. The Phase II tracker allows to extend the b-tagging region up to $|\eta| = 4$, but the impact on this analysis is very limited.
+The background from light flavour jets is suppressed by requiring both jets to satisfy a loose working point of the  b tagging algorithm, corresponding to a 90\% efficiency for a genuine b-jet (and 10\% misidentification efficiency). The dijet invariant mass is required to be between 80 and 190~GeV. 
+The main background to this analysis is coming from nonresonant production of $\gamma\gamma + 2$~jets. A contribution of $\approx$ 10\% of the events is expected, for the photon identification working point chosen in this analysis, from 
+$\gamma$ jet $+ 2$~jets where a jet is identified as photon 
+
+A multivariate variable (BDT) is constructed to separate the $HH$ signal from $ttH \rightarrow \gamma\gamma$. This latter contribution is the dominant source of single $H \rightarrow \gamma\gamma$ background that have the same properties than HH production for the main discriminating variable $m_{\gamma\gamma}$. The BDT is trained to identify the presence of decay products from W bosons originating from top quark decays. The working point used allows to reject 75\% of $ttH \rightarrow \gamma\gamma$ events, while preserving 95\% of the signal.
+
+The signal extraction procedure is performed in purity categories obtained by training a classification BDT. This latter try to separate $\gamma\gamma + 2$~jets from the signal using kinematic (helicity angles, $p_T$ and directions of the $\gamma$s and jets) and b-tagging varibles. We define 2 categories, the high purity with the best ration signal over background and the medium purity one. The lowest purity events similar to $\gamma\gamma + 2$~jets are rejected.
+
+We also define 3 categories in $m_{\rm HH}$ variable that is well approximated by $M_{X} = M_{\gamma\gamma bb} - M_{\gamma\gamma} - M_{bb} + 250$~GeV (see \ref{???}): $250 < M_{X} < 350$\,GeV , $350 < M_{X} < 480$\,GeV and  $480 < M_{X}$\,GeV. The first one have no impact on SM-like HH analysis but helps to constrain the Higgs self-coupling.
+
+In each of the $3 \times 2$ categories the signal is extracted by a parametric maximum likelihood fit of the signal and background in 2 dimensions: $m_{\gamma\gamma} \times m_{\rm jet jet}$.
 
 \paragraph{The $HH \rightarrow b\bar{b}ll\nu\nu$ channel}
 

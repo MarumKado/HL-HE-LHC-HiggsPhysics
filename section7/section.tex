@@ -7,6 +7,7 @@
 \newcommand{\br}{\mbox{BR}}
 \newcommand{\mcO}{\mathcal{O}}
 \newcommand{\yvmkk}{\bar Y^2 \frac{v^2}{m_{KK}^2}}
+\newcommand{\cR}{\mathcal{R}}
 
 % some commands for section 7.1 (did not find the predefined ones, so they are defined here. Probably need to merge them with the global commands)
 \newcommand{\pt}{\ensuremath{p_T}\xspace}
@@ -60,23 +61,29 @@
 
 \subsection{Introduction}
 
-{\bf YS: add intro paragraph and take section 1.1.1 to here as current status}
+In this section we cover the current status and future prospects for measuring the different Higgs couplings to fermions, these go under the generic name of ``Higgs and Flavor". 
+The Higgs mechanism of the SM predict that the Yukawa couplings are proptional to the fermion mass and CP conserving, or more precisely 
+%
+\begin{align}
+    y^{\rm SM}_f = \sqrt{2} m_f / v \, ,
+\end{align}
+%
+where the tree-level flavor changing couplings are zero. 
+Currently, only the third generation Yukawa couplings were directly measured and found to be in agreement with the SM prediction, see Refs.~\cite{} for $h\tau\bar{\tau}$, $h \bar{b} h$ and $h \bar{t} t$ recent results. 
+However, for the Higgs coupling to first and second generations there are only upper bounds, see~\cite{}.
 
-
-\subsection{Flavor aspects Yukawa modifications in flavor models}
-
-\subsubsection{New Physics benchmarks for modified Higgs couplings}
-
-The Higgs couplings to the SM fermions, $f$, can differ from their SM
-values due to New Physics (NP). We describe the size of the modification using a
-generalized $\kappa$ framework,
+Below, we adapt the generalized $\kappa$ framework to describe deviations of the Higgs couplings from their SM values due to new physics~(NP).
+In particular, we define 
 {\bf YS: why different notation for the diagonal and off-diagonal $\kappa$'s?}
-\begin{equation}\label{eq:L_eff}
+%
+\begin{equation}
+\label{eq:L_eff}
 \begin{split}
 	\mathcal{L}_{\rm eff} &= -\kappa_{f_i} \frac{m_{f_i}}{v} h \bar f_i f_i + i \tilde \kappa_{f_i} \frac{m_{f_i}}{v} h \bar f_i \gamma_5 f_i  
 	- \left[\left( \kappa_{f_i f_j} + i \tilde \kappa_{f_i f_j} \right) h \bar f_L^i f_R^j +{\rm h.c.}\right]_{i\neq j}, 
 \end{split}
 \end{equation}
+%
 where a sum over fermion type $f=u,d,\ell$ and generations $i,j=1,2,3$ is understood.
 The first two terms are flavour-diagonal with the first term CP-conserving and
 the second CP-violating.  The terms in square brackets are flavour
@@ -84,8 +91,12 @@ violating. The real (imaginary) part of the coefficient is CP
 conserving (violating). In the SM, we have $\kappa_{f_i}=1$ while $\tilde
 \kappa_{f_i}=\kappa_{{f_i}{f_j}}=\tilde \kappa_{{f_i}{f_j}}=0$.
 
+{\bf YS: short discussion explains direct and indirect}
+The different Higgs Yukawa couplings can be probed by direct and indirect methods. 
+The most direct probe of the top Yukawa is by measruing the Higgs production in association with top pair. The 13\,TeV result~\cite{} 
+
 The Higgs production and decay strengths measured at the LHC constrain the flavour-diagonal CP-conserving Yukawa couplings to be \cite{CMS-PAS-HIG-15-002,CMS-PAS-HIG-17-031,Perez:2015aoa,Kagan:2014ila,Altmannshofer:2015qra} (for future prospects see also \cite{Perez:2015lra,Brivio:2015fxa,Koenig:2015pha,Aad:2015sda,Bodwin:2014bpa,Bodwin:2013gca})
-{\bf YS: update numbers, for example $h\to b\bar{b}$ has a new result}
+{\bf YS: update numbers, for example $h\to b\bar{b}$ has a new result also check $tth$ - make sure that there is only direct measurments here}
 \begin{align}
 %\begin{split}
 \label{eq:kappalimits}
@@ -109,6 +120,8 @@ but opposite in sign contribution from NP. We will show that in models
 of NP motivated by the hierarchy problem, the effects of NP are
 generically well below these bounds.
 
+
+{\bf YS:check citation to new Manos paper}
 The CP-violating flavour-diagonal Yukawa couplings, $\tilde \kappa_{f_i}$,
 are well constrained from bounds on the electric dipole moments (EDMs)
 \cite{Brod:2013cka,Chien:2015xha,Altmannshofer:2015qra} under the assumption of no 
@@ -125,6 +138,11 @@ the LHC \cite{Sirunyan:2017xzt,Aad:2016blu}.
 In the rest of this section we review the expected sizes of $\kappa_{f_i}$
 in popular models of weak scale NP, some of them motivated by the
 hierarchy problem. 
+
+\subsection{Flavor aspects Yukawa modifications in flavor models}
+
+\subsubsection{New Physics benchmarks for modified Higgs couplings}
+
 
 \subsubsubsection{Modified Yukawa couplings and electroweak New Physics} 
 \label{subsubsec:np-models}
@@ -1291,229 +1309,7 @@ strange quarks.
 %%%% add event shap  mention: event shape, i.e. thurst,  in $e^+e^-$ collider~\cite{Gao:2016jcm}
 
 
-\subsection{CP violation in Higgs couplings %(tau, ttH)
-}
-\noident {\it{By S. Boselli, C. M. Carloni Calame, G. Montagna, O. Nicrosini, F. Piccinini, A. Shivaji, F. Yu, Maria Moreno Llacer et al.}}
 
- We present prospects for studies on {\it CP}-odd couplings in the
- couplings of the Higgs boson with the eletroweak gauge bosons
- as well as in the Yukawa couplings of the Higgs boson with
- fermions, in particular with $\tau^+ \tau^-$ pairs.
-
-\subsubsection{$VVH$ couplings}
-While a large number of studies assessing the impact of {\it CP}-even
-effective operators on Higgs physics is available in the literature
-(see for instance the recent analysis in Ref.~\cite{Boselli:2017pef} and
-references therein),
-the present analysis is focused on the impact of {\it CP}-odd effective operators
-on the interactions among the Higgs boson and the electroweak bosons.
-
-In the Higgs basis, the CP-violating sector of the BSM Lagrangian affecting $VVH$ couplings is given by, {\bf YS: is there a missing tilde on the $WW$?}
-%                                   
-\begin{align}
-\lag_{CPV} =  \frac{H}{v} \Big[
-\tilde{c}_{\gamma\gamma} \frac{e^2}{4} A_{\mu\nu}\tilde{A}^{\mu\nu}
-+ \tilde{c}_{Z\gamma} \frac{e\sqrt{g_1^2 + g_2^2}}{2} Z_{\mu\nu}\tilde{A}^{\mu\nu}
-+ \tilde{c}_{ZZ} \frac{g_1^2 + g_2^2}{4} Z_{\mu\nu}\tilde{Z}^{\mu\nu} + \tilde{c}_{WW} \frac{g_2^2}{2} W^+_{\mu\nu}W^{-\mu\nu}\Big]
-% \left. \vphantom{\half} \rq.      
-\label{eqn:Hvv}
-\end{align}
-%
-where, $g_1$ and $g_2$ are the $U(1)_Y$  and  $SU(2)_L$ gauge coupling constants. Out of the above four
-parameters only three of them  are independent.
-\begin{align}
- \tilde{c}_{WW} = \tilde{c}_{ZZ} + 2s_\theta^2 \tilde{c}_{Z\gamma} + s_\theta^4 \tilde{c}_{\gamma\gamma} \, .
-\end{align}
-The processes which are sensitive to CPV operators are the Higgstrahlung processes ($Wh$ and $Zh$), the vector boson fusion (VBF) and the Higgs decay into four\
- charged leptons ($h\to4\ell$). Here we focus on angular observables which are sensitive to CPV effects. Indeed, since the total cross-section is a CP-even quantity,  the $1/\Lambda^2$ effects of CPV operators can affect the shape of some specific kinematic distributions only.
-
-With the present study we aim to asses the potentiality of HL/HE LHC in putting new constraints on NP arising from the bosonic CPV operators. To this end we wi\
-ll show the impact of the
-various processes described above in setting the upper limit on the CPV coefficients.
-
-\begin{table*}
-        \begin{center}
-                \begin{tabular}{lc|ccc}
-                        \multicolumn{2}{c|}{Process}     & Combination & Theory & Experimental \\ \hline \hline
-                        \multirow{5}{*}{${H}\to \gamma \gamma$} &$\text{ggF}$  & 0.07 & 0.05 & 0.05 \\
-                        &$\text{VBF}$ & 0.22 & 0.16 & 0.15  \\
-                        &${t\overline tH}$& 0.17 & 0.12 & 0.12 \\
-                        &${WH}$& 0.19 & 0.08 & 0.17 \\
-                        &${ZH}$& 0.28 & 0.07 & 0.27 \\ \hline
-                        \multirow{5}{*}{${H}\to {ZZ}$}                  &$\text{ggF}$& 0.06 & 0.05 & 0.04 \\
-                        &$\text{VBF}$& 0.17 & 0.10 & 0.14 \\
-                        &${t\overline tH}$& 0.20 & 0.12 & 0.16 \\
-                        &${WH}$& 0.16 & 0.06 & 0.15 \\
-                        &${ZH}$& 0.21 & 0.08 & 0.20 \\ \hline
-                        \multirow{2}{*}{${H}\to {WW}$}          &$\text{ggF}$& 0.07 & 0.05 & 0.05 \\
-                        &$\text{VBF}$& 0.15 & 0.12 & 0.09 \\\hline
-                        ${H}\to {Z\gamma}$                                      &incl.           & 0.30 & 0.13 & 0.27           \\\hline
-                        \multirow{2}{*}{${H}\to {b\bar b}$}             &${WH}$& 0.37 & 0.09 & 0.36 \\
-                        &${ZH}$& 0.14 & 0.05 & 0.13 \\\hline
-                        ${H}\to \tau^+ \tau^- $                                         &$\text{VBF}$ & 0.19 & 0.12 & 0.15
-                \end{tabular}
-                \caption{Estimated relative uncertainties on the determination of single-Higgs production channels at the high-luminosity LHC (14 TeV center of\
- mass energy and 3\,ab$^{-1}$ integrated luminosity) }\label{tab:one}
-        \end{center}
-\end{table*}
-
-\subsubsection{Global fit}
-
-We can build a $\chi^2$  as follows:
-\begin{equation}
- \chi^2({\tilde c}_{Z\gamma},{\tilde c}_{ZZ}) = \sum_{i,f} \frac{(\mu_i^f -1)^2}{\sigma_{i,f}^2} \, ,
-\end{equation}
-The one-sigma uncertainties for the high-luminosity (14 TeV center of mass energy and 3\,ab$^{-1}$ integrated luminosity) are derived from table~\ref{tab:one}. \textit\
-If we assume that the acceptance efficiency is the same at $\sqrt{s}=27$ TeV, we can also rescale the errors for the HE framework, assuming an integrated luminosity of 15\,ab$^{-1}\
-$.
-
-\subsubsection*{}{Production: Inclusive}
-{\bf YS: should be some text here?}
-\begin{eqnarray}
- \mu_{ZH}^{\rm 14 TeV} &=& 1 +  0.54~ {\tilde c}_{Z\gamma}^2 + 2.80~ {\tilde c}_{ZZ}^2 + 0.95~ {\tilde c}_{Z\gamma} {\tilde c}_{ZZ} \\
- \mu_{WH}^{\rm 14 TeV} &=& 1  + 0.84~ {\tilde c}_{Z\gamma}^2 + 3.87~ {\tilde c}_{ZZ}^2
-   + 3.63~{\tilde c}_{Z\gamma}{\tilde c}_{ZZ} \\
- \mu_{\rm VBF}^{\rm 14 TeV} &=& 1  + 0.25~ {\tilde c}_{Z\gamma}^2 + 0.45~ {\tilde c}_{ZZ}^2
-   + 0.45~{\tilde c}_{Z\gamma}{\tilde c}_{ZZ}
-\end{eqnarray}
-
-\begin{eqnarray}
- \mu_{ZH}^{\rm 27 TeV} &=& 1 +  0.63~ {\tilde c}_{Z\gamma}^2 + 3.26~ {\tilde c}_{ZZ}^2 + 1.11~ {\tilde c}_{Z\gamma} {\tilde c}_{ZZ} \\
- \mu_{WH}^{\rm 27 TeV} &=& 1 + 0.98~ {\tilde c}_{Z\gamma}^2 + 4.48~ {\tilde c}_{ZZ}^2
-  + 4.16~{\tilde c}_{Z\gamma}{\tilde c}_{ZZ} \\
- \mu_{\rm VBF}^{\rm 27 TeV} &=& 1  + 0.32~ {\tilde c}_{Z\gamma}^2 + 0.67~ {\tilde c}_{ZZ}^2
-  + 0.65~{\tilde c}_{Z\gamma}{\tilde c}_{ZZ}
-\end{eqnarray}
-The BSM predictions for VBF are derived using following cuts,
-\begin{equation}
- p_T(j) > 20~{\rm GeV}, |\eta(j)| < 5, \Delta\eta_{jj} > 3, m_{jj} > 130~{\rm GeV} \nonumber
-\end{equation}
-The gluon fusion and $ttH$ production channels are unaffected in presence of CP-violating $VVH$
-couplings.
-
-\subsubsection*{}{Decay: Inclusive}
-
-\begin{eqnarray}
- R_{\Gamma}(H \to 2e2\mu) &=& 1  + 0.308~ {\tilde c}_{Z\gamma}^2 + .00315~ {\tilde c}_{ZZ}^2
-   + (-.00577)~{\tilde c}_{Z\gamma}{\tilde c}_{ZZ} \\
- R_{\Gamma}(H \to 4e)
- &=& R_{\Gamma}(H \to 4\mu) \nonumber \\
- &=& 1  + 3.38~ {\tilde c}_{Z\gamma}^2 + 0.00239~ {\tilde c}_{ZZ}^2
-   + (-.00507)~{\tilde c}_{Z\gamma}{\tilde c}_{ZZ}
-\end{eqnarray}
-{\bf YS: what is $R_\Gamma$?}
-The BSM coefficients in $R_{\Gamma}(H \to 4e)$ are different from those given in the Appendix~A of
-Ref.~\cite{Boselli:2017pef} due to a difference in selection cuts. The above expression for Higgs decay
-into $4e$ is obtained after applying a selection cut of 15\,GeV on the leading and subleading lepton pairs
-of opposite sign.
-
-In the present analysis, we assume that total Higgs decay width remains unchanged in presence of BSM. In this
-case the signal strength for decay is just the ratio of decay widths in BSM and in SM.
-%
-\begin{eqnarray}
- \mu^{4\ell} &=& 1  + 2.06~ {\tilde c}_{Z\gamma}^2 +
- 0.00272~ {\tilde c}_{ZZ}^2  -
- 0.00537~ {\tilde c}_{Z\gamma} {\tilde c}_{ZZ}
-\end{eqnarray}
-%
-\subsubsection*{}{Decay: Differential}
-The kinematic variable considered in the present analysis is,
-\begin{equation}
-        \cos \phi =
-        \frac{\left( k_{12} \times k_1\right) \cdot \left( k_{12} \times k_3 \right)}
-        {\left| k_{12} \times k1 \right| \left| k_{12} × k_3 \right|}
-\end{equation}
-
-
-To begin with, we divide the distribution in two bins--[0:180] and [180:360]. The signal strengths for the decay in these two bins
-are given by,
-%
-\begin{eqnarray}
- \mu^{4\ell,\phi(1)} &=& 1 +  (-0.132)~{\tilde c}_{Z\gamma} +
-  (0.00265)~{\tilde c}_{ZZ}  +  (2.08)~{\tilde c}_{Z\gamma}^2  + \nonumber \\ &&
-  (0.00267)~{\tilde c}_{ZZ}^2 +
-  (-0.00592)~{\tilde c}_{Z\gamma} {\tilde c}_{ZZ}
-\end{eqnarray}
-%
-\begin{eqnarray}
- \mu^{4\ell,\phi(2)} &=& 1 + (0.145)~ {\tilde c}_{Z\gamma} +
-  (-0.00291)~{\tilde c}_{ZZ}  +  (2.04)~{\tilde c}_{Z\gamma}^2 + \nonumber \\ &&
-  (0.00276)~{\tilde c}_{ZZ}^2 +
-  (-0.00607)~{\tilde c}_{Z\gamma} {\tilde c}_{ZZ}
-\end{eqnarray}
-%
-{\it We will consider more than two bins to gain a better sensitivity on the linear coefficients.}
-
-\begin{figure}
-\centering
- \includegraphics[scale=0.5]{tCza-tCzz-4l-all-HL}
- \includegraphics[scale=0.5]{tCza-tCzz-4l-all-HE}
- \caption{A comparison of global fits using inclusive (purple) and differential (green) information in the
- definition of signal strength for the $H \to 4\ell$. The fit is obtained using all the production channels.
- In both cases, the uncertainties are kept same. The right plot thus shows the shear effect
- of increasing the centre-of-mass energy.}
-\end{figure}
-
-
-
-\subsubsection{$h \to \tau^+ \tau^-$}
-
-The most promising direct probe of CP violation in fermionic Higgs
-decays is the $\tau^+ \tau^-$ decay channel, which benefits from a
-relatively large $\tau$ Yukawa giving a SM branching fraction of
-$6.3\%$. Measuring the CP violating phase in the tau Yukawa requires a measurement of the linear polarizations of both $\tau$ leptons and and the azimuthal angle between them. This can be done by analyzing tau substructure, namely the angular distribution of the various components of the tau decay products.
-
-The main $\tau$ decay modes studied include $\tau^\pm \to
-\rho^\pm (770) \nu$, $\rho^\pm \to \pi^\pm \pi^0$~\cite{Bower:2002zx,
-  Desch:2003mw, Desch:2003rw, Harnik:2013aja, Askew:2015mda,
-  Jozefowicz:2016kvz} and $\tau^\pm \to \pi^\pm
-\nu$~\cite{Berge:2008wi, Berge:2008dr, Berge:2011ij}.  Assuming CPT
-symmetry, collider observables for CP violation must be built from
-differential distributions based on triple products of three-vectors.
-In the first case, $h \to \pi^\pm \pi^0 \pi^\mp \pi^0 \nu \nu$,
-angular distributions built only from the outgoing charged and neutral
-pions are used to determine the CP properties of the initial $\tau$
-Yukawa coupling.  In the second case, $h \to \pi^\pm \pi^\mp \nu \nu$,
-there are not enough reconstructible independent momenta to construct an observable sensitive to CP violation, requiring additional kinematic information such as the $\tau$ decay impact parameter.
-
-In the kinematic limit when each outgoing neutrino is taken to be
-collinear with its corresponding reconstructed $\rho^\pm$ meson, the
-acoplanarity angle, denoted $\Phi$, between the two decay planes
-spanned by the $\rho^\pm \to \pi^\pm \pi^0$ decay products is exactly
-analogous to the familiar acoplanarity angle from $h \to 4 \ell$
-CP-property studies.  Hence, by measuring the $\tau$ decay products in
-the single-prong final state, suppressing the irreudicible $Z \to
-\tau^+ \tau^-$ and reducible QCD backgrounds, and reconstructing the
-acoplanarity angle of $\rho^+$ vs.~$\rho^-$, the differential
-distribution in $\Phi$ gives a sinusoidal shape whose maxima and
-minima correspond to the CP-phase in the $\tau$ Yukawa coupling.  
-
-An optimal observable using the colinear approximation was derived in~\cite{Harnik:2013aja}. Assuming 70\% efficiency for tagging hadronic $\tau$ final states, and
-neglecting detector effects, the estimated sensitivity for the
-CP-violating phase of the $\tau$ Yukawa coupling using 3 ab$^{-1}$ at
-the HL-LHC is 8.0$^\circ$.  A more sophisticated
-analysis~\cite{Askew:2015mda} found that detector resolution effects
-on the missing transverse energy distribution degrade the expected
-sensitivity considerably, and as such, about 1 ab$^{-1}$ is required
-to distinguish a pure scalar coupling (CP phase is zero) from a pure
-pseudoscalar coupling (CP phase is $\pi/2$).
-
-At the HE-LHC, the increased signal cross section for Higgs production
-is counterbalanced by the increased background rates, and so the main
-expectation is that improvements in sensitivity will be driven by the
-increased luminosity and more optimized experimental methodology.
-Rescaling with the appropriate luminosity factors, the optimistic
-sensitivity to the $\tau$ Yukawa phase from acoplanarity studies is
-4-5$^\circ$, while the more conservative estimate is roughly an order
-of magnitude worse.
-
-\subsubsection{$ t\,\bar{t}\,h$}
-
-CP violation in the top quark-Higgs coupling is strongly constrained by EDM measurements and Higgs rate measurements~\cite{Brod:2013cka}. However, these constraints assume that the light quark Yukawa couplings and $hWW$ couplings have their SM values. If this is not the case, the constraints the phase of the top Yukawa coupling relax.
-    
-Assuming the EDM and Higgs rate  constraints can be avoided, the CP structure of the top quark Yukawa can be probed directly in $pp \to t\bar t h$. Many simple observables, such as $m_{t\bar t h}$ and $p_{T,h}$ are sensitive to the CP structure, but require reconstructing the top quarks and Higgs.
-
-Some $t\bar t h$ observables have been proposed recently that access the CP structure without requiring full event reconstruction. These in include the azimuthal angle between the two leptons in a fully leptonic $t/bar{t}$ decay with the additional requirement that the $p_{T,h} > 200\, \text{GeV}$~\cite{Buckley:2015vsa}, and the angle between the leptons (again in a fully leptonic $t/\bar t$ system) projected onto the plane perpendicular to the $h$ momentum~\cite{Boudjema:2015nda}. These observables only require that the Higgs is reconstructed and are inspired by the sensitivity of $\Delta \phi_{\ell^+\ell^-}$ to top/anti-top spin correlations in $pp \to t\bar t$~\cite{Mahlon:1995zn}. The sensitivity of both of these observables improves at higher Higgs boost (and therefore higher energy), making them promising targets for the HE-LHC, though no dedicated studies have been carried out to date.
 
 \subsection{Summary}
 

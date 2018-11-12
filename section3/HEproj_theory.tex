@@ -32,7 +32,7 @@ increased luminosity slowly turns Higgs pair production into a valid
 channel for precision measurements~\cite{he-lhc-hh}. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Information in Distributions}
+\subsubsubsection{Information in Distributions}
 \label{sec:features}
 
 Previous studies have shown that multivariate analysis, taking into 
@@ -131,7 +131,7 @@ $m_{hh}\approx 2m_t$.
 %---------------------------------------------
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Detector-Level Analysis}
+\subsubsubsection{Detector-Level Analysis}
 \label{sec:features}
 
 %-------------------------------------------------------
@@ -279,7 +279,7 @@ such that in the SM $\lambda_3=1$.
 
 While the prospects of a $100\, {\rm TeV}$ collider in measuring the self-coupling have been well studied \cite{Contino:2016spe}, relatively less attention has been paid to intermediate energy colliders such as HE-LHC. Previous studies indicate that the $hh\rightarrow b\bar{b}\gamma\gamma$ channel has the most promising signature at hadron colliders, and this is expected to be true at $27\, {\rm TeV}$ as well. However, the $b\bar{b}\gamma\gamma$ channel still suffers from significant backgrounds from particle misidentification in the detector, making a dedicated detector study including these effects essential. Finally, as discussed below, single-Higgs production -- including through gluon-fusion -- is a significant background that must be properly understood to accurately project the capabilities of HE-LHC. In what follows, we present a projection of the capabilities of a HE-LHC to measure the self-coupling with these intricacies carefully considered.
 
-\subsubsection{Signal and Background Simulations}
+\subsubsubsection{Signal and Background Simulations}
 
 The signal and background samples generated for this study are summarized in Table \ref{t.backgrounds}. We also show the cross sections of $14\, {\rm TeV}$ samples generated for validation with previous projections. 
 
@@ -323,7 +323,7 @@ The background from single Higgs production via gluon fusion ($ggF(\gamma\gamma)
 $h(b\bar{b})h(\gamma\gamma)$  	& {\sc\small MadGraph}/{\sc\small Pythia~8} 	& 0.11      			& 0.41      			& NNLO/NNLL								& $209.6$		& $\pm$ & $0.2$ \\ \hline
 $t\bar{t}h(\gamma\gamma)$     		& {\sc\small Pythia~8}           			& 1.40      			& 6.54      			& NLO  										& $286.8$		& $\pm$ & $1.6$\\
 $Zh(\gamma\gamma)$            		& {\sc\small Pythia~8}           			& 2.24      			& 5.58      			& NLO 											& $67.1$ 		& $\pm$ & $0.7$ \\
-$b\bar{b}h(\gamma\gamma)$     	& {\sc\small Pythia~8}           			& 1.26      			& 3.42      			& NLO 											& $2.3$ 		& $\pm$ & $0.1$ \\
+%$b\bar{b}h(\gamma\gamma)$     	& {\sc\small Pythia~8}           			& 1.26      			& 3.42      			& NLO 											& $2.3$ 		& $\pm$ & $0.1$ \\
 $ggF(\gamma\gamma)$           		& {\sc\small MadGraph}/{\sc\small Pythia~8} 	& 83.2      			& 335.1     		& $\text{N}^{3}\text{LO}$ 				& $349.7$ 	& $\pm$ & $9.5$ \\ \hline
 $b\bar{b}\gamma\gamma$        	& {\sc\small MadGraph}/{\sc\small Pythia~8} 	& $3.4\times 10^{2}$     & $9.5\times 10^{2}$     & LO 					& $414.6$ 	& $\pm$ & $10.3$ \\
 $c\bar{c}\gamma\gamma$        		& {\sc\small MadGraph}/{\sc\small Pythia~8} 	& $4.4\times 10^{2}$     & $1.5\times 10^{3}$     & LO 					& $185.7$ 	& $\pm$ & $4.2$ \\
@@ -334,7 +334,7 @@ $b\bar{b}jj$                  					& {\sc\small MadGraph}/{\sc\small Pythia~8} 	
 $Z(b\bar{b})\gamma\gamma$   		& {\sc\small MadGraph}/{\sc\small Pythia~8} 	& 2.61     			& 5.23      			& LO 											& $21.5$ 		& $\pm$ & $0.4$ \\ \hline
 $t\bar{t}$                    					& {\sc\small MadGraph}/{\sc\small Pythia~8} 	& $6.7\times 10^{5}$     	& $2.9\times 10^{6}$     	& NNLO 		& $11.6$ 		& $\pm$ & $3.3$ \\
 $t\bar{t}\gamma$              				& {\sc\small MadGraph}/{\sc\small Pythia~8} 	& $1.7\times 10^{3}$     	& $7.9\times 10^{3}$     & NLO 				& $145.0$ 	& $\pm$ & $10.3$ \\ \hline
-\multicolumn{5}{|c|}{Total Background}					& $1928.1$ & $\pm$ & $22.7$ \\ \hline
+\multicolumn{5}{|c|}{Total Background}					& $1925.8$ & $\pm$ & $22.7$ \\ \hline
 \multicolumn{5}{|c|}{Significance ($S/\sqrt{B}$)}		& $4.77$ & $\pm$ & $0.14$ \\ \hline
 \end{tabular}
 \caption{List of signal and background processes, the event generator used to simulate the matrix element and parton shower, and the cross section of each process along with the corresponding order in QCD at which the cross section is normalized. In the right-most column we show the expected number of events after all the event selection criteria have been applied.}
@@ -342,14 +342,14 @@ $t\bar{t}\gamma$              				& {\sc\small MadGraph}/{\sc\small Pythia~8} 	&
 \end{table}
 \endgroup
 
-\subsubsection{Detector Simulation}
+\subsubsubsection{Detector Simulation}
 
 To approximate the effects of detector resolution and reconstruction efficiencies, we use {\sc\small Delphes~3}\ with a dedicated card developed to approximate the performance of ATLAS and CMS at HL-LHC. We take this as a reasonable benchmark for the expected performance after the HE-LHC upgrade.
 
 With respect to the {\sc\small Delphes}\ setup used in \cite{Homiller:2018xxx}, the card here has an improved E-Cal resolution and assumes a higher photon identification efficiency, but a somewhat degraded dijet mass resolution. Aside from resolution and efficiency effects, particle misidentification in the detector is also an important source of backgrounds to $hh\rightarrow b\bar{b}\gamma\gamma$. To avoid issues with MC statistics, we implement $b$-tagging and jet mistagging rates at analysis level using a reweighting scheme, with probabilities taken as functions of the jet $p_T$ as in Ref. \cite{Homiller:2018xxx}. These probabilities correspond to roughly $p_{b\rightarrow b} \approx 70\%$, $p_{c\rightarrow b} \approx 20\%$ and $p_{j\rightarrow b} \lesssim 1\%$. The probability for a light jet to fake a photon in the detector is also included via reweighting at analysis level as a function of $p_T$ (see \cite{Homiller:2018xxx}) which peaks at $5\times 10^{-4}$ for $p_{T,j} \sim 60\, {\rm GeV}$ before falling exponentially to $\sim 1\times 10^{-4}$.
 
 
-\subsubsection{Results and Limits on the Self-Coupling}
+\subsubsubsection{Results and Limits on the Self-Coupling}
 
 To isolate the $hh \rightarrow b\bar{b}\gamma\gamma$ signal, we implement selection cuts as follows:
 \begin{itemize}

@@ -4,6 +4,7 @@
 \newcommand{\ttH}{\ensuremath{\ttbar\text{H}}\xspace}
 \newcommand{\tH}{\ensuremath{\text{tH}}\xspace}
 \newcommand{\Hbb}{\ensuremath{\text{H}\rightarrow\bbbar}\xspace}
+\newcommand{\Htobb}{\ensuremath{\text{H}\rightarrow\bbbar}\xspace}
 \newcommand{\ttHF}{\ensuremath{\ttbar+\text{HF}}\xspace}
 \newcommand{\TeV}{\ensuremath{\,\text{Te\hspace{-.08em}V}}\xspace}
 \providecommand{\fbinv}{\mbox{\ensuremath{\,\text{fb}^\text{$-$1}}}\xspace}
@@ -23,39 +24,123 @@
 \subsubsection{Measurements in \ttH and \tH production modes}
 \begin{center}{\it by A. Calandri, M. Schr\"oder} \end{center}
 
-%\author{Alessandro Calandri, Matthias Schr\"oder}
-%\date{July 31th, 2018}
-
-One of the main targets of the High-Luminosity LHC (HL-LHC) upgrade is to achieve precision measurements of the Higgs boson properties. The Yukawa coupling of the Higgs boson to the top quark is expected to be of the order of unity and could be partially sensitive to effects beyond the Standard Model (SM). Therefore, a direct measurement of the coupling of the Higgs boson to top quarks is extremely important to access possible deviations in the top quark's Yukawa couplings due to couplings to new particles. Such a measurement can be performed by measuring the rate of the process where the Higgs boson is produced in association with a pair of top quarks (\ttH) or a single top quark (\tH). Even though the \ttH process is characterized by a small cross section compared to the dominant gluon fusion Higgs boson production (approximately two orders of magnitude smaller), the signature with top quarks in the final state can be exploited to reconstruct the event and gives access to many Higgs boson decay modes.
+One of the main targets of the High-Luminosity LHC (HL-LHC) upgrade is to achieve precision measurements of the Higgs boson properties.
+The Yukawa coupling of the Higgs boson to the top quark is expected to be of the order of unity and could be partially sensitive to effects beyond the Standard Model (SM).
+Therefore, a direct measurement of the coupling of the Higgs boson to top quarks is extremely important to access possible deviations in the top quark's Yukawa couplings due to couplings to new particles.
+Such a measurement can be performed by measuring the rate of the process where the Higgs boson is produced in association with a pair of top quarks (\ttH) or a single top quark (\tH).
+Even though the \ttH process is characterised by a small cross section compared to the dominant gluon fusion Higgs boson production (approximately two orders of magnitude smaller), the signature with top quarks in the final state can be exploited to reconstruct the event and gives access to many Higgs boson decay modes.
 The SM \tH production cross-section is yet smaller by a factor five, but due to interference effects between diagrams with top-Higgs and W-boson-Higgs couplings, the process allows access to the sign of the top-Higgs Yukawa coupling.
-The ATLAS and CMS Collaborations have searched for the \ttH and \tH production with LHC Run 2 data of 2015, 2016, and 2017, and observed the Higgs boson production in association with a top-quark pair \cite{Aaboud:2018urx,Sirunyan:2018hoz}. The analyses are sensitive to a large variety of final-state event topologies, H$\rightarrow$WW$^{*}$, H$\rightarrow$ZZ$^{*}$, H$\rightarrow \tau^{+}\tau^{-}$, H$\rightarrow b\bar{b}$ and H$\rightarrow \gamma\gamma$. They are all considered in the analyses and in the coupling combination.  
+The ATLAS and CMS Collaborations have searched for the \ttH and \tH production with LHC Run 2 data of 2015, 2016, and 2017, and observed the Higgs boson production in association with a top-quark pair~\cite{Aaboud:2018urx,Sirunyan:2018hoz}.
+The analyses are sensitive to a large variety of final-state event topologies, H$\rightarrow$WW$^{*}$, H$\rightarrow$ZZ$^{*}$, H$\rightarrow \tau^{+}\tau^{-}$, \Htobb and H$\rightarrow \gamma\gamma$.
+Dedicated multivariate analysis techniques, including boosted decision trees and deep neural networks, that combine the information of several discriminating variables, as well as classifiers based on a matrix element method are utilised to identify the signal against the background.
 
-One of the main goal of the HL-LHC upgrade is to allow precision measurements of the Higgs boson properties, especially for what regards the Yukawa coupling of the Higgs boson to top quarks. The projection studies performed by ATLAS and CMS and reported in this Section are based on the extrapolation of Run 2 results to the 3000 fb$^{-1}$ integrated luminosity expected at HL-LHC. In addition, the signal and background production cross sections are scaled to account for the increase of the LHC center-of-mass energy expected for HL-LHC ($\sqrt{s}$=13 TeV $\rightarrow$ 14 TeV).
+In this Section, projections based on dedicated analyses with 36\fbinv of Run-II data of 2016 are presented, which target the \ttH, \Htobb channel with leptonic decays of the \ttbar system~\cite{Aaboud:2017rss,Sirunyan:2018mvw} and the \ttH multi-lepton final state~\cite{Aaboud:2017jvq}, where the Higgs boson decays into a pair of Z and W vector bosons or into $\tau$ leptons.
+Furthermore, results are presented for the projection of a search for \tH production that considers all of the above decay channels.
 
-The Run 2 extrapolation to 3000 fb$^{-1}$ will provide much better precision than previously expected. As a consequence, the limitation induced by the current knowledge of the systematics uncertainty will occur at a lower integrated luminosity than what has been previously expected if the magnitude of such uncertainties are not reduced.
-For example, the studies by the ATLAS Collaboration reported in \cite{ATL-PHYS-PUB-2018-010} focus on the most critical theory uncertainties in \ttH (H decaying to multileptons, ML, i.e.  H$\rightarrow$WW$^{*}$, H$\rightarrow$ZZ$^{*}$, H$\rightarrow \tau^{+}\tau^{-}$ and H$\rightarrow \gamma\gamma$) and their impact on the cross section and signal strength measurements with 3000 fb$^{-1}$, while the studies by CMS Collaboration reported in \cite{CMS-PAS-FTR-18-011} investigate \ttH production in the \Hbb final state as well as \tH production in the ML final state.
-Figure \ref{fig:topyukawa:theoATLAS} (a) shows the breakdown of uncertainties on the signal strength ($\mu$) for the ttH ML channel as a function of the integrated luminosity. These uncertainties affect the signal strength and not the cross section measurement accuracy. The main source of signal theory uncertainty for the measurement is the parton shower modeling which is evaluated from the comparison of alternative simulated samples as in the Run 2 measurement \cite{Aaboud:2017jvq}. It is the main component of the '\ttH model (acceptance)' label in Figure \ref{fig:topyukawa:theoATLAS} (a) and it becomes dominant over the statistical precision ('data statistics') above 300 fb$^{-1}$. In addition, the background modeling and the experimental systematics are highly ranked in the measurement but they are expected to reduce significantly at HL-LHC. Similar conclusions can be drawn in the \ttH, H$\rightarrow \gamma\gamma$ final state as shown in Figure \ref{fig:topyukawa:theoATLAS} (b). In this case, the '\ttH model (acceptance)' systematic uncertainty matches the statistical accuracy of the measurement for the full HL-LHC dataset (3000 fb$^{-1}$). 
-In the \Hbb channel, the sensitivity of the Run 2 analysis is limited by the modelling of the \ttbar + heavy-flavour jets (\ttHF) background Figure \ref{fig:topyukawa:theoATLAS} (c).
-Substantial improvement in analysis precision is expected to arise from direct measurements of the \ttHF cross-sections, exploiting the large amount of data at the HL-LHC and the capability of the fit to constrain these uncertainties.
-\begin{figure}[!htbp]
-  \begin{center}
-    \subfloat[]{\includegraphics[width=0.34\textwidth]{section2/plots/breakdown_ML.png}}
-    \subfloat[]{\includegraphics[width=0.34\textwidth]{section2/plots/breakdown_gg.png}}
-    % \subfloat[]{\includegraphics[width=0.34\textwidth]{section2/plots/breakdown_bb.png}}
-    \textbf{Add plot: CMS ttH bb}
-    \caption{Breakdown of uncertainties affecting the Higgs boson signal strength for the \ttH multileptons (a), \ttH, H$\rightarrow\gamma\gamma$ (b), and \ttH, \Hbb (c) channels as a function of the integrated luminosity for $\sqrt{s}$=14 TeV.}
-    \label{fig:topyukawa:theoATLAS}
-  \end{center}
+
+\subsubsubsection{Sensitivity to \ttH production in the \bbbar and multi-lepton final states}
+
+The \ttH analyses in the \Htobb final state benefit from the large branching ratio.
+At the same time, the relatively poor b jet energy resolution, the large jet combinatorics, and the sizeable background of SM processes with large modelling uncertainties, in particular \ttbar+heavy-flavour jet (\ttHF) production, pose major challenges.
+The expected relative precision of the \ttH, \Htobb signal strength ($\mu$) measurement for the ATLAS and CMS analyses~\cite{ATLAS-PHYS-PUB-2018-XY,CMS-PAS-FTR-18-011} reach the level of XX--XX\% and 7--11\% at 3000\fbinv for ATLAS and CMS, respectively, depending on the scenario and the assumptions of the \ttHF background modelling, as detailed below.
+
+Table~\ref{tab:tthbb:breakdown:cms} shows a breakdown of the contributing sources of uncertainty in the CMS analysis; their evolution with integrated luminosity is depicted in Fig.~\ref{fig:tthbb:evolution:cms}.
+Compared to the result at 35.9\fbinv, the relative contribution of the experimental uncertainties, such as the b-tagging uncertainty, remains approximately the same, while the signal-theory uncertainty component increases and becomes the major uncertainty component, mostly driven by the inclusive cross-section uncertainty on the SM prediction entering $\mu$.
+The statistical uncertainty becomes small compared to the systematic components.
+A similar behaviour is observed in the ATLAS analysis.
+\begin{table}
+  \centering
+  \caption{
+    Breakdown of the contributions to the expected uncertainties on the \ttH signal-strength $\mu$ in the \Htobb channel at different luminosities for the scenarios S1 and S2 at CMS.
+    The uncertainties are given in percent relative to $\mu=1$.
+    Results with 35.9\fbinv are intended for comparison with the projections to higher luminosities and differ in parts from~\cite{bib:cms:tthbb} for consistency with the projected results: uncertainties due to the limited number of Monte Carlo statistics have been omitted and the assumptions in S1/S2 on the theory uncertainties are applied.
+  }
+  \label{tab:tthbb:breakdown:cms}
+  \begin{tabular}{l rrr rrr}
+    \hline
+    & \multicolumn{2}{c}{S1} & \multicolumn{2}{c}{S2} \\
+    Source & \multicolumn{1}{c}{35.9\fbinv} & \multicolumn{1}{c}{3000\fbinv} & \multicolumn{1}{c}{35.9\fbinv} & \multicolumn{1}{c}{3000\fbinv} \\
+    \hline
+    Total            & 48.7 &11.1 & 46.1 & 7.3 \\
+    Stat             & 26.7 & 2.9 & 26.7 & 2.9 \\
+    SigTh            & 10.8 & 8.7 &  5.0 & 4.4 \\
+    BkgTh            & 28.6 & 4.1 & 25.6 & 3.5 \\
+    ~~~\ttHF XS      & 14.6 & 0.8 & 16.5 & 0.7 \\
+    Exp              & 17.4 & 4.2 & 16.6 & 2.6 \\
+    ~~~Luminosity    &  1.6 & 1.8 &  0.5 & 0.8 \\
+    ~~~B tagging     & 12.0 & 2.8 & 10.8 & 1.6 \\
+    ~~~JES           & 10.9 & 1.6 & 11.3 & 1.6 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\begin{figure}
+  \centering
+  \begin{tabular}{@{}c@{}c@{}}
+    \includegraphics[width=0.49\textwidth]{\main/section2/plots/r_uncertainty_evolution_substracted_YR2018_S1_breakdown_mu_uncertainties_vs_lumi_add_points.pdf} &
+    \includegraphics[width=0.49\textwidth]{\main/section2/plots/r_uncertainty_evolution_substracted_YR2018_S2_breakdown_mu_uncertainties_vs_lumi_add_points.pdf} \\
+  \end{tabular}
+  \caption{
+    Expected uncertainties on the \ttH signal strength in the \Htobb channel as a function of the integrated luminosity under the S1 (left) and S2 (right) scenarios at CMS.
+    Shown are the total uncertainty (black) and contributions of different groups of uncertainties.
+    Results with 35.9\fbinv are intended for comparison with the projections to higher luminosities and differ in parts from~\cite{bib:cms:tthbb} for consistency with the projected results: uncertainties due to the limited number of MC events have been omitted and the assumptions in S1/S2 on the theory uncertainties are applied.  
+   }
+   \label{fig:tthbb:evolution:cms}
 \end{figure}
 
+\begin{figure}
+  \centering
+  \caption{
+    Ranking of the ten most significant systematics uncertainties under S2 in the single lepton (a) and dilepton (b) final states at ATLAS listed in accordance to their post-fit impact on the \ttH cross section.
+  }
+  \label{fig:tthbb:impacts:atlas}
+%add ATLAS ranking
+\end{figure}
 
-\subsubsubsection{Results on top-Yukawa coupling extrapolations at HL-LHC in ATLAS and CMS}
-As reported earlier in this Section, the extrapolation is based on the scaling of the current Run 2 analyses performed by the ATLAS and CMS experiments to HL-LHC conditions ($\int \mathcal{L}dt$=3000 fb$^{-1}$, $\sqrt{s}$=14 TeV).
-Two different assumptions about the evolution of the uncertainties are made to reflect a realistic range of the expected result:
-they are kept the same as in the Run 2 studies (scenario 1) or the theory uncertainties are halved and th experimental uncertainties are scaled down by the square root of the integrated luminosity until they reach a defined lower limit based on the estimated performance of the upgraded detectors (scenario 2).
-Figure \ref{fig} shows the expected precision for ATLAS and CMS on the signal strength ($\Delta\mu$/$\mu$) and on the measured cross section.
-This process should be measured with an ultimate uncertainty on the signal strength of approximately AA\% in H$\rightarrow\gamma\gamma$, BB\% (for \ttH) and BBB\% (for \tH) in the multilepton final state, and CC\% in \Hbb. This will provide stringent constraints on possible beyond SM contributions to \ttH. Table \ref{} shows the uncertainty on the Higgs boson signal strength and its breakdown in the statistical component as well as the components from the theory and the experimental systematic uncertainties.
-The significance of the \ttH process in the H$\rightarrow \gamma\gamma$, ML, and \bbbar final states is D$\sigma$, E$\sigma$, and F$\sigma$, respectively, while G$\sigma$ are obtained for the \TH process in the ML final state.
+In both analyses, a rather sizeable reduction of the uncertainties related to the modelling of the \ttHF background, which relies on MC simulation, is observed.
+Relevant nuisance parameters are constrained to a few percent, such as the nuisance parameters describing the difference between four and five-flavour scheme calculations which is treated as a 2-point systematic uncertainty in the ATLAS analysis (Fig.~\ref{fig:tthbb:impacts:atlas}) or the nuisance parameters describing the additional \ttHF cross-section uncertainties in the CMS analysis (Table~\ref{tab:tthbb:breakdown:cms} and Fig.~\ref{fig:tthbb:evolution:cms}).
+This is attributed to the increasing power of the profile likelihood fit to constrain the uncertainties.
+%The presented results rely on the \ttHF background model that has been designed for the analyses of 35.9\fbinv of data and that is not expected to work optimally without substantial modifications for higher integrated luminosities.
+
+The results illustrate that the background modelling, which has been designed to work well with 35.9\fbinv of data, will need to be refined at 3000\fbinv, requiring improved simulations or in-situ measurements of the \ttHF processes themselves.
+The observed constraints on the \ttHF background model systematics uncertainties shown in Fig.~\ref{fig:tthbb:impacts:atlas} demonstrate that there will be enough data at the HL-LHC to obtain further information about the background beyond the current modelling. The level at which the nuisance parameters are constrained at 3000\fbinv, corresponding to a few percent cross-section uncertainty, demonstrate the level of sensitivity at which the data will be able to distinguish different models and sets a benchmark for the required precision.
+Monte Carlo prediction will thus need to improve sufficiently to match the data within the uncertainties expected at 3000\fbinv.
+%The results presented here have to be interpreted in light of these considerations.
+
+Following the expected improvement in the theoretical uncertainties on the \ttHF cross-section calculation described in Section~\ref{}, ATLAS and CMS have also performed the \ttH, \Htobb extrapolation assuming that the reduction of the \ttHF modelling uncertainties is limited to factors of two (in scenario S1) and three (in scenario S2) relative to the uncertainty at 35.9\fbinv.
+In this case, the obtained relative \ttHF modelling uncertainties are approximately 23\% (S1) and 15\% (S2) in the ATLAS analysis as reported in Table~\ref{tab:tthbb:breakdown:atlas} and approximately 15\% (S1) and 10\% (S2) in the CMS analysis. These results enter the combined coupling measurement presented in Section~\ref{}. The impact of limiting the constraints of the \ttHF uncertainties on the total uncertainties on the extracted parameters is relatively small, e.g.\ the uncertainty on $\kappa_{\text{t}}$ increases by approximately 10\% and 15\% in CMS and ATLAS, respectively. 
+\begin{table}
+  \centering
+  \caption{
+    Breakdown of the contributions to the expected uncertainties on the \ttH cross section in the \Htobb channel at different luminosities for the scenarios S1 and S2 at ATLAS. As discussed in the text, the extrapolation assumes the limitations on the reduction of the \ttHF modelling to a factor 2 and a factor 3 of the Run 2 prior uncertainties (Section \ref{}).
+    Therefore, the additional modelling uncertainty used for the extrapolation is 23\% in S1 and 15\% in S2.
+    Uncertainties due to the limited number of Monte Carlo statistics have been omitted and the assumptions in S1/S2 on the theory uncertainties are applied.  
+  }
+  \label{tab:tthbb:breakdown:atlas}
+  % add ATLAS numbers
+\end{table}
+
+In conclusion, \ttH production in the \Htobb final state will provide a powerful channel to probe the top-Higgs Yukawa coupling at the HL-LHC.
+The control of the \ttHF background is crucial, and it is expected to benefit from measuring relevant quantities from data, thus mitigating the impact of theoretical uncertainties.
+
+ATLAS performs the extrapolation to HL-LHC also for the ttH multilepton final state~\cite{ATLAS-PHYS-PUB-2018-XY} where the Higgs boson decays into a pair of Z and W vector bosons or into $\tau$’s. Table \ref{tab:tthml:breakdown:atlas} shows the results on the extrapolation to 3000 fb$^{-}$ under S1 and S2. As shown in the ranking plot in Figure \ref{fig:tthml:impacts:atlas}, in the $\tau$ final state, the dominant uncertainty pertains to the object reconstruction for such a channel. It is also worth noting that the main theoretical systematics concerns the modelling of the tt+V background. Finally, fake lepton uncertainties are moderately constrained as well: this is due to the absence of reduction factor of prior uncertainties for such a source of systematics under S1 and S2. 
+\begin{table}
+  \centering
+  \caption{
+    Breakdown of the contributions to the expected uncertainties on the \ttH cross section in the multilepton channel at different luminosities for the scenarios S1 and S2 at ATLAS. Uncertainties due to the limited number of Monte Carlo statistics have been omitted and the assumptions in S1/S2 on the theory uncertainties are applied.
+  }
+  \label{tab:tthbb:breakdown:atlas}
+  % add ATLAS numbers
+\end{table}
+\begin{figure}
+  \centering
+  \caption{
+    Ranking of the ten most significant systematics uncertainties under S2 in the \ttH final state with (a) and without (b) $\tau$ leptons in the ATLAS analysis listed in accordance to their post-fit impact on the \ttH cross section.
+  }
+  \label{fig:tthml:impacts:atlas}
+ %add ATLAS ranking
+\end{figure}
+
 
 \subsubsubsection{Sensitivity to \tH production}
 
@@ -96,4 +181,67 @@ The evolution of the expected uncertainty on the measurement of $\mu_{\tH}$, ass
 \end{table}
 
 \subsubsection{Constraints from differential measurements}
-\begin{center}{\it To be written by: T. Klijnsma} \end{center}
+\label{sec:diffxsinterpretation}
+
+\begin{center}{\it Written by: T. Klijnsma} \end{center}
+
+% Assuming the following concepts are already defined (if not, should be defined here):
+% CL, kappa_c, kappa_b, kappa_t
+
+Higgs boson couplings can be constrained by fitting theoretical predictions for $\pTH$~\cite{Bishara:2016jga,Grazzini:2017szg,Grazzini:2016paz} to data, exploiting not only the overall normalization (as is done in inclusive measurements~\cite{%
+Khachatryan:2016vau,% 7 & 8 TeV coupling combination
+Aad:2015zhl,% 7 & 8 TeV mass combination
+CMS:2018lkl% 13 TeV CMS coupling combination
+}), but also the shape of the distribution.
+% 
+One of the first constraints on Higgs boson couplings using differential Higgs boson production cross sections was made in Ref.~\cite{Bishara:2016jga}.
+% 
+The limits $\kappac \in [ -16, 18 ]$ at 95\% CL were found, using data collected by the ATLAS Collaboration at $\sqrt{s}=8$\TeV~\cite{Aad:2015lha}, corresponding to an integrated luminosity of $20.3$\fbinv.
+% 
+More recently, the CMS Collaboration performed a similar fit using data~\cite{CMS-PAS-HIG-17-028} collected at $\sqrt{s}=13$\TeV, corresponding to an integrated luminosity of $36.1$\fbinv.
+% 
+The limits on $\kappab$ and $\kappac$ are discussed in Section~\todo{(REF TO FLAVOR SECTION HERE)}, whereas the interpretation in terms of $\kappat$ and $\cg$, the anomalous direct coupling to the gluon field, is discussed here.
+% 
+The projected simultaneous limits on $\kappat$ and $\cg$ at $3000\fbinv$ are shown in Fig.~\ref{fig:ktcg_couplingdependentBRs}, assuming branching fractions that scale according to SM predictions.
+% 
+It is expected to observe the loop in the gluon-fusion production process, which is clear from the fact that heavy top mass limit, given by the point $(\kappat =0, \cg=\sim 1/12)$, is excluded.
+
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=0.49\linewidth]{\main/section2/plots/differentials/projection_ktcg_plot_couplingdependentBRs.pdf}
+    \includegraphics[width=0.49\linewidth]{\main/section2/plots/differentials/projection_ktcg_plot_couplingdependentBRs_scenario2.pdf}
+    % 
+    \caption{
+        Projected simultaneous fit for $\kappat$ and $\cg$, assuming a coupling dependence of the branching fractions for Scenario 1 (left) and Scenario 2 (right).
+        % 
+        The one standard deviation contour is drawn for the combination ($\hgg$, $\hzz$, and $\hbb$), the $\hgg$ channel, and the $\hzz$ channel in black, red, and blue, respectively.
+        % 
+        For the combination the two standard deviation contour is drawn as a black dashed line, and the shading indicates the negative log-likelihood, with the scale shown on the right hand side of the plots.
+        }
+    \label{fig:ktcg_couplingdependentBRs}
+  \end{center}
+\end{figure}
+
+In order to determine solely the constraint obtained from the distribution (and not the overall normalization), the fit is repeated with the branching fractions implemented as nuisance parameters with no prior constraint, effectively profiling the overall normalization.
+% 
+With this parametrization, the sensitivity to the sign of $\kappat$ coming from the $\hgg$ branching fraction is lost.
+% 
+The fits obtained this way are shown in Fig.~\ref{fig:ktcg_couplingdependentBRs}; although less significantly, the loop is still distinguished from the point-like coupling to the gluon field, using only the information in the shape of the distribution.
+
+\begin{figure}[hbtp]
+  \begin{center}
+    \includegraphics[width=0.49\linewidth]{\main/section2/plots/differentials/projection_ktcg_plot_floatingBRs.pdf}
+    \includegraphics[width=0.49\linewidth]{\main/section2/plots/differentials/projection_ktcg_plot_floatingBRs_scenario2.pdf}
+    % 
+    \caption{
+        Projected simultaneous fit for $\kappat$ and $\cg$ with the branching fractions implemented as nuisance parameters with no prior constraint for Scenario 1 (left) and Scenario 2 (right).
+        % 
+        The one standard deviation contour is drawn for the combination ($\hgg$, $\hzz$, and $\hbb$), the $\hgg$ channel, and the $\hzz$ channel in black, red, and blue, respectively.
+        % 
+        For the combination the two standard deviation contour is drawn as a black dashed line, and the shading indicates the negative log-likelihood, with the scale shown on the right hand side of the plots.
+        }
+    \label{fig:ktcg_couplingdependentBRs}
+  \end{center}
+\end{figure}
+
+
