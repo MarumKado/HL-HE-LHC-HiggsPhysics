@@ -8,6 +8,7 @@ bib = open("tmp.bib", "w")
 for line in blg:
     if line.startswith("Warning--I didn't find a database entry"):
         key = line.split()[-1].replace('"', "")
+        if not key and ":" in key: continue
         val = pyinspire.get_text_from_inspire("texkey " + key, "bibtex")
         if val and "@" in val: bib.write(val)
 bib.close()
