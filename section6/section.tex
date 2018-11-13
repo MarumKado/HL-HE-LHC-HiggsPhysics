@@ -16,7 +16,10 @@
  \newcommand{\MGvATNLO}{\textsc{aMC@NLO}}
  \newcommand{\PYTHIA}{\textsc{PYTHIA}}
  \newcommand{\eqn}{equation}
-
+\newcommand{\METvec}{\ensuremath{\vec{\MET}}}
+\newcommand{\ptvec}{\ensuremath{\vec{\mathrm{p}_{T}}}}
+\newcommand{\BHinv}{\ensuremath{\text{B}(\PH\to \text{inv.})}\xspace}
+\newcommand{\fbinv}{\ensuremath{\,\text{fb}^{-1}\xspace}}
 
 \begin{document}
 
@@ -46,95 +49,100 @@ This contribution is organized as follows. We briefly review in Section~\ref{sec
 
 \subsection{Main channels for direct searches}\label{sec:expinp}
 
-Given the VBF production presents the best sensitivity, this channel is chosen to investigate the sensitivity of the search with the HL-LHC. The CMS phase-2 detector is simulated using Delphes~\cite{deFavereau:2013fsa} (fast parametrisation), with on average 200 interactions per bunch crossing.  A
-cut-and-count approach similar to the one described in the analysis from~\cite{Sirunyan:2018owy} is used.
+Given the VBF Higgs production (VBF\PH) presents the best sensitivity, this channel is chosen to investigate the sensitivity of the search with the HL-LHC. The CMS phase-2 detector is simulated using Delphes~\cite{deFavereau:2013fsa} (fast parametrisation), with on average 200 interactions per bunch crossing.  A
+cut-and-count approach similar to the one described in the analysis from Ref.~\cite{Sirunyan:2018owy} is used.
 
-The VBF Higgs signal samples are produced using \POWHEG
+The VBF\PH signal samples are produced using \POWHEG
 v2.0~\cite{Alioli:2010xd,Nason:2009ai} at next-to-leading order (NLO)
-in perturbative QCD, assuming 100\% branching ratio of the Higgs boson
+in perturbative QCD, assuming 100\% branching ratio \BHinv of the Higgs boson
 to invisible final states, and normalised using the SM inclusive Higgs
-boson production cross sections taken from~\cite{deFlorian:2016spz}. The gluon-fusion
-contribution is accounted for, depending on the selection chosen,
-based on the full-simulation samples produced at 13\,TeV, applied as a
-ratio to the Delphes expected VBFH yields.
+boson production cross sections provided in Ref.~\cite{deFlorian:2016spz}.  Full-simulation samples produced at 13\,TeV are used to derive the gluon-fusion contribution, applied as a fraction of the Delphes expected VBF\PH yields.
 
 The main backgrounds are processes involving vector bosons (W,Z)
 produced in association with jets, either through QCD or electroweak
-(EWK) vertices. They are simulated at leading order (LO)
-using \MGvATNLO v2.2.2~\cite{Alwall:2014hca} interfaced with \PYTHIA
-v8.205 or higher. Top processes contribute also to the backgrounds and
-are simulated using either \POWHEG\ or \MGvATNLO. The QCD multijet
-background is simulated using \MGvATNLO\ interfaced with \PYTHIA,
-imposing a minimum threshold of 1000 GeV on the dijet mass at parton
-level.
+(EWK) vertices.  Monte Carlo samples for these backgrounds are
+generated at leading order (LO) using \MGvATNLO v2.2.2~\cite{Alwall:2014hca} interfaced with \PYTHIA v8.205~\cite{Sjostrand:2014zea} or higher. SM processes involving top quarks also contribute to the
+background, and are simulated using a combination of the \POWHEG and \MGvATNLO generators. Backgrounds arising from QCD multijet events are simulated using \MGvATNLO interfaced with \PYTHIA, imposing a minimum threshold of 1000\,GeV on the dijet mass at parton level.
 
-The objects studied are as defined for the analysis~\cite{Sirunyan:2018owy}, with extended coverage to $\eta=3.0$
-for leptons, b-tagged jets and tau jets. Electrons passing loose
-identification criteria, with a transverse momentum p$_T>10$ GeV, and
-pseudorapidity $|\eta|<2.8$ are vetoed. Similarly, muons passing loose
-identification criteria with p$_T>20$ GeV and $|\eta|<3.0$ are
-vetoed. Taus passing loose identification criteria with p$_T>20$ GeV
+
+The objects studied are as defined for the analysis in Ref.~\cite{Sirunyan:2018owy}, with extended coverage in pseudorapidity $\eta$. Electrons passing loose
+identification criteria, with a transverse momentum p$_T>10$\,GeV, and $|\eta|<2.8$ are vetoed. Similarly, muons passing loose
+identification criteria with p$_T>20$\,GeV and $|\eta|<3.0$ are
+vetoed. Taus passing loose identification criteria with p$_T>20$\,GeV
 and $|\eta|<2.8$ are vetoed. Jets are reconstructed using the
-anti-k$_T$ algorithm~\cite{Cacciari:2008gp} with a parameter size of
-0.4, p$_T>30$ GeV and $|\eta|<5.0$, and are corrected for pile-up
-effects using the so-called ``Puppi''
-scheme~\cite{Bertolini:2014bba}. Jets passing a b-tagging algorithm
-which uses timing information, and with medium working point
-(b-tagging efficiency around 60\% for mis-tagging rates below 1\%),
-are vetoed if they have p$_T>20$ GeV and $|\eta|<3.0$. The negative
-vectorial sum of the transverse energy of all the identified objects
-defines the missing transverse energy (whose magnitude is referred to
-as \MET in the following), also corrected for pileup using the Puppi
-scheme. The two leading jets are required to have p$_T>80,40$ GeV, be
-in opposite hemispheres, and are used to form the VBF dijet pair, with
-preselection requirements applied on its invariant mass M$_{jj}>1000$\,GeV, and separations
-in pseudorapidity $\Delta\eta_{jj}>4.0$ or azimuthal angle
-$\Delta\phi_{jj}<1.8$. To reject the QCD multijet background, for which
-the transverse missing energy arises from jet mismeasurements,
-the \MET is required to not be aligned with a jet using
-min$\Delta\phi$(jet p$_T>30$ GeV, \MET)$>0.5$. The magnitude of the
-vectorial sum of all jets p$_T$ with p$_T>30$ GeV defines \MHT.
- 
-The analysis uses five different and non-overlapping regions: the
-signal region (SR) where all leptons are vetoed, and four control
-regions (CR) with exactly one electron or muon (W boson CR) or exactly
-two electrons or two muons (Z boson CR). In the W boson CR, to further
-reject QCD multijet backgrounds, the lepton-\MET~ transverse mass is
-required to be less than 160 GeV. In the W$\rightarrow$e$\nu$ CR also
-a selection on \MET$>60$ GeV is applied due to higher QCD
-contamination than in the muon channel. In the Z boson CR, the
-dilepton mass is required to be between 60 and 120 GeV. To account for
-expected higher single-electron trigger thresholds, the leading
-electron p$_T$ is required to be above 40 GeV, for both
-W$\rightarrow$e$\nu$ and Z$\rightarrow$ee CR.
+anti-k$_T$ algorithm~\cite{Cacciari:2008gp,Cacciari:2011ma} with a parameter size of
+0.4.  The jets are required to have p$_T>30$\,GeV and $|\eta|<5.0$,
+and are corrected for pileup effects using the ``Puppi''
+algorithm~\cite{Bertolini:2014bba}.
 
-Lower thresholds on \MET values are varied from 130 to 400 GeV in 10
-to 50 GeV steps, and lower thresholds on M$_{jj}$ values from 1000 to
-4000 GeV in 100 GeV steps. The statistical uncertainty on the MC is
-considered to be negligible, assuming the available MC samples will
-have at least 10 times the luminosity available in the data.  For each
-(\MET,M$_{jj}$) selection, the yields are extracted in the four
-control regions and in the signal region. A maximum likelihood fit is
-performed taking into account all regions simultaneously. Upper limits
-on the Higgs boson production cross section times
-BR(H$\rightarrow$inv) are placed at 95\% CL using an asymptotic CLs
-method~\cite{Read1,junkcls,Dittmaier:2012vm}, following the standard
-LHC Higgs combination
-technique~\cite{Chatrchyan:2013lba,ATLAS:2011tau}. Systematic
-uncertainties are treated as nuisance parameters in a frequentist
-paradigm, as described in~\cite{ATLAS:2011tau}, and all
-correlations between processes are taken into account.
+ A b-tagging algorithm is used to tag jets that originate from decays
+of B hadrons (b jets).  The algorithm uses a combination of vertexing
+and timing information, and a working point with an efficiency of
+around 60\% and a mis-tagging rate below 1\% is defined to identify b
+jets.  Events containing any identified b jets are vetoed.
+
+The leading and sub-leading jets in the event are required to have
+p$_{T}>80$ and $40$\,GeV, respectively, and be in opposite hemispheres of
+the detector. These two jets form the VBF dijet pair, and further
+requirements are applied on the invariant mass M$_{\text{jj}}$, and
+their separations in pseudorapidity $|\Delta\eta_{\text{jj}}|>4.0$ and
+azimuthal angle $|\Delta\phi_{\text{jj}}|<1.8$.
+
+To reject the QCD multijet background, for which the transverse
+missing energy arises from jet mismeasurements, the \METvec vector is
+required to not be aligned with a jet using min$\Delta\phi$(jet
+\ptvec$>30$\,GeV, \METvec)$>0.5$. The magnitude of the vectorial sum of
+the p$_{T}$ of all jets with p$_{T}>30$\,GeV is defined as \MHT.
+
+The analysis uses five non-overlapping event regions: the signal
+region (SR) where events containing charged leptons ($\ell$, where
+$\ell=\Pe$ or $\Pgm$) are vetoed, and four control regions (CR) with
+exactly one electron or muon ($\PW\rightarrow\Pe\nu$ CR and
+$\PW\rightarrow\Pgm\nu$ CR) or exactly two electrons or two muons
+($\PZ\rightarrow\Pe\Pe$ CR and $\PZ\rightarrow\Pgm\Pgm$ CR).  In the
+$\PW\rightarrow\Pe\nu$ and $\PW\rightarrow\Pgm\nu$ CRs, to further
+reject QCD multijet backgrounds, the transverse mass, defined as
+$\sqrt{2\pt^{\ell}\MET\left[1
+- \cos{\Delta\phi(\ell,\METvec)}\right]}$, where p$_{T}^{\ell}$ is the
+transverse momentum of the lepton and $\Delta\phi(\ell,\METvec)$ is
+the azimuthal angle between the lepton momentum and $\METvec$ vectors,
+is required to be less than 160\,GeV. In the W$\rightarrow$e$\nu$ CR a
+selection on \MET$>60$\,GeV is also applied due to the higher QCD
+multijet contamination than in the muon channel. In the
+$\PZ\rightarrow\Pe\Pe$ and $\PZ\rightarrow\Pgm\Pgm$ CRs, the dilepton
+mass is required to be between 60 and 120\,GeV. To account for the
+higher single-electron trigger thresholds that will be required at the
+HL-LHC , the leading electron p$_{T}$ is required to be above 40\,GeV,
+for both the $\PW\rightarrow\Pe\nu$ and $\PZ\rightarrow\Pe\Pe$ CRs.
+
+The lower threshold on the \MET is varied from 130 to 400\,GeV in 10 to
+50\,GeV steps. Likewise, the lower threshold on M$_{\text{jj}}$ is
+varied from 1000 to 4000\,GeV in 100\,GeV steps. The statistical
+uncertainty on the MC is considered to be negligible, assuming the
+available MC samples will have at least 10 times the integrated
+luminosity available in the data.  For each (\MET, M$_{\text{jj}}$)
+selection, the yields are extracted in the four control regions and in
+the signal region, and a likelihood is constructed as the product of
+five Poisson terms, one per region.  Upper limits on the Higgs boson
+production cross section times
+\BHinv are placed at the 95\% CL using the CLs
+criterion~\cite{Read1,junkcls,Dittmaier:2012vm}, with a profiled
+likelihood ratio as the test statistic in which systematic
+uncertainties are incorporated via nuisance
+parameters~\cite{Chatrchyan:2013lba,HiggsCombination}. Asymptotic
+formula are used to determine the distribution of the test statistic
+under signal and background hypotheses~\cite{Cowan:2010js}.
 
 The scenario considered for the systematic uncertainties is described
-in table~\ref{tab:systs}, together with the systematics that are
-considered for the 2016 analysis, for comparison.
+in table~\ref{tab:systs}, together with the systematic uncertainties that were 
+considered in Ref.~\cite{Sirunyan:2018owy}, for comparison.
 
 \begin{table}[ht]
   \centering
   {%\small
   \begin{tabular}{l|c|c}
     \hline
-    Systematic & 2016 & YR18 \\
+    Systematic & From Ref.~\cite{Sirunyan:2018owy} & This analysis \\
     \hline
     e-ID & 1\%(gsf)$\oplus$1\%(idiso) & 1\% \\
     $\mu$-ID & 1\%(reco)$\oplus$1\%(id)$\oplus$0.5\%(iso) & 0.5\% \\
@@ -146,63 +154,68 @@ considered for the 2016 analysis, for comparison.
     b-tag-veto & 0.1\% (sig) 2\% (top) & 0.05\% (sig) 1\% (top) \\
     \hline
     JES & 14\%(sig) 2\%(W/W) 1\%(Z/Z) & 4.5\%(sig) 0.5\%(W/W) 0.2\%(Z/Z) \\
-    Lumi & 2.5\% & 1\% \\
+    Integrated luminosity & 2.5\% & 1\% \\
     QCD multijet & 1.5\%  & 1.5\% \\
     \hline
     Theory on W/Z ratio & 12.5\% & 7\% \\
     ggH normalisation & 24\% & 20\% \\
-    QCDscale\_qqH & $^{+0.4\%}_{-0.3\%}$ & $^{+0.4\%}_{-0.3\%}$\\
-    QCDscale\_accept\_qqH	& 2\% & 1\% \\
-    pdf\_qqbar	        & 2\% & 1\% \\
-    pdf\_accept\_qqbar	& 1\% & 1\% \\
-    QCDscale\_ggH2in	& 40\%  & 20\% \\
-    QCDscale\_YR4\_ggH & $^{+4.6\%}_{-6.7\%}$   & $^{+2\%}_{-4\%}$ \\
-    pdf\_gg	&	3.2\%  & 1.5\% \\
-    UEPS	&	16.8\% & 9\% \\
+    %QCDscale\_qqH & $^{+0.4\%}_{-0.3\%}$ & $^{+0.4\%}_{-0.3\%}$\\
+    %QCDscale\_accept\_qqH	& 2\% & 1\% \\
+    %pdf\_qqbar	        & 2\% & 1\% \\
+    %pdf\_accept\_qqbar	& 1\% & 1\% \\
+    %QCDscale\_ggH2in	& 40\%  & 20\% \\
+    %QCDscale\_YR4\_ggH & $^{+4.6\%}_{-6.7\%}$   & $^{+2\%}_{-4\%}$ \\
+    %pdf\_gg	&	3.2\%  & 1.5\% \\
+    %UEPS	&	16.8\% & 9\% \\
     \hline
 \end{tabular}
-    } \caption{Impacts on the signal and background yields from different systematic uncertainty sources considered in the run II 2016 analysis and
-    for the HL-LHC setup (YR18).}  \label{tab:systs}
+    } \caption{Impact on the signal and background yields from the
+    different sources of systematic uncertainty considered in
+    Ref.~\cite{Sirunyan:2018owy} and for the HL-LHC setup considered
+    in this analysis.}  \label{tab:systs}
 \end{table}
 
-The analysis is expected to be systematically dominated, with the
+The analysis is expected to be systematics dominated, with the
 dominant systematic uncertainties due to the muon and electron
-efficiencies, both in control and signal regions, and the jet energy
-scale and trigger efficiencies. In the present Run II analyses, due to
-limited statistics in the dilepton control regions, the knowledge of
-the W over Z boson ratio is used as a constraint between the two
+efficiencies, both in the control and signal regions, and the jet
+energy scale and trigger efficiencies. In
+Ref.~\cite{Sirunyan:2018owy}, due to the limited size of the dilepton
+samples, the knowledge of the ratio of the cross sections of the W to
+Z boson production was used as a constraint between the two
 backgrounds, leading to an increased sensitivity. The theoretical
 uncertainty on this ratio is set at 12.5\% from studies of missing
-higher order QCD and EWK corrections~\cite{Sirunyan:2018owy}, on both
-QCD and EWK productions. Already with 300 fb$^{-1}$, this parameter
-plays a much smaller role at the HL-LHC. Its influence is studied
-considering half the current theoretical uncertainty, namely 7\%, will
-be achieved by then. It is expected to have an impact of at most
-3--5\% degradation for the interesting best sensitivity regions and
-hence the constraint has been removed. It becomes however again
-relevant when considering very tight selection criteria on \MET and
-M$_{jj}$, i.e. when the statistics in the CR become again the dominant
-uncertainty.
+higher order QCD and EWK corrections~\cite{Sirunyan:2018owy}, for both
+QCD and EWK production. Once 300\fbinv of data will be available, this
+constraint will play a smaller role. It is expected that improvements
+in theoretical calculations of the ratio will lead to half the current
+theoretical uncertainty, namely 7\%.  This uncertainty is expected to
+have an impact of at most 3--5\% for the selection with the largest
+expected significance and is therefore neglected in the results
+presented herein. However, the uncertainty will be relevant when
+considering very tight selection criteria on \MET and M$_{\text{jj}}$,
+i.e. when the statistical uncertainty in the CRs becomes dominant.
 
-The best upper limits are achieved in the regions with lower
-thresholds on M$_{jj}$ of 2500 GeV and on \MET of 190 GeV, for the
-3000 fb$^{-1}$ scenario. The minimum region is rather flat between
-2300 and 3000 GeV thresholds in M$_{jj}$ and between 170 and 220 GeV
-in \MET, indicating limited impact from the native MC sample
-statistics. The upper limits are degrading steeply as the \MET
-threshold increases above 250\,GeV. The behaviour is similar for the
-300 and 1000 fb$^{-1}$ scenarios, with best thresholds found at lower
-values in \MET (170 GeV) and M$_{jj}$ (1500 and 1800 GeV respectively)
-due to the interplay between the statistics in the control regions and
-the systematics.
+
+The most stringent upper limits are achieved in the regions with lower
+thresholds on M$_{\text{jj}}$ and \MET of 2500\,GeV and 190\,GeV,
+respectively, for the 3000\fbinv scenario. The minimum is rather flat
+between M$_{\text{jj}}$ values of 2300 and 3000\,GeV, and between
+\MET values of 170 and 220\,GeV, indicating limited impact from the size of the MC
+samples. The upper limits degrade steeply as the \MET threshold
+increases above 250\,GeV. The behaviour is similar for the 300 and
+1000\fbinv scenarios, with best thresholds found at lower values
+of \MET (170\,GeV) and M$_{\text{jj}}$ (1500 and 1800\,GeV respectively)
+due to the interplay between the size of the control regions and the
+systematic uncertainties.
 
 Distributions in M$_{jj}$ for
 the leading jet pair and \MET in the signal region are shown in
-figure~\ref{fig:plotsdijetmet}, for the final 3000 fb$^{-1}$ luminosity. The
+figure~\ref{fig:plotsdijetmet}, for an integrated luminosity of 3000 fb$^{-1}$. The
 corresponding expected yields are shown in
-table~\ref{tab:yieldsYR18}. The uncertainties shown are the native
-uncertainties from the Delphes samples (not used in the calculations
-of the final limits).
+table~\ref{tab:yieldsYR18}. The uncertainties shown represent the statistical 
+uncertainties due to the limited size of the Delphes samples and are not used in the calculations
+of the final limits.
+
 
 
  \begin{table}[h!]
@@ -210,9 +223,9 @@ of the final limits).
 
 \begin{tabular}{l|c|c|c|c|c}
 \hline
-Process & SR          &     W$\rightarrow$e$\nu$ CR      &   W$\rightarrow \mu\nu$ CR      &   Z$\rightarrow$ee CR      & Z$\rightarrow \mu\mu$ CR  \\
+Process & SR          &     $\PW\rightarrow\Pe\nu$ CR      &   $\PW\rightarrow \Pgm\nu$ CR      &   $\PZ\rightarrow\Pe\Pe$ CR      & $\PZ\rightarrow \Pgm\Pgm$ CR  \\
 \hline
-VBFH & 47812 $\pm$ 584       & - & - & - & - \\
+VBF\PH & 47812 $\pm$ 584       & - & - & - & - \\
 ggH & 972  & - & - & - & - \\
 \hline
 Z$\rightarrow \ell\ell$ (EWK) & 103 $\pm$ 8   & 398 $\pm$ 16 & 641 $\pm$ 20 & 1342 $\pm$ 30 & 1889 $\pm$ 35 \\
@@ -221,11 +234,11 @@ Z$\rightarrow \ell\ell$ (QCD) & 451 $\pm$ 90   & 944 $\pm$ 126 & 1048 $\pm$ 116 
 Z$\rightarrow\nu\nu$ (EWK) & 15275 $\pm$ 358       & - & - & - & - \\
 Z$\rightarrow\nu\nu$ (QCD) & 20968 $\pm$ 599       & - & - & - & - \\
 \hline
-W$\rightarrow$e$\nu$ (EWK) & 3358 $\pm$ 62      & 18986 $\pm$ 146 & 72 $\pm$ 9 & 33 $\pm$ 6 & - \\
+W$\rightarrow\mathrm{e}\nu$ (EWK) & 3358 $\pm$ 62      & 18986 $\pm$ 146 & 72 $\pm$ 9 & 33 $\pm$ 6 & - \\
 W$\rightarrow \mu\nu$ (EWK) & 3426 $\pm$ 62     & 7 $\pm$ 3 & 29360 $\pm$ 181 & - & 17 $\pm$ 4 \\
 W$\rightarrow \tau\nu$ (EWK) & 3595  $\pm$ 64   & 55 $\pm$ 8 & 87 $\pm$ 10 & - & - \\
 \hline
-W$\rightarrow$e$\nu$ (QCD) & 3994  $\pm$ 999   & 13376 $\pm$ 1656 & 170 $\pm$ 168 &  - & - \\
+W$\rightarrow\mathrm{e}\nu$ (QCD) & 3994  $\pm$ 999   & 13376 $\pm$ 1656 & 170 $\pm$ 168 &  - & - \\
 W$\rightarrow \mu\nu$ (QCD) & 6891 $\pm$ 1388  & - & 23322 $\pm$ 2096 & - & - \\
 W$\rightarrow \tau\nu$ (QCD) & 4308 $\pm$ 938  & -       & -       & -       & - \\
 \hline
@@ -233,28 +246,32 @@ Top & 2050 $\pm$  132   &  2171 $\pm$ 143 & 3735 $\pm$ 188 & 107 $\pm$ 36 & 130 
 QCD & -    & -       & -       & -       & -\\
 \hline
 \end{tabular}
-\caption{Number of events expected after the final selection M$_{jj}>2500$ GeV and \MET$>190$ GeV, with 3000 fb$^{-1}$ of integrated luminosity. The uncertainties are the native statistical uncertainties from the Delphes samples.}
+\caption{Number of events expected after the final selection, M$_{\text{jj}}>2500$\,GeV and \MET$>190$\,GeV, with an integrated luminosity of 3000\fbinv. The uncertainties are the statistical uncertainties from the Delphes samples.}
 \label{tab:yieldsYR18}
   \end{table}
 
 
 
 
-
 \begin{figure}[htbp]
   \centering
-    \includegraphics[width=0.49\textwidth]{./Mjj_200PU_auto.pdf}
-    \includegraphics[width=0.49\textwidth]{metnolep_200PU_auto}
-\caption{Distributions of M$_{jj}$ (left) and \MET (right) in the signal region for the final selection M$_{jj}>2500$ GeV and \MET$>190$ GeV.}
+    \includegraphics[width=0.49\textwidth]{Mjj_200PU_cor}
+    \includegraphics[width=0.49\textwidth]{metnolep_200PU_cor}
+\caption{Distributions of M$_{jj}$ (left) and \MET (right) in the signal region for the final selection, M$_{jj}>2500$\,GeV and \MET$>190$\,GeV.}
   \label{fig:plotsdijetmet}
 \end{figure}
 
-Final limits for 3000 fb$^{-1}$ of luminosity are shown in
-figure~\ref{fig:1Dlimits}, left, as a function of the thresholds
-applied on \MET assuming the MC statistical uncertainties are
-negligible, for the final selections described above. In the best
-case, the lowest 95\% CL limit on BR(Hinv) assuming standard model
-production is expected to be at 3.8\%, for thresholds values of 2500\,GeV (190\,GeV) on the dijet mass (\MET). If the \MET resolution was to be a factor of 2 worse, the re-optimisation of the selection leads to mimimum thresholds of 1800\,GeV (250)\,GeV on the dijet mass (\MET), and similar 95\%CL limit sensitivity. The limits are shown for the different luminosity scenarios in figure~\ref{fig:1Dlimits}, right.
+The 95\% CL upper limits for an integrated luminosity of 3000\fbinv
+are shown in figure~\ref{fig:1Dlimits}, left, as a function of the
+thresholds applied on \MET assuming the MC statistical uncertainties
+are negligible, for the final selections described above. In the best
+case, the lowest 95\% CL limit on \BHinv, assuming standard model
+production, is expected to be at 3.8\%, for thresholds values of
+2500\,GeV (190\,GeV) on the dijet mass (\MET). If the \MET resolution
+was to be a factor of 2 worse, the re-optimisation of the selection
+leads to minimum thresholds of 1800\,GeV (250\,GeV) on the dijet mass
+(\MET), but a similar 95\% CL limit. The limits are shown for
+different integrated luminosities in figure~\ref{fig:1Dlimits}, right.
 
 
 \begin{figure}[htbp]
@@ -262,7 +279,7 @@ production is expected to be at 3.8\%, for thresholds values of 2500\,GeV (190\,
     \includegraphics[width=0.49\textwidth]{1DlimitMET_forPAS_noMHT}
     \hfill
     \includegraphics[width=0.49\textwidth]{1DlimitvsMET_mcScenario4}
-\caption{Left: 95\% CL limits on BR(Hinv) as a function of the minimum threshold on \MET, for M$_{jj}>2500$ GeV and 3000 fb$^{-1}$ of luminosity. Right: 95\% CL limits for different luminosity scenarios.}
+\caption{Left: 95\% CL limits on \BHinv as a function of the minimum threshold on \MET, for M$_{\text{jj}}>2500$\,GeV and an integrated luminosity of 3000\fbinv. Right: 95\% CL limits for scenarios with different integrated luminosities.}
   \label{fig:1Dlimits}
 \end{figure}
 

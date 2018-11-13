@@ -5,7 +5,7 @@
 % --
 % -- The bibliography file paths for the main volume and all parts
 % --
-\def\bibfiles{\main/bib/chapter,\main/section1/bib/section,\main/section2/bib/section,\main/section3/bib/section,\main/section4/bib/section,\main/section5/bib/section,\main/section6/bib/section,\main/section7/bib/section,\main/section8/bib/section,\main/section9/bib/section,\main/section10/bib/section}
+\def\bibfiles{\main/bib/chapter,\main/section1/bib/section,\main/section2/bib/section,\main/section3/bib/section,\main/section4/bib/section,\main/section5/bib/section,\main/section6/bib/section,\main/section7/bib/section,\main/section8/bib/section,\main/section9/bib/section}
 % --
 \providecommand{\biblio}{\nocite{article-minimal}\bibliographystyle{report}\clearpage\bibliography{\bibfiles}}  % *Modification: added `\main/` to specify relative file location.
 
@@ -108,12 +108,7 @@
 %
 % 
 \begin{abstract}
-
-
-
-
-
-
+This is an abstract 
 \end{abstract}
 
 % -- Set the level of the TOC: 2 means including subsection, 1 means
@@ -152,5 +147,6 @@
 % -- Add volume bibliography and part specific bibliographies
 \bibliographystyle{report}
 \bibliography{\bibfiles}
+
 
 \end{document}

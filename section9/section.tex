@@ -4,6 +4,8 @@
 \IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
 % until here
 
+
+
 \begin{document}
 
 \section{Searches for beyond the standard model Higgs physics}
@@ -44,108 +46,11 @@
 
 
 \subsection{Interpretation of the Higgs couplings in terms of Composite Higgs models}
+\begin{center}
+ {L. Vecchi}
+\end{center}
 \label{sec9:CHM}
-\begin{center}
- {L. Vecchi\\
-}
-%\noindent
- {\small Theoretical Particle Physics Laboratory, Institute of Physics, EPFL, Lausanne, Switzerland}
-\end{center}
-
-\subsubsection{Introduction}
-
-\begin{itemize}
-\item Composite Higgs (CH) models provide a natural solution to the hierarchy problem. Main assumption: a strong sector generates a light scalar $H$ (with the same charges of the SM Higgs doublet) that breaks $SU(2)\times U(1)$. %The latter may or may not be a Nambu-Goldstone mode. If it is, then it is also naturally weakly-coupled and lighter than all other resonances. If it is not, additional tunings are needed.
-
-\item Several realizations of the CH proposed in the literature predict the existence of additional light particles beyond the Higgs, e.g. scalars in non-minimal $G\to H$, a dilaton in nearly-conformal models, fermion resonances to reduce the fine-tuning, vector resonances in Little Higgs models. Here however we will assume that all exotic particles are heavy enough to be directly inaccessible. Within this assumption, an effective field theory formalism becomes reliable.
-
-
-\item The main goal of this section is to (1) review what are the most important corrections to the Higgs couplings that are expected if the Higgs is a composite state; (2) estimate the sensitivity of the HL and HE-LHC on the CH picture. We will focus on modifications of the Higgs couplings (as opposed to off-shell rates like double-Higgs production or $VV\to VV,hh$ scattering). 
-
-
-\item Up to dimension 6, the operators that can potentially impact on-shell processes involving the Higgs boson are collected in table \ref{tab1}. Note that ${O}_r=H^\dagger H(D_\mu H)^\dagger D^\mu H$ is not part of the set because equivalent to a linear combination of $\sum_\psi{\cal O}_\psi$ and ${\cal O}_{H,6}$. Similarly, $gg'H^\dagger\sigma^i HW^i_{\mu\nu}B^{\mu\nu}$ and $g^2H^\dagger HW^i_{\mu\nu}W^{i\mu\nu}$, as well as their CP-odd versions, are not independent. Finally, there is a set of operators involving the Higgs doublet that are severely constrained by precision data, and for this reason are expected to be negligible in our analysis. These include $O_T=\frac{1}{2}~(H^\dagger\overleftrightarrow{D_\mu}H)(H^\dagger\overleftrightarrow{D^\mu}H)$, current-current interactions $H^\dagger \overleftrightarrow{D^\mu}H \bar \psi\gamma^\mu \psi$ and $H^\dagger \tau^a\overleftrightarrow{D^\mu}H \bar \psi\gamma^\mu \tau^a\psi$ containing non-universal couplings to the SM fermions $\psi$, and dipole operators. The coefficient of the operator $O_T$ contributes to the EW $T$ parameter, and may be suppressed assuming the strong sector respects a custodial $SU(2)$ symmetry. The current-current operators are constrained by LEP and the non-observation of rare flavor-violating processes. Dipole operators are severely constrained by measurements of dipole moments. (The only exception is provided by those interactions involving the top...)
-
-
-
-
-\end{itemize}
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[t]
-\begin{center}
-%\resizebox{\textwidth}{!}
-{
-\begin{tabular}{c|c||c|c} 
-\rule{0pt}{1.2em}%
-Operator name & Operator definition & Main On-shell (Higgs) \\
-\hline
-${\cal O}_H$ & $\frac{1}{2}~\partial_\mu(H^\dagger H)\partial^\mu(H^\dagger H)$ & $h\to\psi\bar\psi, VV^*$     \\
-${\cal O}_T$ & $\frac{1}{2}~(H^\dagger\overleftrightarrow{D_\mu}H)(H^\dagger\overleftrightarrow{D^\mu}H)$ & $h\to ZZ^*$  \\
-${\cal O}_6$ & $\lambda_h(H^\dagger H)^3$ & ${\rm off-shell}~h^*\leftrightarrow hh$  \\
-${\cal O}_\psi$ & $y_\psi~\overline\psi_L H\psi_R(H^\dagger H)$ & $h\to\psi\bar\psi$  \\
-\hline
-${\cal O}_W$ & $\frac{i}{2}~g(H^\dagger\sigma^i\overleftrightarrow{D_\mu} H)(D_\nu W^{\mu\nu})^i$ & $h\to VV^*$ \\
-${\cal O}_B$ & $\frac{i}{2}~g'(H^\dagger\overleftrightarrow{D_\mu} H)(\partial_\nu B^{\mu\nu})$ & $h\to VV^*$  \\
-%
-${\cal O}_{HW}$ & $ig(D^\mu H)^\dagger\sigma^i(D^\nu H)W_{\mu\nu}^i$ & $h\to VV^*,\gamma Z$  \\
-${\cal O}_{HB}$ & $ig'(D^\mu H)^\dagger(D^\nu H)B_{\mu\nu}$ & $h\to VV^*,\gamma Z$ \\
-\hline
-${\cal O}_{g}$ & $g_s^2H^\dagger H G^a_{\mu\nu}G^{a\mu\nu}$ & $h\to gg$  \\
-${\cal O}_{\gamma}$ & $g'^2H^\dagger HB_{\mu\nu}B^{\mu\nu}$ & $h\to \gamma\gamma,\gamma Z^0,Z^0Z^0$ 
-%
-\end{tabular}
-}
-\end{center}
-\caption{\small List of the most relevant dimension-6 operators in the study of modified Higgs couplings in CH models. We use the basis of~\cite{Giudice:2007fh}. Here $y_\psi$ are the SM Yukawa couplings and $V=Z^0,W^\pm$. CP-odd versions of ${HW,HB,\gamma,g}$ can be obtained by replacing one field strength with the corresponding dual, $F^{\mu\nu}\to\frac{1}{2}\epsilon^{\mu\nu\alpha\beta}F_{\alpha\beta}$. The third column shows the dominant on-shell Higgs processes that the operator contributes to. 
-\label{tab1}}
-\end{table}
-%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-
-
-\subsubsection{Modified Higgs couplings}
-
-\begin{itemize}
-\item The observables that are mostly affected by the new operators are shown in the third column of table \ref{tab1}. An estimate of the various Wilson coefficients in concrete CH models reveals that (1) corrections to $h\to VV^*$ are typically dominated by ${\cal O}_{H,\psi}$, (2) corrections to the radiative processes $h\to gg,\gamma\gamma,Z^0\gamma$ are controlled by ${\cal O}_{H,\psi}$ if the Higgs is a Nambu-Goldstone mode and receive important contributions also from ${\cal O}_{g,\gamma}$ if $H$ is an accidentally resonance. The bottom line is that the reduced set of operators 
-\begin{eqnarray}\label{SMEFT}
-\delta{\cal L}_{\rm eff}=\frac{g_*^2}{m_*^2}c_H{\cal O}_H+\frac{g_*^2}{m_*^2}\sum_\psi c_\psi{\cal O}_\psi+\frac{1}{m_*^2}c_g{\cal O}_g+\frac{1}{m_*^2}c_\gamma{\cal O}_\gamma,
-\end{eqnarray}
-can be used to characterize the most common signatures of realistic CH models.
-\item A few benchmark models in which the coefficients can be reliably estimated is presented. For example, a $O(5)/O(4)$ CH model with fermions in some representation of $O(5)$. The possible existence of additional symmetries (custodial symmetry, $G\to H$, $T$-parity, etc.) has implicatios on the Wilson coefficients.
-
-\item We can now match the Wilson coefficients derived above onto a Lagrangian for the physical Higgs (see e.g. \cite{Contino:2013kra}):
-\begin{eqnarray}\label{Lh}
-{\cal L}_h&=&\frac{1}{2}\partial_\mu h\partial^\mu h-\frac{1}{2}m_h^2h^2\\\nonumber
-&+&\left[m_W^2W^+_\mu W^{-\mu}+\frac{1}{2}m_Z^2Z_\mu Z^\mu\right]\left(1+c_V\frac{h}{v}+\cdots\right)\\\nonumber
-&-&\sum_{\psi=u,d,l}m_\psi\bar\psi\psi\left(1+c_\psi\frac{h}{v}+\cdots\right)\\\nonumber
-&+&\left[\frac{1}{2}c_{gg}G^a_{\mu\nu}G^{a\mu\nu}+\frac{1}{2}c_{\gamma\gamma}\gamma_{\mu\nu}\gamma^{\mu\nu}+\frac{1}{2}c_{ZZ}Z_{\mu\nu}Z^{\mu\nu}+c_{Z\gamma}Z_{\mu\nu}\gamma^{\mu\nu}\right]\frac{h}{v}\\\nonumber
-&+&\cdots
-\end{eqnarray}
-with the modified Higgs couplings defined by
-\begin{eqnarray}\label{cs}
-c_V&=&1-\frac{c_H}{2}\xi\\\nonumber
-c_\psi&=&1-\left(\frac{c_H}{2}+c_\psi\right)\xi\\\nonumber
-c_{gg}&=&2\frac{g_s^2}{g_*^2}\xi c_g\\\nonumber
-c_{\gamma\gamma}=-\frac{c_{Z\gamma}}{\tan\theta_W}=\frac{c_{ZZ}}{\tan^2\theta_W}&=&2\frac{e^2}{g_*^2}\xi c_\gamma
-\end{eqnarray}
-and
-\begin{eqnarray}
-\xi\equiv\frac{g_*^2v^2}{m_*^2}.
-\end{eqnarray}
-\item We can then present the expected reach of the HL and HE LHC on the modified Higgs couplings. {\color{red} This is where some experimental input would be appreciated.} We can briefly compare it with current constraints and proposed experiments.  
-\item Using (\ref{Lh}) (\ref{cs}) under the generic and reasonable assumption $c_{H,\psi}=1$, the limits on the modified Higgs couplings translate into an indirect sensitivity on the new physics scale $m_*$ as a function of the size of the coupling $g_*$. We will show a plot that should quantify how a direct bound on the modified Higgs couplings + no direct access to new physics translates into a bound on the new physics parameters.
-\item I will finally comment on the fact that $c_V\neq1$ also leads to exotic contributions to the electroweak precision parameters (e.g. $S,T$). However, these probes on the new physics are {\emph{indirect}} and significantly depend on corrections at the cutoff scale (where new model-dependent particles are expected to emerge). Hence, while {\emph{indirect}} bounds can be used to derive very stringent constraints, {\emph{direct}} probes of the Higgs couplings provide a more robust and model-independent access to the new physics scale and coupling.
-\end{itemize}
-
-
-
-
-
+\subfile{\main/section9/InterpretationCH.tex}
 
 
 
@@ -588,6 +493,6 @@ $\mathrm{cos}(\beta - \alpha) = 0$.
 
 
 
-\bibliography{\main/section9/bib/section.bib}
+%\bibliography{\main/section9/bib/section.bib}
 
 \end{document}
