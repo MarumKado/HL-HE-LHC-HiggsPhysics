@@ -1,0 +1,42 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.0.1}
+\contentsline {subsection}{\numberline {1.1}Bibliography}{4}{subsection.0.1.1}
+\contentsline {section}{\numberline {2}Higgs boson precision measurements}{5}{section.0.2}
+\contentsline {subsection}{\numberline {2.1}Introduction}{5}{subsection.0.2.1}
+\contentsline {subsection}{\numberline {2.2}Theoretical predictions for the Higgs boson production at 14 and 27 TeV}{5}{subsection.0.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}PDF uncertainty expectations at the HE/HL-LHC}{5}{subsubsection.0.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Progress on Higgs boson specific MC generators}{9}{subsubsection.0.2.2.2}
+\contentsline {subsection}{\numberline {2.3}Overview of experimental analysis for the Higgs boson measurement channels}{9}{subsection.0.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Extrapolation assumptions}{9}{subsubsection.0.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}$H \to \gamma \gamma $}{10}{subsubsection.0.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}$H \to Z\gamma \to 2\ell \tmspace +\thinmuskip {.1667em}\gamma $}{11}{subsubsection.0.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.4}$H \to ZZ^* \to 4\ell $}{12}{subsubsection.0.2.3.4}
+\contentsline {subsubsection}{\numberline {2.3.5}$H \to WW^* \to \ell \nu \tmspace +\thinmuskip {.1667em}\ell \nu $}{12}{subsubsection.0.2.3.5}
+\contentsline {subsubsection}{\numberline {2.3.6}$H \to \tau \tau $}{13}{subsubsection.0.2.3.6}
+\contentsline {subsubsection}{\numberline {2.3.7}$H \to bb$}{14}{subsubsection.0.2.3.7}
+\contentsline {subsubsection}{\numberline {2.3.8}$H \to \mu \mu $}{16}{subsubsection.0.2.3.8}
+\contentsline {subsection}{\numberline {2.4}Fiducial and differential cross-section measurements}{16}{subsection.0.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Measurements using $H \to \gamma \gamma $, $H \to ZZ^* \to 4\ell $, (boosted) \ensuremath {\text {H}\rightarrow \ensuremath {\text {b}\overline {\text {b}}}\xspace }\xspace decay channels}{16}{subsubsection.0.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Measurement of $p_{T}(H)$ spectrum in \ensuremath {\ensuremath {\text {t}\overline {\text {t}}}\xspace \text {H}}\xspace production mode}{17}{subsubsection.0.2.4.2}
+\contentsline {subsection}{\numberline {2.5}Direct and indirect probing of top Yukawa coupling}{18}{subsection.0.2.5}
+\contentsline {subsubsection}{\numberline {2.5.1}Measurements in \ensuremath {\ensuremath {\text {t}\overline {\text {t}}}\xspace \text {H}}\xspace and \ensuremath {\text {tH}}\xspace production modes}{18}{subsubsection.0.2.5.1}
+\contentsline {paragraph}{\numberline {2.5.1.1}Sensitivity to \ensuremath {\ensuremath {\text {t}\overline {\text {t}}}\xspace \text {H}}\xspace production in the \ensuremath {\text {b}\overline {\text {b}}}\xspace and multi-lepton final states}{19}{paragraph.0.2.5.1.1}
+\contentsline {paragraph}{\numberline {2.5.1.2}Sensitivity to \ensuremath {\text {tH}}\xspace production}{21}{paragraph.0.2.5.1.2}
+\contentsline {subsubsection}{\numberline {2.5.2}Constraints from differential measurements}{22}{subsubsection.0.2.5.2}
+\contentsline {subsection}{\numberline {2.6}Combination of Higgs boson measurement projections}{23}{subsection.0.2.6}
+\contentsline {subsubsection}{\numberline {2.6.1}Signal strength per-decay mode}{24}{subsubsection.0.2.6.1}
+\contentsline {subsubsection}{\numberline {2.6.2}Signal strength per-production mode}{25}{subsubsection.0.2.6.2}
+\contentsline {subsection}{\numberline {2.7}Kappa interpretation of the combined Higgs boson measurement projections}{25}{subsection.0.2.7}
+\contentsline {subsection}{\numberline {2.8}Kappa-formalism and the nonlinear EFT}{29}{subsection.0.2.8}
+\contentsline {subsection}{\numberline {2.9}Higgs couplings precision overview in the Kappa-framework and the nonlinear EFT}{33}{subsection.0.2.9}
+\contentsline {subsubsection}{\numberline {2.9.1}The fit to HL/HE-LHC Higgs precision data}{34}{subsubsection.0.2.9.1}
+\contentsline {subsubsection}{\numberline {2.9.2}Results}{34}{subsubsection.0.2.9.2}
+\contentsline {subsection}{\numberline {2.10}Projections of Higgs boson measurements to the HE-LHC}{36}{subsection.0.2.10}
+\contentsline {subsection}{\numberline {2.11}Probing of anomalous HVV interactions}{36}{subsection.0.2.11}
+\contentsline {subsubsection}{\numberline {2.11.1}Probes using differential distributions of CP sensitive observables}{36}{subsubsection.0.2.11.1}
+\contentsline {paragraph}{\numberline {2.11.1.1}\bf CP-odd $VVH$ couplings}{36}{paragraph.0.2.11.1.1}
+\contentsline {paragraph}{\numberline {2.11.1.2}\bf Global Fit}{37}{paragraph.0.2.11.1.2}
+\contentsline {paragraph}{\numberline {2.11.1.3}\bf Result: HL and HE-LHC Analysis}{39}{paragraph.0.2.11.1.3}
+\contentsline {paragraph}{\numberline {2.11.1.4}$h \to \tau ^+ \tau ^-$}{39}{paragraph.0.2.11.1.4}
+\contentsline {paragraph}{\numberline {2.11.1.5}$ t\tmspace +\thinmuskip {.1667em}\mathaccentV {bar}016{t}\tmspace +\thinmuskip {.1667em}h$}{41}{paragraph.0.2.11.1.5}
+\contentsline {subsubsection}{\numberline {2.11.2}Experimental constraints on anomalous HVV couplings}{42}{subsubsection.0.2.11.2}
+\contentsline {subsection}{\numberline {2.12}Summary}{42}{subsection.0.2.12}

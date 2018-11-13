@@ -1,7 +1,7 @@
 \subsubsection{First Level Track Jet Trigger for Displaced Jets at High Luminosity LHC}
 
 The high luminosity LHC program offers many exciting opportunities to search for rare processes. It is expected that the
-LHC will accumulate 3\abinv of proton-proton (\pp) collisions at 14\TeV.
+LHC will accumulate 3\abinv of proton-proton (\pp) collisions at 14\UTeV.
 The CMS detector will undergo major upgrades to all subsystems, including the tracker~\cite{cmstdr-014},
 the barrel~\cite{cmstdr-barrel} and endcap~\cite{cmstdr-ec} calorimeters, the muon system~\cite{cmstdr-mu},
 and the trigger~\cite{cmstdr-017}. 
@@ -15,7 +15,7 @@ The main obstacle is the high rate for low transverse momentum jets, which is ma
 high luminosity environment.
 
 In this note, we investigate the capabilities of L1 track finding~\cite{cmstdr-014} to increase the L1 trigger efficiency for such signals.
-We focus on small or moderate decay lengths of the new particles, 1--50\mm, and assume, as is demonstrated by
+We focus on small or moderate decay lengths of the new particles, 1--50\Umm, and assume, as is demonstrated by
 many analyses~\cite{ll1, ll2, ll3}, that the offline selection can remove all SM backgrounds with only a moderate loss of efficiency.
 
 The investigation has two major thrusts. First, we propose a jet clustering algorithm that uses the L1 tracks found with a primary vertex constraint.
@@ -35,11 +35,11 @@ Event samples corresponding to 200 collisions per bunch crossing (pileup) \cite{
 
 The following signal samples are considered:
 \begin{enumerate}
-\item Displaced single muons, generated with a uniform distribution of transverse momentum (\pt) between 2 and 8\GeV, uniform
-in $\eta$ between -1 and 1, and with impact parameter \dtrans distributed as a Gaussian with width $\sigma=2\cm$.
-\item The decay of the SM Higgs boson $\PH(125)\to \phi\phi\to \bbbar\bbbar$, with $\phi$ masses of 15, 30, and 60\GeV, and \ctau of 0, 1, and 5\cm.
+\item Displaced single muons, generated with a uniform distribution of transverse momentum (\pt) between 2 and 8\UGeV, uniform
+in $\eta$ between -1 and 1, and with impact parameter \dtrans distributed as a Gaussian with width $\sigma=2\Ucm$.
+\item The decay of the SM Higgs boson $\PH(125)\to \phi\phi\to \bbbar\bbbar$, with $\phi$ masses of 15, 30, and 60\UGeV, and \ctau of 0, 1, and 5\Ucm.
 The production of the Higgs boson via gluon fusion is simulated by \POWHEG v2.0 \cite{powheg}, while the hadronization and decay is performed by \PYTHIA v8.205 \cite{pythia}.
-\item The decay of a heavy SM-like Higgs boson with mass 250\GeV, $\PH(250)\to \phi\phi\to \bbbar\bbbar$, with $\phi$ masses of 15, 30, and 60\GeV, and \ctau of 0, 1, and 5\cm.
+\item The decay of a heavy SM-like Higgs boson with mass 250\UGeV, $\PH(250)\to \phi\phi\to \bbbar\bbbar$, with $\phi$ masses of 15, 30, and 60\UGeV, and \ctau of 0, 1, and 5\Ucm.
 The production of the heavy SM-like Higgs boson via gluon fusion, its decay, and its hadronization are all simulated with \PYTHIA 8 \cite{pythia}.
 \end{enumerate}
 
@@ -50,7 +50,7 @@ The tracker is the most granular detector participating in the L1 decision, and 
 Track finding at L1 relies on selection at the front end of tracker hits that originated from high transverse momentum particles.
 This is achieved through use of the so-called \pt-modules consisting of two sensors separated by a few mm \cite{cmstdr-014}. A particle crossing a tracker module
 produces a pair of hits in the two sensors. Such pairs form a ``stub'' if the azimuthal difference between the hits in the two sensors of a module is consistent
-with a prompt track with $\pt \gtrsim 2\GeV$.
+with a prompt track with $\pt \gtrsim 2\UGeV$.
 
 In this section, we describe a simple jet clustering algorithm implementable in firmware, and compare it with anti-\kt jets~\cite{Cacciari:2008gp} with a size parameter of $R = 0.3$,
 as produced by \FASTJET~\cite{fastjet}.
@@ -60,12 +60,12 @@ L1 track jets are found by grouping tracks in bins of \zo, the point of closest 
 half a bin, so that each track ends up in two bins, eliminating inefficiencies at bin edges. In each \zo bin, the \pt of the tracks are summed in bins of
 $\eta$ and azimuthal angle $\phi$ with bin size $0.2 \times 0.23$. A simplified nearest-neighbor clustering is performed, and the total $\HT=\sum \pt^{\text{trk}}$ in the \zo bin is calculated.
 The \zo bin with the highest \HT is chosen. Jets obtained through this algorithm are referred to as ``TwoLayer Jets.'' 
-For the studies below, \zo bins with size 6 cm are used. Jets with $\ET>50\,(100)\GeV$ are required to have at least two (three) tracks.
+For the studies below, \zo bins with size 6 cm are used. Jets with $\ET>50\,(100)\UGeV$ are required to have at least two (three) tracks.
 
 
 The track purity depends on the number of stubs in the track and the $\chi^2$ of the track fit. High-\pt tracks are much less pure than low-\pt tracks,
 with fake tracks distributed approximately uniformly in $1/\pt$ while real tracks are mostly low-\pt.
-To mitigate the effect of high-\pt fake tracks, any track with a reconstructed \pt above 200\GeV is assigned a \pt of 200\GeV. The track quality selection used in this analysis
+To mitigate the effect of high-\pt fake tracks, any track with a reconstructed \pt above 200\UGeV is assigned a \pt of 200\UGeV. The track quality selection used in this analysis
 is summarized in Table~\ref{tab:tracksel}. 
 
 \begin{table*}[htb]
@@ -75,9 +75,9 @@ is summarized in Table~\ref{tab:tracksel}.
 \hline
 track \pt & 4 stubs  & 5 stubs & 6 stubs \\
 \hline
-2--10\GeV   & $\chi^2<15$ & $\chi^2<15$ & accept \\
-10--50\GeV & reject      & $\chi^2<10$ & accept \\
-${>}50\GeV$   & reject      & $\chi^2<5$ & $\chi^2<5$ \\
+2--10\UGeV   & $\chi^2<15$ & $\chi^2<15$ & accept \\
+10--50\UGeV & reject      & $\chi^2<10$ & accept \\
+${>}50\UGeV$   & reject      & $\chi^2<5$ & $\chi^2<5$ \\
 \hline
 \end{tabular}
 \end{table*}
@@ -87,7 +87,7 @@ We have verified that the TwoLayer trigger algorithm gives similar performance t
 Figure~\ref{fig:jeteff} shows the efficiency to reconstruct a track jet as function of the generator-level jet \pt.
 Figure~\ref{fig:rates} shows the calculated L1 trigger rates for an \HT trigger (scalar sum of \pt of all jets above threshold)
 and a quad-jet trigger (at least four jets above threshold) as a function of the threshold.
-\HT is computed from track jets with $\pt>5\GeV$.
+\HT is computed from track jets with $\pt>5\UGeV$.
 
 The rates are computed based on a fixed number of colliding bunches. The trigger rate is computed as
 \begin{equation*}
@@ -142,8 +142,8 @@ of the muon, as measured in the full \GEANTfour-based simulation of the Phase-2 
  \caption{The efficiency for a displaced muon to form stubs in the six barrel layers of the Phase-2 tracker, as a function of the signed muon \pt and impact parameter.
  The top row shows, from left to right, layers 1, 2, and 3;
  the bottom row shows layers 4, 5, and 6.
- The sample is comprised of 2000 muons generated with uniformly distributed transverse momentum between 2 and 8\GeV and pseudorapidity $|\eta|<1$, and with the impact parameter \dtrans
- distributed as a Gaussian with width of 2\cm.}
+ The sample is comprised of 2000 muons generated with uniformly distributed transverse momentum between 2 and 8\UGeV and pseudorapidity $|\eta|<1$, and with the impact parameter \dtrans
+ distributed as a Gaussian with width of 2\Ucm.}
   \label{fig:stubeff}
 \end{figure*}
 
@@ -188,7 +188,7 @@ $\geq 5$ &  ${<}5.0$ & ${<}2.5$ & ${<}5.0$  & ${<}3.5$ & ${<}2.0$ & ${<}4.0$ \\
 \end{table*}
 
 A jet is required to have at least two tracks passing the tight selection. If two or more tight tracks
-in a jet have $|\dtrans|>0.1\cm$, the jet is tagged as a displaced jet.
+in a jet have $|\dtrans|>0.1\Ucm$, the jet is tagged as a displaced jet.
 
 \paragraph{Results}
 
@@ -257,7 +257,7 @@ with a displaced jet tag (solid lines). }
 \paragraph{Conclusion}
 
 We have studied the upgraded CMS detector's ability to trigger on events with long lived particles decaying into jets.
-Currently, such events pass the L1 trigger only if the total transverse energy in the event is above a few hundred \GeVns.
+Currently, such events pass the L1 trigger only if the total transverse energy in the event is above a few hundred \UGeVns.
 This is an important blind spot for searches, especially for the rare exotic Higgs boson decays like
  \Hphiphi.
 

@@ -6,13 +6,14 @@
 % -- The bibliography file paths for the main volume and all parts
 % --
 %\def\bibfiles{\main/bib/chapter,\main/section1/bib/section,\main/section2/bib/section,\main/section3/bib/section,\main/section4/bib/section,\main/section5/bib/section,\main/section6/bib/section,\main/section7/bib/section,\main/section8/bib/section,\main/section9/bib/section}
-\def\bibfiles{\main/bib/chapter,\main/section1/bib/section}
+\def\bibfiles{\main/bib/chapter,\main/section1/bib/section,\main/section2/bib/section}
 % --
-\providecommand{\biblio}{\nocite{article-minimal}\bibliographystyle{report}\clearpage\bibliography{\bibfiles}}  % *Modification: added `\main/` to specify relative file location.
+\newcommand{\biblio}{\nocite{article-minimal}\bibliographystyle{report}\clearpage\bibliography{\bibfiles}}  % *Modification: added `\main/` to specify relative file location.
 
 \usepackage{cancel}
 \usepackage{placeins}
 \usepackage{booktabs}
+\usepackage{slashbox}
 \usepackage{subfig} % Required for creating figures with multiple parts (subfigures)
 \usepackage{amsmath,amssymb,amsthm} % For including math equations, theorems, symbols, etc
 %\usepackage{subcaption}
@@ -56,8 +57,6 @@
 \newcommand{\ea}{\end{array}}
 \newcommand{\noindentFR}[1]{\vspace{5mm}\noindent {\bf #1}\\}
 
-%\newcommand{\deltapt}{p_{T,WZ}}
-%\newcommand{\deltapt}{\Delta p_{T}}
 \newcommand{\deltapt}{p_{T,VV}}
 \newcommand{\met}{\cancel{E}_T}
 \newcommand{\ptvmin}{p_{T,V}^{(min)}}
@@ -66,18 +65,8 @@
 \newcommand{\ptv}{p_{T,V}}
 \newcommand{\rf}[1]{{\color{purple} #1}} 
 \newcommand{\com}[1]{{\color{red} \sffamily (#1)}} % needs the package 'color'
-\newcommand{\TeV}{\ensuremath{\text{Te\kern -0.1em V}}}
-\newcommand{\GeV}{\ensuremath{\text{Ge\kern -0.1em V}}}
-\newcommand{\geV}{\ensuremath{\text{Ge\kern -0.1em V}}}
-\newcommand{\MeV}{\ensuremath{\text{Me\kern -0.1em V}}}
-\newcommand{\keV}{\ensuremath{\text{ke\kern -0.1em V}}}
-\newcommand{\eV}{\ensuremath{\text{e\kern -0.1em V}}}
-%\newcommand*{\ipb}{\mbox{pb$^{-1}$}}
 \newcommand*{\lHHH}{\ensuremath{\lambda_{HHH}}}
 \newcommand*{\kl}{\ensuremath{\kappa_{\lambda}}}
-%\newcommand{\fb}{\,{\rm fb}^{-1}}
-\newcommand{\pb}{\,{\rm pb}^{-1}}
-\newcommand{\ab}{\,{\rm ab}^{-1}}
 \newcommand{\Br}{{\mathrm{Br}}}
 
 %
@@ -91,8 +80,73 @@
 \newcommand{\chhh}{c_{hhh}}
 \newcommand{\mhh}{m_{hh}}
 
-%\newcommand{\mptvec}{{/\!\!\!\vec{ p}_T}}
+% Section 2.
+\newcommand{\cred}{\color{red}}
+\newcommand{\cblue}{\color{blue}}
+\newcommand{\cgreen}{\color{X575}}
+\newcommand{\tCaa}{\tilde c_{\gamma\gamma}}
+\newcommand{\tCza}{\tilde c_{Z\gamma}}
+\newcommand{\tCzz}{\tilde c_{ZZ}}
+\newcommand{\tCww}{\tilde c_{WW}}
+\newcommand{\bbbar}{\ensuremath{\text{b}\overline{\text{b}}}\xspace}
+\newcommand{\ttbar}{\ensuremath{\text{t}\overline{\text{t}}}\xspace}
+\newcommand{\ttH}{\ensuremath{\ttbar\text{H}}\xspace}
+\newcommand{\tH}{\ensuremath{\text{tH}}\xspace}
+\newcommand{\Hbb}{\ensuremath{\text{H}\rightarrow\bbbar}\xspace}
+\newcommand{\Htobb}{\ensuremath{\text{H}\rightarrow\bbbar}\xspace}
+\newcommand{\ttHF}{\ensuremath{\ttbar+\text{HF}}\xspace}
+\newcommand{\ww}{\ensuremath{\PW\PW}\xspace}
+\newcommand{\hww}{\ensuremath{\PH\to\ww}\xspace}
+\newcommand{\tautau}{\ensuremath{\Pgt\Pgt}\xspace}
+\newcommand{\tHW}{\ensuremath{\Pqt\PH\PW}\xspace}
+\newcommand{\tHq}{\ensuremath{\Pqt\PH\PQq}\xspace}
+\newcommand{\zz}{\ensuremath{\PZ\PZ}\xspace}
+\newcommand{\bb}{\ensuremath{\PQb\PQb}\xspace}
+\newcommand{\hbb}{\ensuremath{\PH\to\bb}\xspace}
+\newcommand{\hgg}{\ensuremath{\PH\to\PGg\PGg}\xspace}
+\newcommand{\ttjets}{\ensuremath{\PQt\PQt\text{+}\text{jets}}\xspace}
+\newcommand{\vbf}{\ensuremath{\mathrm{VBF}}\xspace}
+\newcommand{\vh}{\ensuremath{\mathrm{V}\PH}\xspace}
+\newcommand{\tth}{\ensuremath{\Pqt\Pqt\PH}\xspace}
+\newcommand{\hzz}{\ensuremath{\PH\to\zz}\xspace}
+\newcommand{\hzzllll}{\ensuremath{\hzz^{(\ast)}\to 4\ell}\xspace}
+\newcommand{\hwwlnln}{\ensuremath{\hww^{(\ast)}\to\ell\Pgn\ell\Pgn}\xspace}
+\newcommand{\htt}{\ensuremath{\PH\to\tautau}\xspace}
+\newcommand{\hlep}{\ensuremath{\PH\to\text{leptons}}\xspace}
+\newcommand{\mumu}{\ensuremath{\PGm\PGm}\xspace}
+\newcommand{\hmm}{\ensuremath{\PH\to\mumu}\xspace}
+\newcommand{\wh}{\ensuremath{\PW\PH}\xspace}
+\newcommand{\zh}{\ensuremath{\PZ\PH}\xspace}
+\newcommand{\fbinv}{\mbox{\ensuremath{\,\text{fb}^\text{$-$1}}}\xspace}
+\newcommand{\SM}{\ensuremath{\mathrm{SM}}\xspace}
+\newcommand{\kZ}{\ensuremath{\kappa_{\mathrm{\PZ}}}\xspace}
+\newcommand{\kW}{\ensuremath{\kappa_{\mathrm{\PW}}}\xspace}
+\newcommand{\ktau}{\ensuremath{\kappa_{\PGt}}\xspace}
+\newcommand{\ktop}{\ensuremath{\kappa_{\Pqt}}\xspace}
+\newcommand{\kb}{\ensuremath{\kappa_{\Pqb}}\xspace}
+\newcommand{\kmu}{\ensuremath{\kappa_{\Pgm}}\xspace}
+\newcommand{\kglu}{\ensuremath{\kappa_{\mathrm{\Pg}}}\xspace}
+\newcommand{\kgam}{\ensuremath{\kappa_{\PGg}}\xspace}
+\newcommand{\kappat}{\ensuremath{\kappa_{\Pqt}}\xspace}
+\newcommand{\kappab}{\ensuremath{\kappa_{\Pqb}}\xspace}
+\newcommand{\kappac}{\ensuremath{\kappa_{\Pqc}}\xspace}
+\newcommand{\GammaSM}{\ensuremath{\Gamma_{\PH}/\Gamma_{\PH}^{\mathrm{SM}}}\xspace}
+\newcommand{\Bbsm}{\ensuremath{\mathrm{B_{BSM}}}\xspace}
+\newcommand{\kV}{\ensuremath{\kappa_{\mathrm{V}}}\xspace}
+\newcommand{\ggZH}{\ensuremath{\Pg\Pg\PZ\PH}\xspace}
+\newcommand{\wip}[1]{\textcolor{red}{\bfseries TODO: #1}\xspace}
+\newcommand{\ggh}{\ensuremath{\Pg\Pg\PH}\xspace}
+\newcommand{\Hyy}{\hbox{$H\to\gamma\gamma$}}
+\newcommand{\HZy}{\hbox{$H \to Z\gamma$}}
+\newcommand{\HZZ}{\hbox{$H \to ZZ^* \to 4\ell$}}
+\newcommand{\HWW}{\hbox{$H \to WW^* \to e \nu \mu \nu$}}
+\newcommand{\pTH}{\ensuremath{{\pT}^{\PH}}\xspace}
+\newlength{\UcmsFigWidth}
+\setlength{\UcmsFigWidth}{0.49\textwidth}
+\newcommand{\UcmsLeft}{upper\xspace}
+\newcommand{\UcmsRight}{lower\xspace}
 
+% Other?
 \def\lra#1{\overset{\text{\scriptsize$\leftrightarrow$}}{#1}}
 
 \def\biblio{}
@@ -120,8 +174,8 @@ This is an abstract
 
 % -- List of sections
 \subfile{\main/section1/section}
-%\newpage
-%\subfile{\main/section2/section}
+\newpage
+\subfile{\main/section2/section}
 %\newpage
 %\subfile{\main/section3/section}
 %\newpage
