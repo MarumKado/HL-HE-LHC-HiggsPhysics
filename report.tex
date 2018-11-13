@@ -1,11 +1,12 @@
 \documentclass[11pt,twoside,a4paper]{cernrep} 
-\usepackage{rep_common,booktabs}
+\usepackage{rep_common,booktabs,hyperref}
 \pagestyle{plain}
 
 % --
 % -- The bibliography file paths for the main volume and all parts
 % --
-\def\bibfiles{\main/bib/chapter,\main/section1/bib/section,\main/section2/bib/section,\main/section3/bib/section,\main/section4/bib/section,\main/section5/bib/section,\main/section6/bib/section,\main/section7/bib/section,\main/section8/bib/section,\main/section9/bib/section}
+%\def\bibfiles{\main/bib/chapter,\main/section1/bib/section,\main/section2/bib/section,\main/section3/bib/section,\main/section4/bib/section,\main/section5/bib/section,\main/section6/bib/section,\main/section7/bib/section,\main/section8/bib/section,\main/section9/bib/section}
+\def\bibfiles{\main/bib/chapter,\main/section1/bib/section}
 % --
 \providecommand{\biblio}{\nocite{article-minimal}\bibliographystyle{report}\clearpage\bibliography{\bibfiles}}  % *Modification: added `\main/` to specify relative file location.
 
@@ -119,25 +120,25 @@ This is an abstract
 
 % -- List of sections
 \subfile{\main/section1/section}
-\newpage
-\subfile{\main/section2/section}
-\newpage
-\subfile{\main/section3/section}
-\newpage
+%\newpage
+%\subfile{\main/section2/section}
+%\newpage
+%\subfile{\main/section3/section}
+%\newpage
 %\subfile{\main/section4/section}
-\newpage
-\subfile{\main/section5/section}
-\newpage
-\subfile{\main/section6/section}
-\newpage
-\subfile{\main/section7/section}
-\newpage
-\subfile{\main/section8/section}
-\newpage
-\subfile{\main/section9/section}
-\newpage
-\subfile{\main/section10/section}
-\newpage
+%\newpage
+%\subfile{\main/section5/section}
+%\newpage
+%\subfile{\main/section6/section}
+%\newpage
+%\subfile{\main/section7/section}
+%\newpage
+%\subfile{\main/section8/section}
+%\newpage
+%\subfile{\main/section9/section}
+%\newpage
+%\subfile{\main/section10/section}
+%\newpage
 
 
 % -- Add bibliography to table of contents

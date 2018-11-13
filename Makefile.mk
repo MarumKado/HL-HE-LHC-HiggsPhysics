@@ -16,7 +16,7 @@ default: build
 # Declaration of variables
 STDTEXFLAGS = -shell-escape -file-line-error
 CONTINUEFLAGS = -interaction=nonstopmode
-QUIETFLAGS = --interaction=batchmode
+QUIETFLAGS = #--interaction=batchmode
 DRAFTFLAGS = --draft
 
 TEX = pdflatex $(STDTEXFLAGS) $(QUIETFLAGS)
@@ -31,7 +31,6 @@ endif
 
 AUXFILE = $(PDF:.pdf=.aux)
 BIBFILE = $(PDF:.pdf=.bbl)
-GLOSSFILE = $(PDF:.pdf=.glg)
 SOURCE = $(PDF:.pdf=.tex)
 TMP_FILES = *.glg *.gls *.bbl *.blg *.aux *.dvi *.glo *.glsdefs *.log *.tdo *.toc *.xdy
 DEL_FILES := $(strip $(foreach tmp_file, $(TMP_FILES), $(wildcard $(tmp_file)) ))
@@ -43,10 +42,6 @@ $(PDF): $(SOURCE) $(BIBFILE) $(GLOSSFILE)
 	$(info SOURCE='$(SOURCE)')
 	$(TEX) $(SOURCE)
 
-$(GLOSSFILE): | $(AUXFILE)
-	$(info ********** MAKE GLOSSARY **********)
-	$(GLOSS) $(TARGET)
-
 $(BIBFILE): | $(AUXFILE)
 	$(info ********** MAKE BIBLIOGRAPHY '$(BIBFILE)' **********)
 	$(BIB) $(AUXFILE)
@@ -54,9 +49,6 @@ $(BIBFILE): | $(AUXFILE)
 $(AUXFILE): $(SOURCE)
 	$(info ********** MAKE FIRST PASS **********)
 	$(TEX) $(DRAFTFLAGS) $(SOURCE)
-
-#$(OBJ):	$(AUXFILES)
-#	  $(BIB) $(SOURCE)
 
 build: $(PDF)
 
@@ -77,10 +69,6 @@ else
 	$(info No temporary files to clean)
 endif
 
-
-#$(info No temporary file $(tmp_file) to clean), \
-#	-rm $(tmp_file) 2>/dev/null \
-#		))
 
 STYFILES = cernall.sty cernchemsym.sty cernrep.cls cernunits.sty cernyrep.cls heppennames2.sty report.bst rep_common.sty 
 
