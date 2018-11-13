@@ -4,54 +4,6 @@
 \IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
 % until here
 
-\newcommand{\br}{\mbox{BR}}
-\newcommand{\mcO}{\mathcal{O}}
-\newcommand{\yvmkk}{\bar Y^2 \frac{v^2}{m_{KK}^2}}
-\newcommand{\cR}{\mathcal{R}}
-
-% some commands for section 7.1 (did not find the predefined ones, so they are defined here. Probably need to merge them with the global commands)
-\newcommand{\pt}{\ensuremath{p_T}\xspace}
-\newcommand{\hboson}{\ensuremath{\PH}\xspace}
-\newcommand{\bquark}{\ensuremath{\cPqb}\xspace}
-\newcommand{\cquark}{\ensuremath{\cPqc}\xspace}
-\newcommand{\tquark}{\ensuremath{\cPqt}\xspace}
-\newcommand{\zboson}{\ensuremath{\cPZ}\xspace}
-\newcommand{\gluon}{\ensuremath{\cPg}\xspace}
-\newcommand{\photon}{\ensuremath{\cPgg}\xspace}
-\newcommand{\jpsi}{\ensuremath{\cPJgy}\xspace}
-\newcommand{\proton}{\ensuremath{\Pp}\xspace}
-\newcommand{\vboson}{\ensuremath{\mathrm{V}}\xspace} % Not a default one I could find!
-\newcommand{\taulepton}{\ensuremath{\PGt}\xspace}
-\newcommand{\electron}{\ensuremath{\Pe}\xspace}
-\newcommand{\muon}{\ensuremath{\Pgm}\xspace}
-
-\newcommand{\bb}{\ensuremath{\bquark\bar{\bquark}}\xspace}
-\newcommand{\cc}{\ensuremath{\cquark\bar{\cquark}}\xspace}
-% \newcommand{\tt}{\ensuremath{\tquark\bar{\tquark}}\xspace} # Already exists
-
-\newcommand{\hbb}{\ensuremath{\hboson\to\bb}\xspace}
-\newcommand{\hcc}{\ensuremath{\hboson\to\cc}\xspace}
-\newcommand{\hgg}{\ensuremath{\hboson\to\photon\photon}\xspace}
-\newcommand{\hzz}{\ensuremath{\hboson\to\zboson\zboson}\xspace}
-\newcommand{\hzztofourl}{\ensuremath{\hzz^{(\ast)}\to 4\ell}\xspace}
-
-\newcommand{\BRgamgam}{\ensuremath{\mathcal{B}_{\photon\photon}}\xspace}
-\newcommand{\BRZZ}{\ensuremath{\mathcal{B}_{\zboson\zboson}}\xspace}
-
-\newcommand{\pth}{\ensuremath{\pt^\hboson}\xspace}
-
-\newcommand{\mH}{\ensuremath{m_{\hboson}}\xspace}
-\newcommand{\msd}{\ensuremath{m_\text{SD}}\xspace}
-\newcommand{\ggh}{\ensuremath{\Pg\Pg\hboson}\xspace}
-
-\newcommand{\cg}{\ensuremath{c_\Pg}\xspace}
-\newcommand{\kappab}{\ensuremath{\kappa_{\bquark}}\xspace}
-\newcommand{\kappac}{\ensuremath{\kappa_{\cquark}}\xspace}
-\newcommand{\kappat}{\ensuremath{\kappa_{\tquark}}\xspace}
-
-\newcommand{\pb}{\ensuremath{\,\text{pb}}\xspace}
-\newcommand{\ifb}{\fbinv}
-
 \begin{document}
 
 \section{Higgs flavor and rare decays}
@@ -609,7 +561,7 @@ Since the indirect contribution is larger than the direct, the largest sensitivi
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[t]
 \begin{center}
-\includegraphics[width=0.65\textwidth]{higgs_exclusive_diag.pdf}
+\includegraphics[width=0.65\textwidth]{section7/higgs_exclusive_diag.pdf}
 \caption{The two contributions to $h \to V\gamma$ with $V=\rho,\omega,\phi,J/\psi,\Upsilon$. Left: the direct amplitude, proportional to  the $q$-quark Yukawa; Right: indirect amplitude involve the $h\gamma\gamma$ vertex.{\bf YS: replace $s\to q$ the figure}}
 \label{fig:hexlusive}
 \end{center}
@@ -821,7 +773,7 @@ one to probe deviations in the magnitude of the Higgs to charm coupling.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\textwidth]{\main/section7/higgs_production}
+	\includegraphics[width=\textwidth]{section7/higgs_production}
 	\caption{Left panel, leading-order production of Higgs in association with a heavy gauge boson ($Z/W$) and 
 		subsequent decays. Central panel, additional production channel of Higgs in association 
 		with a heavy gauge boson that becomes relevant for large $y_c$ \cite{Perez:2015aoa}.
@@ -1050,9 +1002,9 @@ Thus, the use of them will result in a better sensitivity for probing the light 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[t]
 \begin{center}
-\includegraphics[width=0.35\textwidth]{Disteta.pdf}~~~~~~~~
-\includegraphics[width=0.35\textwidth]{DistpT.pdf}\\
-\includegraphics[width=0.35\textwidth]{normalizedcharm8TeV.pdf}
+\includegraphics[width=0.35\textwidth]{section7/Disteta.pdf}~~~~~~~~
+\includegraphics[width=0.35\textwidth]{section7/DistpT.pdf}\\
+\includegraphics[width=0.35\textwidth]{section7/normalizedcharm8TeV.pdf}
 \caption{The Higgs normalized distributions. 
 Left-top\,(Right-top) : $y_h\,(p_T)$ distribution for enhanced $u$, $d$ and $s$ Yukawa compared to the SM~\cite{Soreq:2016rae};
 Bottom: $p_T$ distribution for enhanced $c$ Yukawa~\cite{Bishara:2016jga}. 
@@ -1077,9 +1029,9 @@ The sensitivity of the 13\,TeV run of the rapidity and transverse momentum distr
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[t]
 \begin{center}
-\includegraphics[width=0.35\textwidth]{Naive13TeVy.pdf}~~~~~~
-\includegraphics[width=0.35\textwidth]{Naive13TeVpT.pdf}\\
-\includegraphics[width=0.35\textwidth]{future12.pdf}
+\includegraphics[width=0.35\textwidth]{section7/Naive13TeVy.pdf}~~~~~~
+\includegraphics[width=0.35\textwidth]{section7/Naive13TeVpT.pdf}\\
+\includegraphics[width=0.35\textwidth]{section7/future12.pdf}
 \caption{The sensetivy of the different angular distribution to probe light quarks Yukawa at 13\,TeV.  
 Left-top: $u$ and $d$ quark Yukawa from $y_h$ distribution~\cite{Soreq:2016rae};
 Right-top: $u$ and $d$ quark Yukawa from $p_T$ distribution~\cite{Soreq:2016rae}; 
@@ -1106,7 +1058,7 @@ These bounds on the $c$ Yukawa are weaker\,(stronger) then the bounds from the g
 
 Variations of Higgs boson couplings alter the SM Higgs production cross sections, both inclusively and differentially.
 % 
-Exploiting the deviations of the differential spectra, in particular the transverse momentum spectrum, $\pth$, one can constrain Higgs boson couplings using information that is not available in inclusive measurements~\cite{%
+Exploiting the deviations of the differential spectra, in particular the transverse momentum spectrum, $pTH$, one can constrain Higgs boson couplings using information that is not available in inclusive measurements~\cite{%
 Khachatryan:2016vau,% 7 & 8 TeV coupling combination
 Aad:2015zhl,% 7 & 8 TeV mass combination
 CMS:2018lkl% 13 TeV CMS coupling combination
@@ -1118,11 +1070,11 @@ As the measurements of differential cross sections are generally dominated by st
 
 The Higgs boson couplings are free parameters in the SM Lagrangian, and there are many potential extensions of the SM~\cite{Dimopoulos:1981zb,Witten:1981nf} that predict deviations of their SM values.
 % 
-Using the transverse momentum distribution measured by the ATLAS Collaboration at $\sqrt{s}=8$\TeV~\cite{Aad:2015lha}, corresponding to an integrated luminosity of $20.3$\fbinv, for the first time limits were set on the coupling to the charm quark, $\kappac$, using differential distributions~\cite{Bishara:2016jga}.
+Using the transverse momentum distribution measured by the ATLAS Collaboration at $\sqrt{s}=8$\UTeV~\cite{Aad:2015lha}, corresponding to an integrated luminosity of $20.3$\Uifb, for the first time limits were set on the coupling to the charm quark, $\kappac$, using differential distributions~\cite{Bishara:2016jga}.
 % 
-These limits are compatible with those obtained from direct limits, such as a search using the same dataset for $\PH\to\jpsi\photon$ by the ATLAS Collaboration~\cite{Aad:2015sda}, and a search for $\hcc$ by the ATLAS Collaboration~\cite{Aaboud:2018fhh} using data collected at $\sqrt{s}=13$\TeV, corresponding to an integrated luminosity of $36.1$\fbinv.
+These limits are compatible with those obtained from direct limits, such as a search using the same dataset for $\PH\to\PJGy\PGg$ by the ATLAS Collaboration~\cite{Aad:2015sda}, and a search for $\hcc$ by the ATLAS Collaboration~\cite{Aaboud:2018fhh} using data collected at $\sqrt{s}=13$\UTeV, corresponding to an integrated luminosity of $36.1$\Uifb.
 % 
-In addition to this study of the Higgs boson coupling to light quarks concerning mostly $\pth \lessapprox \mH$ (where $\mH$ is the Higgs boson mass), a study~\cite{Grazzini:2017szg,Grazzini:2016paz} involving simultaneous variations of the Higgs boson coupling to the top quark, $\kappat$, the bottom quark, $\kappab$, and an anomalous direct coupling to the gluon field, $\cg$, aims to exploit the tails of the $\pth$ distribution.
+In addition to this study of the Higgs boson coupling to light quarks concerning mostly $pTH \lessapprox \mH$ (where $\mH$ is the Higgs boson mass), a study~\cite{Grazzini:2017szg,Grazzini:2016paz} involving simultaneous variations of the Higgs boson coupling to the top quark, $\kappat$, the bottom quark, $\kappab$, and an anomalous direct coupling to the gluon field, $\cg$, aims to exploit the tails of the $pTH$ distribution.
 
 
 
@@ -1140,19 +1092,19 @@ Khachatryan:2016vnn,% diff. CMS hww, Run I
 Sirunyan:2018kta,% diff. CMS hgg, Run II
 CMS_AN_2016-442,% diff. CMS hzz, Run II
 CMS-PAS-HIG-17-028% diff. CMS combination Run II
-} Collaborations at $\sqrt{s}=8$ and $13$\TeV.
+} Collaborations at $\sqrt{s}=8$ and $13$\UTeV.
 % 
-Recently, the \hyphenation{parametrized} theoretical predictions of the $\pth$ distribution from Ref.~\cite{Bishara:2016jga} and Refs.~\cite{Grazzini:2017szg,Grazzini:2016paz} were fitted to data~\cite{CMS-PAS-HIG-17-028} collected by the CMS Collaboration at $\sqrt{s}=13$\TeV, corresponding to an integrated luminosity of $36.1$\fbinv.
+Recently, the \hyphenation{parametrized} theoretical predictions of the $pTH$ distribution from Ref.~\cite{Bishara:2016jga} and Refs.~\cite{Grazzini:2017szg,Grazzini:2016paz} were fitted to data~\cite{CMS-PAS-HIG-17-028} collected by the CMS Collaboration at $\sqrt{s}=13$\UTeV, corresponding to an integrated luminosity of $36.1$\Uifb.
 % 
-This section concerns the projection of the constraints on Higgs boson couplings obtained in Ref.~\cite{CMS-PAS-HIG-17-028} to an integrated luminosity of $3000$\fbinv.
+This section concerns the projection of the constraints on Higgs boson couplings obtained in Ref.~\cite{CMS-PAS-HIG-17-028} to an integrated luminosity of $3000$\Uifb.
 % 
-We report projections for the simultaneous fits to data of $\kappac$ and $\kappab$ and of $\kappat$ and $\cg$, using projections of the differential distributions at $3000$\fbinv obtained elsewhere \textbf{[Ref to pure diff xs projection here]}.
+We report projections for the simultaneous fits to data of $\kappac$ and $\kappab$ and of $\kappat$ and $\cg$, using projections of the differential distributions at $3000$\Uifb obtained elsewhere \textbf{[Ref to pure diff xs projection here]}.
 
 
 
-The Higgs boson coupling fits are based a combination of $\pth$ distributions from the $\hgg$~\cite{Sirunyan:2018kta} and $\hzztofourl$~\cite{CMS_AN_2016-442} (where $\ell = \electron$ or $\muon$) decay channels obtained at $\sqrt{s}=13\,$TeV.
+The Higgs boson coupling fits are based a combination of $pTH$ distributions from the $\hgg$~\cite{Sirunyan:2018kta} and $\hzzllll$~\cite{CMS_AN_2016-442} (where $\ell = \Pe$ or $\Pgm$) decay channels obtained at $\sqrt{s}=13\,$TeV.
 % 
-Furthermore, a search for the Higgs boson produced with large \pt and decaying to a bottom quark-antiquark ($\bb$) pair~\cite{CMS_AN_2016-366}, which enhances the sensitivity at high $\pth$, is included in the $\kappat/\cg$ fit.
+Furthermore, a search for the Higgs boson produced with large \pt and decaying to a bottom quark-antiquark ($\PQb\PAQb$) pair~\cite{CMS_AN_2016-366}, which enhances the sensitivity at high $pTH$, is included in the $\kappat/\cg$ fit.
 % 
 The Higgs boson coupling fits are performed using an simultaneous extended maximum likelihood fit to the diphoton mass, four-lepton mass, and soft-drop mass $\msd$~\cite{Dasgupta:2013ihk,Larkoski:2014wba} spectra in all the analysis categories of the $\hgg$, $\hzz$, and $\hbb$ channels, respectively.
 % 
@@ -1172,7 +1124,7 @@ This result is implemented by letting the branching fractions be determined in t
 
 
 
-The expected one and two standard deviation contours of the $\kappac/\kappab$ fit with the branching fractions \hyphenation{parametrized} as functions of the Higgs boson couplings at a projected integrated luminosity of $3000$\fbinv is shown in Fig.~\ref{fig:kbkc_couplingdependentBRs}, for both scenarios of systematic uncertainty.
+The expected one and two standard deviation contours of the $\kappac/\kappab$ fit with the branching fractions \hyphenation{parametrized} as functions of the Higgs boson couplings at a projected integrated luminosity of $3000$\Uifb is shown in Fig.~\ref{fig:kbkc_couplingdependentBRs}, for both scenarios of systematic uncertainty.
 % 
 For the $\hgg$ channel the systematic uncertainties dominate if kept at the current level (\ie in Scenario 1), but when scaled down according to the Scenario 2 prescription the systematic uncertainties are within the same order of magnitude as the statistical ones.
 
@@ -1190,7 +1142,7 @@ As this fit is dominated by statistical uncertainties even at very high integrat
     \includegraphics[width=0.49\linewidth]{\main/section7/projection_kbkc_plot_couplingdependentBRs_scenario2.pdf}
     % 
     \caption{
-        Simultaneous fit to data for $\kappab$ and $\kappac$, assuming a coupling dependence of the branching fractions for Scenario 1 (\cmsLeft) and Scenario 2 (\cmsRight).
+        Simultaneous fit to data for $\kappab$ and $\kappac$, assuming a coupling dependence of the branching fractions for Scenario 1 (\UcmsLeft) and Scenario 2 (\UcmsRight).
         % 
         The one standard deviation contour is drawn for the combination ($\hgg$ and $\hzz$), the $\hgg$ channel, and the $\hzz$ channel in black, red, and blue, respectively.
         % 
@@ -1208,7 +1160,7 @@ As this fit is dominated by statistical uncertainties even at very high integrat
     \caption{
         As Fig.~\ref{fig:kbkc_couplingdependentBRs}, but with the branching fractions implemented as nuisance parameters with no prior constraint.
         % 
-        % Simultaneous fit to data for $\kappab$ and $\kappac$ with the branching fractions implemented as nuisance parameters with no prior constraint for Scenario 1 (\cmsLeft) and Scenario 2 (\cmsRight).
+        % Simultaneous fit to data for $\kappab$ and $\kappac$ with the branching fractions implemented as nuisance parameters with no prior constraint for Scenario 1 (\UcmsLeft) and Scenario 2 (\UcmsRight).
         % % 
         % The one standard deviation contour is drawn for the combination ($\hgg$ and $\hzz$), the $\hgg$ channel, and the $\hzz$ channel in black, red, and blue, respectively.
         % % 

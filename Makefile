@@ -1,3 +1,3 @@
-TARGET=volume
+TARGET=report
 
 include Makefile.mk

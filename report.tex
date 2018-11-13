@@ -1,5 +1,7 @@
 \documentclass[11pt,twoside,a4paper]{cernrep} 
 \usepackage{rep_common,booktabs}
+\usepackage{slashbox}
+\usepackage[pdfencoding=auto]{hyperref}
 \pagestyle{plain}
 
 % --
@@ -65,13 +67,6 @@
 \newcommand{\ptv}{p_{T,V}}
 \newcommand{\rf}[1]{{\color{purple} #1}} 
 \newcommand{\com}[1]{{\color{red} \sffamily (#1)}} % needs the package 'color'
-\newcommand{\TeV}{\ensuremath{\text{Te\kern -0.1em V}}}
-\newcommand{\GeV}{\ensuremath{\text{Ge\kern -0.1em V}}}
-\newcommand{\geV}{\ensuremath{\text{Ge\kern -0.1em V}}}
-\newcommand{\MeV}{\ensuremath{\text{Me\kern -0.1em V}}}
-\newcommand{\keV}{\ensuremath{\text{ke\kern -0.1em V}}}
-\newcommand{\eV}{\ensuremath{\text{e\kern -0.1em V}}}
-%\newcommand*{\ipb}{\mbox{pb$^{-1}$}}
 \newcommand*{\lHHH}{\ensuremath{\lambda_{HHH}}}
 \newcommand*{\kl}{\ensuremath{\kappa_{\lambda}}}
 %\newcommand{\fb}{\,{\rm fb}^{-1}}
@@ -90,7 +85,178 @@
 \newcommand{\chhh}{c_{hhh}}
 \newcommand{\mhh}{m_{hh}}
 
-%\newcommand{\mptvec}{{/\!\!\!\vec{ p}_T}}
+% External CMS commands.
+\newlength{\UcmsFigWidth}
+\setlength{\UcmsFigWidth}{0.49\textwidth}
+\providecommand{\UcmsLeft}{upper\xspace}
+\providecommand{\UcmsRight}{lower\xspace}
+\newcommand{\processbbtt}{\ensuremath{{\Ph}\to{\Pa\Pa}\to2\Pgt2{\cPqb}}\xspace}
+\newcommand{\processmmtt}{\ensuremath{{\Ph}\to{\Pa\Pa}\to2\Pgm2{\Pgt}}\xspace}
+\newcommand{\ma}{\ensuremath{m_{\Pa}}\xspace}
+\newcommand{\mbtt}{\ensuremath{m_{\cPqb\Pgt\Pgt}^{\text{vis}}}\xspace}
+
+\newcommand{\hbb}{\ensuremath{\PH\to\PQb\PAQb}\xspace}
+\newcommand{\hcc}{\ensuremath{\PH\to\PQc\PAQc}\xspace}
+\newcommand{\hgg}{\ensuremath{\PH\to\PGg\PGg}\xspace}
+\newcommand{\hzz}{\ensuremath{\PH\to\PZ\PZ}\xspace}
+\newcommand{\hzzllll}{\ensuremath{\hzz^{(\ast)}\to 4\ell}\xspace}
+
+\newcommand{\Hbb}{\ensuremath{\text{H}\rightarrow\PQb\PAQb}\xspace}
+\newcommand{\ttbar}{\ensuremath{\text{t}\overline{\text{t}}}\xspace}
+\newcommand{\ttH}{\ensuremath{\ttbar\text{H}}\xspace}
+\newcommand{\pTH}{\ensuremath{p_\text{T}^\text{H}}\xspace}
+
+\newcommand{\tH}{\ensuremath{\text{tH}}\xspace}
+\newcommand{\Htobb}{\ensuremath{\text{H}\rightarrow\PQb\PAQb}\xspace}
+\newcommand{\ttHF}{\ensuremath{\ttbar+\text{HF}}\xspace}
+\newcommand{\tth}{\ensuremath{\Pqt\Pqt\PH}\xspace}
+\newcommand{\ww}{\ensuremath{\PW\PW}\xspace}
+\newcommand{\hww}{\ensuremath{\PH\to\ww}\xspace}
+\newcommand{\tautau}{\ensuremath{\Pgt\Pgt}\xspace}
+\newcommand{\mumu}{\ensuremath{\Pgm\Pgm}\xspace}
+\newcommand{\tHW}{\ensuremath{\Pqt\PH\PW}\xspace}
+\newcommand{\tHq}{\ensuremath{\Pqt\PH\PQq}\xspace}
+\newcommand{\zz}{\ensuremath{\PZ\PZ}\xspace}
+\renewcommand{\gg}{\ensuremath{\PGg\PGg}\xspace}
+\providecommand{\ttjets}{\ensuremath{\PQt\PQt\text{+}\text{jets}}\xspace}
+
+\newcommand{\kappab}{\ensuremath{\kappa_{\PQb}}\xspace}
+\newcommand{\kappac}{\ensuremath{\kappa_{\PQc}}\xspace}
+\newcommand{\kappat}{\ensuremath{\kappa_{\PQt}}\xspace}
+
+\newcommand{\ggh}{\ensuremath{\Pg\Pg\PH}\xspace}
+\newcommand{\vbf}{\ensuremath{\mathrm{VBF}}\xspace}
+\newcommand{\vh}{\ensuremath{\mathrm{V}\PH}\xspace}
+\newcommand{\hwwlnln}{\ensuremath{\hww^{(\ast)}\to\ell\Pgn\ell\Pgn}\xspace}
+\newcommand{\htt}{\ensuremath{\PH\to\tautau}\xspace}
+\newcommand{\hlep}{\ensuremath{\PH\to\text{leptons}}\xspace}
+\newcommand{\hmm}{\ensuremath{\PH\to\mumu}\xspace}
+\newcommand{\wh}{\ensuremath{\PW\PH}\xspace}
+\newcommand{\zh}{\ensuremath{\PZ\PH}\xspace}
+\providecommand{\wip}[1]{\textcolor{red}{\bfseries TODO: #1}\xspace}
+\newcommand{\ggZH}{\ensuremath{\Pg\Pg\PZ\PH}\xspace}
+
+\newcommand{\SM}{\ensuremath{\mathrm{SM}}\xspace}
+\newcommand{\kZ}{\ensuremath{\kappa_{\mathrm{\PZ}}}\xspace}
+\newcommand{\kW}{\ensuremath{\kappa_{\mathrm{\PW}}}\xspace}
+\newcommand{\ktau}{\ensuremath{\kappa_{\PGt}}\xspace}
+\newcommand{\ktop}{\ensuremath{\kappa_{\Pqt}}\xspace}
+\newcommand{\kb}{\ensuremath{\kappa_{\Pqb}}\xspace}
+\newcommand{\kmu}{\ensuremath{\kappa_{\Pgm}}\xspace}
+\newcommand{\kglu}{\ensuremath{\kappa_{\mathrm{\Pg}}}\xspace}
+\newcommand{\kgam}{\ensuremath{\kappa_{\PGg}}\xspace}
+\newcommand{\GammaSM}{\ensuremath{\Gamma_{\PH}/\Gamma_{\PH}^{\mathrm{SM}}}\xspace}
+\newcommand{\Bbsm}{\ensuremath{\mathrm{B_{BSM}}}\xspace}
+\newcommand{\kV}{\ensuremath{\kappa_{\mathrm{V}}}\xspace}
+
+\newcommand{\tril}{\lambda_{3}}
+\newcommand{\trilsm}{\tril^{\rm SM}}
+\newcommand{\ktre}{\kappa_{3}}
+\newcommand{\dsigmah}{\delta \sigma_{\tril}}
+\newcommand{\dBR}{\delta {\rm BR}_{\tril}}
+\newcommand{\ggF}{gg{\rm F}}
+\newcommand{\br}{{\rm BR}}
+\newcommand{\muif}{\mu_i^f}
+\newcommand{\pnote}[1]{\textbf{[P:} \textit{\color{red} #1}\textbf{]}}
+
+\newcommand{\BRHinv}{\mathrm{BR}_\mathrm{inv}}
+\newcommand{\MDM}{M_\mathrm{DM}}
+
+\newcommand{\CL}{\ensuremath{~\mathrm{C.L.}}}
+\newcommand{\BRNP}{\mathrm{BR}(H\to\mathrm{NP})}
+
+\newcommand{\MET}{\ensuremath{\mathrm{E}_{\mathrm{T}}^{\mathrm{miss}}}}
+\newcommand{\MHT}{\ensuremath{\mathrm{H}_{\mathrm{T}}^{\mathrm{miss}}}}
+
+\newcommand{\POWHEG}{\textsc{Pohweg}}
+\newcommand{\MGvATNLO}{\textsc{aMC@NLO}}
+\newcommand{\PYTHIA}{\textsc{Pythia}}
+\newcommand{\GEANT}{\textsc{Geant~4}}
+\newcommand{\FASTJET}{\textsc{FastJet}}
+\newcommand{\eqn}{equation}
+
+\newcommand{\mcO}{\mathcal{O}}
+\newcommand{\yvmkk}{\bar Y^2 \frac{v^2}{m_{KK}^2}}
+
+\newcommand{\pt}{\ensuremath{p_T}\xspace}
+\newcommand{\mH}{\ensuremath{m_{\PH}}\xspace}
+\newcommand{\msd}{\ensuremath{m_\text{SD}}\xspace}
+\newcommand{\Hphiphi}{\ensuremath{\PH \to \phi\phi}\xspace}
+\newcommand{\ctau}{\ensuremath{c\tau}}
+\newcommand{\kt}{\ensuremath{k_t}\xspace}
+
+\newcommand{\gammaDark}{\ensuremath{{\PGg}_{\mathrm{D}}}\xspace}
+\newcommand{\nOne}{\ensuremath{\textnormal{n}_{1}}\xspace}
+\newcommand{\nDark}{\ensuremath{\textnormal{n}_{\mathrm{D}}}\xspace}
+\newcommand{\PhOne}{\ensuremath{\Ph_{1}}\xspace}
+\newcommand{\PhTwo}{\ensuremath{\Ph_{2}}\xspace}
+\newcommand{\PhOneTwo}{\ensuremath{\Ph_{1,2}}\xspace}
+\newcommand{\PaOne}{\ensuremath{\Pa_{1}}\xspace}
+\newcommand{\dimuon}{\ensuremath{(\PGm\PGm)}\xspace}
+\newcommand{\dimuonOne}{\ensuremath{(\PGm\PGm)_1}\xspace}
+\newcommand{\dimuonTwo}{\ensuremath{(\PGm\PGm)_2}\xspace}
+\newcommand{\MgammaDark}{\ensuremath{m_{{\PGg}_{\mathrm{D}}}}\xspace}
+\newcommand{\MnOne}{\ensuremath{m_{{\textnormal{n}}_{1}}}\xspace}
+\newcommand{\MnDark}{\ensuremath{m_{{\textnormal{n}}_{\mathrm{D}}}}\xspace}
+\newcommand{\MPhOne}{\ensuremath{m_{\Ph_{1}}}\xspace}
+\newcommand{\MPhTwo}{\ensuremath{m_{\Ph_{2}}}\xspace}
+\newcommand{\MPhOneTwo}{\ensuremath{m_{\Ph_{1,2}}}\xspace}
+\newcommand{\MPhI}{\ensuremath{m_{\Ph_{i}}}\xspace}
+\newcommand{\MPa}{\ensuremath{m_{\Pa}}\xspace}
+\newcommand{\MPaOne}{\ensuremath{m_{\Pa_{1}}}\xspace}
+\newcommand{\Mdimuon}{\ensuremath{m_{(\PGm\PGm)}}\xspace}
+\newcommand{\MdimuonOne}{\ensuremath{m_{(\PGm\PGm)_1}}\xspace}
+\newcommand{\MdimuonTwo}{\ensuremath{m_{(\PGm\PGm)_2}}\xspace}
+\newcommand{\Mmuon}{\ensuremath{m_{\PGm}}\xspace}
+\newcommand{\TgammaDark}{\ensuremath{\tau_{{\PGg}_{\mathrm{D}}}}\xspace}
+\newcommand{\ratio}{\ensuremath{\overline{r}}\xspace}
+\newcommand{\alphaGen}{\ensuremath{\alpha_\text{gen}}\xspace}
+\newcommand{\epsilonFull}{\ensuremath{\varepsilon_{\text{full}}}\xspace}
+\newcommand{\SOne}{\ensuremath{S_\mathrm{I}(\Mdimuon)}\xspace}
+\newcommand{\STwo}{\ensuremath{S_\mathrm{II}(\Mdimuon)}\xspace}
+\newcommand{\ASR}{\ensuremath{A_{\mathrm{SR}}}\xspace}
+\newcommand{\ACR}{\ensuremath{A_{\mathrm{CR}}}\xspace}
+\newcommand{\fSPS}{\ensuremath{f_\mathrm{SPS}}\xspace}
+\newcommand{\tanb}{\ensuremath{\tan\beta}\xspace}
+
+\newcommand{\emu}{\Pe\Pgm}
+\newcommand{\mutau}{\Pgm\Pgt_{\rm{h}}}
+\newcommand{\etau}{\Pe\Pgt_{\rm{h}}}
+\newcommand{\tauhad}{\Pgt_{\rm{h}}}
+
+\newcommand{\ZJets}{\ensuremath{\PZ}/\ensuremath{\Pgg^{*}}{+}\text{jets}\xspace}
+\newcommand{\WJets}{\ensuremath{\PW}{+}\text{jets}\xspace}
+\newcommand{\ttbarJets}{\ensuremath{\Pqt\Paqt}{+}\text{jets}\xspace}
+\newcommand{\ztt}{\ensuremath{\PZ\to\Pgt\Pgt}\xspace}
+
+\newcommand{\pzetavis}{\ensuremath{p_{\zeta}^{\text{vis}}}\xspace}
+\newcommand{\pzetamiss}{\ensuremath{p_{\zeta}^{\text{miss}}}\xspace}
+
+\newcommand{\mhmodp}{\ensuremath{m_{\Ph}^{\text{mod+}}}\xspace}
+\newcommand{\mA}{\ensuremath{m_{\text{A}}}\xspace}
+\providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}
+\newcommand*{\RunTwo}{Run~2\xspace}
+\newcommand*{\taulep}{\ensuremath{\tau_{\mathrm{lep}}}\xspace}
+\newcommand*{\lephad}{\ensuremath{\taulep\thad}\xspace}
+\newcommand*{\hadhad}{\ensuremath{\thad\thad}\xspace}
+\renewcommand*{\tauhad}{\ensuremath{\tau_{\text{had}}}\xspace}
+\newcommand*{\taue}{\ensuremath{\tau_{e}}\xspace}
+\newcommand*{\taumu}{\ensuremath{\tau_{\mu}}\xspace}
+\newcommand*{\thad}{\ensuremath{\tau_{\mathrm{had}}}\xspace}
+\newcommand*{\mTtot}{m_\textnormal{T}^\textnormal{tot}}
+\newcommand*{\tauhadvis}{\ensuremath{\Pgt_{\text{had-vis}}}\xspace}
+\newcommand*{\ehad}{\ensuremath{\taue\thad}\xspace}
+\newcommand*{\muhad}{\ensuremath{\taumu\thad}\xspace}
+
+% These commands may not be correct.
+\newcommand{\dtrans}{\ensuremath{d_0}\xspace}
+\newcommand{\zo}{\ensuremath{z_o}\xspace}
+\newcommand{\HT}{\ensuremath{H_\mathrm{T}}\xspace}
+\newcommand{\effLT}{\ensuremath{\epsilon_\mathrm{LT}}\xspace}
+\newcommand{\Nbunches}{\ensuremath{N_\mathrm{bunches}}\xspace}
+\newcommand{\fLHC}{\ensuremath{f_\mathrm{LHC}}\xspace}
+\newcommand{\Nstubs}{\ensuremath{N_\mathrm{stubs}}\xspace}
+\newcommand{\SI}{\ensuremath{\mathrm{SI}\xspace}}
 
 \def\lra#1{\overset{\text{\scriptsize$\leftrightarrow$}}{#1}}
 
@@ -129,7 +295,7 @@
 \newpage
 \subfile{\main/section3/section}
 \newpage
-%\subfile{\main/section4/section}
+\subfile{\main/section4/section}
 \newpage
 \subfile{\main/section5/section}
 \newpage
@@ -152,5 +318,4 @@
 % -- Add volume bibliography and part specific bibliographies
 \bibliographystyle{report}
 \bibliography{\bibfiles}
-
 \end{document}
