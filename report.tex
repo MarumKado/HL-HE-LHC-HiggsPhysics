@@ -6,7 +6,7 @@
 % -- The bibliography file paths for the main volume and all parts
 % --
 %\def\bibfiles{\main/bib/chapter,\main/section1/bib/section,\main/section2/bib/section,\main/section3/bib/section,\main/section4/bib/section,\main/section5/bib/section,\main/section6/bib/section,\main/section7/bib/section,\main/section8/bib/section,\main/section9/bib/section}
-\def\bibfiles{\main/bib/chapter,\main/section1/bib/section,\main/section2/bib/section,\main/section3/bib/section,\main/section4/bib/section}
+\def\bibfiles{\main/bib/chapter,\main/section1/bib/section,\main/section2/bib/section,\main/section3/bib/section,\main/section4/bib/section,\main/section5/bib/section}
 \newcommand{\biblio}{\nocite{article-minimal}\bibliographystyle{report}\clearpage\bibliography{\bibfiles}}
 
 \usepackage{cancel}
@@ -178,6 +178,53 @@
 \newcommand{\dcvv}{\delta_{\cvv}}
 \newcommand{\dccc}{\delta_{\ccc}}
 \newcommand{\xtento}[1]{\ensuremath{\times 10^{#1}}\xspace}
+
+% Section 5.
+\newcommand{\gHsV}{{\Gamma_H}}
+\newcommand{\gHsVSM}{{\Gamma_{H,{\rm SM}}}}
+\newcommand{\gHsVtoX}{{\Gamma_{H\to X}}}
+\newcommand{\mhsV}{{m_H}}
+\newcommand{\n}{\nonumber \\}
+\newcommand{\sig}{\langle \sigma_{\rm a} v \rangle}
+\newcommand{\rel}{\Omega_\chi h^2}
+\newcommand{\MET}{$\slash{\hspace{-2.5mm}E}_T$}
+\newcommand{\dm}{\Delta M}
+\newcommand{\m1}{\ensuremath{M_1}\xspace}
+\newcommand{\m2}{\ensuremath{M_2}\xspace}
+\newcommand{\m3}{\ensuremath{M_3}\xspace}
+\newcommand{\mf}{\ensuremath{m_{\tilde f}}\xspace}
+\newcommand{\mlsp}{\ensuremath{M_{LSP}}\xspace}
+\newcommand{\lsp}{\ensuremath{{\chi^0_1}}\xspace}
+\newcommand{\none}{\ensuremath{{\chi^0_1}}\xspace}
+\newcommand{\ntwo}{\ensuremath{{\chi^0_2}}\xspace}
+\newcommand{\cone}{\ensuremath{{\chi^\pm_1}}\xspace}
+\newcommand{\ctwo}{\ensuremath{{\chi^\pm_2}}\xspace}
+\newcommand{\ci}{\ensuremath{{\chi^\pm_i}}\xspace}
+\newcommand{\mnone}{\ensuremath{M_{\chi^0_1}}\xspace}
+\newcommand{\mntwo}{\ensuremath{M_{\chi^0_2}}\xspace}
+\newcommand{\mni}{\ensuremath{M_{\chi^0_i}}\xspace}
+\newcommand{\mcone}{\ensuremath{M_{\chi^\pm_1}}\xspace}
+\newcommand{\mctwo}{\ensuremath{M_{\chi^\pm_2}}\xspace}
+\newcommand{\ch10}{\ensuremath{\tilde \chi^0_1}\xspace}
+\newcommand{\mw}{\ensuremath{m_W}\xspace}
+\newcommand{\mz}{\ensuremath{m_Z}\xspace}
+\newcommand{\s}{\ensuremath{\tilde}\xspace}
+\newcommand{\mh}{\ensuremath{m_{h^0}}\xspace}
+\newcommand{\mH}{\ensuremath{m_{H^0}}\xspace}
+\newcommand{\mHpm}{\ensuremath{m_{H^\pm}}\xspace}
+\newcommand{\ma}{\ensuremath{m_{A}}\xspace}
+\newcommand{\non}{\nonumber}	
+\newcommand{\ibid}{{\it ibid}.}
+\newcommand{\ccto}{\ensuremath{\chi_1^0 \chi_1^0 \rightarrow}\xspace}
+\newcommand{\xen}{XENON-100~}
+\newcommand{\missET}{\ensuremath{\slash{\hspace{-2.5mm}E}_T}\xspace}
+\newcommand{\fbi}{\ensuremath{\,{\rm fb}^{-1}}\xspace}
+\newcommand{\abi}{\ensuremath{\,{\rm ab}^{-1}}\xspace}
+\newcommand{\fb}{\ensuremath{{\,{\rm fb}}}\xspace}
+\newcommand{\mrec}{\ensuremath{m_{\rm rec}}\xspace}
+\newcommand{\mee}{\ensuremath{m_{ee}}\xspace}
+\newcommand{\oda}[1]{\overset\leftrightarrow{#1}}
+
 % Other?
 \def\lra#1{\overset{\text{\scriptsize$\leftrightarrow$}}{#1}}
 
@@ -212,8 +259,8 @@ This is an abstract
 \subfile{\main/section3/section}
 \newpage
 \subfile{\main/section4/section}
-%\newpage
-%\subfile{\main/section5/section}
+\newpage
+\subfile{\main/section5/section}
 %\newpage
 %\subfile{\main/section6/section}
 %\newpage

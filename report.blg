@@ -1,0 +1,304 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: report.aux
+The style file: report.bst
+Reallocated field_info (elt_size=4) to 16360 items from 5000.
+Database file #1: ./bib/chapter.bib
+Database file #2: ./section1/bib/section.bib
+Database file #3: ./section2/bib/section.bib
+Database file #4: ./section3/bib/section.bib
+Repeated entry---line 184 of file ./section3/bib/section.bib
+ : @article{deFlorian:2016spz
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 302 of file ./section3/bib/section.bib
+ : @article{Butterworth:2015oua
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 349 of file ./section3/bib/section.bib
+ : @article{Buchalla:2018yce
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1727 of file ./section3/bib/section.bib
+ : @article{Grober:2015cwa
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1743 of file ./section3/bib/section.bib
+ : @article{Ghezzi:2015vva
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1868 of file ./section3/bib/section.bib
+ : @article{Kim:2018uty
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1958 of file ./section3/bib/section.bib
+ : @article{Buchalla:2013rka
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1976 of file ./section3/bib/section.bib
+ : @article{Buchalla:2013eza
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1990 of file ./section3/bib/section.bib
+ : @article{Buchalla:2014eca
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2004 of file ./section3/bib/section.bib
+ : @article{Buchalla:2015wfa
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2020 of file ./section3/bib/section.bib
+ : @article{Buchalla:2015qju
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2035 of file ./section3/bib/section.bib
+ : @article{Buchalla:2017jlu
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2285 of file ./section3/bib/section.bib
+ : @article{deBlas:2018tjm
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2419 of file ./section3/bib/section.bib
+ : @article{Alonso:2012px
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2517 of file ./section3/bib/section.bib
+ : @article{Buckley:2014ana
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2551 of file ./section3/bib/section.bib
+ : @article{Feruglio:1992wf
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2568 of file ./section3/bib/section.bib
+ : @article{Bagger:1993zf
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2586 of file ./section3/bib/section.bib
+ : @article{Koulovassilopoulos:1993pw
+ :                                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2602 of file ./section3/bib/section.bib
+ : @article{Burgess:1999ha
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2619 of file ./section3/bib/section.bib
+ : @article{Wang:2006im
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2633 of file ./section3/bib/section.bib
+ : @article{Grinstein:2007iv
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2803 of file ./section3/bib/section.bib
+ : @article{Aad:2015gba
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2821 of file ./section3/bib/section.bib
+ : @article{Sirunyan:2018hoz
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2838 of file ./section3/bib/section.bib
+ : @article{Aaboud:2018urx
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2860 of file ./section3/bib/section.bib
+ : @article{Khachatryan:2016vau
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2932 of file ./section3/bib/section.bib
+ : @article{Buchalla:2016sop
+ :                          ,
+I'm skipping whatever remains of this entry
+Database file #5: ./section4/bib/section.bib
+Repeated entry---line 23 of file ./section4/bib/section.bib
+ : @article{Khachatryan:2016vau
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 579 of file ./section4/bib/section.bib
+ : @article{Giudice:2007fh
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 699 of file ./section4/bib/section.bib
+ : @article{Grzadkowski:2010es
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 868 of file ./section4/bib/section.bib
+ : @article{Mangano:2006rw
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1147 of file ./section4/bib/section.bib
+ : @article{Barklow:2017awn
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1327 of file ./section4/bib/section.bib
+ : @article{Alwall:2014hca
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1424 of file ./section4/bib/section.bib
+ : @article{Sjostrand:2014zea
+ :                           ,
+I'm skipping whatever remains of this entry
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Repeated entry---line 1513 of file ./section4/bib/section.bib
+ : @article{Artoisenet:2012st
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1989 of file ./section4/bib/section.bib
+ : @article{Ghezzi:2015vva
+ :                        ,
+I'm skipping whatever remains of this entry
+Database file #6: ./section5/bib/section.bib
+Repeated entry---line 85 of file ./section5/bib/section.bib
+ : @article{Contino:2016spe
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 158 of file ./section5/bib/section.bib
+ : @article{LHCHiggsCrossSectionWorkingGroup:2012nn
+ :                                                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 190 of file ./section5/bib/section.bib
+ : @article{Dulat:2015mca
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 225 of file ./section5/bib/section.bib
+ : @article{Catani:1996vz
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 345 of file ./section5/bib/section.bib
+ : @article{Bishara:2016jga
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 362 of file ./section5/bib/section.bib
+ : @article{Khachatryan:2016vau
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 394 of file ./section5/bib/section.bib
+ : @article{Heinemeyer:2013tqa
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 855 of file ./section5/bib/section.bib
+ : @article{Borowka:2016ehy
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 875 of file ./section5/bib/section.bib
+ : @article{Alioli:2016xab
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 893 of file ./section5/bib/section.bib
+ : @article{deFlorian:2016spz
+ :                           ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "dEnterria:2012yj"
+Warning--I didn't find a database entry for "CMS-PAS-SMP-17-014"
+Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "HIGG-2016-14"
+Warning--I didn't find a database entry for "CMS_AN_2016-442"
+Warning--I didn't find a database entry for "CMS-PAS-HIG-17-028"
+Warning--I didn't find a database entry for "bib:cms:tthbb"
+Warning--I didn't find a database entry for "ATLAS-CONF-2018-004"
+Warning--I didn't find a database entry for "CMS-PAS-HIG-17-019"
+Warning--I didn't find a database entry for "CMS-PAS-HIG-17-007"
+Warning--I didn't find a database entry for "NNPDF"
+Warning--I didn't find a database entry for "delphes"
+Warning--I didn't find a database entry for "PAS"
+Warning--I didn't find a database entry for "CMS_PAS_HIG_17-030"
+Warning--I didn't find a database entry for "???"
+Warning--I didn't find a database entry for "mg5"
+Warning--I didn't find a database entry for "pythia"
+Warning--I didn't find a database entry for "CMS"
+Warning--I didn't find a database entry for "ATLAS14"
+Warning--I didn't find a database entry for "ATLAS17"
+Warning--I didn't find a database entry for "hh-orig"
+Warning--I didn't find a database entry for "hh-early"
+Warning--I didn't find a database entry for "current-gamma"
+Warning--I didn't find a database entry for "hl-lhc"
+Warning--I didn't find a database entry for "ew_phase"
+Warning--I didn't find a database entry for "he-lhc-hh"
+Warning--I didn't find a database entry for "madmax-hh"
+Warning--I didn't find a database entry for "vernon"
+Warning--I didn't find a database entry for "martin"
+Warning--I didn't find a database entry for "hh-ww"
+Warning--I didn't find a database entry for "low_energy"
+Warning--I didn't find a database entry for "hh-tautau"
+Warning--I didn't find a database entry for "madmax"
+Warning--I didn't find a database entry for "pythia8"
+Warning--I didn't find a database entry for "mlm"
+Warning--I didn't find a database entry for "hh-gamma"
+Warning--I didn't find a database entry for "performance"
+Warning--I didn't find a database entry for "read"
+Warning--I didn't find a database entry for "ade"
+Warning--empty author in HIG16044
+Warning--empty note in Aaboud:2018urx
+Warning--empty author in ATLAS-PHYS-PUB-2018-XY
+Warning--empty author in CMS-PAS-HIG-18-009
+Warning--empty author in CMS-PAS-HIG-17-005
+Warning--empty institution in CMS_PAS_HIG_17-016
+Warning--empty author in HIG16041
+Warning--empty author in HIG-16-042
+Warning--empty institution in HIG-16-042
+Warning--empty author in HIG16043
+Warning--empty author in HIG17010
+Warning--empty author in Sirunyan:2018ygk
+Warning--empty author in HIG-17-019
+Warning--empty institution in HIG-17-019
+Warning--empty author in Sirunyan:2018koj
+Warning--empty author in CMS-PAS-HIG-17-031
+Warning--empty author in CMS-PAS-HIG-17-030
+Warning--empty author in ATLAS-CONF-2018-043
+`howpublished' is a missing field, not a string, for entry ATLASHHPUBnote
+while executing---line 1208 of file report.bst
+`howpublished' is a missing field, not a string, for entry ATLASrun2HHbbtautau
+while executing---line 1208 of file report.bst
+Warning--empty author in CMS:2015nat
+Warning--empty author in CMS:2017cwx
+Warning--empty author in ATL-PHYS-PUB-2016-024
+Warning--empty author in ATL-PHYS-PUB-2017-001
+Warning--empty author in url:hyperopt
+Warning--empty title in url:hyperopt
+Warning--empty author in ATL-PHYS-PUB-2014-019
+Warning--empty author in LEP2
+Warning--empty author in ATL-PHYS-PUB-2014-016
+You've used 316 entries,
+            2458 wiz_defined-function locations,
+            3007 strings with 77180 characters,
+and the built_in function-call counts, 130296 in all, are:
+= -- 14384
+> -- 3476
+< -- 525
++ -- 5245
+- -- 1127
+* -- 10345
+:= -- 16996
+add.period$ -- 643
+call.type$ -- 316
+change.case$ -- 15
+chr.to.int$ -- 0
+cite$ -- 343
+duplicate$ -- 12929
+empty$ -- 9449
+format.name$ -- 933
+if$ -- 30359
+int.to.chr$ -- 0
+int.to.str$ -- 316
+missing$ -- 1149
+newline$ -- 1553
+num.names$ -- 386
+pop$ -- 1826
+preamble$ -- 2
+purify$ -- 0
+quote$ -- 0
+skip$ -- 3759
+stack$ -- 0
+substring$ -- 7426
+swap$ -- 2362
+text.length$ -- 10
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 27
+while$ -- 1181
+width$ -- 319
+write$ -- 2895
+(There were 47 error messages)
