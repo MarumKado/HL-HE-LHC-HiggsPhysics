@@ -7,8 +7,7 @@
 % --
 %\def\bibfiles{\main/bib/chapter,\main/section1/bib/section,\main/section2/bib/section,\main/section3/bib/section,\main/section4/bib/section,\main/section5/bib/section,\main/section6/bib/section,\main/section7/bib/section,\main/section8/bib/section,\main/section9/bib/section}
 \def\bibfiles{\main/bib/chapter,\main/section1/bib/section,\main/section2/bib/section}
-% --
-\newcommand{\biblio}{\nocite{article-minimal}\bibliographystyle{report}\clearpage\bibliography{\bibfiles}}  % *Modification: added `\main/` to specify relative file location.
+\newcommand{\biblio}{\nocite{article-minimal}\bibliographystyle{report}\clearpage\bibliography{\bibfiles}}
 
 \usepackage{cancel}
 \usepackage{placeins}
@@ -194,14 +193,9 @@ This is an abstract
 %\subfile{\main/section10/section}
 %\newpage
 
-
 % -- Add bibliography to table of contents
-%\addcontentsline{toc}{chapter}{References}
-
-% dummy reference to avoid that bibtex fails
-% -- Add volume bibliography and part specific bibliographies
+\addcontentsline{toc}{chapter}{References}
 \bibliographystyle{report}
 \bibliography{\bibfiles}
-
 
 \end{document}
