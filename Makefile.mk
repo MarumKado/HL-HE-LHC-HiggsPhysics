@@ -41,6 +41,7 @@ $(PDF): $(SOURCE) $(BIBFILE) $(GLOSSFILE)
 	$(info PDF='$(PDF)')
 	$(info SOURCE='$(SOURCE)')
 	$(TEX) $(SOURCE)
+	$(TEX) $(SOURCE)
 
 $(BIBFILE): | $(AUXFILE)
 	$(info ********** MAKE BIBLIOGRAPHY '$(BIBFILE)' **********)
