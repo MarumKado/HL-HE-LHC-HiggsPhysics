@@ -1,10 +1,6 @@
-% don't remove the folling lines, and edit the defintion of \main if needed
 \documentclass[../report.tex]{subfiles}
 \providecommand{\main}{..}
 \IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
-% until here
-
-%\usepackage{multicol} % Doesnt work? :(
 
 \begin{document}
 
@@ -134,7 +130,7 @@ and multivariate analyses (MVA) can be found in Ref.~\cite{Banerjee:2018bio}. Fi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[!t]
-\includegraphics[width=0.45\textwidth]{\main/section4/bars}
+\includegraphics[width=0.45\textwidth]{\main/section4/plots/bars}
 \caption{The differential distribution of events at an integrated luminosity of 300 fb$^{-1}$ with respect to $M_{Zh}$ for the EFT signal as well as the different backgrounds. The EFT signal corresponds to the point $\{{g}^h_{Zu_L} ,{g}^h_{Zd_L} ,{g}^h_{Zu_R} ,{g}^h_{Zd_R} \}=\{-0.005, 0.0001 , -0.010, 0.005 \}$ which is allowed by  LEP bounds. The vertical line shows the cut-off evaluated using Eq.~\ref{cutoff}}
 \label{bars}
 \end{figure}
@@ -157,7 +153,7 @@ The above bounds    translate to a lower bound on the scale of new physics given
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[!t]
-\includegraphics[width=0.45\textwidth]{\main/section4/300plot}
+\includegraphics[width=0.45\textwidth]{\main/section4/plots/300plot}
 \caption{The light blue (dark blue) region above shows the projection for the allowed region with 300 fb$^{-1}$ (3 ab$^{-1}$) data from the 
 $pp \to Zh$ process  in the $\delta \kappa_\gamma-\hat{S}$ vs $\delta g^Z_1$ plane for universal models. We show in grey the allowed region after LEP bounds (taking the TGC $\lambda_\gamma=0$, a conservative choice) are imposed.  In pink (dark pink)  we show the region that corresponds to the projection from the $WZ$ process  with 300 fb$^{-1}$ (3 ab$^{-1}$) data derived in Ref.~\cite{Franceschini:2017xkh} and the purple (green) region shows the region that survives from a combination of the $Zh$ and $WZ$ projections with 300 fb$^{-1}$ (3 ab$^{-1}$) data.}\label{bounds}
 \end{figure} 
@@ -333,7 +329,7 @@ of Ref.~\cite{Franceschini:2017ab} to which we refer for more details.
 %We perform a matched calculation that uses matrix elements computed at NLO in QCD with {\sc{MadGraph5}} with FxFx-matched %\cite{Frederix:2012ly} parton shower supplied by Pythia8~\cite{Sjostrand:2014rr}, with NNPDF~2.3~NLO parton distributions. The %signal is computed through the operator $\op_{HW}$ implemented in the NLO version of the UFO model \texttt{EWdim6}.
 We consider generation-level leptons momenta, but we include an overall detector efficiency for reconstructing the three leptons that we estimate around 50\%~\cite{ATLAS:2016iqc}. We furthermore apply standard acceptance cuts on the leptons (see Table~\ref{tab:cuts}).
 %\be 
-%p_{T,\ell}>30 \gev \ ,\quad |\eta_{\ell}|<2.4\,. \label{leptonscuts}
+%p_{T,\ell}>30 \UGeV \ ,\quad |\eta_{\ell}|<2.4\,. \label{leptonscuts}
 %\ee 
 The same-flavor and opposite-charge lepton pair with invariant mass closer to the $Z$ boson mass is taken as the $Z$ candidate and the remaining lepton  is taken to be the decay product of the $W$ boson. The missing transverse energy vector of the event ($\cancel{\vec{E}}_T$ ) is estimated from the generation-level transverse neutrino momentum, to which we apply a Gaussian smearing with standard deviation
 $ \sigma_{{\met}_{i}}^2 = (0.5)^2 \cdot \sum_f |p_i| \cdot {\rm{GeV}}\,$.
@@ -343,7 +339,7 @@ $ \sigma_{{\met}_{i}}^2 = (0.5)^2 \cdot \sum_f |p_i| \cdot {\rm{GeV}}\,$.
 \centering
 \begin{tabular}{c|c}
 acceptance cuts &
-$p_{T,\ell}>30 \gev \ ,\quad |\eta_{\ell}|<2.4$\\
+$p_{T,\ell}>30 \UGeV \ ,\quad |\eta_{\ell}|<2.4$\\
 \hline
 \multirow{2}{*}{analysis cuts} &
 $\deltapt/p_{T,V}<%[\deltapt/p_{T,V}]_{\rm{max}}=
@@ -390,21 +386,13 @@ The results of \eq{boundsf}  rely on BSM cross-section predictions obtained by i
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.7\textwidth]{\main/section4/MoneyPlotCombined}
+\includegraphics[width=0.7\textwidth]{\main/section4/plots/MoneyPlotCombined}
 \caption{Expected $95\%$ CL bounds from fully leptonic $WZ$ on the high-energy primary parameter $a^{(3)}_q$ as a function of the new physics scale $M$. The plots reports the results for the HL-LHC (orange lines), HE-LHC (green lines) and FCC-hh (brown lines) for different
 values of the systematic uncertainties.} 
 \label{fig:bounds_future}
 \end{figure}
 
 Several conclusions can be drawn from figure~\ref{fig:bounds_future}. First of all we see that the reach saturates for $m_{\textsc{wz}}^{\rm{max}}$ below around $1.5$~TeV at the HL-LHC if the systematic uncertainties are low, meaning that the limits obtained without $m_{\textsc{wz}}$ cut apply to theories with cutoff $M$ above that threshold.  The threshold grows to around $3$ and $4$~TeV at the HE-LHC and at the FCC-hh, respectively. The figures show that $\delta_{\textrm{syst}}=5\%$ is sufficient to probe ``Weak'' theories in all cases, but it also shows that the impact of larger or smaller uncertainties on the reach can be significant. Systematic errors at the $\delta_{\textrm{syst}}=5\%$ level already make an appreciable difference with respect to $\delta_{\textrm{syst}}=1\%$. This is due to the fact that the low-$p_{T,V}$ bins have small statistical error and the reach in those bins benefits from lower systematics. The effect is even more pronounced at the HE-LHC and at the FCC-hh, where even with $\delta_{\textrm{syst}}=2\%$ the reach deteriorates significantly with respect the ideal case $\delta_{\textrm{syst}}=1\%$. The fact that more accurate measurements would improve the reach of future colliders is an element that should be taken into account in the design of the corresponding detectors.
-
-
-\bibliography{bib/section}{}
-\bibliographystyle{plain}
-
-
-
-
 
 \subsection{Novel measurements of anomalous triple gauge couplings for the HE and HL-LHC} 
 \begin{center}
@@ -417,7 +405,6 @@ SISSA and INFN sezione di Trieste, Via Bonomea 265; I-34137 Trieste, Italy\\
 
 \subsubsection{Introduction}
 \label{intro}
-
 
 In this work we are interested in the measurement of the Standard Model (SM) Triple Gauge Couplings (TGCs). This is a classic test of the SM and a possible measurement of deviations from its expectations would signify an invaluable piece of information for the theory beyond the SM. A consistent way to parametrize such possible deviations is through the SM Effective Field Theory (EFT) approach.
 We are going to consider the SM EFT as defined in \cite{Azatov:2017kzw}, in particular we are going to focus on the measurement of the EFT operator 
@@ -466,7 +453,7 @@ These measurements are specially interesting in a HL/HE phase of the LHC, for wh
 
 \begin{figure}[t]
 \begin{center}
-\includegraphics[scale=0.4]{\main/section4/angles}
+\includegraphics[scale=0.4]{\main/section4/plots/angles}
 \end{center}
 \vspace{-.3cm}
 \caption{Angles for $2\to 4$ scattering. \label{fig:ang}}
@@ -547,8 +534,8 @@ One might wonder if a simulation beyond the parton level accuracy might spoil th
   
   \begin{figure}[h!]
 \begin{center}
- \includegraphics[width=0.39\textwidth]{\main/section4/LHC13_300.pdf}{}\hspace{2cm}
- \includegraphics[width=0.39\textwidth]{\main/section4/LHC13_3000.pdf}{}
+ \includegraphics[width=0.39\textwidth]{\main/section4/plots/LHC13_300.pdf}{}\hspace{2cm}
+ \includegraphics[width=0.39\textwidth]{\main/section4/plots/LHC13_3000.pdf}{}
 \end{center}
 \caption{Bounds on the $C_{3W}$ Wilson coefficient for the inclusive and exclusive categories at the LHC 13 for 300 fb$^{-1}$ (left) and 3000 fb$^{-1}$ (right) of integrated luminosity.}
 \label{fig:LHC13}
@@ -563,8 +550,8 @@ $\sqrt{s}=27\;$TeV. For these preliminary results we adopt the same binning, bot
 
   \begin{figure}[h!]
 \begin{center}
- \includegraphics[width=0.39\textwidth]{\main/section4/LHC27_300.pdf}{}\hspace{2cm}
- \includegraphics[width=0.39\textwidth]{\main/section4/LHC27_3000.pdf}{}
+ \includegraphics[width=0.39\textwidth]{\main/section4/plots/LHC27_300.pdf}{}\hspace{2cm}
+ \includegraphics[width=0.39\textwidth]{\main/section4/plots/LHC27_3000.pdf}{}
 \end{center}
 \caption{Bounds on the $C_{3W}$ Wilson coefficient for the inclusive and exclusive categories at the LHC 27 for 300 fb$^{-1}$ (left) and 3000 fb$^{-1}$ (right) of integrated luminosity.}
 \label{fig:LHC27}
@@ -576,7 +563,7 @@ $\sqrt{s}=27\;$TeV. For these preliminary results we adopt the same binning, bot
 %\subsection{longitudinal VBS and di-Higgs} 
 \subsubsection{Higgs pair production in vector-boson fusion at the HL-LHC}
 
-\subfile{\main/section3/HHvbf}
+\subfile{\main/section4/HHvbf}
 
 \subsection{ Same-sign WW scattering at HL-LHC: a new strategy for the EFT-based analysis}
 % 
@@ -618,7 +605,7 @@ and in what range of $\Lambda, f_i$ such a fit is really meaningful?
 %
 %
 \begin{figure}
-\includegraphics[width=0.8\linewidth]{\main/section4/cartoon3.pdf}
+\includegraphics[width=0.8\linewidth]{\main/section4/plots/cartoon3.pdf}
 \caption{
 Cartoon plot showing the regions in $f_i$ and $\Lambda$ in terms of BSM signal observability
 and applicability of the EFT ``model"  for  the same-sign WW process with purely 
@@ -786,7 +773,7 @@ In Sect.\ref{sect-ssWW} a new strategy for the EFT-based analysis of the same-si
 
 Following the above strategy  we have compared the expected reach the expected reach for the dim-8 operator $O_{M6}$ at the HL- and HE-LHC  assuming the integrated luminosities 3/ab and ??/ab, respectively.  Fig.\ref{fig:fM6} shows the respective "triangles". 
 \begin{figure}
-\includegraphics[width=0.6\linewidth]{\main/section4/fM6.pdf}
+\includegraphics[width=0.6\linewidth]{\main/section4/plots/fM6.pdf}
 \caption{
 Regions in $f_{M6}$ and $\Lambda$ in terms of BSM signal observability
 for the EFT ``model"  based on M6 operator at the HL- and HE-LHC.}
@@ -819,7 +806,7 @@ In \cite{Gomez-Ambrosio:2018pnl} we studied the purely electroweak component of 
 Here we update predictions for the HL-LHC setup and show the kinematic distributions for a handful of relevant operators. For the $\mathrm{dim=6}$ parametrisations we use the \emph{Warsaw basis} from \cite{Grzadkowski:2010es}, following the notation and classification from \cite{Jenkins:2013zja}. Other technical details can be found in the original publication \cite{Gomez-Ambrosio:2018pnl}.
 
 \begin{figure}[h!]
-\includegraphics[scale=0.3]{feynmandiagramssignal.png}
+\includegraphics[scale=0.3]{\main/section4/plots/feynmandiagramssignal.png}
 \caption{Examples of some EFT diagrams for the VBS(ZZ) signal. The blobs represent $\mathrm{dim=6}$ insertions.}
 \end{figure}
 
@@ -888,13 +875,13 @@ The VBS(ZZ) and QCD(ZZ) final states, still largely unexplored at the LHC, will 
 % 
 \begin{figure}[htbp]
   \begin{minipage}[b]{0.5\textwidth}
-    \includegraphics[width=1.02\textwidth]{mjj.png}
+    \includegraphics[width=1.02\textwidth]{\main/section4/plots/mjj.png}
     %\caption{Picture 1}
     %\label{fig:1}
   \end{minipage}
   %
   \begin{minipage}[b]{0.5\textwidth}
-    \includegraphics[width=1.02\textwidth]{ptz.png}
+    \includegraphics[width=1.02\textwidth]{\main/section4/plots/ptz.png}
     %\caption{Picture 2}
     %\label{fig:2}
   \end{minipage}
