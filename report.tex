@@ -6,7 +6,7 @@
 % -- The bibliography file paths for the main volume and all parts
 % --
 %\def\bibfiles{\main/bib/chapter,\main/section1/bib/section,\main/section2/bib/section,\main/section3/bib/section,\main/section4/bib/section,\main/section5/bib/section,\main/section6/bib/section,\main/section7/bib/section,\main/section8/bib/section,\main/section9/bib/section}
-\def\bibfiles{\main/bib/chapter,\main/section1/bib/section,\main/section2/bib/section}
+\def\bibfiles{\main/bib/chapter,\main/section1/bib/section,\main/section2/bib/section,\main/section3/bib/section}
 \newcommand{\biblio}{\nocite{article-minimal}\bibliographystyle{report}\clearpage\bibliography{\bibfiles}}
 
 \usepackage{cancel}
@@ -145,6 +145,18 @@
 \newcommand{\UcmsLeft}{upper\xspace}
 \newcommand{\UcmsRight}{lower\xspace}
 
+% Section 3.
+\newcommand{\tril}{\lambda_{3}}
+\newcommand{\trilsm}{\tril^{\rm SM}}
+\newcommand{\ktre}{\kappa_{3}}
+\newcommand{\dsigmah}{\delta \sigma_{\tril}}
+\newcommand{\dBR}{\delta {\rm BR}_{\tril}}
+\newcommand{\ggF}{gg{\rm F}}
+\newcommand{\br}{{\rm BR}}
+\newcommand{\muif}{\mu_i^f}
+\newcommand{\pnote}[1]{\textbf{[P:} \textit{\color{red} #1}\textbf{]}}
+\newcommand{\mptvec}{{/\!\!\!\vec{ p}_T}}
+
 % Other?
 \def\lra#1{\overset{\text{\scriptsize$\leftrightarrow$}}{#1}}
 
@@ -175,8 +187,8 @@ This is an abstract
 \subfile{\main/section1/section}
 \newpage
 \subfile{\main/section2/section}
-%\newpage
-%\subfile{\main/section3/section}
+\newpage
+\subfile{\main/section3/section}
 %\newpage
 %\subfile{\main/section4/section}
 %\newpage

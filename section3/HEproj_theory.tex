@@ -117,9 +117,9 @@ $m_{hh}\approx 2m_t$.
 
 %---------------------------------------------
 \begin{figure*}[t]
-  \includegraphics[width=0.32\textwidth]{section3/plots/Plot_mhh_27TeV}
-  \includegraphics[width=0.32\textwidth]{section3/plots/Plot_pth_27TeV}
-  \includegraphics[width=0.32\textwidth]{section3/plots/Plot_draa_27TeV}
+  \includegraphics[width=0.32\textwidth]{\main/section3/plots/Plot_mhh_27TeV}
+  \includegraphics[width=0.32\textwidth]{\main/section3/plots/Plot_pth_27TeV}
+  \includegraphics[width=0.32\textwidth]{\main/section3/plots/Plot_draa_27TeV}
   \caption{Kinematic distributions (dashed lines with left vertical
     axes) and significance distribution (solid lines with right
     vertical axes) assuming a Higgs self-coupling with
@@ -137,8 +137,8 @@ $m_{hh}\approx 2m_t$.
 %-------------------------------------------------------
 \begin{figure*}[b!]
 \centering 
- \includegraphics[width=.4\textwidth]{section3/plots/hh_5sigma_2b3j} 
- \includegraphics[width=.4\textwidth]{section3/plots/hh_5sigma_width}
+ \includegraphics[width=.4\textwidth]{\main/section3/plots/hh_5sigma_2b3j} 
+ \includegraphics[width=.4\textwidth]{\main/section3/plots/hh_5sigma_width}
    \caption{Luminosity required for a $5\sigma$ discover of Higgs pair
      production for the HE-LHC (dashed) and a 100~TeV collider (full).
      Left: sensitivity in terms of the total rate, demanding two
@@ -237,7 +237,7 @@ $2.5~...~5~\text{ab}^{-1}$ and at the 100~TeV collider with $0.2~...~0.3~\text{a
 %-------------------------------------------------------
 \begin{figure}[t!]
 \centering 
-  \includegraphics[width=.4\textwidth]{section3/plots/hh_dlamb}
+  \includegraphics[width=.4\textwidth]{\main/section3/plots/hh_dlamb}
   \caption{Confidence level for separating an anomalous Higgs
     self-coupling hypothesis from the Standard Model
     $\kappa_{\lambda}=1$.}
@@ -290,19 +290,19 @@ The $pp \rightarrow hh \rightarrow b\bar{b}\gamma\gamma$ signal is simulated at 
 \centering
 %\begin{subfigure}{.3\textwidth}
 %	\centering
-	\includegraphics[width=0.32\linewidth]{section3/plots/Higgs_PT.pdf}
+	\includegraphics[width=0.32\linewidth]{\main/section3/plots/Higgs_PT.pdf}
 	\hfill
 %	\caption{}\label{fig:dihiggs_kinematics1}
 %\end{subfigure}
 %\begin{subfigure}{.3\textwidth}
 %	\centering
-	\includegraphics[width=0.32\linewidth]{section3/plots/Higgs_Eta.pdf}
+	\includegraphics[width=0.32\linewidth]{\main/section3/plots/Higgs_Eta.pdf}
 	\hfill
 %	\caption{}\label{fig:dihiggs_kinematics2}
 %\end{subfigure}%
 %\begin{subfigure}{.3\textwidth}
 %	\centering
-	\includegraphics[width=0.32\linewidth]{section3/plots/Higgs_Mhh.pdf}
+	\includegraphics[width=0.32\linewidth]{\main/section3/plots/Higgs_Mhh.pdf}
 %	\caption{}\label{fig:dihiggs_kinematics3}
 %\end{subfigure}
 \caption{(Left:) The transverse-momentum distribution of the true Higgs bosons generated in our 27 TeV samples, prior to showering and detector smearing, for several different values of $\lambda_3$. (Center:) The same, but for the Higgs pseudorapidity. Right: The same, but for the distribution of the true Higgs pair invariant mass.}\label{fig:dihiggs_kinematics}
@@ -310,7 +310,7 @@ The $pp \rightarrow hh \rightarrow b\bar{b}\gamma\gamma$ signal is simulated at 
 
 Backgrounds to the $b\bar{b}\gamma\gamma$ decay channel include single Higgs production modes, non-resonant QCD backgrounds, as well as $Z(b\bar{b})\gamma\gamma$ and $t\bar{t}(+\gamma)$ production. We include all backgrounds where up to two additional photons or $b$-jets can arise from either misidentified light jets or electrons misidentified as photons.
 
-The background from single Higgs production via gluon fusion ($ggF(\gamma\gamma)$) was generated in {\sc\small MadGraph}\ with up to two extra partons allowed in the matrix element, with no additional $k$-factor due to the already present real emissions. Events from other single Higgs production modes were generated directly in {\sc\small Pythia~8}\ at LO and normalized based on the recommendations in Ref. \cite{DeFlorian:2016spz}. The remaining backgrounds were generated in {\sc\small MadGraph}\ interfaced with {\sc\small Pythia~8}\ for showering and hadronization, with one additional jet allowed in the matrix element with MLM matching \cite{Mangano:2006rw, Alwall:2007fs} to the parton shower.
+The background from single Higgs production via gluon fusion ($ggF(\gamma\gamma)$) was generated in {\sc\small MadGraph}\ with up to two extra partons allowed in the matrix element, with no additional $k$-factor due to the already present real emissions. Events from other single Higgs production modes were generated directly in {\sc\small Pythia~8}\ at LO and normalized based on the recommendations in Ref. \cite{deFlorian:2016spz}. The remaining backgrounds were generated in {\sc\small MadGraph}\ interfaced with {\sc\small Pythia~8}\ for showering and hadronization, with one additional jet allowed in the matrix element with MLM matching \cite{Mangano:2006rw, Alwall:2007fs} to the parton shower.
 
 \begingroup
 \renewcommand*{\arraystretch}{.7}
@@ -375,12 +375,12 @@ where $\cos\theta_{hh}$ is the decay angle of the Higgs boson pair evaluated in 
 \centering
 %	\begin{subfigure}{0.49\textwidth}
 %	\centering
-	\includegraphics[width=0.49\linewidth]{section3/plots/DiphotonPT}%\caption{}\label{fig:diphoton_pt}
+	\includegraphics[width=0.49\linewidth]{\main/section3/plots/DiphotonPT}%\caption{}\label{fig:diphoton_pt}
 %\end{subfigure}
 \hfill
 %\begin{subfigure}{0.49\textwidth}
 %	\centering
-	\includegraphics[width=0.49\linewidth]{section3/plots/higgs_decayangle}%\caption{}\label{fig:decay_angle}
+	\includegraphics[width=0.49\linewidth]{\main/section3/plots/higgs_decayangle}%\caption{}\label{fig:decay_angle}
 %\end{subfigure}
 \caption{Normalized distributions of (Left:) the $p_T$ of the reconstructed $h\rightarrow\gamma\gamma$ and (Right:) the magnitude of $\cos\theta_{hh}$, the Higgs decay angle defined in the text. We show the distributions for the signal with $\lambda_{3} = 1$ and $5$ as well as several representative backgrounds.}
 \label{fig:kinematics}
@@ -395,7 +395,7 @@ Other large backgrounds arise from processes where a jet is reconstructed as a p
 
 \begin{figure}
 	\centering
-	\includegraphics[width=8cm]{section3/plots/lam3_limits_ylo}
+	\includegraphics[width=8cm]{\main/section3/plots/lam3_limits_ylo}
 	\caption{The expected number of signal events in a hypothetical experiment assuming the signal and background rates computed in Table \ref{t.backgrounds} at $L = 15~\text{ab}^{-1}$ for HE-LHC with the regular detector performance assumption. The black dashed line indicates the expected number of events from signal while the green (yellow) regions show the $1\sigma~(2\sigma)$ uncertainty regions arising from a likelihood scan with the statistical and MC uncertainties on the signal and background counts. The red curve shows the expected number of events from signal in a background free measurement as a function of $\lambda_3$, accounting for the changes in the signal acceptance due to kinematic differences at different $\lambda_3$}\label{fig:lam3_limit}
 \end{figure}
 

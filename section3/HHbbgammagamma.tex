@@ -8,7 +8,7 @@ $(ii)$ We next perform a joint optimization of kinematic cuts and boosted decisi
 
 \subsubsubsection{Signal and Backgrounds}
 
-For the simulation of the signal, we use {\tt MadGraph5\_aMC@NLO\_v2.3.3}~\cite{MG5}, to generate $p p \rightarrow h h$ process exclusively at the leading order (LO). The simulation of our signal
+For the simulation of the signal, we use {\tt MadGraph5\_aMC@NLO\_v2.3.3}~\cite{mg5}, to generate $p p \rightarrow h h$ process exclusively at the leading order (LO). The simulation of our signal
 include both the triangle and box diagrams. We scale our LO cross-section by the partial NNLO K-factor of 2.27~\cite{deFlorian:2013uza}, calculated in the large quark mass limit and use the resulting production cross section of 36.8 fb.
 
 The following backgrounds were taken into account in our study: $(i)$ $b\bar{b}\gamma\gamma$; $(ii)$ $Zh$ with $Z \rightarrow b\bar{b}$ and $h \rightarrow \gamma\gamma$; $(iii)$ $b\bar{b}h$ with $h\to\gamma\gamma$; $(iv)$
@@ -78,8 +78,8 @@ The performance of the Bayesian algorithm is also displayed in Figure~\ref{fig:B
 
 \begin{figure}[!t]
 \centering
-\includegraphics[scale=0.35]{./section3/plots/improve_HHH_cuts.pdf}
-\includegraphics[scale=0.35]{./section3/plots/ams_HHH_sys_compare.pdf}
+\includegraphics[scale=0.35]{\main/section3/plots/improve_HHH_cuts.pdf}
+\includegraphics[scale=0.35]{\main/section3/plots/ams_HHH_sys_compare.pdf}
 \caption{\textbf{Left panel:} The left panel shows the optimized search with the TPE algorithm in \texttt{HyperOpt} with no systematic errors. The inset frame in the left plot shows the significance as a function of the number of trials. $S/\sqrt{B}$ is used to compute the signal significance. The black dashed line represents the results obtained with the cuts of Azatov \emph{et. al.}, ref.~\cite{Azatov:2015oxa}. \textbf{Right panel:} The $S/\sqrt{B+(\varepsilon_B B)^2}$ significance metric as a  function of $\varepsilon_B$, the systematic uncertainty in the total background rate. The red line represents the default cuts of Azatov \emph{et. al.}, the black dashed assumes an optimized strategy just for the 0\% systematics point, while for the solid upper line, the algorithm was solicited to learn the best cuts for each systematics level from 0 to 20\%. In the inner plot we show the $S/B$ ratio for the point-to-point optimization case. }
 \label{fig:BayesianKS}
 \end{figure}
@@ -118,8 +118,8 @@ systematics (\%) & Cut-and-count & BDT \\
 %
 \begin{figure}[!t]
 \centering
-\includegraphics[scale=0.35]{./section3/plots/tradeoff_HHH.pdf}
-\includegraphics[scale=0.35]{./section3/plots/improve_HHH_joint.pdf}
+\includegraphics[scale=0.35]{\main/section3/plots/tradeoff_HHH.pdf}
+\includegraphics[scale=0.35]{\main/section3/plots/improve_HHH_joint.pdf}
 \caption{\textbf{Left panel:}  We show the results of the effects of imposing hard cuts on $\Delta R_{b_1\gamma_1}$ for the BDT performance, see~\cite{Alves:2017ued} for further details. \textbf{Right panel:} The histogram of number of cut strategies producing a given significance interval in a BDT-aided classification analysis. The inset plot shows the significance as a function of the number of \texttt{HyperOpt} trials. No systematics are assumed, the backgrounds are those of ref.~\cite{Azatov:2015oxa} and the $S/\sqrt{B}$ used to compute the signal significances. The black dashed line represents the results obtained with the default cuts of Azatov \emph{et. al.}, ref.~\cite{Azatov:2015oxa}.}
 \label{fig:8resultsKS}
 \end{figure}
