@@ -958,6 +958,13 @@ G.~F. Giudice, C.~Grojean, A.~Pomarol, and R.~Rattazzi, {\em {The
 \href{http://arxiv.org/abs/1806.05246}{{\tt arXiv:1806.05246 [hep-ex]}}.
 %%CITATION = ARXIV:1806.05246;%%.
 
+\bibitem{ATLAS-CONF-2018-004}
+{ATLAS Collaboration}, {\em {Measurement of gluon fusion and vector boson
+  fusion Higgs boson production cross-sections in the $H \to WW^{*} \to
+  e\nu\mu\nu$ decay channel in pp collisions at $\sqrt{s} = 13$ TeV with the
+  ATLAS detector}\/},   ATLAS-CONF-2018-004, CERN, Geneva, Mar, 2018.
+\newblock \url{https://cds.cern.ch/record/2308392}.
+
 \bibitem{Aad:2014xzb}
 {ATLAS Collaboration}, G.~Aad et al., {\em {Search for the $b\bar{b}$ decay of
   the Standard Model Higgs boson in associated $(W/Z)H$ production with the
@@ -4058,5 +4065,208 @@ A.~J. Larkoski, S.~Marzani, G.~Soyez, and J.~Thaler, {\em {Soft Drop}\/},
   \href{http://dx.doi.org/10.1007/JHEP05(2014)146}{JHEP {\bf 05} (2014)  146},
 \href{http://arxiv.org/abs/1402.2657}{{\tt arXiv:1402.2657 [hep-ph]}}.
 %%CITATION = ARXIV:1402.2657;%%.
+
+\bibitem{Ellis:2018gqa}
+J.~Ellis, C.~W. Murphy, V.~Sanz, and T.~You, {\em {Updated Global SMEFT Fit to
+  Higgs, Diboson and Electroweak Data}\/},
+\href{http://arxiv.org/abs/1803.03252}{{\tt arXiv:1803.03252 [hep-ph]}}.
+%%CITATION = ARXIV:1803.03252;%%.
+
+\bibitem{Ellis:2014dva}
+J.~Ellis, V.~Sanz, and T.~You, {\em {Complete Higgs Sector Constraints on
+  Dimension-6 Operators}\/},
+  \href{http://dx.doi.org/10.1007/JHEP07(2014)036}{JHEP {\bf 07} (2014)  036},
+\href{http://arxiv.org/abs/1404.3667}{{\tt arXiv:1404.3667 [hep-ph]}}.
+%%CITATION = ARXIV:1404.3667;%%.
+
+\bibitem{Ellis:2014jta}
+J.~Ellis, V.~Sanz, and T.~You, {\em {The Effective Standard Model after LHC Run
+  I}\/},  \href{http://dx.doi.org/10.1007/JHEP03(2015)157}{JHEP {\bf 03} (2015)
+   157},
+\href{http://arxiv.org/abs/1410.7703}{{\tt arXiv:1410.7703 [hep-ph]}}.
+%%CITATION = ARXIV:1410.7703;%%.
+
+\bibitem{Murphy:2017omb}
+C.~W. Murphy, {\em {Statistical approach to Higgs boson couplings in the
+  standard model effective field theory}\/},
+  \href{http://dx.doi.org/10.1103/PhysRevD.97.015007}{Phys. Rev. {\bf D97}
+  (2018) no.~1, 015007},
+\href{http://arxiv.org/abs/1710.02008}{{\tt arXiv:1710.02008 [hep-ph]}}.
+%%CITATION = ARXIV:1710.02008;%%.
+
+\bibitem{Alonso:2013hga}
+R.~Alonso, E.~E. Jenkins, A.~V. Manohar, and M.~Trott, {\em {Renormalization
+  Group Evolution of the Standard Model Dimension Six Operators III: Gauge
+  Coupling Dependence and Phenomenology}\/},
+  \href{http://dx.doi.org/10.1007/JHEP04(2014)159}{JHEP {\bf 04} (2014)  159},
+\href{http://arxiv.org/abs/1312.2014}{{\tt arXiv:1312.2014 [hep-ph]}}.
+%%CITATION = ARXIV:1312.2014;%%.
+
+\bibitem{Cirigliano:2009wk}
+V.~Cirigliano, J.~Jenkins, and M.~Gonzalez-Alonso, {\em {Semileptonic decays of
+  light quarks beyond the Standard Model}\/},
+  \href{http://dx.doi.org/10.1016/j.nuclphysb.2009.12.020}{Nucl. Phys. {\bf
+  B830} (2010)  95--115},
+\href{http://arxiv.org/abs/0908.1754}{{\tt arXiv:0908.1754 [hep-ph]}}.
+%%CITATION = ARXIV:0908.1754;%%.
+
+\bibitem{AguilarSaavedra:2018nen}
+D.~Barducci et al., {\em {Interpreting top-quark LHC measurements in the
+  standard-model effective field theory}\/},
+\href{http://arxiv.org/abs/1802.07237}{{\tt arXiv:1802.07237 [hep-ph]}}.
+%%CITATION = ARXIV:1802.07237;%%.
+
+\bibitem{Berthier:2016tkq}
+L.~Berthier, M.~Bjorn, and M.~Trott, {\em {Incorporating doubly resonant
+  $W^\pm$ data in a global fit of SMEFT parameters to lift flat directions}\/},
+   \href{http://dx.doi.org/10.1007/JHEP09(2016)157}{JHEP {\bf 09} (2016)  157},
+\href{http://arxiv.org/abs/1606.06693}{{\tt arXiv:1606.06693 [hep-ph]}}.
+%%CITATION = ARXIV:1606.06693;%%.
+
+\bibitem{Brivio:2017btx}
+I.~Brivio, Y.~Jiang, and M.~Trott, {\em {The SMEFTsim package, theory and
+  tools}\/},  \href{http://dx.doi.org/10.1007/JHEP12(2017)070}{JHEP {\bf 12}
+  (2017)  070},
+\href{http://arxiv.org/abs/1709.06492}{{\tt arXiv:1709.06492 [hep-ph]}}.
+%%CITATION = ARXIV:1709.06492;%%.
+
+\bibitem{ALEPH:2005ab}
+{SLD Electroweak Group, DELPHI, ALEPH, SLD, SLD Heavy Flavour Group, OPAL, LEP
+  Electroweak Working Group, L3 Collaboration}, S.~Schael et al., {\em
+  {Precision electroweak measurements on the $Z$ resonance}\/},
+  \href{http://dx.doi.org/10.1016/j.physrep.2005.12.006}{Phys. Rept. {\bf 427}
+  (2006)  257--454},
+\href{http://arxiv.org/abs/hep-ex/0509008}{{\tt arXiv:hep-ex/0509008
+  [hep-ex]}}.
+%%CITATION = HEP-EX/0509008;%%.
+
+\bibitem{Aaltonen:2013iut}
+{CDF, D0 Collaboration}, T.~A. Aaltonen et al., {\em {Combination of CDF and D0
+  $W$-Boson Mass Measurements}\/},
+  \href{http://dx.doi.org/10.1103/PhysRevD.88.052018}{Phys. Rev. {\bf D88}
+  (2013) no.~5, 052018},
+\href{http://arxiv.org/abs/1307.7627}{{\tt arXiv:1307.7627 [hep-ex]}}.
+%%CITATION = ARXIV:1307.7627;%%.
+
+\bibitem{Heister:2004wr}
+{ALEPH Collaboration}, A.~Heister et al., {\em {Measurement of W-pair
+  production in e+ e- collisions at centre-of-mass energies from 183-GeV to
+  209-GeV}\/},
+\href{http://dx.doi.org/10.1140/epjc/s2004-02048-3}{Eur. Phys. J. {\bf C38}
+  (2004)  147--160}.
+%%CITATION = EPHJA,C38,147;%%.
+
+\bibitem{Achard:2004zw}
+{L3 Collaboration}, P.~Achard et al., {\em {Measurement of the cross section of
+  W-boson pair production at LEP}\/},
+  \href{http://dx.doi.org/10.1016/j.physletb.2004.08.060}{Phys. Lett. {\bf
+  B600} (2004)  22--40},
+\href{http://arxiv.org/abs/hep-ex/0409016}{{\tt arXiv:hep-ex/0409016
+  [hep-ex]}}.
+%%CITATION = HEP-EX/0409016;%%.
+
+\bibitem{Abbiendi:2007rs}
+{OPAL Collaboration}, G.~Abbiendi et al., {\em {Measurement of the e+ e-
+  $\rightarrow$ W+ W- cross section and W decay branching fractions at LEP}\/},
+   \href{http://dx.doi.org/10.1140/epjc/s10052-007-0442-0}{Eur. Phys. J. {\bf
+  C52} (2007)  767--785},
+\href{http://arxiv.org/abs/0708.1311}{{\tt arXiv:0708.1311 [hep-ex]}}.
+%%CITATION = ARXIV:0708.1311;%%.
+
+\bibitem{Schael:2013ita}
+{DELPHI, OPAL, LEP Electroweak, ALEPH, L3 Collaboration}, S.~Schael et al.,
+  {\em {Electroweak Measurements in Electron-Positron Collisions at
+  W-Boson-Pair Energies at LEP}\/},
+  \href{http://dx.doi.org/10.1016/j.physrep.2013.07.004}{Phys. Rept. {\bf 532}
+  (2013)  119--244},
+\href{http://arxiv.org/abs/1302.3415}{{\tt arXiv:1302.3415 [hep-ex]}}.
+%%CITATION = ARXIV:1302.3415;%%.
+
+\bibitem{Aaboud:2017svj}
+{ATLAS Collaboration}, M.~Aaboud et al., {\em {Measurement of the $W$-boson
+  mass in pp collisions at $\sqrt{s}=7$ TeV with the ATLAS detector}\/},
+  \href{http://dx.doi.org/10.1140/epjc/s10052-017-5475-4}{Eur. Phys. J. {\bf
+  C78} (2018) no.~2, 110},
+\href{http://arxiv.org/abs/1701.07240}{{\tt arXiv:1701.07240 [hep-ex]}}.
+%%CITATION = ARXIV:1701.07240;%%.
+
+\bibitem{Sirunyan:2017dgc}
+{CMS Collaboration}, A.~M. Sirunyan et al., {\em {Inclusive search for a highly
+  boosted Higgs boson decaying to a bottom quark-antiquark pair}\/},
+  \href{http://dx.doi.org/10.1103/PhysRevLett.120.071802}{Phys. Rev. Lett. {\bf
+  120} (2018) no.~7, 071802},
+\href{http://arxiv.org/abs/1709.05543}{{\tt arXiv:1709.05543 [hep-ex]}}.
+%%CITATION = ARXIV:1709.05543;%%.
+
+\bibitem{CMS-PAS-HIG-16-042}
+{CMS Collaboration}, {\em {Measurements of properties of the Higgs boson
+  decaying to a W boson pair in pp collisions at $\sqrt{s}=13~{\rm TeV}$}\/},
+  CMS-PAS-HIG-16-042, CERN, Geneva, 2018.
+\newblock \url{http://cds.cern.ch/record/2308255}.
+
+\bibitem{ATLAS-CONF-2017-047}
+{ATLAS Collaboration}, {\em {Combined measurements of Higgs boson production
+  and decay in the $H\rightarrow ZZ^?\rightarrow4\ell$ and
+  $H\rightarrow\gamma\gamma$ channels using $\sqrt{s}=$ 13 TeV pp collision
+  data collected with the ATLAS experiment}\/},   ATLAS-CONF-2017-047, CERN,
+  Geneva, Jul, 2017.
+\newblock \url{http://cds.cern.ch/record/2273854}.
+
+\bibitem{ATLAS-CONF-2016-112}
+{ATLAS Collaboration}, {\em {Measurements of the Higgs boson production cross
+  section via Vector Boson Fusion and associated $WH$ production in the
+  $WW^{\ast} \to \ell\nu\ell\nu$ decay mode with the ATLAS detector at
+  $\sqrt{s}$ = 13 TeV}\/},   ATLAS-CONF-2016-112, CERN, Geneva, Nov, 2016.
+\newblock \url{http://cds.cern.ch/record/2231811}.
+
+\bibitem{Aaboud:2017qkn}
+{ATLAS Collaboration}, M.~Aaboud et al., {\em {Measurement of the $W^+W^-$
+  production cross section in $pp$ collisions at a centre-of-mass energy of
+  $\sqrt{s}$ = 13 TeV with the ATLAS experiment}\/},
+  \href{http://dx.doi.org/10.1016/j.physletb.2017.08.047}{Phys. Lett. {\bf
+  B773} (2017)  354--374},
+\href{http://arxiv.org/abs/1702.04519}{{\tt arXiv:1702.04519 [hep-ex]}}.
+%%CITATION = ARXIV:1702.04519;%%.
+
+\bibitem{Grinstein:1991cd}
+B.~Grinstein and M.~B. Wise, {\em {Operator analysis for precision electroweak
+  physics}\/},
+\href{http://dx.doi.org/10.1016/0370-2693(91)90061-T}{Phys. Lett. {\bf B265}
+  (1991)  326--334}.
+%%CITATION = PHLTA,B265,326;%%.
+
+\bibitem{Ciuchini:2013pca}
+M.~Ciuchini, E.~Franco, S.~Mishima, and L.~Silvestrini, {\em {Electroweak
+  Precision Observables, New Physics and the Nature of a 126 GeV Higgs
+  Boson}\/},  \href{http://dx.doi.org/10.1007/JHEP08(2013)106}{JHEP {\bf 08}
+  (2013)  106},
+\href{http://arxiv.org/abs/1306.4644}{{\tt arXiv:1306.4644 [hep-ph]}}.
+%%CITATION = ARXIV:1306.4644;%%.
+
+\bibitem{luca:talk}
+L.~Silvestrini, {\em {EW fits at HL-LHC}\/},
+  \url{https://indico.cern.ch/event/686494/contributions/3037290/attachments/1669241/2677174/silvestriniHL-LHC_SM.pdf}.
+
+\bibitem{otto:talk}
+O.~Eberhardt, {\em {Global constraints on the dimension-6 Standard Model
+  Effective Field Theory}\/},
+  \url{https://indico.cern.ch/event/686555/contributions/2970902/attachments/1681242/2701120/927_Eberhardt_Global_constraints_on_the_dim-6_SMEFT.pdf}.
+
+\bibitem{Alves:2018nof}
+A.~Alves, N.~Rosa-Agostinho, O.~J.~P. Eboli, and M.~C. Gonzalez-Garcia, {\em
+  {Effect of Fermionic Operators on the Gauge Legacy of the LHC Run I}\/},
+  \href{http://dx.doi.org/10.1103/PhysRevD.98.013006}{Phys. Rev. {\bf D98}
+  (2018) no.~1, 013006},
+\href{http://arxiv.org/abs/1805.11108}{{\tt arXiv:1805.11108 [hep-ph]}}.
+%%CITATION = ARXIV:1805.11108;%%.
+
+\bibitem{gilbert:talk}
+A.~Gilbert, {\em {CMS Higgs Combination Projections}\/},
+  \url{https://indico.cern.ch/event/747493/contributions/3091361/attachments/1695500/2728959/CMSProjections-Shared-v1.pdf}.
+
+\bibitem{Hays:2290628}
+C.~Hays, V.~Sanz~Gonzalez, and G.~Zemaityte, {\em {Constraining EFT parameters
+  using simplified template cross sections}\/}, .
+  \url{https://cds.cern.ch/record/2290628}.
 
 \end{thebibliography}\endgroup

@@ -2,7 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: report.aux
 The style file: report.bst
-Reallocated field_info (elt_size=4) to 23528 items from 5000.
+Reallocated field_info (elt_size=4) to 24424 items from 5000.
 Database file #1: ./bib/chapter.bib
 Database file #2: ./section1/bib/section.bib
 Database file #3: ./section2/bib/section.bib
@@ -328,6 +328,83 @@ Repeated entry---line 2252 of file ./section7/bib/section.bib
  : @article{Sirunyan:2018koj
  :                          ,
 I'm skipping whatever remains of this entry
+Database file #9: ./section8/bib/section.bib
+Repeated entry---line 2 of file ./section8/bib/section.bib
+ : @article{Ellis:2018gqa
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 18 of file ./section8/bib/section.bib
+ : @article{Grzadkowski:2010es
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 133 of file ./section8/bib/section.bib
+ : @article{Brivio:2017vri
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 195 of file ./section8/bib/section.bib
+ : @article{deBlas:2016ojx
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 214 of file ./section8/bib/section.bib
+ : @article{ALEPH:2005ab
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 296 of file ./section8/bib/section.bib
+ : @article{Khachatryan:2016vau
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 312 of file ./section8/bib/section.bib
+ : @article{Aad:2015gba
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 397 of file ./section8/bib/section.bib
+ : @article{Sirunyan:2018mvw
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 413 of file ./section8/bib/section.bib
+ : @article{Sirunyan:2017elk
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 443 of file ./section8/bib/section.bib
+ : @article{Sirunyan:2018shy
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 477 of file ./section8/bib/section.bib
+ : @article{Sirunyan:2018ouh
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 492 of file ./section8/bib/section.bib
+ : @article{Sirunyan:2017exp
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 510 of file ./section8/bib/section.bib
+ : @article{Sirunyan:2017khh
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 527 of file ./section8/bib/section.bib
+ : @article{Aaboud:2017ojs
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 546 of file ./section8/bib/section.bib
+ : @article{Aaboud:2017xsd
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 563 of file ./section8/bib/section.bib
+ : @article{Aaboud:2017rss
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 578 of file ./section8/bib/section.bib
+ : @article{Aaboud:2017jvq
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 754 of file ./section8/bib/section.bib
+ : @article{deFlorian:2016spz
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 792 of file ./section8/bib/section.bib
+ : @article{deBlas:2018tjm
+ :                        ,
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "dEnterria:2012yj"
 Warning--I didn't find a database entry for "CMS-PAS-SMP-17-014"
 Warning--I didn't find a database entry for ""
@@ -335,7 +412,6 @@ Warning--I didn't find a database entry for "HIGG-2016-14"
 Warning--I didn't find a database entry for "CMS_AN_2016-442"
 Warning--I didn't find a database entry for "CMS-PAS-HIG-17-028"
 Warning--I didn't find a database entry for "bib:cms:tthbb"
-Warning--I didn't find a database entry for "ATLAS-CONF-2018-004"
 Warning--I didn't find a database entry for "CMS-PAS-HIG-17-019"
 Warning--I didn't find a database entry for "CMS-PAS-HIG-17-007"
 Warning--I didn't find a database entry for "NNPDF"
@@ -372,6 +448,7 @@ Warning--I didn't find a database entry for "junkcls"
 Warning--I didn't find a database entry for "HiggsCombination"
 Warning--I didn't find a database entry for "1405.0285"
 Warning--I didn't find a database entry for "CMS_AN_2016-366"
+Reallocated str_pool (elt_size=1) to 195000 items from 130000.
 Warning--empty author in HIG16044
 Warning--empty note in Aaboud:2018urx
 Warning--empty author in ATLAS-PHYS-PUB-2018-XY
@@ -387,6 +464,7 @@ Warning--empty author in Sirunyan:2018ygk
 Warning--empty author in HIG-17-019
 Warning--empty institution in HIG-17-019
 Warning--empty author in Sirunyan:2018koj
+Warning--empty author in ATLAS-CONF-2018-004
 Warning--empty author in CMS-PAS-HIG-17-031
 Warning--empty author in CMS-PAS-HIG-17-030
 Warning--empty author in ATLAS-CONF-2018-043
@@ -429,45 +507,48 @@ Warning--empty author in Searches:2001ab
 Warning--empty author in ATL-PHYS-PUB-2018-016
 `howpublished' is a missing field, not a string, for entry ATLAS-collaboration:2012iza
 while executing---line 1208 of file report.bst
-You've used 535 entries,
+Warning--empty author in CMS-PAS-HIG-16-042
+Warning--empty author in ATLAS-CONF-2017-047
+Warning--empty author in ATLAS-CONF-2016-112
+You've used 564 entries,
             2458 wiz_defined-function locations,
-            4670 strings with 123549 characters,
-and the built_in function-call counts, 216576 in all, are:
-= -- 23864
-> -- 5737
-< -- 798
-+ -- 8169
-- -- 1833
-* -- 17496
-:= -- 27901
-add.period$ -- 1096
-call.type$ -- 535
-change.case$ -- 31
+            4863 strings with 129820 characters,
+and the built_in function-call counts, 231746 in all, are:
+= -- 25705
+> -- 5980
+< -- 1074
++ -- 9208
+- -- 1919
+* -- 18322
+:= -- 29996
+add.period$ -- 1151
+call.type$ -- 564
+change.case$ -- 37
 chr.to.int$ -- 0
-cite$ -- 572
-duplicate$ -- 20712
-empty$ -- 16204
-format.name$ -- 1535
-if$ -- 51125
+cite$ -- 605
+duplicate$ -- 22600
+empty$ -- 17046
+format.name$ -- 1595
+if$ -- 54308
 int.to.chr$ -- 0
-int.to.str$ -- 535
-missing$ -- 1970
-newline$ -- 2634
-num.names$ -- 645
-pop$ -- 3069
+int.to.str$ -- 564
+missing$ -- 2064
+newline$ -- 2767
+num.names$ -- 683
+pop$ -- 3249
 preamble$ -- 2
 purify$ -- 0
 quote$ -- 0
-skip$ -- 6482
+skip$ -- 6789
 stack$ -- 0
-substring$ -- 12118
-swap$ -- 4092
-text.length$ -- 17
+substring$ -- 13395
+swap$ -- 4265
+text.length$ -- 21
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 37
-while$ -- 1934
-width$ -- 538
-write$ -- 4895
-(There were 89 error messages)
+warning$ -- 41
+while$ -- 2064
+width$ -- 567
+write$ -- 5165
+(There were 108 error messages)
