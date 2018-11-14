@@ -3,26 +3,8 @@
 \providecommand{\main}{..}
 \IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
 % until here
-\newcommand{\BRHinv}{\mathrm{BR}_\mathrm{inv}}
-\newcommand{\MDM}{M_\mathrm{DM}}
-
-\newcommand{\CL}{~\mathrm{C.L.}}
-\newcommand{\BRNP}{\mathrm{BR}(H\to\mathrm{NP})}
-
-\newcommand{\MET}{\ensuremath{\mathrm{E}_{\mathrm{T}}^{\mathrm{miss}}}}
-\newcommand{\MHT}{\ensuremath{\mathrm{H}_{\mathrm{T}}^{\mathrm{miss}}}}
-
- \newcommand{\POWHEG}{\textsc{POWHEG}}
- \newcommand{\MGvATNLO}{\textsc{aMC@NLO}}
- \newcommand{\PYTHIA}{\textsc{PYTHIA}}
- \newcommand{\eqn}{equation}
-\newcommand{\METvec}{\ensuremath{\vec{\MET}}}
-\newcommand{\ptvec}{\ensuremath{\vec{\mathrm{p}_{T}}}}
-\newcommand{\BHinv}{\ensuremath{\text{B}(\PH\to \text{inv.})}\xspace}
-\newcommand{\fbinv}{\ensuremath{\,\text{fb}^{-1}\xspace}}
 
 \begin{document}
-
 
 \section{Invisible decays of the Higgs boson}
 
@@ -255,8 +237,8 @@ QCD & -    & -       & -       & -       & -\\
 
 \begin{figure}[htbp]
   \centering
-    \includegraphics[width=0.49\textwidth]{Mjj_200PU_cor}
-    \includegraphics[width=0.49\textwidth]{metnolep_200PU_cor}
+    \includegraphics[width=0.49\textwidth]{\main/section6/plots/Mjj_200PU_cor}
+    \includegraphics[width=0.49\textwidth]{\main/section6/plots/metnolep_200PU_cor}
 \caption{Distributions of M$_{jj}$ (left) and \MET (right) in the signal region for the final selection, M$_{jj}>2500$\,GeV and \MET$>190$\,GeV.}
   \label{fig:plotsdijetmet}
 \end{figure}
@@ -276,9 +258,9 @@ different integrated luminosities in figure~\ref{fig:1Dlimits}, right.
 
 \begin{figure}[htbp]
   \centering
-    \includegraphics[width=0.49\textwidth]{1DlimitMET_forPAS_noMHT}
+    \includegraphics[width=0.49\textwidth]{\main/section6/plots/1DlimitMET_forPAS_noMHT}
     \hfill
-    \includegraphics[width=0.49\textwidth]{1DlimitvsMET_mcScenario4}
+    \includegraphics[width=0.49\textwidth]{\main/section6/plots/1DlimitvsMET_mcScenario4}
 \caption{Left: 95\% CL limits on \BHinv as a function of the minimum threshold on \MET, for M$_{\text{jj}}>2500$\,GeV and an integrated luminosity of 3000\fbinv. Right: 95\% CL limits for scenarios with different integrated luminosities.}
   \label{fig:1Dlimits}
 \end{figure}
@@ -303,7 +285,7 @@ We consider both scenarios S1 and S2. These scenarios differ in the treatment of
 
 
 
-{We furthermore study the impact of a future electron-proton collider option (LHeC) at CERN~\cite{AbelleiraFernandez:2012cc,uta,uta2}, assuming a $60~\mathrm{GeV}$ electron beam, a $7~\mathrm{TeV}$ proton beam and an integrated luminosity of $1~\mathrm{ab}^{-1}$. We implemented the prospective signal strength measurements at the LHeC presented in Ref.~\cite{uta} into \HS. The projected limit on the invisible Higgs decay rate is around $5\%$~\cite{uta,Tang:2015uha,kuzeLHeC,bc1,bc2,uta2} \footnote{Optimization of the signal selection, advanced background estimation techniques and details of the detector design may improve this limit down to about $(3-4)\%$~\cite{Utacommunications}.}.
+{We furthermore study the impact of a future electron-proton collider option (LHeC) at CERN~\cite{AbelleiraFernandez:2012cc,uta,uta2}, assuming a $60~\mathrm{GeV}$ electron beam, a $7~\mathrm{TeV}$ proton beam and an integrated luminosity of $1~\mathrm{ab}^{-1}$. We implemented the prospective signal strength measurements at the LHeC presented in Ref.~\cite{uta} into HS. The projected limit on the invisible Higgs decay rate is around $5\%$~\cite{uta,Tang:2015uha,kuzeLHeC,bc1,bc2,uta2} \footnote{Optimization of the signal selection, advanced background estimation techniques and details of the detector design may improve this limit down to about $(3-4)\%$~\cite{Utacommunications}.}.
 In combination with the above CMS and ATLAS projections, we obtain
 \begin{equation*}
 \left(\mu_{\text{VBF},VH,\text{NC}} \cdot \text{BR}_\text{inv}\right)^{\text{HL-LHC}\oplus\,\text{LHeC}}\,\leq\,2.25\%
@@ -324,12 +306,12 @@ In particular, we investigate two scenarios for the Higgs coupling modifications
 
 \begin{figure}
 \centering
-\includegraphics[width=0.49\textwidth]{section6/kappa_BR_S1}
+\includegraphics[width=0.49\textwidth]{\main/section6/plots/kappa_BR_S1}
 \hfill
-\includegraphics[width=0.49\textwidth]{section6/kappa_BR_S2}\\
-\includegraphics[width=0.49\textwidth]{section6/kappa_BR_LHeC_BRinv0p05}
+\includegraphics[width=0.49\textwidth]{\main/section6/plots/kappa_BR_S2}\\
+\includegraphics[width=0.49\textwidth]{\main/section6/plots/kappa_BR_LHeC_BRinv0p05}
 \hfill
-\includegraphics[width=0.49\textwidth]{section6/kappa_BR_LHeC_HLLHCS2_BRinv0p0225}
+\includegraphics[width=0.49\textwidth]{\main/section6/plots/kappa_BR_LHeC_HLLHCS2_BRinv0p0225}
 \caption{Projected $95\%~\mathrm{C.L.}$ limit in the $(\kappa, \BRHinv)$ plane inferred from Higgs rate measurements (\emph{green regions}) and direct invisible Higgs searches (\emph{black dashed line}) at the HL-LHC and LHeC. {We show results for the two future HL-LHC scenarios S1 {\sl (top left)} and S2 {\sl (top right)} (see text for details), as well as for the LHeC {\sl (bottom left)} and the combination of LHeC and HL-LHC (S2) {\sl (bottom right)}.} The light green area shows the limit from Higgs rates obtained by assuming no new physics contributions to the loop-induced Higgs couplings to gluons and photons, $\kappa = \kappa_g = \kappa_\gamma$, whereas for the dark green area $\kappa_g$ and $\kappa_\gamma$ are marginalized free parameters.{\sl These plots will be updated once ATLAS and CMS signal strength combination projections become available.} }
 \label{fig:effC}
 \end{figure}
@@ -387,9 +369,9 @@ Currently, the inferred limit from invisible Higgs searches yields the most sens
 
 \begin{figure}
 \centering
-\includegraphics[width=0.49\textwidth]{section6/DM-SI-XS_HiggsPortalDM_BRinv_0p2_HoferichterF}
+\includegraphics[width=0.49\textwidth]{\main/section6/plots/DM-SI-XS_HiggsPortalDM_BRinv_0p2_HoferichterF}
 \hfill
-\includegraphics[width=0.49\textwidth]{section6/DM-SI-XS_HiggsPortalDM_BRinv_0p025_HoferichterF}
+\includegraphics[width=0.49\textwidth]{\main/section6/plots/DM-SI-XS_HiggsPortalDM_BRinv_0p025_HoferichterF}
 \caption{\label{fig:mini} Implications for the minimal Higgs portal model: Comparison of current (\emph{left figure}) and future HL-LHC (\emph{right figure}) limits from invisible Higgs searches  with limits from DM direct detection experiments on the spin-independent DM-nucleon scattering cross section, $\sigma_{\mathrm{DM}-\mathrm{nucleon}}$, as a function of the DM mass, $\MDM$. The inferred limits from invisible Higgs searches are shown for scalar DM (\emph{blue curve}), fermion DM (\emph{red  curve}) and for vector DM (\emph{green  curve}). In addition we show present limits (\emph{solid lines}), favored regions (\emph{filled areas}) and future sensitivity (\emph{dashed lines}) of the DM direct detection experiments \textsc{Xenon10}~\cite{Angle:2011th}, \textsc{Xenon100}~\cite{Aprile:2012nq}, \textsc{Xenon1T}~\cite{Aprile:2018dbl}, \textsc{XenonNT}~\cite{Aprile:2015uzo}, \textsc{SuperCDMS} at SNOLAB~\cite{Agnese:2016cpb}, \textsc{DAMA/LIBRA}~\cite{Savage:2008er}, \textsc{Cresst}~\cite{Angloher:2011uu}, \textsc{CDMS~II}~\cite{Agnese:2013rvf} and \textsc{CoGeNT}~\cite{Aalseth:2012if} (\emph{see legend}). The gray area indicates regions inaccessible to DM direct detection experiments due to the irreducible neutrino flux background~\cite{Billard:2013qya}.}
 \label{fig:minimalHP}
 \end{figure}
@@ -464,10 +446,10 @@ The branching ratio of the invisible decay of the SM-like Higgs boson $H$ is giv
  
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.5\textwidth]{section6/mh_cosa_vs50vH_lamSX0p0001_MX5GeV_LEPBRinvkunikgga}\hfill
-\includegraphics[width=0.5\textwidth]{section6/mh_cosa_vs50vH_lamSX0p000001_MX5GeV_LEPBRinvkunikgga}\\
-\includegraphics[width=0.5\textwidth]{section6/mh_cosa_vs50vH_lamSX0p001_MX5GeV_LEPBRinvkunikgga}\hfill
-\includegraphics[width=0.5\textwidth]{section6/mh_cosa_vs5vH_lamSX0p0001_MX5GeV_LEPBRinvkunikgga}
+\includegraphics[width=0.5\textwidth]{\main/section6/plots/mh_cosa_vs50vH_lamSX0p0001_MX5GeV_LEPBRinvkunikgga}\hfill
+\includegraphics[width=0.5\textwidth]{\main/section6/plots/mh_cosa_vs50vH_lamSX0p000001_MX5GeV_LEPBRinvkunikgga}\\
+\includegraphics[width=0.5\textwidth]{\main/section6/plots/mh_cosa_vs50vH_lamSX0p001_MX5GeV_LEPBRinvkunikgga}\hfill
+\includegraphics[width=0.5\textwidth]{\main/section6/plots/mh_cosa_vs5vH_lamSX0p0001_MX5GeV_LEPBRinvkunikgga}
 \caption{{Implications for the scalar singlet portal model, shown in the $(M_h, \cos\alpha)$ parameter plane for a DM mass of $M_X = 5\UGeV$ and $(v_S, \lambda_{SX}) = (50\,v, 10^{-4})$ [\emph{top left}], $(50\,v, 10^{-6})$ [\emph{top right}], $(50\,v, 10^{-3})$ [\emph{bottom left}] and $(5\,v, 10^{-4})$ [\emph{bottom right}]. Black solid contours show the invisible Higgs decay rate, $\mathrm{BR}(H\to \mathrm{inv})$, the red dashed contour/gray area indicates the expected HL-LHC limit from invisible Higgs searches, pale and bright green contours/areas indicate the indirect constraints from HL-LHC Higgs rate measurements (using the two parametrizations, see Section~\ref{sec6:effC}), and the orange contour/area marks the excluded region from LEP searches. See text for more details.} {\sl These plots will be updated once the ATLAS and CMS signal strength combination projection becomes available.}}
 \label{Fig:singletportal}
 \end{figure}
