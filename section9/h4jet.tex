@@ -70,7 +70,7 @@ is summarized in Table~\ref{tab:tracksel}.
 
 \begin{table*}[htb]
 \centering
-\topcaption{Track selection for jet finding. The $\chi^2$ selections are per degree of freedom for a 4-parameter track fit. \label{tab:tracksel}}
+\caption{Track selection for jet finding. The $\chi^2$ selections are per degree of freedom for a 4-parameter track fit. \label{tab:tracksel}}
 \begin{tabular}{r|ccc}
 \hline
 track \pt & 4 stubs  & 5 stubs & 6 stubs \\
@@ -93,20 +93,20 @@ The rates are computed based on a fixed number of colliding bunches. The trigger
 \begin{equation*}
   \text{Rate} = \effLT \Nbunches \fLHC,
 \end{equation*}
-where $\Nbunches=2750\unit{bunches}$ for 25\unit{ns} bunch spacing operation, $\fLHC = 11246\unit{Hz}$, and \effLT is the efficiency to pass a given L1 threshold as determined
+where $\Nbunches=2750\mathrm{bunches}$ for 25\Uns bunch spacing operation, $\fLHC = 11246\UHz$, and \effLT is the efficiency to pass a given L1 threshold as determined
 in simulation. For both the L1 trigger efficiency and rate, the performance of the TwoLayer hardware algorithm is compatible with the performance from the more sophisticated algorithm
 from \FASTJET.
 
 \begin{figure*}[hbtp]\centering
- \includegraphics[width=0.45\textwidth]{\main/section9/jet_eff.png}
+ \includegraphics[width=0.45\textwidth]{\main/section9/plots/jet_eff.png}
  \caption{The efficiency for a jet to give rise to a L1 track jet as a function of the generator-level \pt of the jet.
  The light and dark blue lines correspond to the trigger clustering (TwoLayer Jets) and anti-\kt with $R =0.3$ (\FASTJET), respectively.}
   \label{fig:jeteff}
 \end{figure*}%
 
 \begin{figure*}[hbtp]\centering
- \includegraphics[width=0.45\textwidth]{\main/section9/rates_HT.png}
- \includegraphics[width=0.45\textwidth]{\main/section9/rates_Quad.png}
+ \includegraphics[width=0.45\textwidth]{\main/section9/plots/rates_HT.png}
+ \includegraphics[width=0.45\textwidth]{\main/section9/plots/rates_Quad.png}
  \caption{Calculated L1 trigger rates for track jet based \HT (left) and quad-jet (right) triggers.
  The light and dark blue lines correspond to the trigger clustering (TwoLayer Jets) and anti-\kt with $R =0.3$ (\FASTJET), respectively.}
   \label{fig:rates}
@@ -121,7 +121,7 @@ and clusters containing tracks with high impact parameters are flagged as displa
 studies show that an enhanced L1 Track Trigger can extend the L1 trigger acceptance to include new BSM physics signals.
 
 \begin{figure*}[hbtp]\centering
- \includegraphics[width=0.49\textwidth]{\main/section9/bends.png}
+ \includegraphics[width=0.49\textwidth]{\main/section9/plots/bends.png}
  \caption{A sketch of a track crossing a \pt-module.}
   \label{fig:bend}
 \end{figure*}%
@@ -138,7 +138,7 @@ Fig. \ref{fig:stubeff} shows the efficiency for a displaced muon to produce a st
 of the muon, as measured in the full \GEANTfour-based simulation of the Phase-2 detector. 
 
 \begin{figure*}[hbtp]\centering
- \includegraphics[width=0.9\textwidth]{\main/section9/stubeff_d0.png}
+ \includegraphics[width=0.9\textwidth]{\main/section9/plots/stubeff_d0.png}
  \caption{The efficiency for a displaced muon to form stubs in the six barrel layers of the Phase-2 tracker, as a function of the signed muon \pt and impact parameter.
  The top row shows, from left to right, layers 1, 2, and 3;
  the bottom row shows layers 4, 5, and 6.
@@ -155,7 +155,7 @@ Fig. \ref{fig:trackeff} shows the track reconstruction efficiency requiring at l
 only four stubs on a track gives a higher efficiency for high impact parameter tracks.
 
 \begin{figure*}[hbtp]\centering
- \includegraphics[width=0.9\textwidth]{\main/section9/trackeff_d0.png}
+ \includegraphics[width=0.9\textwidth]{\main/section9/plots/trackeff_d0.png}
  \caption{The efficiency for a displaced muon to be reconstructed as a track with at least four stubs (left) and at least five stubs (right).}
   \label{fig:trackeff}
 \end{figure*}%
@@ -174,7 +174,7 @@ The selection is summarized in Table \ref{tab:dtracksel}.
 
 \begin{table*}[htb]
 \centering
-\topcaption{Track selection criteria for jet finding with extended L1 track finding. \label{tab:dtracksel}}
+\caption{Track selection criteria for jet finding with extended L1 track finding. \label{tab:dtracksel}}
 \begin{tabular}{c|ccc|ccc}
 \hline
            & \multicolumn{3}{c|}{Loose}                        & \multicolumn{3}{c}{Tight} \\
@@ -194,14 +194,14 @@ in a jet have $|\dtrans|>0.1\Ucm$, the jet is tagged as a displaced jet.
 
 Figure \ref{fig:reff} shows the rate of the track jet \HT trigger as a function of the efficiency
 of the heavy SM-like Higgs boson signal. While for prompt $\phi$ decays one can realistically achieve 20\%
-efficiency at an L1 rate of 25\unit{kHz}, the efficiency quickly drops with the decay length, since the displaced tracks are not reconstructed for \dtrans values above a few mm.
+efficiency at an L1 rate of 25\UkHz, the efficiency quickly drops with the decay length, since the displaced tracks are not reconstructed for \dtrans values above a few mm.
 
 \begin{figure*}[hbtp]\centering
 
- \includegraphics[width=0.49\textwidth]{\main/section9/reff_h125.png}
- \includegraphics[width=0.49\textwidth]{\main/section9/reff_h250_mphi30.png} \\
- \includegraphics[width=0.49\textwidth]{\main/section9/reff_h125_mphi30.png}
-\includegraphics[width=0.49\textwidth]{\main/section9/reff_h250.png}
+ \includegraphics[width=0.49\textwidth]{\main/section9/plots/reff_h125.png}
+ \includegraphics[width=0.49\textwidth]{\main/section9/plots/reff_h250_mphi30.png} \\
+ \includegraphics[width=0.49\textwidth]{\main/section9/plots/reff_h125_mphi30.png}
+\includegraphics[width=0.49\textwidth]{\main/section9/plots/reff_h250.png}
  \caption{The rate of the track jet \HT trigger as a function of signal efficiency for the SM Higgs boson (left) and the heavy SM-like Higgs boson (right) using prompt track finding.}
   \label{fig:reff}
 \end{figure*}%
@@ -211,7 +211,7 @@ a requirement of at least one jet with a displaced tag. The displaced tag requir
 an order of magnitude. The displaced tracking and the trigger that requires a jet with a displaced tag make the signals with low \HT accessible for displaced jets.
 
 \begin{figure*}[hbtp]\centering
- \includegraphics[width=0.49\textwidth]{\main/section9/rate_disp.png}
+ \includegraphics[width=0.49\textwidth]{\main/section9/plots/rate_disp.png}
  \caption{The rate of the track jet \HT trigger using extended track finding with (solid line) and without (dashed line) a
  requirement of at least one jet with a displaced tag.}
   \label{fig:rate_disp}
@@ -226,29 +226,29 @@ We have confirmed that such extrapolation works for the track jets clustered wit
 
 \begin{figure}[hbtp]
   \centering
-    \includegraphics[width=0.49\textwidth]{\main/section9/ExtrapolatedRatemH125_mPhi15.png}
-    \includegraphics[width=0.49\textwidth]{\main/section9/ExtrapolatedRatemH250_mPhi30.png}\\
-    \includegraphics[width=0.49\textwidth]{\main/section9/ExtrapolatedRatemH125_mPhi30.png}
-    \includegraphics[width=0.49\textwidth]{\main/section9/ExtrapolatedRatemH250_mPhi60.png}
+    \includegraphics[width=0.49\textwidth]{\main/section9/plots/ExtrapolatedRatemH125_mPhi15.png}
+    \includegraphics[width=0.49\textwidth]{\main/section9/plots/ExtrapolatedRatemH250_mPhi30.png}\\
+    \includegraphics[width=0.49\textwidth]{\main/section9/plots/ExtrapolatedRatemH125_mPhi30.png}
+    \includegraphics[width=0.49\textwidth]{\main/section9/plots/ExtrapolatedRatemH250_mPhi60.png}
     \caption{The rate of the track jet \HT trigger as a function of signal efficiency using extended track finding for the SM Higgs (left)
     and the heavy SM-like Higgs (right). The extended track finding performance is extrapolated to the full outer tracker acceptance as described in text.}
     \label{fig:reff_dispextra}
 \end{figure}
 
 The available bandwith for the triggers described above, if implemented, will be decided as a part of the full trigger menu optimization.
-Here, we consider two cases, 5 and 25\unit{kHz}. The expected event yield for triggers using extended and prompt tracking are shown in Fig. \ref{fig:money},
+Here, we consider two cases, 5 and 25\UkHz. The expected event yield for triggers using extended and prompt tracking are shown in Fig. \ref{fig:money},
 assuming branching fraction $\mathcal{B}[\Hphiphi] = 10^{-5}$ for the SM Higgs boson.
 For the heavy Higgs boson, the expected number of produced signal events is set to be the same as for the SM Higgs by requiring
 $\sigma_{\pp\to \PH(250)} \mathcal{B}[\BSMHphiphi] = 10^{-5} \sigma_{\pp\to \PH(125)}$.
 
 \begin{figure}[hbtp]
   \centering
-    \includegraphics[width=0.49\textwidth]{\main/section9/HiggsM125_25kHzYieldsvsLifetime.png}
-    \includegraphics[width=0.49\textwidth]{\main/section9/HiggsM125_5kHzYieldsvsLifetime.png}\\
-    \includegraphics[width=0.49\textwidth]{\main/section9/HiggsM250_25kHzYieldsvsLifetime.png}
-    \includegraphics[width=0.49\textwidth]{\main/section9/HiggsM250_5kHzYieldsvsLifetime.png}
+    \includegraphics[width=0.49\textwidth]{\main/section9/plots/HiggsM125_25kHzYieldsvsLifetime.png}
+    \includegraphics[width=0.49\textwidth]{\main/section9/plots/HiggsM125_5kHzYieldsvsLifetime.png}\\
+    \includegraphics[width=0.49\textwidth]{\main/section9/plots/HiggsM250_25kHzYieldsvsLifetime.png}
+    \includegraphics[width=0.49\textwidth]{\main/section9/plots/HiggsM250_5kHzYieldsvsLifetime.png}
     \caption{This plot shows the number of triggered Higgs events (assuming ${\mathcal{B}[\Hphiphi] = 10^{-5}}$, corresponding to 
-1700 events) as a function of \ctau for two choices for the trigger rates: 25\unit{kHz} (left), 5\unit{kHz} (right).
+1700 events) as a function of \ctau for two choices for the trigger rates: 25\UkHz (left), 5\UkHz (right).
 Two triggers are compared: one based on prompt track finding (dotted lines) and another that is based on extended track finding 
 with a displaced jet tag (solid lines). }
     \label{fig:money}
@@ -257,7 +257,7 @@ with a displaced jet tag (solid lines). }
 \paragraph{Conclusion}
 
 We have studied the upgraded CMS detector's ability to trigger on events with long lived particles decaying into jets.
-Currently, such events pass the L1 trigger only if the total transverse energy in the event is above a few hundred \UGeVns.
+Currently, such events pass the L1 trigger only if the total transverse energy in the event is above a few hundred \UGeV.
 This is an important blind spot for searches, especially for the rare exotic Higgs boson decays like
  \Hphiphi.
 

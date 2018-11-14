@@ -4,8 +4,6 @@
 \IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
 % until here
 
-
-
 \begin{document}
 
 \section{Searches for beyond the standard model Higgs physics}
@@ -21,12 +19,12 @@
 \subfile{\main/section9/h4jet}
 \subfile{\main/section9/summary_of_2b2mu}
 \subfile{\main/section9/HiggsToALPs}
-\subfile{\main/section9/cms_higgs2a4mu/cms_higgs2a4mu}
+\subfile{\main/section9/cms_higgs2a4mu}
 
 \subsection{Searches for additional Higgs bosons in fermionic final states}
-\subfile{\main/section9/cms_htt/mssm_cms}
-\subfile{\main/section9/atlas_htautau/mssmtautau}
-\subfile{\main/section9/lhcb_amumu/lhcb}
+\subfile{\main/section9/cms_htt}
+\subfile{\main/section9/mssmtautau}
+\subfile{\main/section9/lhcb}
 
 \subsection{Searches for additional Higgs bosons in diboson final states}
 
@@ -35,24 +33,19 @@
 \subfile{\main/section9/MSSMCharged}
 
 \subsection{Interference effects in heavy Higgs searches}
-\subfile{\main/section9/HHinterference/HHinterference.tex}
+\subfile{\main/section9/HHinterference}
 
 \clearpage
 
 \vspace{5cm}
 \subsection{All contributions below: Move your contribution to a separate file!}
 
-
-
-
 \subsection{Interpretation of the Higgs couplings in terms of Composite Higgs models}
 \begin{center}
  {L. Vecchi}
 \end{center}
 \label{sec9:CHM}
-\subfile{\main/section9/InterpretationCH.tex}
-
-
+\subfile{\main/section9/InterpretationCH}
 
 \subsection{Interpretation of the Higgs couplings in terms of SUSY models}
 
@@ -120,10 +113,10 @@ Our projections in the $M_h^{125}$ and the $M_h^{125}(\tilde{\chi})$ scenario in
 %%%%%%%%%%%%%%%%%%% F I G U R E %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.5\textwidth]{section9/mh125S1_HBHS}\hfill
-\includegraphics[width=0.5\textwidth]{section9/mh125-lc_S1_HBHS}\\
-\includegraphics[width=0.5\textwidth]{section9/mh125S2_HBHS}\hfill
-\includegraphics[width=0.5\textwidth]{section9/mh125-lc_S2_HBHS}
+\includegraphics[width=0.5\textwidth]{\main/section9/plots/mh125S1_HBHS}\hfill
+\includegraphics[width=0.5\textwidth]{\main/section9/plots/mh125-lc_S1_HBHS}\\
+\includegraphics[width=0.5\textwidth]{\main/section9/plots/mh125S2_HBHS}\hfill
+\includegraphics[width=0.5\textwidth]{\main/section9/plots/mh125-lc_S2_HBHS}
 
 \end{center}
 \caption{HL-LHC projections in the $M_h^{125}$ (\emph{left}) and
@@ -293,8 +286,8 @@ representation~\cite{Georgi:1985nv,Akeroyd:2003bt,Akeroyd:2010eg,Cort:2013foa,Ha
 %%%%%
 \begin{figure}[tbh]
 \begin{center}
-\includegraphics[scale=.403]{FigsLowMassHiggs/CxnVsMHoDelM_13TeV.pdf}
-\includegraphics[scale=.4]{FigsLowMassHiggs/CxnVsMHoDelM_27TeV.pdf}
+\includegraphics[scale=.403]{\main/section9/plots/CxnVsMHoDelM_13TeV.pdf}
+\includegraphics[scale=.4]{\main/section9/plots/CxnVsMHoDelM_27TeV.pdf}
 \end{center}
 \caption{Leading order cross sections (with \emph{pdfs}) for the $q\bar{q} \to V \to H_M^{\pm,0} H_N^0$ Higgs pair production mechanism mediated by $W$ (blue solid) and $Z$ (black dashed) bosons at the LHC for $\sqrt{s}=13$~TeV (left) and $\sqrt{s}=27$~TeV (right) in the mass range $60 - 125$~GeV. We show three cases for mass splittings $\Delta M \equiv M_{H^{\pm,0}_M} - M_{H_N^0}= 0, 100, 200, 300$~GeV as labeled in plot and have factored out an overall group theory factor $C_N$ (see~\ref{gvhh}). The curves for a particular model can be obtained by rescaling with $(C_N)^2$ which is fixed by the $SU(2)_L\times U(1)_Y$ representation.} 
 \label{fig:HHprod}
@@ -443,8 +436,8 @@ Mind the region where $\Gamma_A/m_A > 20\%$!
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[width=0.48\textwidth]{\main/section9/2HDM_AZH_Plot_Statistics.pdf}
-\includegraphics[width=0.48\textwidth]{\main/section9/2HDM_AZH_Plot_Statistics.pdf}
+\includegraphics[width=0.48\textwidth]{\main/section9/plots/2HDM_AZH_Plot_Statistics.pdf}
+\includegraphics[width=0.48\textwidth]{\main/section9/plots/2HDM_AZH_Plot_Statistics.pdf}
 \caption{\small Left: Present (solid) and projected (dashed)  $95\%$ C.L. exclusion sensitivity for $p p \to A \to Z H \to \ell\ell b \bar{b}$ in the 
 in the ($m_{A}$, tan$\beta$) plane for $m_A = m_H +100$ GeV, from 
 gluon fusion (orange) and $bb$-associated production (blue). Right: \textcolor{red}{(Placeholder for the limits with systematics)}.}
@@ -469,7 +462,7 @@ Mind the region where $\Gamma_H/m_H > 20\%$!
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[width=0.65\textwidth]{\main/section9/95_exclusion_map_HAA.pdf}
+\includegraphics[width=0.65\textwidth]{\main/section9/plots/95_exclusion_map_HAA.pdf}
 \caption{\small Estimated $95\%$ C.L. $\sigma \times$ BR exclusion sensitivity for $p p \to H \to A A \to b \bar{b} b \bar{b}$ 
 in the ($m_{H_1} = m_H$, $m_{H_2} = m_A$) plane for LHC 13 TeV with an integrated luminosity of 35.9 fb$^{-1}$ \textcolor{red}{(Placeholder for the 
 2HDM interpretation of these limits)}.}

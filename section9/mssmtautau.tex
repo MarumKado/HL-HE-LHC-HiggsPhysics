@@ -1,53 +1,3 @@
-%-------------------------------------------------------------------------------
-% Specify where ATLAS LaTeX style files can be found.
-\newcommand*{\ATLASLATEXPATH}{\main/section9/atlas_htautau/latex/}
-
-%-------------------------------------------------------------------------------
-%\documentclass[NOTE, atlasdraft=true, texlive=2016, UKenglish]{\ATLASLATEXPATH atlasdoc}
-% The language of the document must be set: usually UKenglish or USenglish.
-% british and american also work!
-% Commonly used options:
-%  atlasdraft=true|false This document is an ATLAS draft.
-%  texlive=YYYY          Specify TeX Live version (2016 is default).
-%  coverpage             Create ATLAS draft cover page for collaboration circulation.
-%                        See atlas-draft-cover.tex for a list of variables that should be defined.
-%  cernpreprint          Create front page for a CERN preprint.
-%                        See atlas-preprint-cover.tex for a list of variables that should be defined.
-%  NOTE                  The document is an ATLAS note (draft).
-%  PAPER                 The document is an ATLAS paper (draft).
-%  CONF                  The document is a CONF note (draft).
-%  PUB                   The document is a PUB note (draft).
-%  BOOK                  The document is of book form, like an LOI or TDR (draft)
-%  txfonts=true|false    Use txfonts rather than the default newtx
-%  paper=a4|letter       Set paper size to A4 (default) or letter.
-
-%-------------------------------------------------------------------------------
-% Extra packages:
-%\usepackage{\ATLASLATEXPATH atlaspackage}
-% Commonly used options:
-%  biblatex=true|false   Use biblatex (default) or bibtex for the bibliography.
-%  backend=bibtex        Use the bibtex backend rather than biber.
-%  subfigure|subfig|subcaption  to use one of these packages for figures in figures.
-%  minimal               Minimal set of packages.
-%  default               Standard set of packages.
-%  full                  Full set of packages.
-%-------------------------------------------------------------------------------
-% Style file with biblatex options for ATLAS documents.
-%\usepackage{\ATLASLATEXPATH atlasbiblatex}
-
-% Useful macros
-%\usepackage[jetetmiss]{\ATLASLATEXPATH atlasphysics}
-% See doc/atlas_physics.pdf for a list of the defined symbols.
-% Default options are:
-%   true:  journal, misc, particle, unit, xref
-%   false: BSM, heppparticle, hepprocess, hion, jetetmiss, math, process, other, texmf
-% See the package for details on the options.
-
-\usepackage[inline,shortlabels]{enumitem}
-
-% Add you own definitions here (file mssmtautau-defs.sty).
-\usepackage{\main/section9/atlas_htautau/mssmtautau-defs}
-
 \subsubsection{Projection of Run-2 ATLAS searches for MSSM heavy Higgs bosons}
 %-------------------------------------------------------------------------------
 \paragraph{Introduction}
@@ -108,13 +58,13 @@ taken to be the sum of the background distributions.
 
 \begin{figure}[!ht]
     \centering
-        \subfloat[\lephad $b$-veto category]{\includegraphics[width=0.45\columnwidth]{\main/section9/atlas_htautau/figures/c170_postfit_lephad_bveto_MTtot__highlumi.pdf}}
+        \subfloat[\lephad $b$-veto category]{\includegraphics[width=0.45\columnwidth]{\main/section9/plots/c170_postfit_lephad_bveto_MTtot__highlumi.pdf}}
         \qquad
-        \subfloat[\lephad $b$-tag category]{\includegraphics[width=0.45\columnwidth]{\main/section9/atlas_htautau/figures/c171_postfit_lephad_btag_MTtot__highlumi.pdf}}
+        \subfloat[\lephad $b$-tag category]{\includegraphics[width=0.45\columnwidth]{\main/section9/plots/c171_postfit_lephad_btag_MTtot__highlumi.pdf}}
         \qquad
-        \subfloat[\hadhad $b$-veto category]{\includegraphics[width=0.45\columnwidth]{\main/section9/atlas_htautau/figures/c20_postfit_hadhad_bveto_MTtot__highlumi.pdf}}
+        \subfloat[\hadhad $b$-veto category]{\includegraphics[width=0.45\columnwidth]{\main/section9/plots/c20_postfit_hadhad_bveto_MTtot__highlumi.pdf}}
         \qquad
-        \subfloat[\hadhad $b$-tag category]{\includegraphics[width=0.45\columnwidth]{\main/section9/atlas_htautau/figures/c21_postfit_hadhad_btag_MTtot__highlumi.pdf}}
+        \subfloat[\hadhad $b$-tag category]{\includegraphics[width=0.45\columnwidth]{\main/section9/plots/c21_postfit_hadhad_btag_MTtot__highlumi.pdf}}
         \caption{Distributions of $\mTtot$ for each signal category. The style of the plot follows Ref.~\cite{ATLASRun2Ditau}. }
 
     \label{fig:mTtotDistributionsSR}
@@ -123,7 +73,7 @@ taken to be the sum of the background distributions.
 \begin{figure}[!ht]
     \centering
         \qquad
-        \includegraphics[width=0.5\columnwidth]{\main/section9/atlas_htautau/figures/c181_postfit_lephad_tcr_MTtot__highlumi.pdf}
+        \includegraphics[width=0.5\columnwidth]{\main/section9/plots/c181_postfit_lephad_tcr_MTtot__highlumi.pdf}
         \caption{Distribution of $\mTtot$ distributions in in the top quark enriched control region of the \lephad channel.}
     \label{fig:mTtotDistributionsCR}
 \end{figure}
@@ -178,9 +128,9 @@ are given in terms of exclusion limits \cite{CLs_2002}.
 
 %\begin{figure}[!ht]
 %    \centering
-%        \subfloat[gluon--gluon fusion production]{\includegraphics[width=0.4\columnwidth]{\main/section9/atlas_htautau/figures/ggH__syst_impacts.pdf}}
+%        \subfloat[gluon--gluon fusion production]{\includegraphics[width=0.4\columnwidth]{\main/section9/plots/ggH__syst_impacts.pdf}}
  %       \qquad
-%        \subfloat[$b$-associated production]{\includegraphics[width=0.4\columnwidth]{\main/section9/atlas_htautau/figures/bbH__syst_impacts.pdf}}
+%        \subfloat[$b$-associated production]{\includegraphics[width=0.4\columnwidth]{\main/section9/plots/bbH__syst_impacts.pdf}}
 %        \caption{Impact of major groups of systematic uncertainties on the $\phi\to\tau\tau$ 95\% CL 
 %          cross section upper limits as a function of the scalar boson mass, separately 
 %          for the (a) gluon--gluon fusion and (b) $b$-associated production mechanisms.}
@@ -196,9 +146,9 @@ the high-$\pt$ tau systematic uncertainty.
 
 \begin{figure}[!ht]
     \centering
-        \subfloat[gluon--gluon fusion production]{\includegraphics[width=0.4\columnwidth]{\main/section9/atlas_htautau/figures/ggH.pdf}}
+        \subfloat[gluon--gluon fusion production]{\includegraphics[width=0.4\columnwidth]{\main/section9/plots/ggH.pdf}}
         \qquad
-        \subfloat[$b$-associated production]{\includegraphics[width=0.4\columnwidth]{\main/section9/atlas_htautau/figures/bbH.pdf}}
+        \subfloat[$b$-associated production]{\includegraphics[width=0.4\columnwidth]{\main/section9/plots/bbH.pdf}}
         \caption{Projected 95\% CL upper limits on the production cross section times ditau branching fraction 
         for a scalar boson produced via (a) gluon--gluon fusion and (b) $b$-associated production, as a function 
         of scalar boson mass. The limits are calculated from a statistical combination of the \ehad, \muhad 
@@ -221,9 +171,9 @@ for $m_\phi = 1.5$ TeV.
 
 \begin{figure}[!ht]
     \centering
-        \subfloat[hMSSM scenario]{\includegraphics[width=0.4\columnwidth]{\main/section9/atlas_htautau/figures/hMSSM.pdf}}
+        \subfloat[hMSSM scenario]{\includegraphics[width=0.4\columnwidth]{\main/section9/plots/hMSSM.pdf}}
         \qquad
-        \subfloat[\mhmodp scenario]{\includegraphics[width=0.4\columnwidth]{\main/section9/atlas_htautau/figures/mhmodp.pdf}}
+        \subfloat[\mhmodp scenario]{\includegraphics[width=0.4\columnwidth]{\main/section9/plots/mhmodp.pdf}}
         \caption{Projected 95\% CL limits on $\tan\beta$ as a function of $m_\phi$ in the MSSM (a) hMSSM and 
         (b) \mhmodp scenarios. ``Baseline'' uses the reduced systematic uncertainties scheme described in the text.
         ``Unreduced sys.'' uses the same systematic uncertainties as the Run 2 analysis while ignoring 

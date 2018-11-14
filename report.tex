@@ -6,7 +6,7 @@
 % -- The bibliography file paths for the main volume and all parts
 % --
 %\def\bibfiles{\main/bib/chapter,\main/section1/bib/section,\main/section2/bib/section,\main/section3/bib/section,\main/section4/bib/section,\main/section5/bib/section,\main/section6/bib/section,\main/section7/bib/section,\main/section8/bib/section,\main/section9/bib/section}
-\def\bibfiles{\main/bib/chapter,\main/section1/bib/section,\main/section2/bib/section,\main/section3/bib/section,\main/section4/bib/section,\main/section5/bib/section,\main/section6/bib/section,\main/section7/bib/section,\main/section8/bib/section}
+\def\bibfiles{\main/bib/chapter,\main/section1/bib/section,\main/section2/bib/section,\main/section3/bib/section,\main/section4/bib/section,\main/section5/bib/section,\main/section6/bib/section,\main/section7/bib/section,\main/section8/bib/section,\main/section9/bib/section}
 \newcommand{\biblio}{\nocite{article-minimal}\bibliographystyle{report}\clearpage\bibliography{\bibfiles}}
 
 \usepackage{cancel}
@@ -228,7 +228,7 @@
 % Section 6.
 \newcommand{\BRHinv}{\mathrm{BR}_\mathrm{inv}}
 \newcommand{\MDM}{M_\mathrm{DM}}
-\newcommand{\CL}{~\mathrm{C.L.}}
+\newcommand{\CL}{\ensuremath{~\mathrm{C.L.}}}
 \newcommand{\BRNP}{\mathrm{BR}(H\to\mathrm{NP})}
 \newcommand{\MHT}{\ensuremath{\mathrm{H}_{\mathrm{T}}^{\mathrm{miss}}}}
 \newcommand{\POWHEG}{\textsc{POWHEG}}
@@ -261,6 +261,86 @@
 \newcommand{\pth}{\ensuremath{{\pt}^{\hboson}}\xspace}
 \newcommand{\msd}{\ensuremath{m_\text{SD}}\xspace}
 \newcommand{\pb}{\ensuremath{\,\text{pb}}\xspace}
+
+% Section 8.
+
+% Section 9.
+\newcommand{\emu}{\Pe\Pgm}
+\newcommand{\mutau}{\Pgm\Pgt_{\rm{h}}}
+\newcommand{\etau}{\Pe\Pgt_{\rm{h}}}
+\newcommand{\tauhad}{\ensuremath{\Pgt_{\rm{h}}}}
+\newcommand{\ZJets}{\ensuremath{\PZ}/\ensuremath{\Pgg^{*}}{+}\text{jets}\xspace}
+\newcommand{\WJets}{\ensuremath{\PW}{+}\text{jets}\xspace}
+\newcommand{\ttbarJets}{\ensuremath{\Pqt\Paqt}{+}\text{jets}\xspace}
+\newcommand{\ztt}{\ensuremath{\PZ\to\Pgt\Pgt}\xspace}
+\newcommand{\pzetavis}{\ensuremath{p_{\zeta}^{\text{vis}}}\xspace}
+\newcommand{\pzetamiss}{\ensuremath{p_{\zeta}^{\text{miss}}}\xspace}
+\newcommand{\mhmodp}{\ensuremath{m_{\Ph}^{\text{mod+}}}\xspace}
+\newcommand{\mA}{\ensuremath{m_{\text{A}}}\xspace}
+\newcommand{\e}[1]{\ensuremath{\times 10^{#1}}}
+\newcommand{\processbbtt}{\ensuremath{{\Ph}\to{\Pa\Pa}\to2\Pgt2{\cPqb}}\xspace}
+\newcommand{\processmmtt}{\ensuremath{{\Ph}\to{\Pa\Pa}\to2\Pgm2{\Pgt}}\xspace}
+\newcommand{\mbtt}{\ensuremath{m_{\cPqb\Pgt\Pgt}^{\text{vis}}}\xspace}
+\newcommand{\gammaDark}{\ensuremath{{\PGg}_{\mathrm{D}}}\xspace}
+\newcommand{\nOne}{\ensuremath{\textnormal{n}_{1}}\xspace}
+\newcommand{\nDark}{\ensuremath{\textnormal{n}_{\mathrm{D}}}\xspace}
+\newcommand{\PhOne}{\ensuremath{\Ph_{1}}\xspace}
+\newcommand{\PhTwo}{\ensuremath{\Ph_{2}}\xspace}
+\newcommand{\PhOneTwo}{\ensuremath{\Ph_{1,2}}\xspace}
+\newcommand{\PaOne}{\ensuremath{\Pa_{1}}\xspace}
+\newcommand{\dimuon}{\ensuremath{(\PGm\PGm)}\xspace}
+\newcommand{\dimuonOne}{\ensuremath{(\PGm\PGm)_1}\xspace}
+\newcommand{\dimuonTwo}{\ensuremath{(\PGm\PGm)_2}\xspace}
+\newcommand{\MgammaDark}{\ensuremath{m_{{\PGg}_{\mathrm{D}}}}\xspace}
+\newcommand{\MnOne}{\ensuremath{m_{{\textnormal{n}}_{1}}}\xspace}
+\newcommand{\MnDark}{\ensuremath{m_{{\textnormal{n}}_{\mathrm{D}}}}\xspace}
+\newcommand{\MPhOne}{\ensuremath{m_{\Ph_{1}}}\xspace}
+\newcommand{\MPhTwo}{\ensuremath{m_{\Ph_{2}}}\xspace}
+\newcommand{\MPhOneTwo}{\ensuremath{m_{\Ph_{1,2}}}\xspace}
+\newcommand{\MPhI}{\ensuremath{m_{\Ph_{i}}}\xspace}
+\newcommand{\MPa}{\ensuremath{m_{\Pa}}\xspace}
+\newcommand{\MPaOne}{\ensuremath{m_{\Pa_{1}}}\xspace}
+\newcommand{\Mdimuon}{\ensuremath{m_{(\PGm\PGm)}}\xspace}
+\newcommand{\MdimuonOne}{\ensuremath{m_{(\PGm\PGm)_1}}\xspace}
+\newcommand{\MdimuonTwo}{\ensuremath{m_{(\PGm\PGm)_2}}\xspace}
+\newcommand{\Mmuon}{\ensuremath{m_{\PGm}}\xspace}
+\newcommand{\TgammaDark}{\ensuremath{\tau_{{\PGg}_{\mathrm{D}}}}\xspace}
+\newcommand{\ratio}{\ensuremath{\overline{r}}\xspace}
+\newcommand{\alphaGen}{\ensuremath{\alpha_\text{gen}}\xspace}
+\newcommand{\epsilonFull}{\ensuremath{\varepsilon_{\text{full}}}\xspace}
+\newcommand{\SOne}{\ensuremath{S_\mathrm{I}(\Mdimuon)}\xspace}
+\newcommand{\STwo}{\ensuremath{S_\mathrm{II}(\Mdimuon)}\xspace}
+\newcommand{\ASR}{\ensuremath{A_{\mathrm{SR}}}\xspace}
+\newcommand{\ACR}{\ensuremath{A_{\mathrm{CR}}}\xspace}
+\newcommand{\fSPS}{\ensuremath{f_\mathrm{SPS}}\xspace}
+\newcommand{\abinv}{\iab}
+\newcommand{\pp}{\ensuremath{\Pp\Pp}\xspace}
+\newcommand{\Hphiphi}{\ensuremath{\PH \to \phi\phi}\xspace}
+\newcommand{\GEANTfour}{\textsc{Geant~4}\xspace}
+\newcommand{\dtrans}{\ensuremath{d_0}\xspace}
+\newcommand{\zo}{\ensuremath{z_o}\xspace}
+\newcommand{\HT}{\ensuremath{H_\mathrm{T}}\xspace}
+\newcommand{\effLT}{\ensuremath{\epsilon_\mathrm{LT}}\xspace}
+\newcommand{\Nbunches}{\ensuremath{N_\mathrm{bunches}}\xspace}
+\newcommand{\fLHC}{\ensuremath{f_\mathrm{LHC}}\xspace}
+\newcommand{\Nstubs}{\ensuremath{N_\mathrm{stubs}}\xspace}
+\newcommand{\SI}{\ensuremath{\mathrm{SI}}\xspace}
+\newcommand{\ctau}{\ensuremath{c\tau}\xspace}
+\newcommand{\kt}{\ensuremath{k_t}\xspace}
+\newcommand{\FASTJET}{\textsc{FastJet}\xspace}
+\newcommand{\BSMHphiphi}{\ensuremath{\Phi \to \phi \phi}\xspace}
+\newcommand{\tanb}{\ensuremath{\tan\beta}\xspace}
+\newcommand{\RunTwo}{Run~2\xspace}
+\newcommand{\taulep}{\ensuremath{\tau_{\mathrm{lep}}}\xspace}
+\newcommand{\lephad}{\ensuremath{\taulep\thad}\xspace}
+\newcommand{\hadhad}{\ensuremath{\thad\thad}\xspace}
+\newcommand{\taue}{\ensuremath{\tau_{e}}\xspace}
+\newcommand{\taumu}{\ensuremath{\tau_{\mu}}\xspace}
+\newcommand{\thad}{\ensuremath{\tau_{\mathrm{had}}}\xspace}
+\newcommand{\mTtot}{m_\textnormal{T}^\textnormal{tot}}
+\newcommand{\tauhadvis}{\ensuremath{\Pgt_{\text{had-vis}}}\xspace}
+\newcommand{\ehad}{\ensuremath{\taue\thad}\xspace}
+\newcommand{\muhad}{\ensuremath{\taumu\thad}\xspace}
 
 % Other?
 \def\lra#1{\overset{\text{\scriptsize$\leftrightarrow$}}{#1}}
@@ -304,8 +384,8 @@ This is an abstract
 \subfile{\main/section7/section}
 \newpage
 \subfile{\main/section8/section}
-%\newpage
-%\subfile{\main/section9/section}
+\newpage
+\subfile{\main/section9/section}
 %\newpage
 %\subfile{\main/section10/section}
 %\newpage
