@@ -6,7 +6,7 @@
 % -- The bibliography file paths for the main volume and all parts
 % --
 %\def\bibfiles{\main/bib/chapter,\main/section1/bib/section,\main/section2/bib/section,\main/section3/bib/section,\main/section4/bib/section,\main/section5/bib/section,\main/section6/bib/section,\main/section7/bib/section,\main/section8/bib/section,\main/section9/bib/section}
-\def\bibfiles{\main/bib/chapter,\main/section1/bib/section,\main/section2/bib/section,\main/section3/bib/section,\main/section4/bib/section,\main/section5/bib/section,\main/section6/bib/section}
+\def\bibfiles{\main/bib/chapter,\main/section1/bib/section,\main/section2/bib/section,\main/section3/bib/section,\main/section4/bib/section,\main/section5/bib/section,\main/section6/bib/section,\main/section7/bib/section}
 \newcommand{\biblio}{\nocite{article-minimal}\bibliographystyle{report}\clearpage\bibliography{\bibfiles}}
 
 \usepackage{cancel}
@@ -23,8 +23,8 @@
 \begin{document}
 \newcommand{\main}{.}
 \newcommand{\code}[1]{\texttt{#1}}
-\def\ifb{\rm~fb^{-1}}
-\def\iab{\rm~ab^{-1}}
+\newcommand{\ifb}{\ensuremath{fb^{-1}}\xspace}
+\newcommand{\iab}{\ensuremath{ab^{-1}}\xspace}
 
 \newcommand{\de}{\partial}
 \newcommand{\Mb}{\bar{M}}
@@ -240,6 +240,28 @@
 \newcommand{\ptvec}{\ensuremath{\vec{\mathrm{p}_{T}}}}
 \newcommand{\BHinv}{\ensuremath{\text{B}(\PH\to \text{inv.})}\xspace}
 
+% Section 7.
+\newcommand{\yvmkk}{\bar Y^2 \frac{v^2}{m_{KK}^2}}
+\newcommand{\hboson}{\ensuremath{\PH}\xspace}
+\newcommand{\bquark}{\ensuremath{\Pqb}\xspace}
+\newcommand{\cquark}{\ensuremath{\Pqc}\xspace}
+\newcommand{\tquark}{\ensuremath{\Pqt}\xspace}
+\newcommand{\zboson}{\ensuremath{\PZ}\xspace}
+\newcommand{\gluon}{\ensuremath{\Pg}\xspace}
+\newcommand{\photon}{\ensuremath{\Pgg}\xspace}
+\newcommand{\proton}{\ensuremath{\Pp}\xspace}
+\newcommand{\vboson}{\ensuremath{\mathrm{V}}\xspace}
+\newcommand{\electron}{\ensuremath{\Pe}\xspace}
+\newcommand{\muon}{\ensuremath{\Pgm}\xspace}
+\newcommand{\cc}{\ensuremath{\cquark\bar{\cquark}}\xspace}
+\newcommand{\hcc}{\ensuremath{\hboson\to\cc}\xspace}
+\newcommand{\hzztofourl}{\ensuremath{\hzz^{(\ast)}\to 4\ell}\xspace}
+\newcommand{\BRgamgam}{\ensuremath{\mathcal{B}_{\photon\photon}}\xspace}
+\newcommand{\BRZZ}{\ensuremath{\mathcal{B}_{\zboson\zboson}}\xspace}
+\newcommand{\pth}{\ensuremath{{\pt}^{\hboson}}\xspace}
+\newcommand{\msd}{\ensuremath{m_\text{SD}}\xspace}
+\newcommand{\pb}{\ensuremath{\,\text{pb}}\xspace}
+
 % Other?
 \def\lra#1{\overset{\text{\scriptsize$\leftrightarrow$}}{#1}}
 
@@ -278,8 +300,8 @@ This is an abstract
 \subfile{\main/section5/section}
 \newpage
 \subfile{\main/section6/section}
-%\newpage
-%\subfile{\main/section7/section}
+\newpage
+\subfile{\main/section7/section}
 %\newpage
 %\subfile{\main/section8/section}
 %\newpage

@@ -4,54 +4,6 @@
 \IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
 % until here
 
-\newcommand{\br}{\mbox{BR}}
-\newcommand{\mcO}{\mathcal{O}}
-\newcommand{\yvmkk}{\bar Y^2 \frac{v^2}{m_{KK}^2}}
-\newcommand{\cR}{\mathcal{R}}
-
-% some commands for section 7.1 (did not find the predefined ones, so they are defined here. Probably need to merge them with the global commands)
-\newcommand{\pt}{\ensuremath{p_T}\xspace}
-\newcommand{\hboson}{\ensuremath{\PH}\xspace}
-\newcommand{\bquark}{\ensuremath{\cPqb}\xspace}
-\newcommand{\cquark}{\ensuremath{\cPqc}\xspace}
-\newcommand{\tquark}{\ensuremath{\cPqt}\xspace}
-\newcommand{\zboson}{\ensuremath{\cPZ}\xspace}
-\newcommand{\gluon}{\ensuremath{\cPg}\xspace}
-\newcommand{\photon}{\ensuremath{\cPgg}\xspace}
-\newcommand{\jpsi}{\ensuremath{\cPJgy}\xspace}
-\newcommand{\proton}{\ensuremath{\Pp}\xspace}
-\newcommand{\vboson}{\ensuremath{\mathrm{V}}\xspace} % Not a default one I could find!
-\newcommand{\taulepton}{\ensuremath{\PGt}\xspace}
-\newcommand{\electron}{\ensuremath{\Pe}\xspace}
-\newcommand{\muon}{\ensuremath{\Pgm}\xspace}
-
-\newcommand{\bb}{\ensuremath{\bquark\bar{\bquark}}\xspace}
-\newcommand{\cc}{\ensuremath{\cquark\bar{\cquark}}\xspace}
-% \newcommand{\tt}{\ensuremath{\tquark\bar{\tquark}}\xspace} # Already exists
-
-\newcommand{\hbb}{\ensuremath{\hboson\to\bb}\xspace}
-\newcommand{\hcc}{\ensuremath{\hboson\to\cc}\xspace}
-\newcommand{\hgg}{\ensuremath{\hboson\to\photon\photon}\xspace}
-\newcommand{\hzz}{\ensuremath{\hboson\to\zboson\zboson}\xspace}
-\newcommand{\hzztofourl}{\ensuremath{\hzz^{(\ast)}\to 4\ell}\xspace}
-
-\newcommand{\BRgamgam}{\ensuremath{\mathcal{B}_{\photon\photon}}\xspace}
-\newcommand{\BRZZ}{\ensuremath{\mathcal{B}_{\zboson\zboson}}\xspace}
-
-\newcommand{\pth}{\ensuremath{\pt^\hboson}\xspace}
-
-\newcommand{\mH}{\ensuremath{m_{\hboson}}\xspace}
-\newcommand{\msd}{\ensuremath{m_\text{SD}}\xspace}
-\newcommand{\ggh}{\ensuremath{\Pg\Pg\hboson}\xspace}
-
-\newcommand{\cg}{\ensuremath{c_\Pg}\xspace}
-\newcommand{\kappab}{\ensuremath{\kappa_{\bquark}}\xspace}
-\newcommand{\kappac}{\ensuremath{\kappa_{\cquark}}\xspace}
-\newcommand{\kappat}{\ensuremath{\kappa_{\tquark}}\xspace}
-
-\newcommand{\pb}{\ensuremath{\,\text{pb}}\xspace}
-\newcommand{\ifb}{\fbinv}
-
 \begin{document}
 
 \section{Higgs flavor and rare decays}
@@ -113,7 +65,7 @@ In terms of modifications of the flavor-diagonal and CP-conserving Yukawas,  the
 \end{align}
 See also \cite{CMS-PAS-HIG-15-002,CMS-PAS-HIG-17-031}.
 {\bf FB: still editing this paragraph}
-The upper bound on the charm Yukawa from~\cite{} is $&\kappa_c&\lesssim 6.2,\nonumber$.
+The upper bound on the charm Yukawa from~\cite{} is $\kappa_c \lesssim 6.2,\nonumber$.
 For the up, down, and strange Yukawas, saturating\dots~ \cite{Perez:2015aoa,Kagan:2014ila} gives
 \begin{align}
 \kappa_s&< 65,  &\kappa_d&<1.4 \cdot 10^3, &\kappa_u&<3.0 \cdot 10^{3}
@@ -647,7 +599,7 @@ one to probe deviations in the magnitude of the Higgs to charm coupling.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\textwidth]{\main/section7/higgs_production}
+	\includegraphics[width=\textwidth]{\main/section7/plots/higgs_production}
 	\caption{Left panel, leading-order production of Higgs in association with a heavy gauge boson ($Z/W$) and 
 		subsequent decays. Central panel, additional production channel of Higgs in association 
 		with a heavy gauge boson that becomes relevant for large $y_c$ \cite{Perez:2015aoa}.
@@ -677,7 +629,7 @@ Two key elements for this measurement, which we discuss below, are:
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.4\textwidth]{\main/section7/atlas_efficiency_fig_01}
+	\includegraphics[width=0.4\textwidth]{\main/section7/plots/atlas_efficiency_fig_01}
 	\caption{Correlation of $c$-tagging efficiency with $b$- and light-quark-jet rejection
 	in ATLAS's $c$-tagger employed in the analysis of Ref.~\cite{Aaboud:2018fhh}.
 \label{fig:ATLASctagefficiency}}
@@ -727,8 +679,8 @@ affected by this (see discussion within Ref.~\cite{Aaboud:2018fhh}).
 
 \begin{figure}[]
 	\centering
-	\includegraphics[width=0.45\textwidth]{\main/section7/plot_chi2_14TeV_kappabkappac_A_ctagII}
-	\includegraphics[width=0.45\textwidth]{\main/section7/plot_chi2_14TeV_kappabkappac_A_ctagIII}
+	\includegraphics[width=0.45\textwidth]{\main/section7/plots/plot_chi2_14TeV_kappabkappac_A_ctagII}
+	\includegraphics[width=0.45\textwidth]{\main/section7/plots/plot_chi2_14TeV_kappabkappac_A_ctagIII}
 	\caption{Projections for measuring charm Yukawa modifications from an inclusive 
 		$H\to c\bar c$ search at $\sqrt{s}=14$\,TeV using two different 
 		$c$-taggers (left and right panel) \cite{Perez:2015lra}.
@@ -790,14 +742,14 @@ These extrapolation does not include improvements on analysis techniques: as exa
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.5\linewidth]{\main/section7/hbb_etas.png}
+	\includegraphics[width=0.5\linewidth]{\main/section7/plots/hbb_etas.png}
 	\caption{2D histogram showing the coverage of the LHCb acceptance for the $b\bar{b}$ pair produced by the Higgs decay in associated production with a W or a Z boson.}
 	\label{fig:hbbetas}
 \end{figure}
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.99\linewidth]{\main/section7/c-tag-eff.png}
+	\includegraphics[width=0.99\linewidth]{\main/section7/plots/c-tag-eff.png}
 	\caption{c-jet tagging efficiency for different scenarios in the HL-LHC conditions.}
 	\label{fig:c-tag-eff}
 \end{figure}
@@ -838,9 +790,9 @@ implemented by a cut on the impact parameter $d_0$ after the truth value has bee
 detector resolution.
 \begin{figure}[tb]
   \centering
-  \includegraphics[width=0.6\textwidth]{\main/section7/fs_legend}\\
-  \includegraphics[width=0.49\textwidth]{\main/section7/eff_CC_2s_1_014}
-  \includegraphics[width=0.49\textwidth]{\main/section7/eff_NC_2s_1_014}
+  \includegraphics[width=0.6\textwidth]{\main/section7/plots/fs_legend}\\
+  \includegraphics[width=0.49\textwidth]{\main/section7/plots/eff_CC_2s_1_014}
+  \includegraphics[width=0.49\textwidth]{\main/section7/plots/eff_NC_2s_1_014}
   \caption{Efficiencies as function of the cut on $p_{||}$ and for $d_0<$\Unit{14}{$\mu$m} to
     reconstruct the different Higgs decay channels and $W$ decays as $s\bar s$ event by the
     described tagger. The left plot shows the CC channel, the right the CN channel.}
@@ -873,7 +825,7 @@ Since the indirect contribution is larger than the direct, the largest sensitivi
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[t]
 \begin{center}
-\includegraphics[width=0.65\textwidth]{higgs_exclusive_diag.pdf}
+\includegraphics[width=0.65\textwidth]{\main/section7/plots/higgs_exclusive_diag.pdf}
 \caption{The two contributions to $h \to V\gamma$ with $V=\rho,\omega,\phi,J/\psi,\Upsilon$. Left: the direct amplitude, proportional to  the $q$-quark Yukawa; Right: indirect amplitude involve the $h\gamma\gamma$ vertex.{\bf YS: replace $s\to q$ the figure}}
 \label{fig:hexlusive}
 \end{center}
@@ -1057,9 +1009,9 @@ Thus, the use of them will result in a better sensitivity for probing the light 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[t]
 \begin{center}
-\includegraphics[width=0.35\textwidth]{Disteta.pdf}~~~~~~~~
-\includegraphics[width=0.35\textwidth]{DistpT.pdf}\\
-\includegraphics[width=0.35\textwidth]{normalizedcharm8TeV.pdf}
+\includegraphics[width=0.35\textwidth]{\main/section7/plots/Disteta.pdf}~~~~~~~~
+\includegraphics[width=0.35\textwidth]{\main/section7/plots/DistpT.pdf}\\
+\includegraphics[width=0.35\textwidth]{\main/section7/plots/normalizedcharm8TeV.pdf}
 \caption{The Higgs normalized distributions. 
 Left-top\,(Right-top) : $y_h\,(p_T)$ distribution for enhanced $u$, $d$ and $s$ Yukawa compared to the SM~\cite{Soreq:2016rae};
 Bottom: $p_T$ distribution for enhanced $c$ Yukawa~\cite{Bishara:2016jga}. 
@@ -1084,9 +1036,9 @@ The sensitivity of the 13\,TeV run of the rapidity and transverse momentum distr
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[t]
 \begin{center}
-\includegraphics[width=0.35\textwidth]{Naive13TeVy.pdf}~~~~~~
-\includegraphics[width=0.35\textwidth]{Naive13TeVpT.pdf}\\
-\includegraphics[width=0.35\textwidth]{future12.pdf}
+\includegraphics[width=0.35\textwidth]{\main/section7/plots/Naive13TeVy.pdf}~~~~~~
+\includegraphics[width=0.35\textwidth]{\main/section7/plots/Naive13TeVpT.pdf}\\
+\includegraphics[width=0.35\textwidth]{\main/section7/plots/future12.pdf}
 \caption{The sensetivy of the different angular distribution to probe light quarks Yukawa at 13\,TeV.  
 Left-top: $u$ and $d$ quark Yukawa from $y_h$ distribution~\cite{Soreq:2016rae};
 Right-top: $u$ and $d$ quark Yukawa from $p_T$ distribution~\cite{Soreq:2016rae}; 
@@ -1127,7 +1079,7 @@ The Higgs boson couplings are free parameters in the SM Lagrangian, and there ar
 % 
 Using the transverse momentum distribution measured by the ATLAS Collaboration at $\sqrt{s}=8$\UTeV~\cite{Aad:2015lha}, corresponding to an integrated luminosity of $20.3$\fbinv, for the first time limits were set on the coupling to the charm quark, $\kappac$, using differential distributions~\cite{Bishara:2016jga}.
 % 
-These limits are compatible with those obtained from direct limits, such as a search using the same dataset for $\PH\to\jpsi\photon$ by the ATLAS Collaboration~\cite{Aad:2015sda}, and a search for $\hcc$ by the ATLAS Collaboration~\cite{Aaboud:2018fhh} using data collected at $\sqrt{s}=13$\UTeV, corresponding to an integrated luminosity of $36.1$\fbinv.
+These limits are compatible with those obtained from direct limits, such as a search using the same dataset for $\PH\to\PJGy\PGg$ by the ATLAS Collaboration~\cite{Aad:2015sda}, and a search for $\hcc$ by the ATLAS Collaboration~\cite{Aaboud:2018fhh} using data collected at $\sqrt{s}=13$\UTeV, corresponding to an integrated luminosity of $36.1$\fbinv.
 % 
 In addition to this study of the Higgs boson coupling to light quarks concerning mostly $\pth \lessapprox \mH$ (where $\mH$ is the Higgs boson mass), a study~\cite{Grazzini:2017szg,Grazzini:2016paz} involving simultaneous variations of the Higgs boson coupling to the top quark, $\kappat$, the bottom quark, $\kappab$, and an anomalous direct coupling to the gluon field, $\cg$, aims to exploit the tails of the $\pth$ distribution.
 
@@ -1193,8 +1145,8 @@ As this fit is dominated by statistical uncertainties even at very high integrat
 
 \begin{figure}[hbtp]
   \begin{center}
-    \includegraphics[width=0.49\linewidth]{\main/section7/projection_kbkc_plot_couplingdependentBRs.pdf}
-    \includegraphics[width=0.49\linewidth]{\main/section7/projection_kbkc_plot_couplingdependentBRs_scenario2.pdf}
+    \includegraphics[width=0.49\linewidth]{\main/section7/plots/projection_kbkc_plot_couplingdependentBRs.pdf}
+    \includegraphics[width=0.49\linewidth]{\main/section7/plots/projection_kbkc_plot_couplingdependentBRs_scenario2.pdf}
     % 
     \caption{
         Simultaneous fit to data for $\kappab$ and $\kappac$, assuming a coupling dependence of the branching fractions for Scenario 1 (\UcmsLeft) and Scenario 2 (\UcmsRight).
@@ -1209,8 +1161,8 @@ As this fit is dominated by statistical uncertainties even at very high integrat
 
 \begin{figure}[hbtp]
   \begin{center}
-    \includegraphics[width=0.49\linewidth]{\main/section7/projection_kbkc_plot_floatingBRs.pdf}
-    \includegraphics[width=0.49\linewidth]{\main/section7/projection_kbkc_plot_floatingBRs_scenario2.pdf}
+    \includegraphics[width=0.49\linewidth]{\main/section7/plots/projection_kbkc_plot_floatingBRs.pdf}
+    \includegraphics[width=0.49\linewidth]{\main/section7/plots/projection_kbkc_plot_floatingBRs_scenario2.pdf}
     % 
     \caption{
         As Fig.~\ref{fig:kbkc_couplingdependentBRs}, but with the branching fractions implemented as nuisance parameters with no prior constraint.
@@ -1264,7 +1216,7 @@ asymptotic behavior for extremely large Yukawa enhancements.
 \begin{figure}[tb!]
   \begin{center}
  % \hspace*{1.5cm} 
- \includegraphics[width=0.6\textwidth, angle=0]{section7/AsymmetryNLO_HELHC.pdf}
+ \includegraphics[width=0.6\textwidth, angle=0]{\main/section7/plots/AsymmetryNLO_HELHC.pdf}
  \caption{Inclusive charge asymmetry for $W^\pm h$ production at the
    27 TeV HE-LHC (solid colored bands), and 14 TeV HL-LHC (dotted
    colored bands), calculated at NLO QCD from MadGraph\_aMC@NLO using
