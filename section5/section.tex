@@ -4,12 +4,18 @@
 \IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
 % until here
 
+\def \gHsV {{\Gamma_H}}
+\def \gHsVSM {{\Gamma_{H,{\rm SM}}}}
+\def \gHsVtoX {{\Gamma_{H\to X}}}
+\def \mhsV {{m_H}}
+
 \begin{document}
 
 \section{Higgs boson mass and width}\label{sec5}
 
 \subsection{Theory review}
 \subfile{\main/section5/sec5.1}
+
 
 \subsection{Measurement of the Higgs boson mass}
 
@@ -22,11 +28,12 @@
 \subsection{Width from the diphoton interference rate}
 \label{sec:5_interference_real}
 
-\subfile{\main/section5/sec5.5}
 \subsection{Mass shift from the diphoton interference: constraints on the width}
+\subfile{\main/section5/sec5.5}
 \label{sec:5_interference_imag}
 
-\subsection{Width from Off-Shell higgs boson couplings}
+\subsection{Constraints from the off-shell Higgs boson lineshape}
+\subfile{\main/section5/sec5.6}
 \label{sec:5_offshell}
 
 %\bibliographystyle{plainnat}

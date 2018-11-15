@@ -23,11 +23,10 @@
 
 \subsection{Searches for additional Higgs bosons in fermionic final states}
 \subfile{\main/section9/cms_htt}
-\subfile{\main/section9/mssmtautau}
+\subfile{\main/section9/atlas_htt}
 \subfile{\main/section9/lhcb}
 
 \subsection{Searches for additional Higgs bosons in diboson final states}
-
 
 \subsection{MSSM charged Higgs bosons}
 \subfile{\main/section9/MSSMCharged}
@@ -35,17 +34,16 @@
 \subsection{Interference effects in heavy Higgs searches}
 \subfile{\main/section9/HHinterference}
 
-\clearpage
+\subsection{Interpretation of the Higgs couplings in terms of Composite Higgs models}
+\subfile{\main/section9/InterpretationCH}
+
+\subsection{Sensitivity to heavy Higgs bosons from the 2HDM in "Higgs-to-Higgs" decays}
+\subfile{\main/section9/2HDM_BSM_Higgs_AZH}
 
 \vspace{5cm}
 \subsection{All contributions below: Move your contribution to a separate file!}
 
-\subsection{Interpretation of the Higgs couplings in terms of Composite Higgs models}
-\begin{center}
- {L. Vecchi}
-\end{center}
-\label{sec9:CHM}
-\subfile{\main/section9/InterpretationCH}
+\clearpage
 
 \subsection{Interpretation of the Higgs couplings in terms of SUSY models}
 
@@ -345,141 +343,6 @@ well as recent CMS searches~\cite{CMS:2015mba} for $A \to Zh$ with $Z
   $\sim 96$~GeV~\cite{CMS-PAS-HIG-17-013}).
  
 \end{itemize}
-
-%subsection{Sensitivity to heavy Higgs bosons from the 2HDM in "Higgs-to-Higgs" decays}
-%\subfile{\main/section9/2HDM_BSM_Higgs_AZH}
-
-
-\subsection{Sensitivity to heavy Higgs bosons from the 2HDM in "Higgs-to-Higgs" decays}
-
-\begin{center}
- {K. Mimasu$^{1}$, Jose Miguel No$^{2}$ \\
-}
-%\noindent
- {\small $^{1}$Universite catholique de Louvain, Chemin du Cyclotron, 2, B-1348 Louvain-la-Neuve, Belgium \\
- $^{2}$Instituto de Fisica Teorica, IFT-UAM/CSIC, Cantoblanco, 28049, Madrid, Spain}
-\end{center}
-
-\subsubsection{Introduction}
-
-Searches for heavy scalars are highly complementarity to coupling measurements of the 125 GeV Higgs $h$ as probes of extended Higgs sectors. For 2HDM scenarios, di-boson search channels $H \to WW$, $ZZ$, $hh$ probe the parameter space for which the 125 GeV Higgs is not SM-like, in combination with Higgs coupling measurements.
-However for a SM-like 125 GeV Higgs, corresponding to the alignment limit of 2HDMs~\cite{Gunion:2002zf}, these channels suffer a significant loss in  
-sensitivity since the couplings $HVV$ ($V = W^{\pm},\,Z$) and $Hhh$ vanish in such a limit. In this case, searches for heavy scalars through non-standard decay channels~\cite{Coleppa:2014hxa,Dorsch:2014qja,Li:2015lra,Kling:2016opi} 
-as well as through fermionic decay channels~\cite{Craig:2015jba,Gori:2016zto} become the primary avenue to find these new states, and are crucial to cover the parameter space of aligned 2HDMs.
-
-For Higgs sectors with several new states beyond the SM, as in the 2HDM, 
-non-standard ``Higgs-to-Higgs" decays occur between these BSM scalars for sizable splittings among them, yielding the leading probe of aligned 
-2HDM scenarios in this case~\cite{Dorsch:2016tab}. 
-Focusing here in the 2HDM neutral scalars $A/H$, such signatures include 
-$A/H\to Z H/A$ ($Z \to \ell \ell$, $H/A \to \bar{b}b, \tau\tau$)~\cite{Coleppa:2014hxa,Dorsch:2014qja} and 
-$H \to A A \to b\bar{b} b\bar{b}, b\bar{b} \tau\tau$~\cite{Brooijmans:2018xbu}.
-There exists a very strong interplay between these and searches for $H/A$ in fermionic decay channels, mainly  
-$H/A \to \tau\tau$, depending on the mass splitting among the new scalars.
-
-\subsubsection{2HDM Summary}
-
-Relevant aspects of the 2HDM (overlap with Carlos and Nausheen's contribution) Consider a general 2HDM scalar potential 
-with a softly broken $\mathbb{Z}_2$ symmetry (and no CP violation)  
-%
-\begin{eqnarray}	
-\label{2HDM_potential}
-V(H_1,H_2) &= &\mu^2_1 \left|H_1\right|^2 + \mu^2_2\left|H_2\right|^2 - \mu^2\left[H_1^{\dagger}H_2+\mathrm{h.c.}\right] 
-+\frac{\lambda_1}{2}\left|H_1\right|^4 +\frac{\lambda_2}{2}\left|H_2\right|^4 \nonumber \\
-&+& \lambda_3 \left|H_1\right|^2\left|H_2\right|^2
-+\lambda_4 \left|H_1^{\dagger}H_2\right|^2+ \frac{\lambda_5}{2}\left[\left(H_1^{\dagger}H_2\right)^2+\mathrm{h.c.}\right]\, . 
-\end{eqnarray}
-%
-Physical scalar sector of a 2HDM comprised of $h$ (which we assume here to be the 125 GeV Higgs), $H$, $A$ and $H^{\pm}$. 
-Types of 2HDM, regarding the couplings of the two doublets $H_{1,2}$ to fermions: By convention, up-type quarks couple to $H_{2}$. In Type I 2HDM all the other fermions also couple to $H_{2}$, while for Type II down-type quarks and leptons couple\footnote{Two more possibilities (depending on coupling of leptons w.r.t.~down-type quarks), but we focus here on Types I and II.} to $H_{1}$.
-Parameters $t_{\beta} \equiv \mathrm{tan}\,\beta$ and $c_{\beta -\alpha} \equiv \mathrm{cos}\,(\beta-\alpha)$ control strength of the couplings 
-of $h$, $H$, $A$ to gauge bosons and fermions. We denote the couplings normalized to the SM values (of $h_{\mathrm{SM}}$) by $\kappa$-factors ($\kappa_V$ for gauge bosons, $\kappa_u$ for up-type quarks, $\kappa_d$ for 
-down-type quarks, $\kappa_{\ell}$ for charged leptons), which read 
-%
- \begin{equation}
- \label{t:kappas}
- \mathrm{Type}\,\mathrm{I}:\,\left\lbrace
- \begin{array}{l}
- \kappa^h_V = s_{\beta-\alpha} \\
- \kappa^h_u = \kappa^h_d = \kappa^h_{\ell} = t^{-1}_{\beta}c_{\beta-\alpha} + s_{\beta-\alpha}  \\
- \kappa^{H}_V = - c_{\beta-\alpha} \\
- \kappa^{H}_u = \kappa^{H}_d = \kappa^{H}_{\ell} = t^{-1}_{\beta}s_{\beta-\alpha} - c_{\beta-\alpha}  \\
- \kappa^{A}_u = - \kappa^{A}_d = - \kappa^{A}_{\ell} = t^{-1}_{\beta}
- \end{array}
- \right.
- \quad
-  \mathrm{Type}\,\mathrm{II}:\,\left\lbrace
- \begin{array}{l}
- \kappa^h_V = s_{\beta-\alpha} \\
- \kappa^h_u = t^{-1}_{\beta}c_{\beta-\alpha} + s_{\beta-\alpha}  \\
- \kappa^h_d = \kappa^h_{\ell} = s_{\beta-\alpha} - t_{\beta}\,c_{\beta-\alpha}\\
- \kappa^{H}_V = - c_{\beta-\alpha} \\
- \kappa^{H}_u = t^{-1}_{\beta}s_{\beta-\alpha} - c_{\beta-\alpha}  \\
- \kappa^{H}_d = \kappa^{H}_{\ell} = -t_{\beta}\,s_{\beta-\alpha} - c_{\beta-\alpha}  \\
- \kappa^{A}_u = t^{-1}_{\beta}\\
- \kappa^{A}_d = \kappa^{A}_{\ell} = t_{\beta}
- \end{array}
- \right.
-\end{equation}
-%
-For $c_{\beta -\alpha} \to 0$ (alignment limit~\cite{Gunion:2002zf}) 
-$h$ has SM-like couplings to gauge bosons and fermions ($\kappa^h_i \to 1$, yielding $h \to h_{\mathrm{SM}}$), while the coupling of $H$ to gauge bosons $V = W^{\pm},Z$ vanishes ($\kappa^{H}_V \to 0$).
-
-\subsubsection{$m_A > m_H$: searches for $A \to Z H$}
-
-Here we obtain the present limits on the 2HDM in the alignment limit from the $\sqrt{s} = 13$ TeV ATLAS $A \to Z H$ search~\cite{Aaboud:2018eoy} with $36.1$ fb$^{-1}$ (there are also CMS searches at 8 TeV with $19.8$ fb$^{-1}$~\cite{Khachatryan:2016are} and at 13 TeV with $2.3$ fb$^{-1}$~\cite{CMS:2016qxc}) in the $\ell \ell b \bar{b}$ final state, and present sensitivity projections of this search for HL-LHC and HE-LHC. The present limits and future projections are derived in the ($m_A$, $m_H$, $\mathrm{tan}\beta$) parameter space. 
-
-For the HL-LHC, we first perform a sensitivity projection to $\sqrt{s} = 13$ TeV with $\mathcal{L} = 3000$ fb$^{-1}$, for $m_A = m_H + 100$ GeV, $m_A = m_H + 200$ GeV, $m_A = m_H + 300$ GeV as benchmarks. 
-In figure~\ref{AZH_HL-LHC} (left) our sensitivity projection is obtained through a $\sqrt{\mathcal{L}}$ rescaling of the present ATLAS expected 
-sensititivy, assuming that the background uncertainties are statistically dominated. In figure~\ref{AZH_HL-LHC} (right) we instead assume a $x\%$ of background systematics (coming dominantly from $Z +$ jets) in our projections, and use xxx as signal significance.
-
-Mind the region where $\Gamma_A/m_A > 20\%$!
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=0.48\textwidth]{\main/section9/plots/2HDM_AZH_Plot_Statistics.pdf}
-\includegraphics[width=0.48\textwidth]{\main/section9/plots/2HDM_AZH_Plot_Statistics.pdf}
-\caption{\small Left: Present (solid) and projected (dashed)  $95\%$ C.L. exclusion sensitivity for $p p \to A \to Z H \to \ell\ell b \bar{b}$ in the 
-in the ($m_{A}$, tan$\beta$) plane for $m_A = m_H +100$ GeV, from 
-gluon fusion (orange) and $bb$-associated production (blue). Right: \textcolor{red}{(Placeholder for the limits with systematics)}.}
-\label{AZH_HL-LHC}
-\end{center}
-\end{figure}
-
-
-\subsubsection{$m_H > m_A$: searches for $H \to Z A$ and $H \to A A$}
-
-The analysis above can be also applied to $H \to Z A$, bearing in mind the po
-ssibility of the competing decay $H \to A A$. For $H \to A A$ there are no present ATLAS/CMS experimental studies\footnote{We however note there are existing LHC analyses for $h \to A A$, with $h$ the 125 GeV Higgs boson (see e.g.~\cite{Khachatryan:2017mnf}).} but there is an existing sensitivity study~\cite{Brooijmans:2018xbu} based on the 13 TeV 
-resonant di-Higgs CMS analysis~\cite{CMS:2017xxp} (see also~\cite{CMS:2016tlj}).
-
-Following~\cite{Brooijmans:2018xbu}, we particularize the search $H\to A A \to 4 b$ for $m_{A} \in [65,\, 290]$~GeV (for which the multijet background is provided by CMS) and $m_{H} \in [m^{\mathrm{min}}, m^{\mathrm{max}}] = [3.2\times m_{A}, 9.6\times m_{A}]$ (MMR selection of~\cite{CMS:2017xxp}, validated in~\cite{Brooijmans:2018xbu}). The $95\%$ C.L. cross section times branching ratio exclusion sensitivity (in fb) for $p p \to H \to A A \to b \bar{b} b \bar{b}$ in the ($m_{H}$, $m_{A}$) plane, for LHC 13 TeV with an integrated luminosity of 35.9 fb$^{-1}$ is given in 
-Figure~\ref{Fig_HAA_2D_Limits}. We Convert this into the 2HDM parameter space in Figure... 
-
-
-Regarding extrapolation to HL-LHC and HE-LHC...
-
-Mind the region where $\Gamma_H/m_H > 20\%$!
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=0.65\textwidth]{\main/section9/plots/95_exclusion_map_HAA.pdf}
-\caption{\small Estimated $95\%$ C.L. $\sigma \times$ BR exclusion sensitivity for $p p \to H \to A A \to b \bar{b} b \bar{b}$ 
-in the ($m_{H_1} = m_H$, $m_{H_2} = m_A$) plane for LHC 13 TeV with an integrated luminosity of 35.9 fb$^{-1}$ \textcolor{red}{(Placeholder for the 
-2HDM interpretation of these limits)}.}
-\label{Fig_HAA_2D_Limits}
-\end{center}
-\end{figure}
-
-
-\subsubsection{Interplay with $H/A \to \tau\tau$}
-
-In order to study the interplay of the above searches with heavy scalar searches in fermionic decay modes like $H/A \to \tau\tau$, 
-we translate the model-independent HL-LHC and HE-LHC sensitivity projections for $\phi \to \tau\tau$ from section (9.6.3) 
-to the $m_{\phi}$, $\mathrm{tan}\beta$ plane (with $\phi = H/A$) of the 2HDM (here assume one scalar at a time? should be a fair assumption if 
-$|m_A - m_H| \gg \delta m_{\tau\tau}$, with $\delta m_{\tau\tau}$ the invariant mass resolution of the analysis)
-using {\sl SusHi}~\cite{Harlander:2012pb} and {\sl 2HDMC}~\cite{Eriksson:2009ws}, assuming 
-$\mathrm{cos}(\beta - \alpha) = 0$.
-
 
 
 
