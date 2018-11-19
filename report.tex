@@ -79,6 +79,13 @@
 \newcommand{\mhh}{m_{hh}}
 
 % Section 2.
+\newcommand{\as}{\ensuremath{\alpha_\text{s}}\xspace}
+\newcommand{\muf}{\ensuremath{\mu_f}\xspace}
+\newcommand{\mur}{\ensuremath{\mu_r}\xspace}
+\newcommand{\mbottom}{\ensuremath{m_b}\xspace}
+\newcommand{\mtop}{\ensuremath{m_t}\xspace}
+\newcommand{\mt}{\ensuremath{m_t}\xspace}
+\newcommand{\mcharm}{\ensuremath{m_c}\xspace}
 \newcommand{\cred}{\color{red}}
 \newcommand{\cblue}{\color{blue}}
 \newcommand{\cgreen}{\color{X575}}
@@ -113,6 +120,7 @@
 \newcommand{\hlep}{\ensuremath{\PH\to\text{leptons}}\xspace}
 \newcommand{\mumu}{\ensuremath{\PGm\PGm}\xspace}
 \newcommand{\hmm}{\ensuremath{\PH\to\mumu}\xspace}
+\newcommand{\hzg}{\ensuremath{\PH\to\PZ\PGg}\xspace}
 \newcommand{\wh}{\ensuremath{\PW\PH}\xspace}
 \newcommand{\zh}{\ensuremath{\PZ\PH}\xspace}
 \newcommand{\fbinv}{\mbox{\ensuremath{\,\text{fb}^\text{$-$1}}}\xspace}
@@ -155,6 +163,79 @@
 \newcommand{\muif}{\mu_i^f}
 \newcommand{\pnote}[1]{\textbf{[P:} \textit{\color{red} #1}\textbf{]}}
 \newcommand{\mptvec}{{/\!\!\!\vec{ p}_T}}
+\newcommand{\HH}{\ensuremath{\PH\PH}\xspace}
+\newcommand{\bbbb}{\ensuremath{\PQb\PQb\PQb\PQb}\xspace}
+\newcommand{\bbgg}{\ensuremath{\PQb\PQb\Pgg\Pgg}\xspace}
+\newcommand{\bbtt}{\ensuremath{\PQb\PQb\Pgt\Pgt}\xspace}
+\newcommand{\bbWW}{\ensuremath{\PQb\PQb\PW\PW}\xspace}
+\newcommand{\bbZZ}{\ensuremath{\PQb\PQb\PZ\PZ}\xspace}
+\newcommand{\bbVV}{\ensuremath{\PQb\PQb\text{VV}}\xspace}
+\newcommand{\delphes}{\textsc{Delphes}\xspace}
+\newcommand{\tauh}{\ensuremath{\Pgt_{\rm{h}}}}
+\newcommand{\ptvecmiss}{\ensuremath{{\vec p}_{\mathrm{T}}^{\kern1pt\text{miss}}}\xspace}
+\newcommand{\ptmiss}{\ensuremath{\pt^\text{miss}}\xspace}
+\newcommand{\TeV}{\ensuremath{\,\text{Te\hspace{-.08em}V}}\xspace}
+\newcommand{\GeV}{\ensuremath{\,\text{Ge\hspace{-.08em}V}}\xspace}
+\newcommand{\lambdahhh}{\ensuremath{\lambda_{\PH\PH\PH}}\xspace}
+\newcommand{\fixme}[1]{
+    \GenericWarning{}{There is a FIXME}
+    \textcolor{red}{\textbf{FIXME: #1}}
+}
+
+% Macros for HVV
+\providecommand{\jhugen}{\textsc{JHUGen}\xspace}
+\providecommand{\mela}{\textsc{MELA}\xspace}
+\providecommand{\hnnlo}{\textsc{hnnlo}\xspace}
+\providecommand{\F}{\ensuremath{\mathrm{F}}\xspace}
+\providecommand{\V}{\ensuremath{\mathrm{V}}\xspace}
+\providecommand{\W}{\ensuremath{\mathrm{W}}\xspace}
+\providecommand{\vv}{\ensuremath{\mathrm{vv}}\xspace}
+\providecommand{\VV}{\ensuremath{\mathrm{VV}}\xspace}
+\providecommand{\ZZ}{\ensuremath{\mathrm{ZZ}}\xspace}
+\providecommand{\WW}{\ensuremath{\mathrm{WW}}\xspace}
+\providecommand{\HVV}{\ensuremath{\mathrm{HVV}}\xspace}
+\providecommand{\HZZ}{\ensuremath{\mathrm{HZZ}}\xspace}
+\providecommand{\LC}[1]{\ensuremath{\Lambda_{#1}}\xspace}
+\providecommand{\LZGs}{\ensuremath{\LC{1}^{Z\gamma}}\xspace}
+\providecommand{\AC}[1]{\ensuremath{a_{#1}}\xspace}
+\providecommand{\ai}{\ensuremath{\AC{i}}\xspace}
+
+\providecommand{\fLC}[1]{\ensuremath{f_{\Lambda #1}}\xspace}
+\providecommand{\fAC}[1]{\ensuremath{f_{a #1}}\xspace}
+\providecommand{\fLZGs}{\ensuremath{\fLC{1}^{Z\gamma}}\xspace}
+\providecommand{\fai}{\fAC{i}}
+
+\providecommand{\sLC}[1]{\ensuremath{\tilde{\sigma}_{\Lambda #1}}\xspace}
+\providecommand{\sAC}[1]{\ensuremath{\sigma_{#1}}\xspace}
+\providecommand{\sLZGs}{\ensuremath{\sLC{1}^{Z\gamma}}\xspace}
+\providecommand{\sai}{\sAC{i}}
+
+\providecommand{\pLC}[1]{\ensuremath{\phi_{\Lambda #1}}\xspace}
+\providecommand{\pAC}[1]{\ensuremath{\phi_{a #1}}\xspace}
+\providecommand{\pLZGs}{\ensuremath{\pLC{1}^{Z\gamma}}\xspace}
+\providecommand{\pai}{\pAC{i}}
+
+\providecommand{\cospLC}[1]{\ensuremath{\cos\left(\pLC{#1}\right)}\xspace}
+\providecommand{\cospAC}[1]{\ensuremath{\cos\left(\pAC{#1}\right)}\xspace}
+\providecommand{\cospLZGs}{\ensuremath{\cos\left(\pLZGs\right)}\xspace}
+\providecommand{\cospai}{\cospAC{i}}
+
+\providecommand{\fcospLC}[1]{\ensuremath{\fLC{#1}\cospLC{#1}}\xspace}
+\providecommand{\fcospAC}[1]{\ensuremath{\fAC{#1}\cospAC{#1}}\xspace}
+\providecommand{\fcospLZGs}{\ensuremath{\fLZGs\cospLZGs}\xspace}
+\providecommand{\fcospai}{\fcospAC{i}}
+
+\providecommand{\offshell}{off-shell\xspace}
+\providecommand{\onshell}{on-shell\xspace}
+\providecommand{\Offshell}{Off-shell\xspace}
+\providecommand{\Onshell}{On-shell\xspace}
+\providecommand{\abinv} {\mbox{\ensuremath{\,\text{ab}^\text{$-$1}}}\xspace}
+\providecommand{\pbinv} {\mbox{\ensuremath{\,\text{pb}^\text{$-$1}}}\xspace}
+\providecommand{\fbinv} {\mbox{\ensuremath{\,\text{fb}^\text{$-$1}}}\xspace}
+\providecommand{\GH}{\ensuremath{\Gamma_\PH}\xspace}
+\providecommand{\GHSM}{\ensuremath{\Gamma_{\PH}^{\mathrm{SM}}}\xspace}
+\providecommand{\glufu}{\ensuremath{\mathrm{gg}}\xspace}
+
 
 % Section 4.
 \newcommand{\gsim}{\gtrsim}
