@@ -2,9 +2,9 @@
 \BOOKMARK [2][-]{subsection.0.1.1}{Bibliography}{section.0.1}% 2
 \BOOKMARK [1][-]{section.0.2}{Higgs boson precision measurements}{}% 3
 \BOOKMARK [2][-]{subsection.0.2.1}{Introduction}{section.0.2}% 4
-\BOOKMARK [2][-]{subsection.0.2.2}{Theoretical predictions for the Higgs boson production at 14 and 27 TeV}{section.0.2}% 5
+\BOOKMARK [2][-]{subsection.0.2.2}{Theoretical predictions for the Higgs boson production}{section.0.2}% 5
 \BOOKMARK [3][-]{subsubsection.0.2.2.1}{Introduction}{subsection.0.2.2}% 6
-\BOOKMARK [3][-]{subsubsection.0.2.2.2}{Cross sections for the HE-LHC}{subsection.0.2.2}% 7
+\BOOKMARK [3][-]{subsubsection.0.2.2.2}{Cross sections for 13, 14 and 27 TeV HE-LHC}{subsection.0.2.2}% 7
 \BOOKMARK [3][-]{subsubsection.0.2.2.3}{Projections of uncertainty reductions for the HL-LHC}{subsection.0.2.2}% 8
 \BOOKMARK [3][-]{subsubsection.0.2.2.4}{Dependence of gluon-fusion cross section at 14 and 27 TeV on mH}{subsection.0.2.2}% 9
 \BOOKMARK [3][-]{subsubsection.0.2.2.5}{PDF uncertainty expectations at the HE/HL-LHC}{subsection.0.2.2}% 10
@@ -25,18 +25,18 @@
 \BOOKMARK [3][-]{subsubsection.0.2.5.1}{Measurements in ttH and tH production modes}{subsection.0.2.5}% 25
 \BOOKMARK [3][-]{subsubsection.0.2.5.2}{Constraints from differential measurements}{subsection.0.2.5}% 26
 \BOOKMARK [2][-]{subsection.0.2.6}{Combination of Higgs boson measurement projections}{section.0.2}% 27
-\BOOKMARK [3][-]{subsubsection.0.2.6.1}{Signal strength per-decay mode}{subsection.0.2.6}% 28
-\BOOKMARK [3][-]{subsubsection.0.2.6.2}{Signal strength per-production mode}{subsection.0.2.6}% 29
-\BOOKMARK [2][-]{subsection.0.2.7}{Kappa interpretation of the combined Higgs boson measurement projections}{section.0.2}% 30
-\BOOKMARK [2][-]{subsection.0.2.8}{Kappa-formalism and the nonlinear EFT}{section.0.2}% 31
-\BOOKMARK [2][-]{subsection.0.2.9}{Higgs couplings precision overview in the Kappa-framework and the nonlinear EFT}{section.0.2}% 32
-\BOOKMARK [3][-]{subsubsection.0.2.9.1}{The fit to HL/HE-LHC Higgs precision data}{subsection.0.2.9}% 33
-\BOOKMARK [3][-]{subsubsection.0.2.9.2}{Results}{subsection.0.2.9}% 34
-\BOOKMARK [2][-]{subsection.0.2.10}{Projections of Higgs boson measurements to the HE-LHC}{section.0.2}% 35
-\BOOKMARK [2][-]{subsection.0.2.11}{Probing of anomalous HVV interactions}{section.0.2}% 36
-\BOOKMARK [3][-]{subsubsection.0.2.11.1}{Probes using differential distributions of CP sensitive observables}{subsection.0.2.11}% 37
-\BOOKMARK [3][-]{subsubsection.0.2.11.2}{Experimental constraints on anomalous HVV couplings}{subsection.0.2.11}% 38
-\BOOKMARK [2][-]{subsection.0.2.12}{Summary}{section.0.2}% 39
+\BOOKMARK [3][-]{subsubsection.0.2.6.1}{Cross sections per-production mode}{subsection.0.2.6}% 28
+\BOOKMARK [3][-]{subsubsection.0.2.6.2}{Signal strength per-decay mode}{subsection.0.2.6}% 29
+\BOOKMARK [3][-]{subsubsection.0.2.6.3}{Production mode cross-sections in different decay channels}{subsection.0.2.6}% 30
+\BOOKMARK [2][-]{subsection.0.2.7}{Kappa interpretation of the combined Higgs boson measurement projections}{section.0.2}% 31
+\BOOKMARK [2][-]{subsection.0.2.8}{Kappa-formalism and the nonlinear EFT}{section.0.2}% 32
+\BOOKMARK [2][-]{subsection.0.2.9}{Higgs couplings precision overview in the Kappa-framework and the nonlinear EFT}{section.0.2}% 33
+\BOOKMARK [3][-]{subsubsection.0.2.9.1}{The fit to HL/HE-LHC Higgs precision data}{subsection.0.2.9}% 34
+\BOOKMARK [3][-]{subsubsection.0.2.9.2}{Results}{subsection.0.2.9}% 35
+\BOOKMARK [2][-]{subsection.0.2.10}{Probing of anomalous HVV interactions}{section.0.2}% 36
+\BOOKMARK [3][-]{subsubsection.0.2.10.1}{Probes using differential distributions of CP sensitive observables}{subsection.0.2.10}% 37
+\BOOKMARK [3][-]{subsubsection.0.2.10.2}{Experimental constraints on anomalous HVV couplings}{subsection.0.2.10}% 38
+\BOOKMARK [2][-]{subsection.0.2.11}{Summary}{section.0.2}% 39
 \BOOKMARK [1][-]{section.0.3}{Di-Higgs production and Higgs self couplings}{}% 40
 \BOOKMARK [2][-]{subsection.0.3.1}{NLO cross sections}{section.0.3}% 41
 \BOOKMARK [3][-]{subsubsection.0.3.1.1}{SM Calculation}{subsection.0.3.1}% 42
@@ -44,30 +44,30 @@
 \BOOKMARK [2][-]{subsection.0.3.2}{Double Higgs measurements and trilinear coupling}{section.0.3}% 44
 \BOOKMARK [3][-]{subsubsection.0.3.2.1}{Measurements with the ATLAS experiment}{subsection.0.3.2}% 45
 \BOOKMARK [3][-]{subsubsection.0.3.2.2}{Measurements with the CMS experiment}{subsection.0.3.2}% 46
-\BOOKMARK [2][-]{subsection.0.3.3}{New ideas}{section.0.3}% 47
-\BOOKMARK [3][-]{subsubsection.0.3.3.1}{Prospects for hh \(b \)\(WW*\) \(b \)\( +- \)}{subsection.0.3.3}% 48
-\BOOKMARK [3][-]{subsubsection.0.3.3.2}{Prospects for bb: Bayesian optimization and BDT}{subsection.0.3.3}% 49
-\BOOKMARK [2][-]{subsection.0.3.4}{HE prospects}{section.0.3}% 50
-\BOOKMARK [3][-]{subsubsection.0.3.4.1}{Theory studies}{subsection.0.3.4}% 51
-\BOOKMARK [3][-]{subsubsection.0.3.4.2}{ATLAS studies}{subsection.0.3.4}% 52
-\BOOKMARK [2][-]{subsection.0.3.5}{Indirect probes}{section.0.3}% 53
-\BOOKMARK [3][-]{subsubsection.0.3.5.1}{Indirect probes through single Higgs boson production}{subsection.0.3.5}% 54
-\BOOKMARK [3][-]{subsubsection.0.3.5.2}{Indirect probes of the trilinear coupling through differential distributions measurements}{subsection.0.3.5}% 55
-\BOOKMARK [2][-]{subsection.0.3.6}{Analysis strategy}{section.0.3}% 56
-\BOOKMARK [2][-]{subsection.0.3.7}{Differential cross-section results}{section.0.3}% 57
-\BOOKMARK [2][-]{subsection.0.3.8}{Constraints on the Higgs boson self coupling}{section.0.3}% 58
-\BOOKMARK [3][-]{subsubsection.0.3.8.1}{Global fit}{subsection.0.3.8}% 59
-\BOOKMARK [2][-]{subsection.0.3.9}{Implications}{section.0.3}% 60
-\BOOKMARK [3][-]{subsubsection.0.3.9.1}{Implications for flavor models}{subsection.0.3.9}% 61
-\BOOKMARK [3][-]{subsubsection.0.3.9.2}{Implications for theories of electroweak phase transition}{subsection.0.3.9}% 62
-\BOOKMARK [1][-]{section.0.4}{High Energy Probes}{}% 63
-\BOOKMARK [2][-]{subsection.0.4.1}{Electroweak Precision Tests in High-Energy Diboson Processes}{section.0.4}% 64
-\BOOKMARK [2][-]{subsection.0.4.2}{WH/ZH at high energy/luminosity}{section.0.4}% 65
-\BOOKMARK [2][-]{subsection.0.4.3}{Novel measurements of anomalous triple gauge couplings for the HE and HL-LHC}{section.0.4}% 66
-\BOOKMARK [2][-]{subsection.0.4.4}{Testing the universal Higgs nonlinearity}{section.0.4}% 67
-\BOOKMARK [2][-]{subsection.0.4.5}{Higgs pair production in vector-boson fusion at the HL-LHC}{section.0.4}% 68
-\BOOKMARK [2][-]{subsection.0.4.6}{Dimension-6 EFT effects on Vector Boson Scattering at high energies}{section.0.4}% 69
-\BOOKMARK [2][-]{subsection.0.4.7}{ Same-sign WW scattering at HL-LHC and HE-LHC: a new strategy for the EFT-based analysis and reach on dimension-8 operators}{section.0.4}% 70
+\BOOKMARK [3][-]{subsubsection.0.3.2.3}{Combination of measurements}{subsection.0.3.2}% 47
+\BOOKMARK [2][-]{subsection.0.3.3}{New ideas}{section.0.3}% 48
+\BOOKMARK [3][-]{subsubsection.0.3.3.1}{Prospects for hh \(b \)\(WW*\) \(b \)\( +- \)}{subsection.0.3.3}% 49
+\BOOKMARK [3][-]{subsubsection.0.3.3.2}{Prospects for bb: Bayesian optimization and BDT}{subsection.0.3.3}% 50
+\BOOKMARK [2][-]{subsection.0.3.4}{HE prospects}{section.0.3}% 51
+\BOOKMARK [3][-]{subsubsection.0.3.4.1}{Theory studies}{subsection.0.3.4}% 52
+\BOOKMARK [3][-]{subsubsection.0.3.4.2}{ATLAS studies}{subsection.0.3.4}% 53
+\BOOKMARK [2][-]{subsection.0.3.5}{Indirect probes}{section.0.3}% 54
+\BOOKMARK [3][-]{subsubsection.0.3.5.1}{Indirect probes through single Higgs boson production}{subsection.0.3.5}% 55
+\BOOKMARK [3][-]{subsubsection.0.3.5.2}{Indirect probes of the trilinear coupling through differential distributions measurements}{subsection.0.3.5}% 56
+\BOOKMARK [2][-]{subsection.0.3.6}{Constraints on the Higgs boson self coupling}{section.0.3}% 57
+\BOOKMARK [3][-]{subsubsection.0.3.6.1}{Global fit}{subsection.0.3.6}% 58
+\BOOKMARK [2][-]{subsection.0.3.7}{Implications}{section.0.3}% 59
+\BOOKMARK [3][-]{subsubsection.0.3.7.1}{Implications for flavor models}{subsection.0.3.7}% 60
+\BOOKMARK [3][-]{subsubsection.0.3.7.2}{Implications for theories of electroweak phase transition}{subsection.0.3.7}% 61
+\BOOKMARK [1][-]{section.0.4}{High Energy Probes}{}% 62
+\BOOKMARK [2][-]{subsection.0.4.1}{Electroweak Precision Tests in High-Energy Diboson Processes}{section.0.4}% 63
+\BOOKMARK [2][-]{subsection.0.4.2}{WH/ZH at high energy/luminosity}{section.0.4}% 64
+\BOOKMARK [2][-]{subsection.0.4.3}{Novel measurements of anomalous triple gauge couplings for the HE and HL-LHC}{section.0.4}% 65
+\BOOKMARK [2][-]{subsection.0.4.4}{Electroweak Precision Tests in High-Energy Drell-Yan Processes}{section.0.4}% 66
+\BOOKMARK [2][-]{subsection.0.4.5}{Testing the universal Higgs nonlinearity}{section.0.4}% 67
+\BOOKMARK [2][-]{subsection.0.4.6}{Higgs pair production in vector-boson fusion at the HL-LHC}{section.0.4}% 68
+\BOOKMARK [2][-]{subsection.0.4.7}{Dimension-6 EFT effects on Vector Boson Scattering at high energies}{section.0.4}% 69
+\BOOKMARK [2][-]{subsection.0.4.8}{ Same-sign WW scattering at HL-LHC and HE-LHC: a new strategy for the EFT-based analysis and reach on dimension-8 operators}{section.0.4}% 70
 \BOOKMARK [1][-]{section.0.5}{Higgs boson mass and width}{}% 71
 \BOOKMARK [2][-]{subsection.0.5.1}{Theory review}{section.0.5}% 72
 \BOOKMARK [2][-]{subsection.0.5.2}{Measurement of the Higgs boson mass}{section.0.5}% 73
@@ -75,7 +75,7 @@
 \BOOKMARK [2][-]{subsection.0.5.4}{Direct constraints from the Higgs boson lifetime measurements}{section.0.5}% 75
 \BOOKMARK [2][-]{subsection.0.5.5}{Width from the diphoton interference rate}{section.0.5}% 76
 \BOOKMARK [2][-]{subsection.0.5.6}{Mass shift from the diphoton interference: constraints on the width}{section.0.5}% 77
-\BOOKMARK [2][-]{subsection.0.5.7}{Constraints from the off-shell Higgs boson lineshape}{section.0.5}% 78
+\BOOKMARK [2][-]{subsection.0.5.7}{Constraints from off-shell Higgs boson production}{section.0.5}% 78
 \BOOKMARK [1][-]{section.0.6}{Invisible decays of the Higgs boson}{}% 79
 \BOOKMARK [2][-]{subsection.0.6.1}{Main channels for direct searches}{section.0.6}% 80
 \BOOKMARK [2][-]{subsection.0.6.2}{Interpretation and combination with precision Higgs boson measurements}{section.0.6}% 81
