@@ -490,7 +490,7 @@ $ is an analytic function whose form is fixed by the  pattern of the
 spontaneous breaking and the embedding of the SM fields in the global
 symmetry of the strongly coupled sector. In \eqref{eq:comp} the flavour
 structure of $Y_u$ and $Y_u'$ 
-is the same {\bf YS: is it assumption?}. The resulting corrections to the quark Yukawa couplings 
+is the same. The resulting corrections to the quark Yukawa couplings 
 are therefore strictly diagonal, 
 \begin{equation}\label{eq:kappaq:estimate}
 \kappa_q\sim 1+{\mathcal O}\big({v^2}/{f^2}\big).
@@ -718,7 +718,7 @@ The LHCb acceptance covers $\sim 5$\% of the associated production of $W/Z+H$ at
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.5\linewidth]{\main/section7/plots/hbb_etas.png}
+	\includegraphics[width=0.5\linewidth]{\main/section7/plots/hbb_etas}
 	\caption{2D histogram showing the coverage of the LHCb acceptance for the $b\bar{b}$ pair produced by the Higgs decay in associated production with a W or a Z boson.}
 	\label{fig:hbbetas}
 \end{figure}
@@ -736,7 +736,7 @@ This extrapolation does not include improvements in analysis techniques: for ins
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.99\linewidth]{\main/section7/plots/c-tag-eff.png}
+	\includegraphics[width=0.99\linewidth]{\main/section7/plots/c-tag-eff}
 	\caption{LHCb $c$-jet SV-tagging efficiency for different scenarios in the HL-LHC conditions.}
 	\label{fig:c-tag-eff}
 \end{figure}
@@ -905,7 +905,9 @@ Given an upper bound on $\cR^{95}_{V\gamma,f}(E_1,\cL_1)$, where $E_1\,(\cL_1)$ 
 \end{align}
 %
 where $\sigma^{\rm SM}_{h,E_{1,2}}$ is the SM Higgs production cross section, $R_{E} = (S_{E_1}^{\rm SM}/B_{E_1})/(S_{E_2}^{\rm SM}/B_{E_2})$ with $S(B)$ the number of signal\,(background) events, which encoded the difference in the analysis details and assumed to be 1 here. 
-In Tabel~\ref{tab:exclusiveproj}We combine Eqs.~\eqref{eq:Rsimp} and \eqref{eq:Rscale} along with the current bounds to estimate the future projections of probing the different light quark Yukawa. 
+In Table~\ref{tab:exclusiveproj},we combine Eqs.~\eqref{eq:Rsimp} and \eqref{eq:Rscale} along with the current bounds to estimate the future projections of probing the different light quark Yukawa. 
+We note that the estimation in Table~\ref{tab:exclusiveproj} is in agreement with the ATLAS projection of $h\to J/\psi\gamma$~\cite{ATL-PHYS-PUB-2015-043}, which quate $cR_{J/\psi\gamma,ZZ^*}<0.34^{+0.14}_{-0.1}$
+ 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[t]
 \begin{center}
@@ -968,6 +970,25 @@ For a detailed discussion on the $h \to VZ,VW$ channels see~\cite{Alte:2016yuw}.
 
 \subsection{LFV decays of the Higgs}
 
+The flavour violating Yukawa couplings are well constrained by the low-energy
+flavour-changing neutral current measurements
+\cite{Harnik:2012pb,Blankenburg:2012ex,Gorbahn:2014sha}. A notable
+exception are the flavour-violating couplings involving a tau lepton. The
+strongest constraints on $\kappa_{\tau\mu}, \kappa_{\mu\tau},
+\kappa_{\tau e}, \kappa_{e \tau}$ are thus from direct searches of flavour-violating Higgs decays at
+the LHC \cite{Sirunyan:2017xzt,Aad:2016blu}.
+Currently, the CMS 13\,TeV with 35.9\,fb$^{-1}$~\cite{Sirunyan:2017xzt} is the strongest constrain 
+%
+\begin{align}
+    \sqrt{y_{\mu\tau}^2 + y^2_{\tau\mu}} < 1.43 \times 10^{-3}\, , \qquad
+    \sqrt{y_{e\tau}^2 + y^2_{\tau e}} < 2.26 \times 10^{-3}\, ,
+\end{align}
+%
+which corresponds to upper 95\,\%~CL on the branching ratio of $0.25\,$\% and $0.61\,$\% fpr $\mu\tau$ and $e\tau$, respectively. In addition, we note that once can directly measure the difference between the branching ratios of $h\to\tau e$ and $h\to\tau\mu$ as proposed in~\cite{Bressler:2014jta}.
+Naively, assuming that both systematics and statistical error scale with square root of the luminosity, one can expect that the sensetivity of the HL-LHC with $3000\,$fb$^{-1}$ will be  around the half per-mil level for the branching ratio of $h\to e\tau$ or $\to \mu\tau$. 
+
+
+The LHC can also set bounds on rare FCNC top decays involving a Higgs~\cite{Aaboud:2017mfd,Khachatryan:2016atv,Aad:2015pja,Aad:2014dya}. The strongest current bound, for example, is $\sqrt{|\kappa_{ct}|^2+|\kappa_{tc}|^2}<0.06$ at 95\,\%~CL.
 
 \subsection{Yukawa constraints from Higgs distributions}
 \label{sec:HiggsDist}
@@ -1034,13 +1055,13 @@ Bottom: $b$ and $c$ quark Yukawa from $p_T$ distribution~\cite{Bishara:2016jga}.
 CMS interpertated the 13\,TeV Higgs $p_T$ spectrum with luminosity of $35.9\,$fb$^{-1}$ to obtain bounds on the $c$ and $b$ Yukawa couplings~\cite{CMS:2018hhg}. The resulting 95\,\% CL intervals are
 %
 \begin{align}
-    -0.9 < \kappa_c < 0.9 \, ,  \qquad
-    -4.3 < \kappa_b < 4.3 \, ,
+    -8.7 < \kappa_c <10.6 \, ,  \qquad
+    -1.9 < \kappa_b < 2.9 \, ,
 \end{align}
 if the branching fractions  depend on $\kappa_b$ and $\kappa_c$. In case the branching fractions are allowed to float freely the results are
 \begin{align}
-    -2.8 < \kappa_c < 9.9 \, , \qquad
-    -18.0 < \kappa_b < 22.9 \, .
+    -18.0 < \kappa_c < 22.9 \, , \qquad
+    -2.8 < \kappa_b < 9.9 \, .
 \end{align}
 %
 These bounds on the $c$ Yukawa are weaker\,(stronger) then the bounds from the global fit of the 8\,TeV Higgs data along with the electroweak precision data allowing all Higgs coupling to float~\cite{Perez:2015aoa}  
@@ -1220,7 +1241,19 @@ strange quarks.
 
 \subsection{CP Violation}
 
-Here we discuss direct probing of the top and $\tau$ Yukawa phases as relevant for HL-LHC. For constraints from EDMs and other phases see~\cite{Brod:2013cka,Chien:2015xha,Altmannshofer:2015qra,Brod:2018pli,Baron:2013eja,Andreev:2018ayy,Altmannshofer:2015qra}. 
+%For constraints from EDMs and other phases see~\cite{Brod:2013cka,Chien:2015xha,Altmannshofer:2015qra,Brod:2018pli,Baron:2013eja,Andreev:2018ayy,Altmannshofer:2015qra}. 
+
+
+The CP-violaiting flavor conserving Yuakwa couplings, $\tilde \kappa_{f_i}$, can be directly probed at the HL-LHC. Here we focus on the $\tau$ and top phases, assuming that the low energy constrained can be avoided. 
+At low energy, the different flavor diagonal CP violating coupling are bounded by EDMs~\cite{Brod:2013cka,Chien:2015xha,Altmannshofer:2015qra,Brod:2018pli}. 
+% beyond the Higgs contributions.
+For the electron Yukawa, the latest ACME measurement~\cite{Baron:2013eja,Andreev:2018ayy} results into an upper bound of $\tilde\kappa_e<1.9\times 10^{-3}$~\cite{Altmannshofer:2015qra}. Whereas for the bottom and charm Yukawas, the strongest limits come from the neutron EDM~\cite{Brod:2018pli}. Using the NLO QCD theoretical prediction, this translates into the upper bounds $\tilde\kappa_b<5$ and $\tilde\kappa_c<21$ when theory errors are taken into account.
+For the light quark CPV Yukawas, measurement of the Mercury EDM places a strong bound on the up and down Yukawas of $\tilde\kappa_u<0.1$ and $\tilde\kappa_d<0.05$~\cite{Brod:2018xyz} (no theory errors) while the neutron EDM measurement gives a weaker constraint on the strange quark Yukawa of $\tilde\kappa_s<3.1$~\cite{Brod:2018xyz} (no theory errors).
+
+
+
+
+
 
 \subsubsection{$t\bar{t} h$}
 

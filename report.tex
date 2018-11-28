@@ -18,8 +18,10 @@
 \usepackage{rotating}
 \usepackage{multicol} %for columns within itemize
 \usepackage{tabulary}
+\usepackage{lineno}
 
 \begin{document}
+\linenumbers
 \newcommand{\main}{.}
 \newcommand{\code}[1]{\texttt{#1}}
 \newcommand{\ifb}{\ensuremath{fb^{-1}}\xspace}
@@ -133,6 +135,7 @@
 \newcommand{\kmu}{\ensuremath{\kappa_{\Pgm}}\xspace}
 \newcommand{\kglu}{\ensuremath{\kappa_{\mathrm{\Pg}}}\xspace}
 \newcommand{\kgam}{\ensuremath{\kappa_{\PGg}}\xspace}
+\newcommand{\kzgam}{\ensuremath{\kappa_{\PZ\PGg}}\xspace}
 \newcommand{\kappat}{\ensuremath{\kappa_{\Pqt}}\xspace}
 \newcommand{\kappab}{\ensuremath{\kappa_{\Pqb}}\xspace}
 \newcommand{\kappac}{\ensuremath{\kappa_{\Pqc}}\xspace}
@@ -269,9 +272,10 @@
 \newcommand{\rel}{\Omega_\chi h^2}
 \newcommand{\MET}{\ensuremath{\slash{\hspace{-2.5mm}E}_T}\xspace}
 \newcommand{\dm}{\Delta M}
-\newcommand{\m1}{\ensuremath{M_1}\xspace}
-\newcommand{\m2}{\ensuremath{M_2}\xspace}
-\newcommand{\m3}{\ensuremath{M_3}\xspace}
+% commented out since they show up in the front page as errors - rename please!
+%\newcommand{\m1}{\ensuremath{M_1}\xspace}
+%\newcommand{\m2}{\ensuremath{M_2}\xspace}
+%\newcommand{\m3}{\ensuremath{M_3}\xspace}
 \newcommand{\mf}{\ensuremath{m_{\tilde f}}\xspace}
 \newcommand{\mlsp}{\ensuremath{M_{LSP}}\xspace}
 \newcommand{\lsp}{\ensuremath{{\chi^0_1}}\xspace}
@@ -285,7 +289,8 @@
 \newcommand{\mni}{\ensuremath{M_{\chi^0_i}}\xspace}
 \newcommand{\mcone}{\ensuremath{M_{\chi^\pm_1}}\xspace}
 \newcommand{\mctwo}{\ensuremath{M_{\chi^\pm_2}}\xspace}
-\newcommand{\ch10}{\ensuremath{\tilde \chi^0_1}\xspace}
+% commented out since they show up in the front page as errors - rename please!
+%\newcommand{\ch10}{\ensuremath{\tilde \chi^0_1}\xspace}
 \newcommand{\mw}{\ensuremath{m_W}\xspace}
 \newcommand{\mz}{\ensuremath{m_Z}\xspace}
 \newcommand{\s}{\ensuremath{\tilde}\xspace}
