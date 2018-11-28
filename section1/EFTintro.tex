@@ -1,0 +1,95 @@
+\subsection{Precision Tests and Effective Field Theories}
+Precision measurements provide an important tool to search for heavy BSM dynamics, associated with mass scales beyond the LHC direct energy reach,  exploiting the fact that such dynamics can still have an impact on processes at smaller energy, via virtual effects.
+%
+In this context the well-established framework of effective field theories (EFTs) allows to systematically parametrise BSM effects and how they modify SM processes. Assuming lepton and baryon number conservation, the leading such effects can be captured by dimension-6 operators,
+\begin{equation}\label{EFTLAG}
+\mathcal{L}_{\rm eff} = \mathcal{L}_{\rm SM} + \frac{1}{\Lambda^2} \sum_{i} c_i \mathcal{O}_i+\cdots
+\end{equation}
+for dimensionless coefficients $c_i$ and, for simplicity, a common suppression scale $\Lambda$. Table \ref{tab:dim6ops} proposes a  set of operators considered in this report. This set is \emph{redundant}, in the sense that different combinations of operators might lead to the same physical effect; moreover this set is \emph{not complete}, in the sense that there are more  operators at dimension-6 level.
+In practical applications we will always be interested in identifying \emph{minimal} (non-redundant) subsets of operators that contribute to a given process; we will also be interested that these operators be complete, at least under some well motivated assumption. For instance, the assumption that new physics only couples to the SM bosons, leads to the \emph{universal} set of operators, from the second panel in table~\ref{tab:dim6ops}. Alternatively, the minimal flavour violation assumption~\cite{DAmbrosio:2002vsn} provides a well-motivated framework to focus on operators with a certain, family-universal, flavour structure; operators with a richer flavour structure will be studied in a dedicated chapter \ref{}.
+
+
+
+\renewcommand{\arraystretch}{1.4}
+\begin{table}[h]
+\begin{center}
+ \caption{A list of dimension-6 SMEFT operators used in this chapter, defined for one family only; operators suppressed in the minimal flavour violation assumption~\cite{DAmbrosio:2002vsn}, have been neglected (in particular dipole-type operators). Some combinations are redundant and can be eliminated as described in the text.{\color{red} make sure this is all it's used...more CP odd operators?} }
+\label{tab:dim6ops}
+{\small
+\begin{tabular}{lll}
+ %\vspace{-0.4cm} 
+ \hline\hline
+\multicolumn{3}{c}{Higgs-Only Operators}\\
+\hline
+${\cal O}_H=\frac{1}{2}(\partial^\mu |H|^2)^2$& ${\cal O}_6=\lambda |H|^6$ & \\
+%
+${\cal O}_{y_u}   =y_u |H|^2    \bar Q  \widetilde{H} u $ & ${\cal O}_{y_d}   =y_d |H|^2    \bar Q  Hd $ & ${\cal O}_{y_e}   =y_e |H|^2    \bar L  H e $  \\
+%
+${\cal O}_{BB}={g}^{\prime 2} |H|^2 B_{\mu\nu}B^{\mu\nu}$ & ${\cal O}_{GG}=g_s^2 |H|^2 G_{\mu\nu}^A G^{A\mu\nu}$ & $\mathcal{O}_{WW} = g^2 |H|^2 W^{I}_{\mu \nu} W^{I\mu\nu}$ \\
+%
+\hline\hline
+%
+\multicolumn{3}{c}{Universal Operators}\\
+\hline
+ ${\cal O}_T=\frac{1}{2} (H^\dagger {\lra{D}_\mu} H)^2$  &  $\mathcal{O}_{H D} = (H^\dagger D^\mu H)^*(H^\dagger D_\mu H)$     &  \\
+  %
+  ${\cal O}_W=\frac{ig}{2}( H^\dagger  \sigma^a \lra {D^\mu} H  )D^\nu  W_{\mu \nu}^a$ & ${\cal O}_B=\frac{ig'}{2}( H^\dagger  \lra {D^\mu} H  )\partial^\nu  B_{\mu \nu}$  &  $\mathcal{O}_{W\! B} = gg^\prime(H^\dagger \sigma^IH) W^{I}_{\mu\nu} B^{\mu\nu} $\\
+  %
+   ${\cal O}_{HW}=i g(D^\mu H)^\dagger\sigma^a(D^\nu H)W^a_{\mu\nu}$  &   ${\cal O}_{HB}=i g'(D^\mu H)^\dagger(D^\nu H)B_{\mu\nu}$ & ${\cal O}_{3W}= \frac{1}{3!} g\epsilon_{abc}W^{a\, \nu}_{\mu}W^{b}_{\nu\rho}W^{c\, \rho\mu}$
+   \\
+   %
+     ${\cal O}_{2G}=\frac 12 \left(D^\nu G^a_{\mu\nu}\right)^2$ & ${\cal O}_{2B}=\frac 12 \left(\partial^\nu B_{\mu\nu}\right)^2$ & ${\cal O}_{2W}=\frac 12 \left(D^\nu W^a_{\mu\nu}\right)^2$\\
+  \multicolumn{3}{c}{and ${\cal O}_H$, ${\cal O}_6$, ${\cal O}_{BB}$, ${\cal O}_{WW}$, ${\cal O}_{GG}$,  ${\cal O}_y=\sum_\psi{\cal O}_{y_\psi} $ }\\
+  %
+  \hline\hline
+  \multicolumn{3}{c}{Non-Universal Operators that modify $Z/W$ couplings to fermions}\\
+  \hline
+            ${\cal O}_{HL}=(i H^\dagger {\lra { D_\mu}} H)( \bar L\gamma^\mu L)$     
+&         ${\cal O}_{HL}^{(3)}=(i H^\dagger \sigma^a {\lra { D_\mu}} H)( \bar L\sigma^a\gamma^\mu L)$  
+&            ${\cal O}_{He} =(i H^\dagger {\lra { D_\mu}} H)( \bar e \gamma^\mu e )$             \\
+            ${\cal O}_{HQ}=(i H^\dagger  {\lra { D_\mu}} H)( \bar Q \gamma^\mu Q )$       &
+              ${\cal O}_{HQ}^{(3)}=(i H^\dagger \sigma^a {\lra { D_\mu}} H)( \bar Q \sigma^a\gamma^\mu Q )$     &   \\
+          ${\cal O}_{Hu} =(i H^\dagger {\lra { D_\mu}} H)( \bar u \gamma^\mu u )$        
+ &            ${\cal O}_{Hd} =(i H^\dagger {\lra { D_\mu}} H)( \bar d \gamma^\mu d )$     &      \\ 
+     %   $\mathcal{O}_{4L} = (\bar \ell \gamma_\mu \ell)(\bar \ell \gamma^\mu \ell)$           \\
+  \hline\hline
+  \multicolumn{3}{c}{CP-odd operators}\\
+  \hline
+ $\mathcal{O}_{H \widetilde W} = (H^\dagger H) \widetilde W^{I}_{\mu\nu}W^{I\mu\nu}$    &
+ $\mathcal{O}_{H \widetilde B} = (H^\dagger H) \widetilde B_{\mu\nu}B^{\mu\nu}$     &$\mathcal{O}_{ \widetilde W\! B} = ( H^\dagger\sigma ^I H)
+\widetilde W_{\mu\nu}^IB^{\mu\nu}$\\
+&   ${\cal O}_{3\widetilde W}= \frac{1}{3!} g\epsilon_{abc}W^{a\, \nu}_{\mu}W^{b}_{\nu\rho}\widetilde W^{c\, \rho\mu}$&  \\
+\hline\hline
+ \end{tabular}
+ }
+\end{center}
+\end{table}
+\renewcommand{\arraystretch}{1}
+
+
+Reduction to a minimal basis is achieved via  integration by parts and  field redefinitions, equivalent in practice to removing combinations proportional to the equations of motion. 
+These imply  relations between the operators of table~\ref{tab:dim6ops}; the most important ones being ($Y$ denotes here  hypercharge)
+\begin{gather}
+{\cal O}_{HB}={\cal O}_{B}-\frac{1}{4}{\cal O}_{BB}-\frac{1}{4}{\cal O}_{WB}\,,\quad \quad {\cal O}_{HW}={\cal O}_W-\frac{1}{4}{\cal O}_{WW}-\frac{1}{4}{\cal O}_{WB}\label{OpId1}\\
+{\cal O}_B= \frac{g^{\prime\, 2}}{2}\sum_\psi Y_\psi {\cal O}_{H\psi}  -\frac{g^{\prime\, 2}}{2}{\cal O}_T\,,\quad\quad  {\cal O}_T={\cal O}_H-2{\cal O}_{HD}\\
+{\cal O}_W= \frac{g^2}{2}\big[\left({\cal O}_{y_u}+{\cal O}_{y_d}+{\cal O}_{y_e}+\text{h.c.}\right)-3{\cal O}_{H}+4{\cal O}_{6} +  \frac{1}{2}\sum_{\psi_L} {\cal O}_{H\psi_L}^{(3)}\big]\, ,
+%{\cal O}_r&=&  \,,
+ \label{OpIdend}
+\end{gather}
+and similar expressions for ${\cal O}_{2W}$ and ${\cal O}_{2B}$ in terms of the products of $SU(2)$ and $U(1)$ SM currents.
+Eqs.~(\ref{OpId1}-\ref{OpIdend}) can be used to define minimal,  non-redundant operator bases; for instance, in the context of Higgs physics, the operators ${\cal O}_H,{\cal O}_W, {\cal O}_B,{\cal O}_{HW},{\cal O}_{HB}$ are retained  at the expense of  ${\cal O}_{HD}$, ${\cal O}_{WW}$, ${\cal O}_{WB}$, ${\cal O}_{HL}^{(3)}$, ${\cal O}_{HL}$ in what is known as the SILH basis \cite{Giudice:2007fh}, while in the opposite case  we refer to the Warsaw basis \cite{Grzadkowski:2010es}.\footnote{In addition, the SILH basis gives preference to the operators ${\cal O}_{2W}$ and  ${\cal O}_{2B}$, which are more easily found in universal BSM theories, while the Warsaw basis swaps them in terms of four-fermions operators.}
+
+
+
+These operators induce two types of effects: some that are proportional to the SM amplitudes and some that  produce  genuinely new amplitudes. The former are  better accessed by high-luminosity experiments in kinematic regions where the SM is the largest. The most interesting example of this class for the LHC are  Higgs couplings measurements in single-Higgs processes. 
+The operators in the top panel of table~\ref{tab:dim6ops}  have the form 
+$|H|^2 \times {\cal L}_{\textrm{SM}}$, with ${\cal L}_{\textrm{SM}}$ denoting operators in the SM Lagrangian, and  imply small modifications $\propto v^2/\Lambda^2$  of the Higgs couplings to other SM fields, with respect to the SM value.
+These are often parametrised as rescalings of the SM rates, $\kappa_{i}^2=\Gamma_{i}/\Gamma^{\textrm{SM}}_{i}$ ($\Gamma^{(SM)}$ the  Higgs partial width into channel $i$)  \emph{assuming} the same Lorentz structure as that of the SM, i.e. providing an overall energy-independent factor. We discuss Higgs couplings in detail in sections \ref{sec:2} and \ref{sec:3} .
+
+Among effects associated with new amplitudes, that cannot be put in correspondence with the $\kappa$s, particularly interesting are BSM energy-growing effects. At dimension-6 level we find effects that grow at most quadratically with the energy. This implies a quadratic enhancement of the sensitivity to these effects, as we consider bins at higher and higher energy. 
+ This can be contrasted with high-intensity effects, whose sensitivity increases only with the square root of the integrated luminosity, and eventually saturates as systematics become comparable. High-energy effects are the ideal target of the HL and HE LHC programs, as we discuss in section \ref{sec:3}.
+ In section \ref{sec:8}, we combine the results from the various EFT analyses and provide a global perspective on the HL and HE LHC sensitivity the EFT effects. 
+
+Ultimately, the goal of these global fits is to provide a model-independent framework to which large classes of specific models can be matched an analysed. We provide some example in sections \ref{} and \ref{}.
+
+
