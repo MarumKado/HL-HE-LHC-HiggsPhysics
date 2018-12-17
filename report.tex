@@ -18,6 +18,7 @@
 \usepackage{rotating}
 \usepackage{multicol} %for columns within itemize
 \usepackage{tabulary}
+\usepackage[colorlinks, urlcolor=blue, linkcolor=blue, citecolor=blue, plainpages=false]{hyperref}
 \usepackage{lineno}
 
 \begin{document}
@@ -109,7 +110,8 @@
 \newcommand{\tHq}{\ensuremath{\Pqt\PH\PQq}\xspace}
 \newcommand{\zz}{\ensuremath{\PZ\PZ}\xspace}
 \newcommand{\bb}{\ensuremath{\PQb\PQb}\xspace}
-\newcommand{\hbb}{\ensuremath{\PH\to\bb}\xspace}
+%%\newcommand{\hbb}{\ensuremath{\PH\to\bb}\xspace}
+\newcommand{\hbb}{\hbox{$\PH\to\bb$}\xspace}
 \newcommand{\hgg}{\ensuremath{\PH\to\PGg\PGg}\xspace}
 \newcommand{\ttjets}{\ensuremath{\PQt\PQt\text{+}\text{jets}}\xspace}
 \newcommand{\vbf}{\ensuremath{\mathrm{VBF}}\xspace}
@@ -129,6 +131,7 @@
 \newcommand{\SM}{\ensuremath{\mathrm{SM}}\xspace}
 \newcommand{\kZ}{\ensuremath{\kappa_{\mathrm{\PZ}}}\xspace}
 \newcommand{\kW}{\ensuremath{\kappa_{\mathrm{\PW}}}\xspace}
+\newcommand{\kH}{\ensuremath{\kappa_{\mathrm{\PH}}}\xspace}
 \newcommand{\ktau}{\ensuremath{\kappa_{\PGt}}\xspace}
 \newcommand{\ktop}{\ensuremath{\kappa_{\Pqt}}\xspace}
 \newcommand{\kb}{\ensuremath{\kappa_{\Pqb}}\xspace}
@@ -432,20 +435,58 @@
 
 \def\biblio{}
 
-\title{HL/HE-LHC Physics Workshop Report \\[5mm]
-  Higgs physics opportunities}
+\title{{\normalfont\bfseries\boldmath\huge
+\begin{center}
+%  HL/HE-LHC Physics Workshop Report\\
+%  WG2 : Higgs Physics
+Higgs Physics\\ at the HL-LHC and HE-LHC\\
+\begin{normalsize} 
+\href{http://lpcc.web.cern.ch/hlhe-lhc-physics-workshop}{Report from Working Group 2 on the Physics of the HL-LHC, and Perspectives at the HE-LHC} 
+\end{normalsize}
+\end{center}\vspace*{0.2cm}
+}}
+
 \input{authors}
 % 
 %
 % 
 
-\maketitle
-% 
+\begin{titlepage}
+
+% Header ---------------------------------------------------
+\vspace*{-1.8cm}
+
+\noindent
+\begin{tabular*}{\linewidth}{lc@{\extracolsep{\fill}}r@{\extracolsep{0pt}}}
+\vspace*{-1.2cm}\mbox{\!\!\!\includegraphics[width=.14\textwidth]{cern.jpg}} & & \\
+ & & CERN-LPCC-2018-04 \\  % ID 
+ & & \today \\ % Date - Can also hardwire e.g.: 23 March 2010
+ & & \\
+\hline
+\end{tabular*}
+
+\vspace*{0.3cm}
 %
-% 
-\begin{abstract}
-This is an abstract 
-\end{abstract}
+%\vspace*{2.0cm}
+%
+\maketitle
+\vspace{\fill}
+
+\newpage
+% Abstract ------
+\begin{center}\begin{abstract}\noindent\end{abstract}\end{center}
+
+
+%%%%%
+Abstract to go here
+
+
+%%%%%
+
+\vspace*{2.0cm}
+\vspace{\fill}
+
+\end{titlepage}
 
 % -- Set the level of the TOC: 2 means including subsection, 1 means
 % including section 

@@ -88,9 +88,9 @@ The main backgrounds are \ttbar and Drell-Yan production of $\tau$ pairs.
 The separation is experimentally challenging because of the incomplete reconstruction of the event due to the presence of neutrinos from $\tau$ decays that escape detection.
 
 To improve the separation of the signal from the background, state-of-the-art machine learning techniques are studied in this projection.
-The discriminant consists of a fully connected deep neural network (DNN), consisting of three hidden layers of 100 neurons, trained to separate the \HH signal from the backgroun processes using a wide set of kinematic variables.
-Three discriminants are separately trained for the three $\tau\tau$ decay channels, where advanced optimisation techniques are explored and applied to maximise the expected sensitivity.
-The resulting output of the DNN discriminant in the three channels is shown in Fig.~\ref{}. \fixme{placeholder}
+The discriminant consists of a pair of ensembles of ten fully connected deep neural networks (DNN), each with three hidden layers of 100 neurons, trained to separate the \HH signal from the background processes using a wide set of kinematic variables.
+Each network is trained using events from all three $\tau\tau$ decay channels, and advanced optimisation techniques are explored and applied to maximise the expected sensitivity.
+The resulting output of the DNN-based discriminant in the three channels is shown in Fig.~\ref{}. \fixme{placeholder}
 
 \paragraph{The $HH \rightarrow b\bar{b}\gamma\gamma$ channel}
 

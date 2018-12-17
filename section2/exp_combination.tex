@@ -1,5 +1,5 @@
-\wip{Text to be updated to reflect ATLAS+CMS combination.}
-
+%\wip{Text to be updated to reflect ATLAS+CMS combination.}
+%\newpage
 The projections documented in this section are based on the extrapolation of the following analyses:
 
 \begin{itemize}
@@ -31,27 +31,35 @@ Projections are given for three different set of measurements:
 
 \end{itemize}
 
-For each projection, the uncertainty is decomposed in four components: statistical, experimental, background theory and signal theory. In the combination of the ATLAS and CMS measurements, the statistical and experimental uncertainties are treated as fully uncorrelated between the two experiments while the signal and background theory uncertainties are assumed to be fully correlated. 
+For each projection, the uncertainty is decomposed in four components: statistical, experimental, background theory and signal theory.
+The combination is based on the assumption that these components are independent within each experiment. Among them, the statistical and experimental uncertainties are treated as fully uncorrelated between the two experiments, while the signal and background theory uncertainties are assumed to be fully correlated. An important aspect of the projected measurements is how the correlations between the measured parameters are expected to evolve. Correlations arise when analysis channels are sensitive to more than one production or decay mode and the chosen fit observables do not fully distinguish between these. 
+In addition, correlations may arise when the same systematic uncertainties apply to multiple production or decay modes.
 
-In the combination of all the measurements performed in each set described before, all the quantities are combined at the same time, making use of the complete covariance matrix of the ATLAS and CMS input projections and thus taking into account all correlations between them, using the methodology described in Ref.~\cite{Valassi:2003mu}. 
-\wip{to add few words on how the ATLAS-CMS combination is performed}
+
+In the ATLAS-CMS combination of each set of measurements  described before, all the quantities are combined at the same time, making use of the complete covariance matrix of the ATLAS and CMS input projections and thus taking into account all correlations between them, using the BLUE methodology as described in Ref.~\cite{Valassi:2003mu}. This is particularly important for the BR measurements, where the theoretical uncertainties on the SM predictions for the per-production-mode cross sections are taken into account introducing non-negligible correlation among the branching ratios, as well as for the results given for the parametrisations based on the coupling modifier presented in Section~\ref{sec:2:exp_kappa}.
+Due to the different approaches concerning the theoretical uncertainties used in the extrapolations by the two experiments, the covariance matrix for the theoretical uncertainties of the various set of measurements looks  different between ATLAS (smaller correlations) and CMS (larger correlations) . As a result of this difference, when combining with the methodology of Ref.~\cite{Valassi:2003mu}, a smaller uncertainty is obtained compared to the case when the correlation among the measurements are not taken into account. 
+%\wip{to add few words on how the ATLAS-CMS combination is performed}
 
 
 %-------------------------------------------------------------
 
 \subsubsection{Production mode cross-sections in different decay channels}
-The expected $\pm 1\sigma$ uncertainties on the production mode cross sections in the different decay channels in S2 are summarised in Figure~\ref{fig:summary_A1_5PD_ggH_VBF} for \ggh and \vbf, in Figure~\ref{fig:summary_A1_5PD_WH_ZH} for \wh and \zh, in Figure~\ref{fig:summary_A1_5PD_ttH}. These are shown for ATLAS, CMS and their combination.
-There are few cases where the extrapolation is currently available only for one experiment (e.g. \ggH \hbb in CMS, \hzg in ATLAS). In these cases, the combined result is obtained by using the same available extrapolation  for both experiments.
-Since in the current \hzzllll ATLAS projection there is a strongly anti-correlation between \wh and \zh measurements, also the \vh cross-section is reported.   
-The numerical values of the expected $\pm 1\sigma$ uncertainties on the per-production-mode cross sections in the different decay channels for the ATLAS and CMS projections are given in Table~\ref{tab:summary_A1_5PD}. The table additionally gives the breakdown of the uncertainty into four components: statistical, signal theory, background theory and experimental for both scenarios S1 and S2. 
+The expected $\pm 1\sigma$ uncertainties on the production mode cross sections in the different decay channels in S2 are summarized in Figure~\ref{fig:summary_A1_5PD_ggH_VBF} for \ggh and \vbf, in Figure~\ref{fig:summary_A1_5PD_WH_ZH} for \wh and \zh, in Figure~\ref{fig:summary_A1_5PD_ttH}. These are shown for ATLAS, CMS and their combination.
+There are few cases where the extrapolation is currently available only for one experiment (e.g. only $gg \rightarrow H \rightarrw bb$ in CMS, and only \hzg in ATLAS). In these cases, the combined result is obtained by using the same available extrapolation  for both experiments.
+The correlations between the different production mode cross-sections in different decay channels are in general small, with the exception of the \zh and \wh measurements in the \hzz decay (where given the large anti-correlation also the \vh cross-section is reported) and the  \ggf and \vbf production mode cross sections in the \hmm decay. 
+
+\wip{to add few consideration on the combined results for the dominant unc. components}
+
+%Since in the current \hzzllll ATLAS projection there is a strongly anti-correlation between \wh and \zh measurements, also the \vh cross-section is reported. 
+The numerical values of the expected $\pm 1\sigma$ uncertainties on the per-production-mode cross sections in the different decay channels for the ATLAS and CMS projections are given in Table~\ref{tab:summary_A1_5PD}. The table  gives the breakdown of the uncertainty into four components: statistical, signal theory, background theory and experimental for both scenarios S1 and S2. Additionally, the numerical values for the ATLAS-CMS combination in scenario S2 are also given, with the uncertainty decomposed in three components: statistical, experimental and theory.
 
 
 \begin{figure}[hbtp]
 \centering
-\includegraphics[width=0.48\textwidth]{\main/section2/plots/comb/YRCombined_summary_A1_5PD_3000_ggH.pdf}%
-\includegraphics[width=0.48\textwidth]{\main/section2/plots/comb/YRCombined_summary_A1_5PD_3000_ggH.pdf}\\
-\includegraphics[width=0.48\textwidth]{\main/section2/plots/comb/YRCombined_summary_A1_5PD_3000_VBF.pdf}%
-\includegraphics[width=0.48\textwidth]{\main/section2/plots/comb/YRCombined_summary_A1_5PD_3000_VBF.pdf}%
+\includegraphics[width=0.48\textwidth]{\main/section2/plots/comb/yr_combined_summary_A1_5PD_3000_ggH.pdf}%
+\includegraphics[width=0.48\textwidth]{\main/section2/plots/comb/YRCombined_A1_5PD_ggH.pdf}\\
+\includegraphics[width=0.48\textwidth]{\main/section2/plots/comb/yr_combined_summary_A1_5PD_3000_VBF.pdf}%
+\includegraphics[width=0.48\textwidth]{\main/section2/plots/comb/YRCombined_A1_5PD_VBF.pdf}%
 \caption{(left) Summary plot showing the total expected $\pm 1\sigma$ uncertainties in S2 (with YR18 systematic uncertainties) on the \ggh (top) and \vbf (bottom) production cross sections in the different decay modes normalized to the SM predictions   for ATLAS(blue)  and CMS (red). The filled coloured box corresponds to the statistical and experimental systematic uncertainties, while the hatched grey area represent the additional contribution to the total uncertainty due to theoretical systematic uncertainties. In the cases where  the extrapolation is performed only by one experiment, same performances are assumed for the other experiment and this is indicated by a  hatched bar.
 (right) Summary plot showing the total expected $\pm 1\sigma$  uncertainties in S2 (with YR18 systematic uncertainties) on the \ggh (top) and \vbf (bottom) production cross sections in the different decay modes normalized to the SM predictions for the combination of ATLAS and CMS extrapolations. For each measurement,  the total uncertainty is indicated by a grey box while the statistical, experimental and theory uncertainties are indicated by a blue, green and red line respectively.}
 \label{fig:summary_A1_5PD_ggH_VBF}
@@ -60,10 +68,10 @@ The numerical values of the expected $\pm 1\sigma$ uncertainties on the per-prod
 
 \begin{figure}[hbtp]
 \centering
-\includegraphics[width=0.48\textwidth]{\main/section2/plots/comb/YRCombined_summary_A1_5PD_3000_WH.pdf}%
-\includegraphics[width=0.48\textwidth]{\main/section2/plots/comb/YRCombined_summary_A1_5PD_3000_WH.pdf}\\
-\includegraphics[width=0.48\textwidth]{\main/section2/plots/comb/YRCombined_summary_A1_5PD_3000_ZH.pdf}%
-\includegraphics[width=0.48\textwidth]{\main/section2/plots/comb/YRCombined_summary_A1_5PD_3000_ZH.pdf}%
+\includegraphics[width=0.48\textwidth]{\main/section2/plots/comb/yr_combined_summary_A1_5PD_3000_WH.pdf}%
+\includegraphics[width=0.48\textwidth]{\main/section2/plots/comb/YRCombined_A1_5PD_WH.pdf}\\
+\includegraphics[width=0.48\textwidth]{\main/section2/plots/comb/yr_combined_summary_A1_5PD_3000_ZH.pdf}%
+\includegraphics[width=0.48\textwidth]{\main/section2/plots/comb/YRCombined_A1_5PD_ZH.pdf}%
 \caption{(left) Summary plot showing the total expected $\pm 1\sigma$ uncertainties in S2 (with YR18 systematic uncertainties) on the \wh (top) and \zh (bottom) production cross sections in the different decay modes normalized to the SM predictions   for ATLAS(blue)  and CMS (red). The filled coloured box corresponds to the statistical and experimental systematic uncertainties, while the hatched grey area represent the additional contribution to the total uncertainty due to theoretical systematic uncertainties. In the cases where  the extrapolation is performed only by one experiment, same performances are assumed for the other experiment and this is indicated by a  hatched bar.
 (right) Summary plot showing the total expected $\pm 1\sigma$  uncertainties in S2 (with YR18 systematic uncertainties) on the \wh (top) and \zh (bottom) production cross sections in the different decay modes normalized to the SM predictions for the combination of ATLAS and CMS extrapolations. For each measurement,  the total uncertainty is indicated by a grey box while the statistical, experimental and theory uncertainties are indicated by a blue, green and red line respectively.}
 \label{fig:summary_A1_5PD_WH_ZH}
@@ -72,9 +80,9 @@ The numerical values of the expected $\pm 1\sigma$ uncertainties on the per-prod
 
 \begin{figure}[hbtp]
 \centering
-\includegraphics[width=0.48\textwidth]{\main/section2/plots/comb/YRCombined_summary_A1_5PD_3000_ttH.pdf}%
-\includegraphics[width=0.48\textwidth]{\main/section2/plots/comb/YRCombined_summary_A1_5PD_3000_ttH.pdf}
-\caption{(left) Summary plot showing the total expected $\pm 1\sigma$ uncertainties in S2 (with YR18 systematic uncertainties) on the \tth production cross section in the different decay modes normalized to the SM predictions   for ATLAS(blue)  and CMS (red). The filled coloured box corresponds to the statistical and experimental systematic uncertainties, while the hatched grey area represent the additional contribution to the total uncertainty due to theoretical systematic uncertainties. In the cases where  the extrapolation is performed only by one experiment, same performances are assumed for the other experiment and this is indicated by a  hatched bar.
+\includegraphics[width=0.48\textwidth]{\main/section2/plots/comb/yr_combined_summary_A1_5PD_3000_ttH.pdf}%
+\includegraphics[width=0.48\textwidth]{\main/section2/plots/comb/YRCombined_A1_5PD_ttH.pdf}
+\caption{(left) Summary plot showing the total expected $\pm 1\sigma$ uncertainties in S2 (with YR18 systematic uncertainties) on the \tth production cross section in the different decay modes normalized to the SM predictions   for ATLAS (blue)  and CMS (red). The filled coloured box corresponds to the statistical and experimental systematic uncertainties, while the hatched grey area represent the additional contribution to the total uncertainty due to theoretical systematic uncertainties. In the cases where  the extrapolation is performed only by one experiment, same performances are assumed for the other experiment and this is indicated by a  hatched bar.
 (right) Summary plot showing the total expected $\pm 1\sigma$  uncertainties in S2 (with YR18 systematic uncertainties) on the \tth production cross sections in the different decay modes normalized to the SM predictions for the combination of ATLAS and CMS extrapolations. For each measurement,  the total uncertainty is indicated by a grey box while the statistical, experimental and theory uncertainties are indicated by a blue, green and red line respectively.}
 \label{fig:summary_A1_5PD_ttH}
 \end{figure}
@@ -82,9 +90,9 @@ The numerical values of the expected $\pm 1\sigma$ uncertainties on the per-prod
 
 \begin{table}[hbtp]
 \centering
-\caption{The expected $\pm 1\sigma$ uncertainties, expressed as percentages, on the per-production-mode cross sections in the different decay modes  for ATLAS (left) and CMS (right). Values are given for both S1 (with Run~2 systematic uncertainties~\cite{Sirunyan:2018koj}) and S2 (with YR18 systematic uncertainties). The total uncertainty is decomposed into four components: statistical (Stat), signal theory (SigTh), background theory (BkgTh) and experimental (Exp).\wip{add ATLAS results}}
+\caption{The expected $\pm 1\sigma$ uncertainties, expressed as percentages, on the per-production-mode cross sections in the different decay modes  for ATLAS (left) and CMS (right). Values are given for both S1 (with Run~2 systematic uncertainties~\cite{Sirunyan:2018koj}) and S2 (with YR18 systematic uncertainties). The total uncertainty is decomposed into four components: statistical (Stat), signal theory (SigTh), background theory (BkgTh) and experimental (Exp).\wip{add combined S2 results}}
 \scriptsize	
-%\input{\main/section2/tables/comb/atlas_table_5PD.tex}\hspace{0.5cm}
+\input{\main/section2/tables/comb/atlas_table_5PD.tex}\hspace{0.5cm}
 \input{\main/section2/tables/comb/yr_table_noinc_A1_5PD.tex}
 \label{tab:summary_A1_5PD}
 \vspace{0.5cm}
@@ -111,18 +119,21 @@ The numerical values of the expected $\pm 1\sigma$ uncertainties on the per-prod
 
 %\subsubsection{Signal strength per-production mode}
 \subsubsection{Cross sections per-production mode}
-\wip{plots and results to be updated}
+%\wip{plots and results to be updated}
 
-The expected $\pm 1\sigma$ relative uncertainties on the per-production-mode cross sections parameters in S1 and S2 are summarized in Figure~\ref{fig:summary_A1_5P} with numerical values given in Table~\ref{tab:summary_A1_5P}.
+The expected $\pm 1\sigma$ relative uncertainties on the per-production-mode cross sections parameters in S2 for ATLAS, CMS and their combination are summarized in Figure~\ref{fig:summary_A1_5P}.
+In scenario S2 the contribution from the statistical, experimental and theoretical uncertainties to the total error for the combined  \ggH and \vbf cross section measurements is similar. For \wh and \zh production cross section measurements, the statistical  and theoretical uncertainty are the dominant one.
+Finally, the total uncertainty on the \tth production cross section measurement is dominated by the theoretical uncertainty, which is almost a factor two larger with respect to the other components.
+%with numerical values given in Table~\ref{tab:summary_A1_5P}.
 %In S1 the signal theory is the main contribution for all modes except $\wh$ which remains limited by statistics. In S2 $\mu_{\vbf}$ and $\mu_{\wh}$ are also statistically limited.
-
+The numerical values of the expected $\pm 1\sigma$ uncertainties on the per-production-mode cross sections for the ATLAS and CMS projections are given in Table~\ref{tab:summary_A1_5P}. The table  gives the breakdown of the uncertainty into four components: statistical, signal theory, background theory and experimental for both scenarios S1 and S2. Additionally, the numerical values for the ATLAS-CMS combination in scenario S2 are also given, with the uncertainty decomposed in three components: statistical, experimental and theory.
 
 \begin{figure}[hbtp]
 \centering
 % \includegraphics[width=0.48\textwidth]{\main/section2/plots/comb/summary_A1_5P_300.pdf}%
-\includegraphics[width=0.48\textwidth]{\main/section2/plots/comb/YRCombined_summary_A1_5P_3000.pdf}%
-\includegraphics[width=0.48\textwidth]{\main/section2/plots/comb/YRCombined_summary_A1_5P_3000.pdf}%
-\caption{(left) Summary plot showing the total expected $\pm 1\sigma$ uncertainties in S2 (with YR18 systematic uncertainties) on the  per-production-mode cross sections normalized to the SM predictions   for ATLAS(blue)  and CMS (red). The filled coloured box corresponds to the statistical and experimental systematic uncertainties, while the hatched grey area represent the additional contribution to the total uncertainty due to theoretical systematic uncertainties.
+\includegraphics[width=0.48\textwidth]{\main/section2/plots/comb/yr_combined_summary_A1_5P_3000.pdf}%
+\includegraphics[width=0.48\textwidth]{\main/section2/plots/comb/YRCombined_A1_5P.pdf}%
+\caption{(left) Summary plot showing the total expected $\pm 1\sigma$ uncertainties in S2 (with YR18 systematic uncertainties) on the  per-production-mode cross sections normalized to the SM predictions   for ATLAS (blue)  and CMS (red). The filled coloured box corresponds to the statistical and experimental systematic uncertainties, while the hatched grey area represent the additional contribution to the total uncertainty due to theoretical systematic uncertainties.
 (right) Summary plot showing the total expected $\pm 1\sigma$  uncertainties in S2 (with YR18 systematic uncertainties) on the per-production-mode cross sections normalized to the SM predictions for the combination of ATLAS and CMS extrapolations. For each measurement,  the total uncertainty is indicated by a grey box while the statistical, experimental and theory uncertainties are indicated by a blue, green and red line respectively.}
 \label{fig:summary_A1_5P}
 \end{figure}
@@ -130,8 +141,9 @@ The expected $\pm 1\sigma$ relative uncertainties on the per-production-mode cro
 
 \begin{table}[hbtp]
 \centering
-\caption{The expected $\pm 1\sigma$ uncertainties, expressed as percentages, on the per-production-mode cross sections normalized to the SM values  for  ATLAS (left) and CMS (right). Values are given for both S1 (with Run~2 systematic uncertainties~\cite{Sirunyan:2018koj}) and S2 (with YR18 systematic uncertainties). The total uncertainty is decomposed into four components: statistical (Stat), signal theory (SigTh), background theory (BkgTh) and experimental (Exp).\wip{add ATLAS results}}
-%\input{\main/section2/tables/comb/atlas_table_5P.tex}\hspace{0.5cm}
+\caption{The expected $\pm 1\sigma$ uncertainties, expressed as percentages, on the per-production-mode cross sections normalized to the SM values  for  ATLAS (left) and CMS (right). Values are given for both S1 (with Run~2 systematic uncertainties~\cite{Sirunyan:2018koj}) and S2 (with YR18 systematic uncertainties). The total uncertainty is decomposed into four components: statistical (Stat), signal theory (SigTh), background theory (BkgTh) and experimental (Exp).\wip{add combined S2 results}}
+\small
+\input{\main/section2/tables/comb/atlas_table_5P.tex}\hspace{0.5cm}
 \input{\main/section2/tables/comb/yr_table_noinc_A1_5P.tex}
 \label{tab:summary_A1_5P}
 \vspace{0.5cm}
@@ -156,13 +168,16 @@ The expected $\pm 1\sigma$ relative uncertainties on the per-production-mode cro
 
 \subsubsection{Branching ratios per-decay mode}
 
-The expected $\pm 1\sigma$ uncertainties on the per-decay-mode branching ratios normalized to the SM expectations in S2 are summarised in Figure~\ref{fig:summary_A1_5D}. with numerical values given in Table~\ref{tab:summary_A1_5D}. The table additionally gives the breakdown of the uncertainty into four components: statistical, signal theory, background theory and experimental. The S2 uncertainties range from $3$--$4\%$, with the exception of that on $\mu^{\mu\mu}$ at $10\%$. The S1 uncertainties are up to a factor of 1.5 larger than those in S2, reflecting the larger systematic component. The dominant uncertainty contribution is found to vary with the scenario and the integrated luminosity of the projection. The systematic uncertainties generally dominate in both S1 and S2. In S2 the signal theory uncertainty is the largest, or joint-largest, component for all parameters except $\mu^{\mu\mu}$, which remains limited by statistics due to the small $\hmm$ branching fraction. The $\mu^{\mu\mu}$ uncertainty using the Run~2 dimuon mass resolution instead of the Phase-2 expectation is $14\%$.
+The expected $\pm 1\sigma$ uncertainties on the per-decay-mode branching ratios normalized to the SM expectations in S2 for ATLAS, CMS and their combination are summarised in Figure~\ref{fig:summary_A1_5D}.  The numerical values given in Table~\ref{tab:summary_A1_5D} where the the breakdown of the uncertainty into four components in both S1 and S2 is provided. Additionally, the numerical values for the ATLAS-CMS combination in scenario S2 are also given, with the uncertainty decomposed in three components: statistical, experimental and theory.
+The S2 uncertainties for the combined ATLAS-CMS extrapolation range from $XX$--$XX\%$, with the exception of that on $B^{\mu\mu}$ at $XX\%$ and on $B^{Z\gamma}$ at $XX\%$.
+In projections of both experiments, The S1 uncertainties are up to a factor of XX larger than those in S2, reflecting the larger systematic component. 
+ The systematic uncertainties generally dominate in both S1 and S2. In S2 the signal theory uncertainty is the largest, or joint-largest, component for all parameters except $BR^{\mu\mu}$ and $B^{Z\gamma}$, which remain limited by statistics due to the small  branching fractions. %The $\mu^{\mu\mu}$ uncertainty using the Run~2 dimuon mass resolution instead of the Phase-2 expectation is $14\%$.
 
 
 \begin{figure}[hbtp]
 \centering
-\includegraphics[width=0.48\textwidth]{\main/section2/plots/comb/YRCombined_summary_A1_5D_3000.pdf}%
-\includegraphics[width=0.48\textwidth]{\main/section2/plots/comb/YRCombined_summary_A1_5D_3000.pdf}%
+\includegraphics[width=0.48\textwidth]{\main/section2/plots/comb/yr_combined_summary_A1_5D_3000.pdf}%
+\includegraphics[width=0.48\textwidth]{\main/section2/plots/comb/YRCombined_A1_5D.pdf}%
 \caption{(left) Summary plot showing the total expected $\pm 1\sigma$ uncertainties in S2 (with YR18 systematic uncertainties) on the  per-decay-mode branching ratios normalized to the SM predictions   for ATLAS (blue)  and CMS (red). The filled coloured box corresponds to the statistical and experimental systematic uncertainties, while the hatched grey area represent the additional contribution to the total uncertainty due to theoretical systematic uncertainties.
 (right) Summary plot showing the total expected $\pm 1\sigma$  uncertainties in S2 (with YR18 systematic uncertainties) on the per-decay-mode branching ratios normalized to the SM predictions for the combination of ATLAS and CMS extrapolations. For each measurement,  the total uncertainty is indicated by a grey box while the statistical, experimental and theory uncertainties are indicated by a blue, green and red line respectively.}
 \label{fig:summary_A1_5D}
@@ -171,23 +186,17 @@ The expected $\pm 1\sigma$ uncertainties on the per-decay-mode branching ratios 
 
 \begin{table}[hbtp]
 \centering
-\caption{The expected $\pm 1\sigma$ uncertainties, expressed as percentages, on the Higgs boson branching ratios normalized by the SM expectations for ATLAS (left) and CMS (right). Values are given for both S1 (with Run~2 systematic uncertainties~\cite{Sirunyan:2018koj}) and S2 (with YR18 systematic uncertainties). The total uncertainty is decomposed into four components: statistical (Stat), signal theory (SigTh), background theory (BkgTh) and experimental (Exp).\wip{add ATLAS results}}
-%\input{\main/section2/tables/comb/atlas_table_5D.tex}\hspace{0.5cm}
+\caption{The expected $\pm 1\sigma$ uncertainties, expressed as percentages, on the Higgs boson branching ratios normalized by the SM expectations for ATLAS (left) and CMS (right). Values are given for both S1 (with Run~2 systematic uncertainties~\cite{Sirunyan:2018koj}) and S2 (with YR18 systematic uncertainties). The total uncertainty is decomposed into four components: statistical (Stat), signal theory (SigTh), background theory (BkgTh) and experimental (Exp).\wip{add  combined S2 results}}
+\small
+\input{\main/section2/tables/comb/atlas_table_5D.tex}\hspace{0.5cm}
 \input{\main/section2/tables/comb/yr_table_noinc_A1_5D.tex}
 \label{tab:summary_A1_5D}
 \vspace{0.5cm}
 \end{table}
 
 
-
-
-
-
-
-
-Another important aspect of the projected measurements is how the correlations between the measured parameters are expected to evolve. Correlations arise when analysis channels are sensitive to more than one production or decay mode and the chosen fit observables do not fully distinguish between these. 
-In addition, correlations may arise when the same systematic uncertainties apply to multiple production or decay modes. %Figure~\ref{fig:corr_A1_5D} shows the correlation coefficients between the signal strength parameters in S2. 
-The correlations range up to $+0.44$, and are largest between modes where the sensitivity is dominated by gluon-fusion production. This reflects the impact of the theory uncertainties affecting the SM prediction of the gluon-fusion production rate.
+ %Figure~\ref{fig:corr_A1_5D} shows the correlation coefficients between the signal strength parameters in S2. 
+The correlations range up to XXXX, and are largest between modes where the sensitivity is dominated by gluon-fusion production. This reflects the impact of the theory uncertainties affecting the SM prediction of the gluon-fusion production rate.
 
 %\begin{figure}[hbtp]
 %\centering
@@ -197,6 +206,6 @@ The correlations range up to $+0.44$, and are largest between modes where the se
 %\label{fig:comb_5D}
 %\end{figure}
 
-
+%\newpage
 
 

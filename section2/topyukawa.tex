@@ -14,7 +14,7 @@
 
 
 \subsubsection{Measurements in \ttH and \tH production modes}
-\begin{center}{\it by A. Calandri, M. Schr\"oder} \end{center}
+\begin{center}{\it Written by A. Calandri, M. Schr\"oder} \end{center}
 
 One of the main targets of the High-Luminosity LHC (HL-LHC) upgrade is to achieve precision measurements of the Higgs boson properties.
 The Yukawa coupling of the Higgs boson to the top quark is expected to be of the order of unity and could be partially sensitive to effects beyond the Standard Model (SM).
@@ -82,6 +82,10 @@ A similar behaviour is observed in the ATLAS analysis.
 
 \begin{figure}
   \centering
+  \begin{tabular}{@{}c@{}c@{}}
+    \includegraphics[width=0.49\textwidth]{\main/section2/plots/bblj_XS_postfit.eps} &
+    \includegraphics[width=0.49\textwidth]{\main/section2/plots/bbdilep_XS_postfit.eps} \\
+  \end{tabular}  
   \caption{
     Ranking of the ten most significant systematics uncertainties under S2 in the single lepton (a) and dilepton (b) final states at ATLAS listed in accordance to their post-fit impact on the \ttH cross section.
   }
@@ -102,7 +106,22 @@ Monte Carlo prediction will thus need to improve sufficiently to match the data 
 Following the expected improvement by a factor two to three in the theoretical uncertainties on the \ttHF cross-section calculation described in Section~\ref{sec:hl-lhc-ttH}, ATLAS and CMS have also performed the \ttH, \Htobb extrapolation assuming that the reduction of the \ttHF modelling uncertainties is limited to factors of two (in scenario S1) and three (in scenario S2) relative to the uncertainty at 35.9\fbinv.
 In this case, the obtained relative \ttHF modelling uncertainties are approximately 23\% (S1) and 15\% (S2) in the ATLAS analysis as reported in Table~\ref{tab:tthbb:breakdown:atlas} and approximately 15\% (S1) and 10\% (S2) in the CMS analysis. These results enter the combined coupling measurement presented in Sections~\ref{sec:2:exp_combination} and~\ref{sec:2:exp_kappa}. The impact of limiting the constraints of the \ttHF uncertainties on the total uncertainties on the extracted parameters is relatively small, e.g.\ the uncertainty on $\kappa_{\text{t}}$ increases by approximately 10\% and 15\% in CMS and ATLAS, respectively. 
 \begin{table}
-  \centering
+  \centering\small
+\renewcommand{\arraystretch}{1.3}
+  \begin{tabular}{c|c|c|cccc|c}
+    \hline \hline
+    Final state & Scenario & $\Delta_{\textrm {tot}}/\sigma_{\textrm {SM}}$ & $\Delta_{\textrm {stat}}/\sigma_{\textrm {SM}}$ & $\Delta_{\textrm {exp}}/\sigma_{\textrm {SM}}$ & $\Delta_{\textrm {sig}}/\sigma_{\textrm {SM}}$ & $\Delta_{\textrm {bkg}}/\sigma_{\textrm {SM}}$
+ & $\Delta\mu_{\textrm {sig}}$ \\
+    \hline
+    $t\bar{t} H,H \rightarrow$ $b\bar{b}$ & Run 2, 36~\ifb  & $^{+0.61}_{-0.61}$ & $^{+0.22}_{-0.22}$ & $^{+0.27}_{-0.28}$ & $^{+0.10}_{-0.09}$ & $^{+0.47}_{-0.47}$ & $^{+0.15}_{-0.15}$ \\
+    (single lepton) & HL-LHC S1   & $^{+0.25}_{-0.20}$      & $^{+0.02}_{-0.02}$     & $^{+0.10}_{-0.10}$      & $^{+0.08}_{-0.06}$ &  $^{+0.22}_{-0.17}$ & $^{+0.10}_{-0.11}$ \\
+    & HL-LHC S2  & $^{+0.18}_{-0.15}$      & $^{+0.02}_{-0.02}$     & $^{+0.09}_{-0.09}$      & $^{+0.06}_{-0.05}$ &$^{+0.14}_{-0.11}$  & $^{+0.08}_{-0.07}$ \\
+    \hline
+    $t\bar{t} H,H \rightarrow$ $b\bar{b}$   & Run 2, 36~\ifb  & $^{+1.06}_{-1.08}$ & $^{+0.51}_{-0.51}$ & $^{+0.32}_{-0.31}$ & $^{+0.11}_{-0.12}$ & $^{+0.90}_{-0.92}$  & $^{+0.14}_{-0.14}$ \\
+  (dilepton) & HL-LHC S1             & $^{+0.32}_{-0.26}$      & $^{+0.06}_{-0.06}$      & $^{+0.13}_{-0.13}$      & $^{+0.08}_{-0.07}$ & $^{+0.27}_{-0.21}$  & $^{+0.11}_{-0.09}$ \\
+    & HL-LHC  S2               & $^{+0.23}_{-0.20}$      & $^{+0.06}_{-0.06}$     & $^{+0.11}_{-0.11}$      & $^{+0.06}_{-0.06}$ & $^{+0.17}_{-0.15}$ & $^{+0.08}_{-0.08}$ \\
+    \hline\hline
+\end{tabular}  
   \caption{
     Breakdown of the contributions to the expected uncertainties on the \ttH cross section in the \Htobb channel at different luminosities for the scenarios S1 and S2 at ATLAS. As discussed in the text, the extrapolation assumes the limitations on the reduction of the \ttHF modelling to a factor 2 and a factor 3 of the Run 2 prior uncertainties (Section \ref{sec:hl-lhc-ttH}).
     Therefore, the additional modelling uncertainty used for the extrapolation is 23\% in S1 and 15\% in S2.
@@ -117,7 +136,22 @@ The control of the \ttHF background is crucial, and it is expected to benefit fr
 
 ATLAS performs the extrapolation to HL-LHC also for the ttH multilepton final state~\cite{ATLAS-PHYS-PUB-2018-XY} where the Higgs boson decays into a pair of Z and W vector bosons or into $\tau$’s. Table \ref{tab:tthml:breakdown:atlas} shows the results on the extrapolation to 3000 fb$^{-}$ under S1 and S2. As shown in the ranking plot in Figure \ref{fig:tthml:impacts:atlas}, in the $\tau$ final state, the dominant uncertainty pertains to the object reconstruction for such a channel. It is also worth noting that the main theoretical systematics concerns the modelling of the tt+V background. Finally, fake lepton uncertainties are moderately constrained as well: this is due to the absence of reduction factor of prior uncertainties for such a source of systematics under S1 and S2. 
 \begin{table}
-  \centering
+  \centering\small
+  \renewcommand{\arraystretch}{1.3}
+  \begin{tabular}{c|c|c|cccc|c}
+    \hline \hline
+    Final state & Scenario & $\Delta_{\textrm {tot}}/\sigma_{\textrm {SM}}$ & $\Delta_{\textrm {stat}}/\sigma_{\textrm {SM}}$ & $\Delta_{\textrm {exp}}/\sigma_{\textrm {SM}}$ & $\Delta_{\textrm {sig}}/\sigma_{\textrm {SM}}$ & $\Delta_{\textrm {bkg}}/\sigma_{\textrm {SM}}$
+ & $\Delta\mu_{\textrm {sig}}$ \\
+    \hline
+    $t\bar{t} H,H \rightarrow$ ML   & Run 2, 36~\ifb & $^{+0.40}_{-0.40}$ & $^{+0.33}_{-0.34}$ & $^{+0.15}_{-0.15}$ & $^{+0.10}_{-0.10}$ & $^{+0.13}_{-0.13}$ & $^{+0.13}_{-0.13}$ \\
+    (no $\tau$) & HL-LHC S1 & $^{+0.18}_{-0.18}$ & $^{+0.04}_{-0.04}$ & $^{+0.13}_{-0.14}$ & $^{+0.08}_{-0.08}$ & $^{+0.12}_{-0.12}$ & $^{+0.11}_{-0.11}$ \\
+    & HL-LHC S2& $^{+0.17}_{-0.17}$      & $^{+0.04}_{-0.04}$     & $^{+0.12}_{-0.13}$      & $^{+0.05}_{-0.05}$ & $^{+0.09}_{-0.09}$ & $^{+0.07}_{-0.07}$ \\
+    \hline
+    $t\bar{t} H,H \rightarrow$ ML  & Run 2, 36~\ifb  & $^{+0.64}_{-0.64}$ & $^{+0.54}_{-0.54}$ & $^{+0.29}_{-0.29}$ & $^{+0.10}_{-0.09}$ & $^{+0.14}_{-0.13}$  & $^{+0.13}_{-0.13}$ \\
+    (with $\tau$) & HL-LHC S1             & $^{+0.27}_{-0.28}$      & $^{+0.07}_{-0.07}$     & $^{+0.23}_{-0.23}$      & $^{+0.09}_{-0.08}$ & $^{+0.12}_{-0.12}$ & $^{+0.11}_{-0.11}$ \\
+    & HL-LHC S2           & $^{+0.25}_{-0.25}$      & $^{+0.07}_{-0.07}$     & $^{+0.22}_{-0.22}$      & $^{+0.05}_{-0.05}$ &  $^{+0.07}_{-0.07}$ & $^{+0.07}_{-0.07}$ \\
+    \hline\hline
+\end{tabular}  
   \caption{
     Breakdown of the contributions to the expected uncertainties on the \ttH cross section in the multilepton channel at different luminosities for the scenarios S1 and S2 at ATLAS. Uncertainties due to the limited number of Monte Carlo statistics have been omitted and the assumptions in S1/S2 on the theory uncertainties are applied.
   }
@@ -126,6 +160,10 @@ ATLAS performs the extrapolation to HL-LHC also for the ttH multilepton final st
 \end{table}
 \begin{figure}
   \centering
+    \begin{tabular}{@{}c@{}c@{}}
+    \includegraphics[width=0.49\textwidth]{\main/section2/plots/MLwithTau_XS_postfit.eps} &
+    \includegraphics[width=0.49\textwidth]{\main/section2/plots/MLnoTau_XS_postfit.eps} \\
+  \end{tabular}  
   \caption{
     Ranking of the ten most significant systematics uncertainties under S2 in the \ttH final state with (a) and without (b) $\tau$ leptons in the ATLAS analysis listed in accordance to their post-fit impact on the \ttH cross section.
   }
@@ -200,8 +238,8 @@ It is expected to observe the loop in the gluon-fusion production process, which
 
 \begin{figure}[hbtp]
   \begin{center}
-    \includegraphics[width=0.49\linewidth]{\main/section2/plots/differentials/projection_ktcg_plot_couplingdependentBRs.pdf}
-    \includegraphics[width=0.49\linewidth]{\main/section2/plots/differentials/projection_ktcg_plot_couplingdependentBRs_scenario2.pdf}
+    \includegraphics[width=0.49\linewidth]{\main/section2/plots/differentials/projection_ktcg_plot_couplingdependentBRs.png}
+    \includegraphics[width=0.49\linewidth]{\main/section2/plots/differentials/projection_ktcg_plot_couplingdependentBRs_scenario2.png}
     % 
     \caption{
         Projected simultaneous fit for $\kappat$ and $\cg$, assuming a coupling dependence of the branching fractions for Scenario 1 (left) and Scenario 2 (right).
@@ -222,8 +260,8 @@ The fits obtained this way are shown in Fig.~\ref{fig:ktcg_couplingdependentBRs}
 
 \begin{figure}[hbtp]
   \begin{center}
-    \includegraphics[width=0.49\linewidth]{\main/section2/plots/differentials/projection_ktcg_plot_floatingBRs.pdf}
-    \includegraphics[width=0.49\linewidth]{\main/section2/plots/differentials/projection_ktcg_plot_floatingBRs_scenario2.pdf}
+    \includegraphics[width=0.49\linewidth]{\main/section2/plots/differentials/projection_ktcg_plot_floatingBRs.png}
+    \includegraphics[width=0.49\linewidth]{\main/section2/plots/differentials/projection_ktcg_plot_floatingBRs_scenario2.png}
     % 
     \caption{
         Projected simultaneous fit for $\kappat$ and $\cg$ with the branching fractions implemented as nuisance parameters with no prior constraint for Scenario 1 (left) and Scenario 2 (right).

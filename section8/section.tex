@@ -6,208 +6,263 @@
 
 \begin{document}
 
-\section{Global view of Higgs couplings at the HL/HE-LHC}
+\section{Prospective SMEFT Constraints from HL- and HE-LHC Data}
 \label{sec8}
 \begin{center}
 \bigskip\vspace{1cm}
-{Christopher W. Murphy}
-\centerline{{\it Department of Physics, Brookhaven National Laboratory, Upton, New York, 11973, USA}}
+John~Ellis$^{a}$,
+Christopher~W.~Murphy$^b$,%$^c$,
+Ver\'onica Sanz$^{c}$ and
+Tevong~You$^{d}$
+\begin{center}
+{\em $^a$ Theoretical Particle Physics and Cosmology Group, Department of
+  Physics, King's~College~London, London WC2R 2LS, United Kingdom;\\
+National Institute of Chemical Physics \& Biophysics, R{\" a}vala 10, 10143 Tallinn, Estonia; \\
+Theoretical Physics Department, CERN, CH-1211 Geneva 23,
+  Switzerland}\\[0.2cm]
+{\em $^b$ Department of Physics, Brookhaven National Laboratory, Upton, New York 11973, USA}\\[0.2cm]  
+{\em $^c$ Department of Physics and Astronomy, University of Sussex, Brighton BN1 9QH, UK}\\[0.2cm]
+{\em $^d$ DAMTP, University of Cambridge, Wilberforce Road, Cambridge CB3 0WA, UK;\\
+Cavendish Laboratory, University of Cambridge, J.~J.~Thomson Ave., Cambridge CB3~0HE,
+ UK}
+\end{center}
 \end{center}
 
 \subsection{Introduction}
 \label{sec8:intro}
-To date there are no conclusive signals of physics beyond the Standard Model (SM) at the Large Hadron Collider (LHC).
-This suggests there is a separation of scales between the SM, characterized by $v \approx 246$~GeV, and whatever may lie beyond it at some higher energy, $\Lambda$.
-Effective Field Theory (EFT) techniques are ubiquitous in physics, and are most useful when there is a separation of scales in the problem.
-Therefore it is not surprising that the Standard Model Effective Field Theory (SMEFT) has become one of the most powerful tools to analyze LHC results given its (near) model-independence, systematic improvability, and ability to simultaneously describe multiple datasets.
-Taking a global view of constraints on the Wilson coefficients of the SMEFT is of critical importance not only because these parameters often contribute to multiple datasets, but also because the LHC currently competes in precision with previous generation precision experiments.
-Given proposals for future runs of the LHC, High-Luminosity (HL) and High-Energy (HE), it is imperative to understand how the global picture of bounds on Wilson coefficients will change as the HL- and/or HE-LHC become the singularly dominant machine(s) in particle physics.
-To do so this Section uses the framework of Ref.~\cite{Ellis:2018gqa}, and its predecessors~\cite{Ellis:2014dva, Ellis:2014jta, Murphy:2017omb}, to project bounds on Wilson coefficients in the SMEFT for the HL and HE runs of the LHC.
+The absence to date of conclusive signals of physics beyond the Standard Model (SM) at the Large Hadron Collider (LHC) suggests
+that there is a separation of scales between the SM, characterized by $v \approx 246$~GeV, and whatever may lie beyond it at some higher energy, $\Lambda$.
+This motivates using the Standard Model Effective Field Theory (SMEFT) as a tool to search indirectly for new physics in LHC data,
+given its (near) model-independence, capacity for systematic improvement, and ability to exploit simultaneously multiple datasets.
 
-\subsection{Standard Model Effective Field Theory}
-We focus on dimension-6 operators, and work to linear order in the Warsaw basis~\cite{Grzadkowski:2010es} yielding a consistent EFT expansion to order $O(\Lambda^{-2})$. 
-We choose $\alpha$, $G_F$, and $M_Z$ as the input parameters for our computations.
-There are 2499 baryon number preserving dimension-6 Wilson coefficients in the SMEFT~\cite{Alonso:2013hga}.
-Here we assume a $U(3)^5$ flavor symmetry, one power for each of the five SM fermions fields, under which the Yukawa matrices, $y_{d, e, u}$, are promoted to spurions transforming as bi-triplets.
-This reduces the number of (real) coefficients to 76.
-However only 20 of those parameters are relevant for the diboson, electroweak precision, and Higgs observables we consider here.
+A global analysis of constraints on the Wilson coefficients of the SMEFT is of critical importance when more than a few coefficients are allowed to be non-zero,
+since many SMEFT operators contribute to multiple observables, so that different classes of measurement should not be analyzed in isolation.
+The importance of this feature increases as
+measurements from the LHC compete in precision with previous generation precision experiments.
+A global analysis of early data from Run~2 of the LHC together with data from Run~1 and previous electroweak measurements
+was made in~\cite{Ellis:2018gqa}, following~\cite{Ellis:2014dva, Ellis:2014jta, Murphy:2017omb}.
 
-In the Warsaw basis, the 11 operators that span the set of diboson measurements and electroweak precision observables, whether through direct contributions or shifts in input parameters, can be written as  
+In this note, after reviewing the SMEFT framework and our previous results~\cite{Ellis:2018gqa}, we present projections for the
+prospective sensitivities of measurements with the approved High-Luminosity LHC (HL-LHC) project and the proposed High-Energy LHC (HE-LHC) project
+to Wilson coefficients, working in the Warsaw basis~\cite{Grzadkowski:2010es}. 
+Our projections are based on ATLAS and CMS estimates of the accuracies with which they
+could measure Higgs production rates together with our estimates of the possible accuracies of Simplified Template Cross-Section (STXS)
+measurements, assuming plausible future reductions in theoretical and systematic errors.
+
+\subsection{Standard Model Effective Field Theory (SMEFT)}
+\label{sec8:smeft}
+We focus on dimension-6 operators, and work to linear order in the Warsaw basis~\cite{Grzadkowski:2010es},
+so as to make a consistent EFT expansion to order ${\cal O}(\Lambda^{-2})$. 
+We choose $\alpha$, $G_F$, and $M_Z$ as input parameters for our computations, though we note that
+the choice of input scheme does not have much impact on the results of a fit to Wilson coefficients if a sufficiently global analysis is performed~\cite{Brivio:2017bnu}.
+There are 2499 baryon-number-preserving dimension-6 Wilson coefficients in the SMEFT~\cite{Alonso:2013hga}.
+Here we assume a $U(3)^5$ flavor symmetry between the operator coefficients for the five lighter SM fermion fields,
+which reduces the number of (real) coefficients to 76.
+However only 20 of those parameters are relevant for the diboson, electroweak precision and Higgs observables that we consider here.
+
+In the Warsaw basis, the 11 operators relevant for diboson measurements and electroweak precision observables, 
+whether through direct contributions or shifts in input parameters, can be written as~\footnote{The operator definitions and normalisations used here differ slightly from those used in the Warsaw basis in Ref.~\cite{Ellis:2018gqa}. For convenience we list here the relations between the Wilson coefficients in the two notations:
+%
+\begin{align*}
+&\bar{C}_H = \frac{v^2}{\Lambda^2}C_6  \, , \,  \bar{C}_{H\ell}^{(3)} = \frac{v^2}{\Lambda^2} C_{HL}^{(3)}  \, , \, \bar{C}_{H\ell}^{(1)} = \frac{v^2}{\Lambda^2} C_{HL}  \, , \,  \bar{C}_{\ell\ell} = \frac{v^2}{\Lambda^2} C_{LL}  \, , \,  \bar{C}_{HD} = \frac{v^2}{\Lambda^2} C_{HD}  \, , \, \\ 
+& \bar{C}_{HWB} = \frac{v^2}{\Lambda^2} g g^\prime C_{WB}  \, , \,  \bar{C}_{He,Hu,Hd} = \frac{v^2}{\Lambda^2} C_{He,Hu,Hd}  \, , \,  \bar{C}_{Hq}^{(3)} = \frac{v^2}{\Lambda^2} C_{HQ}^{(3)} \, , \, \bar{C}_{Hq}^{(1)} = \frac{v^2}{\Lambda^2} C_{HQ}  \, , \,  \\
+& \bar{C}_W = \frac{v^2}{\Lambda^2} \frac{g}{3!} C_{3W} \, , \,  \bar{C}_{eH, dH, uH} = \frac{v^2}{\Lambda^2} C_{ye, yd, yu}  \, , \, \bar{C}_{H\square} = \frac{v^2}{\Lambda^2}  \frac{1}{2} C_H \, , \,  \bar{C}_{HW} = \frac{v^2}{\Lambda^2} g^2 C_{WW}  \, , \, \\
+& \bar{C}_{HB} = \frac{v^2}{\Lambda^2} {g^\prime}^2 C_{BB}  \, , \, \bar{C}_{HG} = \frac{v^2}{\Lambda^2} g_s^2 C_{GG}  \, , \,  \bar{C}_G = \frac{v^2}{\Lambda^2} \frac{g_s}{3!} C_{3G}  \, .
+\end{align*}
+}  
 %
 {\small
 \begin{align}
 \label{eq8:L11}
-\mathcal{L}_\text{SMEFT}^\text{Warsaw} &\supset \frac{\bar{C}_{Hl}^{(3)}}{v^2} (H^\dag i\overleftrightarrow{D}^I_\mu H)(\bar l \tau^I \gamma^\mu l) + \frac{\bar{C}_{Hl}^{(1)}}{v^2}(H^\dag i\overleftrightarrow{D}_\mu H)(\bar l \gamma^\mu l) +\frac{\bar{C}_{ll}}{v^2}(\bar l \gamma_\mu l)(\bar l \gamma^\mu l) \nonumber \\
-&+ \frac{\bar{C}_{HD}}{v^2}\left|H^\dag D_\mu H\right|^2 + \frac{\bar{C}_{HWB}}{v^2} H^\dag \tau^I H\, W^I_{\mu\nu} B^{\mu\nu}  \nonumber  \\ 
-&+ \frac{\bar{C}_{He}}{v^2} (H^\dag i\overleftrightarrow{D}_\mu H)(\bar e \gamma^\mu e) \nonumber + \frac{\bar{C}_{Hu}}{v^2} (H^\dag i\overleftrightarrow{D}_\mu H)(\bar u \gamma^\mu u) + \frac{\bar{C}_{Hd}}{v^2} (H^\dag i\overleftrightarrow{D}_\mu H)(\bar d \gamma^\mu d) \nonumber \\
-&+ \frac{\bar{C}_{Hq}^{(3)}}{v^2} (H^\dag i\overleftrightarrow{D}^I_\mu H)(\bar q \tau^I \gamma^\mu q) + \frac{\bar{C}_{Hq}^{(1)}}{v^2} (H^\dag i\overleftrightarrow{D}_\mu H)(\bar q \gamma^\mu q) + \frac{\bar{C}_{W}}{v^2} \epsilon^{IJK} W_\mu^{I\nu} W_\nu^{J\rho} W_\rho^{K\mu} \, ,
+\mathcal{L}_\text{SMEFT}^\text{Warsaw} &\supset \frac{C_{HL}^{(3)}}{\Lambda^2} (H^\dag i\overleftrightarrow{D}^I_\mu H)(\bar\ell \tau^I \gamma^\mu \ell) + \frac{C_{HL}}{\Lambda^2}(H^\dag i\overleftrightarrow{D}_\mu H)(\bar \ell \gamma^\mu \ell) +\frac{C_{LL}}{\Lambda^2}(\bar \ell \gamma_\mu \ell)(\bar \ell \gamma^\mu \ell) \nonumber \\
+&+ \frac{C_{HD}}{\Lambda^2}\left|H^\dag D_\mu H\right|^2 + \frac{C_{WB}}{\Lambda^2} g g^\prime H^\dag \tau^I H\, W^I_{\mu\nu} B^{\mu\nu}  \nonumber  \\ 
+&+ \frac{C_{He}}{\Lambda^2} (H^\dag i\overleftrightarrow{D}_\mu H)(\bar e \gamma^\mu e) \nonumber + \frac{C_{Hu}}{\Lambda^2} (H^\dag i\overleftrightarrow{D}_\mu H)(\bar u \gamma^\mu u) + \frac{C_{Hd}}{\Lambda^2} (H^\dag i\overleftrightarrow{D}_\mu H)(\bar d \gamma^\mu d) \nonumber \\
+&+ \frac{C_{HQ}^{(3)}}{\Lambda^2} (H^\dag i\overleftrightarrow{D}^I_\mu H)(\bar q \tau^I \gamma^\mu q) + \frac{C_{HQ}}{\Lambda^2} (H^\dag i\overleftrightarrow{D}_\mu H)(\bar q \gamma^\mu q) + \frac{C_{3W}}{\Lambda^2} \frac{g}{3!} \epsilon^{IJK} W_\mu^{I\nu} W_\nu^{J\rho} W_\rho^{K\mu} \, ,
+%in our original convention:
+%\mathcal{L}_\text{SMEFT}^\text{Warsaw} &\supset \frac{\bar{C}_{H\ell}^{(3)}}{v^2} (H^\dag i\overleftrightarrow{D}^I_\mu H)(\bar\ell \tau^I \gamma^\mu \ell) + \frac{\bar{C}_{H\ell}^{(1)}}{v^2}(H^\dag i\overleftrightarrow{D}_\mu H)(\bar \ell \gamma^\mu \ell) +\frac{\bar{C}_{\ell\ell}}{v^2}(\bar \ell \gamma_\mu \ell)(\bar \ell \gamma^\mu \ell) \nonumber \\
+%&+ \frac{\bar{C}_{HD}}{v^2}\left|H^\dag D_\mu H\right|^2 + \frac{\bar{C}_{HWB}}{v^2} H^\dag \tau^I H\, W^I_{\mu\nu} B^{\mu\nu}  \nonumber  \\ 
+%&+ \frac{\bar{C}_{He}}{v^2} (H^\dag i\overleftrightarrow{D}_\mu H)(\bar e \gamma^\mu e) \nonumber + \frac{\bar{C}_{Hu}}{v^2} (H^\dag i\overleftrightarrow{D}_\mu H)(\bar u \gamma^\mu u) + \frac{\bar{C}_{Hd}}{v^2} (H^\dag i\overleftrightarrow{D}_\mu H)(\bar d \gamma^\mu d) \nonumber \\
+%&+ \frac{\bar{C}_{Hq}^{(3)}}{v^2} (H^\dag i\overleftrightarrow{D}^I_\mu H)(\bar q \tau^I \gamma^\mu q) + \frac{\bar{C}_{Hq}^{(1)}}{v^2} (H^\dag i\overleftrightarrow{D}_\mu H)(\bar q \gamma^\mu q) + \frac{\bar{C}_{W}}{v^2} \epsilon^{IJK} W_\mu^{I\nu} W_\nu^{J\rho} W_\rho^{K\mu} \, ,
 \end{align}
 }
 %
 where Hermitian conjugate operators are implicit.
-The flavor indices are trivial, except for the four-lepton operator, $C_{ll} = C_{\substack{ll \\ e\mu\mu e}} = C_{\substack{ll \\ \mu ee\mu}}$~\cite{Cirigliano:2009wk}, and are also left implicit.
-Additionally in Eq.~\eqref{eq8:L11} we define
-%
-\begin{equation}
-\bar{C} \equiv \frac{v^2}{\Lambda^2}C \, .
-\end{equation}
-%
-There are an additional nine operators that affect Higgs measurements, 
+The flavor indices are trivial, except for the four-lepton operator, $C_{LL} = C_{\substack{LL \\ e\mu\mu e}} = C_{\substack{LL \\ \mu ee\mu}}$~\cite{Cirigliano:2009wk}, 
+and are also left implicit.
+There are an additional nine operators that contribute to Higgs measurements, 
 %
 {\small
 \begin{align}
 \label{eq8:L9}
-\mathcal{L}_\text{SMEFT}^\text{Warsaw} &\supset  \frac{\bar{C}_{eH}}{v^2} y_e (H^\dag H)(\bar l e H) + \frac{\bar{C}_{dH}}{v^2} y_d (H^\dag H)(\bar q d H) + \frac{\bar{C}_{uH}}{v^2} y_u (H^\dag H)(\bar q u \widetilde H) \nonumber \\
-&+ \frac{\bar{C}_{G}}{v^2} f^{ABC} G_\mu^{A\nu} G_\nu^{B\rho} G_\rho^{C\mu}  + \frac{\bar{C}_{H\Box}}{v^2} (H^\dag H)\Box(H^\dag H) + \frac{\bar{C}_{uG}}{v^2} y_u (\bar q \sigma^{\mu\nu} T^A u) \widetilde H \, G_{\mu\nu}^A   \nonumber \\
-&+ \frac{\bar{C}_{HW}}{v^2} H^\dag H\, W^I_{\mu\nu} W^{I\mu\nu} + \frac{\bar{C}_{HB}}{v^2}H^\dag H\, B_{\mu\nu} B^{\mu\nu} + \frac{\bar{C}_{HG}}{v^2} H^\dag H\, G^A_{\mu\nu} G^{A\mu\nu} \, .
+\mathcal{L}_\text{SMEFT}^\text{Warsaw} &\supset  \frac{C_{y_e}}{\Lambda^2} y_e (H^\dag H)(\bar \ell e H) + \frac{C_{y_d}}{\Lambda^2} y_d (H^\dag H)(\bar q d H) + \frac{C_{y_u}}{\Lambda^2} y_u (H^\dag H)(\bar q u \widetilde H) \nonumber \\
+&+ \frac{C_{3G}}{\Lambda^2} \frac{g_s}{3!} f^{ABC} G_\mu^{A\nu} G_\nu^{B\rho} G_\rho^{C\mu}  + \frac{C_{H}}{\Lambda^2} \frac{1}{2}\left(\partial^\mu |H|^2\right)^2  + \frac{C_{uG}}{\Lambda^2} y_u (\bar q \sigma^{\mu\nu} T^A u) \widetilde H \, G_{\mu\nu}^A   \nonumber \\
+&+ \frac{C_{WW}}{\Lambda^2} g^2 H^\dag H\, W^I_{\mu\nu} W^{I\mu\nu} + \frac{C_{BB}}{\Lambda^2} {g^\prime}^2 H^\dag H\, B_{\mu\nu} B^{\mu\nu} + \frac{C_{GG}}{\Lambda^2} g_s^2 H^\dag H\, G^A_{\mu\nu} G^{A\mu\nu} \, .
+%in our original convention:
+%\mathcal{L}_\text{SMEFT}^\text{Warsaw} &\supset  \frac{\bar{C}_{eH}}{v^2} y_e (H^\dag H)(\bar \ell e H) + \frac{\bar{C}_{dH}}{v^2} y_d (H^\dag H)(\bar q d H) + \frac{\bar{C}_{uH}}{v^2} y_u (H^\dag H)(\bar q u \widetilde H) \nonumber \\
+%&+ \frac{\bar{C}_{G}}{v^2} f^{ABC} G_\mu^{A\nu} G_\nu^{B\rho} G_\rho^{C\mu}  + \frac{\bar{C}_{H\Box}}{v^2} (H^\dag H)\Box(H^\dag H) + \frac{\bar{C}_{uG}}{v^2} y_u (\bar q \sigma^{\mu\nu} T^A u) \widetilde H \, G_{\mu\nu}^A   \nonumber \\
+%&+ \frac{\bar{C}_{HW}}{v^2} H^\dag H\, W^I_{\mu\nu} W^{I\mu\nu} + \frac{\bar{C}_{HB}}{v^2}H^\dag H\, B_{\mu\nu} B^{\mu\nu} + \frac{\bar{C}_{HG}}{v^2} H^\dag H\, G^A_{\mu\nu} G^{A\mu\nu} \, .
 \end{align}}
-The explicit appearance of the Yukawa matrices in Eq.~\eqref{eq8:L9} is necessary to formally preserve the $U(3)^5$ flavor symmetry.
-A tenth operator, $\mathcal{O}_H = \left(H^{\dagger} H\right)^3$ operator, is not listed here.
-The Wilson coefficient for this operator, $C_H$, can be measured in double-Higgs production, see Section 3 of this report.
+The explicit appearance of the Yukawa matrices in Eq.~\eqref{eq8:L9} is necessary to preserve formally the $U(3)^5$ flavor symmetry.
+A tenth operator, $\mathcal{O}_6 = \left(H^{\dagger} H\right)^3$ operator, is not listed here. Present data do not constrain
+its Wilson coefficient, $C_6$, which can be measured in double-Higgs production.
+See Refs.~\cite{Banerjee:2018yxy, Goncalves:2018qas} for some prospects for its future measurement.
 
-Strictly speaking more than nine operators affect Higgs measurements.
-All of the operators in Eq.~\eqref{eq8:L11} except $\mathcal{O}_W$ affect Higgs measurements at leading order.
-Furthermore Higgs production in association with a top-quark pair probes additional coefficients in the SMEFT~\cite{AguilarSaavedra:2018nen, Ellis:2018gqa} that do not appear in our other observables.
-(See also Section 4.1 of this report.)
-The only one we explicitly consider is $C_{uG}$, which makes the largest contribution to $t \bar{t} h$ production~\cite{Ellis:2018gqa}. 
-An alternative possibility would be to include all the operators by regularizing the fit as in Ref.~\cite{Murphy:2017omb}.
-\subsection{Fit Setup and Current Results}
-\label{sec8:fit}
-We use the predictions for electroweak precision observables and $WW$ scattering at LEP 2 in the Warsaw basis from Refs.~\cite{Berthier:2016tkq, Brivio:2017vri}, whereas predictions for LHC observables are made using $\mathtt{SMEFTsim}$~\cite{Brivio:2017btx}.
-The following data are used in our global fit, which are sensitive to 20 directions in the SMEFT parameter space.
+
+
+All of the operators in Eq.~\eqref{eq8:L11} except $\mathcal{O}_{3W}$ affect Higgs measurements at leading order, and
+$\mathcal{O}_{3W}$ contributes to Higgs processes at next-to-leading order~\cite{Alonso:2013hga, Hartmann:2015oia, Hartmann:2015aia, Dedes:2018seb, Dawson:2018liq}.
+We note also that Higgs production in association with a top-quark pair probes additional terms in the 
+SMEFT~\cite{Maltoni:2016yxb, AguilarSaavedra:2018nen, Ellis:2018gqa} that do not contribute to the other observables we consider.
+The only one we consider explicitly is $C_{uG}$, which makes the largest contribution to $t \bar{t} h$ production~\cite{Ellis:2018gqa}~\footnote{For 
+an alternative analysis including all the operators, see~\cite{Murphy:2017omb}.}.
+
+%\section{Fit Setup}
+%\label{sec8:fit}
+In our global fit to the current data we have used the predictions for electroweak precision observables and $WW$ scattering at LEP~2 in the 
+Warsaw basis from Refs.~\cite{Berthier:2016tkq, Brivio:2017vri}, and predictions for LHC observables are made using $\mathtt{SMEFTsim}$~\cite{Brivio:2017btx}.
+The following data are used in our global fit:
 
 \begin{itemize}
-\item \textit{pre-LHC data}:  
-We use 11 $Z$-pole observables from LEP 1 and 1 from SLC, which are given in Ref.~\cite{ALEPH:2005ab}, as well as the $W$ mass measurement from the Tevatron~\cite{Aaltonen:2013iut}.
-In addition we use all the data for the processes $e^+ e^- \to W^+ W^- \to 4f$. 
-These measurements were complied in Ref.~\cite{Berthier:2016tkq}, and the original experimental papers are Refs.~\cite{Heister:2004wr, Achard:2004zw, Abbiendi:2007rs, Schael:2013ita}. 
-These measurements also probe eleven directions in the SMEFT, which can be mapped to the operators in Eq.~\eqref{eq8:L11}.
+\item \textit{Pre-LHC data}:  
+We use 11 $Z$-pole observables from LEP 1 and one from SLC, as given in Ref.~\cite{ALEPH:2005ab}, as well as the $W$ mass measurement from the 
+Tevatron~\cite{Aaltonen:2013iut}.
+In addition, we use all the LEP~2 data for the processes $e^+ e^- \to W^+ W^- \to 4f$,
+as compiled in Ref.~\cite{Berthier:2016tkq}, the original experimental papers being Refs.~\cite{Heister:2004wr, Achard:2004zw, Abbiendi:2007rs, Schael:2013ita}. 
+These measurements probe eleven directions in the SMEFT, which can be mapped to the operators in Eq.~\eqref{eq8:L11}.
 
 \item \textit{LHC Run 1 data}: 
-We use all the 20 signal strengths from Table 8 of Ref.~\cite{Khachatryan:2016vau}.
-A signal strength is defined as the ratio of the measured cross section to its SM prediction. 
+We use all the 20 Higgs signal strengths from Table 8 of Ref.~\cite{Khachatryan:2016vau}.
 We also use the ATLAS and CMS combination for the $h \to \mu^+ \mu^-$ signal strength~\cite{Khachatryan:2016vau}, and the ATLAS $h \to Z \gamma$ signal strength~\cite{Aad:2015gba}. 
-Furthermore, we include the $W$ mass measurements from ATLAS~\cite{Aaboud:2017svj}.
+We also include the $W$ mass measurement from ATLAS~\cite{Aaboud:2017svj}.
 
 \item \textit{LHC Run 2 data}: 
 We use 25 measurements from CMS~\cite{Sirunyan:2017dgc, Sirunyan:2017elk, Sirunyan:2018mvw, Sirunyan:2018shy, CMS-PAS-HIG-16-042, Sirunyan:2018ouh, Sirunyan:2017exp, Sirunyan:2017khh}, and 23 measurements from ATLAS~\cite{Aaboud:2017ojs, Aaboud:2017xsd, Aaboud:2017rss, Aaboud:2017jvq, ATLAS-CONF-2018-004, ATLAS-CONF-2017-047, ATLAS-CONF-2016-112}, including experimental correlations whenever possible. 
-In addition we include one measurement of the differential cross section for $p p \to W^+ W^- \to e^{\pm} \nu \mu^{\mp} \nu$, which requires $p_T > 120$~GeV for the leading lepton, by ATLAS at 13~TeV~\cite{Aaboud:2017qkn}.
+In addition, we include one ATLAS measurement at 13 TeV of the differential cross section for $p p \to W^+ W^- \to e^{\pm} \nu \mu^{\mp} \nu$
+that requires $p_T > 120$~GeV for the leading lepton~\cite{Aaboud:2017qkn}.
 \end{itemize}
 
-We first present a simplified case where only the operators $C_{HWB}$ and $C_{HD}$ in the Warsaw basis are non-zero.
-In this particular case these coefficients are equivalent to the oblique parameters $\Delta S$ and $\Delta T$~\cite{Grinstein:1991cd}
-\begin{equation}
-\frac{v^2}{\Lambda^2} C_{HWB} = \frac{g_1 g_2}{16 \pi} \Delta S, \quad \frac{v^2}{\Lambda^2} C_{HD} = - \frac{g_1 g_2}{2 \pi \left(g_1 + g_2\right)} \Delta T \, ,
-\end{equation}
-Figure~\ref{fig8:SandT} shows the preferred parameter space for 
-$C_{HWB}$ and $C_{HD}$ for three different selections of the data sets included in the fit.
-The blue ellipses are obtained using just pre-LHC measurements in the fit, 
-whereas the orange ellipses use only the LHC Run-1 and -2 results.
-Finally, the green ellipses are obtained using all the data described in the list above.
-The regions shaded in darker and lighter colors are allowed at 1 and 2$\sigma$, respectively. 
-%%%%%%%
-\begin{figure}[ht!]
-  \centering
-\includegraphics[width=0.6\textwidth]{\main/section8/plots/ST_LHC.pdf}
- \caption{\it Fits to $C_{HWB}$ and $C_{HD}$ using pre-LHC measurements (blue), using LHC Run-1 and -2 results (orange), and all the data (green). The darker and lighter shaded regions are allowed at 1 and 2$\sigma$, respectively. When these are the only two non-zero coefficients in the Warsaw basis they are equivalent to the $\Delta S$ and $\Delta T$ parameters. }
-   \label{fig8:SandT}
-\end{figure}
-%%%%%%%
+\subsection{Selection of Current Fit Results}
+\label{sec8:curr}
 
-Fig.~\ref{fig8:HEPfitvsEMSY} summarizes the sensitivities to the scales of the operators in the Warsaw basis.
-Specifically it gives the 95\% CL bounds on the sensitivity in TeV for a Wilson coefficient, obtained from marginalized (yellow) and individual (brown) fits to the 20 dimension-6 operators entering in electroweak precision tests, diboson and Higgs measurements at LEP, SLC, Tevatron, and LHC Run-1 and -2.
-The yellow and brown bars correspond to the red and green bars of Figure 8 of Ref.~\cite{Ellis:2018gqa}, respectively.
-Shown in blue are the analogous results of the individual fits of the HEPfit Collaboration~\cite{Ciuchini:2013pca, deBlas:2016ojx}, see also~\cite{luca:talk, otto:talk}.
-For a recent fit in another basis see Ref.~\cite{Alves:2018nof}.
-For a recent fit in the Nonlinear Effective Theory see instead Ref.~\cite{deBlas:2018tjm}.
+
+In this Section we summarise the main result of the global fit to current data in Ref.~\cite{Ellis:2018gqa}. Fig.~\ref{fig8:HEPfitvsEMSY} summarizes the sensitivities to operator coefficients in the Warsaw basis.
+It shows the 95\% CL bounds in TeV on the Wilson coefficients, as obtained in~\cite{Ellis:2018gqa} from marginalized (orange) and individual (green) fits to the 20 dimension-6 operators 
+entering in electroweak precision tests, diboson and Higgs measurements at LEP, SLC, Tevatron, and LHC Runs 1 and 2.
+Also shown, in blue, are the analogous results of the individual fits of the HEPfit Collaboration~\cite{Ciuchini:2013pca, deBlas:2016ojx}~\footnote{See 
+also~\cite{luca:talk, otto:talk}. For a recent fit in another basis see Ref.~\cite{Alves:2018nof}, and
+for a recent fit in the nonlinear Effective Theory see Ref.~\cite{deBlas:2018tjm}.}. 
+We note that the degree of agreement in the individual operator fits is generally good. 
+
+
 %%%%%%%
-\begin{figure}[h]
+\begin{figure}
   \centering
-\includegraphics[width=0.8\textwidth]{\main/section8/plots/barcomp.pdf}
- \caption{\it Current constraints on dimension-6 operators. The yellow and brown bars are the marginalized and individual limits from Ref.~\cite{Ellis:2018gqa}, respectively. Shown in blue are the analogous results of the HEPfit Collaboration~\cite{Ciuchini:2013pca, deBlas:2016ojx} for the case where only one operator is switched on at a time.}
+\includegraphics[width=0.8\textwidth]{section8/plots/barcompcnorm.pdf}
+ \caption{\it Current constraints on dimension-6 operators. The orange and green bars are the marginalized and individual limits from Ref.~\cite{Ellis:2018gqa}, respectively. 
+ The analogous results of the HEPfit Collaboration~\cite{Ciuchini:2013pca, deBlas:2016ojx} for the case where only one operator is switched on at a time are shown in blue.}
    \label{fig8:HEPfitvsEMSY}
 \end{figure} 
 
+Table~\ref{tab8:FIpM} gives the Fisher information contained in a given dataset per number of measurements in that dataset,
+for each coefficient in the case where one operator is switched on at a time.
+The datasets are categorized as in Ref.~\cite{Ellis:2018gqa}, where a
+cross indicates no (current) sensitivity.
+This Table is the per-measurement analogue of Table 5 of Ref.~\cite{Ellis:2018gqa}, and
+shows that LHC diboson measurements are more powerful than LEP 2 diboson measurements for constraining triple gauge couplings (TGCs).
+In the Warsaw basis the three TGCs correspond to $C_{WB}$, $C_{3W}$, and a linear combination of $C_{HD}$, $C_{HL}^{(3)}$, $C_{WB}$, and $C_{LL}$.
+We note, however, that $Z$-pole and Higgs-pole measurements are more constraining for all but $C_{3W}$. 
+
+%%%%%%%
+\begin{table}
+\centering
+ \begin{tabular}{|c|c|c|c|c|c|c|} \hline
+Coefficient & $Z$-pole + $m_W$ & $WW$ at LEP2 & Higgs Run1 & Higgs Run2 & LHC $WW$ high-$p_T$  \\  \hline \hline
+ $C_{yd}$ & $\times$ & $\times$ & 10 & 8.1 & $\times$  \\
+ $C_{ye}$ & $\times$ & $\times$ & 2.9 & 1.3 & $\times$ \\
+ $C_{3G}$ & $\times$ & $\times$ & 0.5 & 9.1 & $\times$  \\
+ $C_{BB}$ & $\times$ & $\times$ & $9.9 \cdot 10^5$ & $2.0 \cdot 10^6$ & $\times$  \\
+ $C_{H}$ & $\times$ & $\times$ & 8.1 & 15 & 0.1  \\
+$C_{Hd}$ & $7.4 \cdot 10^3$ & $\times$ & 2.0 & 1.5 & 9.8  \\
+ $C_{HD}$ & $4.3 \cdot 10^5$ & 51 & 4.6 & 4.5 & $5.5 \cdot 10^2$  \\
+$C_{He}$ & $6.5 \cdot 10^5$ & 14 & $1.1 \cdot 10^{-2}$ & $3.7 \cdot 10^{-2}$ & $\times$  \\
+ $C_{GG}$ & $\times$ & $\times$ & $9.8 \cdot 10^5$ & $8.6 \cdot 10^5$ & $1.5 \cdot 10^4$  \\
+$C_{HL}$ & $1.1 \cdot 10^6$ & 51 & $1.1 \cdot 10^{-2}$ & $3.6 \cdot 10^{-2}$ & $4.6 \cdot 10^{-3}$  \\
+ $C_{HL}^{(3)}$ & $1.7 \cdot 10^6$ & $1.3 \cdot 10^3$ & 51 & 49 & $3.5 \cdot 10^3$  \\
+ $C_{HQ}$ & $6.4 \cdot 10^4$ & $\times$ & 2.3 & 1.0 & 37  \\
+$C_{HQ}^{(3)}$ & $4.9 \cdot 10^5$ & $9.1 \cdot 10^2$ & $5.9 \cdot 10^2$ & $3.3 \cdot 10^2$ & $5.0 \cdot 10^3$  \\
+ $C_{Hu}$ & $1.4 \cdot 10^4$ & $\times$ & 18 & 12 & 83  \\
+$C_{WW}$ & $\times$ & $\times$ & $9.1 \cdot 10^4$ & $1.8 \cdot 10^5$ & $7.0 \cdot 10^{-3}$ \\
+$C_{WB}$ & $3.3 \cdot 10^6$ & $1.9 \cdot 10^2$ & $3.0 \cdot 10^5$ & $5.7 \cdot 10^5$ & $2.2 \cdot 10^3$ \\
+ $C_{LL}$ & $5.5 \cdot 10^5$ & $3.3 \cdot 10^2$ & 16 & 21 & $6.0 \cdot 10^2$ \\
+$C_{uG}$ & $\times$ & $\times$ & 18 & 97 & $\times$  \\
+ $C_{yu}$ & $\times$ & $\times$ & 0.4 & 1.8 & $\times$ \\
+ $C_{3W}$ & $\times$ & 6.7 & $\times$ & $\times$ & 19 \\ \hline
+ %original notation:
+% $C_{dH}$ & $\times$ & $\times$ & 10 & 8.1 & $\times$  \\
+% $C_{eH}$ & $\times$ & $\times$ & 2.9 & 1.3 & $\times$ \\
+% $C_{G}$ & $\times$ & $\times$ & 0.5 & 9.1 & $\times$  \\
+% $C_{HB}$ & $\times$ & $\times$ & $9.9 \cdot 10^5$ & $2.0 \cdot 10^6$ & $\times$  \\
+% $C_{H\Box}$ & $\times$ & $\times$ & 8.1 & 15 & 0.1  \\
+%$C_{Hd}$ & $7.4 \cdot 10^3$ & $\times$ & 2.0 & 1.5 & 9.8  \\
+% $C_{HD}$ & $4.3 \cdot 10^5$ & 51 & 4.6 & 4.5 & $5.5 \cdot 10^2$  \\
+%$C_{He}$ & $6.5 \cdot 10^5$ & 14 & $1.1 \cdot 10^{-2}$ & $3.7 \cdot 10^{-2}$ & $\times$  \\
+% $C_{HG}$ & $\times$ & $\times$ & $9.8 \cdot 10^5$ & $8.6 \cdot 10^5$ & $1.5 \cdot 10^4$  \\
+%$C_{H\ell}^{(1)}$ & $1.1 \cdot 10^6$ & 51 & $1.1 \cdot 10^{-2}$ & $3.6 \cdot 10^{-2}$ & $4.6 \cdot 10^{-3}$  \\
+%% $C_{H\ell}^{(3)}$ & $1.7 \cdot 10^6$ & $1.3 \cdot 10^3$ & 51 & 49 & $3.5 \cdot 10^3$  \\
+% $C_{Hq}^{(1)}$ & $6.4 \cdot 10^4$ & $\times$ & 2.3 & 1.0 & 37  \\
+%$C_{Hq}^{(3)}$ & $4.9 \cdot 10^5$ & $9.1 \cdot 10^2$ & $5.9 \cdot 10^2$ & $3.3 \cdot 10^2$ & $5.0 \cdot 10^3$  \\
+% $C_{Hu}$ & $1.4 \cdot 10^4$ & $\times$ & 18 & 12 & 83  \\
+%$C_{HW}$ & $\times$ & $\times$ & $9.1 \cdot 10^4$ & $1.8 \cdot 10^5$ & $7.0 \cdot 10^{-3}$ \\
+%$C_{HWB}$ & $3.3 \cdot 10^6$ & $1.9 \cdot 10^2$ & $3.0 \cdot 10^5$ & $5.7 \cdot 10^5$ & $2.2 \cdot 10^3$ \\
+% $C_{\ell\ell}$ & $5.5 \cdot 10^5$ & $3.3 \cdot 10^2$ & 16 & 21 & $6.0 \cdot 10^2$ \\
+%$C_{uG}$ & $\times$ & $\times$ & 18 & 97 & $\times$  \\
+% $C_{uH}$ & $\times$ & $\times$ & 0.4 & 1.8 & $\times$ \\
+% $C_{W}$ & $\times$ & 6.7 & $\times$ & $\times$ & 19 \\ \hline
+\end{tabular}
+\caption{\it Impacts of different sets of measurements on the fit to individual Wilson coefficients in the Warsaw basis as measured by the Fisher information contained in a given dataset per number of measurements in that dataset for each coefficient. A cross indicates no (current) sensitivity.}
+\label{tab8:FIpM}
+\end{table}
+
 \subsection{Future Projections}
-We project how the bounds on the Wilson coefficients of the SMEFT will change at HL- and HE-LHC using the framework of Ref.~\cite{Ellis:2018gqa}.
-Our projection strategy is as follows.
-We leave all pre-LHC, and LHC Run-1 measurements unchanged.
-For measurements from Run-2 of the LHC we perform two extrapolations as to how the systematic uncertainties will change.
-The first, more pessimistic, extrapolation keeps the systematic and theoretical uncertainties fixed to their current values.
-This procedure is equivalent to the CMS scenario YR2018 S1~\cite{gilbert:talk}. 
-In contrast, the second, more optimistic, extrapolation scales the systematic and theoretical uncertainties as though they were statistical in nature.
-This procedure is more optimistic than CMS scenario YR2018 S2 where the theoretical uncertainties are only reduced by a factor of two and there are defined lower limits for the experimental systematic uncertainties~\cite{gilbert:talk}.
-In both cases the correlations between experimental measurements are assumed to be unchanged, and the statistical uncertainties are scaled as expected.
-In what follows we will refer to the former and the latter scenarios as ``Systematics Unchanged,'' and ``$\sqrt{N}$ Scaling,'' respectively.
-
-The explicit forms of the scaling we use HL- and HE-LHC for the $i^{\text{th}}$ measurement in our dataset are 
-\begin{align}
-\frac{\delta\mathcal{O}_{\text{HL}, i}}{\delta\mathcal{O}_{\text{today}, i}} = \sqrt{\frac{L_{\text{today}, i}}{L_{\text{HL}}}} , \\
+\label{sec8:proj}
+We use the same framework as described in Ref.~\cite{Ellis:2018gqa} to project how the sensitivities to the Wilson coefficients of the SMEFT will change at HL- and HE-LHC. Our projection strategy is as follows:
+we leave all pre-LHC, and LHC Run-1 measurements unchanged; we adopt the CMS and ATLAS WG2 recommendations for the HL- and HE-LHC sensitivities, using the HL-LHC S2 scenario for the experimental projections on the signal strength uncertainties and their associated correlation matrix (provided separately by ATLAS and CMS);
+and the remaining statistical uncertainties at HL- and HE-LHC are assumed to scale naively with the integrated luminosities and cross sections:
+\begin{equation}
+\frac{\delta\mathcal{O}_{\text{HL}, i}}{\delta\mathcal{O}_{\text{today}, i}} = \sqrt{\frac{L_{\text{today}, i}}{L_{\text{HL}}}} \; , \;
 \frac{\delta\mathcal{O}_{\text{HE}, i}}{\delta\mathcal{O}_{\text{today}, i}} = \sqrt{\frac{\sigma_{13, i}}{\sigma_{27, i}} \frac{L_{\text{today}, i}}{L_{\text{HE}}}}  . \nonumber
-\end{align}
-For the overwhelming majority of the measurements by ATLAS(CMS) $L_{\text{today}, i} = 36.1(35.9)~\text{fb}^{-1}$.
-We use the benchmark luminosities $L_{\text{HL}} = 3~\text{ab}^{-1}$. and $L_{\text{HE}} = 15~\text{ab}^{-1}$ for all the measurements in the respective HL and HE extrapolations.
-The cross sections $\sigma_{13, i}$ and $\sigma_{27, i}$ refer to the SM cross section in the signal region for a given measurement at 13 and 27 TeV, respectively.
+\end{equation}
+For almost all the measurements by ATLAS(CMS) $L_{\text{today}, i} = 36.1(35.9)~\text{fb}^{-1}$,
+and we use the benchmark luminosities $L_{\text{HL}} = 3~\text{ab}^{-1}$ and $L_{\text{HE}} = 15~\text{ab}^{-1}$ for all the measurements in the respective HL- and HE-LHC extrapolations.
+The cross sections $\sigma_{13, i}$ and $\sigma_{27, i}$ refer to the SM cross sections in the signal region for a given measurement $i$ at 13 and 27 TeV, respectively. At HE-LHC the S2 systematics are reduced by half. For the STXS and $WW$ measurements used in Ref.~\cite{Ellis:2018gqa}, since no official projections have been made yet, we extrapolate the statistical part as described above and treat the systematics as unchanged for HL-LHC and halve them for HE-LHC. The correlations between experimental measurements are assumed to be unchanged.
 
-We stress that both our projection scenarios are pessimistic in the sense that they do not take into account the additional channels~\cite{gilbert:talk} and fining binning~\cite{deFlorian:2016spz, Hays:2290628, ATLAS-CONF-2017-047} that will become available as more data are collected.
-Furthermore our projections under-utilize LHC diboson scattering measurements, see Sections 4.3 and 4.4 of this report. 
+We stress that both our projection scenarios are pessimistic in the sense that they do not take into account the additional channels~\cite{gilbert:talk}, finer binning~\cite{deFlorian:2016spz, Hays:2290628, ATLAS-CONF-2017-047} and extension of the STXS method to larger kinematic regions that will become available as more data are collected.
+Furthermore, as suggested by Table~\ref{tab8:FIpM}, our projections under-utilize LHC diboson scattering measurements~\cite{Azatov:2017kzw, Franceschini:2017xkh, Dawson:2018dcd}. 
 
-The results of our projections are shown in Figures~\ref{fig8:comp12},~\ref{fig8:comp34},~\ref{fig8:comp56}, and~\ref{fig8:comp78}.
-In all four figures the upper panel is a projected fit including all operators simultaneously, whereas the lower panel are projected fits switching each operator on individually.
-We display the best-fit values and 95\% CL ranges.
-The color coding is consistent throughout the four figures: current bounds (blue), HL-LHC with Systematics Unchanged (orange), HL-LHC with $\sqrt{N}$ Scaling (green), HE-LHC with Systematics Unchanged (red), and HE-LHC with $\sqrt{N}$ Scaling (purple).
-The current bounds are displayed in all four figures.
-Fig.~\ref{fig8:comp12} shows projections for HL-LHC.
-Fig.~\ref{fig8:comp34} shows projections for HE-LHC.
-Fig.~\ref{fig8:comp56} shows projections with Systematics Unchanged.
-Fig.~\ref{fig8:comp78} shows projections with $\sqrt{N}$ Scaling.
-Although Figs.~\ref{fig8:comp12} and~\ref{fig8:comp34} contain all the information from our projections, Figs.~\ref{fig8:comp56} and~\ref{fig8:comp78} are included to make comparisons between different scenarios easier, and vice versa.
-
-In the individual fits there is a large spread in the improvement on the bounds on the Wilson coefficients.
-In this scenario some bounds, including those on $C_{dH}$ and $C_{eH}$, improve by an order of magnitude or more, while other bounds, such as those on $C_{He}$ and $C_{H\ell}^{(1)}$, are still dominated by pre-LHC measurements in this particular scenario.
-Conversely, when fitting to all operators simultaneously, the general trend is that there is some improvement on the bounds of all of the Wilson coefficients.
-Under the $\sqrt{N}$ Scaling scenario HE-LHC clearly outperforms HL-LHC in terms of sensitivity to Wilson coefficients, or equivalently on how large of a cutoff scale $\Lambda$ can be probed.
-On the other hand, under the Systematic Unchanged scenario the HL- and HE-LHC perform approximately equally as well as each other in terms of their sensitivity to Wilson coefficients.
-
-%%%%%%%
-\begin{figure}[h]
+\begin{figure}
   \centering
-  \subfloat{\includegraphics[width=0.85\textwidth]{\main/section8/plots/globalfit_projection1.pdf}}  \\
-  \subfloat{\includegraphics[width=0.85\textwidth]{\main/section8/plots/globalfit_projection2.pdf}}
- \caption{\it Current bounds (blue), and projections for HL-LHC with Systematics Unchanged (orange) and $\sqrt{N}$ Scaling (green) including all operators simultaneously (upper panel) and switching each operator on individually (lower panel). We display the best-fit values and 95\% CL ranges.}
-   \label{fig8:comp12}
+ \includegraphics[width=0.85\textwidth]{section8/plots/individualbarchart.pdf}
+ \caption{\it Individual 95\% CL projected sensitivities for LHC, HL-LHC, HE-LHC, and combined HL/HE-LHC in increasingly darker shades of green. The vertical axis gives the reach to the scale of new physics divided by the dimensionless Wilson coefficient, in units of TeV. }
+   \label{fig:indiv}
 \end{figure} 
 
-%%%%%%%
-\begin{figure}[h]
+\begin{figure}
   \centering
-  \subfloat{\includegraphics[width=0.85\textwidth]{\main/section8/plots/globalfit_projection3.pdf}}  \\
-  \subfloat{\includegraphics[width=0.85\textwidth]{\main/section8/plots/globalfit_projection4.pdf}}
- \caption{\it Current bounds (blue), and projections for HE-LHC with Systematics Unchanged (red) and $\sqrt{N}$ Scaling (purple) including all operators simultaneously (upper panel) and switching each operator on individually (lower panel). We display the best-fit values and 95\% CL ranges.}
-   \label{fig8:comp34}
+ \includegraphics[width=0.85\textwidth]{section8/plots/marginalisedbarchart.pdf}
+ \caption{\it  Marginalised 95\% CL projected sensitivities for LHC, HL-LHC, HE-LHC, and combined HL/HE-LHC in increasingly darker shades of red. The vertical axis gives the reach to the scale of new physics divided by the dimensionless Wilson coefficient, in units of TeV.}
+   \label{fig:marg}
 \end{figure} 
 
-%%%%%%%
-\begin{figure}[h]
-  \centering
-  \subfloat{\includegraphics[width=0.85\textwidth]{\main/section8/plots/globalfit_projection5.pdf}}  \\
-  \subfloat{\includegraphics[width=0.85\textwidth]{\main/section8/plots/globalfit_projection6.pdf}}
- \caption{\it Current bounds (blue), and projections with Systematics Unchanged for HL-LHC (orange) and HE-LHC (red) including all operators simultaneously (upper panel) and switching each operator on individually (lower panel). We display the best-fit values and 95\% CL ranges.}
-   \label{fig8:comp56}
-\end{figure} 
+The results of our projections are shown in Figures~\ref{fig:indiv} and~\ref{fig:marg} for individual and marginalised 95\% CL sensitivities respectively. The vertical axis is the operator scale in units of TeV divided by the square root of the dimensionless Wilson coefficient. Increasingly darker shades for the four bars represent the sensitivities of the LHC up to now, HL-LHC with 3 ab$^{-1}$, HE-LHC with 15 ab$^{-1}$, and combining HL- and HE-LHC results (neglecting any correlations between the two). We see that in the individual bounds the sensitivity for each operator increases correspondingly, except for those that are only constrained by electroweak precision tests, which remain unchanged from their current LEP limits. In the marginalised case even the latter operators benefit from an improvement in the limits on other operators. We note that in going from HL- to HE-LHC there is a decrease in the marginalised sensitivity for $C_{GG}, C_{uG}$, and $C_{yu}$, despite improvements in their individual bounds. This is because $C_{uG}$ and $C_{yu}$ enter only in $tth$ production, and the relative increase in their contribution with respect to $C_{GG}$ in going from 13 to 27 TeV opens up a relatively flat direction in the parameter space, reducing the sensitivity to all three coefficients. This degeneracy can be broken by measurements at different energies, as shown in the combined HL/HE-LHC fit, or by including measurements involving top quarks.
 
-%%%%%%%
-\begin{figure}[h]
-  \centering
-  \subfloat{\includegraphics[width=0.85\textwidth]{\main/section8/plots/globalfit_projection7.pdf}}  \\
-  \subfloat{\includegraphics[width=0.85\textwidth]{\main/section8/plots/globalfit_projection8.pdf}}
- \caption{\it Current bounds (blue), and projections with $\sqrt{N}$ scaling for HL-LHC (green) and HE-LHC (purple) including all operators simultaneously (upper panel) and switching each operator on individually (lower panel). We display the best-fit values and 95\% CL ranges.}
-   \label{fig8:comp78}
-\end{figure}
+In general, we see that data from HL- and/or HE-LHC would extend the sensitivity to new physics into the multi-TeV range
+for most operator coefficients, extending to tens of TeV for $C_{GG}$.
 
-Acknowledgments: 
-%%%%%%%%%%%%%%%%%%%%%%%%%
-CM thanks John Ellis, Ver\'{o}nica Sanz, and Tevong You for collaborations on Ref.~\cite{Ellis:2018gqa}.
-The work of CM was supported by the United States Department of Energy under Grant Contract DE-SC0012704.
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection*{Acknowledgements}
+The work of JE is supported partly by the United Kingdom STFC Grant ST/P000258/1 and partly by the Estonian Research Council via a Mobilitas Pluss grant. VS acknowledges support from the STFC Grant ST/P000819/1. The work of CM was supported by the United States Department of Energy under Grant Contract DE-SC0012704. The work of TY is supported by a Branco Weiss Society in Science Fellowship and a Junior Research Fellowship from Gonville and Caius College and partially supported by STFC Grant ST/P000681/1.
+
 
 \end{document}

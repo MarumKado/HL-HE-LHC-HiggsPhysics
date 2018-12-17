@@ -1,25 +1,156 @@
-After the discovery of the Higgs boson at the LHC, and the first exploration of the couplings of the new particle at the run 1 and 2, achieving an overall precision at the level of ten percent, one of the main goal of Higgs studies at the HL-LHC or HE-LHC will be to push such limits to a percent level. In this section we study the projected precision that would be possible at such high luminosity and high energy extensions of the LHC from a global fit to modifications of the different single Higgs couplings.
-Other important goals of the Higgs physics program at the HL/HE-LHC, such as extending/complementing the onshell studies with the study of differential distributions, or getting access to the Higgs trilinear coupling will be covered in other parts of this document.
+After the discovery of the Higgs boson at the LHC, and the first exploration of the couplings of the new particle at Run I and Run II, which achieved an overall precision at the level of ten percent, one of the main goal of Higgs studies at the HL-LHC or HE-LHC will be to push such limits to a percent level. 
 
-Many explorations of deviation in Higgs couplings in the context of future proposed experiments are typically presented in the so called $\kappa$ framework~\cite{LHCHiggsCrossSectionWorkingGroup:2012nn,Heinemeyer:2013tqa}. In this phenomenological formalism one defines scaling factors, denoted $\kappa_i$, such that the production cross sections and decays of the Higgs boson involving the SM particle $i$, scale as $\kappa_i^2$.
-This is indeed a helpful approach to quantify the precision in Higgs measurements. However, it lacks robustness from the theory point of view, as it cannot be extended at NLO and, in its more general form, misses correlations derived from well established symmetry principles. A more robust[/reliable] exploration of deformations in Higgs couplings can be performed within the formalism of effective field theories. In this section we consider the general parameterization provided by non-linear Higgs effective field theory. As explained, in section~\ref{sec:kappavsEFT}, as long as we restrict to the LO effective Lagrangian and one focuses only on deviations on Higgs couplings, it is possible to connect the results of this formalism to those from the $\kappa$ framework.
-We refer the reader to section~\ref{sec:kappavsEFT} for the introduction of the non-linear Higgs effective Lagrangian and its connection with the $\kappa$ formalism. Throughout this section we will present the expected sensitivities to deviations on the Higgs couplings at the HL/HE-LHC, and compare with the recent results obtained using current data from \cite{deBlas:2018tjm}. A more general analysis going beyond pure modifications of Higgs couplings, allowing also for new physics also in EW interactions, and combining the results of the Higgs fit with those from EW precision observables and diboson measurements will be presented in section~\ref{sec8:fit}. Such effect may become relevant once the precision on the Higgs measurements goes below the threshold were the sensitivity to other EW interactions is comparable to that from current EW precision tests.
+In this section we study the projected precision that would be possible at such high luminosity and high energy extensions of the LHC from a global fit to modifications of the different single-Higgs couplings. Other important goals of the Higgs physics program at the HL/HE-LHC, such as extending/complementing the onshell studies with the study of differential distributions, or getting access to the Higgs trilinear coupling will be covered in other parts of this document. 
 
-In what follows we detail the fit procedure, the HL/HE-LHC projections used in our analysis, as well as the corresponding references for the analysis to current experimental data. We then present the results of the fit to the projected HL/HE-LHC uncertainties for the two formalisms mentioned above. We also translate the results from the fit to the HL/HE-LHC data in the EFT formalism in terms of composite Higgs scenarios. These are presented and discussed in section~\ref{sec9:CHM}.
-\subsubsection{The fit to HL/HE-LHC Higgs precision data}
+In order to study single-Higgs couplings we will connect with the $\kappa$-formalism. This will be introduced in sec.~\ref{sec:2:kappavsEFT}}, where we will also show its connection with the more powerful language of effective field theories. In sec.~\ref{sec:2:fit} we will detail the fit procedure, the HL/HE-LHC projections used in our analysis, as well as the corresponding references for the analysis to current experimental data. In sec.~\ref{sec:2:results} we present the results of the fit to the projected HL/HE-LHC uncertainties both in the $\kappa$-formalism and in the more general nonlinear EFT. In particular, we will present the expected sensitivities to deviations on the Higgs couplings at the HL/HE-LHC, and compare with the recent results obtained using current data from \cite{deBlas:2018tjm}. In order to make contact with the discussion of composite Higgs scenarios in section~\ref{sec9:CHM}, we also translate the results from the fit to the HL/HE-LHC data in the EFT formalism in terms of the parameters of those models.
+
+A more general analysis, going beyond pure modifications of Higgs couplings and (i) allowing for new physics also ({\bf{in the gauge sector?}}) of the EW interactions and (ii) combining the results of the Higgs fit with those from EW precision observables and diboson measurements will be presented in section~\ref{sec8:fit}. This fit will become relevant ({\bf{once all these processes have comparable sensitivities?}}) when the precision on the Higgs measurements goes below the threshold were the sensitivity to other EW interactions is comparable to that from current EW precision tests.
+
+\subsubsection{Kappa-formalism and the nonlinear EFT}
+\label{sec:2:kappavsEFT}
+\wip{This section was moved from the previous subsection and still needs to be polished!}\\
+The $\kappa$-formalism was introduced in\cite{LHCHiggsCrossSectionWorkingGroup:2012nn,Heinemeyer:2013tqa} as an interim framework to report on the measurements of the Higgs-boson couplings and characterize the nature of the Higgs boson. The $\kappa_{i}$ are defined as ratios of measured cross sections and decay widths with respect to their SM expectation, {\it i.e.}
+\begin{equation}
+  \label{eq:kappa.EFT.1}
+  \kappa^{2}_{X} = \frac{\sigma(X_i\rightarrow h+X_f)}{\sigma(X_i\rightarrow h+X_f)_{\text{SM}}}, \qquad \kappa^{2}_{Y} = \frac{\Gamma(h\rightarrow Y)}{\Gamma(h\rightarrow Y)_{\text{SM}}},
+\end{equation}
+so that the SM is recovered for $\kappa_i=1$.
+
+The $\kappa$-framework, defined at the level of signal strengths, was appropriate for the observables under study at Run I, which tested deviations in event rates. For Run II and the analyses required at the HL-LHC, differential distributions are needed. In order to study event shapes the formalism, as defined by eq.~\eqref{eq:kappa.EFT.1}, is clearly insufficient and has to be extended.
+
+A closely related issue is how to relate the $\kappa$-framework to a QFT description. A naive interpretation of the $\kappa$ factors as rescalings of SM Higgs couplings has been attempted, but this prescription is not necessarily consistent with QFT principles and has limitations that obstruct a successful implementation. More precisely, the following caveats apply:
+\begin{enumerate}
+\item In this prescription, only QCD corrections, which are factorizable, can be taken into account. Electroweak corrections cannot be implemented consistently.
+\item Gauge invariance and unitarity are generically broken by ad-hoc variations of the SM couplings.
+\item  In processes that are loop-induced in the SM, such as $h\to \gamma\gamma$ or $gg\to h$, care has to be taken. A rescaled local coupling, for example for $h\to \gamma\gamma$, does not yield an overall $\kappa_{\gamma}^2$ factor, since the process is not mediated by the local interaction only. In these loop processes the interplay of different couplings, most prominently $\kappa_t$, has to be consistently included.        
+\end{enumerate}
+The way to circumvent the objections above is to work not at the level of rescaled couplings but at the level of Lagrangians, where locality, unitarity and gauge invariance are automatically implemented. In order to be as general as possible, an upgrade of the $\kappa$-formalism should be embedded in the language of EFTs.
+
+Here we will discuss the interpretation of the $\kappa$ factors within the electroweak chiral Lagrangian (EWChL), also denoted as HEFT in the literature. Within this EFT, and only projecting out the leading contributions to processes with a single Higgs, one finds\cite{Buchalla:2015qju,Buchalla:2015wfa,deBlas:2018tjm}
+\begin{align}
+  \begin{aligned}
+    \label{eq:kappa.EFT.2}
+    \mathcal{L}_{\text{fit}} &= 2 c_{V} \left(m_{W}^{2}W_{\mu}^{+}W^{-\mu} +\tfrac{1}{2} m^2_Z Z_{\mu}Z^{\mu}\right) \dfrac{h}{v} - \sum_{\psi}c_{\psi} m_{\psi} \bar{\psi} \psi \dfrac{h}{v} \\
+ &+ \dfrac{e^{2}}{16\pi^{2}} c_{\gamma} F_{\mu\nu}F^{\mu\nu} \dfrac{h}{v}+ \dfrac{e^{2}}{16\pi^{2}} c_{Z\gamma} Z_{\mu\nu}F^{\mu\nu} \dfrac{h}{v}+\dfrac{g_{s}^{2}}{16\pi^{2}} c_{g}\langle G_{\mu\nu}G^{\mu\nu}\rangle\dfrac{h}{v},
+  \end{aligned}
+\end{align}
+where $m_{i}$ is the mass of particle $i$, $\psi \in \{t, b, c, \tau, \mu\}$, and the $c_{i}$ describe the modifications of the Higgs couplings.
+
+The previous Lagrangian differs from a naive rescaling of Higgs couplings, even though superficially it might seem to be equivalent. In particular, the Standard Model is consistently recovered in eq.~\eqref{eq:kappa.EFT.2} for
+\begin{equation}
+  \label{eq:kappa.EFT.3}
+    c_{i}^{\text{SM}} = \begin{cases} 1 & \text{for } i = V, t, b, c, \tau, \mu\\ 0 & \text{for } i = g, \gamma, Z\gamma. \end{cases}
+\end{equation} 
+which is not the case for a naive coupling rescaling. The crucial point is that the coupling modifiers in eq.~\eqref{eq:kappa.EFT.2} are not the full EFT, but just the relevant projection for the processes under study at non-trivial leading order in unitary gauge. Since the couplings differ from the SM ones, the previous Lagrangian, taken in isolation, would be non-renormalizable and break unitarity. These requirements are reinstated once eq.~\eqref{eq:kappa.EFT.2} is understood as part of the EWChL.
+ 
+The EWChL\cite{Dobado:1989ax,Dobado:1989ue,Dobado:1990zh,Dobado:1990jy,Espriu:1991vm,Herrero:1993nc,Herrero:1994iu,Feruglio:1992wf,Bagger:1993zf,Koulovassilopoulos:1993pw,Burgess:1999ha,Wang:2006im,Grinstein:2007iv,Azatov:2012bz,Alonso:2012px,Buchalla:2012qq,Buchalla:2013rka,Buchalla:2013eza} is a bottom-up effective field theory (EFT), constructed with the particle content and symmetries of the SM. These are the same requirements adopted in the construction of the SMEFT. The main difference between both EFTs concerns the Higgs field. In the EWChL, the Higgs boson, $h$, is included as a scalar singlet, with couplings unrelated to the ones of the Goldstone bosons of EWSB. Therefore, $h$ is not necessarily part of an SU(2) doublet and consequently the leading-order Lagrangian is non-renormalizable, i.e. loop divergences require the addition of new counterterms. The inclusion of the (finite) number of counterterms at each loop order makes the theory consistent. The procedure is analogous to the one employed in Chiral Perturbation Theory, whence the name EWChL. Counterterms needed for the 1-loop renormalization\cite{Guo:2015isa,Buchalla:2017jlu,Alonso:2017tdy} are included as NLO operators\cite{Buchalla:2013rka} and are therefore suppressed by a loop factor with respect to the leading order. The theory is thus renormalizable order by order in the loop expansion. The embedding of the EFT as a loop expansion can equivalently be expressed as an expansion in chiral dimensions \cite{Buchalla:2013eza}, which allows to identify the counterterms in a straightforward way. Further details and justifications of the expansion are discussed in \cite{Buchalla:2013rka,Buchalla:2013eza,Buchalla:2015wfa,Buchalla:2016sop}.
+
+Focussing on the leading effects of the measured processes only, the full EWChL reduces to the Lagrangian in eq.~\eqref{eq:kappa.EFT.2}. Note that it includes only single-Higgs processes, as the $\kappa$-formalism also describes only single-Higgs processes. If needed, eq.~\eqref{eq:kappa.EFT.2} can also be extended to describe other processes, simply by projecting the relevant operators already present in the EWChL. For instance, for double-Higgs production from gluon fusion three more operators should be added, corresponding to the interactions $h^{3},\bar{t}th^{2},ggh^{2}$~\cite{Grober:2015cwa,deFlorian:2016spz,Kim:2018uty,Buchalla:2018yce}. Double-Higgs production is discussed in more details in section~\ref{sec:EWChL.double.h}. Since the observed processes are mediated by both tree level and one-loop amplitudes at the first non-vanishing order, operators of leading order in the EFT (first line of eq.~\eqref{eq:kappa.EFT.2}) and next-to-leading order in the EFT (second line of eq.~\eqref{eq:kappa.EFT.2}) have to be included\cite{Buchalla:2015wfa}. Corrections beyond the leading ones, both strong and electroweak, can also be incorporated to arbitrary order in the description of Higgs processes. These corrections involve additional operators, not present in eq.~\eqref{eq:kappa.EFT.2}, but contained in the EWChL.
+
+Understood as corrections to the SM, the $\kappa$ factors can also be generated with the SMEFT (see e.g.\cite{Ghezzi:2015vva} and the discussion in \cite{Brivio:2017vri}). The main differences between both EFT descriptions are the following: (i) in the EWChL, deviations from the SM appear at leading order, and $\mathcal{O}(1)$ corrections to the $\kappa$ factors can be easily accommmodated. In the SMEFT, the corrections to the SM appear at NLO, and therefore smaller effects, typically at the precent level, are expected; (ii) In the SMEFT the Higgs is assumed to be a weak doublet. The EWChL instead describes a generic scalar and is therefore closer to the spirit of the $\kappa$ formalism of testing the nature of the Higgs boson.
+ 
+As stated above, the couplings in eq.~\eqref{eq:kappa.EFT.2} can receive a priori large contributions and have to be considered as $\mathcal{O}(1)$ numbers. This is the expectation if new physics contains strongly-coupled new interactions. In some of these scenarios, new-physics interactions can be progressively decoupled from the SM, and it is therefore useful to understand the Wilson coefficients in eq.~\eqref{eq:kappa.EFT.2} as functions of the parameter $\xi = v^{2}/f^{2}$, where $v\approx 246$ GeV is the electroweak vacuum expectation value, and $f$ is the scale of new physics. The latter could correspond, for example, to the scale of global symmetry breaking in composite Higgs models (see the discussion in sec.~\ref{sec9:CHM}). The SM is then recovered for $\xi=0$. For $\xi\ll 1$, one can perform an expansion in $\xi$ on top of the loop expansion in the EWChL. This yields a double expansion in $\xi$ and $1/16\pi^{2}$ \cite{Buchalla:2014eca}, in the spirit of the strongly-interacting light Higgs (SILH) \cite{Giudice:2007fh}. The expected size of the Wilson coefficients is then
+\begin{equation}
+  \label{eq:kappa.EFT.4}
+    c_{i} =  c_{i}^{\text{SM}} + \mathcal{O}(\xi).
+\end{equation}
+The mapping of the Wilson coefficients $c_{i}$ to the $\kappa_{i}$ parameters is done using the relations of the signal strengths computed from the Lagrangian in eq.~\eqref{eq:kappa.EFT.2}. The necessary formulas can be found in \cite{Buchalla:2015qju,deBlas:2018tjm}. These relations can be written as
+%
+\begin{equation}
+\label{eq:kappa.EFT.5}
+  \kappa_{i} =  |f_i(c_{j})| \equiv \frac{|{\cal A}_i(c_{j})|}{|{\cal A}_i(c_{j}^{\text{SM}})|}, 
+\end{equation}
+%
+where ${\cal A}$ is the corresponding transition amplitude of each process. 
+The absolute value on the right hand side is necessary, as the loop functions of the light fermions ($b,\tau,\mu,\dots$) for the $\kappa_{\gamma}$ and $\kappa_{g}$ are complex.
+
+The inverse of eq.~\eqref{eq:kappa.EFT.5} is, however, not a well-defined function. We can still obtain an approximate inverse, to connect both formalisms in the opposite direction. This can be easily obtained if we assume that all the imaginary parts are negligible. While this is a good approximation for some of the coefficients in $f_i(c_{j})$, for example for the coefficient of $c_{t}$, it is not the case for the coefficients of the light fermion loops, where real and imaginary parts are of similar size. Nevertheless, as long as the Wilson coefficients stay relatively close to the SM value, neglecting the imaginary parts completely is still a good approximation, because in $\kappa_g$ ($\kappa_\gamma$) the real part of the top loop (top and $W$ loops) contribution dominates over all the other terms.
+
+With the assumption of vanishing imaginary parts, eq.~\eqref{eq:kappa.EFT.5} becomes
+\begin{equation}
+  \label{eq:kappa.EFT.6}
+  \begin{pmatrix}
+    \kappa_{V}\\
+    \kappa_{t}\\
+    \kappa_{b}\\
+    \kappa_{\ell}\\
+    \kappa_{g}\\
+    \kappa_{\gamma}
+  \end{pmatrix}
+  = 
+  \begin{pmatrix}
+    1 & 0 & 0 & 0 & 0 & 0 \\
+    0 & 1 & 0 & 0 & 0 & 0 \\
+    0 & 0 & 1 & 0 & 0 & 0 \\
+    0 & 0 & 0 & 1 & 0 & 0 \\
+    0 & 1.055 & -0.055 & 0 & 1.3891 & 0 \\
+    1.2611 & -0.2683 & 0.0036 & 0.0036 & 0 & -0.3039 \\
+  \end{pmatrix}
+  \cdot
+  \begin{pmatrix}
+    c_{V}\\
+    c_{t}\\
+    c_{b}\\
+    c_{\tau}\\
+    c_{g}\\
+    c_{\gamma}
+  \end{pmatrix}.
+\end{equation}
+%
+These numbers also include the leading QCD corrections of the $h\to \gamma\gamma$ and $gg\to h$ amplitude. An explicit comparison of this approximation and the full formulas shows only negligible numerical differences. The inverse of eq.~\eqref{eq:kappa.EFT.6} is
+\begin{equation}
+  \label{eq:kappa.EFT.7}
+  \begin{pmatrix}
+    c_{V}\\
+    c_{t}\\
+    c_{b}\\
+    c_{\tau}\\
+    c_{g}\\
+    c_{\gamma}
+  \end{pmatrix}
+  = 
+  \begin{pmatrix}
+    1 & 0 & 0 & 0 & 0 & 0 \\
+    0 & 1 & 0 & 0 & 0 & 0 \\
+    0 & 0 & 1 & 0 & 0 & 0 \\
+    0 & 0 & 0 & 1 & 0 & 0 \\
+    0 & -0.76 & 0.04 & 0 & 0.72 & 0 \\
+    4.15 & -0.88 & 0.012 & 0.012 & 0 & -3.29 \\
+  \end{pmatrix}
+  \cdot
+  \begin{pmatrix}
+    \kappa_{V}\\
+    \kappa_{t}\\
+    \kappa_{b}\\
+    \kappa_{\ell}\\
+    \kappa_{g}\\
+    \kappa_{\gamma}
+  \end{pmatrix}.
+\end{equation}
+%
+With these relations one can translate the results of a $\kappa_i$ fit into the EWChL~formalism and vice-versa. 
+In order to do so, however, it is important to have all the relevant information about the fits. In particular,
+the median and errors of the parameters are not sufficient, since there may be also significant correlations between them.\\ 
+\wip{Previously written here (to be polished):}\\
+%Many explorations of deviation in Higgs couplings in the context of future proposed experiments are typically presented in the so called $\kappa$ framework~\cite{LHCHiggsCrossSectionWorkingGroup:2012nn,Heinemeyer:2013tqa}. In this phenomenological formalism one defines scaling factors, denoted $\kappa_i$, such that the production cross sections and decays of the Higgs boson involving the SM particle $i$, scale as $\kappa_i^2$.
+%This is indeed a helpful approach to quantify the precision in Higgs measurements. However, it lacks robustness from the theory point of view, as it cannot be extended at NLO and, in its more general form, misses correlations derived from well established symmetry principles. A more robust[/reliable] exploration of deformations in Higgs couplings can be performed within the formalism of effective field theories. In this section we consider the general parameterization provided by non-linear Higgs effective field theory. As explained, in section~\ref{sec:2:kappavsEFT}, as long as we restrict to the LO effective Lagrangian and one focuses only on deviations on Higgs couplings, it is possible to connect the results of this formalism to those from the $\kappa$ framework.
+%We refer the reader to section~\ref{sec:2:kappavsEFT} for the introduction of the non-linear Higgs effective Lagrangian and its connection with the $\kappa$ formalism.
+\\ 
+
+\subsubsection{The fit to HL/HE-LHC Higgs precision data}\label{sec:2:fit}
 
 The fits presented in this section have been performed using the {\tt HEPfit} package~\cite{hepfit,hepfitsite}, and following a statistical Bayesian approach. The prior for the different model parameters both in the EFT and in the $\kappa$ framework are taken as flat, centered around the SM solution, and restricting the ranges to avoid other solutions present due to the parametrization invariances of the different formalisms.
 Since no sensitivity to the $H\to c\bar{c}$ channel at the HL/HE-LHC has been reported yet we fix the corresponding parameters controlling the $Hc\bar c$ interactions to their SM values ($c_c,\kappa_c=1$).~\footnote{See ~\cite{deBlas:2018tjm} for a discussion of the multiplicities of the different solutions in the fit as well as the effect of letting the charm coupling float in the fits in absence of a significant direct constraint.}
 
 To assess the sensitivity to deviations from the SM, we assume the future measurements are SM-like and include them in the likelihood of the fit assuming Gaussian distributions with standard deviations given by the corresponding experimental uncertainty. 
 
-The analysis of current constraint has been taken directly from~\cite{deBlas:2018tjm}, it is based on the experimental data from~\cite{Aad:2014eha,Aaboud:2018xdt,Khachatryan:2014ira,CMS:2017rli,Aad:2014eva,Aaboud:2017vzb,Khachatryan:2014jba,Sirunyan:2017exp,Aaboud:2017jvq,Sirunyan:2018shy,ATLAS:2014aga,Aad:2015ona,ATLAS:2016gld,Chatrchyan:2013iaa,Sirunyan:2018egh,Aaboud:2017jvq,Sirunyan:2018shy,ATLAS-CONF-2018-004,Aad:2014xzb,Aaboud:2017rss,Chatrchyan:2013zna,CMS:2016mmc,Aad:2015gra,Aaboud:2017xsd,Khachatryan:2014qaa,Sirunyan:2018mvw,Sirunyan:2018ygk,Sirunyan:2017elk,Aad:2015vsa,Aaboud:2017jvq,Chatrchyan:2014nva,Sirunyan:2017khh,Sirunyan:2018shy,Khachatryan:2016vau,Aaboud:2017ojs,Khachatryan:2016vau,CMS-PAS-HIG-17-019,Aad:2015gba,Aaboud:2017uhw,Chatrchyan:2013vaa,CMS-PAS-HIG-17-007,Aaltonen:2013ipa,Abazov:2013gmz}. 
+The analysis of current constraint has been taken directly from~\cite{deBlas:2018tjm}, it is based on the experimental data from~\cite{Aaltonen:2013ipa,Abazov:2013gmz,Chatrchyan:2013iaa,Chatrchyan:2013vaa,Chatrchyan:2013zna,Aad:2014eha,Aad:2014eva,Aad:2014xzb,ATLAS:2014aga,Chatrchyan:2014nva,Khachatryan:2014ira,Khachatryan:2014jba,Khachatryan:2014qaa,Aad:2015gba,Aad:2015gra,Aad:2015ona,Aad:2015vsa,ATLAS:2016gld,CMS:2016mmc,Khachatryan:2016vau,Aaboud:2017jvq,Aaboud:2017ojs,Aaboud:2017rss,Aaboud:2017uhw,Aaboud:2017vzb,Aaboud:2017xsd,CMS:2017rli,CMS-PAS-HIG-17-007,CMS-PAS-HIG-17-019,Sirunyan:2017elk,Sirunyan:2017exp,Sirunyan:2017khh,Aaboud:2018xdt,ATLAS-CONF-2018-004,Sirunyan:2018egh,Sirunyan:2018mvw,Sirunyan:2018shy,Sirunyan:2018ygk}. 
 For the HL-LHC fits we use {\bf [We will use when available]} the corresponding ATLAS and CMS projections presented in section~\ref{???} of this document.  For the systematics and theory uncertainties we use the 2 possible scenarios presented in section~\ref{???}: S1, for which the systematics are kept as in current values, and S2, where experimental systematics are reduced with the luminosity and theory errors are reduced.
 %
 Finally, we use our ``naive'' estimates for the HE-LHC uncertainties, derived from the
 detailed HL-LHC projection by scaling the statistical uncertainties according with the changes in the production cross section going from 14 TeV to 27 TeV, as well as the different luminosities (3 ab$^{-1}$ for the HL-LHC and 15 ab$^{-1}$ in the HE-LHC).
 Other experimental and theory uncertainties are kept as in the HL-LHC case, and we use the same S1 and S2 scenarios. To be conservative, no further scaling with the HE-LHC luminosity is applied in the scenario S2, i.e.~it is kept as in the HL-LHC estimates. 
-\subsubsection{Results}
+\subsubsection{Results}\label{sec:2:results}
 {\bf [PRELIMINARY: Based on preliminary CMS numbers from July + Our own guesstimates for HELHC (explained above). 
 To be updated when the final experimental projections are available. Conclusions may therefore change.]}\\
 
@@ -34,13 +165,13 @@ Focusing our attention on the HL-LHC, and taking the conservative S1 scenario as
   \hline
   & Current limits~\cite{deBlas:2018tjm}  & HL-LHC S1 & HL-LHC S2 & HE-LHC S1&HE-LHC S2 \\
   \hline
-   $c_{V}$&$1.01\pm0.06$ &$\pm 0.021$&$\pm 0.015$&$\pm 0.013$&$\pm 0.008$\\
-  $c_{t}$&$1.04^{+0.09}_{-0.1}$&$\pm 0.049$&$\pm 0.028$&$\pm 0.031$&$\pm 0.016$\\
-  $c_{b}$&$0.95\pm0.13$ &$\pm 0.046$&$\pm 0.034$&$\pm 0.03$&$\pm 0.02$ \\
-  $c_{\tau}$&$1.02\pm 0.1$ &$\pm 0.027$&$\pm 0.02$& $\pm 0.017$&$\pm 0.011$\\
-  $c_{\mu}$&$0.58^{+0.4}_{-0.38} $ &$\pm 0.069$&$\pm 0.052$& $\pm 0.035$&$\pm 0.02$\\
-  $c_{g}$&$-0.01^{+0.08}_{-0.07} $ &$\pm 0.044$&$\pm 0.025$& $\pm 0.028$&$\pm 0.14$\\
-  $c_{\gamma}$ &$0.05\pm0.2 $&$\pm 0.081$&$\pm 0.055$&$\pm 0.051$&$\pm 0.032$\\
+   $c_{V}$&$1.01\pm0.06$ &$\pm 0.017$&$\pm 0.011$&$\pm 0.009$&$\pm 0.005$\\
+  $c_{t}$&$1.04^{+0.09}_{-0.1}$&$\pm 0.040$&$\pm 0.025$&$\pm 0.020$&$\pm 0.010$\\
+  $c_{b}$&$0.95\pm0.13$ &$\pm 0.042$&$\pm 0.028$&$\pm 0.023$&$\pm 0.012$ \\
+  $c_{\tau}$&$1.02\pm 0.1$ &$\pm 0.023$&$\pm 0.017$& $\pm 0.012$&$\pm 0.007$\\
+  $c_{\mu}$&$0.58^{+0.4}_{-0.38} $ &$\pm 0.056$&$\pm 0.044$& $\pm 0.020$&$\pm 0.014$\\
+  $c_{g}$&$-0.01^{+0.08}_{-0.07} $ &$\pm 0.032$&$\pm 0.020$& $\pm 0.016$&$\pm 0.008$\\
+  $c_{\gamma}$ &$0.05\pm0.2 $&$\pm 0.066$&$\pm 0.045$&$\pm 0.033$&$\pm 0.019$\\
 \hline
 \end{tabular}
 \caption{Current and future constraints on $c_{i}$ as shown in Figure~\ref{fig:projection.ci}.}\label{tab:projection.ci}
@@ -58,13 +189,13 @@ Focusing our attention on the HL-LHC, and taking the conservative S1 scenario as
   \hline
   & Current limits~\cite{deBlas:2018tjm}  & HL-LHC S1 & HL-LHC S2 & HE-LHC S1&HE-LHC S2 \\
   \hline
-   $\kappa_{V}$&$1.01\pm0.06$ &$\pm 0.021$&$\pm 0.015$&$\pm 0.013$&$\pm 0.008$\\
-  $\kappa_{t}$&$1.04^{+0.09}_{-0.1}$&$\pm 0.049$&$\pm 0.028$&$\pm 0.031$&$\pm 0.016$\\
-  $\kappa_{b}$&$0.94\pm 0.13$ &$\pm 0.046$&$\pm 0.034$&$\pm 0.03$&$\pm 0.02$ \\
-  $\kappa_{\tau}$&$1.0\pm 0.1$ &$\pm 0.027$&$\pm 0.02$& $\pm 0.017$&$\pm 0.011$\\
-  $\kappa_{\mu}$&$0.58^{+0.4}_{-0.38} $ &$\pm 0.069$&$\pm 0.052$& $\pm 0.035$&$\pm 0.02$\\
-  $\kappa_{g}$&$1.02^{+0.08}_{-0.07} $ &$\pm 0.035$&$\pm 0.022$& $\pm 0.024$&$\pm 0.13$\\
-  $\kappa_{\gamma}$ &$0.97\pm 0.07 $&$\pm 0.028$&$\pm 0.02$&$\pm 0.017$&$\pm 0.011$\\
+   $\kappa_{V}$&$1.01\pm0.06$ &$\pm 0.017$&$\pm 0.011$&$\pm 0.009$&$\pm 0.005$\\
+  $\kappa_{t}$&$1.04^{+0.09}_{-0.1}$&$\pm 0.040$&$\pm 0.025$&$\pm 0.020$&$\pm 0.010$\\
+  $\kappa_{b}$&$0.94\pm 0.13$ &$\pm 0.042$&$\pm 0.028$&$\pm 0.023$&$\pm 0.012$ \\
+  $\kappa_{\tau}$&$1.0\pm 0.1$ &$\pm 0.023$&$\pm 0.017$& $\pm 0.012$&$\pm 0.007$\\
+  $\kappa_{\mu}$&$0.58^{+0.4}_{-0.38} $ &$\pm 0.056$&$\pm 0.044$& $\pm 0.020$&$\pm 0.014$\\
+  $\kappa_{g}$&$1.02^{+0.08}_{-0.07} $ &$\pm 0.027$&$\pm 0.018$& $\pm 0.015$&$\pm 0.008$\\
+  $\kappa_{\gamma}$ &$0.97\pm 0.07 $&$\pm 0.023$&$\pm 0.016$&$\pm 0.012$&$\pm 0.007$\\
 \hline
 \end{tabular}
 \caption{Current and future constraints on $\kappa_{i}$ as shown in Figure~\ref{fig:projection.kappai}.}\label{tab:projection.kappai}

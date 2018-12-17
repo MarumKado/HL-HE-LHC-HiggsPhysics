@@ -1,5 +1,5 @@
 \begin{center}
-\textit{By S. Boselli, C. M. Carloni Calame, G. Montagna,
+\textit{by S. Boselli, C. M. Carloni Calame, G. Montagna,
   O. Nicrosini, F. Piccinini, A. Shivaji, F. Yu, Maria Moreno Llacer
   et al.}
 \end{center}
@@ -16,7 +16,7 @@ effective operators on Higgs physics is available in the literature
 (see for instance our analysis in Ref.~\cite{Boselli:2017pef} and the references therein), 
 the present analysis is focused on the impact of {\it CP}-odd effective operators on the 
 interactions among the Higgs boson and the electroweak bosons. 
-In the Higgs basis, the CP-violating sector of the BSM Lagrangian affecting $VVH$ couplings 
+In the Higgs basis, the CP-violating (CPV) sector of the BSM Lagrangian affecting $VVH$ couplings 
 is given by, 
 % 
 \begin{eqnarray}
@@ -33,37 +33,36 @@ parameters only three of them  are independent. In particular,
  \tCww = \tCzz + 2s_\theta^2 \tCza + s_\theta^4 \tCaa.
 \end{equation}
 
-The processes which are sensitive to CPV operators are the Higgstrahlung processes ($WH$ and $ZH$), the vector boson fusion (VBF) and the Higgs decay into four charged leptons ($H\to4\ell$). Here we focus on angular observables which are sensitive to CPV effects. Indeed, since the total cross-section is a CP-even quantity,  the $1/\Lambda^2$ effects of CPV operators can affect the shape of some specific kinematic distributions only. 
+The processes which are sensitive to CP-odd operators are the Higgstrahlung processes ($WH$ and $ZH$), the vector boson fusion (VBF) and the Higgs decay into four charged leptons ($H\to4\ell$). Here we focus on angular observables which are sensitive to CPV effects. Indeed, since the total cross-section is a CP-even quantity,  the $1/\Lambda^2$ effects of CPV operators can affect the shape of some specific kinematic distributions only. 
 
 
 
 \begin{table*}
-	\begin{center}
-		\begin{tabular}{lc|cccc}
-			\multicolumn{2}{c|}{Process}	 & Combination & Theory & Systematic & Statistical \\ \hline \hline
-			\multirow{5}{*}{${H}\to {ZZ}$}   		&$\text{ggF}$& 0.06 & 0.05 & 0.04 & 0.02 \\
-			&$\text{VBF}$& 0.17 & 0.10 & 0.10 & 0.10 \\
- 			&${WH}$& 0.16 & 0.06 & 0.07 & 0.13 \\
- 			&${ZH}$& 0.21 & 0.08 & 0.09 & 0.18 \\ 
- 			&${t\overline tH}$& 0.20 & 0.12 & 0.05 & 0.15 \\ \hline
-		\end{tabular}
-		\caption{Estimated relative uncertainties on the determination of single-Higgs production channels. The 
-		estimation of experimental uncertainties is for the high-luminosity LHC (14 TeV center of mass energy and 3 ab$^{-1}$ integrated luminosity)~\cite{}. The theoretical 
-		uncertainties are taken from~\cite{}.}\label{tab:one}
-	\end{center}
+        \begin{center}
+                \begin{tabular}{lc|ccccc}
+                        \multicolumn{2}{c|}{Process}     & Combination & Statistical & Theory (Sig.) & Theory (Bkg.) & Experimental \\ \hline \hline
+                        \multirow{5}{*}{${H}\to {ZZ}$}
+                        &$\text{ggF}$      & 6.6  & 2.1  & 5.4  & 1.7 & 2.7\\
+                        &$\text{VBF}$      & 15.2 & 11.7 & 9.1  & 2.4 & 1.8\\
+                        &${WH}$            & 48.0 & 46.5 & 6.2  & 2.8 & 7.8\\
+                        &${ZH}$            & 82.5 & 75.7 & 27.0 & 7.6 & 16.4\\
+                        &${t\overline tH}$ & 26.9 & 23.6 & 10.9 & 2.5 & 4.2\\ \hline
+                \end{tabular}
+                \caption{Estimated uncertainties [\%] on the determination of single-Higgs production channels in $H \to 4\ell$ decay mode. These are CMS projections for high-luminosity LHC (14 TeV center of mass energy and 3 ab$^{-1}$ integrated luminosity) in scenario S1 (systematic uncertanties are kept constant with luminosity) taken from CMS-PAS-FTR-18-011.}\label{tab:one}
+        \end{center}
 \end{table*}
 
 \subsubsubsection{\bf Global Fit}
 
-To study the sensitive on CP-violating parameters $\tCza$ and $\tCzz$ at HL and HE-LHC, we perform a $\chi^2$ fit using 
-the signal strength ($\mu_{i,f}$) as the observable. 
+To study the sensitivity on CP-violating parameters $\tCza$ and $\tCzz$ at HL and HE-LHC, we perform a $\chi^2$ fit using, as observable, 
+the signal strength ($\mu_{i,f}$) in the Higgs production channel ($i$) and Higgs decay channel ($f$). 
 We can build a $\chi^2$  as follows:
 
 \begin{equation}
  \chi^2(\tCza,\tCzz) = \sum_{i,f} \frac{(\mu_{i,f} -\mu_{i,f}^{\rm obs.})^2}{\Delta_{i,f}^2}
 \end{equation}
 {
-The signal strength, $\mu_{i,f}$ is function of the BSM parameters and it is defined as, 
+The signal strength, $\mu_{i,f}$ is a function of the BSM parameters and it is defined as, 
 \begin{eqnarray}
  \mu_{i,f} &=& \mu_i \times \mu_f \\
          &=& \frac{\sigma_i^{\rm BSM}}{\sigma_i^{\rm SM}} \times \frac{{\rm BR}_f^{ \rm BSM}}{{\rm BR}_f^{ \rm SM}}.
@@ -72,9 +71,9 @@ The signal strength, $\mu_{i,f}$ is function of the BSM parameters and it is def
 The uncertainty, $\Delta_{i,f}^2$ includes theoretical, experimental systematic and statistical uncertainties which 
 are added in quadrature to obtain the total uncertainty.
 The one-sigma uncertainties for the high-luminosity (14 TeV center of mass energy and 3 ab$^{-1}$ integrated luminosity) are given in table~\ref{tab:one}. 
-Assuming same acceptance efficiency, we scale the statistical uncertainties at 14 TeV and 3 ab$^{-1}$ luminosity appropriately 
+Assuming the same acceptance efficiency, we scale the statistical uncertainties at 14 TeV and 3 ab$^{-1}$ luminosity appropriately 
 to obtain the statistical uncertainties at 27 TeV and 15 ab$^{-1}$ 
-luminosity. The theoretical and systematic uncertainties are kept unchanged.
+luminosity. The theoretical and experimental systematic uncertainties are kept unchanged.
 
 When considering kinematic distribution in the fit, we estimate the statistical uncertainty in each bin by scaling 
 the overall statistical uncertainty by the fraction of number 
@@ -83,8 +82,8 @@ and systematic uncertainties are assumed to be the same in all the bins implying
 a very conservative scenario.
 
 
-Since we are interested in the sensitivity on the CPV parameters that can be reached at HL and HE LHC for which we don't have any data, we take 
-$\mu_{i,f}^{\rm obs.}=1$ implying that the future data would be consistent with the SM hypothesis. In the current analysis we consider all the production channels and Higgs decaying to four charged-lepton that is, $i={{\rm ggF, VBF}, ZH, WH, t{\bar t}H}$ and $f=4\ell (2e2\mu, 4e, 4\mu)$. The projected uncertainties in these channels for HL-LHC are given in table~\ref{tab:one}. Note that only the $H\to 4\ell $ decay mode has a non-trivial kinematic distribution and therefore other decay modes in the present analysis have been ignored.
+Since we are interested in the sensitivity on the CPV parameters that can be reached at HL and HE LHC and for which we don't have any experimental data yet, we take 
+$\mu_{i,f}^{\rm obs.}=1$, implying that the future data would be consistent with the SM hypothesis. In the current analysis, we consider all the single Higgs production channels and Higgs decaying to four charged-leptons, {\it i.e} $i={{\rm ggF, VBF}, ZH, WH, t{\bar t}H}$ and $f=4\ell (2e2\mu, 4e, 4\mu)$. The projected uncertainties in these channels for HL-LHC are given in table~\ref{tab:one}. Note that only the $H\to 4\ell $ decay mode has a non-trivial kinematic distribution and therefore other decay modes in the present analysis have been ignored.
 All the results in the following sections are presented taking $M_H=$125 GeV.
 }\\
 
@@ -92,7 +91,7 @@ All the results in the following sections are presented taking $M_H=$125 GeV.
 
 {
 The first step is to calculate the signal strengths for the relevant production channels in presence of the CP-violating
-parameters $\tCza$ and $\tCzz$. We use MG5~\cite{} to obtain the inclusive cross sections in presence of these parameters. We have generated the required UFO model file for MG5 using the FeynRules package~\cite{}.  At 14 TeV, the production signal strengths are given by, }
+parameters $\tCza$ and $\tCzz$. We use {\tt Madgraph5\_aMC@NLO}~\cite{Alwall:2014hca} to obtain the inclusive cross sections in presence of these parameters. We have generated the required UFO model file for {\tt Madgraph} using the {\tt FeynRules} package~\cite{Degrande:2011ua,Alloul:2013bka}.  At 14 TeV, the production signal strengths are given by, }
 
 
 \begin{eqnarray}\label{eq:mu14tev}
@@ -120,7 +119,7 @@ The BSM predictions for VBF are derived using following cuts,
 \begin{equation}
  p_T(j) > 20~{\rm GeV}, |\eta(j)| < 5, \Delta\eta_{jj} > 3, m_{jj} > 130~{\rm GeV} \nonumber.
 \end{equation}
-The $VH$ production modes are more sensitive to $\tCzz$ parameters.
+We find that the $VH$ production modes are more sensitive to $\tCzz$ parameters.
 The ggF and $t{\bar t}H$ production channels are unaffected in presence of CP-violating $VVH$ 
 couplings. Therefore, 
 % 
@@ -149,20 +148,18 @@ channels in presence of $\tCza$ and $\tCzz$. Both the $e$ and $\mu$ are treated 
    + (-0.00595)~\tCza\tCzz.
 \end{eqnarray}
 }
-The above expression for Higgs decay 
-into $4e$ is obtained after applying a selection cut of { 4 GeV} on the leading and subleading lepton pairs 
+The above expression for Higgs decay
+into $2e2\mu$ and $4e$ are obtained after applying a selection cut of { 4 GeV} on the leading and subleading lepton pairs
 of opposite sign.
 
 In the present analysis, we also assume that total Higgs decay width remains unchanged in presence of BSM. In this
-case, the signal strength for decay is just the ratio of decay widths in BSM and in SM.
-{
+case, the signal strength for decay is just the ratio of decay widths in BSM and in SM, that is,
 \begin{eqnarray}\label{eq:mu4l}
  \mu_{4\ell} &=& \frac{\Gamma^{\rm BSM}_{4\ell}}{\Gamma^{\rm SM}_{4\ell}}  \nn \\
  &=& 1  + 1.138~ \tCza^2 + 
  0.00265~ \tCzz^2  +
  (-0.00674)~ \tCza \tCzz 
 \end{eqnarray}
-}
 We note that, the dependence of the $4\ell$ decay signal strength on the parameter $\tCzz$ is very weak. \\
 
 {\bf Decay signal strength : Differential} \\
@@ -177,45 +174,41 @@ which are affected by CP-violating $VVH$ couplings, in improving the sensitivity
 % 	{\left| k_{12} \times k1 \right| \left| k_{12} × k_3 \right|}
 % \end{equation}
 The Higgs rest frame angle $\phi$ between the decay planes of the two intermediate gauge bosons  
-is one of the most sensitive kinematic observables to the CP-Violating $VVH$ couplings. We have considered 50 bins of $\phi$-distribution to perform the fit at differential level. For each bin, we calculate the signal strength ($\mu_{4\ell}^j, j=1\to50$) corresponding 
-to Eq.~\ref{eq:mu4l} which is also sensitive to linear terms in $\tCza$ and $\tCzz$.
+is one of the most sensitive kinematic observables to the CP-Violating $VVH$ couplings~\cite{}. We have considered 50 bins of $\phi$-distribution to perform the fit at differential level. For each bin, we calculate the signal strength ($\mu_{4\ell,j}; j=1\to50$) corresponding 
+to Eq.~\ref{eq:mu4l}. Unlike $\mu_{4\ell}$ in Eq.~\ref{eq:mu4l}, $\mu_{4\ell,j$ is also sensitive to linear terms in $\tCza$ and $\tCzz$.
 
-\subsubsubsection{\bf Result: HL and HE-LHC Analysis}
+\subsubsubsection{\bf Result: HL and HE-LHC Analyses}
 
-The results of the $\chi^2$ fit are displayed in Fig.~\ref{fig:fit1p} and Fig.~\ref{fig:fit2p}. In these results, 
+\begin{figure}[h!]
+\centering
+ \includegraphics[scale=0.6]{\main/section2/plots/tCza-Chisq-HL3ab-HE15ab-S1}
+\includegraphics[scale=0.6]{\main/section2/plots/tCzz-Chisq-HL3ab-HE15ab-S1}
+\caption{ $\chi^2$ dependence on CP-violating parameters taking one parameter non-zero at a time 
+at HL-LHC (3 ab$^{-1}$, green) and HE-LHC (15 ab$^{-1}$, blue) for uncertainty scenario S1. The solid lines refer to the fit performed using $H \to 4\ell$ decay width at inclusive level (1 bin) while, the dashed lines refer to the fit obtained using $H \to 4\ell$ decay width at differential level ($\phi$-distribution with 50 bins).}\label{fig:fit1p}
+\end{figure}
+
+\begin{figure}
+\centering
+ \includegraphics[scale=1.2]{\main/section2/plots/tCza-tCzz-HL3ab-HE15ab-S1}
+\caption{ $1\sigma$  reach on $\tCza$ and 
+$\tCzz$ at HL-LHC (3 ab$^{-1}$, green) and HE-LHC (15 ab$^{-1}$, blue) for uncertainty scenario S1. The solid lines refer to the fit performed using $H \to 4\ell$ decay width at inclusive level (1 bin) while, the dashed lines refer to the fit obtained using $H \to 4\ell$ decay width at differential level ($\phi$-distribution with 50 bins).  }\label{fig:fit2p}
+\end{figure}
+
+The results of the $\chi^2$ fit for CP-violating parameters $\tCza$ and $\tCzz$ are displayed in Fig.~\ref{fig:fit1p} and Fig.~\ref{fig:fit2p}. In these results, 
  {\it incl.} refers to the fit obtained using 
-the total partial decay width information in the $H \to 4\ell$ channel, while {\it diff.} refers to the fit obtained using 
+the partial decay width information in the $H \to 4\ell$ channel, while {\it diff.} refers to the fit obtained using 
 $\phi$-distribution in $H \to 4\ell$ decay. In Fig.~\ref{fig:fit1p}, we show 
 $1\sigma$ and $2\sigma$ bounds on $\tCza$ and $\tCzz$ in a one parameter (1P) 
-analysis.  At the inclusive level 
+analysis.  We find that at HL-LHC we are more sensitive to $\tCza$ than to $\tCzz$. At the inclusive level 
 we gain better sensitivity on $\tCzz$ than on $\tCza$ when going from HL-LHC 
-to HE-LHC. However, due to a stronger dependence of $\mu_{4\ell}$ on $\tCza$ the effect of using $\phi$-distribution in the fit is larger for $\tCza$ than for 
-$\tCzz$.
+to HE-LHC. This is mainly due to a stronger dependence of the production signal strength on parameter $\tCzz$. However, due to a stronger dependence of $\mu_{4\ell}$ on $\tCza$ the effect of using $\phi$-distribution in the fit is larger for $\tCza$ than for $\tCzz$.
 
 In Fig.~\ref{fig:fit2p}, we provide $1\sigma$ contour lines in the $\tCza-\tCzz$ plane. We can see that the parameters $\tCza$ and $\tCzz$ are weekly correlated. 
 Once again we find that using $\phi$-distribution in the fit improves our 
 sensitivity on CP-violating parameters significantly.
 The parameter $\tCzz$ is mainly constrained by the production channels $VH$ and VBF.
-We have given a summary of $1\sigma$ bounds on $\tCza$ and $\tCzz$ obtained from our analysis for HL and HL-LHC in Table~\ref{tab:tab3}.
+We have given a summary of $1\sigma$ bounds on $\tCza$ and $\tCzz$ obtained from our analyses for HL and HE-LHC in Table~\ref{tab:tab3}.
 }
-
-
-
-\begin{figure}[h!]
-\centering
- \includegraphics[scale=0.6]{\main/section2/plots/tCza-Chisq-HL3ab-HE15ab}
-\includegraphics[scale=0.6]{\main/section2/plots/tCzz-Chisq-HL3ab-HE15ab}
-\caption{$\chi^2$ dependence on CP-violating parameters taking one parameter non-zero at a time 
-at HL (3 ab$^{-1}$) and HE (15 ab$^{-1}$) LHC. {\cred Preliminary} }\label{fig:fit1p}
-\end{figure}
-
-\begin{figure}
-\centering
- \includegraphics[scale=1.2]{\main/section2/plots/tCza-tCzz-HL3ab-HE15ab}
-\caption{$1\sigma$  reach on $\tCza$ and 
-$\tCzz$ at HL (3 ab$^{-1}$) and HE (15 ab$^{-1}$) LHC. {\cred Preliminary} }\label{fig:fit2p}
-\end{figure}
-
 
 
 \begin{table}
@@ -224,23 +217,20 @@ $\tCzz$ at HL (3 ab$^{-1}$) and HE (15 ab$^{-1}$) LHC. {\cred Preliminary} }\lab
  \hline
   \backslashbox{Analysis}{Parameter} & $\tCza$ & $\tCzz$ & Case \\
   \hline\hline
-%     8+13 TeV LHC ($4\ell$, incl.) & [-0.30,0.30] & [-0.32,0.32] & 1P \\
-%     8+13 TeV LHC ($4\ell$, incl.) & [-0.38,0.38] & [-0.52,0.52] & 1P$_{marg.}$ \\
-%     \hline
-    HL-LHC ($4\ell$, incl.) & [-0.20,0.20] & [-0.19,0.19]& 1P \\
-     HL-LHC ($4\ell$, incl.) & [-0.26,0.26] & [-0.26,0.26]& 1P$_{marg.}$ \\
+    HL-LHC ($4\ell$, incl.) & [-0.22,0.22] & [-0.33,0.33]& 1P \\
+                            & [-0.25,0.25] & [-0.27,0.27]& 1P$_{marg.}$ \\
     \hline
-    HL-LHC ($4\ell$, diff.) & [-0.10,0.10] & [-0.17,0.17]& 1P \\
-     HL-LHC ($4\ell$, diff.) & [-0.13,0.13] & [-0.22,0.22]& 1P$_{marg.}$ \\
+    HL-LHC ($4\ell$, diff.) & [-0.10,0.10] & [-0.31,0.31]& 1P \\
+                            & [-0.13,0.13] & [-0.22,0.22]& 1P$_{marg.}$ \\
     \hline
-    HE-LHC ($4\ell$, incl.) & [-0.17,0.17] & [-0.14,0.14]& 1P \\
-     HE-LHC ($4\ell$, incl.) & [-0.22,0.22] & [-0.20,0.20]& 1P$_{marg.}$ \\
+    HE-LHC ($4\ell$, incl.) & [-0.18,0.18] & [-0.17,0.17]& 1P \\
+                            & [-0.23,0.23] & [-0.20,0.20]& 1P$_{marg.}$ \\
     \hline
-    HE-LHC ($4\ell$, diff.) & [-0.04,0.04] & [-0.07,0.07]& 1P  \\
-     HE-LHC ($4\ell$, diff.) & [-0.06,0.06] & [-0.10,0.10]& 1P$_{marg.}$ \\
+    HE-LHC ($4\ell$, diff.) & [-0.05,0.05] & [-0.13,0.13]& 1P  \\
+                            & [-0.06,0.06] & [-0.10,0.10]& 1P$_{marg.}$ \\
  \end{tabular}
-\caption{Summary of 1$\sigma$ bounds on $\tCza$ and $\tCzz$ from various analysis considered here. 1P refers to the case
-where only one parameter is non-zero while 1P$_{marg.}$ refers to the case in which one of the two parameters is marginalized. {\cred Preliminary}}\label{tab:tab3}
+\caption{ Summary of 1$\sigma$ bounds on $\tCza$ and $\tCzz$ from various analyses considered in our study for uncertainty scenario S1. 1P refers to the case
+where only one parameter is non-zero while 1P$_{marg.}$ refers to the case in which the effect of one of the two parameters is marginalized.}\label{tab:tab3}
 \end{table}
 
 

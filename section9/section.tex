@@ -8,22 +8,25 @@
 
 \section{Searches for beyond the standard model Higgs physics}
 
-\emph{Make sure your contribution is in a separate file!}
+
 
 %\subfile{\main/section9/mssm_2hdm}
 
-\subsection{Production of $t\bar{t}h$ and $t\bar{t}h h$ at the LHC in Composite Higgs models}
-\subfile{\main/section9/MCHM_tthh}
-
 \subsection{Exotic decays of the Higgs boson}
 \subfile{\main/section9/h4jet}
+\subfile{\main/section9/HEHL_HiggsLLP}
 \subfile{\main/section9/summary_of_2b2mu}
+\subfile{\main/section9/hxswg_curtin_v1}
 \subfile{\main/section9/HiggsToALPs}
 %\subfile{\main/section9/cms_higgs2a4mu}
 % commented out to allow the circulation, since approval is not likely by the version1 submission deadline 
 % it must be uncommented as soon as FTR-18-035 is approved! (certainly for version2)
 
-\subsection{Searches for additional Higgs bosons in fermionic final states}
+
+
+
+
+\subsection{Searches for additional neutral Higgs bosons in fermionic final states}\label{sec:Hff}
 \subfile{\main/section9/cms_htt/cms_htt}
 \subfile{\main/section9/atlas_htt}
 \subfile{\main/section9/lhcb}
@@ -31,116 +34,18 @@
 %\subsection{Searches for additional Higgs bosons in diboson final states}
 % CMS HZZ will be here 
 
-\subsection{MSSM charged Higgs bosons}
-\subfile{\main/section9/MSSMCharged}
-
-\subsection{Interference effects in heavy Higgs searches}
-\subfile{\main/section9/HHinterference}
-
-\subsection{Interpretation of the Higgs couplings in terms of Composite Higgs models}
-\subfile{\main/section9/InterpretationCH}
 
 \subsection{Sensitivity to heavy Higgs bosons from the 2HDM in "Higgs-to-Higgs" decays}
 \subfile{\main/section9/2HDM_BSM_Higgs_AZH}
 
-\vspace{5cm}
-\subsection{All contributions below: Move your contribution to a separate file!}
 
-\clearpage
+\subsection{Interference effects in heavy Higgs searches}
+\subfile{\main/section9/HHinterference}
 
-\subsection{Interpretation of the Higgs couplings in terms of SUSY models}
-
-\subfile{\main/section9/MSSMbenchmarks}
-
-
-\subsection{Searches for low mass Higgs bosons (below 120 GeV)}
-
-
+\subsection{MSSM charged Higgs bosons}
+\subfile{\main/section9/MSSMCharged}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Introduction}\label{sec:intro}
-
-Many extensions of the Standard Model (SM) Higgs sector allow for new
-charged and neutral Higgs bosons that can be lighter than the Higgs
-boson discovered~\cite{Aad:2012tfa,Chatrchyan:2012xdj} at $\approx 125$~GeV. 
-However, as the observed (heavier) Higgs boson shows itself to be 
-increasingly SM-like~\cite{Falkowski:2013dza} in its couplings to $WW$
-and $ZZ$ pairs~\cite{Khachatryan:2014kca,Khachatryan:2016vau,Sirunyan:2017exp,Sirunyan:2017tqd,Aaboud:2017oem,Falkowski:2013dza},
-as well as to fermions~\cite{Aaboud:2018zhk,CMS:2018abb}, we are in
-general pushed into an `alignment without decoupling'
-limit~\cite{Gunion:2002zf,Carena:2013ooa}, which has been examined in a
-number of recent
-studies~\cite{Craig:2013hca,Carena:2014nza,Carena:2015moc,Bernon:2015wef,Profumo:2016zxo,Bechtle:2016kui,Haber:2017erd,Bahl:2018zmf}. In
-this limit, the 125~GeV Higgs boson has SM like couplings without having
-to decouple the other Higgs bosons which might be present allowing them
-to be lighter than 125~GeV. In what follows we work in the alignment
-without decoupling limit focusing on new Higgs bosons in the mass range
-$65 - 120$~GeV, between the SM-like Higgs mass and its two body decay
-threshold. 
-
-In two Higgs doublet models (2HDM) alignment occurs when one of the
-neutral CP-even Higgs mass eigenstates is approximately aligned in field
-space with the direction of the vacuum expectation value
-(\emph{vev})~\cite{Carena:2013ooa,Bernon:2015wef}. For non-doublet
-electroweak multiplets (as well as singlets~\cite{Robens:2015gla}), one
-obtains an `aligned' SM-like Higgs when the
-non-doublet~\cite{Georgi:1985nv,Killick:2013mya} Higgs \emph{vev} is
-small, which typically also suppresses the Higgs mixing
-angle~\cite{Haber:1978jt,Hartling:2014zca}. Furthermore, in the singlet
-and non-doublet multiplet cases, the new Higgs bosons are (at least
-approximately) fermiophobic, making them generically harder to
-detect~\cite{Akeroyd:1998ui,Akeroyd:1995hg,Delgado:2016arn,Vega:2018ddp}
-either directly or indirectly as we discuss more below.  
-
-In this review we summarize the relevant experimental constraints on
-light Higgs bosons in the mass range $65 - 120$~GeV. We also discuss
-models which can realize light Higgs bosons and highlight promising
-search signals at the LHC. This includes searching for deviations in
-Higgs couplings since, as emphasized in~\cite{Bernon:2015wef}, even in
-the deep alignment regime where one might naively expect everything to
-be very SM-like, precise measurements of the 125~GeV Higgs boson signal
-strengths could uncover the existence of an extended Higgs sector. Some
-projections for a high luminosity/high energy LHC are also made. 
-The aim is to encourage new experimental analysis, targeting
-specifically searches for light Higgs bosons at the HL/HE-LHC.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Experimental constraints on light Higgs bosons}\label{sec:limits}
-
-In the mass range and alignment limit we consider, the most relevant
-constraints for the \emph{anti}-aligned neutral Higgs bosons but with
-significant couplings to SM fermions, come from CMS $b\bar{b}X$ with $X
-\to \tau\bar{\tau}$ searches~\cite{Khachatryan:2015baw} as well as
-ATLAS~\cite{Aad:2014vgg} and CMS~\cite{Khachatryan:2014wca} searches for
-$X \to \tau\bar{\tau}$ decays in both the $gg \to X$ and $b\bar{b}X$
-production modes. Similarly, the searches in the diphoton channel
-  place important bounds~\cite{CMS-PAS-HIG-17-013,ATLAS-CONF-2018-025}.%
-\footnote{It is interesting to note that the CMS search in the diphoton
-  channel~\cite{CMS-PAS-HIG-17-013} shows an excess of events at $\sim
-  96$~GeV, in the same mass range where the LEP searches in the 
-  $b \bar b$ final state observed a $2\,\sigma$ excess~\cite{Schael:2006cr}.}
-A recent CMS search~\cite{CMS:2015mba} for new
-resonances decaying to a $Z$ boson and a light resonance, followed by 
-$Z \to \ell\bar\ell$ and the light resonance decaying to $b\bar{b}$ or
-$\tau\bar{\tau}$ pairs, has also been shown to impose severe
-constraints~\cite{Bernon:2015wef} on light CP-even neutral Higgs
-bosons. Direct searches at LEP for light neutral Higgs states produced
-in pairs or in association with a $Z$ boson are also
-relevant~\cite{Barate:2003sz,Abbiendi:2004gn,Schael:2006cr},
-setting relevant limits on the couplings of the light Higgs to SM
-gauge bosons. For
-the charged Higgs bosons, LEP searches~\cite{Abbiendi:2013hk} and
-$B$-physics constraints from $R_b,\,\epsilon_K,\,\Delta m_B,\,B\to
-X_s\gamma$, and
-$B\to\tau\nu$~\cite{Haisch:2008ar,Mahmoudi:2009zx,Gupta:2009wn,Jung:2010ik,Misiak:2015xwa}
-measurements impose the most stringent constraints. These limits apply
-to all 2HDMs and impose particularly severe constraints on
-\emph{non}-type-I 2HDMs~\cite{Bernon:2015wef} in which there is no
-fermiophobic limit.  
-
-As emphasized in numerous studies~\cite{Ilisie:2014hea,Enberg:2016ygw,Delgado:2016arn,Degrande:2017naf,Vega:2018ddp}, the above limits are less stringent (most limits can be rescaled) when the Higgs bosons have highly suppressed couplings to SM fermions as can happen in the type-I 2HDM~\cite{Haber:1978jt} in the large $\tan\beta$ limit~\cite{Akeroyd:1995hg}. For non-doublet extended Higgs sectors one automatically has suppressed couplings to SM fermions when the non-doublet \emph{vev} is small (or mixing angle in the case of singlets) since they only enter (if at all) through mixing with the SM-like Higgs boson~\cite{Killick:2013mya}.~In the case of fermiophobia, the most robust probes of neutral Higgs bosons are inclusive diphoton~\cite{Delgado:2016arn,Degrande:2017naf,Vega:2018ddp} and multiphoton searches~\cite{Akeroyd:2005pr,Abdallah:2003xf,Aaltonen:2016fnw} which utilize the Drell-Yan pair production channel of a charged and neutral Higgs boson.~Constraints from electroweak (EW) precision data~\cite{Baak:2011ze,ALEPH:2010aa} also apply with the primary effect being that the neutral and charged Higgs bosons are constrained to be not too different in mass.  
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Models with light Higgs bosons}\label{sec:models}
+\subsection{Models with light Higgs bosons}\label{sec:models}
 
 A number of recent studies of the alignment without decoupling limit in
 2HDMs have been performed which consider the case where the SM-like
@@ -258,6 +163,107 @@ well as recent CMS searches~\cite{CMS:2015mba} for $A \to Zh$ with $Z
   $\sim 96$~GeV~\cite{CMS-PAS-HIG-17-013}).
  
 \end{itemize}
+
+\subsection{Production of $t\bar{t}h$ and $t\bar{t}h h$ at the LHC in Composite Higgs models}
+\subfile{\main/section9/MCHM_tthh}
+
+\subsection{Interpretation of the Higgs couplings in terms of Composite Higgs models}
+\subfile{\main/section9/InterpretationCH}
+
+
+
+
+
+\subfile{\main/section9/MSSMbenchmarks}
+
+
+\subsection{Searches for low mass Higgs bosons (below 120 GeV)}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Introduction}\label{sec:intro}
+
+Many extensions of the Standard Model (SM) Higgs sector allow for new
+charged and neutral Higgs bosons that can be lighter than the Higgs
+boson discovered~\cite{Aad:2012tfa,Chatrchyan:2012xdj} at $\approx 125$~GeV. 
+However, as the observed (heavier) Higgs boson shows itself to be 
+increasingly SM-like~\cite{Falkowski:2013dza} in its couplings to $WW$
+and $ZZ$ pairs~\cite{Khachatryan:2014kca,Khachatryan:2016vau,Sirunyan:2017exp,Sirunyan:2017tqd,Aaboud:2017oem,Falkowski:2013dza},
+as well as to fermions~\cite{Aaboud:2018zhk,CMS:2018abb}, we are in
+general pushed into an `alignment without decoupling'
+limit~\cite{Gunion:2002zf,Carena:2013ooa}, which has been examined in a
+number of recent
+studies~\cite{Craig:2013hca,Carena:2014nza,Carena:2015moc,Bernon:2015wef,Profumo:2016zxo,Bechtle:2016kui,Haber:2017erd,Bahl:2018zmf}. In
+this limit, the 125~GeV Higgs boson has SM like couplings without having
+to decouple the other Higgs bosons which might be present allowing them
+to be lighter than 125~GeV. In what follows we work in the alignment
+without decoupling limit focusing on new Higgs bosons in the mass range
+$65 - 120$~GeV, between the SM-like Higgs mass and its two body decay
+threshold. 
+
+In two Higgs doublet models (2HDM) alignment occurs when one of the
+neutral CP-even Higgs mass eigenstates is approximately aligned in field
+space with the direction of the vacuum expectation value
+(\emph{vev})~\cite{Carena:2013ooa,Bernon:2015wef}. For non-doublet
+electroweak multiplets (as well as singlets~\cite{Robens:2015gla}), one
+obtains an `aligned' SM-like Higgs when the
+non-doublet~\cite{Georgi:1985nv,Killick:2013mya} Higgs \emph{vev} is
+small, which typically also suppresses the Higgs mixing
+angle~\cite{Haber:1978jt,Hartling:2014zca}. Furthermore, in the singlet
+and non-doublet multiplet cases, the new Higgs bosons are (at least
+approximately) fermiophobic, making them generically harder to
+detect~\cite{Akeroyd:1998ui,Akeroyd:1995hg,Delgado:2016arn,Vega:2018ddp}
+either directly or indirectly as we discuss more below.  
+
+In this review we summarize the relevant experimental constraints on
+light Higgs bosons in the mass range $65 - 120$~GeV. We also discuss
+models which can realize light Higgs bosons and highlight promising
+search signals at the LHC. This includes searching for deviations in
+Higgs couplings since, as emphasized in~\cite{Bernon:2015wef}, even in
+the deep alignment regime where one might naively expect everything to
+be very SM-like, precise measurements of the 125~GeV Higgs boson signal
+strengths could uncover the existence of an extended Higgs sector. Some
+projections for a high luminosity/high energy LHC are also made. 
+The aim is to encourage new experimental analysis, targeting
+specifically searches for light Higgs bosons at the HL/HE-LHC.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Experimental constraints on light Higgs bosons}\label{sec:limits}
+
+In the mass range and alignment limit we consider, the most relevant
+constraints for the \emph{anti}-aligned neutral Higgs bosons but with
+significant couplings to SM fermions, come from CMS $b\bar{b}X$ with $X
+\to \tau\bar{\tau}$ searches~\cite{Khachatryan:2015baw} as well as
+ATLAS~\cite{Aad:2014vgg} and CMS~\cite{Khachatryan:2014wca} searches for
+$X \to \tau\bar{\tau}$ decays in both the $gg \to X$ and $b\bar{b}X$
+production modes. Similarly, the searches in the diphoton channel
+  place important bounds~\cite{CMS-PAS-HIG-17-013,ATLAS-CONF-2018-025}.%
+\footnote{It is interesting to note that the CMS search in the diphoton
+  channel~\cite{CMS-PAS-HIG-17-013} shows an excess of events at $\sim
+  96$~GeV, in the same mass range where the LEP searches in the 
+  $b \bar b$ final state observed a $2\,\sigma$ excess~\cite{Schael:2006cr}.}
+A recent CMS search~\cite{CMS:2015mba} for new
+resonances decaying to a $Z$ boson and a light resonance, followed by 
+$Z \to \ell\bar\ell$ and the light resonance decaying to $b\bar{b}$ or
+$\tau\bar{\tau}$ pairs, has also been shown to impose severe
+constraints~\cite{Bernon:2015wef} on light CP-even neutral Higgs
+bosons. Direct searches at LEP for light neutral Higgs states produced
+in pairs or in association with a $Z$ boson are also
+relevant~\cite{Barate:2003sz,Abbiendi:2004gn,Schael:2006cr},
+setting relevant limits on the couplings of the light Higgs to SM
+gauge bosons. For
+the charged Higgs bosons, LEP searches~\cite{Abbiendi:2013hk} and
+$B$-physics constraints from $R_b,\,\epsilon_K,\,\Delta m_B,\,B\to
+X_s\gamma$, and
+$B\to\tau\nu$~\cite{Haisch:2008ar,Mahmoudi:2009zx,Gupta:2009wn,Jung:2010ik,Misiak:2015xwa}
+measurements impose the most stringent constraints. These limits apply
+to all 2HDMs and impose particularly severe constraints on
+\emph{non}-type-I 2HDMs~\cite{Bernon:2015wef} in which there is no
+fermiophobic limit.  
+
+As emphasized in numerous studies~\cite{Ilisie:2014hea,Enberg:2016ygw,Delgado:2016arn,Degrande:2017naf,Vega:2018ddp}, the above limits are less stringent (most limits can be rescaled) when the Higgs bosons have highly suppressed couplings to SM fermions as can happen in the type-I 2HDM~\cite{Haber:1978jt} in the large $\tan\beta$ limit~\cite{Akeroyd:1995hg}. For non-doublet extended Higgs sectors one automatically has suppressed couplings to SM fermions when the non-doublet \emph{vev} is small (or mixing angle in the case of singlets) since they only enter (if at all) through mixing with the SM-like Higgs boson~\cite{Killick:2013mya}.~In the case of fermiophobia, the most robust probes of neutral Higgs bosons are inclusive diphoton~\cite{Delgado:2016arn,Degrande:2017naf,Vega:2018ddp} and multiphoton searches~\cite{Akeroyd:2005pr,Abdallah:2003xf,Aaltonen:2016fnw} which utilize the Drell-Yan pair production channel of a charged and neutral Higgs boson.~Constraints from electroweak (EW) precision data~\cite{Baak:2011ze,ALEPH:2010aa} also apply with the primary effect being that the neutral and charged Higgs bosons are constrained to be not too different in mass.  
+
+
 
 
 

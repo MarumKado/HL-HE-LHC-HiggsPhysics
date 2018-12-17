@@ -46,7 +46,7 @@ $\lambda_{\mathrm{BSM}}/\lambda_{\mathrm{SM}}$ & $\sigma_{\rm{NLO}}@14 \mathrm{T
 \label{tab:sigmatot}}
 \end{table}
 
-The results have been obtained using the parton distribution functions PDF4LHC15\_nlo\_100\_pdfas~\cite{Butterworth:2015oua,CT14,MMHT14,NNPDF},
+The results have been obtained using the parton distribution functions PDF4LHC15\_nlo\_100\_pdfas~\cite{Butterworth:2015oua,CT14,MMHT14,Ball:2014uwa},
 along with the corresponding value for $\alpha_s$ for both the NLO and
 the LO calculation.
 The masses have been set to $m_h=125$\,GeV, $m_t=173$\,GeV,
@@ -72,9 +72,11 @@ This fact is illustrated in Fig.~\ref{fig:Kfacvariation}, where it is demonstrat
 
 \subsubsubsection{Differential cross sections  at 14 TeV and 27 TeV}
 
-In Figs.~\ref{fig:lambda_small} and ~\ref{fig:lambda_large} we show the $\mhh$ distribution for various values of $\chhh=\lambda_{\mathrm{BSM}}/\lambda_{\mathrm{SM}}$. 
-The ratio plots show the differential K-factors. 
-
+In Figs.~\ref{fig:lambda_small} and ~\ref{fig:lambda_large} we show the $\mhh$ distribution for various values of $\lambda=\lambda_{\mathrm{BSM}}/\lambda_{\mathrm{SM}}$ at 14 TeV.
+Figs.~\ref{fig:lambda_small_27} and ~\ref{fig:lambda_large_27} 
+ show results for the $\mhh$ distribution at 27 TeV. The scale variation band for $\lambda=1$ is also included.
+ Note that $\lambda=2.4$ is the value where the cross section as a function of $\lambda$ goes through a minimum, due to maximal destructive interference between diagramms containing the trilinear coupling and diagrams which do not contain Higgs boson self-couplings.
+ 
 \begin{figure}[htb]
   \centering
   \subfloat[]{\label{fig:lambda_small_14}\includegraphics[width=0.6\textwidth]{\main/section3/plots/mhh_Kfac_14TeV_varylambda_small.pdf}}
@@ -90,23 +92,39 @@ The ratio plots show the differential K-factors.
     \includegraphics[width=0.6\textwidth]{\main/section3/plots/mhh_Kfac_14TeV_varylambda_large.pdf}
 %  \includegraphics[width=\textwidth]{plots/}
 %    \caption{\label{fig:lambda_large_27}}
-\caption{Higgs boson pair invariant mass distributions for $\lambda/\lambda_{\mathrm{SM}}=-1,3,5$)  at 14\,TeV.}
+\caption{Higgs boson pair invariant mass distributions for $\lambda=\lambda_{\mathrm{BSM}}/\lambda_{\mathrm{SM}}=-1,3,5$  at 14\,TeV.}
 \label{fig:lambda_large}
 \end{figure}
 
-{\it \ldots add 27TeV plots including ratio plots, to be completed}
+\begin{figure}[htb]
+  \centering
+    \includegraphics[width=0.6\textwidth]{\main/section3/plots/NLO_mHH_small_lambda_27TeV.pdf}
+%  \includegraphics[width=\textwidth]{plots/}
+%    \caption{\label{fig:lambda_large_27}}
+\caption{Higgs boson pair invariant mass distributions for $\lambda=\lambda_{\mathrm{BSM}}/\lambda_{\mathrm{SM}}=0,1,2,2.4$  at 27\,TeV. The scale uncertainties for the SM value of $\chhh$ are shown as a red band.}
+\label{fig:lambda_small_27}
+\end{figure}
+
+\begin{figure}[htb]
+  \centering
+    \includegraphics[width=0.6\textwidth]{\main/section3/plots/NLO_mHH_large_lambda_27TeV.pdf}
+%  \includegraphics[width=\textwidth]{plots/}
+%    \caption{\label{fig:lambda_large_27}}
+\caption{Higgs boson pair invariant mass distributions for $\lambda=\lambda_{\mathrm{BSM}}/\lambda_{\mathrm{SM}}=-1,1,3,5$)  at 27\,TeV. The scale uncertainties for the SM value of $\lambda$ are shown as a red band.}
+\label{fig:lambda_large_27}
+\end{figure}
 
 \begin{figure}[ht]
 \begin{center}
   \includegraphics[width=0.45\textwidth]{\main/section3/plots/3D_mhh_chhh.pdf}    
 \end{center}
 \caption{3-dimensional visualisation of the $\mhh$ distribution at
-  14\,TeV, as a function  $\chhh$.}
+  14\,TeV, as a function  $\lambda$.}
 \label{fig:chhh_3D}
 \end{figure}
 Fig.~\ref{fig:chhh_3D} shows the Higgs boson pair invariant mass
-distributions at NLO as a function of $\chhh$  as 3-dimensional heat maps.
-The other couplings are fixed to their SM values.
+distributions at NLO as a function of $\lambda=\chhh$  as a 3-dimensional heat map.
+The dip in the distribution around $\chhh=2.4$ is clearly visible.
  
 %\bibliography{bib/refs_HH_lambda}
 
