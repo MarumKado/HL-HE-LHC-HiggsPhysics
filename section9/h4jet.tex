@@ -8,7 +8,7 @@ and the trigger~\cite{cmstdr-017}.
 
 The bandwidth limitations of the first level (L1) trigger
 are one of the main problems facing current searches 
-for exotic Higgs boson decays, as well as many other signals beyond the standard model (BSM).
+for exotic Higgs boson decays, as well as many other signals beyond the standard model.
 The process where the Higgs boson decays to two new light scalars that in turn decay to jets, \Hphiphi, is an important example. If the scalar $\phi$ has a
 macroscopic decay length, the offline analysis has no background from SM processes, but the majority of the signal events do not get recorded because they fail to be selected by the L1 trigger.
 The main obstacle is the high rate for low transverse momentum jets, which is made worse by additional extraneous \pp collisions in the
@@ -93,7 +93,7 @@ The rates are computed based on a fixed number of colliding bunches. The trigger
 \begin{equation*}
   \text{Rate} = \effLT \Nbunches \fLHC,
 \end{equation*}
-where $\Nbunches=2750\mathrm{bunches}$ for 25\Uns bunch spacing operation, $\fLHC = 11246\UHz$, and \effLT is the efficiency to pass a given L1 threshold as determined
+where $\Nbunches=2750$ bunches for 25\Uns bunch spacing operation, $\fLHC = 11246\UHz$, and \effLT is the efficiency to pass a given L1 threshold as determined
 in simulation. For both the L1 trigger efficiency and rate, the performance of the TwoLayer hardware algorithm is compatible with the performance from the more sophisticated algorithm
 from \FASTJET.
 
@@ -116,7 +116,7 @@ from \FASTJET.
 
 In this section, we briefly describe the performance of an algorithm for reconstruction of tracks with non-zero impact parameter. This approach extends the baseline L1 Track Trigger design to 
 handle tracks with non-zero impact parameter and to include the impact parameter in the track fit. This enhanced design is feasible without greatly altering the track finding approach, but will 
-require more FPGA computational power than the current proposal, which only considers only prompt tracks. Tracks passing the selection are clustered using the same algorithm as described in Section~\ref{sec:trackjets}, 
+require more computational power than the current proposal, which considers only prompt tracks. Tracks passing the selection are clustered using the same algorithm as described in Section~\ref{sec:trackjets}, 
 and clusters containing tracks with high impact parameters are flagged as displaced jets. Though the baseline design of the L1 Track Trigger currently is optimized to find prompt tracks, these 
 studies show that an enhanced L1 Track Trigger can extend the L1 trigger acceptance to include new BSM physics signals.
 

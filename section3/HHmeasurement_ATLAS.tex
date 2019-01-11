@@ -1,11 +1,11 @@
 \begin{center}
-%\textit{by A. Bethani, A. Betti, P. Bokan, E. Carquin Lopez, M. Donadelli, A. Ferrari, K. Grimm, C.Gwilliam, M. Haacke, S. Lai, K.J.C. Leney, T. Lenz, S. Olivares, E. Petit, N. P. Readioff,P. Sales de Bruin, J. Stark, F. Walls, D. Wardrope, M. Wielers}
-\textit{Editor: E. Petit, ATLAS authorlist in preparation.}
+\textit{by A. Bethani, A. Betti, P. Bokan, E. Carquin Lopez, M. Donadelli, A. Ferrari, K. Grimm, C.Gwilliam, M. Haacke, S. Lai, K.J.C. Leney, T. Lenz, S. Olivares, E. Petit, N. P. Readioff,P. Sales de Bruin, J. Stark, F. Walls, D. Wardrope, M. Wielers}
+%\textit{Editor: E. Petit, ATLAS authorlist in preparation.}
 
 
 \end{center}
 
-A direct measurement of the Higgs boson trilinear self-coupling \lHHH can be made via the study of Higgs boson pair production. Only the dominant production mechanism at hadron colliders, gluon fusion, is considered, with the other production mechanisms being more than an order magnitude smaller.
+A direct measurement of the Higgs boson trilinear self-coupling \lHHH\ can be made via the study of Higgs boson pair production. Only the dominant production mechanism at hadron colliders, gluon fusion, is considered, with the other production mechanisms being more than an order magnitude smaller.
 The Feyman diagram which exhibits a \lHHH dependence interferes destructively with the box diagram that is independent of \lHHH , thus a small increase in the value of \lHHH decreases the expected HH production cross section, and modifies the distributions of event kinematics.
 
 The small SM non-resonant HH production cross section means that it is necessary to consider final states where at least one of the two Higgs bosons decays into a final state with a large branching ratio, ie $H \rightarrow b\bar{b}$. The most promising decays channels are $HH \rightarrow b\bar{b}b\bar{b}$, $HH \rightarrow b\bar{b}\tau\tau$ and $HH \rightarrow b\bar{b}\gamma\gamma$ with branching ratios of 33.9, 7.3 and 0.26\% respectively.
@@ -31,7 +31,7 @@ The largest source of systematic uncertainty comes from the ability to model the
 
 \begin{figure}[!htb]
 \centering 
-\subfloat[]{\label{fig:ATLAS_HH_4b_a}\includegraphics[width=0.5\textwidth]{\main/section3/plots/ATLAS_LimitVsSyst_Preliminary.eps}} 
+\subfloat[]{\label{fig:ATLAS_HH_4b_a}\includegraphics[width=0.5\textwidth]{\main/section3/plots/ATLAS_LimitVsSyst_Preliminary.pdf}} 
 \subfloat[]{\label{fig:ATLAS_HH_4b_b}\includegraphics[width=0.5\textwidth]{\main/section3/plots/M4jDistribution_3000fb_Preliminary.pdf}}
 \caption{(a) Expected 95\% CL upper limit on $\sigma_{HH} \times BR(HH \rightarrow b\bar{b}b\bar{b})/\sigma_{HH}^{SM}$, as a function of the background modelling uncertainties, which are each scaled by a common, constant factor relative to the corresponding uncertainty in the Run~2 analysis (i.e. the current uncertainties correspond to 1 here). 
 The limit achievable assuming the overall uncertainty to scale with luminosity as $1/\sqrt(L)$ is shown by the star point.
@@ -56,11 +56,11 @@ A profile-likelihood fit is applied to the BDT score distributions shown in Figu
 
 \begin{figure}[!htb]
 \centering 
-\subfloat[$\tau_{lep}\tau_{had}$ channel passing a single-lepton trigger (SLT)]{\label{fig:ATLAS_HH_bbtautau_a}\includegraphics[width=0.5\textwidth]{\main/section3/plots/HIGG-2016-16_fig_01a.pdf}} 
-\subfloat[$\tau_{lep}\tau_{had}$ channel passing a lepton-plus-$\tau_{had}$ trigger (LTT)]{\label{fig:ATLAS_HH_bbtautau_b}\includegraphics[width=0.5\textwidth]{\main/section3/plots/HIGG-2016-16_fig_01c.pdf}}\\
-\subfloat[$\tau_{had}\tau_{had}$ channel]{\label{fig:ATLAS_HH_bbtautau_c}\includegraphics[width=0.5\textwidth]{\main/section3/plots/HIGG-2016-16_fig_01e.pdf}}
-\subfloat[]{\label{fig:ATLAS_HH_bbtautau_d}\includegraphics[width=0.5\textwidth]{\main/section3/plots/ATLAS_bbtautau_LHscan.pdf}}
-\caption{(a), (b), (c) \textcolor{red}{PLACEHOLDER} Distributions of the BDT score for the three categories, extrapolated to 3000~$\ifb$ of data:. The distributions are shown after the fit to the background-only hypothesis and the signal is scaled to the expected limit.  (plot from~\cite{ATLASrun2HHbbtautau}, to be replaced). (d) \textcolor{red}{PLACEHOLDER} Minimum negative-log-likelihood as a function of \kl, calculated by performing a conditional signal+backgrond fit to the background and SM signal, with different hypotheses of systematic uncertainties considered.} 
+\subfloat[$\tau_{lep}\tau_{had}$ channel passing a single-lepton trigger (SLT)]{\label{fig:ATLAS_HH_bbtautau_a}\includegraphics[width=0.5\textwidth]{\main/section3/plots/TauLH_SLT_BDTScore}} 
+\subfloat[$\tau_{lep}\tau_{had}$ channel passing a lepton-plus-$\tau_{had}$ trigger (LTT)]{\label{fig:ATLAS_HH_bbtautau_b}\includegraphics[width=0.5\textwidth]{\main/section3/plots/TauLH_LTT_BDTScore}}\\
+\subfloat[$\tau_{had}\tau_{had}$ channel]{\label{fig:ATLAS_HH_bbtautau_c}\includegraphics[width=0.5\textwidth]{\main/section3/plots/TauHH_BDTScore}}
+\subfloat[]{\label{fig:ATLAS_HH_bbtautau_d}\includegraphics[width=0.5\textwidth]{\main/section3/plots/delta_NLLnew4_tautau_Systs_ApprovedRWbeffXsecFixedSMinj_TauTau_3000_Final1909StatOnlySMinjTT3000}}
+\caption{(a), (b), (c) Distributions of the BDT score for the three categories of the analysis, extrapolated to 3000~$\ifb$ of data. The background distributions are shown after the fit based on a background-only Asimov dataset and the signal is scaled to the SM prediction. The hatched bands represent the combined statistical and systematic uncertainty for the baseline scenario. These uncertainty bands are included in the plots for completeness but are very small. (d) Negative natural logarithm of the ratio of the maximum likelihood for $\kappa_{\lambda}$ to the maximum likelihood for $\kappa_{\lambda}$ = 1, obtained from fits to the Asimov dataset that contains the $\kappa_{\lambda}$ = 1 signal, with different hypotheses of systematic uncertainties considered.} 
 \label{fig:ATLAS_HH_bbtautau} 
 \end{figure}
 
@@ -93,8 +93,8 @@ The sensitivity of the analysis to \kl\ is assessed by using the $\mhh$ distribu
 
 \begin{figure}[!htb]
 \centering 
-\subfloat[]{\label{fig:ATLAS_HH_bbyy_a}\includegraphics[width=0.5\textwidth]{\main/section3/plots/bbyy_myy_SignalBackground_2GeVbins_Preliminary.pdf}} 
-\subfloat[]{\label{fig:ATLAS_HH_bbyy_b}\includegraphics[width=0.5\textwidth]{\main/section3/plots/mbbyy_SignalBackground_20GeVbins_variouskappa_Preliminary.pdf}} 
+\subfloat[]{\label{fig:ATLAS_HH_bbyy_a}\includegraphics[width=0.5\textwidth]{\main/section3/plots/bbyy_myy_SignalBackground_2GeVbins_Preliminary}} 
+\subfloat[]{\label{fig:ATLAS_HH_bbyy_b}\includegraphics[width=0.5\textwidth]{\main/section3/plots/mbbyy_SignalBackground_20GeVbins_variouskappa_Preliminary}} 
 \caption{(a) Distribution of $m_{\gamma\gamma}$ following the BDT response cut. (plot from~\cite{ITKPixelTDR}, to be replaced). (b) Distributions of $m_{b\bar{b}\gamma\gamma}$ for combined signal and background events passing the BDT selection and the requirement 123 \UGeV$ < \ensuremath{m_{\gamma\gamma}} $< 127~\UGeV, for various values of $\kappa_{\lambda}$.} 
 \label{fig:ATLAS_HH_bbyy} 
 \end{figure}
@@ -116,12 +116,12 @@ The combined sensitivity of the three channels to \kl\ is assessed by generating
 \centering 
 \subfloat[Statistical uncertainties only]{\label{fig:ATLAS_HH_comb_a}\includegraphics[width=0.5\textwidth]{\main/section3/plots/bbbb_bbtt_bbyy_lHHH0100_NoSyst_overlay_Preliminary.pdf}} 
 \subfloat[Statistical + systematic uncertainties]{\label{fig:ATLAS_HH_comb_b}\includegraphics[width=0.5\textwidth]{\main/section3/plots/bbbb_bbtt_bbyy_lHHH0100_AllSyst_overlay_Preliminary.pdf}} 
-\caption{Maximum likelihood for $\kappa_{\lambda}$ divided by the maximum likehood for $\kappa_{\lambda}$ = 1 for (a) the fits with only statistical uncertainties and (b) the fits with all systematic uncertainties as nuisance parameters. The black circles show the results for the combination, while the coloured markers show the values coming from the individual channels. The dashed lines at $-\ln\left(L_{\kappa_{\lambda}}/L_{\kappa_{\lambda}=1}\right) = 0.5$ and 2.0 indicate the values corresponding to the $1\sigma$ and $2\sigma$ confidence interval, respectively (assuming an asymptotic $\chi^2$ distribution of the test statistic).} 
+\caption{Maximum likelihood for $\kappa_{\lambda}$ divided by the maximum likehood for $\kappa_{\lambda}$ = 1 for (a) the fits with only statistical uncertainties and (b) the fits with all systematic uncertainties as nuisance parameters. The black circles show the results for the combination, while the coloured markers show the values coming from the individual channels. The dashed lines at $-\ln\left(L_{\kappa_{\lambda}}/L_{\kappa_{\lambda}=1}\right) = 0.5$ and 2.0 indicate the values corresponding to the $1\sigma$ and $2\sigma$ Confidence Intervals (CI), respectively (assuming an asymptotic $\chi^2$ distribution of the test statistic).} 
 \label{fig:ATLAS_HH_comb} 
 \end{figure}
 
-The 68\% Confidence Intervals for $\kappa_{\lambda}$, from the likelihood ratio test performed on the Asimov dataset created from the
-backgrounds and the SM HH signal are $0.4 \leq \kl\ \leq 1.7$ and $0.25 \leq \kl\ \leq 1.9$ with and without systematic uncertainties respectively. The Confidence Intervals per channel are summarised in Table~\ref{tab:ATLAS_HH_kappalambda}.
+The 68\% Confidence Intervals for $\kappa_{\lambda}$, from the likelihood ratio test performed on the Asimov dataset created from the backgrounds and the SM HH signal are $0.4 \leq \kl\ \leq 1.7$ and $0.25 \leq \kl\ \leq 1.9$ with and without systematic uncertainties respectively. The Confidence Intervals per channel are summarised in Table~\ref{tab:ATLAS_HH_kappalambda}. 
+The Higgs boson self-coupling is constrained at 95\% confidence level (CL) to $-0.4\leq\kappalambda\leq7.3$ ($-0.1\leq\kappalambda\leq2.7\cup5.5\leq\kappalambda\leq6.9$), with (without) systematic uncertainties.
 
 
 \begin{table}[htb!]
@@ -130,8 +130,8 @@ backgrounds and the SM HH signal are $0.4 \leq \kl\ \leq 1.7$ and $0.25 \leq \kl
  & \textbf{Statistical-only} & \textbf{Statistical + Systematic}\\
 \hline
 $HH \rightarrow b\bar{b}b\bar{b}$ & $-0.4 \leq \kappa_{\lambda} \leq 4.3$ & $-2.3 \leq \kappa_{\lambda} \leq 6.4$ \\
-$HH \rightarrow b\bar{b}\tau\tau$ &  $0.2 \leq \kappa_{\lambda} \leq 2.0 \cup 5.9 \leq \kappa_{\lambda} \leq 7.2$ & $0.0 \leq \kappa_{\lambda} \leq 2.3 \cup 5.7 \leq \kappa_{\lambda} \leq 7.8$ \\
-$HH \rightarrow b\bar{b}\gamma\gamma$ &  $0.0 \leq \kappa_{\lambda} \leq 2.1$ & $0.0 \leq \kappa_{\lambda} \leq 2.1$ \\
+$HH \rightarrow b\bar{b}\tau\tau$ &  $0.2 \leq \kappa_{\lambda} \leq 2.0 \cup 5.9 \leq \kappa_{\lambda} \leq 7.2$ & $0.1 \leq \kappa_{\lambda} \leq 2.3 \cup 5.7 \leq \kappa_{\lambda} \leq 7.8$ \\
+$HH \rightarrow b\bar{b}\gamma\gamma$ &  $-0.1 \leq \kappa_{\lambda} \leq 2.4$ & $-0.2 \leq \kappa_{\lambda} \leq 2.5$ \\
 combined &   $0.4 \leq \kappa_{\lambda} \leq 1.7$ & $0.25 \leq \kappa_{\lambda} \leq 1.9$ \\
 \bottomrule
 \end{tabular}
@@ -141,25 +141,6 @@ combined &   $0.4 \leq \kappa_{\lambda} \leq 1.7$ & $0.25 \leq \kappa_{\lambda} 
 \end{table}
 
 
-
-%Considering only statistical uncertainties the trilinear coupling modifier is measured to be:
-%%\begin{equation}
-%\[
-%\begin{split}
-%1^{+XX}_{-XX}  \text{ at 68\% CL} \\
-%1^{+XX}_{-XX}  \text{ at 95\% CL}
-%\end{split}
-%%\end{equation}
-%\]
-%Considering statistical and systematic uncertainties the trilinear coupling modifier is measured to be:
-%%\begin{equation}
-%\[
-%\begin{split}
-%1^{+XX}_{-XX}  \text{ at 68\% CL} \\
-%1^{+XX}_{-XX}  \text{ at 95\% CL}
-%\end{split}
-%%\end{equation}
-%\]
 
 Assuming the SM HH signal the expected exclusion significance for the \kl\ = 0 hypothesis, i.e. no Higgs self-coupling, is 1.4 and 1.8 standard deviations with and without systematic uncertainties respectively.
 

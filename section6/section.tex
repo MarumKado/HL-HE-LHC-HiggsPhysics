@@ -12,8 +12,6 @@
 \textit{by Anne-Marie Magnan, Ben Nachman, Tania Robens and Tim Stefaniak}
 \end{center}
 
-{\bf{Status: waiting for final experimental numbers}}
-
 Invisible decays of the $125~\mathrm{GeV}$ Higgs boson are a generic prediction of new physics models that feature a light dark matter (DM) particle which couples directly or indirectly to the Standard Model Higgs field. The invisible branching ratio in the SM is very small (0.1\%) so any observable rate would be evidence for physics beyond the SM.  LHC searches for this signature require the Higgs boson to be produced in association with a taggable object, most importantly, a $Z$-boson, extra forward jets (as appearing in the vector boson fusion process), or a single high-$p_T$ jet. Furthermore, the invisible Higgs decay to the DM particles inevitably suppresses the branching fractions for the Higgs decays to SM particles. This --- along with possible model-dependent alterations of the Higgs couplings --- leads to a modification of the LHC Higgs signal rates of channels with SM final states with respect to their SM expectation, which can be probed with precision Higgs measurements. 
 
 In so-called \emph{Higgs portal} models the SM Higgs field acts as a mediator between the visible SM sector and a hidden DM sector. {Commonly,} an additional symmetry {is introduced that} prohibits interactions of single hidden sector fields with SM fields, thus allowing only pair production of hidden sector particles and rendering the lightest hidden sector particle a stable DM candidate. 
@@ -43,7 +41,7 @@ boson production cross sections provided in Ref.~\cite{deFlorian:2016spz}.  Full
 The main backgrounds are processes involving vector bosons (W,Z)
 produced in association with jets, either through QCD or electroweak
 (EWK) vertices.  Monte Carlo samples for these backgrounds are
-generated at leading order (LO) using \MGvATNLO v2.2.2~\cite{Alwall:2014hca} interfaced with \PYTHIA v8.205~\cite{Sjostrand:2014zea} or higher. SM processes involving top quarks also contribute to the
+generated at leading order using \MGvATNLO v2.2.2~\cite{Alwall:2014hca} interfaced with \PYTHIA v8.205~\cite{Sjostrand:2014zea} or higher. SM processes involving top quarks also contribute to the
 background, and are simulated using a combination of the \POWHEG and \MGvATNLO generators. Backgrounds arising from QCD multijet events are simulated using \MGvATNLO interfaced with \PYTHIA, imposing a minimum threshold of 1000\,GeV on the dijet mass at parton level.
 
 
@@ -270,22 +268,20 @@ different integrated luminosities in figure~\ref{fig:1Dlimits}, right.
 \subsubsection{Experimental input}
 \label{sec6:exp}
 {For the VBF production channel, the projected HL-LHC limit on the invisible Higgs decay rate from the CMS experiment amounts to $4\%$, see Section~\ref{sec:expinp}. For the $VH$ production channel ATLAS projected a limit of around $8\%$ in 2013}~\cite{ATL-PHYS-PUB-2013-014}.
-Assuming ATLAS (CMS) performs equally well as CMS (ATLAS) in the $\text{VBF}$ ($VH$) channel, {and neglecting possible correlations of experimental and theoretical uncertainties, a combination of these limits results in}
+Assuming ATLAS (CMS) performs equally well as CMS (ATLAS) in the $\text{VBF}$ ($VH$) channel, and neglecting possible correlations of experimental and theoretical uncertainties, a combination of these limits results in
 \begin{align}\label{eq:brinvcombi}
 \left(\mu_{\text{VBF},VH} \cdot \BRHinv \right)^\text{HL-LHC} \le 2.5\%,
 \end{align}
 where $\mu_{\text{VBF},VH}$ is a common signal strength modifier of the VBF and $VH$ production cross sections.
 
 
-We implemented the CMS HL projections for Higgs signal strength measurements for the individual production times decay modes (see Section~\ref{sec:2:exp_combination})
-into the public code \texttt{HiggsSignals}~\cite{Bechtle:2013xfa,Bechtle:2014ewa}.
-We double the number of projections to account for the corresponding future ATLAS measurements.
-We consider both scenarios S1 and S2. These scenarios differ in the treatment of systematic uncertainties. In S1, systematic uncertainties are unchanged {with respect to current values}; S2 employs rescaled experimental systematic uncertainties~\cite{HLHELHCCommonSystematics}
- and furthermore assumes a reduction of theoretical uncertainties by a factor 2. Note that correlations of theoretical rate uncertainties between the future CMS and assumed ATLAS measurements are taken into account in our fit via \texttt{HiggsSignals}. 
+We implemented the ATLAS and CMS HL-LHC projections for Higgs signal strength measurements for the individual production times decay modes (see Section~\ref{sec:2:exp_combination}) into the code \texttt{Higgs\-Signals}~\cite{Bechtle:2013xfa,Bechtle:2014ewa}, including the corresponding correlation matrices.
+% assuming YR18 systematic uncertainties (S2).
+We consider the projections for both future scenarios S1 (with Run~2 systematic uncertainties) and S2 (with YR18 systematic uncertainties)~\cite{HLHELHCCommonSystematics}, see Sec.~\ref{sec:expcomb_prodtimesdecay}, Tab.~\ref{tab:summary_A1_5PD} {(\color{green} make sure table reference is correct once S2 results are included!)}.
+%These scenarios differ in the treatment of systematic uncertainties. In S1, systematic uncertainties are unchanged {with respect to current values}; S2 employs rescaled experimental systematic uncertainties~\cite{HLHELHCCommonSystematics} and furthermore assumes a reduction of theoretical uncertainties by a factor 2. 
+Note that correlations of theoretical rate uncertainties between the future ATLAS and CMS measurements are taken into account in our fit via \texttt{HiggsSignals}. 
 
-
-
-{We furthermore study the impact of a future electron-proton collider option (LHeC) at CERN~\cite{AbelleiraFernandez:2012cc,uta,uta2}, assuming a $60~\mathrm{GeV}$ electron beam, a $7~\mathrm{TeV}$ proton beam and an integrated luminosity of $1~\mathrm{ab}^{-1}$. We implemented the prospective signal strength measurements at the LHeC presented in Ref.~\cite{uta} into HS. The projected limit on the invisible Higgs decay rate is around $5\%$~\cite{uta,Tang:2015uha,kuzeLHeC,bc1,bc2,uta2} \footnote{Optimization of the signal selection, advanced background estimation techniques and details of the detector design may improve this limit down to about $(3-4)\%$~\cite{Utacommunications}.}.
+We furthermore study the impact of a future electron-proton collider option (LHeC) at CERN~\cite{AbelleiraFernandez:2012cc,uta,uta2}, assuming a $60~\mathrm{GeV}$ electron beam, a $7~\mathrm{TeV}$ proton beam and an integrated luminosity of $1~\mathrm{ab}^{-1}$. We implemented the prospective signal strength measurements at the LHeC presented in Ref.~\cite{uta} into \texttt{HiggsSignals}.\footnote{In addition to the experimental precision quoted in Ref.~\cite{uta} we assume a theoretical uncertainty of $1\%$ ($1.5\%$) on the charged (neutral) current production cross section, as well as a $1\%$ luminosity uncertainty.} The projected limit on the invisible Higgs decay rate is around $5\%$~\cite{uta,Tang:2015uha,kuzeLHeC,bc1,bc2,uta2} \footnote{Optimization of the signal selection, advanced background estimation techniques and details of the detector design may improve this limit down to about $(3-4)\%$~\cite{Utacommunications}.}.
 In combination with the above CMS and ATLAS projections, we obtain
 \begin{equation*}
 \left(\mu_{\text{VBF},VH,\text{NC}} \cdot \text{BR}_\text{inv}\right)^{\text{HL-LHC}\oplus\,\text{LHeC}}\,\leq\,2.25\%
@@ -312,11 +308,11 @@ In particular, we investigate two scenarios for the Higgs coupling modifications
 \includegraphics[width=0.49\textwidth]{\main/section6/plots/kappa_BR_LHeC_BRinv0p05}
 \hfill
 \includegraphics[width=0.49\textwidth]{\main/section6/plots/kappa_BR_LHeC_HLLHCS2_BRinv0p0225}
-\caption{Projected $95\%~\mathrm{C.L.}$ limit in the $(\kappa, \BRHinv)$ plane inferred from Higgs rate measurements (\emph{green regions}) and direct invisible Higgs searches (\emph{black dashed line}) at the HL-LHC and LHeC. {We show results for the two future HL-LHC scenarios S1 {\sl (top left)} and S2 {\sl (top right)} (see text for details), as well as for the LHeC {\sl (bottom left)} and the combination of LHeC and HL-LHC (S2) {\sl (bottom right)}.} The light green area shows the limit from Higgs rates obtained by assuming no new physics contributions to the loop-induced Higgs couplings to gluons and photons, $\kappa = \kappa_g = \kappa_\gamma$, whereas for the dark green area $\kappa_g$ and $\kappa_\gamma$ are marginalized free parameters.{\sl These plots will be updated once ATLAS and CMS signal strength combination projections become available.} }
+\caption{Projected $95\%~\mathrm{C.L.}$ limit in the $(\kappa, \BRHinv)$ plane inferred from Higgs rate measurements (\emph{green regions}) and direct invisible Higgs searches (\emph{black dashed line}) at the HL-LHC and LHeC. We show results for the two future HL-LHC scenarios S1 [with Run~2 systematic uncertainties] {\sl (top left)} and S2 [with YR18 systematic uncertainties] {\sl (top right)} (see text for details), as well as for the LHeC {\sl (bottom left)} and the combination of LHeC and HL-LHC~[S2] {\sl (bottom right)}. The light green area shows the limit from Higgs rates obtained by assuming no new physics contributions to the loop-induced Higgs couplings to gluons and photons, $\kappa = \kappa_g = \kappa_\gamma$, whereas for the dark green area $\kappa_g$ and $\kappa_\gamma$ are marginalized free parameters.}
 \label{fig:effC}
 \end{figure}
 
-We employ the program \texttt{HiggsSignals}~\cite{Bechtle:2013xfa,Bechtle:2014ewa} to perform a $\chi^2$ fit to the projected HL-LHC {and/or LHeC} Higgs rate measurements (see Section~\ref{sec6:exp})  in each scenario. The resulting future $95\%~\mathrm{C.L.}$ limit is shown in Fig.~\ref{fig:effC} as light and dark green area for scenario (\emph{i}) and (\emph{ii}), respectively. {The \emph{top panels} display the HL-LHC projections for future scenarios S1 (\emph{left}) and S2 (\emph{right}), while the \emph{bottom panels} show the projections for LHeC (\emph{left}) and the combination of LHeC with HL-LHC S2 measurements (\emph{right}).} {In Tab.~\ref{tab:effC_limits} we summarize the lower limits on the Higgs signal strength of channels with SM final states, $\kappa^2 (1-\BRHinv)$, as well as the upper limits on the invisible Higgs decay rate, $\mathrm{BR}_\text{inv}$, assuming SM Higgs coupling strengths ($\kappa \equiv 1$), for the four future collider scenarios and for the two global fit scenarios.} Note that these results do not strictly require the additional Higgs decay mode to yield an invisible final state.
+We employ the program \texttt{HiggsSignals}~\cite{Bechtle:2013xfa,Bechtle:2014ewa} to perform a $\chi^2$ fit to the projected HL-LHC {and/or LHeC} Higgs rate measurements (see Section~\ref{sec6:exp})  in each scenario. The resulting future $95\%~\mathrm{C.L.}$ limit is shown in Fig.~\ref{fig:effC} as light and dark green area for scenario (\emph{i}) and (\emph{ii}), respectively. {The \emph{top panels} display the HL-LHC projections for future scenarios S1 [with Run~2 systematic uncertainties] (\emph{left}) and S2 [with YR18 systematic uncertainties] (\emph{right}), while the \emph{bottom panels} show the projections for LHeC (\emph{left}) and the combination of LHeC with HL-LHC S2 measurements (\emph{right}).} {In Tab.~\ref{tab:effC_limits} we summarize the lower limits on the Higgs signal strength of channels with SM final states, $\kappa^2 (1-\BRHinv)$, as well as the upper limits on the invisible Higgs decay rate, $\mathrm{BR}_\text{inv}$, assuming SM Higgs coupling strengths ($\kappa \equiv 1$), for the four future collider scenarios and for the two global fit scenarios.} Note that these results do not strictly require the additional Higgs decay mode to yield an invisible final state.
 
 \begin{table}
 \centering
@@ -324,15 +320,15 @@ We employ the program \texttt{HiggsSignals}~\cite{Bechtle:2013xfa,Bechtle:2014ew
 \hline
 fit setup &  quantity   & HL-LHC S1   & HL-LHC S2   & LHeC	  & LHeC $\oplus$ HL-LHC S2 \\
 \hline
-\multirow{2}{*}{$(\kappa, \mathrm{BR}_\text{inv})$} &  $\kappa^2 (1-\BRHinv)$ &  $\ge 0.933$ & $\ge 0.957$ & $\ge 0.959$  & $\ge 0.969$ \\
- 									  &   $\BRHinv$ ($\kappa\equiv 1$) & $\le 6.7\%$ & $\le 4.3\% $ & $\le 4.1\%$ & $\le 3.1\%$\\
+\multirow{2}{*}{$(\kappa, \mathrm{BR}_\text{inv})$}                         &  $\kappa^2 (1-\BRHinv)$ &  $\ge 0.933$ & $\ge 0.958$ & $\ge 0.959$  & $\ge 0.967$ \\
+                                                                            &  $\BRHinv$ ($\kappa\equiv 1$) & $\le 6.7\%$ & $\le 4.2\% $ & $\le 4.1\%$ & $\le 3.3\%$\\
 \hline									  
-\multirow{2}{*}{$(\kappa, \kappa_g, \kappa_\gamma,  \mathrm{BR}_\text{inv})$} &  $\kappa^2 (1-\BRHinv)$ & $\ge0.930$ &  $\ge0.954$ & $\ge0.959$ & $\ge0.966$\\
- 									  &   $\BRHinv$ ($\kappa\equiv 1$) & $\le7.0\%$ & $\le4.6\%$ & $\le4.1\%$ & $\le3.4\%$\\
+\multirow{2}{*}{$(\kappa, \kappa_g, \kappa_\gamma,  \mathrm{BR}_\text{inv})$}   &  $\kappa^2 (1-\BRHinv)$ & $\ge0.930$ &  $\ge0.954$ & $\ge0.959$ & $\ge0.966$\\
+                                                                                &   $\BRHinv$ ($\kappa\equiv 1$) & $\le7.0\%$ & $\le4.6\%$ & $\le4.1\%$ & $\le3.4\%$\\
 
 \hline
 \end{tabular}
-\caption{{Comparison of prospective $95\%~\mathrm{C.L.}$ limits on the Higgs signal strength for SM final states, $\kappa^2(1-\mathrm{BR}_\text{inv})$, and the invisible Higgs decay rate, $\mathrm{BR}_\text{inv}$ (assuming SM Higgs couplings, $\kappa =1$), for HL-LHC scenarios S1 and S2, LHeC, and the combination of LHeC and HL-LHC (scenario S2). First (second) row shows the results obtained in the fit parametrization (\emph{i}) [(\emph{ii})].}}
+\caption{{Comparison of prospective $95\%~\mathrm{C.L.}$ limits on the Higgs signal strength for SM final states, $\kappa^2(1-\mathrm{BR}_\text{inv})$, and the invisible Higgs decay rate, $\mathrm{BR}_\text{inv}$ (assuming SM Higgs couplings, $\kappa =1$), for HL-LHC scenarios S1 and S2, LHeC, and the combination of LHeC and HL-LHC (assuming scenario S2). First (second) row shows the results obtained in the fit parametrization (\emph{i}) [(\emph{ii})].}}
 \label{tab:effC_limits}
 \end{table}
 
@@ -341,9 +337,9 @@ These results are compared in Fig.~\ref{fig:effC} with the prospective future li
 
 
 
-At the LHeC the prospective indirect Higgs rate constraints are comparable to the HL-LHC S2 prospects, reaching a precision of $\Delta \kappa \lesssim (2.1-2.2)\%$ independently of the invisible Higgs decay rate, in both fit parametrizations considered here.\footnote{The complementarity of LHeC and HL-LHC Higgs rate measurements is much stronger in more general coupling fit setups, e.g., when independent scale factors for the Higgs-$W$-$W$ and Higgs-$Z$-$Z$ couplings are considered~\cite{uta}.} On the other hand, the direct invisible Higgs searches at the LHeC are weaker than at the HL-LHC. In combination with the HL-LHC (assuming future scenario S2), the bounds from the Higgs rates can further be improved to coupling deviations of $\Delta \kappa \lesssim1.5\%$. 
+At the LHeC the prospective indirect Higgs rate constraints are comparable to the HL-LHC S2 prospects, reaching a precision of $\Delta \kappa \lesssim (2.1-2.3)\%$ independently of the invisible Higgs decay rate, in both fit parametrizations considered here.\footnote{The complementarity of LHeC and HL-LHC Higgs rate measurements is much stronger in more general coupling fit setups, e.g., when independent scale factors for the Higgs-$W$-$W$ and Higgs-$Z$-$Z$ couplings are considered~\cite{uta}.} On the other hand, the direct invisible Higgs searches at the LHeC are weaker than at the HL-LHC. In combination with the HL-LHC (assuming future scenario S2), the bounds from the Higgs rates can further be improved to coupling deviations of $\Delta \kappa \lesssim1.7\%$. 
 
-{Compared with the sensitivity of Higgs rate measurements during Run~1 of the LHC~\cite{Khachatryan:2016vau} to the invisible decay rate, $\BRHinv \lesssim \mathcal{O}({20\%})$} (at $95\%~\mathrm{C.L.}$), we find that the sensitivity improves by roughly a factor of $3$--$5$  at the HL-LHC (depending on the evolution of systematic uncertainties). In combination with LHeC results we expect the indirect limit to improve by a factor of up to {$6.5$}.
+{Compared with the sensitivity of Higgs rate measurements during Run~1 of the LHC~\cite{Khachatryan:2016vau} to the invisible decay rate, $\BRHinv \lesssim \mathcal{O}({20\%})$} (at $95\%~\mathrm{C.L.}$), we find that the sensitivity improves by roughly a factor of $3$--$5$  at the HL-LHC (depending on the evolution of systematic uncertainties). In combination with LHeC results we expect the indirect limit to improve by a factor of up to $6$.
 
 
 
@@ -387,9 +383,9 @@ We now turn our discussion to a model that features an additional scalar singlet
 The SM Higgs sector is extended by two real scalar singlet fields, $S$ and $X$. Imposing a $\mathbb{Z}_2$ symmetry described by the transformation $S\to -S$, $X\to -X$, the model is characterized by the scalar potential $\mathcal{V} = \mathcal{V}_\mathrm{visible}  + \mathcal{V}_\mathrm{hidden}$, where
 \begin{align}
 \label{Eq:Vvis}\mathcal{V}_\mathrm{visible} &=   \mu_{\Phi}^2 \Phi^\dagger \Phi + \lambda_\Phi (\Phi^\dagger \Phi)^2 + \mu_S^2 S^2 + \lambda_S S^4 + \lambda_{\Phi S} \Phi^\dagger \Phi S^2,\\
-\label{Eq:Vhid} \mathcal{V}_\mathrm{hidden} &= \frac{1}{2}\left[\mu^2_{X} X^2 + \lambda_X X^4 + \lambda_{SX} S^2 X^2\right]. 
+\label{Eq:Vhid} \mathcal{V}_\mathrm{hidden} &= \frac{1}{2}\left[\mu^2_{X} X^2 + \lambda_X X^4 + \lambda_{SX} S^2 X^2 + \lambda_{\Phi X} \Phi^\dagger \Phi X^2\right]. 
 \end{align}
-After electroweak symmetry breaking the scalar $\mathrm{SU}(2)_L$ doublet field $\Phi$ is given by 
+For the sake of simplicity we assume that the quartic interaction between the scalar doublet $\Phi$ and the DM scalar $X$ can be neglected, $\lambda_{\Phi X} \approx 0$. After electroweak symmetry breaking the scalar $\mathrm{SU}(2)_L$ doublet field $\Phi$ is given by 
 $\Phi \equiv \left(0 \quad \phi + v\right)^T/\sqrt{2}$, with the vacuum expectation value (vev) $v \approx 246\UGeV$. 
 We assume the scalar field $S$ to acquire a non-zero vev, $v_S$, which softly breaks the $\mathbb{Z}_2$ symmetry, such that the singlet field $S$ is given by $S \equiv (s + v_S)/\sqrt{2}$. Through the last term in Eq.~\eqref{Eq:Vvis} the non-zero vevs induce a mixing of the physical degrees of freedom of these two fields, $\phi$ and $s$,
 \begin{align}

@@ -1,4 +1,4 @@
-\documentclass[11pt,twoside,a4paper]{cernrep} 
+ \documentclass[11pt,twoside,a4paper]{cernrep} 
 \usepackage{rep_common,booktabs,hyperref}
 \pagestyle{plain}
 
@@ -28,8 +28,7 @@
 \linenumbers
 \newcommand{\main}{.}
 \newcommand{\code}[1]{\texttt{#1}}
-\newcommand{\ifb}{\ensuremath{fb^{-1}}\xspace}
-\newcommand{\iab}{\ensuremath{ab^{-1}}\xspace}
+\newcommand*{\ifb}{\mbox{fb$^{-1}$}}                                                                             \newcommand{\iab}{\ensuremath{ab^{-1}}\xspace}
 
 \newcommand{\de}{\partial}
 \newcommand{\Mb}{\bar{M}}
@@ -481,8 +480,15 @@ Higgs Physics\\ at the HL-LHC and HE-LHC\\
 
 
 %%%%%
-Abstract to go here
+This report presents the work done by the Higgs working group of the "Workshop on Physics at HL-LHC, and perspectives on HE-LHC". It covers in detail the physics reach of the HL-LHC in the study of the Higgs boson, and discusses for the first time the potential of a possible upgrade of the LHC to a 27 TeV pp collider in the context of Higgs physics. 
 
+
+\vspace*{2.0cm}
+
+\begin{center}
+{\it
+This document is a draft and work is still ongoing for its finalization. The complete report is foreseen to be submitted January 31st 2019. }
+\end{center}
 
 %%%%%
 
@@ -518,6 +524,15 @@ Abstract to go here
 \newpage
 \subfile{\main/section10/section}
 \newpage
+
+
+\section*{Acknowledgements}
+We would like to thank the LHC experimental Collaborations and the WLCG for their essential support.
+We are especially grateful for the efforts by the computing, generator and validation groups who were
+instrumental for the creation of large simulation samples. We thank the detector upgrade groups as well
+as the physics and performance groups for their input.  Not least, we thank the many colleagues who
+have provided useful comments on the analyses.
+
 
 \addcontentsline{toc}{chapter}{References}
 \bibliographystyle{report}
