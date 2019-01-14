@@ -4,7 +4,7 @@ from inspiretools import pyinspire
 
 # Determine the repeated entries.
 blg = open("report.blg")
-bib = open("tmp.bib", "w")
+bib = open("miss.bib", "w")
 for line in blg:
     if line.startswith("Warning--I didn't find a database entry"):
         key = line.split()[-1].replace('"', "")

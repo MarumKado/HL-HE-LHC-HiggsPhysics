@@ -1,39 +1,29 @@
 #!/usr/bin/env python
 import shutil
 
-# Determine the repeated entries.
-blg = open("report.blg")
-bibs = {}
-for line in blg:
-    if line.startswith("Repeated entry"):
-        bib = line.split()[-1]
-        line = next(blg)
-        key = line.split()[-1].split("{")[-1]
-        if not bib in bibs: bibs[bib] = []
-        bibs[bib] += [key]
-blg.close()
+# Create the bibliography database.
+bdb = {}
 
-# Clean the bibliography files.
-for name, keys in bibs.items():
-    bib  = open(name)
-    tmp  = open("tmp.bib", "w")
-    reps = []
+# Loop over the bibliographies.
+for idx in range(0, 11):
+    bib = open("section%i/bib/section.bib" % idx if idx else "bib/chapter.bib")
     for line in bib:
-        skip = False
-        for rep in reps:
-            if rep in line: skip = True; break
-        if skip:
+        if line.strip().startswith("@"):
             ob = line.count("{")
             cb = line.count("}")
+            key = line.split("{")[1].split(",")[0]
+            val = line
+            if key in bdb: continue
             while ob != cb:
                 line = next(bib)
                 ob += line.count("{")
                 cb += line.count("}")
-        else:
-            tmp.write(line)
-            for key in keys:
-                if key in line:
-                    reps += [key]
-    tmp.close()
+                val += line
+            bdb[key] = val
     bib.close()
-    shutil.move("tmp.bib", name)
+
+# Write the output.
+bib = open("report.bib", "w")
+for key in sorted(bdb):
+    bib.write(bdb[key] + "\n")
+bib.close()
