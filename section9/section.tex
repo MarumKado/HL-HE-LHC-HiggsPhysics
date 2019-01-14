@@ -8,8 +8,6 @@
 
 \section{Searches for beyond the standard model Higgs physics\label{sec9:BSM}}
 
-
-
 %\subfile{\main/section9/mssm_2hdm}
 
 \subsection{Exotic decays of the 125 GeV Higgs boson}
@@ -21,14 +19,12 @@
 \subfile{\main/section9/cms_haa}
 
 
-
-
-
-
-
 \subsection{LHC searches for additional neutral Higgs bosons in fermionic final states}\label{sec:Hff}
 \subfile{\main/section9/cms_htt/cms_htt}
 \subfile{\main/section9/atlas_htt}
+
+\subsection{LHC searches for additional neutral Higgs bosons in bosonic final states}\label{sec:XZZ}
+\subfile{\main/section9/cms_xzz}
 
 \subsection{New channels for heavy Higgs bosons}
 \subsubsection{HL-LHC projections of LHCb searches for 2HDM+S pseudoscalars}
@@ -196,7 +192,7 @@ additional `anti-aligned' neutral Higgs bosons (or small \emph{vev} and Higgs mi
 \subsubsubsection{Pair Production as a discovery channel}\label{sec:pair}
 
 A different option that offers new experimental opportunities is
-  the Drell-Yan Higgs pair production mechanism. Any extension of the SM Higgs sector by electroweak charged scalars will possess the pair production channels mediated by $W$ and $Z$ bosons and which are not present in the SM. Furthermore, as emphasized in~\cite{Akeroyd:2003bt,Akeroyd:2003xi,Akeroyd:2003jp,Ilisie:2014hea,Delgado:2016arn,Vega:2018ddp}, even in the alignment and fermiophobic limits, this production mechanism is not suppressed and can be as large as $\sim 10\,pb$ at 13~TeV and $\sim 50\,pb$ and 27~TeV in the mass range we consider (see~\ref{HHprod}). Thus, Drell-Yan Higgs pair production can be as large or even dominate over single  production mechanisms, for both charged and neutral Higgs bosons. Despite this, the Drell-Yan Higgs pair production mechanism has been largely overlooked in experimental searches with the lone exception being a recent CDF analysis of Tevatron four photon data~\cite{Aaltonen:2016fnw} searching for fermiophobic Higgs bosons.  
+  the Drell-Yan Higgs pair production mechanism. Any extension of the SM Higgs sector by electroweak charged scalars will possess the pair production channels mediated by $W$ and $Z$ bosons and which are not present in the SM. Furthermore, as emphasized in~\cite{Akeroyd:2003bt,Akeroyd:2003xi,Akeroyd:2003jp,Ilisie:2014hea,Delgado:2016arn,Vega:2018ddp}, even in the alignment and fermiophobic limits, this production mechanism is not suppressed and can be as large as $\sim 10\,pb$ at 13~TeV and $\sim 50\,pb$ and 27~TeV in the mass range we consider (see Sec.~\ref{sec:2_HXSWG1}). Thus, Drell-Yan Higgs pair production can be as large or even dominate over single  production mechanisms, for both charged and neutral Higgs bosons. Despite this, the Drell-Yan Higgs pair production mechanism has been largely overlooked in experimental searches with the lone exception being a recent CDF analysis of Tevatron four photon data~\cite{Aaltonen:2016fnw} searching for fermiophobic Higgs bosons.  
 
 The Drell-Yan pair production mechanism is mediated by the vector-Higgs-Higgs coupling. In the alignment limit, this will have vertices that are maximized in this limit and depend only on electroweak couplings and quantum numbers, while some vertices will go to zero depending on which Higgs pairs are being produced~\cite{Akeroyd:2003bt,Akeroyd:2003xi,Akeroyd:2003jp,Ilisie:2014hea,Delgado:2016arn,Vega:2018ddp}. Thus for the non-zero cases the vertex can be written schematically as,
 %
@@ -208,14 +204,14 @@ g_{ZH_M^0H_N^0} \equiv i \frac{g}{c_W}
 \eea
 %
 where $C_N$ is fixed by the $SU(2)_L\times U(1)_Y$
-representation~\cite{Georgi:1985nv,Akeroyd:2003bt,Akeroyd:2010eg,Cort:2013foa,Hartling:2014zca} and $p_{1}, p_{2}$ are the four momenta of the incoming and outgoing scalar momenta. Here $H_N^0$ stands for any neutral Higgs boson and can include CP-even or CP-odd and similarly for $H_M^\pm$ in the case of charged Higgs bosons. There is also a photon mediated channel when both Higgs bosons are charged, but we focus on cases where at least one is neutral. In~\ref{HHprod} we show the leading order $q\bar{q} \to V \to H_M^{\pm,0} H_N^0$ (including \emph{pdfs}) cross section $\times\, C_N^{-2}$ for the $W$ mediated (blue solid) and $Z$ mediated (black dashed) channels at the LHC with $\sqrt{s}=13$~TeV (left) and $\sqrt{s}=27$~TeV (right) in the mass range $60 - 125$~GeV. They are computed with Madgraph~\cite{Alwall:2014hca} using a modified version of the GM model implementation of~\cite{Hartling:2014xma} and rescaling appropriately. There are also NLO contributions which may generate $\gtrsim \mathcal O(1)$ K-factors for Higgs pair production~\cite{Eichten:1984eu,Dawson:1998py,Degrande:2015xnm}, but are not included. We show four cases for mass splittings  of $\Delta M \equiv M_{H^{\pm,0}_M} - M_{H_N^0} = 0, 100, 200, 300$~GeV as labeled in plot.  
+representation~\cite{Georgi:1985nv,Akeroyd:2003bt,Akeroyd:2010eg,Cort:2013foa,Hartling:2014zca} and $p_{1}, p_{2}$ are the four momenta of the incoming and outgoing scalar momenta. Here $H_N^0$ stands for any neutral Higgs boson and can include CP-even or CP-odd and similarly for $H_M^\pm$ in the case of charged Higgs bosons. There is also a photon mediated channel when both Higgs bosons are charged, but we focus on cases where at least one is neutral. In Fig.~\ref{fig:HHprod} we show the leading order $q\bar{q} \to V \to H_M^{\pm,0} H_N^0$ (including \emph{pdfs}) cross section $\times\, C_N^{-2}$ for the $W$ mediated (blue solid) and $Z$ mediated (black dashed) channels at the LHC with $\sqrt{s}=13$~TeV (left) and $\sqrt{s}=27$~TeV (right) in the mass range $60 - 125$~GeV. They are computed with Madgraph~\cite{Alwall:2014hca} using a modified version of the GM model implementation of~\cite{Hartling:2014xma} and rescaling appropriately. There are also NLO contributions which may generate $\gtrsim \mathcal O(1)$ K-factors for Higgs pair production~\cite{Eichten:1984eu,Dawson:1998py,Degrande:2015xnm}, but are not included. We show four cases for mass splittings  of $\Delta M \equiv M_{H^{\pm,0}_M} - M_{H_N^0} = 0, 100, 200, 300$~GeV as labeled in plot.  
 %%%%%
 \begin{figure}[tbh]
 \begin{center}
 \includegraphics[scale=.403]{\main/section9/plots/CxnVsMHoDelM_13TeV.pdf}
 \includegraphics[scale=.4]{\main/section9/plots/CxnVsMHoDelM_27TeV.pdf}
 \end{center}
-\caption{Leading order cross sections (with \emph{pdfs}) for the $q\bar{q} \to V \to H_M^{\pm,0} H_N^0$ Higgs pair production mechanism mediated by $W$ (blue solid) and $Z$ (black dashed) bosons at the LHC for $\sqrt{s}=13$~TeV (left) and $\sqrt{s}=27$~TeV (right) in the mass range $60 - 125$~GeV. We show three cases for mass splittings $\Delta M \equiv M_{H^{\pm,0}_M} - M_{H_N^0}= 0, 100, 200, 300$~GeV as labeled in plot and have factored out an overall group theory factor $C_N$ (see~\ref{gvhh}). The curves for a particular model can be obtained by rescaling with $(C_N)^2$ which is fixed by the $SU(2)_L\times U(1)_Y$ representation.} 
+\caption{Leading order cross sections (with \emph{pdfs}) for the $q\bar{q} \to V \to H_M^{\pm,0} H_N^0$ Higgs pair production mechanism mediated by $W$ (blue solid) and $Z$ (black dashed) bosons at the LHC for $\sqrt{s}=13$~TeV (left) and $\sqrt{s}=27$~TeV (right) in the mass range $60 - 125$~GeV. We show three cases for mass splittings $\Delta M \equiv M_{H^{\pm,0}_M} - M_{H_N^0}= 0, 100, 200, 300$~GeV as labeled in plot and have factored out an overall group theory factor $C_N$ (see~\ref{eqn:gvhh}). The curves for a particular model can be obtained by rescaling with $(C_N)^2$ which is fixed by the $SU(2)_L\times U(1)_Y$ representation.} 
 \label{fig:HHprod}
 \end{figure}
 %%%%%
