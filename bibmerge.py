@@ -13,6 +13,7 @@ for idx in range(0, 11):
             cb = line.count("}")
             key = line.split("{")[1].split(",")[0]
             val = line
+            if not key: continue
             if key in bdb: continue
             while ob != cb:
                 line = next(bib)
