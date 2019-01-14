@@ -52,7 +52,7 @@ absolute scale and jet flavour calibrations. The missing transverse momentum unc
 \footnotesize
 \centering
 \caption{The sources of systematic uncertainty for which limiting values are applied in ''YR18 systematics uncertainties'' scenario.
-Systematic uncertainties of the reference Run 2 analyses are described in Refs.~\cite{Sirunyan:2018mbx,Sirunyan:2018pzn,Khachatryan:2015wka,Sirunyan:2017xzt}. The definition of $C(i,j)$ is given in Section \ref{sec:overview}.}
+}
 
 \begin{tabular}{@{} l p{3cm} c c @{}}
 Source       &   Component         & Run~2 unc.             & Projection minimum unc. \\
@@ -74,11 +74,6 @@ b-Tagging   & b-/c-jets (syst.)       & Varies with $\pt$ and $\eta$    & Same a
            & b-/c-jets (stat.)    & Varies with $\pt$ and $\eta$       & No limit        \\
           & light mis-tag (stat.)   & Varies with $\pt$ and $\eta$       & No limit           \\
 Integrated lumi.    &         & $2.5\%$                         & $1\%$          \\
-Reducible bkg. ($\Ph\to\Pa\Pa\to2\Pgm2\Pgt$) & & 20--40\% & 4--8\% \\
-Muon HLT ($\Ph\to\Pa\Pa\to4\Pgm$) & & 6\% & 1\% \\
-$m_{\Pgm\Pgm}$ consistency ($\Ph\to\Pa\Pa\to4\Pgm$) & & 1.5\% & 0.2\% \\
-Track isolation ($\Ph\to\Pa\Pa\to4\Pgt$) & & 4--12\% & 2--6\% \\
-$C(i,j)$ extrap. ($\Ph\to\Pa\Pa\to4\Pgt$) & & Shape-only & Same as Run~2 \\
 \end{tabular}
 \label{tab:floors}
 \vspace{0.5cm}
@@ -86,14 +81,14 @@ $C(i,j)$ extrap. ($\Ph\to\Pa\Pa\to4\Pgt$) & & Shape-only & Same as Run~2 \\
 \end{table}
 
 
-Upper limits at 95\% CL on $(\sigma(h)/\sigma_{\textrm{SM}}) \mathcal{B}(\processbbtt)$ are shown in Fig.~\ref{fig:bbtt_proj} for different integrated luminosities and systematic uncertainty scenarios. In this expression, $\sigma_\textrm{SM}$ denotes the SM production cross section of the Higgs boson, whereas $\sigma(\Ph)$ is the $\Ph$ production cross section.
+Upper limits at 95\% CL on $(\sigma(h)/\sigma_{\textrm{SM}}) \mathcal{B}(h \to aa \to 2b2\tau)$ are shown in Fig.~\ref{fig:bbtt_proj} for different integrated luminosities and systematic uncertainty scenarios. In this expression, $\sigma_\textrm{SM}$ denotes the SM production cross section of the Higgs boson, whereas $\sigma(\Ph)$ is the $\Ph$ production cross section.
 The limits improve proportionally to the square root of the integrated luminosity,
 as the analysis is statistically limited. For an integrated luminosity of 3000\fbinv, the difference between the limits in the  systematic scenarios of Run 2 and YR18 is of the order of 5\%, and the limits become another 5\% better if all systematic uncertainties are neglected.
 
 \begin{figure*}[hbpt]
 \centering
-        \includegraphics[width=0.49\textwidth]{plots/bbtt/lim_compare_lum.pdf}
-        \includegraphics[width=0.49\textwidth]{plots/bbtt/lim_compare_scenarios3000.pdf}\\
+        \includegraphics[width=0.49\textwidth]{\main/section9/plots/lim_compare_lum_bbtt.pdf}
+        \includegraphics[width=0.49\textwidth]{\main/section9/plots/lim_compare_scenarios3000_bbtt.pdf}\\
     \caption{Left: Projected expected limits on $(\sigma(h)/\sigma_{\textrm{SM}})$ times the branching fraction for $h\to aa\to 2b 2\tau$, for 36, 300, and 3000\fbinv. Right: Projected expected limits $(\sigma(h)/\sigma_{\textrm{SM}}) \mathcal{B}(h\to aa \to 2b2\tau)$, comparing different scenarios for systematic uncertainties for an integrated luminosity of 3000\fbinv.}
     \label{fig:bbtt_proj}
 \end{figure*}
@@ -106,11 +101,11 @@ indicates the upper limits on $(\sigma(h)/\sigma_{\textrm{SM}}) \mathcal{B}(h\to
 
 \begin{figure*}[hbpt]
 \centering
-        \includegraphics[width=0.49\textwidth]{plots/bbtt/plot_BRaa_bbttProjection_Type1.pdf}
-        \includegraphics[width=0.49\textwidth]{plots/bbtt/plot_BRaa_bbttProjection_Type2.pdf} \\
-        \includegraphics[width=0.49\textwidth]{plots/bbtt/plot_BRaa_bbttProjection_Type3.pdf}
-        \includegraphics[width=0.49\textwidth]{plots/bbtt/plot_BRaa_bbttProjection_Type4.pdf}
-    \caption{Expected upper limits on $(\sigma(h)/\sigma_{\textrm{SM}}) \mathcal{B}(h\to aa)$ for 3000\fbinv of data with YR18 systematic uncertainties for the $2b 2\tau$ final state in 2HDM+S type-1 (top left), type-2 (top right), type-3 (bottom left), and type-4 (bottom right).}
+        \includegraphics[width=0.49\textwidth]{\main/section9/plots/plot_BRaa_bbttProjection_Type1.pdf}
+        \includegraphics[width=0.49\textwidth]{\main/section9/plots/plot_BRaa_bbttProjection_Type2.pdf} \\
+        \includegraphics[width=0.49\textwidth]{\main/section9/plots/plot_BRaa_bbttProjection_Type3.pdf}
+        \includegraphics[width=0.49\textwidth]{\main/section9/plots/plot_BRaa_bbttProjection_Type4.pdf}
+    \caption{Expected upper limits on $(\sigma(h)/\sigma_{\textrm{SM}}) \mathcal{B}(h\to aa)$ for 3000 fb$^{-1}$ of data with YR18 systematic uncertainties for the $2b 2\tau$ final state in 2HDM+S type-1 (top left), type-2 (top right), type-3 (bottom left), and type-4 (bottom right).}
     \label{fig:summary_bbtt}
 \end{figure*}
 
@@ -138,16 +133,16 @@ forms a narrow peak in the dimuon mass spectrum.
 The number of expected background events below the signal peak is almost zero,
 especially at low dimuon mass, and the analysis is strongly statistically dominated.
 
-The corresponding limits for the $h \to aa \to 2\mu2\tau$ search are shown in Fig.~\ref{fig:mmtt_proj}.
+In the ''YR18 systematics uncertainties'' scenario, in addition to the limiting values detailed in Table \ref{tab:floors}, the uncertainty in the normalization of the reducible background is not allowed to go lower than 20\% of the value used in Run-2. The corresponding limits for the $h \to aa \to 2\mu2\tau$ search are shown in Fig.~\ref{fig:mmtt_proj}.
 They scale approximately inversely with the integrated luminosity at low $\ma$ because the
 analysis is close to background-free, while they tend to scale inversely with the square root of the integrated luminosity at higher $m_a$, where the background is more important. This leads to the large improvement at low $m_a$ for 3000\fbinv of collected data shown in Fig.~\ref{fig:mmtt_proj}. The analysis is statistically limited, even with 3000\fbinv of data. The difference between the Run 2 and YR18 systematic uncertainties in terms of upper limits
 is up to 5\%, and is the largest at high $m_a$.
 
 \begin{figure*}[hbpt]
 \centering
-        \includegraphics[width=0.49\textwidth]{plots/mmtt/lim_compare_lum.pdf}
-        \includegraphics[width=0.49\textwidth]{plots/mmtt/lim_compare_scenarios3000.pdf}\\
-    \caption{Left: Projected expected limits on $(\sigma(h)/\sigma_{\textrm{SM}}) \mathcal{B}(\processmmtt)$, for 36, 300, and 3000\fbinv. Right: Projected expected limits on $(\sigma(h)/\sigma_{\textrm{SM}}) \mathcal{B}(h\to aa \to 2\mu2\tau)$, comparing different scenarios for systematic uncertainties for an integrated luminosity of 3000\fbinv.}
+        \includegraphics[width=0.49\textwidth]{\main/section9/plots/lim_compare_lum_mmtt.pdf}
+        \includegraphics[width=0.49\textwidth]{\main/section9/plots/lim_compare_scenarios3000_mmtt.pdf}\\
+    \caption{Left: Projected expected limits on $(\sigma(h)/\sigma_{\textrm{SM}}) \mathcal{B}(h \to aa \to 2\mu 2\tau)$, for 36, 300, and 3000 fb$^{-1}$. Right: Projected expected limits on $(\sigma(h)/\sigma_{\textrm{SM}}) \mathcal{B}(h\to aa \to 2\mu2\tau)$, comparing different scenarios for systematic uncertainties for an integrated luminosity of 3000\fbinv.}
     \label{fig:mmtt_proj}
 \end{figure*}
 
@@ -156,10 +151,10 @@ in Fig~\ref{fig:summary_mmtt} for the $2\mu 2\tau$ analysis, assuming 3000\fbinv
 
 \begin{figure*}[hbpt]
 \centering
-        \includegraphics[width=0.49\textwidth]{plots/mmtt/plot_BRaa_mmttProjection_Type1.pdf}
-        \includegraphics[width=0.49\textwidth]{plots/mmtt/plot_BRaa_mmttProjection_Type2.pdf} \\
-        \includegraphics[width=0.49\textwidth]{plots/mmtt/plot_BRaa_mmttProjection_Type3.pdf}
-        \includegraphics[width=0.49\textwidth]{plots/mmtt/plot_BRaa_mmttProjection_Type4.pdf}
+        \includegraphics[width=0.49\textwidth]{\main/section9/plots/plot_BRaa_mmttProjection_Type1.pdf}
+        \includegraphics[width=0.49\textwidth]{\main/section9/plots/plot_BRaa_mmttProjection_Type2.pdf} \\
+        \includegraphics[width=0.49\textwidth]{\main/section9/plots/plot_BRaa_mmttProjection_Type3.pdf}
+        \includegraphics[width=0.49\textwidth]{\main/section9/plots/plot_BRaa_mmttProjection_Type4.pdf}
     \caption{Expected upper limits on $(\sigma(h)/\sigma_{\textrm{SM}})\mathcal{B}(h\to aa)$ for 3000\fbinv of data with YR18 systematic uncertainties for the $2\mu 2\tau$ final state in 2HDM+S type-1 (top left), type-2 (top right), type-3 (bottom left), and type-4 (bottom right).}
     \label{fig:summary_mmtt}
 \end{figure*}
@@ -192,24 +187,24 @@ The normalizations of both the signal and the background are allowed to float fr
 The shape of the background is affected by a shape uncertainty related to the correlation matrix $C(i,j)$ between
 the masses of the muon-track combinations.
 
-Upper limits at 95\% \CL on $(\sigma(h)/\sigma_{\textrm{SM}})\mathcal{B}(h \to aa \to 4\tau)$ are shown in Fig.~\ref{fig:tttt_proj} for an integrated luminosity corresponding to 3000 fb$^{-1}$ for different systematic uncertainty scenarios
+In the ''YR18 systematics uncertainties'' scenario, in addition to the limiting values detailed in Table \ref{tab:floors}, the uncertainty in the track isolation and the extrapolation of the $C(i,j)$ coefficients are set to the same values as in Run-2. Upper limits at 95\% \CL on $(\sigma(h)/\sigma_{\textrm{SM}})\mathcal{B}(h \to aa \to 4\tau)$ are shown in Fig.~\ref{fig:tttt_proj} for an integrated luminosity corresponding to 3000 fb$^{-1}$ for different systematic uncertainty scenarios
 (Run-2 and YR18) and without any systematic uncertainty. The limits improve by about one order of magnitude with the increased integrated luminosity in comparison to the results obtained with 35.9\fbinv collected in 2016.
 For an integrated luminosity of 3000 fb$^{-1}$, the difference between the expected limits in the systematic scenarios
 of Run-2 and YR18 is at the percent level, while the limit improves by about 10\% if all systematic uncertainties are neglected. Model-dependent limits in the different types of 2HDM+S are shown in Fig.~\ref{fig:summary_tttt}.
 
 \begin{figure*}[hbpt]
 \centering
-        \includegraphics[width=0.49\textwidth]{plots/tttt/lim_compare_lum_exp0.pdf}
+        \includegraphics[width=0.49\textwidth]{\main/section9/plots/lim_compare_lum_exp0.pdf}
     \caption{Projected expected limits on $(\sigma(h)/\sigma_{\textrm{SM}}) \mathcal{B}(h \to aa \to 4\tau)$, comparing different scenarios for systematic uncertainties for an integrated luminosity of 3000 fb$^{-1}$.}
     \label{fig:tttt_proj}
 \end{figure*}
 
 \begin{figure*}[hbpt]
 \centering
-        \includegraphics[width=0.49\textwidth]{plots/tttt/plot_BRaa_ttttProjection_Type1.pdf}
-        \includegraphics[width=0.49\textwidth]{plots/tttt/plot_BRaa_ttttProjection_Type2.pdf} \\
-        \includegraphics[width=0.49\textwidth]{plots/tttt/plot_BRaa_ttttProjection_Type3.pdf}
-        \includegraphics[width=0.49\textwidth]{plots/tttt/plot_BRaa_ttttProjection_Type4.pdf}
+        \includegraphics[width=0.49\textwidth]{\main/section9/plots/plot_BRaa_ttttProjection_Type1.pdf}
+        \includegraphics[width=0.49\textwidth]{\main/section9/plots/plot_BRaa_ttttProjection_Type2.pdf} \\
+        \includegraphics[width=0.49\textwidth]{\main/section9/plots/plot_BRaa_ttttProjection_Type3.pdf}
+        \includegraphics[width=0.49\textwidth]{\main/section9/plots/plot_BRaa_ttttProjection_Type4.pdf}
     \caption{Expected upper limits on $(\sigma(h)/\sigma_{\textrm{SM}})\mathcal{B}( h \to aa)$ for 3000\fbinv of data with YR18 systematic uncertainties for the $4\tau$ final state in 2HDM+S type-1 (top left), type-2 (top right), type-3 (bottom left), and type-4 (bottom right).}
     \label{fig:summary_tttt}
 \end{figure*}
