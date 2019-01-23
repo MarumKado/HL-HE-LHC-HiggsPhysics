@@ -14,7 +14,7 @@
 default: build
 
 # Declaration of variables
-STDTEXFLAGS = -shell-escape -file-line-error -interaction=nonstopmode
+STDTEXFLAGS = -shell-escape -file-line-error
 CONTINUEFLAGS = -interaction=nonstopmode
 QUIETFLAGS = #--interaction=batchmode
 DRAFTFLAGS = --draft

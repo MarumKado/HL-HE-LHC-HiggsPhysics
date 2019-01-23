@@ -5,7 +5,7 @@
 \usepackage{placeins}
 \usepackage{booktabs}
 \usepackage{slashbox}
-\usepackage{subfig} % Required for creating figures with multiple parts (subfigures)
+\usepackage{subfig}
 \usepackage{amsmath,amssymb,amsthm} % For including math equations, theorems, symbols, etc
 %\usepackage{subcaption}
 \usepackage{rotating}
@@ -75,6 +75,8 @@
 \newcommand{\cb}{c_{b}}
 \newcommand{\chhh}{c_{hhh}}
 \newcommand{\mhh}{m_{hh}}
+\newcommand{\pythia}{\textsc{Pythia}\xspace}
+\newcommand{\geant}{\textsc{Geant}\xspace}
 
 % Section 2.
 \newcommand{\as}{\ensuremath{\alpha_\text{s}}\xspace}
@@ -108,6 +110,7 @@
 %%\newcommand{\hbb}{\ensuremath{\PH\to\bb}\xspace}
 \newcommand{\hbb}{\hbox{$\PH\to\bb$}\xspace}
 \newcommand{\hgg}{\ensuremath{\PH\to\PGg\PGg}\xspace}
+\newcommand{\ggH}{\ensuremath{\PGg\PGg \to \PH}\xspace}
 \newcommand{\ttjets}{\ensuremath{\PQt\PQt\text{+}\text{jets}}\xspace}
 \newcommand{\vbf}{\ensuremath{\mathrm{VBF}}\xspace}
 \newcommand{\vh}{\ensuremath{\mathrm{V}\PH}\xspace}
@@ -152,6 +155,10 @@
 \setlength{\UcmsFigWidth}{0.49\textwidth}
 \newcommand{\UcmsLeft}{upper\xspace}
 \newcommand{\UcmsRight}{lower\xspace}
+\newcommand{\tHQ}{\ensuremath{tHq}}
+\newcommand{\VH}{\ensuremath{VH}}
+\newcommand{\mgg}{\ensuremath{m_{\gamma\gamma}}}
+\newcommand{\ptgg}{\ensuremath{\pt^{\gamma\gamma}}}
 
 % Section 3.
 \newcommand{\tril}{\lambda_{3}}
@@ -233,9 +240,10 @@
 \providecommand{\abinv} {\mbox{\ensuremath{\,\text{ab}^\text{$-$1}}}\xspace}
 \providecommand{\pbinv} {\mbox{\ensuremath{\,\text{pb}^\text{$-$1}}}\xspace}
 \providecommand{\fbinv} {\mbox{\ensuremath{\,\text{fb}^\text{$-$1}}}\xspace}
-\providecommand{\GH}{\ensuremath{\Gamma_\PH}\xspace}
+\providecommand{\GH}{\ensuremath{\Gamma_{\PH}}\xspace}
 \providecommand{\GHSM}{\ensuremath{\Gamma_{\PH}^{\mathrm{SM}}}\xspace}
 \providecommand{\glufu}{\ensuremath{\mathrm{gg}}\xspace}
+\providecommand{\kapl}{\ensuremath{\kappa_\lambda}\xspace}
 
 
 % Section 4.
@@ -361,9 +369,9 @@
 \newcommand{\mhmodp}{\ensuremath{m_{\Ph}^{\text{mod+}}}\xspace}
 \newcommand{\mA}{\ensuremath{m_{\text{A}}}\xspace}
 \newcommand{\e}[1]{\ensuremath{\times 10^{#1}}}
-\newcommand{\processbbtt}{\ensuremath{{\Ph}\to{\Pa\Pa}\to2\Pgt2{\cPqb}}\xspace}
+\newcommand{\processbbtt}{\ensuremath{{\Ph}\to{\Pa\Pa}\to2\Pgt2{\Pqb}}\xspace}
 \newcommand{\processmmtt}{\ensuremath{{\Ph}\to{\Pa\Pa}\to2\Pgm2{\Pgt}}\xspace}
-\newcommand{\mbtt}{\ensuremath{m_{\cPqb\Pgt\Pgt}^{\text{vis}}}\xspace}
+\newcommand{\mbtt}{\ensuremath{m_{\PQb\Pgt\Pgt}^{\text{vis}}}\xspace}
 \newcommand{\gammaDark}{\ensuremath{{\PGg}_{\mathrm{D}}}\xspace}
 \newcommand{\nOne}{\ensuremath{\textnormal{n}_{1}}\xspace}
 \newcommand{\nDark}{\ensuremath{\textnormal{n}_{\mathrm{D}}}\xspace}
@@ -423,8 +431,6 @@
 \newcommand{\tauhadvis}{\ensuremath{\Pgt_{\text{had-vis}}}\xspace}
 \newcommand{\ehad}{\ensuremath{\taue\thad}\xspace}
 \newcommand{\muhad}{\ensuremath{\taumu\thad}\xspace}
-
-% Other?
 \def\lra#1{\overset{\text{\scriptsize$\leftrightarrow$}}{#1}}
 
 % Bibliography aliases.
