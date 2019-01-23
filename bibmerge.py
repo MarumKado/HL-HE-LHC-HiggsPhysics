@@ -114,7 +114,10 @@ for key in sorted(bdb):
     if author and "ollaboration" in author:
         del bib["author"]
         if not collab: bib["collaboration"] = author
-
+    collab = bib["collaboration"] if "collaboration" in bib else None
+    if collab and collab.lower().startswith("collaboration, "):
+        bib["collaboration"] = collab[15:] + " Collaboration"
+                
     # Write the entry.
     btd.entries = [bib]
     tex.write(btw.write(btd))
