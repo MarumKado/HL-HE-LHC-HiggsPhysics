@@ -427,6 +427,26 @@
 % Other?
 \def\lra#1{\overset{\text{\scriptsize$\leftrightarrow$}}{#1}}
 
+% Bibliography aliases.
+\makeatletter
+\def\@citex[#1]#2{\leavevmode
+  \let\@citea\@empty
+  \@cite{\@for\@citeb:=#2\do
+    {\@citea\def\@citea{,\penalty\@m\ }%
+\edef\magic##1{\let##1\expandafter\noexpand\csname bibalias@\@citeb\endcsname}%
+\magic\tmp \ifx\tmp\relax\else \let\@citeb\tmp\fi
+     \edef\@citeb{\expandafter\@firstofone\@citeb\@empty}%
+     \if@filesw\immediate\write\@auxout{\string\citation{\@citeb}}\fi
+     \@ifundefined{b@\@citeb}{\hbox{\reset@font\bfseries ?}%
+       \G@refundefinedtrue
+       \@latex@warning
+         {Citation `\@citeb' on page \thepage \space undefined}}%
+       {\@cite@ofmt{\csname b@\@citeb\endcsname}}}}{#1}}
+\def\bibalias#1#2{\expandafter\def\csname bibalias@#1\endcsname{#2}}
+\makeatother
+\input{bibaliases}
+
+% Title page.
 \title{{\normalfont\bfseries\boldmath\huge
 \begin{center}
 %  HL/HE-LHC Physics Workshop Report\\

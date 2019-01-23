@@ -24,5 +24,6 @@ for name in glob.iglob('**/*.tex', recursive=True):
     for miss in misses:
         if miss in txt: misses[miss] += " " + name
     tex.close()
-for miss in sorted(misses): print(miss + ":" + misses[miss])
+red, end = "\033[91m", "\033[0m"
+for miss in sorted(misses): print(red + miss + end + ":" + misses[miss])
 

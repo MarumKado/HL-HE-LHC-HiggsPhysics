@@ -106,12 +106,11 @@ btw = bibtexparser.bwriter.BibTexWriter()
 for key in sorted(bdb):
     # Encode fields as ASCII.
     bib = bdb[key]
-    if key in rpl and len(rpl[key]): bib["IDS"] = ", ".join(rpl[key])
     for key, val in bib.items(): bib[key] = val.encode("ascii", "ignore")
 
     # Fix collaborations.
     author = bib["author"] if "author" in bib else None
-    collab = bib["collaboration"] if "collaboraiton" in bib else None
+    collab = bib["collaboration"] if "collaboration" in bib else None
     if author and "ollaboration" in author:
         del bib["author"]
         if not collab: bib["collaboration"] = author
@@ -119,4 +118,12 @@ for key in sorted(bdb):
     # Write the entry.
     btd.entries = [bib]
     tex.write(btw.write(btd))
+tex.close()
+
+# Write out the aliases.
+tex = open("bibaliases.tex", "w")
+for alias, keys in rpl.items():
+    for key in keys:
+        tex.write(r"\bibalias{%s}{%s}" % (key, alias) + "\n")
+        tex.write(r"\bibalias{ %s}{%s}" % (key, alias) + "\n")
 tex.close()
