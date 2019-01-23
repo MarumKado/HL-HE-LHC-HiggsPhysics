@@ -26,7 +26,7 @@ def inspire(key):
 def compare(bib0, bib1):
     
     # Check exact not matches.
-    for key in ["year", "doi", "eprint", "reportnumber"]:
+    for key in ["year", "doi", "eprint"]:
         if key in bib0 and key in bib1 and len(bib0[key]) > 3:
             if bib0[key] != bib1[key]: return 0.
 
@@ -45,6 +45,10 @@ def compare(bib0, bib1):
             if "ATLAS" in bib0[key] and "ATLAS" in bib1[key]: skip += [key]
             elif "CMS" in bib1[key] and "CMS" in bib1[key]: skip += [key]
 
+    # Check the titles.
+    for key in ["title"]: 
+        if key in bib0 and key in bib1 and bib0[key] == bib1[key]: return 100.
+            
     # Check the remaining entries.
     scores = []
     for key in ["title", "author"]:
@@ -80,22 +84,25 @@ for idx in range(0, 11):
 # Create the replace database for new -> old.
 rpl, itr = {key: [] for key in bdb}, bdb.items()
 while len(itr):
-    # Check for fuzzy matching, unless an INSPIRE ID.
+    # Check for fuzzy matching.
     key0, bib0 = itr.pop()
-    idxM, keyM, bibM, scoreM = 0, 0, None, 0
+    idxs = []
     for idx1, (key1, bib1) in enumerate(itr):
         score = compare(bib0, bib1)
-        if score > scoreM: idxM, keyM, bibM, scoreM = idx1, key1, bib1, score
         
-    # Remove if matched.
-    if scoreM > 80:
-        new, old = choose(bib0, bibM)
-        rpl[new] += rpl[old] + [old]
-        del rpl[old]; del bdb[old]
-        if old == keyM: del itr[idxM]
+        # Merge if matched.
+        if score > 80:
+            new, old = choose(bib0, bib1)
+            rpl[new] += rpl[old] + [old]
+            del rpl[old]; del bdb[old]
+            if old == key0: break
+            else: idxs += [idx1]
 
+    # Remove matched entries.
+    for offset, old in enumerate(idxs): del itr[old - offset]
+    
 # Print the matches.
-for key, vals in rpl.items():
+for key, vals in sorted(rpl.items()):
     if len(vals): print "\033[91m" + key + "\033[0m"
     for val in vals: print "    " + val
         
