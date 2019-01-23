@@ -43,7 +43,7 @@ signal & $b\bar{b}\gamma\gamma$ & $c\bar{c}\gamma\gamma$ & $jj\gamma\gamma$ & $b
 
 The $b\bar{b}\gamma\gamma$ channel has been studied by several groups using cut and count strategies. Once signal and background cross sections are normalized to the proper values, one finds that the analysis of any particular group does not radically outperform that of any other. For a detailed comparison, we refer to Table 2 of \cite{Alves:2017ued}. 
 
-Bayesian optimization  offers a systematic way to obtain the most optimal cuts on a set of kinematic variables. The algorithm we utilize is implemented in the Python library \texttt{HyperOpt}~, based on the so-called sequential model-based optimization (SMBO) technique \cite{Bergstra1, Bergstra2, url:hyperopt}. 
+Bayesian optimization  offers a systematic way to obtain the most optimal cuts on a set of kinematic variables. The algorithm we utilize is implemented in the Python library \texttt{HyperOpt}~, based on the so-called sequential model-based optimization (SMBO) technique \cite{Bergstra1, Bergstra2, hyperopt}.
 %This class of algorithms suggests a new model (a new configuration of parameters) at each iteration in order to optimize the criterion of Expected Improvement (EI), which is the expectation that under a model $M$ of a function $f$, $y=f(x)$ will exceed some threshold $y^c$
 %\begin{equation}
 %EI_{y^c}(x)=\int_{-\infty}^{+\infty} \max(y^c-y,0)p_M(y|x)dy
@@ -111,7 +111,7 @@ systematics (\%) & Cut-and-count & BDT \\
 20 & 1.51[1.0] & 3.10  \\
 \hline\hline
 \end{tabular}
-\caption{Signal significances for cut-and-count and BDT for 0, 10 and 20\% systematics. We took all backgrounds into account for the computation of the AMS with optimized cuts and an integrated luminosity of 3 ab$^{-1}$ at the 14 TeV LHC. The bold-face numbers represent the significances expected with the level of systematics anticipated by the experimental collaborations in refs.~\cite{ATLAS14, ATLAS17, CMS}. The numbers inside brackets are the significances computed with the default cuts of Azatov \emph{et. al.}, ref.~\cite{Azatov:2015oxa}, which we took as baseline results.}
+\caption{Signal significances for cut-and-count and BDT for 0, 10 and 20\% systematics. We took all backgrounds into account for the computation of the AMS with optimized cuts and an integrated luminosity of 3 ab$^{-1}$ at the 14 TeV LHC. The bold-face numbers represent the significances expected with the level of systematics anticipated by the experimental collaborations in refs.~\cite{ATL-PHYS-PUB-2017-001, CMS}. The numbers inside brackets are the significances computed with the default cuts of Azatov \emph{et. al.}, ref.~\cite{Azatov:2015oxa}, which we took as baseline results.}
 \label{table:resultsbdtKS}
 \end{table}
 %

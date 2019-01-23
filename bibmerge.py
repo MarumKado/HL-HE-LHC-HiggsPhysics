@@ -3,37 +3,6 @@ import os, fnmatch, shutil, bibtexparser
 from fuzzywuzzy import fuzz
 
 ###############################################################################
-# Compare two entries.
-def compare(bib0, bib1):
-
-    # Check if both are from INSPIRE.
-    if inspire(bib0["ID"]) and inspire(bib1["ID"]): return 0.
-    
-    # Check exact not matches.
-    for key in ["year", "doi", "eprint", "reportnumber"]:
-        if key in bib0 and key in bib1 and len(bib0[key]) > 3:
-            if bib0[key] != bib1[key]: return 0.
-
-    # Check exact matches.
-    for key in ["doi", "eprint", "reportnumber"]:
-        if key in bib0 and key in bib1 and len(bib0[key]) > 5:
-            if bib0[key] == bib1[key]: return 100.
-            
-    # Check the authors and collaborations.
-    skip = []
-    for key in ["author", "collaboration"]: 
-        if key in bib0 and key in bib1:
-            if "ATLAS" in bib0[key] and "ATLAS" in bib1[key]: skip += [key]
-            elif "CMS" in bib1[key] and "CMS" in bib1[key]: skip += [key]
-
-    # Check the remaining entries.
-    scores = []
-    for key in ["title", "author"]:
-        if not key in skip and key in bib0 and key in bib1:
-            scores += [fuzz.ratio(bib0[key], bib1[key])]
-    return 0. if not len(scores) else sum(scores)/float(len(scores))
-
-###############################################################################
 # Check if an INSPIRE ID.
 def inspire(key):
     # Split by colon.
@@ -51,6 +20,37 @@ def inspire(key):
     # Final characters of second part are not numbers.
     if not iid[1][4:].isalpha(): return False
     return True
+
+###############################################################################
+# Compare two entries.
+def compare(bib0, bib1):
+    
+    # Check exact not matches.
+    for key in ["year", "doi", "eprint", "reportnumber"]:
+        if key in bib0 and key in bib1 and len(bib0[key]) > 3:
+            if bib0[key] != bib1[key]: return 0.
+
+    # Check exact matches.
+    for key in ["doi", "eprint", "reportnumber"]:
+        if key in bib0 and key in bib1 and len(bib0[key]) > 5:
+            if bib0[key] == bib1[key]: return 100.
+            
+    # Check if both are from INSPIRE.
+    if inspire(bib0["ID"]) and inspire(bib1["ID"]): return 0.
+
+    # Check the authors and collaborations.
+    skip = []
+    for key in ["author", "collaboration"]: 
+        if key in bib0 and key in bib1:
+            if "ATLAS" in bib0[key] and "ATLAS" in bib1[key]: skip += [key]
+            elif "CMS" in bib1[key] and "CMS" in bib1[key]: skip += [key]
+
+    # Check the remaining entries.
+    scores = []
+    for key in ["title", "author"]:
+        if not key in skip and key in bib0 and key in bib1:
+            scores += [fuzz.ratio(bib0[key], bib1[key])]
+    return 0. if not len(scores) else sum(scores)/float(len(scores))
 
 ###############################################################################
 # Choose which entry to keep.
