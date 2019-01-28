@@ -4,7 +4,8 @@ In this section we study the projected precision that would be possible at such 
 
 
 In order to study single-Higgs couplings, we introduce a parametrisation, the nonlinear EFT, that transparently connects with the $\kappa$-formalism, but is based on the language of effective field theories (EFTs). 
- We then present a fit to the projected HL/HE-LHC uncertainties both in the $\kappa$-formalism and in the more general nonlinear EFT, discussing the expected sensitivities to deviations on the Higgs couplings at the HL/HE-LHC, and compare with the recent results obtained using current data from \cite{deBlas:2018tjm}. We also translate the results into the EFT formalism relevant for composite Higgs scenarios, discussed in section~\ref{sec9:CHM}.
+ We then present a fit to the projected HL/HE-LHC uncertainties both in the $\kappa$-formalism and in the more general nonlinear EFT, discussing the expected sensitivities to deviations on the Higgs couplings at the HL/HE-LHC, and compare with the recent results obtained using current data from \cite{deBlas:2018tjm}. %We also translate the results into the EFT formalism relevant for composite Higgs scenarios, discussed in section~\ref{sec9:CHM}.
+ The translation of these results in terms of composite Higgs scenarios will be discussed in section~\ref{sec9:CHM}.
  
 
 %\subsubsection{Kappa-formalism and the nonlinear EFT}
@@ -33,7 +34,7 @@ The previous Lagrangian differs from a naive rescaling of Higgs couplings, even 
   \label{eq:kappa.EFT.3}
     c_{i}^{\text{SM}} = \begin{cases} 1 & \text{for } i = V, t, b, c, \tau, \mu\\ 0 & \text{for } i = g, \gamma, Z\gamma. \end{cases}
 \end{equation} 
-This Lagrangian, taken in isolation, leads to a theory with a parametrically low cutoff: it has therefore to be thought as part of a bigger EFT: the EWChL\cite{Dobado:1989ax,Dobado:1989ue,Dobado:1990zh,Dobado:1990jy,Espriu:1991vm,Herrero:1993nc,Herrero:1994iu,Feruglio:1992wf,Bagger:1993zf,Koulovassilopoulos:1993pw,Burgess:1999ha,Wang:2006im,Grinstein:2007iv,Azatov:2012bz,Alonso:2012px,Buchalla:2012qq,Buchalla:2013rka,Buchalla:2013eza}. This is a bottom-up EFT, constructed with the particle content and symmetries of the SM. These are the same requirements adopted in the construction of the SMEFT. The main difference between both EFTs concerns the Higgs field. In the EWChL, the Higgs boson, $h$, is included as a scalar singlet, with couplings unrelated to the ones of the Goldstone bosons of EWSB. 
+This Lagrangian, taken in isolation, leads to a theory with a parametrically low cutoff: it has therefore to be thought as part of a bigger EFT: the EWChL\cite{Dobado:1989ax,Dobado:1989ue,Dobado:1990zh,Dobado:1990jy,Espriu:1991vm,Herrero:1993nc,Herrero:1994iu,Feruglio:1992wf,Bagger:1993zf,Koulovassilopoulos:1993pw,Burgess:1999ha,Wang:2006im,Grinstein:2007iv,Azatov:2012bz,Alonso:2012px,Buchalla:2012qq,Buchalla:2013rka,Buchalla:2013eza}. This is a bottom-up EFT, constructed with the particle content and symmetries of the SM. These are the same requirements adopted in the construction of the SMEFT. The main difference between both EFTs concerns the Higgs field. In the EWChL, the Higgs boson, $h$, is included as a scalar singlet, with couplings unrelated to the ones of the Goldstone bosons of electroweak symmetry breaking (EWSB). 
 Therefore, $h$ is not necessarily part of an SU(2) doublet and consequently (contrary to the SMEFT) the leading-order Lagrangian is already an EFT, leading potentially to $O(1)$ effects in the $\kappa$s and to a potentially low cutoff.
 Further details and explanations  are discussed in \cite{Guo:2015isa,Buchalla:2017jlu,Alonso:2017tdy,Buchalla:2013rka,Buchalla:2013eza,Buchalla:2015wfa,Buchalla:2016sop}.
 
@@ -51,7 +52,7 @@ The mapping of the Wilson coefficients $c_{i}$ to the $\kappa_{i}$ parameters is
   \kappa_{i} =  |f_i(c_{j})| \equiv \frac{|{\cal A}_i(c_{j})|}{|{\cal A}_i(c_{j}^{\text{SM}})|}, 
 \end{equation}
 %
-where ${\cal A}$ is the corresponding transition amplitude of each process (the absolute value on the right hand side is necessary, as the loop functions of the light fermions ($b,\tau,\mu,\dots$) for the $\kappa_{\gamma}$ and $\kappa_{g}$ are complex)
+where ${\cal A}$ is the corresponding transition amplitude of each process (the absolute value on the right hand side is necessary, as the loop functions of the light fermions ($b,\tau,\mu,\dots$) for the $\kappa_{\gamma}$, $\kappa_{g}$ and $\kappa_{Z\gamma}$ are complex).
 We can  obtain an approximate inverse of eq.~\eqref{eq:kappa.EFT.5}, to connect both formalisms in the opposite direction, by assuming that all the imaginary parts are negligible.\footnote{This is a good approximation for some of the coefficients in $f_i(c_{j})$, for example for the coefficient of $c_{t}$, or as long as  the Wilson coefficients stay relatively close to the SM value. This is not the case for the coefficients of the light fermion loops, where real and imaginary parts are of similar size.}
 With the assumption of vanishing imaginary parts, eq.~\eqref{eq:kappa.EFT.5} becomes
 \begin{equation}
@@ -62,16 +63,18 @@ With the assumption of vanishing imaginary parts, eq.~\eqref{eq:kappa.EFT.5} bec
     \kappa_{b}\\
     \kappa_{\ell}\\
     \kappa_{g}\\
-    \kappa_{\gamma}
+    \kappa_{\gamma}\\
+    \kappa_{Z\gamma}
   \end{pmatrix}
   = 
   \begin{pmatrix}
-    1 & 0 & 0 & 0 & 0 & 0 \\
-    0 & 1 & 0 & 0 & 0 & 0 \\
-    0 & 0 & 1 & 0 & 0 & 0 \\
-    0 & 0 & 0 & 1 & 0 & 0 \\
-    0 & 1.055 & -0.055 & 0 & 1.3891 & 0 \\
-    1.2611 & -0.2683 & 0.0036 & 0.0036 & 0 & -0.3039 \\
+    1 & 0 & 0 & 0 & 0 & 0 & 0\\
+    0 & 1 & 0 & 0 & 0 & 0 & 0\\
+    0 & 0 & 1 & 0 & 0 & 0 & 0\\
+    0 & 0 & 0 & 1 & 0 & 0 & 0\\
+    0 & 1.055 & -0.055 & 0 & 1.3891 & 0 & 0\\
+    1.2611 & -0.2683 & 0.0036 & 0.0036 & 0 & -0.3039 & 0\\
+    1.059 & -0.060 & 0.0012 & 6.1 \cdot 10^{-5} & 0 & 0 & -0.083
   \end{pmatrix}
   \cdot
   \begin{pmatrix}
@@ -80,7 +83,8 @@ With the assumption of vanishing imaginary parts, eq.~\eqref{eq:kappa.EFT.5} bec
     c_{b}\\
     c_{\tau}\\
     c_{g}\\
-    c_{\gamma}
+    c_{\gamma}\\
+    c_{Z\gamma}
   \end{pmatrix}.
 \end{equation}
 %
@@ -93,16 +97,18 @@ These numbers also include the leading QCD corrections of the $h\to \gamma\gamma
     c_{b}\\
     c_{\tau}\\
     c_{g}\\
-    c_{\gamma}
+    c_{\gamma}\\
+    c_{Z\gamma}
   \end{pmatrix}
   = 
   \begin{pmatrix}
-    1 & 0 & 0 & 0 & 0 & 0 \\
-    0 & 1 & 0 & 0 & 0 & 0 \\
-    0 & 0 & 1 & 0 & 0 & 0 \\
-    0 & 0 & 0 & 1 & 0 & 0 \\
-    0 & -0.76 & 0.04 & 0 & 0.72 & 0 \\
-    4.15 & -0.88 & 0.012 & 0.012 & 0 & -3.29 \\
+    1 & 0 & 0 & 0 & 0 & 0 & 0\\
+    0 & 1 & 0 & 0 & 0 & 0 & 0\\
+    0 & 0 & 1 & 0 & 0 & 0 & 0\\
+    0 & 0 & 0 & 1 & 0 & 0 & 0\\
+    0 & -0.76 & 0.04 & 0 & 0.72 & 0 & 0\\
+    4.15 & -0.88 & 0.012 & 0.012 & 0 & -3.29 & 0\\
+    12.736   & -0.722 & 0.015 & 0.0007 & 0 & 0 & -12.029
   \end{pmatrix}
   \cdot
   \begin{pmatrix}
@@ -111,7 +117,8 @@ These numbers also include the leading QCD corrections of the $h\to \gamma\gamma
     \kappa_{b}\\
     \kappa_{\ell}\\
     \kappa_{g}\\
-    \kappa_{\gamma}
+    \kappa_{\gamma}\\
+    \kappa_{Z\gamma}
   \end{pmatrix}.
 \end{equation}
 %
@@ -119,14 +126,18 @@ With these relations one can translate the results of a $\kappa_i$ fit into the 
 
 \noindent
 {\bf Fit to HL/HE-LHC Higgs precision data.}
-The fits presented in what follows have been performed using the {\tt HEPfit} package~\cite{hepfit,hepfitsite}, and following a statistical Bayesian approach.  
+The fits presented in what follows have been performed using the {\tt HEPfit} package~\cite{hepfit,hepfitsite}, and following a Bayesian statistical approach.  
  The prior for the different model parameters both in the EFT and in the $\kappa$ framework are taken as flat, centered around the SM solution, and restricting the ranges to avoid other solutions present due to the parametrization invariances of the different formalisms.
-Since no sensitivity to the $H\to c\bar{c}$ channel at the HL/HE-LHC has been reported yet we fix the corresponding parameters controlling the $Hc\bar c$ interactions to their SM values ($c_c,\kappa_c=1$).~\footnote{See ~\cite{deBlas:2018tjm} for a discussion of the multiplicities of the different solutions in the fit as well as the effect of letting the charm coupling float in the fits in absence of a significant direct constraint.}
+Since no direct sensitivity to the $H\to c\bar{c}$ channel is available in the HL/HE-LHC inputs used for the fits, we fix the corresponding parameters controlling the $Hc\bar c$ interactions to their SM values ($c_c,\kappa_c=1$).~\footnote{See ~\cite{deBlas:2018tjm} for a discussion of the multiplicities of the different solutions in the fit as well as the effect of letting the charm coupling float in the fits in absence of a significant direct constraint.}
 
-To assess the sensitivity to deviations from the SM, we assume the future measurements are SM-like and include them in the likelihood of the fit assuming Gaussian distributions with standard deviations given by the corresponding experimental uncertainty. 
+To assess the sensitivity to deviations from the SM, we assume the future measurements are SM-like and include them in the likelihood of the fit assuming Gaussian distributions with standard deviations given by the corresponding projections for the experimental uncertainties. 
 
 The analysis of current constraints has been taken directly from~\cite{deBlas:2018tjm}, which is based on the experimental data from~\cite{Aaltonen:2013ipa,Abazov:2013gmz,Chatrchyan:2013iaa,Chatrchyan:2013vaa,Chatrchyan:2013zna,Aad:2014eha,Aad:2014eva,Aad:2014xzb,ATLAS:2014aga,Chatrchyan:2014nva,Khachatryan:2014ira,Khachatryan:2014jba,Khachatryan:2014qaa,Aad:2015gba,Aad:2015gra,Aad:2015ona,Aad:2015vsa,ATLAS:2016gld,CMS:2016mmc,Khachatryan:2016vau,Aaboud:2017jvq,Aaboud:2017ojs,Aaboud:2017rss,Aaboud:2017uhw,Aaboud:2017vzb,Aaboud:2017xsd,CMS:2017rli,CMS-PAS-HIG-17-007,CMS-PAS-HIG-17-019,Sirunyan:2017elk,Sirunyan:2017exp,Sirunyan:2017khh,Aaboud:2018xdt,ATLAS-CONF-2018-004,Sirunyan:2018egh,Sirunyan:2018mvw,Sirunyan:2018shy,Sirunyan:2018ygk}. 
-For the HL-LHC fits we use the corresponding ATLAS and CMS projections presented in this document. (See section~\ref{sec2:expan} and section~\ref{sec2:exp_combination}.)  For the systematics and theory uncertainties we use the 2 scenarios presented in section~\ref{sec:HiggsExtrapAss}: S1, for which the systematics are kept as in current values, and S2, where experimental systematics are reduced with the luminosity and theory errors are reduced.
+For the HL-LHC fits we use the corresponding ATLAS and CMS projections presented in this document in sections~\ref{sec2:expan} and \ref{sec2:exp_combination}.  
+Since CMS does not currently have any projections
+for the $H\to Z\gamma$ channel, we assume measurements with
+the same precision as ATLAS.
+For the systematics and theory uncertainties we use the 2 scenarios presented in section~\ref{sec:HiggsExtrapAss}: S1, for which the systematics are kept as in current values, and S2, where experimental systematics are reduced with the luminosity and theory errors are reduced.
 %
 The correlations between the ATLAS and CMS sets of inputs were not available for these fits, and are therefore ignored. We note that the absence of that information can result, in some cases, in somewhat optimistic bounds. This is particularly the case for those couplings whose uncertainty is dominated by theoretical errors (e.g. $\kappa_t$).
 
@@ -146,14 +157,16 @@ To compare the results with those that would be possible in a scenario where bet
 In Table~\ref{tab:projection.ci} we show the results of the fit for the different scenarios discussed above for the EWChL. The numbers for the HL-LHC and the HE-LHC are reported independently (i.e. the HE-LHC does not includes the HL-LHC results on the Higgs couplings). %No form of correlation between the HL-LHC and HE-LHC estimates is included, and therefore the 
 %results may be too optimistic. 
 These results are also shown in Figure~\ref{fig:projection.ci}. 
-The analogous results for the fit using the $\kappa$ formalism are presented in Table~\ref{fig:projection.kappai} and Figure~\ref{fig:projection.kappai}. In order to put both approaches on an equal theoretical footing, in the $\kappa$ fit we assumed custodial symmetry as well as the absence of extra exotic decays of the Higgs.  As expected from the discussion above, the results show an excellent agreement between the $c_i$ and $\kappa_i$ fits for most of the parameters. The exceptions are the parameters entering in loop-induced processes, $c_{g,\gamma}$ and $\kappa_{g,\gamma}$, whose interpretation differs in the two formalisms. In particular, the interplay between $c_{\gamma}$ and the couplings modifying the SM loops results in a significant difference between the $c_\gamma$ result and the one for $\kappa_\gamma$.
+The analogous results for the fit using the $\kappa$ formalism are presented in Table~\ref{tab:projection.kappai} and Figure~\ref{fig:projection.kappai}. In order to put both approaches on an equal theoretical footing, in the $\kappa$ fit we assumed custodial symmetry as well as the absence of extra exotic decays of the Higgs.  As expected from the discussion above, the results show an excellent agreement between the $c_i$ and $\kappa_i$ fits for most of the parameters. The exceptions are the parameters entering in loop-induced processes, $c_{g,\gamma,Z\gamma}$ and $\kappa_{g,\gamma,Z\gamma}$, whose interpretation differs in the two formalisms. In particular, the interplay between $c_{\gamma,Z\gamma}$ and the couplings modifying the SM loops results in a significant difference between the $c_{\gamma,Z\gamma}$ results and the ones for $\kappa_{\gamma,Z\gamma}$.
 
-Focussing our attention on the HL-LHC results, we observe that, even in the conservative S1 scenario, knowledge of the different EFT parameters, $c_i$, and Higgs-couplings modifiers, $\kappa_i$, will improve by at least a factor of 2-3 with respect to current experimental limits. The improvement is more marked for channels that benefit from very high statistics, such as $H\to \mu^+ \mu^-$, with a precision $\sim 7$ times better than in the current fit. Further progress is expected at the HE-LHC where, for instance, we foresee
+Focussing our attention on the HL-LHC results, we observe that, even in the conservative S1 scenario, the knowledge of the different EFT parameters, $c_i$, and Higgs-couplings modifiers, $\kappa_i$, will improve by at least a factor of 2-3 with respect to current experimental limits. The improvement is more marked for channels that benefit from very high statistics, such as $H\to \mu^+ \mu^-$, with a precision $\sim 7$ times better than in the current fit,
+and $H\to Z \gamma$ where current data does not allow to set
+any meaningful bound on $c_{Z\gamma}$, $\kappa_{Z\gamma}$. Further progress is expected at the HE-LHC where, for instance, we foresee
 $1\%$ level determinations for the Higgs couplings to vector bosons and $\tau$ leptons.
 As one can see by comparing the HL-LHC S2 and HE-LHC Base scenarios, the precision of the interactions associated with the main Higgs couplings 
 will be controlled, to a large extent, by systematic and theory errors. 
 
-One must be careful with the interpretation of these results, though. These projections implicitly assume that departures from the SM appear only as modifications in the Higgs couplings or, in other words, that any other interaction entering the relevant Higgs processes is exactly SM-like. However, at the level of precision we observe in the results, close to the $1\%$, this may not be a justified assumption given current bounds on other electroweak interactions that could modify, e.g.~VBF or VH associated production. This comment applies even more to the HE-LHC uncertainties obtained assuming the reduced theory and systematic uncertainties which, in particular, predict a subpercent precision for the Higgs coupling to vector bosons. We believe this to be too aggressive. A more realistic assessment of the HE-LHC uncertainties would require an equally realistic study of the experimental precision at that machine, as well as the results of a full global fit combining Higgs data with other relevant observables of the EW sector. We refer to section~\ref{sec8} for more details in this regard.
+One must be careful with the interpretation of these results, though. These projections implicitly assume that departures from the SM appear only as modifications in the Higgs couplings or, in other words, that any other interaction entering the relevant Higgs processes is exactly SM-like. However, at the level of precision we observe in the results, close to the $1\%$, this may not be a justified assumption given current bounds on other electroweak interactions that could modify, e.g.~VBF or VH associated production. This comment applies even more to the HE-LHC uncertainties obtained assuming the reduced theory and systematic uncertainties which, in particular, predict a subpercent precision for the Higgs coupling to vector bosons. We believe this to be too aggressive. A more realistic assessment of the HE-LHC uncertainties would require an equally realistic study of the experimental precision at that machine, as well as the results of a full global fit combining Higgs data with other relevant observables of the EW sector. We refer to section~\ref{sec8} for more details in this regard (in the context of the SMEFT).
 
 \begin{table}[ht!]
 \begin{center}
@@ -166,10 +179,10 @@ One must be careful with the interpretation of these results, though. These proj
   $c_{t}$&$1.04^{+0.09}_{-0.1}$&$\pm 0.040$&$\pm 0.025$&$\pm 0.020$&$\pm 0.010$\\
   $c_{b}$&$0.95\pm0.13$ &$\pm 0.042$&$\pm 0.028$&$\pm 0.023$&$\pm 0.012$ \\
   $c_{\tau}$&$1.02\pm 0.1$ &$\pm 0.023$&$\pm 0.017$& $\pm 0.012$&$\pm 0.007$\\
-  $c_{\mu}$&$0.58^{+0.4}_{-0.38} $ &$\pm 0.056$&$\pm 0.044$& $\pm 0.020$&$\pm 0.014$\\
+  $c_{\mu}$&$0.58^{+0.4}_{-0.38} $ &$\pm 0.053$&$\pm 0.042$& $\pm 0.019$&$\pm 0.013$\\
   $c_{g}$&$-0.01^{+0.08}_{-0.07} $ &$\pm 0.032$&$\pm 0.020$& $\pm 0.016$&$\pm 0.008$\\
   $c_{\gamma}$ &$0.05\pm0.2 $&$\pm 0.066$&$\pm 0.045$&$\pm 0.033$&$\pm 0.019$\\
-  %$c_{Z\gamma}$ &$-$&$\pm $&$\pm $&$\pm $&$\pm $\\
+  $c_{Z\gamma}$ &$-$&$\pm 1.061$&$\pm 1.048$&$\pm 0.45$&$\pm 0.314$\\
 \hline\hline
 \end{tabular}
 \end{center}
@@ -191,10 +204,10 @@ One must be careful with the interpretation of these results, though. These proj
   $\kappa_{t}$&$1.04^{+0.09}_{-0.1}$&$\pm 0.040$&$\pm 0.025$&$\pm 0.020$&$\pm 0.010$\\
   $\kappa_{b}$&$0.94\pm 0.13$ &$\pm 0.042$&$\pm 0.028$&$\pm 0.023$&$\pm 0.012$ \\
   $\kappa_{\tau}$&$1.0\pm 0.1$ &$\pm 0.023$&$\pm 0.017$& $\pm 0.012$&$\pm 0.007$\\
-  $\kappa_{\mu}$&$0.58^{+0.4}_{-0.38} $ &$\pm 0.056$&$\pm 0.044$& $\pm 0.020$&$\pm 0.014$\\
+  $\kappa_{\mu}$&$0.58^{+0.4}_{-0.38} $ &$\pm 0.053$&$\pm 0.042$& $\pm 0.019$&$\pm 0.013$\\
   $\kappa_{g}$&$1.02^{+0.08}_{-0.07} $ &$\pm 0.027$&$\pm 0.018$& $\pm 0.015$&$\pm 0.008$\\
   $\kappa_{\gamma}$ &$0.97\pm 0.07 $&$\pm 0.023$&$\pm 0.016$&$\pm 0.012$&$\pm 0.007$\\
- % $\kappa_{Z\gamma}$ &$-$&$\pm $&$\pm $&$\pm $&$\pm $\\
+  $\kappa_{Z\gamma}$ &$-$&$\pm 0.094$&$\pm 0.093$&$\pm 0.040$&$\pm 0.028$\\
 \hline\hline
 \end{tabular}
 \end{center}

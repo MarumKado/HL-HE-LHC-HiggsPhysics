@@ -7,10 +7,11 @@
 \begin{document}
 
 \section{Di-Higgs production and Higgs self couplings\label{sec3}}
+\begin{center}{\it Edited by L. Cadamuro, E. Petit, M. Riembau} \end{center}
 
-The HL-LHC is expected to be a Higgs boson factory, and the study of the double-Higgs ($HH$) production is one of the key goal of this high-luminosity program. Despite the small production cross-section compared to the single-Higgs boson production, more than 100000 $HH$ should be produced by the HL-LHC per experiment. The trilinear self-interaction of the Higgs boson is described by a with a coupling strength $\lambda_{HHH}  = \frac{m_H^2}{2v^2} $, where $m_H$ is the Higgs boson mass, and $v$ the electroweak symmetry breaking vacuum expectation value. Measurements of the Higgs trilinear interaction would provide constraints on the shape of the Higgs potential close to the minimum. and would allow to verify the electroweak symmetry breaking mechanism of the SM.
+The HL-LHC is expected to be a Higgs boson factory, and the study of the double-Higgs ($HH$) production is one of the key goal of this high-luminosity program. Despite the small production cross-section compared to the single-Higgs boson production, more than 100000 $HH$ pairs should be produced by the HL-LHC per experiment. The trilinear self-interaction of the Higgs boson is described by a with a coupling strength $\lambda_{HHH}  = \frac{m_H^2}{2v^2} $, where $m_H$ is the Higgs boson mass, and $v$ the electroweak symmetry breaking vacuum expectation value. Measurements of the Higgs trilinear interaction would provide constraints on the shape of the Higgs potential close to the minimum. and would allow to verify the electroweak symmetry breaking mechanism of the SM.
 The existence of an extended scalar sector or the presence of new dynamics at higher scales could modify the Higgs boson self-couplings.
-In the following the trilinear self-coupling strength, measured relative to the SM expectation is denoted by $\kappa_{\lambda} = \lambda_{HHH}/\lambda_{HHH}^{SM}$
+In the following the trilinear self-coupling strength, measured relative to the SM expectation is denoted by $\kappa_{\lambda} = c_{hh} = \lambda = \lambda_{HHH}/\lambda_{HHH}^{SM}$
 
 This section describes the prospects for studies of the Higgs boson pair production at the HL-LHC and HE-LHC and is organised as follows: the state-of-the-art NLO computions of the Higgs boson pair production cross sections is shown in Section~\ref{sec:HH_NLO}. Section~\ref{sec:HH_meas_exp} describes the prospect experimental analyses with the ATLAS and CMS experiments with realistic conditions, while Section~\ref{sec:HH_meas_th} concentrates on alternative methods with phenomenology studies. Studies at the HE-LHC are shown in Section~\ref{sec:HH_HE} with both phenomenological and experimental perspectives. Indirect probes of the trilinear couplings are described in Section~\ref{sec:HH_indirect}, using differential cross-section measurements or global fits. Finally Section~\ref{sec:HH_implications} show the implications of the trilinear coupling measurements on b-physics and the electroweak phase transition.  
 
@@ -49,7 +50,8 @@ The reported combined observed (expected) limit on the non-resonant Higgs-boson-
 
 Either those measurements were extrapolated to the centre-of-mass energy of 14~TeV and integrated luminosity of 3000~\ifb, either dedicated samples were used. Parameterised functions were used to estimate the response of the upgraded ATLAS and CMS detectors at the HL-LHC. The average number of additional proton-proton interactions (pile-up) per bunch crossing is assumed to be $<\mu>$ = 200.
 
-Only the production of HH pairs through gluon-gluon fusion is considered, with an expected cross-section of 36.69$^{+2.1\%}_{-4.9\%}$ fb at 14 TeV~\cite{Grazzini:2018bsd}. The state of the art NNLO/NNLL calculation with finite top mass effects included at NLO in QCD is used, for a Higgs boson mass of 125 \UGeV. Scale uncertainties are reported as superscript/subscript. The estimated top quark mass uncertainty of the NNLOFTapprox predictions is also presented, together with PDF and $\alpha_{S}$ uncertainties. PDF uncertainties are estimated within the Born-improved approximation. The calculation is performed in the on-shell top quark mass scheme, and studies of the uncertainty related to the scheme choice are in progress. 
+Only the production of HH pairs through gluon-gluon fusion is considered (the other production mechanisms being more than an order magnitude smaller), with an expected cross-section of 36.69$^{+2.1\%}_{-4.9\%}$ fb at 14 TeV as described in Section~\ref{sec:HH_NNLO}. The state of the art NNLO/NNLL calculation with finite top mass effects included at NLO in QCD is used, for a Higgs boson mass of 125 \UGeV. Scale uncertainties are reported as superscript/subscript. The estimated top quark mass uncertainty of the NNLOFTapprox predictions is also computed, together with PDF and $\alpha_{S}$ uncertainties. PDF uncertainties are estimated within the Born-improved approximation. The calculation is performed in the on-shell top quark mass scheme.
+The Feyman diagram which exhibits a \lHHH\ dependence interferes destructively with the box diagram that is independent of \lHHH, thus a small increase in the value of \lHHH decreases the expected HH production cross section, and modifies the distributions of event kinematics.
 
 \subsubsection{Measurements with the ATLAS experiment}
 \label{sec:HH_ATLAS}
@@ -103,6 +105,8 @@ Only the production of HH pairs through gluon-gluon fusion is considered, with a
 \subsection{HE-LHC prospects}
 \label{sec:HH_HE}
 
+This section show prospective results that could be obtained with 15~\abinv\ of data at a centre-of-mass energy of 27~\TeV\ at the HE-LHC.
+
 \subsubsection{Theory studies}
 \subfile{\main/section3/HEproj_theory}
 
@@ -139,7 +143,7 @@ In this section we discuss the possibility of indirectly extract information on 
 
 
 \subsubsection{Implications for theories of electroweak phase transition}
-\input{\main/section3/HELHC_EWPT}
+\input{\main/section3/HELHC_EWPT}\label{sec:HH_EWPT}
 
 
 
@@ -164,15 +168,15 @@ Further improvements in the analysis are proposed. The Topness and Higgsness var
 
 For the future HE-LHC upgrade, ATLAS presented projections for the $b\bar{b}b\bar{b}$ and $b\bar{b}\tau\bar{\tau}$ channels, with an expected sensitivity of around 10\%-20\% on $\kappa_\lambda$.
 
-A complementary strategy to exctract the trilinear from the LHC data consists in considering NLO corrections to single Higgs observables that depend on the self-coupling. This dependence has been computed and is presented in Tables~\ref{c1s},\ref{tab:c1-xs_13},\ref{tab:c1-xs_27},\ref{c1g}. The CMS experiment has provided a first analysis based on this strategy using $t\bar{t}\text{H}$ production with the decay $\text{H}\to \gamma\gamma$, with a resulting constraint of $-2\leq \kappa_\lambda\leq 5.5$, see Fig.~\ref{fig:ttHdiff_CMS_klambda_scan}. Considering that other parameters may affect single Higgs process, this has been studied under the perspective of a global fit, presented in Fig.~\ref{fig:hllhcchi2} estimating a $-3\leq \kappa_\lambda \leq 3$ reach at 68\% CL, complementing the constraints from double Higgs boson production. At HE-LHC, the projections are presented in Fig.~\ref{fig:helhcchi2}.
+A complementary strategy to extract the trilinear from the LHC data consists in considering NLO corrections to single Higgs observables that depend on the self-coupling. This dependence has been computed and is presented in Tables~\ref{c1s},\ref{tab:c1-xs_13},\ref{tab:c1-xs_27},\ref{c1g}. The CMS experiment has provided a first analysis based on this strategy using $t\bar{t}\text{H}$ production with the decay $\text{H}\to \gamma\gamma$, with a resulting constraint of $-2\leq \kappa_\lambda\leq 5.5$, see Fig.~\ref{fig:ttHdiff_CMS_klambda_scan}. Considering that other parameters may affect single Higgs process, this has been studied under the perspective of a global fit, presented in Fig.~\ref{fig:hllhcchi2} estimating a $-3\leq \kappa_\lambda \leq 3$ reach at 68\% CL, complementing the constraints from double Higgs boson production. At HE-LHC, the projections are presented in Fig.~\ref{fig:helhcchi2}.
 
 Implications of the $\HH$ measurements involve a wide variety of models. We present the interpretation within a flavour model which implies large Yukawa couplings for the light quarks, modifying the di-Higgs invariant mass distribution non-trivially, see Fig.~\ref{fig:hhflavourxsanddistr}. Also, Higgs boson pair production plays a crucial role on understanding the nature of the electroweak symmetry breaking phase transition, which might imply potentially observable effects if there are new states modifying the potential so that the matter-antimatter asymmetry can be explained via electroweak baryogenesis.
 
 
 \begin{figure}[h]
   \centering
-    \includegraphics[width=0.9\textwidth]{\main/section3/plots/tril_summaryplot.pdf}
-\caption{Summary plot for the different constraints on the Higgs boson self-coupling $\kappa_\lambda$ at HL-LHC and at HE-LHC. \textbf{$bbWW$ MISSING}}
+    \includegraphics[width=0.9\textwidth]{\main/section3/plots/tril_summaryplot_v2.pdf}
+\caption{Summary plot for the different expected constraints on the Higgs boson self-coupling $\kappa_\lambda$ at HL-LHC and at HE-LHC. The dashed lines correspond to uncertainties on the values, when any.}
 \label{fig:tril_summaryplot}
 \end{figure}
 

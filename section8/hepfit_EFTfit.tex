@@ -7,38 +7,14 @@
 %------------------------------------------------------------------------------------------------------------
 
 \subsection{Global constraints on universal new physics at the HL/HE-LHC}
+\label{sec8:universalewpo}
+
 \begin{center}
-	\textit{J. de Blas, M. Ciuchini, E. Franco, S. Mishima, M. Pierini, L. Reina and L. Silvestrini}
+	\textit{by J. de Blas, M. Ciuchini, E. Franco, S. Mishima, M. Pierini, L. Reina and L. Silvestrini}
 \end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection{Introduction}
-
-
-
-
-%For concreteness, we will focus our analysis on the 
-%so-called {\it universal theories}~\cite{Barbieri:2004qk,Wells:2015uba},
-%which we briefly introduce in the next section.
-
-
-%Our study is performed using the \HEPfit\, package. The 
-%
-%details on the parameters and procedure of the fit, including
-%the extrapolations of HL/HE-LHC accuracies that have been used, are discussed
-%in Section~\ref{sec:global-fit}.  We
-%conclude by presenting results for the bounds obtained on the Wilson
-%coefficients of the Lagrangian effective operators, both from a global
-%fit when all operators are simultaneously active and from a fit that
-%only considers one active operator at a time. Results for both current
-%data and the projections obtained in the HL/HE-LHC scenario will also
-%be presented. 
-%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%\subsubsection{Effective field theories for universal theories}
 \label{sec:general-framework}
 
 To systematically study the effects of new physics on EWPO and
@@ -61,50 +37,22 @@ are not affected by the strong constraints set by flavour measurements. Furtherm
 we will assume only CP-preserving interactions. 
 In particular, we will focus on the following non-redundant set of operators, among those defined in Table~\ref{tab:dim6ops}.\footnote{In principle, the physics at hadron colliders also allows to test the universal interactions ${\cal O}_{2G}$ and ${\cal O}_{3G}$. Due to the absence of HL-LHC projections for the relevant processes that can be used to constrain such operators, we do not include them in the global fits presented here.} 
 %
-\begin{align}
+\begin{equation}
 \label{eq:universal}
 %
-\mathcal{O}_{H} &=  
-\frac{1}{2}(\partial_\mu \vert H \vert^2)^2 \,,
-&
-\mathcal{O}_{H D} &= 
-|H^\dagger D_\mu H|^2 ,
-&
-\mathcal{O}_{6} &= 
-\lambda (H^\dagger H)^3,  \nonumber \\
-%
-\mathcal{O}_{G G} &= 
-g_s^2(H^\dagger H) \, G^A_{\mu\nu} G^{A\mu\nu}  \, ,
-&
-\mathcal{O}_{B B} &= 
-g^{\prime 2}(H^\dagger H) \, B_{\mu\nu} B^{\mu\nu}  \, ,
-&
-\mathcal{O}_{W W} &= 
-g^2(H^\dagger H) \, W^a_{\mu\nu} W^{a\mu\nu} \, ,\nonumber\\
-%
-\mathcal{O}_{W B} &= 
-gg^{\prime}(H^\dagger \sigma_a H) \, W^a_{\mu\nu} B^{\mu\nu} \, ,
-&
-\mathcal{O}_{HB} &= 
-g^\prime(i D_\mu H^\dagger D_\nu H) \, B^{\mu\nu} \, ,
-&
-\mathcal{O}_{HW} &= 
-g(i D_\mu H^\dagger D_\nu H) \, W^{a\mu\nu} \, ,\nonumber\\
-%
-\mathcal{O}_{2B} &= 
-\frac 12 (\partial_\rho B_{\mu\nu})^2  \, ,
-&
-\mathcal{O}_{2W} &= 
-\frac 12 (D_\rho W^a_{\mu\nu})^2  \, ,
-&
-\mathcal{O}_{3W} &= 
-\frac{1}{3!}g\varepsilon_{abc} W_{\mu}^{a~\nu} W_{\nu}^{b~\rho} W_{\rho}^{c~\mu} \, ,\nonumber\\
-%
-&&
-\mathcal{O}_{y} &= 
-\sum_\psi \mathcal{O}_{y_\psi} \, .
-& &
-\end{align}
+\{\mathcal{O}_{H}, \mathcal{O}_{H D} ,
+\mathcal{O}_{6} ,
+\mathcal{O}_{G G} ,
+\mathcal{O}_{B B} ,
+\mathcal{O}_{W W} ,
+\mathcal{O}_{W B} ,
+\mathcal{O}_{HB} ,
+\mathcal{O}_{HW} ,
+\mathcal{O}_{2B} ,
+\mathcal{O}_{2W} ,
+\mathcal{O}_{3W} ,
+\mathcal{O}_{y} \}
+\end{equation}
 %
 Of course, we note that the HL-LHC data allows to constrain EFT effects beyond the context of this class of universal new physics, 
 e.g. constraining independently Higgs couplings to different types of fermions, or operators modifying the EW interactions
@@ -112,10 +60,6 @@ in a non-universal way. Therefore, the results presented in this section are to 
 of the HL/HE-LHC capabilities, but as the interpretation within a particularly broad and well-motivated class
 of scenarios of physic beyond the SM.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsubsection{Global fit using HEPfit}
-\label{sec:global-fit}
 
 The global fit of EWPO and Higgs data is performed using the
 \HEPfit~package~\cite{hepfitsite}, a general tool to combine direct
@@ -243,7 +187,7 @@ expected luminosity of 15 ab$^{-1}$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection{The Global EFT fit to Universal new physics}
+\subsubsection*{The Global EFT fit to Universal new physics}
 \label{sec:results}
 
 The main results of the fits to universal new physics in the HL-LHC and HE-LHC are illustrated in Figures~\ref{fig:dim6U_HLLHC} and \ref{fig:dim6U_HELHC}, respectively.
@@ -258,16 +202,16 @@ Finally, it is worth noticing the improvements on some of the operators whose ef
 \centering
   %\hspace{-0.1cm}\includegraphics[width=.8\textwidth]{./Figs/HLLHC_Univ_L95}
   \hspace{-0.1cm}\includegraphics[width=.8\textwidth]{\main/section8/Figs/HLLHC_Univ_L95}
-  \vspace{-0.4cm}
-  \caption{$95\%$ probability limits on the new physics interaction scale $\Lambda/\sqrt{\vert C_i\vert}$ [TeV] (left axis) and coefficients $\vert C_i\vert /\Lambda^2$ [TeV$^{-2}$] (right axis) associated to each dimension-six operator from the global fit to universal new physics at the HL-LHC (green bars). The limits are compared with the ones from current data (in blue), as well as those obtained assuming only one operator at a time (dashed lines).~\label{fig:dim6U_HLLHC}}
+  \vspace{-0.2cm}
+  \caption{$95\%$ probability limits on the new physics interaction scale $\Lambda/\sqrt{\vert C_i\vert}$ [TeV] (left axis) and coefficients $\vert C_i\vert /\Lambda^2$ [TeV$^{-2}$] (right axis) associated to each dimension-six operator from the global fit to universal new physics at the HL-LHC (green bars, light and dark shades indicate the S1 and S2 assumptions for systematics, respectively). The limits are compared with the ones from current data (in blue), as well as those obtained assuming only one operator at a time (dashed lines).~\label{fig:dim6U_HLLHC}}
 \end{figure}
 
 \begin{figure}[h]
 \centering
   %\hspace{-0.1cm}\includegraphics[width=.8\textwidth]{./Figs/HELHC_Univ_L95}
   \hspace{-0.1cm}\includegraphics[width=.8\textwidth]{\main/section8/Figs/HELHC_Univ_L95}
-  \vspace{-0.4cm}
-   \caption{$95\%$ probability limits on the new physics interaction scale $\Lambda/\sqrt{\vert C_i\vert }$ [TeV] (left axis) and coefficients $\vert C_i\vert/\Lambda^2$ [TeV$^{-2}$] (right axis) associated to each dimension-six operator from the global fit to universal new physics at the HE-LHC (green bars). The limits are compared with the ones from current data (in blue), as well as those obtained assuming only one operator at a time (dashed lines).~\label{fig:dim6U_HELHC}}
+  \vspace{-0.2cm}
+   \caption{$95\%$ probability limits on the new physics interaction scale $\Lambda/\sqrt{\vert C_i\vert }$ [TeV] (left axis) and coefficients $\vert C_i\vert/\Lambda^2$ [TeV$^{-2}$] (right axis) associated to each dimension-six operator from the global fit to universal new physics at the HE-LHC (green bars, light and dark shades indicate the {\it Base} and {\it optimistic} assumptions for systematics, respectively). The limits are compared with the ones from current data (in blue), as well as those obtained assuming only one operator at a time (dashed lines).~\label{fig:dim6U_HELHC}}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

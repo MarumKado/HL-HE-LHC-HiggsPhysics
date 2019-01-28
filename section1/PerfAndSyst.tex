@@ -7,12 +7,12 @@ The total integrated luminosity for the HL-LHC dataset is assumed to be $3000$~f
 The effect of systematic uncertainties is taken into account based on the studies performed for the existing analyses and using common guidelines for projecting the expected improvements that are foreseen thanks to the large dataset and upgraded detectors, as described in Section~\ref{sec:methods:syst}.
 
 {\bf Detailed-simulations} are used to assess the performance of reconstructed objects in the upgraded detectors and HL-LHC conditions, as described in Sections~\ref{sec:methods:perf},\ref{sec:methods:perf_LHCb}.
-For some of the projections, such simulations are directly interfaced to different event generators, parton showering (PS) and hadronisation generators. Monte Carlo (MC) generated events are used for standard model (SM) and beyond-the-standard-model (BSM) processes, and are employed in the various projections to estimate the expected contributions of each process.
+For some of the projections, such simulations are directly interfaced to different event generators, parton showering (PS) and hadronisation generators. Monte Carlo (MC) generated events are used for SM and BSM processes, and are employed in the various projections to estimate the expected contributions of each process.
 
 {\bf Extrapolations} of existing results rely on the existent statistical frameworks to estimate the expected sensitivity for the HL-LHC dataset.
 The increased center-of-mass energy and the performance of the upgraded detectors are taken into account for most of the extrapolations using scale factors on the individual processes contributing to the signal regions. Such scale factors are derived from the expected cross sections and from detailed simulation studies.
 
-{\bf Fast-simulations} are employed for some of the projections in order to produce a large number of Monte Carlo events and estimate their reconstruction efficiency for the upgraded detectors. The upgraded CMS detector performance is taken into account encoding the expected performance of the upgraded detector in \delphes~\cite{deFavereau:2013fsa}, including the effects of pile-up interactions. Theoretical contributions use \delphes~\cite{deFavereau:2013fsa} with the commonly accepted HL-LHC card corresponding to the upgraded ATLAS and CMS detectors.
+{\bf Fast-simulations} are employed for some of the projections in order to produce a large number of Monte Carlo events and estimate their reconstruction efficiency for the upgraded detectors. The upgraded CMS detector performance is taken into account encoding the expected performance of the upgraded detector in \delphes~\cite{deFavereau:2013fsa}, including the effects of pile-up interactions. Theoretical contributions use \delphes with the commonly accepted HL-LHC card corresponding to the upgraded ATLAS and CMS detectors.
 
 {\bf Parametric-simulations} are used for some of the projections to allow a full re-optimization of the analysis selections that profit from the larger available datasets.
 Particle-level definitions are used for electrons, photons, muons, taus, jets and missing transverse momentum. These are constructed from stable particles of the MC event record with a lifetime larger than $0.3 \times 10^{-10}$~s within the observable pseudorapidity range. Jets are reconstructed using the anti-$k_t$ algorithm~\cite{Cacciari:2008gp} implemented in the Fastjet~\cite{fastjet} library, with a radius parameter of 0.4. All stable final-state particles are used to reconstruct the jets, except the neutrinos, leptons and photons associated to $W$ or $Z$ boson or $\tau$ lepton decays. The effects of an upgraded ATLAS detector are taken into account by applying energy smearing, efficiencies and fake rates to generator level quantities, following parameterisations based on detector performance studies with the detailed simulations. The effect of the high pileup at the HL-LHC is incorporated by overlaying pileup jets onto the hard-scatter events. Jets from pileup are randomly selected as jets to be considered for analysis with $\sim 2\%$ efficiency, based on studies of pile-up jet rejection and current experience.
@@ -69,11 +69,11 @@ It is reasonable to anticipate improvements to techniques of determining systema
 To estimate the expected performance, experts in the various physics objects and detector systems from ATLAS and CMS have looked at current limitations to
 systematic uncertainties in detail to determine which contributions are limited by statistics and where there are more fundamental limitations.
 Predictions were made taking into account the increased integrated luminosity and expected potential gains in technique.
-These recommendations were then harmonized between the experiments to take advantage of a wider array of expert opinions and to allow the experiments to make sensitivity predictions on equal footing~\cite{ATLAS_PERF_Note,CMS_PERF_Note}. For theorists' contributions, a simplified approach is often adopted, loosely inspired by the improvements predicted by experiments. 
+These recommendations were then harmonized between the experiments to take advantage of a wider array of expert opinions and to allow the experiments to make sensitivity predictions on equal footing~\cite{ATLAS_PERF_Note,CMS_PERF_Note} \textcolor{red}{References to be fixed}. For theorists' contributions, a simplified approach is often adopted, loosely inspired by the improvements predicted by experiments. 
 
 General guide-lining principles were defined in assessing the expected systematic uncertainties.
 Theoretical uncertainties are assumed to be reduced by a factor of two with respect to the current knowledge, thanks to both
-higher-order calculation as well as reduced PDF uncertainties~\cite{Khalek:2018mdn}.
+higher-order calculation as well as reduced parton distribution functions (PDF) uncertainties~\cite{Khalek:2018mdn}.
 All the uncertainties related to the limited number of simulated events are neglected, under the assumption that sufficiently large simulation samples will be available by the time the HL-LHC becomes operational. For all scenarios, the intrinsic statistical uncertainty in the measurement is reduced by a factor $1/\sqrt{\text{L}}$, where $\text{L}$ is the projection integrated luminosity divided by that of the reference Run~2 analysis.
 Systematics driven by intrinsic detector limitations are left unchanged, or revised according to detailed simulation studies of the upgraded detector.
 Uncertainties on methods are kept at the same value as in the latest public results available, assuming that the harsher HL-LHC conditions will be compensated by method improvements.
@@ -93,7 +93,6 @@ compared to the case where the current level of understanding of systematic unce
 or to the case of statistical-only uncertainties.
 
 
-\clearpage
 
 \end{document}
 

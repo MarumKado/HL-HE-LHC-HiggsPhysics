@@ -16,13 +16,7 @@ Here we update predictions for the HL-LHC setup and show the kinematic distribut
 %{\large{\bf Effective Field Theory parametrization}} \\ \\
 \noindent {\bf Effective Field Theory parametrization}\\
 %
-We consider a standard SMEFT parametrisation:
-
-\begin{equation}
-\mathcal{L}_{SMEFT} = \mathcal{L}_{SM} + \sum_i \frac{c_i}{\Lambda^2} \mathcal{O}_i^{(6)} + \dots 
-\end{equation}
-%
-where the $\mathcal{O}^{(6)}_i$ represent a basis of $\mathrm{dim=6}$ operators built from SM fields and respecting the known gauge symmetries\footnote{In particular, we assume CP symmetry, neglecting the CP-odd operators since their impact on VBS cross-sections and differential distributions is negligible. However it is well known that certain variables of these processes (namely spin correlations and polarizations) can be sensible to CP-violation.}, and $c_i$ are the Wilson coefficients of the theory. Further, the SMEFT amplitudes and cross sections can be parametrised as
+We consider the standard SMEFT parametrisation of eq.~(\ref{EFTLAG}).\footnote{In particular, we assume CP symmetry, neglecting the CP-odd operators since their impact on VBS cross-sections and differential distributions is negligible. However it is well known that certain variables of these processes (namely spin correlations and polarizations) can be sensible to CP-violation.} Further, the SMEFT amplitudes and cross sections can be parametrised as
 %
 \begin{equation}
 \mathcal{A}_{EFT} = \mathcal{A}_{SM} + \frac{g'}{\Lambda^2} \mathcal{A}_{6} +   \frac{g'^2}{\Lambda^4} \mathcal{A}_{8} + \dots 
@@ -51,16 +45,13 @@ p_T (j) > 30 \textrm{GeV} \quad \Delta \eta (j_1 j_2) > 2.4\quad m_{jj} > 100 \t
 \noindent {\bf EFT analysis}\\ 
 In tables~\ref{tab:signal} and \ref{tab:background} we show the sensitivities to different $\mathrm{dim=6}$ operators of the VBS(ZZ) process, as well as of its main background at LHC: the diboson production channel from quark-antiquark annihilation associated to gluon radiation (studied in depth by CMS for LHC runs I and II in \cite{Sirunyan:2018vkx}, QCD(ZZ)). 
 
-Further, in figure \ref{fig:plots} we show differential distributions for a subset of the previous operators. In particular we chose the three operators that directly affect triple and quartic gauge couplings:% {\color{red} this as well}
-
+Further, in figure \ref{fig:plots} we show differential distributions for a subset of operators. In particular we chose the three operators that directly affect triple and quartic gauge couplings, with the following notation, which differs from that of table~\ref{tab:dim6ops},
 %\begin{multicols}{2}
 \begin{equation}
-\mathcal{O}_W = \epsilon^{ijk} W_{\mu}^{i \nu} W_{\nu}^{j \rho} W_{\rho}^{k \mu} \quad
-\mathcal{O}_{HW} = H^{\dagger} H W_{\mu \nu}^I W^{\mu \nu I}\quad
-\mathcal{O}_{HWB} = H^{\dagger} \tau^I H W_{\mu \nu}^I B^{\mu \nu}
+\mathcal{O}_W = \frac{3!}{g}\mathcal{O}_{3W}\quad
+\mathcal{O}_{HW} = \frac{1}{g^2}\mathcal{O}_{WW}\quad
+\mathcal{O}_{HWB} = \frac{1}{gg^\prime}\mathcal{O}_{WB}
 \end{equation}
-
- 
 However, as reported in tables~\ref{tab:signal} and \ref{tab:background}, there are other relevant operators for the VBS process, 
 % in general and the TGC and QGC in particular. 
 for example $\mathcal{O}_{\ell \ell}$, the 4-lepton operator that affects $G_F$, or $\mathcal{O}_{HB}$ that enters the $Z$ boson propagator. More details can be found for example in \cite{Ghezzi:2015vva}.
@@ -84,7 +75,7 @@ The VBS(ZZ) and QCD(ZZ) final states, still largely unexplored at the LHC, will 
     %\caption{Picture 2}
     %\label{fig:2}
   \end{minipage}
-  \caption{Two generic simulations showing the EFT effects on key differential distributions: invariant mass of the di-jet system (left) and transverse momentum of the leading Z boson (right). We selected arbitrary values for the Wilson coefficients $\lbrace c_W, c_{HW}, c_{HWB} \rbrace$}
+  \caption{Two generic simulations showing the EFT effects on key differential distributions: invariant mass of the di-jet system (left) and transverse momentum of the leading Z boson (right). We selected arbitrary values for the Wilson coefficients $\lbrace c_W, c_{HW}, c_{HWB} \rbrace$. Notice that the notation differs from table \ref{tab:dim6ops}.}
   \label{fig:plots}
 \end{figure}
 
@@ -113,7 +104,7 @@ $ \mathcal{O}_{qq^{(31)}} = c_{qq^{(31)}} \cdot 75 \% $
  \\
 \hline 
  \end{tabular}
-  \caption{  Different sensitivities to each of the Warsaw basis operators. The operators that are not listed do not intervene in the process, or do it in a negligible way. Each sensitivity $\epsilon_i$ is calculated as $\epsilon_i  = \vert \frac{\sigma_{EFT} - \sigma_{SM}}{\sigma_{SM}} \vert$, and they include a standard EFT prefactor $\frac{v^2}{\Lambda^2}\vert_{\Lambda=1TeV}$ which needs to be taken into account if substituting values for the $c_i$ in the table. NB: we quote the absolute value for the sensitivities $\epsilon$.}
+  \caption{  Different sensitivities to each of the Warsaw basis operators. The operators that are not listed do not intervene in the process, or do it in a negligible way. Each sensitivity $\epsilon_i$ is calculated as $\epsilon_i  = \vert \frac{\sigma_{EFT} - \sigma_{SM}}{\sigma_{SM}} \vert$, and they include a standard EFT prefactor $\frac{v^2}{\Lambda^2}\vert_{\Lambda=1TeV}$ which needs to be taken into account if substituting values for the $c_i$ in the table. NB: we quote the absolute value for the sensitivities $\epsilon$. Notice that the notation differs from table \ref{tab:dim6ops}.}
   \label{tab:signal}
 \end{center}
 \end{table*}
@@ -143,7 +134,7 @@ $ \mathcal{O}_{qq^{(31)}} = c_{qq^{(31)}} \cdot 8.0 \% $
 \\
 \hline
  \end{tabular}
-  \caption{Sensitivities to the different $\mathrm{dim=6}$ operators in the diboson production channel, main background for the VBS(ZZ) at LHC. A large sensitivity does not necessarily mean that a large EFT effect is expected, since the corresponding Wilson coefficient might as well be very small. %NB: we quote the absolute value for the sensitivities $\epsilon$.  
+  \caption{Sensitivities to the different $\mathrm{dim=6}$ operators in the diboson production channel, main background for the VBS(ZZ) at LHC. A large sensitivity does not necessarily mean that a large EFT effect is expected, since the corresponding Wilson coefficient might as well be very small. Notice that the notation differs from table \ref{tab:dim6ops}. %NB: we quote the absolute value for the sensitivities $\epsilon$.  
   }
   \label{tab:background}
 \end{center}
