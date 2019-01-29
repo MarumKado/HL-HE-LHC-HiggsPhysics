@@ -22,6 +22,37 @@ def inspire(key):
     return True
 
 ###############################################################################
+# Clean a BibTex entry.
+def clean(bib):
+    # Fix the encoding.
+    for key, val in bib.items(): bib[key] = val.encode("ascii", "ignore")
+
+    # Fix the report numbering.
+    nums = []
+    for key in ["reportnumber", "number"]:
+        if not key in bib: continue
+        if len(bib[key]) < 3: continue
+        nums += bib[key].upper().strip().replace(
+            ". ", " ").replace(",", " ").split(" ")
+        del bib[key]
+    bib["reportnumber"] = ", ".join(nums)
+
+    # Fix collaborations.
+    author = bib["author"] if "author" in bib else None
+    collab = bib["collaboration"] if "collaboration" in bib else None
+    if author and "ollaboration" in author:
+        del bib["author"]
+        if not collab: bib["collaboration"] = author
+    collab = bib["collaboration"] if "collaboration" in bib else None
+    if collab and collab.lower().startswith("collaboration, "):
+        bib["collaboration"] = collab[15:] + " Collaboration"
+
+    # Fix the title.
+
+    # Fix the url/link.
+
+
+###############################################################################
 # Compare two entries.
 def compare(bib0, bib1):
     
@@ -31,9 +62,16 @@ def compare(bib0, bib1):
             if bib0[key] != bib1[key]: return 0.
 
     # Check exact matches.
-    for key in ["doi", "eprint", "reportnumber"]:
+    for key in ["doi", "eprint", "url"]:
         if key in bib0 and key in bib1 and len(bib0[key]) > 5:
             if bib0[key] == bib1[key]: return 100.
+
+    # Check report numbers.
+    num0 = bib0["reportnumber"].split(", ")
+    num1 = bib1["reportnumber"].split(", ")
+    for num in num0:
+        if num and num in num1: return 100.
+    if len(num0) and len(num1): return 0.
             
     # Check if both are from INSPIRE.
     if inspire(bib0["ID"]) and inspire(bib1["ID"]): return 0.
@@ -71,7 +109,7 @@ def choose(bib0, bib1):
 
 ###############################################################################
 # Create the bibliography database with unique keys.
-bdb = {}
+bdb, bad = {}, {}
 for idx in range(0, 11):
     tex = open("section%i/bib/section.bib" % idx if idx else "bib/chapter.bib")
     for bib in bibtexparser.load(tex).entries:
@@ -91,10 +129,10 @@ while len(itr):
         score = compare(bib0, bib1)
         
         # Merge if matched.
-        if score > 80:
+        if score == 100:
             new, old = choose(bib0, bib1)
             rpl[new] += rpl[old] + [old]
-            del rpl[old]; del bdb[old]
+            bad[old] = bdb[old]; del rpl[old]; del bdb[old]
             if old == key0: break
             else: idxs += [idx1]
 
@@ -103,30 +141,17 @@ while len(itr):
     
 # Print the matches.
 for key, vals in sorted(rpl.items()):
-    if len(vals): print "\033[91m" + key + "\033[0m"
-    for val in vals: print "    " + val
+    if len(vals): print "\033[91m" + key + "\033[0m" + ": " + (
+            bdb[key]["title"] if "title" in bdb[key] else "")
+    for val in vals: print ("    " + val + ": " + (
+            bad[val]["title"] if "title" in bad[val] else ""))
         
 # Write out the BibTex.
 tex = open("report.bib", "w")
 btd = bibtexparser.bibdatabase.BibDatabase()
 btw = bibtexparser.bwriter.BibTexWriter()
 for key in sorted(bdb):
-    # Encode fields as ASCII.
-    bib = bdb[key]
-    for key, val in bib.items(): bib[key] = val.encode("ascii", "ignore")
-
-    # Fix collaborations.
-    author = bib["author"] if "author" in bib else None
-    collab = bib["collaboration"] if "collaboration" in bib else None
-    if author and "ollaboration" in author:
-        del bib["author"]
-        if not collab: bib["collaboration"] = author
-    collab = bib["collaboration"] if "collaboration" in bib else None
-    if collab and collab.lower().startswith("collaboration, "):
-        bib["collaboration"] = collab[15:] + " Collaboration"
-                
-    # Write the entry.
-    btd.entries = [bib]
+    btd.entries = [bdb[key]]
     tex.write(btw.write(btd))
 tex.close()
 

@@ -7,9 +7,9 @@ from urllib.request import urlopen
 # Fix UTF-8 encoding.
 def toascii(val):
     val = utf8tolatex(val)
-    val = val.replace(r"{\textquoteright}", "`")
-    val = val.replace(r"{\textbackslash}", "\\")
-    val = val.replace(r"{\{}", "{").replace(r"{\}}", "}")
+    for old, new in [(r"{\textquoteright}", "`"), (r"{\textbackslash}", "\\"),
+                     (r"{\{}", "{"), (r"{\}}", "}"), (r"\''", r'\"')]:
+        val = val.replace(old, new)
     return val
 
 ###############################################################################
