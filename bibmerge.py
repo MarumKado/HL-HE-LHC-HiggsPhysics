@@ -56,7 +56,11 @@ def clean(bib):
     # Remove the unused entries.
     for key in ["address", "institution", "month", "type", "note"]:
         if key in bib: del bib[key]
-    
+
+    # Move conference to journal.
+    if "conference" in bib and not "journal" in bib:
+        bib["journal"] = bib["conference"]
+        
     # Move all url entries to link.
     if "url" in bib:
         if not "link" in bib: bib["link"] = bib["url"]
