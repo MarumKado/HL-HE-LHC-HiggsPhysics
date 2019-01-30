@@ -28,7 +28,7 @@ Ref. \cite{Grzadkowski:2010es} one can test new physics effects in
 a more general way (provided one has enough experimental inputs),
 for the purpose of the fit presented in this Section we are interested only in those
 new physics effects that arise in the context of the so-called {\it universal theories}~\cite{Barbieri:2004qk,Wells:2015uba}.
-In the EFT framework universal theories can be defined such that, via field redefinitions, all new physics effects
+In the EFT framework universal theories can be defined such that, via field re-definitions, all new physics effects
 can be captured by operators involving SM bosons only. Note that this includes not only theories where the
 new particles couple to the SM bosonic sector, but also scenarios where the interactions 
 occur via the SM fermionic currents. Therefore, this class of theories automatically 
@@ -94,7 +94,7 @@ quoted in \cite{deFlorian:2016spz} and in the current report.
 The new physics corrections to most
 Higgs production cross sections are obtained using {\tt Madgraph},
 with our own implementation of the dimension-6 SMEFT Lagrangian in a
-{\tt Feynrules} UFO model, except for the corrections to the
+{\tt FeynRules} UFO model, except for the corrections to the
 gluon-gluon fusion production cross section that is computed
 analytically. The corrections to Higgs decay rates are
 also computed using {\tt Madgraph}, or analytically following
@@ -104,7 +104,7 @@ One of the advantages of \HEPfit~is its modularity, allowing for an
 easy implementation of new physics models or additional observables.
 Taking advantage of this, we have extended the fits to EWPO plus Higgs 
 signal strengths to include several of the studies presented in this report, 
-and in particular those presented in the diHiggs or the High Energy probes sections.
+and in particular those presented in the di-Higgs or the High Energy probes sections.
 We provide details of the observables in the fits for the HL-LHC or HE-LHC 
 scenarios in what follows, before presenting our results.
 
@@ -125,7 +125,7 @@ are improved with the luminosity and theory uncertainties are reduced.
 %
 The correlations between the ATLAS and CMS sets of inputs were not available at the time
 these fits were performed, and therefore we combined them in an uncorrelated manner. One must take into 
-account that such correlations, especially between theory uncertainties, can be sizable. Therefore,
+account that such correlations, especially between theory uncertainties, can be sizeable. Therefore,
 the results of this uncorrelated combination can be somewhat optimistic.
 Finally, estimates for the $H\to Z\gamma$ channel are not available within the set of CMS projections, so we 
 assume measurements with the same precision as ATLAS.
@@ -141,7 +141,7 @@ These results have been further combined with several of the studies presented i
   %
   \end{enumerate}
  %
- Furthermore, we combine these results with those obtained from the high-energy measurements in the diboson channel presented in:
+ Furthermore, we combine these results with those obtained from the high-energy measurements in the di-boson channel presented in:
  %
  \begin{enumerate}
  %
@@ -174,7 +174,7 @@ Starting from the precisions given in the HL-LHC S2 signal strengths, we scale t
 according to the cross section and luminosities of the HE-LHC scenario, i.e.
 %
 \begin{equation}
-\delta_{\mathrm{stat}} \mu_{\mbox{\tiny HE-LHC}} = \sqrt{\frac{\sigma_{pp\to H}^{\mathrm{14 TeV}}\times 3~\!\mathrm{ab}^{-1}}{\sigma_{pp\to H}^{\mathrm{27 TeV}}\times 15~\! \mathrm{ab}^{-1}}} \delta_{\mathrm{stat}} \mu_{\mbox{\tiny HL-LHC}} .
+\delta_{\mathrm{stat}} \mu_{\mbox{\tiny HE-LHC}} = \sqrt{\frac{\sigma_{pp\to H}^{\mathrm{14 \UTeV}}\times 3~\!\mathrm{ab}^{-1}}{\sigma_{pp\to H}^{\mathrm{27 \UTeV}}\times 15~\! \mathrm{ab}^{-1}}} \delta_{\mathrm{stat}} \mu_{\mbox{\tiny HL-LHC}} .
 \end{equation}
 %
 We consider this as the {\it ``Base''} HE-LHC scenario. A more optimistic scenario was also suggested, reducing the 
@@ -182,7 +182,7 @@ systematics and theory uncertainties by a factor of 2. While we also include thi
 we must note that it does not come from a thoughtful extrapolation of the possible reduction of uncertainties but, instead, 
 should be consider only as an hypothesis.
 
-The study of EWPO observables is kept as in the HL-LHC scenario. Similarly, the studies of the $M_{HH}$ and $M_{ZH}$ differential distributions presented in the corresponding sections of this report where available only for $\sqrt{s}=14$ TeV. For the HE-LHC fit we use, instead of the $M_{HH}$ distribution, the results on the Higgs self-coupling from Section~\ref{sec:THanetal}. For  the $M_{ZH}$ distribution we include the same result as for HL-LHC. All the other analyses are available for the HE-LHC scenario.\footnote{The analysis of the Drell-Yan constraints on $WY$ only contains projections at 27 TeV for the neutral channel $pp\to \ell^+ \ell^-$. For the charged current $pp\to \ell \nu$ we use same constraints on the $W$ parameter given at 14 TeV.} Whenever possible, the sensitivities have been scaled to the
+The study of EWPO observables is kept as in the HL-LHC scenario. Similarly, the studies of the $M_{HH}$ and $M_{ZH}$ differential distributions presented in the corresponding sections of this report where available only for $\sqrt{s}=14$ \UTeV. For the HE-LHC fit we use, instead of the $M_{HH}$ distribution, the results on the Higgs self-coupling from Section~\ref{sec:THanetal}. For  the $M_{ZH}$ distribution we include the same result as for HL-LHC. All the other analyses are available for the HE-LHC scenario.\footnote{The analysis of the Drell-Yan constraints on $WY$ only contains projections at 27 \UTeV for the neutral channel $pp\to \ell^+ \ell^-$. For the charged current $pp\to \ell \nu$ we use same constraints on the $W$ parameter given at 14 \UTeV.} Whenever possible, the sensitivities have been scaled to the
 expected luminosity of 15 ab$^{-1}$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -203,7 +203,7 @@ Finally, it is worth noticing the improvements on some of the operators whose ef
   %\hspace{-0.1cm}\includegraphics[width=.8\textwidth]{./plots/HLLHC_Univ_L95}
   \hspace{-0.1cm}\includegraphics[width=.8\textwidth]{\main/section8/plots/HLLHC_Univ_L95}
   \vspace{-0.2cm}
-  \caption{$95\%$ probability limits on the new physics interaction scale $\Lambda/\sqrt{\vert C_i\vert}$ [TeV] (left axis) and coefficients $\vert C_i\vert /\Lambda^2$ [TeV$^{-2}$] (right axis) associated to each dimension-six operator from the global fit to universal new physics at the HL-LHC (green bars, light and dark shades indicate the S1 and S2 assumptions for systematics, respectively). The limits are compared with the ones from current data (in blue), as well as those obtained assuming only one operator at a time (dashed lines).~\label{fig:dim6U_HLLHC}}
+  \caption{$95\%$ probability limits on the new physics interaction scale $\Lambda/\sqrt{\vert C_i\vert}$ [\UTeV] (left axis) and coefficients $\vert C_i\vert /\Lambda^2$ [\UTeV$^{-2}$] (right axis) associated to each dimension-six operator from the global fit to universal new physics at the HL-LHC (green bars, light and dark shades indicate the S1 and S2 assumptions for systematics, respectively). The limits are compared with the ones from current data (in blue), as well as those obtained assuming only one operator at a time (dashed lines).~\label{fig:dim6U_HLLHC}}
 \end{figure}
 
 \begin{figure}[h]
@@ -211,7 +211,7 @@ Finally, it is worth noticing the improvements on some of the operators whose ef
   %\hspace{-0.1cm}\includegraphics[width=.8\textwidth]{./plots/HELHC_Univ_L95}
   \hspace{-0.1cm}\includegraphics[width=.8\textwidth]{\main/section8/plots/HELHC_Univ_L95}
   \vspace{-0.2cm}
-   \caption{$95\%$ probability limits on the new physics interaction scale $\Lambda/\sqrt{\vert C_i\vert }$ [TeV] (left axis) and coefficients $\vert C_i\vert/\Lambda^2$ [TeV$^{-2}$] (right axis) associated to each dimension-six operator from the global fit to universal new physics at the HE-LHC (green bars, light and dark shades indicate the {\it Base} and {\it optimistic} assumptions for systematics, respectively). The limits are compared with the ones from current data (in blue), as well as those obtained assuming only one operator at a time (dashed lines).~\label{fig:dim6U_HELHC}}
+   \caption{$95\%$ probability limits on the new physics interaction scale $\Lambda/\sqrt{\vert C_i\vert }$ [\UTeV] (left axis) and coefficients $\vert C_i\vert/\Lambda^2$ [\UTeV$^{-2}$] (right axis) associated to each dimension-six operator from the global fit to universal new physics at the HE-LHC (green bars, light and dark shades indicate the {\it Base} and {\it optimistic} assumptions for systematics, respectively). The limits are compared with the ones from current data (in blue), as well as those obtained assuming only one operator at a time (dashed lines).~\label{fig:dim6U_HELHC}}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -7,7 +7,7 @@
 The high luminosity LHC program offers many exciting opportunities to search for rare processes. It is expected that the
 LHC will accumulate 3\abinv of proton-proton collisions at 14\UTeV.
 The CMS detector will undergo major upgrades to all subsystems, including the tracker~\cite{cmstdr-014},
-the barrel~\cite{cmstdr-barrel} and endcap~\cite{cmstdr-ec} calorimeters, the muon system~\cite{cmstdr-mu},
+the barrel~\cite{cmstdr-barrel} and end-cap~\cite{cmstdr-ec} calorimeters, the muon system~\cite{cmstdr-mu},
 and the trigger~\cite{cmstdr-017}. 
 
 The bandwidth limitations of the first level (L1) trigger
@@ -43,9 +43,9 @@ The following signal samples are considered:
 \item Displaced single muons, generated with a uniform distribution of transverse momentum (\pt) between 2 and 8\UGeV, uniform
 in $\eta$ between -1 and 1, and with impact parameter \dtrans distributed as a Gaussian with width $\sigma=2\Ucm$.
 \item The decay of the SM Higgs boson $\PH(125)\to \phi\phi\to \bbbar\bbbar$, with $\phi$ masses of 15, 30, and 60\UGeV, and \ctau of 0, 1, and 5\Ucm.
-The production of the Higgs boson via gluon fusion is simulated by \POWHEG v2.0 \cite{powheg}, while the hadronization and decay is performed by \PYTHIA v8.205 \cite{pythia}.
+The production of the Higgs boson via gluon fusion is simulated by \POWHEG v2.0 \cite{powheg}, while the hadronisation and decay is performed by \PYTHIA v8.205 \cite{pythia}.
 \item The decay of a heavy SM-like Higgs boson with mass 250\UGeV, $\PH(250)\to \phi\phi\to \bbbar\bbbar$, with $\phi$ masses of 15, 30, and 60\UGeV, and \ctau of 0, 1, and 5\Ucm.
-The production of the heavy SM-like Higgs boson via gluon fusion, its decay, and its hadronization are all simulated with \PYTHIA 8 \cite{pythia}.
+The production of the heavy SM-like Higgs boson via gluon fusion, its decay, and its hadronisation are all simulated with \PYTHIA 8 \cite{pythia}.
 \end{enumerate}
 
 \paragraph{Track jets}
@@ -63,7 +63,7 @@ as produced by \FASTJET~\cite{fastjet}.
 A simplified algorithm for L1 track jets is used to facilitate the firmware implementation for the L1 trigger applications. 
 L1 track jets are found by grouping tracks in bins of \zo, the point of closest approach to the $z$-axis, for the tracks. The bins are overlapping, staggered by
 half a bin, so that each track ends up in two bins, eliminating inefficiencies at bin edges. In each \zo bin, the \pt of the tracks are summed in bins of
-$\eta$ and azimuthal angle $\phi$ with bin size $0.2 \times 0.23$. A simplified nearest-neighbor clustering is performed, and the total $\HT=\sum \pt^{\text{trk}}$ in the \zo bin is calculated.
+$\eta$ and azimuthal angle $\phi$ with bin size $0.2 \times 0.23$. A simplified nearest-neighbour clustering is performed, and the total $\HT=\sum \pt^{\text{trk}}$ in the \zo bin is calculated.
 The \zo bin with the highest \HT is chosen. Jets obtained through this algorithm are referred to as ``TwoLayer Jets.'' 
 For the studies below, \zo bins with size 6 cm are used. Jets with $\ET>50\,(100)\UGeV$ are required to have at least two (three) tracks.
 
@@ -71,7 +71,7 @@ For the studies below, \zo bins with size 6 cm are used. Jets with $\ET>50\,(100
 The track purity depends on the number of stubs in the track and the $\chi^2$ of the track fit. High-\pt tracks are much less pure than low-\pt tracks,
 with fake tracks distributed approximately uniformly in $1/\pt$ while real tracks are mostly low-\pt.
 To mitigate the effect of high-\pt fake tracks, any track with a reconstructed \pt above 200\UGeV is assigned a \pt of 200\UGeV. The track quality selection used in this analysis
-is summarized in Table~\ref{tab:tracksel}. 
+is summarised in Table~\ref{tab:tracksel}. 
 
 \begin{table*}[htb]
 \centering
@@ -122,7 +122,7 @@ from \FASTJET.
 In this section, we briefly describe the performance of an algorithm for reconstruction of tracks with non-zero impact parameter. This approach extends the baseline L1 Track Trigger design to 
 handle tracks with non-zero impact parameter and to include the impact parameter in the track fit. This enhanced design is feasible without greatly altering the track finding approach, but will 
 require more computational power than the current proposal, which considers only prompt tracks. Tracks passing the selection are clustered using the same algorithm as described in Section~\ref{sec:trackjets}, 
-and clusters containing tracks with high impact parameters are flagged as displaced jets. Though the baseline design of the L1 Track Trigger currently is optimized to find prompt tracks, these 
+and clusters containing tracks with high impact parameters are flagged as displaced jets. Though the baseline design of the L1 Track Trigger currently is optimised to find prompt tracks, these 
 studies show that an enhanced L1 Track Trigger can extend the L1 trigger acceptance to include new BSM physics signals.
 
 \begin{figure*}[hbtp]\centering
@@ -175,7 +175,7 @@ where \Nstubs is the total number of stubs comprising the track, $\beta_i$ and $
 and $\sigma_i$ is the expected bend angle resolution.
 
 Two track categories are defined, loose and tight.
-The selection is summarized in Table \ref{tab:dtracksel}.
+The selection is summarised in Table \ref{tab:dtracksel}.
 
 \begin{table*}[htb]
 \centering
@@ -240,7 +240,7 @@ We have confirmed that such extrapolation works for the track jets clustered wit
     \label{fig:reff_dispextra}
 \end{figure}
 
-The available bandwith for the triggers described above, if implemented, will be decided as a part of the full trigger menu optimization.
+The available bandwidth for the triggers described above, if implemented, will be decided as a part of the full trigger menu optimisation.
 Here, we consider two cases, 5 and 25\UkHz. The expected event yield for triggers using extended and prompt tracking are shown in Fig. \ref{fig:money},
 assuming branching fraction $\mathcal{B}[\Hphiphi] = 10^{-5}$ for the SM Higgs boson.
 For the heavy Higgs boson, the expected number of produced signal events is set to be the same as for the SM Higgs by requiring

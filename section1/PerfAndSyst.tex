@@ -3,26 +3,26 @@
 
 Different approaches have been used by the experiments and in theoretical prospect studies, hereafter named projections, to assess the sensitivity in searching for new physics at the HL-LHC and HE-LHC.
 For some of the projections, a mix of the approaches described below is used, in order to deliver the most realistic result.
-The total integrated luminosity for the HL-LHC dataset is assumed to be $3000$~fb$^{-1}$ at a center-of-mass energy of $14$~TeV. For HE-LHC studies the dataset is assumed to be $15$~ab$^{-1}$ at a center-of-mass of $27$~TeV.
+The total integrated luminosity for the HL-LHC dataset is assumed to be $3000$~fb$^{-1}$ at a centre-of-mass energy of $14$~\UTeV. For HE-LHC studies the dataset is assumed to be $15$~ab$^{-1}$ at a centre-of-mass of $27$~\UTeV.
 The effect of systematic uncertainties is taken into account based on the studies performed for the existing analyses and using common guidelines for projecting the expected improvements that are foreseen thanks to the large dataset and upgraded detectors, as described in Section~\ref{sec:methods:syst}.
 
 {\bf Detailed-simulations} are used to assess the performance of reconstructed objects in the upgraded detectors and HL-LHC conditions, as described in Sections~\ref{sec:methods:perf},\ref{sec:methods:perf_LHCb}.
 For some of the projections, such simulations are directly interfaced to different event generators, parton showering (PS) and hadronisation generators. Monte Carlo (MC) generated events are used for SM and BSM processes, and are employed in the various projections to estimate the expected contributions of each process.
 
 {\bf Extrapolations} of existing results rely on the existent statistical frameworks to estimate the expected sensitivity for the HL-LHC dataset.
-The increased center-of-mass energy and the performance of the upgraded detectors are taken into account for most of the extrapolations using scale factors on the individual processes contributing to the signal regions. Such scale factors are derived from the expected cross sections and from detailed simulation studies.
+The increased centre-of-mass energy and the performance of the upgraded detectors are taken into account for most of the extrapolations using scale factors on the individual processes contributing to the signal regions. Such scale factors are derived from the expected cross sections and from detailed simulation studies.
 
 {\bf Fast-simulations} are employed for some of the projections in order to produce a large number of Monte Carlo events and estimate their reconstruction efficiency for the upgraded detectors. The upgraded CMS detector performance is taken into account encoding the expected performance of the upgraded detector in \delphes~\cite{deFavereau:2013fsa}, including the effects of pile-up interactions. Theoretical contributions use \delphes with the commonly accepted HL-LHC card corresponding to the upgraded ATLAS and CMS detectors.
 
-{\bf Parametric-simulations} are used for some of the projections to allow a full re-optimization of the analysis selections that profit from the larger available datasets.
-Particle-level definitions are used for electrons, photons, muons, taus, jets and missing transverse momentum. These are constructed from stable particles of the MC event record with a lifetime larger than $0.3 \times 10^{-10}$~s within the observable pseudorapidity range. Jets are reconstructed using the anti-$k_t$ algorithm~\cite{Cacciari:2008gp} implemented in the Fastjet~\cite{fastjet} library, with a radius parameter of 0.4. All stable final-state particles are used to reconstruct the jets, except the neutrinos, leptons and photons associated to $W$ or $Z$ boson or $\tau$ lepton decays. The effects of an upgraded ATLAS detector are taken into account by applying energy smearing, efficiencies and fake rates to generator level quantities, following parameterisations based on detector performance studies with the detailed simulations. The effect of the high pileup at the HL-LHC is incorporated by overlaying pileup jets onto the hard-scatter events. Jets from pileup are randomly selected as jets to be considered for analysis with $\sim 2\%$ efficiency, based on studies of pile-up jet rejection and current experience.
+{\bf Parametric-simulations} are used for some of the projections to allow a full re-optimisation of the analysis selections that profit from the larger available datasets.
+Particle-level definitions are used for electrons, photons, muons, taus, jets and missing transverse momentum. These are constructed from stable particles of the MC event record with a lifetime larger than $0.3 \times 10^{-10}$~s within the observable pseudorapidity range. Jets are reconstructed using the anti-$k_t$ algorithm~\cite{Cacciari:2008gp} implemented in the FastJet~\cite{fastjet} library, with a radius parameter of 0.4. All stable final-state particles are used to reconstruct the jets, except the neutrinos, leptons and photons associated to $W$ or $Z$ boson or $\tau$ lepton decays. The effects of an upgraded ATLAS detector are taken into account by applying energy smearing, efficiencies and fake rates to generator level quantities, following parametrisations based on detector performance studies with the detailed simulations. The effect of the high pileup at the HL-LHC is incorporated by overlaying pileup jets onto the hard-scatter events. Jets from pileup are randomly selected as jets to be considered for analysis with $\sim 2\%$ efficiency, based on studies of pile-up jet rejection and current experience.
 
 
 \subsubsection{ATLAS and CMS performance}
 \label{sec:methods:perf}
 
 The expected performance of the upgraded ATLAS and CMS detectors has been studied in detail in the context of the Technical Design Reports
-and subsequent studies; the assumptions used for this report and a more detailed description are available in Ref.~\cite{ATLAS_PERF_Note, Collaboration:2650976}. For CMS, the object performance in the central region assumes a barrel calorimeter aging corresponding to an integrated luminosity of $1000$~fb$^{-1}$.
+and subsequent studies; the assumptions used for this report and a more detailed description are available in Ref.~\cite{ATLAS_PERF_Note, Collaboration:2650976}. For CMS, the object performance in the central region assumes a barrel calorimeter ageing corresponding to an integrated luminosity of $1000$~fb$^{-1}$.
 
 The triggering system for both experiments will be replaced and its impact on the triggering abilities of each experiment assessed;
 new capabilities will be added, and, despite the more challenging conditions, most of the trigger thresholds for common objects are expected
@@ -38,7 +38,7 @@ Muons are reconstructed combining muon spectrometer and inner tracker informatio
 
 Jets are reconstructed by clustering energy deposits in the electromagnetic and hadronic calorimeters\cite{ATLAS_Tile_TDR,ATLAS_LAr_TDR,CMS_Barrel_TDR} using the anti-$k_{T}$ algorithm\cite{Cacciari:2008gp}.
 B-jets are identified via $b$-tagging algorithms. B-tagging is performed if the jet is within the tracker acceptance ($|\eta|<4.0$).
-Multivariate techniques are employed in order to identify $b-$jets and $c-$jets, and were fully re-optimized for the upgraded detectors~\cite{ATLAS_Pixel_TDR,CMS_Tracker_TDR}.
+Multivariate techniques are employed in order to identify $b-$jets and $c-$jets, and were fully re-optimised for the upgraded detectors~\cite{ATLAS_Pixel_TDR,CMS_Tracker_TDR}.
 An 70\% $b-$jet efficiency working point is used, unless otherwise noted.
 
 High $p_T$ boosted jets are reconstructed using large-radius anti-$k_{T}$ jets with a distance parameter of 0.8. Various jet substructure variables are employed to identify boosted W/Z/Higgs boson and top quark jets with good discrimination against generic QCD jets. 
@@ -55,7 +55,7 @@ The LHCb upgrades are shifted with respect to those of ATLAS and CMS. A first up
 The LHCb MC simulation used in this document mainly relies on the \pythia~8 generator~\cite{Sjostrand:2007gs} with a specific LHCb configuration~\cite{LHCb-PROC-2010-056}, using the CTEQ6 leading-order set of parton density functions~\cite{cteq6}. The interaction of the generated particles with the detector, and its response, are implemented using the \geant{} toolkit~\cite{Allison:2006ve,Agostinelli:2002hh}, as described in Ref.~\cite{LHCb-PROC-2011-006}. 
 
 The reconstruction of jets is done using a particle flow algorithm, with the output of this clustered using
-the anti-kT algorithm as implemented in Fastjet, with a distance parameter of
+the anti-kT algorithm as implemented in FastJet, with a distance parameter of
 0.5. Requirements are placed on the candidate jet in order to reduce the background
 formed by particles which are either incorrectly reconstructed or produced in additional pp interactions in the same event.
 
@@ -69,7 +69,7 @@ It is reasonable to anticipate improvements to techniques of determining systema
 To estimate the expected performance, experts in the various physics objects and detector systems from ATLAS and CMS have looked at current limitations to
 systematic uncertainties in detail to determine which contributions are limited by statistics and where there are more fundamental limitations.
 Predictions were made taking into account the increased integrated luminosity and expected potential gains in technique.
-These recommendations were then harmonized between the experiments to take advantage of a wider array of expert opinions and to allow the experiments to make sensitivity predictions on equal footing~\cite{ATLAS_PERF_Note,Collaboration:2650976}. For theorists' contributions, a simplified approach is often adopted, loosely inspired by the improvements predicted by experiments. 
+These recommendations were then harmonised between the experiments to take advantage of a wider array of expert opinions and to allow the experiments to make sensitivity predictions on equal footing~\cite{ATLAS_PERF_Note,Collaboration:2650976}. For theorists' contributions, a simplified approach is often adopted, loosely inspired by the improvements predicted by experiments. 
 
 General guide-lining principles were defined in assessing the expected systematic uncertainties.
 Theoretical uncertainties are assumed to be reduced by a factor of two with respect to the current knowledge, thanks to both
