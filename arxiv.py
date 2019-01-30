@@ -36,6 +36,13 @@ if __name__ == "__main__":
     try: shutil.rmtree("arxiv")
     except: pass
     shutil.copytree("./", "arxiv", ignore = ignore)
+
+    # Fix the hyperref issue.
+    readme = open("arxiv/00README.XXX", "w")
+    readme.write("nohypertex\n")
+    readme.close()
+    
+    # Create the tarball.
     tar = tarfile.open("arxiv.tgz", "w:gz")
     tar.add("arxiv")
     tar.close()
