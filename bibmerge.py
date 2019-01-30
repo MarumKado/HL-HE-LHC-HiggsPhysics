@@ -89,12 +89,11 @@ def inspire(key):
 ###############################################################################
 # Compare two entries.
 def compare(bib0, bib1):
-    
     # Check exact not matches.
     for key in ["year", "doi", "eprint"]:
         if key in bib0 and key in bib1 and len(bib0[key]) > 3:
             if bib0[key] != bib1[key]: return 0.
-
+            
     # Check exact matches.
     for key in ["doi", "eprint", "link"]:
         if key in bib0 and key in bib1 and len(bib0[key]) > 5:
