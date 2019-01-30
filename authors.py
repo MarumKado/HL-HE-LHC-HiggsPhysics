@@ -1,6 +1,6 @@
 #!/usr/bin/env python3.6
 import csv, collections, json, codecs
-from pylatexenc.latexencode import utf8tolatex 
+from pylatexenc.latexencode import utf8tolatex
 from urllib.request import urlopen
 
 ###############################################################################
@@ -71,6 +71,7 @@ if __name__ == "__main__":
     
     # Write the preamble.
     tex = open("authors.tex", "w")
+    txt = open("authors.txt", "w")
     tex.write(r"\newcounter{instituteref}" + "\n")
     tex.write(r"\newcommand{\iinstitute}[2]{\refstepcounter{instituteref}"
               r"\label{#1}$^{\ref{#1}}$\href{http://inspirehep.net/record/#1}"
@@ -85,6 +86,8 @@ if __name__ == "__main__":
               r"\author{Convenors: \\ " + "\n")
     tex.write(",\n".join([author(authors, institutes, name)
                           for name in conveners]))
+    txt.write(", ".join([authors[name][1] for name in conveners]))
+    txt.write(", ")
     for name in conveners: del authors[name]
     
     # Write the authors.
@@ -92,6 +95,8 @@ if __name__ == "__main__":
               r"\\ \vspace*{4mm} Contributors: \\" + "\n")
     tex.write(",\n".join([author(authors, institutes, name) for name in
                           sorted(authors, key = lambda key: key.lower())]))
+    txt.write(", ".join([authors[name][1] for name in
+                         sorted(authors, key = lambda key: key.lower())]))
     
     # Write the institutes.
     tex.write("\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n"
