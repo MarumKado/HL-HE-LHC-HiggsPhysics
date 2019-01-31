@@ -9,7 +9,7 @@ def toascii(val):
     val = utf8tolatex(val)
     for old, new in [(r"{\textquoteright}", "`"), (r"{\textbackslash}", "\\"),
                      (r"{\{}", "{"), (r"{\}}", "}"), (r"\''", r'\"'),
-                     (r"{\$}", "$")]:
+                     (r"{\$}", "$"), (r"{\textasciitilde}", "~")]:
         val = val.replace(old, new)
     return val
 
