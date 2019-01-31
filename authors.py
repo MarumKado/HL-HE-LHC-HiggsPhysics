@@ -68,6 +68,7 @@ if __name__ == "__main__":
         if key in authors: authors[key][2] += insts
         else: authors[key] = [aid, " ".join([first, last]), insts]
     dat.close()
+    print("authors:    %i" % len(authors))
     
     # Write the preamble.
     tex = open("authors.tex", "w")
@@ -104,3 +105,4 @@ if __name__ == "__main__":
     tex.write(";\n".join([institutes[iid] for iid in institutes]))
     tex.write(r"}" + "\n")
     tex.close()
+    print("institutes: %i" % len(institutes))
