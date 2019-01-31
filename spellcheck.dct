@@ -1,3 +1,4 @@
+personal_ws-1.1 en 0
 aa
 abc
 Abelian
@@ -45,7 +46,6 @@ bbbb
 bbH
 bbj
 bbWW
-bc
 bd
 BDRS
 BDT
@@ -55,7 +55,6 @@ Bechtle
 Benaglia
 Bengala
 Bennet
-Bertella
 bibtex
 Biek
 Bishara
@@ -69,7 +68,6 @@ Bkgd
 BkgTh
 Blas
 Bondu
-Bonvini
 Borgonovi
 Borsato
 Boselli
@@ -110,14 +108,11 @@ cb
 ccc
 cccc
 ccccc
-cccccc
-ccccccc
 cccccccc
 CDF
 CDMS
 CDS
 Celis
-center
 Center
 Cepeda
 CERN
@@ -229,18 +224,15 @@ eg
 eH
 eHdecay
 eigen
-electro
 electroweak
 Electroweak
 electroweakinos
 Eleni
-ELWK
 Englert
 eq
 Eq
 Eqs
 et
-evaulated
 EW
 EWBG
 EWChL
@@ -252,7 +244,6 @@ EWPTs
 EWSB
 FAC
 factorisable
-factorization
 Fady
 FAPESP
 FastJet
@@ -276,15 +267,12 @@ Flechl
 FN
 foffc
 Fontanesi
-foreseable
 formalisms
 fR
 Francavilla
 Franceschini
 Francesco
-Frederix
 frequentist
-Frixione
 Froggat
 Froggatt
 fs
@@ -299,12 +287,10 @@ gauginos
 Gauthier
 gb
 Geant
-Gehrmann
 Georg
 Georgi
 Gerhard
 Gershtein
-GeV
 gg
 GG
 ggF
@@ -326,8 +312,6 @@ glueball
 glueballs
 gluinos
 gluon
-Gluon
-gluonic
 gluons
 Goldstone
 Gon
@@ -345,7 +329,6 @@ Guralnik
 gZ
 hA
 haa
-Haddad
 hadron
 Hadron
 hadronic
@@ -402,7 +385,6 @@ HiggspotT
 HiggsSignals
 HiggsToALPs
 Higgstrahlung
-Hirschi
 hj
 Hl
 HL
@@ -417,7 +399,6 @@ Hto
 htt
 hu
 Hu
-Huss
 hv
 hVV
 HVV
@@ -428,7 +409,6 @@ HwH
 HWH
 hWW
 hxswg
-HXSWG
 Hyperopt
 HyperOpt
 hZ
@@ -440,7 +420,6 @@ idiso
 ie
 ig
 IH
-iHixs
 ij
 IJK
 Im
@@ -481,7 +460,6 @@ Kaon
 kaons
 Kaons
 kappaq
-Karlberg
 Kaur
 Kerner
 Khalek
@@ -514,7 +492,6 @@ lept
 leptonia
 leptonic
 leptonically
-lH
 Lh
 LHAPDF
 LHC
@@ -523,9 +500,7 @@ LHCb
 LHeC
 Lian
 Liebler
-Lindert
 linearised
-lineshape
 Liu
 Llacer
 LLC
@@ -544,7 +519,6 @@ Luisoni
 Lukas
 lumi
 luminosities
-LUXqed
 LV
 LW
 LZ
@@ -562,12 +536,9 @@ Malinauskas
 Maltoni
 Mandelstam
 Marcela
-Marchiori
 marg
 Martino
-Marzani
 Maskawa
-Massironi
 massless
 Matchev
 Matheus
@@ -596,12 +567,10 @@ MIP
 mis
 Mishima
 mistag
-Mistlberger
 mixings
 Mlm
 MLM
 modularity
-Monni
 Montagna
 Monti
 MSSM
@@ -635,18 +604,14 @@ NGB
 Nicrosini
 Nikopoulos
 NL
-NLL
 nlo
 NLO
-NLOPS
 NMSSM
 NN
 NNLL
 nnlo
 NNLO
 NNLOFTapprox
-nnlonllx
-NNLOPS
 NNPDF
 nonet
 nonlinearEFT
@@ -664,7 +629,6 @@ Ortona
 ourleff
 ouv
 Pagani
-Pandini
 Panico
 Panwar
 Pappadopulo
@@ -688,9 +652,7 @@ PDF
 pdfas
 PDFs
 PerfAndSyst
-permill
 Pernie
-Perrozzi
 perturbative
 perturbativity
 Petit
@@ -709,7 +671,6 @@ polarisations
 Pomarol
 Pont
 POWHEG
-Pozzorini
 Pran
 pre
 Pre
@@ -717,7 +678,6 @@ precisions
 priori
 prockga
 prockt
-proVBFH
 ps
 pseudorapidity
 pseudoscalar
@@ -729,7 +689,6 @@ PV
 Pythia
 PYTHIA
 QCD
-qed
 QFT
 qg
 QGC
@@ -742,7 +701,6 @@ quarkonia
 quartic
 Rabah
 radiative
-Radiative
 radiatively
 rae
 rapidities
@@ -754,7 +712,6 @@ Redigolo
 Reina
 renormalisable
 renormalisation
-renormalization
 ResBos
 rescale
 rescaled
@@ -763,9 +720,7 @@ rescaling
 Rescaling
 rescalings
 resummation
-resummations
 resummed
-resut
 reweighted
 reweighting
 Ri
@@ -781,7 +736,6 @@ Roni
 Rorie
 Rosiek
 rrr
-rrrrr
 Rscale
 Rsimp
 Ruderman
@@ -813,7 +767,6 @@ SFs
 sG
 sgn
 Shankha
-Shao
 Shivaji
 sig
 Sig
@@ -849,18 +802,11 @@ Stamou
 Stefania
 Stefaniak
 Stefano
-Stieger
 strahlung
 STXS
 SU
-subdominant
-subl
-subleading
-Subleading
-subprocesses
 Sudakov
 SUGRA
-summarizing
 Sundrum
 SuperCDMS
 supergravity
@@ -874,7 +820,6 @@ SusHi
 SUSY
 SV
 SVFit
-sx
 SX
 sys
 syst
@@ -884,7 +829,6 @@ Szleper
 taggable
 Takeuchi
 Tathagata
-Tazon
 tbH
 tc
 td
@@ -900,7 +844,6 @@ tgz
 th
 tH
 Thamm
-Theeuwes
 Thibaud
 tHj
 tHq
@@ -918,7 +861,6 @@ Torre
 TP
 TPE
 tracklet
-Tramontano
 Tri
 tril
 trilinear
@@ -938,7 +880,6 @@ tZ
 TZ
 ub
 uc
-uck
 ud
 uG
 uH
@@ -978,7 +919,6 @@ VH
 vHbb
 VHbb
 Vhid
-VHJ
 VLQ
 Vryonidou
 VV
@@ -1022,7 +962,6 @@ Yukawa
 Yukawas
 Za
 Zanderighi
-Zaro
 Zb
 Zd
 Zerwas

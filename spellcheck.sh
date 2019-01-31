@@ -14,5 +14,6 @@ for TEX in $TEXS; do
 done
 
 # Create the unique dictionary.
-cat list.dct | sort | uniq > tmp.dct
-mv tmp.dct list.dct
+echo "personal_ws-1.1 en 0" > spellcheck.dct
+cat list.dct | sort | uniq >> spellcheck.dct
+rm list.dct
