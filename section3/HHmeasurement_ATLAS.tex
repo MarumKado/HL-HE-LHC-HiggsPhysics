@@ -67,7 +67,7 @@ For the measurement of \kl\ the output score of a BDT trained on the \kl\ = 20 s
 The minimum negative-log-likelihood for a SM signal hypothesis is shown in Figure~\ref{fig:ATLAS_HH_bbtautau_d}.
 
 
-%A multivariate analysis with a boosted decision tree (BDT) is performed on the leptonic/hadronic and hadronic/hadronic decay modes of the $\tau$-lepton, and the BDT score is used as final discriminant. The largest systematic uncertainty of the Run 2 analysis, the simulation statistics, is neglected in the extrapolation. The expected significance of XX (XX) $\sigma$ including (without) systematics uncertainties can be achieved. The allowed range at 95\% CL for $\kl$ including (without) systematic uncertainties is XX -- XX (XX -- XX).
+%A multivariate analysis with a boosted decision tree (BDT) is performed on the leptonic/hadronic and hadronic/hadronic decay modes of the $\tau$-lepton, and the BDT score is used as final discriminant. The largest systematic uncertainty of the Run 2 analysis, the simulation statistics, is neglected in the extrapolation. The expected significance of XX (XX) $\sigma$ including (without) systematics uncertainties can be achieved. The allowed range at 95\% CL for $\kl$ including (without) systematic uncertainties is XXhttps://www.overleaf.com/project/5ba8fffc73dd62044351c648 -- XX (XX -- XX).
 
 
 %
@@ -105,6 +105,24 @@ The combination of various channels is realised by constructing a combined likel
 Setting appropriate nuisance parameters (NP) to be correlated with one another induced a negligible change in the combination results compared to assuming all nuisance parameters are uncorrelated. No strong correlation between any of the NP are found by the fits, with the exception of some correlation between the background models of the $b\bar{b}b\bar{b}$ and $b\bar{b}\tau\tau$ channels. Theoretical uncertainties on the cross-sections have negligible impact on the combined results.
 
 The combined significance is 3.5 and 3.0 standard deviations with and without systematic uncertainties included.
+Table \ref{tab:comb_measuredmu} shows the signal strength measured in the individual channels, as well as the combination, when the SM $HH$ signal is injected.
+
+\begin{table}[htb!]
+\centering
+\begin{tabular}{l  c  c}
+\hline
+Measured $\mu$  &  \textbf{Statistical-only} & \textbf{Statistical + Systematic}\\
+\hline
+\HHbbbb    & 1.0 $\pm$ 0.6 & 1.0 $\pm$ 1.6 \\
+\HHbbtt      & 1.0 $\pm$ 0.4 & 1.0 $\pm$ 0.5 \\ 
+\HHbbyy    & 1.0 $\pm$ 0.6 & 1.0 $\pm$ 0.6 \\ 
+
+Combined   & 1.00 $\pm$ 0.31 & 1.0 $\pm$ 0.4 \\ 
+\hline
+\end{tabular}
+\caption{Signal strength measured in the individual channels and their combination using an Asimov dataset with SM $HH$ signal injected.}
+\label{tab:comb_measuredmu}
+\end{table}
 
 The combined sensitivity of the three channels to \kl\ is assessed by generating an Asimov dataset containing the background plus SM signal. The ratio of the negative-log-likelihood of the maximum likelihood fit for \kl\ was calculated and shown in Figure~\ref{fig:ATLAS_HH_comb}. A morphing technique~\cite{ATL-PHYS-PUB-2015-047} is used to generate signal distributions of m$_{HH}$ for any arbitrary value of \kl.
 
