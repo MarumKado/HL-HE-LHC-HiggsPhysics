@@ -53,89 +53,88 @@
 \BOOKMARK [3][-]{subsubsection.0.3.3.1}{Prospects for hh \(b \)\(WW*\) \(b \)\( +- \)}{subsection.0.3.3}% 53
 \BOOKMARK [3][-]{subsubsection.0.3.3.2}{Prospects for bb: Bayesian optimisation and BDT}{subsection.0.3.3}% 54
 \BOOKMARK [2][-]{subsection.0.3.4}{HE-LHC prospects}{section.0.3}% 55
-\BOOKMARK [3][-]{subsubsection.0.3.4.1}{Theoretical prospects}{subsection.0.3.4}% 56
-\BOOKMARK [3][-]{subsubsection.0.3.4.2}{Theoretical prospects: from kinematics to dynamics}{subsection.0.3.4}% 57
-\BOOKMARK [3][-]{subsubsection.0.3.4.3}{Theoretical prospects: importance of the gluon fusion single Higgs background.}{subsection.0.3.4}% 58
-\BOOKMARK [3][-]{subsubsection.0.3.4.4}{Experimental prospects with the ATLAS detector}{subsection.0.3.4}% 59
-\BOOKMARK [3][-]{subsubsection.0.3.4.5}{Comparison of results}{subsection.0.3.4}% 60
-\BOOKMARK [2][-]{subsection.0.3.5}{Indirect probes}{section.0.3}% 61
-\BOOKMARK [3][-]{subsubsection.0.3.5.1}{Indirect probes through single Higgs boson production}{subsection.0.3.5}% 62
-\BOOKMARK [3][-]{subsubsection.0.3.5.2}{Indirect probes of the trilinear coupling through differential distributions measurements with the CMS detector}{subsection.0.3.5}% 63
-\BOOKMARK [3][-]{subsubsection.0.3.5.3}{Global fit}{subsection.0.3.5}% 64
-\BOOKMARK [2][-]{subsection.0.3.6}{Implications of the HH measurements}{section.0.3}% 65
-\BOOKMARK [3][-]{subsubsection.0.3.6.1}{Implications for flavor models}{subsection.0.3.6}% 66
-\BOOKMARK [3][-]{subsubsection.0.3.6.2}{Implications for theories of electroweak phase transition}{subsection.0.3.6}% 67
-\BOOKMARK [2][-]{subsection.0.3.7}{Summary}{section.0.3}% 68
-\BOOKMARK [1][-]{section.0.4}{High Energy Probes}{}% 69
-\BOOKMARK [2][-]{subsection.0.4.1}{Electroweak Precision Tests in High-Energy Di-boson Processes}{section.0.4}% 70
-\BOOKMARK [2][-]{subsection.0.4.2}{WH/ZH at high energy/luminosity}{section.0.4}% 71
-\BOOKMARK [2][-]{subsection.0.4.3}{Novel measurements of anomalous triple gauge couplings}{section.0.4}% 72
-\BOOKMARK [2][-]{subsection.0.4.4}{Electroweak Precision Tests in High-Energy Drell-Yan Processes}{section.0.4}% 73
-\BOOKMARK [2][-]{subsection.0.4.5}{Testing the universal Higgs non-linearity}{section.0.4}% 74
-\BOOKMARK [2][-]{subsection.0.4.6}{Higgs pair production in vector-boson fusion at the HL-LHC}{section.0.4}% 75
-\BOOKMARK [2][-]{subsection.0.4.7}{Higgs Couplings in High-Energy Multi-boson Processes}{section.0.4}% 76
-\BOOKMARK [2][-]{subsection.0.4.8}{Dimension-6 EFT effects on Vector Boson Scattering at high energies}{section.0.4}% 77
-\BOOKMARK [2][-]{subsection.0.4.9}{Same-sign WW scattering and EFT applicability}{section.0.4}% 78
-\BOOKMARK [1][-]{section.0.5}{Higgs boson mass and width}{}% 79
-\BOOKMARK [2][-]{subsection.0.5.1}{Theory review}{section.0.5}% 80
-\BOOKMARK [2][-]{subsection.0.5.2}{Measurement of the Higgs boson mass}{section.0.5}% 81
-\BOOKMARK [2][-]{subsection.0.5.3}{Constraints from off-shell Higgs boson production}{section.0.5}% 82
-\BOOKMARK [2][-]{subsection.0.5.4}{Width from the di-photon interference rate}{section.0.5}% 83
-\BOOKMARK [2][-]{subsection.0.5.5}{Mass shift from the di-photon interference}{section.0.5}% 84
-\BOOKMARK [1][-]{section.0.6}{Invisible decays of the Higgs boson}{}% 85
-\BOOKMARK [2][-]{subsection.0.6.1}{Main channels for direct searches}{section.0.6}% 86
-\BOOKMARK [2][-]{subsection.0.6.2}{Interpretation and combination with precision Higgs boson measurements}{section.0.6}% 87
-\BOOKMARK [3][-]{subsubsection.0.6.2.1}{Experimental input}{subsection.0.6.2}% 88
-\BOOKMARK [3][-]{subsubsection.0.6.2.2}{Effective description of Higgs portal models}{subsection.0.6.2}% 89
-\BOOKMARK [2][-]{subsection.0.6.3}{Higgs portal interpretations}{section.0.6}% 90
-\BOOKMARK [3][-]{subsubsection.0.6.3.1}{Minimal Higgs Portal}{subsection.0.6.3}% 91
-\BOOKMARK [3][-]{subsubsection.0.6.3.2}{Scalar singlet portal}{subsection.0.6.3}% 92
-\BOOKMARK [2][-]{subsection.0.6.4}{Conclusions}{section.0.6}% 93
-\BOOKMARK [1][-]{section.0.7}{Higgs flavor and rare decays}{}% 94
-\BOOKMARK [2][-]{subsection.0.7.1}{Introduction}{section.0.7}% 95
-\BOOKMARK [2][-]{subsection.0.7.2}{New Physics benchmarks for modified Higgs couplings}{section.0.7}% 96
-\BOOKMARK [2][-]{subsection.0.7.3}{Inclusive Search with Flavor tagging \(charm and strange\)}{section.0.7}% 97
-\BOOKMARK [3][-]{subsubsection.0.7.3.1}{Charm quark tagging}{subsection.0.7.3}% 98
-\BOOKMARK [3][-]{subsubsection.0.7.3.2}{Strange quark tagging}{subsection.0.7.3}% 99
-\BOOKMARK [2][-]{subsection.0.7.4}{Exclusive Higgs decays}{section.0.7}% 100
-\BOOKMARK [2][-]{subsection.0.7.5}{Lepton flavor violating decays of the Higgs}{section.0.7}% 101
-\BOOKMARK [2][-]{subsection.0.7.6}{Yukawa constraints from Higgs distributions}{section.0.7}% 102
-\BOOKMARK [3][-]{subsubsection.0.7.6.1}{Determinations of Higgs boson coupling modifiers using differential distributions}{subsection.0.7.6}% 103
-\BOOKMARK [3][-]{subsubsection.0.7.6.2}{Wh charge asymmetry}{subsection.0.7.6}% 104
-\BOOKMARK [2][-]{subsection.0.7.7}{CP Violation}{section.0.7}% 105
-\BOOKMARK [3][-]{subsubsection.0.7.7.1}{t h}{subsection.0.7.7}% 106
-\BOOKMARK [3][-]{subsubsection.0.7.7.2}{ h}{subsection.0.7.7}% 107
-\BOOKMARK [1][-]{section.0.8}{Global effective field theory fits}{}% 108
-\BOOKMARK [2][-]{subsection.0.8.1}{Prospective SMEFT Constraints from HL- and HE-LHC Data}{section.0.8}% 109
-\BOOKMARK [2][-]{subsection.0.8.2}{Global constraints on universal new physics at the HL/HE-LHC}{section.0.8}% 110
-\BOOKMARK [2][-]{subsection.0.8.3}{Global analysis including the Higgs self-coupling}{section.0.8}% 111
-\BOOKMARK [1][-]{section.0.9}{Searches for beyond the standard model Higgs physics}{}% 112
-\BOOKMARK [2][-]{subsection.0.9.1}{Exotic decays of the 125 GeV Higgs boson}{section.0.9}% 113
-\BOOKMARK [3][-]{subsubsection.0.9.1.1}{First Level Track Jet Trigger for Displaced Jets at High Luminosity LHC}{subsection.0.9.1}% 114
-\BOOKMARK [3][-]{subsubsection.0.9.1.2}{Higgs exotic decays into long-lived particles}{subsection.0.9.1}% 115
-\BOOKMARK [3][-]{subsubsection.0.9.1.3}{Projection of CMS search for exotic \040aa 2b 2}{subsection.0.9.1}% 116
-\BOOKMARK [3][-]{subsubsection.0.9.1.4}{Projection of CMS search for exotic \040aa 22}{subsection.0.9.1}% 117
-\BOOKMARK [3][-]{subsubsection.0.9.1.5}{Exotic decays of the Higgs to 2b2}{subsection.0.9.1}% 118
-\BOOKMARK [3][-]{subsubsection.0.9.1.6}{Exotic Higgs Decays to dark photons}{subsection.0.9.1}% 119
-\BOOKMARK [3][-]{subsubsection.0.9.1.7}{Exotic Higgs decays to axion-like particles: h Za and h aa}{subsection.0.9.1}% 120
-\BOOKMARK [2][-]{subsection.0.9.2}{LHC searches for additional heavy neutral Higgs bosons in fermionic final states}{section.0.9}% 121
-\BOOKMARK [3][-]{subsubsection.0.9.2.1}{Projection of Run-2 ATLAS searches for MSSM heavy neutral Higgs bosons}{subsection.0.9.2}% 122
-\BOOKMARK [3][-]{subsubsection.0.9.2.2}{Projection of Run-2 CMS searches for MSSM heavy neutral Higgs bosons}{subsection.0.9.2}% 123
-\BOOKMARK [2][-]{subsection.0.9.3}{LHC searches for additional heavy neutral Higgs bosons in bosonic final states}{section.0.9}% 124
-\BOOKMARK [3][-]{subsubsection.0.9.3.1}{Projection of Run-2 CMS searches for a new scalar resonance decaying to a pair of Z bosons}{subsection.0.9.3}% 125
-\BOOKMARK [2][-]{subsection.0.9.4}{Additional channels for heavy Higgs bosons}{section.0.9}% 126
-\BOOKMARK [3][-]{subsubsection.0.9.4.1}{Sensitivity to heavy Higgs bosons from the 2HDM in "Higgs-to-Higgs" decays}{subsection.0.9.4}% 127
-\BOOKMARK [3][-]{subsubsection.0.9.4.2}{Interference effects in heavy Higgs searches}{subsection.0.9.4}% 128
-\BOOKMARK [3][-]{subsubsection.0.9.4.3}{MSSM charged Higgs bosons}{subsection.0.9.4}% 129
-\BOOKMARK [2][-]{subsection.0.9.5}{Direct and indirect sensitivity to heavy Higgs bosons using MSSM benchmark scenarios}{section.0.9}% 130
-\BOOKMARK [2][-]{subsection.0.9.6}{Direct and indirect sensitivity to heavy Twin Higgs bosons}{section.0.9}% 131
-\BOOKMARK [3][-]{subsubsection.0.9.6.1}{The simplified model with a long lived singlet scalar}{subsection.0.9.6}% 132
-\BOOKMARK [3][-]{subsubsection.0.9.6.2}{A specific realisation: the Twin Higgs model}{subsection.0.9.6}% 133
-\BOOKMARK [2][-]{subsection.0.9.7}{Production of th and th h at the LHC in Composite Higgs models}{section.0.9}% 134
-\BOOKMARK [2][-]{subsection.0.9.8}{New Higgs bosons below the 125 GeV Higgs mass}{section.0.9}% 135
-\BOOKMARK [3][-]{subsubsection.0.9.8.1}{Searches for low mass Higgs bosons \(below 120 GeV\)}{subsection.0.9.8}% 136
-\BOOKMARK [3][-]{subsubsection.0.9.8.2}{HL-LHC projections of LHCb searches for 2HDM+S light pseudoscalars}{subsection.0.9.8}% 137
-\BOOKMARK [1][-]{section.0.10}{Conclusions and Outlook}{}% 138
-\BOOKMARK [2][-]{subsection.0.10.1}{Higgs properties and EW phenomena at the HL-LHC}{section.0.10}% 139
-\BOOKMARK [2][-]{subsection.0.10.2}{Potential of the HE-LHC}{section.0.10}% 140
-\BOOKMARK [0][-]{section*.205}{References}{}% 141
+\BOOKMARK [3][-]{subsubsection.0.3.4.1}{Theoretical prospects: from kinematics to dynamics}{subsection.0.3.4}% 56
+\BOOKMARK [3][-]{subsubsection.0.3.4.2}{Theoretical prospects: importance of the gluon fusion single Higgs background.}{subsection.0.3.4}% 57
+\BOOKMARK [3][-]{subsubsection.0.3.4.3}{Experimental prospects with the ATLAS detector}{subsection.0.3.4}% 58
+\BOOKMARK [3][-]{subsubsection.0.3.4.4}{Comparison of results}{subsection.0.3.4}% 59
+\BOOKMARK [2][-]{subsection.0.3.5}{Indirect probes}{section.0.3}% 60
+\BOOKMARK [3][-]{subsubsection.0.3.5.1}{Indirect probes through single Higgs boson production}{subsection.0.3.5}% 61
+\BOOKMARK [3][-]{subsubsection.0.3.5.2}{Indirect probes of the trilinear coupling through differential distributions measurements with the CMS detector}{subsection.0.3.5}% 62
+\BOOKMARK [3][-]{subsubsection.0.3.5.3}{Global fit}{subsection.0.3.5}% 63
+\BOOKMARK [2][-]{subsection.0.3.6}{Implications of the HH measurements}{section.0.3}% 64
+\BOOKMARK [3][-]{subsubsection.0.3.6.1}{Implications for flavor models}{subsection.0.3.6}% 65
+\BOOKMARK [3][-]{subsubsection.0.3.6.2}{Implications for theories of electroweak phase transition}{subsection.0.3.6}% 66
+\BOOKMARK [2][-]{subsection.0.3.7}{Summary}{section.0.3}% 67
+\BOOKMARK [1][-]{section.0.4}{High Energy Probes}{}% 68
+\BOOKMARK [2][-]{subsection.0.4.1}{Electroweak Precision Tests in High-Energy Di-boson Processes}{section.0.4}% 69
+\BOOKMARK [2][-]{subsection.0.4.2}{WH/ZH at high energy/luminosity}{section.0.4}% 70
+\BOOKMARK [2][-]{subsection.0.4.3}{Novel measurements of anomalous triple gauge couplings}{section.0.4}% 71
+\BOOKMARK [2][-]{subsection.0.4.4}{Electroweak Precision Tests in High-Energy Drell-Yan Processes}{section.0.4}% 72
+\BOOKMARK [2][-]{subsection.0.4.5}{Testing the universal Higgs non-linearity}{section.0.4}% 73
+\BOOKMARK [2][-]{subsection.0.4.6}{Higgs pair production in vector-boson fusion at the HL-LHC}{section.0.4}% 74
+\BOOKMARK [2][-]{subsection.0.4.7}{Higgs Couplings in High-Energy Multi-boson Processes}{section.0.4}% 75
+\BOOKMARK [2][-]{subsection.0.4.8}{Dimension-6 EFT effects on Vector Boson Scattering at high energies}{section.0.4}% 76
+\BOOKMARK [2][-]{subsection.0.4.9}{Same-sign WW scattering and EFT applicability}{section.0.4}% 77
+\BOOKMARK [1][-]{section.0.5}{Higgs boson mass and width}{}% 78
+\BOOKMARK [2][-]{subsection.0.5.1}{Theory review}{section.0.5}% 79
+\BOOKMARK [2][-]{subsection.0.5.2}{Measurement of the Higgs boson mass}{section.0.5}% 80
+\BOOKMARK [2][-]{subsection.0.5.3}{Constraints from off-shell Higgs boson production}{section.0.5}% 81
+\BOOKMARK [2][-]{subsection.0.5.4}{Width from the di-photon interference rate}{section.0.5}% 82
+\BOOKMARK [2][-]{subsection.0.5.5}{Mass shift from the di-photon interference}{section.0.5}% 83
+\BOOKMARK [1][-]{section.0.6}{Invisible decays of the Higgs boson}{}% 84
+\BOOKMARK [2][-]{subsection.0.6.1}{Main channels for direct searches}{section.0.6}% 85
+\BOOKMARK [2][-]{subsection.0.6.2}{Interpretation and combination with precision Higgs boson measurements}{section.0.6}% 86
+\BOOKMARK [3][-]{subsubsection.0.6.2.1}{Experimental input}{subsection.0.6.2}% 87
+\BOOKMARK [3][-]{subsubsection.0.6.2.2}{Effective description of Higgs portal models}{subsection.0.6.2}% 88
+\BOOKMARK [2][-]{subsection.0.6.3}{Higgs portal interpretations}{section.0.6}% 89
+\BOOKMARK [3][-]{subsubsection.0.6.3.1}{Minimal Higgs Portal}{subsection.0.6.3}% 90
+\BOOKMARK [3][-]{subsubsection.0.6.3.2}{Scalar singlet portal}{subsection.0.6.3}% 91
+\BOOKMARK [2][-]{subsection.0.6.4}{Conclusions}{section.0.6}% 92
+\BOOKMARK [1][-]{section.0.7}{Higgs flavor and rare decays}{}% 93
+\BOOKMARK [2][-]{subsection.0.7.1}{Introduction}{section.0.7}% 94
+\BOOKMARK [2][-]{subsection.0.7.2}{New Physics benchmarks for modified Higgs couplings}{section.0.7}% 95
+\BOOKMARK [2][-]{subsection.0.7.3}{Inclusive Search with Flavor tagging \(charm and strange\)}{section.0.7}% 96
+\BOOKMARK [3][-]{subsubsection.0.7.3.1}{Charm quark tagging}{subsection.0.7.3}% 97
+\BOOKMARK [3][-]{subsubsection.0.7.3.2}{Strange quark tagging}{subsection.0.7.3}% 98
+\BOOKMARK [2][-]{subsection.0.7.4}{Exclusive Higgs decays}{section.0.7}% 99
+\BOOKMARK [2][-]{subsection.0.7.5}{Lepton flavor violating decays of the Higgs}{section.0.7}% 100
+\BOOKMARK [2][-]{subsection.0.7.6}{Yukawa constraints from Higgs distributions}{section.0.7}% 101
+\BOOKMARK [3][-]{subsubsection.0.7.6.1}{Determinations of Higgs boson coupling modifiers using differential distributions}{subsection.0.7.6}% 102
+\BOOKMARK [3][-]{subsubsection.0.7.6.2}{Wh charge asymmetry}{subsection.0.7.6}% 103
+\BOOKMARK [2][-]{subsection.0.7.7}{CP Violation}{section.0.7}% 104
+\BOOKMARK [3][-]{subsubsection.0.7.7.1}{t h}{subsection.0.7.7}% 105
+\BOOKMARK [3][-]{subsubsection.0.7.7.2}{ h}{subsection.0.7.7}% 106
+\BOOKMARK [1][-]{section.0.8}{Global effective field theory fits}{}% 107
+\BOOKMARK [2][-]{subsection.0.8.1}{Prospective SMEFT Constraints from HL- and HE-LHC Data}{section.0.8}% 108
+\BOOKMARK [2][-]{subsection.0.8.2}{Global constraints on universal new physics at the HL/HE-LHC}{section.0.8}% 109
+\BOOKMARK [2][-]{subsection.0.8.3}{Global analysis including the Higgs self-coupling}{section.0.8}% 110
+\BOOKMARK [1][-]{section.0.9}{Searches for beyond the standard model Higgs physics}{}% 111
+\BOOKMARK [2][-]{subsection.0.9.1}{Exotic decays of the 125 GeV Higgs boson}{section.0.9}% 112
+\BOOKMARK [3][-]{subsubsection.0.9.1.1}{First Level Track Jet Trigger for Displaced Jets at High Luminosity LHC}{subsection.0.9.1}% 113
+\BOOKMARK [3][-]{subsubsection.0.9.1.2}{Higgs exotic decays into long-lived particles}{subsection.0.9.1}% 114
+\BOOKMARK [3][-]{subsubsection.0.9.1.3}{Projection of CMS search for exotic \040aa 2b 2}{subsection.0.9.1}% 115
+\BOOKMARK [3][-]{subsubsection.0.9.1.4}{Projection of CMS search for exotic \040aa 22}{subsection.0.9.1}% 116
+\BOOKMARK [3][-]{subsubsection.0.9.1.5}{Exotic decays of the Higgs to 2b2}{subsection.0.9.1}% 117
+\BOOKMARK [3][-]{subsubsection.0.9.1.6}{Exotic Higgs Decays to dark photons}{subsection.0.9.1}% 118
+\BOOKMARK [3][-]{subsubsection.0.9.1.7}{Exotic Higgs decays to axion-like particles: h Za and h aa}{subsection.0.9.1}% 119
+\BOOKMARK [2][-]{subsection.0.9.2}{LHC searches for additional heavy neutral Higgs bosons in fermionic final states}{section.0.9}% 120
+\BOOKMARK [3][-]{subsubsection.0.9.2.1}{Projection of Run-2 ATLAS searches for MSSM heavy neutral Higgs bosons}{subsection.0.9.2}% 121
+\BOOKMARK [3][-]{subsubsection.0.9.2.2}{Projection of Run-2 CMS searches for MSSM heavy neutral Higgs bosons}{subsection.0.9.2}% 122
+\BOOKMARK [2][-]{subsection.0.9.3}{LHC searches for additional heavy neutral Higgs bosons in bosonic final states}{section.0.9}% 123
+\BOOKMARK [3][-]{subsubsection.0.9.3.1}{Projection of Run-2 CMS searches for a new scalar resonance decaying to a pair of Z bosons}{subsection.0.9.3}% 124
+\BOOKMARK [2][-]{subsection.0.9.4}{Additional channels for heavy Higgs bosons}{section.0.9}% 125
+\BOOKMARK [3][-]{subsubsection.0.9.4.1}{Sensitivity to heavy Higgs bosons from the 2HDM in "Higgs-to-Higgs" decays}{subsection.0.9.4}% 126
+\BOOKMARK [3][-]{subsubsection.0.9.4.2}{Interference effects in heavy Higgs searches}{subsection.0.9.4}% 127
+\BOOKMARK [3][-]{subsubsection.0.9.4.3}{MSSM charged Higgs bosons}{subsection.0.9.4}% 128
+\BOOKMARK [2][-]{subsection.0.9.5}{Direct and indirect sensitivity to heavy Higgs bosons using MSSM benchmark scenarios}{section.0.9}% 129
+\BOOKMARK [2][-]{subsection.0.9.6}{Direct and indirect sensitivity to heavy Twin Higgs bosons}{section.0.9}% 130
+\BOOKMARK [3][-]{subsubsection.0.9.6.1}{The simplified model with a long lived singlet scalar}{subsection.0.9.6}% 131
+\BOOKMARK [3][-]{subsubsection.0.9.6.2}{A specific realisation: the Twin Higgs model}{subsection.0.9.6}% 132
+\BOOKMARK [2][-]{subsection.0.9.7}{Production of th and th h at the LHC in Composite Higgs models}{section.0.9}% 133
+\BOOKMARK [2][-]{subsection.0.9.8}{New Higgs bosons below the 125 GeV Higgs mass}{section.0.9}% 134
+\BOOKMARK [3][-]{subsubsection.0.9.8.1}{Searches for low mass Higgs bosons \(below 120 GeV\)}{subsection.0.9.8}% 135
+\BOOKMARK [3][-]{subsubsection.0.9.8.2}{HL-LHC projections of LHCb searches for 2HDM+S light pseudoscalars}{subsection.0.9.8}% 136
+\BOOKMARK [1][-]{section.0.10}{Conclusions and Outlook}{}% 137
+\BOOKMARK [2][-]{subsection.0.10.1}{Higgs properties and EW phenomena at the HL-LHC}{section.0.10}% 138
+\BOOKMARK [2][-]{subsection.0.10.2}{Potential of the HE-LHC}{section.0.10}% 139
+\BOOKMARK [0][-]{section*.205}{References}{}% 140
