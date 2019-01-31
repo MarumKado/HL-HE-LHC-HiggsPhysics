@@ -14,31 +14,31 @@
 \usepackage{float}
 \floatstyle{plaintop}
 \restylefloat{table}
-\usepackage{manyfoot}
 \usepackage{xargs}
+\usepackage{xstring}
 
 % The main document.
 \begin{document}
-\newcommandx{\asection}[3][1=NONE, 2=NONE]{
+\newcounter{ncontacts}
+\newcommand{\fcontact}[1]{\StrCount{#1}{,}[\tmp]\setcounter{ncontacts}{\tmp}
+  Contact\ifthenelse{\value{ncontacts} > 1}{s}{}: #1}
+\newcommand{\feditor}[1]{\StrCount{#1}{,}[\tmp]\setcounter{ncontacts}{\tmp}
+  Contact Editor\ifthenelse{\value{ncontacts} > 1}{s}{}: #1}
+\newcommandx{\asection}[2][1=NONE]{
   \ifthenelse{\equal{#1}{NONE}}
-  {\section{#3}}{\section[#3]{#3\footnote{Contact Editors:
-        #1}\ifthenelse{\equal{#2}{NONE}}
-      {}{$^{,\,}$\footnote{Contacts: #2}}}}}
-\newcommandx{\asubsection}[3][1=NONE, 2=NONE]{
+  {\section{#2}}{\section[#2]{#2\footnote{\feditor{#1}}}}}
+\newcommandx{\asubsection}[2][1=NONE]{
   \ifthenelse{\equal{#1}{NONE}}
-  {\subsection{#3}}{\subsection[#3]{#3\footnote{Contacts:
-        #1}\ifthenelse{\equal{#2}{NONE}}
-      {}{$^{,\,}$\footnote{FIXME: #2}}}}}
-\newcommandx{\asubsubsection}[3][1=NONE, 2=NONE]{
+             {\subsection{#2}}{
+               \subsection[#2]{#2\footnote{\fcontact{#1}}}}}
+\newcommandx{\asubsubsection}[2][1=NONE]{
   \ifthenelse{\equal{#1}{NONE}}
-  {\subsubsection{#3}}{\subsubsection[#3]{#3\footnote{Contacts:
-        #1}\ifthenelse{\equal{#2}{NONE}}
-      {}{$^{,\,}$\footnote{FIXME: #2}}}}}
-\newcommandx{\asubsubsubsection}[3][1=NONE, 2=NONE]{
+             {\subsubsection{#2}}{
+               \subsubsection[#2]{#2\footnote{\fcontact{#1}}}}}
+\newcommandx{\asubsubsubsection}[2][1=NONE]{
   \ifthenelse{\equal{#1}{NONE}}
-  {\subsubsubsection{#3}}{\subsubsubsection[#3]{#3\footnote{Contacts:
-        #1}\ifthenelse{\equal{#2}{NONE}}
-      {}{$^{,\,}$\footnote{FIXME: #2}}}}}
+             {\subsubsubsection{#2}}{
+               \subsubsubsection[#2]{#2\footnote{\fcontact{#1}}}}}
 \newcommand{\main}{.}
 \newcommand{\code}[1]{\texttt{#1}}
 \newcommand{\ifb}{\mbox{fb$^{-1}$}}
