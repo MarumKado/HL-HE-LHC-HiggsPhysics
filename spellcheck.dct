@@ -46,6 +46,7 @@ bbbb
 bbH
 bbj
 bbWW
+bc
 bd
 BDRS
 BDT
@@ -108,6 +109,8 @@ cb
 ccc
 cccc
 ccccc
+cccccc
+ccccccc
 cccccccc
 CDF
 CDMS
@@ -228,6 +231,7 @@ electroweak
 Electroweak
 electroweakinos
 Eleni
+ELWK
 Englert
 eq
 Eq
@@ -312,6 +316,7 @@ glueball
 glueballs
 gluinos
 gluon
+Gluon
 gluons
 Goldstone
 Gon
@@ -409,6 +414,7 @@ HwH
 HWH
 hWW
 hxswg
+HXSWG
 Hyperopt
 HyperOpt
 hZ
@@ -420,6 +426,7 @@ idiso
 ie
 ig
 IH
+iHixs
 ij
 IJK
 Im
@@ -492,6 +499,7 @@ lept
 leptonia
 leptonic
 leptonically
+lH
 Lh
 LHAPDF
 LHC
@@ -519,6 +527,7 @@ Luisoni
 Lukas
 lumi
 luminosities
+LUXqed
 LV
 LW
 LZ
@@ -604,14 +613,18 @@ NGB
 Nicrosini
 Nikopoulos
 NL
+NLL
 nlo
 NLO
+NLOPS
 NMSSM
 NN
 NNLL
 nnlo
 NNLO
 NNLOFTapprox
+nnlonllx
+NNLOPS
 NNPDF
 nonet
 nonlinearEFT
@@ -652,6 +665,7 @@ PDF
 pdfas
 PDFs
 PerfAndSyst
+permille
 Pernie
 perturbative
 perturbativity
@@ -678,6 +692,7 @@ precisions
 priori
 prockga
 prockt
+proVBFH
 ps
 pseudorapidity
 pseudoscalar
@@ -689,6 +704,7 @@ PV
 Pythia
 PYTHIA
 QCD
+qed
 QFT
 qg
 QGC
@@ -701,6 +717,7 @@ quarkonia
 quartic
 Rabah
 radiative
+Radiative
 radiatively
 rae
 rapidities
@@ -720,6 +737,7 @@ rescaling
 Rescaling
 rescalings
 resummation
+resummations
 resummed
 reweighted
 reweighting
@@ -736,6 +754,7 @@ Roni
 Rorie
 Rosiek
 rrr
+rrrrr
 Rscale
 Rsimp
 Ruderman
@@ -805,6 +824,7 @@ Stefano
 strahlung
 STXS
 SU
+subl
 Sudakov
 SUGRA
 Sundrum
@@ -820,6 +840,7 @@ SusHi
 SUSY
 SV
 SVFit
+sx
 SX
 sys
 syst
@@ -919,6 +940,7 @@ VH
 vHbb
 VHbb
 Vhid
+VHJ
 VLQ
 Vryonidou
 VV
