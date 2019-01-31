@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
+
+# Run spell check.
 ASPELL="aspell --lang=en_GB-ise --mode=tex"
+find . -name "*.tex" -exec $ASPELL --home-dir=. --personal=spellcheck.dct check "{}" \;
 
 # Spell check the main report.
 HEAD=`cat -n report.tex | grep Abstract | awk '{print $1}'`
