@@ -20,6 +20,9 @@ def clean(bib):
         del bib[key]
     nums = ", ".join(sorted(list(set(nums))))
 
+    # Check if the number is "in progress".
+    if "progress" in nums.lower(): nums = "in progress"
+
     # Include report numbers for the LHC collaborations.
     for collab in ["ALICE", "ATLAS", "CMS", "LHCb"]:
         if collab.upper() in nums:
@@ -68,8 +71,7 @@ def clean(bib):
 
     # Fix changing articles to technical reports.
     if (not "journal" in bib and "number" in bib and
-        bib["ENTRYTYPE"] == "article"):
-        bib["ENTRYTYPE"] = "techreport"; print(bib["ID"])
+        bib["ENTRYTYPE"] == "article"): bib["ENTRYTYPE"] = "techreport"
     return bib
 
 ###############################################################################
@@ -108,6 +110,7 @@ def compare(bib0, bib1):
     num0 = bib0["number"].split(", ") if "number" in bib0 else []
     num1 = bib1["number"].split(", ") if "number" in bib1 else []
     for num in num0:
+        if "progress" in num.lower(): continue
         if num and num in num1: return 100.
     if len(num0) and len(num1): return 0.
             
