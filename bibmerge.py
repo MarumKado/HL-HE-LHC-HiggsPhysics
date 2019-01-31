@@ -65,6 +65,11 @@ def clean(bib):
     if "url" in bib:
         if not "link" in bib: bib["link"] = bib["url"]
         del bib["url"]
+
+    # Fix changing articles to technical reports.
+    if (not "journal" in bib and "number" in bib and
+        bib["ENTRYTYPE"] == "article"):
+        bib["ENTRYTYPE"] = "techreport"; print(bib["ID"])
     return bib
 
 ###############################################################################
