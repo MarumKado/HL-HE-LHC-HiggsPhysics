@@ -17,6 +17,12 @@
 
 % The main document.
 \begin{document}
+\newcommand{\asection}[2][]{\ifthenelse{\equal{#1}{}}
+  {\section{#2}}{\section[#2]{#2\footnote{#1}}}}
+\newcommand{\asubsection}[2][]{\ifthenelse{\equal{#1}{}}
+  {\subsection{#2}}{\subsection[#2]{#2\footnote{#1}}}}
+\newcommand{\asubsubsection}[2][]{\ifthenelse{\equal{#1}{}}
+  {\subsubsection{#2}}{\subsubsection[#2]{#2\footnote{#1}}}}
 \newcommand{\main}{.}
 \newcommand{\code}[1]{\texttt{#1}}
 \newcommand{\ifb}{\mbox{fb$^{-1}$}}
@@ -556,7 +562,6 @@ This document is a draft and work is still ongoing for its finalisation. The com
 \setcounter{tocdepth}{3}
 \tableofcontents
 \newpage
-
 % -- List of sections
 \subfile{\main/section1/section}
 \newpage
