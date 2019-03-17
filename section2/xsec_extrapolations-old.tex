@@ -104,9 +104,69 @@ a slight reduction in the overall theoretical uncertainty.
     \caption{Gluon fusion Higgs boson production cross sections and uncertainties as a function of the $pp$ collider energy.\label{tab:results}}
 \end{center}
 \end{table}
+
+Improving substantially on any of the current
+sources of uncertainty represents a major theoretical challenge that
+should be met in accordance with our ability to utilise said precision
+and with experimental capabilities. 
+The computation of sub-leading mass and EW corrections is
+currently being addressed by several groups, and therefore it is
+likely to be achieved in the next decade. Although such computations
+will allow for a better control over some sources of uncertainty,
+their final impact on the full theoretical error is likely to be
+moderate as current estimates indicate.
+Another source of error that might improve in the forthcoming years is
+that related to the parton densities. In particular, the extraction of
+N$^3$LO PDFs would lead to the disappearance of the PDF-TH
+uncertainty. Similar considerations apply to the error on the strong
+coupling constant, that will be reduced due to more accurate
+extractions. Overall, the above progress would ultimately lead to a
+notable reduction of the uncertainties of Figure~\ref{fig:errorplot}.
+
+It is obvious that the future precision of experimental measurement of Higgs boson properties will challenge the theoretical community.
+Achieving a significant improvement of our current theoretical understanding of the Higgs boson and its interactions will inspire us to push the boundaries of our capabilities to predict and extract information.
+New ways of utilising quantum field theory in our endeavours have to be explored and our perturbative and non-perturbative understanding of hadron scattering processes has to evolve substantially. 
+It is clear that this exciting task can only be mastered by a strong and active collider phenomenology community.
  
-\noindent The dependence of the inclusive gluon-fusion cross-section on the Higgs boson mass at $\sqrt{s}=14$ and 27~\UTeV
+The dependence of the inclusive gluon-fusion cross-section on the Higgs boson mass at $\sqrt{s}=14$ and 27~\UTeV
 is detailed at the end of this note in Section~\ref{sec:ggFmhdep}.
+
+
+\subsubsubsection*{Impact of future precision of parton distribution function}
+It is a tantalising question to ask by how much one of the largest sources of uncertainty - the imprecise knowledge of PDFs - would be reduced if already all future LHC data were available.
+To this end a study was performed in ref.~\cite{Khalek:2018mdn} (see also Section~\ref{sec2:PDFuncertainties}) that uses simulated future data with accordingly shrunken statistical uncertainties to constrain parton distribution functions.
+The authors used pseudo data corresponding to measurements of ATLAS, CMS and LHCb for key precision processes after $3 ab^{-1}$ of integrated luminosity were collected at the High-Luminosity LHC at 14 \UTeV.
+They then performed a new fit according to the PDF4LHC15 framework~\cite{Botje:2011sn} and studied the implications of their analysis.
+The resulting PDFs are readily available and can be used in order to estimate the impact of this future data on specific observables. 
+Three scenarios were considered in this study that assume that experimental systematic uncertainties will shrink at different levels relative to the 8 \UTeV run of the LHC.
+Scenario 1, scenario 2 and scenario 3 assume that the future systematic uncertainty will be equal, shrunk by a factor $0.7$ or a factor of $0.4$ w.r.t to the 8 \UTeV run respectively.
+
+Evaluating the inclusive Higgs boson production cross section with this simulated PDFs results in the PDF uncertainties summarised in Tab.~\ref{tab:PDFuncert}.
+Note, that the central values stay unchanged and all other uncertainties are not afflicted by the change of PDFs.
+\begin{table}[!h]
+\normalsize\setlength{\tabcolsep}{2pt}
+\begin{center}
+    \begin{tabular}{rrrrr}
+        \toprule
+        \multicolumn{1}{c}{$\textrm{E}_{\textrm{CM}}$}&
+        \multicolumn{1}{c}{Current  }&
+        \multicolumn{1}{c}{Scenario 1 }&
+        \multicolumn{1}{c}{Scenario 2}&
+        \multicolumn{1}{c}{Scenario 3} \\
+        \midrule
+13 \UTeV & $ \pm 1.85 \% $ & $\pm 0.78 \%$ & $\pm 0.69\%$ & $\pm 0.59\%$ \\\midrule
+14 \UTeV & $ \pm 1.85 \% $ & $\pm 0.78\%$ & $\pm 0.68\%$ & $\pm 0.58\%$ \\\midrule
+27 \UTeV & $ \pm 1.95 \%$  & $\pm 0.81\%$ & $\pm 0.72\%$ & $\pm 0.61\%$ \\\midrule
+    \end{tabular}
+    \caption{Uncertainty due to imprecise knowledge of PDFs estimated with current and simulated future PDFs for different scenarios and at different collider energies.\label{tab:PDFuncert}}
+\end{center}
+\end{table}
+Even the most pessimistic scenario leads to a reduction of the PDF uncertainty by factor of two. 
+However, this projections should be viewed only as a first estimate for the determination of PDFs from future measurements.
+Predicting the future development and correlation of systematic experimental uncertainties is non trivial and may differ strongly from observable to observable. 
+PDF uncertainties may in the future also be adversely impacted by a more accurate treatment of theoretical uncertainties in the predictions of cross sections that serve as input for PDF extraction.
+Data incompatibilities may occur for various reasons.
+It is clear that an understanding of the structure of the proton at percent level accuracy is clearly a formidable task and rightly deserves significant research in the future.
 
 
 
@@ -565,8 +625,8 @@ coming from the missing higher orders.
 \asubsubsubsection{$t\bar t H$ and $tH$}
 \label{sec:he-lhc-ttH}
 Cross sections for $t\bar{t}H$ and $tH+\bar{t}H$ production at
-$\sqrt{s}=14$ and 27~\UTeV are presented in Tables~\ref{tab:ttH13_xsec}-\ref{tab:ttH27_xsec}
-and Tables~\ref{tab:tH13_xsec}-\ref{tab:tH27_xsec} respectively. Results have been obtained using the same setup as
+$\sqrt{s}=14$ and 27~\UTeV are presented in Tables~\ref{tab:ttH14_xsec}-\ref{tab:ttH27_xsec}
+and Tables~\ref{tab:tH14_xsec}-\ref{tab:tH27_xsec} respectively. Results have been obtained using the same setup as
 in YR4, and considering three values for $M_H$, namely $M_H=125.09\pm
 0.5$~\UGeV. The theoretical uncertainties from renormalisation and
 factorisation scale dependence, PDF, and $\alpha_s$ are calculated as
@@ -582,22 +642,7 @@ employed for the computation of the cross sections. As expected, going
 to higher energies greatly enhances both $t\bar{t}H$ and $tH+\bar{t}H$
 cross sections.
 
-\begin{table}
-\centering
-\begin{tabular}{cccccc}%
-\toprule
-$m_{\rm H}$~[GeV] & $\sigma^{\rm NLO}_{\rm QCD+EW}$~[fb] & Scale~[\%] &
-$\alpha_s$~[\%] & PDF~[\%] & PDF+${\alpha_s}$~[\%]\\
-\midrule
-$124.59$ & $512.2$ & $^{+5.8}_{-9.2}$ & $2.0$ & $3.0$ & $3.6$ \\
-$125.09$ & $506.5$ & $^{+5.8}_{-9.2}$ & $2.0$ & $3.0$ & $3.6$ \\
-$125.59$ & $500.7$ & $^{+5.8}_{-9.2}$ & $2.0$ & $3.0$ & $3.6$ \\
-\bottomrule
-\end{tabular}%
-\caption{NLO QCD+EW cross sections for $t\bar tH$ production at the 13 TeV LHC, taken from Ref.~\cite{deFlorian:2016spz}.}
-\label{tab:ttH13_xsec}
-\end{table}
-%
+
 \begin{table}
 \centering
 \begin{tabular}{cccccc}
@@ -613,7 +658,7 @@ $125.59$ & $605.6$ & $^{+6.1}_{-9.2}$ & $1.9$ & $2.9$ & $3.5$ \\
 \caption{NLO QCD+EW cross sections for $t\bar tH$ production at the 14 \UTeV LHC.}
 \label{tab:ttH14_xsec}
 \end{table}
-%
+
 \begin{table}
 \centering
 \begin{tabular}{cccccc}
@@ -632,24 +677,6 @@ $125.59$ & $2.84$ & $^{+7.9}_{-9.0}$ & $1.8$ & $2.1$ & $2.8$ \\
 
 \begin{table}
 \centering
-\begin{tabular}{cccccccc}%
-\toprule
-$m_{\rm H}$~[GeV] & $\sigma_{t{\rm H}+\bar t{\rm H}}$~[fb] & Scale+FS~[\%] &
-$\alpha_s$~[\%] & PDF~[\%] & PDF+${\alpha_s}$~[\%] & $\sigma_{t{\rm H}}$~[fb] & 
-$\sigma_{\bar t{\rm H}}$~[fb]\\
-\midrule
-$124.59$ & $74.52$ & $^{+6.6}_{-14.7}$ & $1.2$ & $3.5$ & $3.7$ & $49.04$ & $25.49$\\
-$125.09$ & $74.26$ & $^{+6.5}_{-14.7}$ & $1.2$ & $3.5$ & $3.7$ & $48.89$ & $25.40$\\
-$125.59$ & $74.09$ & $^{+6.5}_{-15.2}$ & $1.2$ & $3.6$ & $3.7$ & $48.75$ & $25.32$\\
-\bottomrule
-\end{tabular}%
-\caption{NLO QCD cross sections for the $t-$channel $tH$ and $\bar t H$
-production at the 13 TeV LHC, taken from Ref.~\cite{deFlorian:2016spz}.}
-\label{tab:tH13_xsec}
-\end{table}
-%
-\begin{table}
-\centering
 \begin{tabular}{cccccccc}
 \toprule
 $m_{\rm H}$~[\UGeV] & $\sigma_{t{\rm H}+\bar t{\rm H}}$~[fb] & Scale+FS~[\%] &
@@ -665,7 +692,7 @@ $125.59$ & $89.72$ & $^{+6.4}_{-14.8}$ & $1.2$ & $3.4$ & $3.6$ & $58.70$ & $31.0
 production at the 14 \UTeV LHC.}
 \label{tab:tH14_xsec}
 \end{table}
-%
+
 \begin{table}
 \centering
 \begin{tabular}{cccccccc}
@@ -718,44 +745,6 @@ Achieving a significant improvement of our current theoretical understanding of 
 New ways of utilising quantum field theory in our endeavours have to be explored and our perturbative and non-perturbative understanding of hadron scattering processes has to evolve substantially. 
 It is clear that this exciting task can only be mastered by a strong and active collider phenomenology community.
  
-\subsubsubsection*{Impact of future precision of parton distribution function}
-It is a tantalising question to ask by how much one of the largest sources of uncertainty - the imprecise knowledge of PDFs - would be reduced if already all future LHC data were available.
-To this end a study was performed in ref.~\cite{Khalek:2018mdn} (see also Section~\ref{sec2:PDFuncertainties}) that uses simulated future data with accordingly shrunken statistical uncertainties to constrain parton distribution functions.
-The authors used pseudo data corresponding to measurements of ATLAS, CMS and LHCb for key precision processes after $3 ab^{-1}$ of integrated luminosity were collected at the High-Luminosity LHC at 14 \UTeV.
-They then performed a new fit according to the PDF4LHC15 framework~\cite{Botje:2011sn} and studied the implications of their analysis.
-The resulting PDFs are readily available and can be used in order to estimate the impact of this future data on specific observables. 
-Three scenarios were considered in this study that assume that experimental systematic uncertainties will shrink at different levels relative to the 8 \UTeV run of the LHC.
-Scenario 1, scenario 2 and scenario 3 assume that the future systematic uncertainty will be equal, shrunk by a factor $0.7$ or a factor of $0.4$ w.r.t to the 8 \UTeV run respectively.
-
-Evaluating the inclusive Higgs boson production cross section with this simulated PDFs results in the PDF uncertainties summarised in Tab.~\ref{tab:PDFuncert}.
-Note, that the central values stay unchanged and all other uncertainties are not afflicted by the change of PDFs.
-\begin{table}[!h]
-\normalsize\setlength{\tabcolsep}{2pt}
-\begin{center}
-    \begin{tabular}{rrrrr}
-        \toprule
-        \multicolumn{1}{c}{$\textrm{E}_{\textrm{CM}}$}&
-        \multicolumn{1}{c}{Current  }&
-        \multicolumn{1}{c}{Scenario 1 }&
-        \multicolumn{1}{c}{Scenario 2}&
-        \multicolumn{1}{c}{Scenario 3} \\
-        \midrule
-13 \UTeV & $ \pm 1.85 \% $ & $\pm 0.78 \%$ & $\pm 0.69\%$ & $\pm 0.59\%$ \\\midrule
-14 \UTeV & $ \pm 1.85 \% $ & $\pm 0.78\%$ & $\pm 0.68\%$ & $\pm 0.58\%$ \\\midrule
-27 \UTeV & $ \pm 1.95 \%$  & $\pm 0.81\%$ & $\pm 0.72\%$ & $\pm 0.61\%$ \\\midrule
-    \end{tabular}
-    \caption{Uncertainty due to imprecise knowledge of PDFs estimated with current and simulated future PDFs for different scenarios and at different collider energies.\label{tab:PDFuncert}}
-\end{center}
-\end{table}
-Even the most pessimistic scenario leads to a reduction of the PDF uncertainty by factor of two. 
-However, this projections should be viewed only as a first estimate for the determination of PDFs from future measurements.
-Predicting the future development and correlation of systematic experimental uncertainties is non trivial and may differ strongly from observable to observable. 
-PDF uncertainties may in the future also be adversely impacted by a more accurate treatment of theoretical uncertainties in the predictions of cross sections that serve as input for PDF extraction.
-Data incompatibilities may occur for various reasons.
-It is clear that an understanding of the structure of the proton at percent level accuracy is clearly a formidable task and rightly deserves significant research in the future.
-
-
-
 
 \asubsubsubsection{Vector boson fusion}
 \label{sec:hl-lhc-VBF}
@@ -790,7 +779,7 @@ Higgs-boson pair production, it is foreseeable that, in the forthcoming years
 (definitely in the timescale of HL/HE LHC), an exact NLO result
 (including finite-$m_t$ effects) will be available also for $gg\rightarrow ZH$. If
 one assumes that a pattern similar to what was found for di-higgs
-production~\cite{Borowka:2016ypz} also holds for $gg\rightarrow ZH$, one can expect
+production~(\cite{Borowka:2016ypz}) also holds for $gg\rightarrow ZH$, one can expect
 that the total NLO/LO $K$-factor will be slightly smaller than in the
 HEFT limit (from 1.9--2.0 to $\sim$1.6) and the final scale uncertainty for
 the $gg\rightarrow ZH$ cross section will decrease from 18--25\% to about 15\%.\footnote{We stress that these numbers have been obtained as a back-of-the-envelope estimate through a comparison with di-higgs production.}
@@ -810,8 +799,8 @@ As for Higgs decays to bottom quarks, a fixed-order study~\cite{Caola:2017xuq}
 suggests that higher-order corrections to the $m_{bb}$ shape are not always
 very well modelled by a LO + parton shower treatment of the $H\to b\bar{b}$ decay.
 Event generators as the one developed in Ref.~\cite{Astill:2018ivh}, and improvements thereof
-for the treatment of radiation off $b$-quarks~\cite{Buonocore:2017lry},
-will allow one to assess this issue in the forthcoming
+for the treatment of radiation off $b$-quarks~(\cite{Buonocore:2017lry}),
+will allow to assess this issue in the forthcoming
 years. A solid prediction of the $H\to b\bar{b}$ decay, also matched to
 parton-showers, can definitely be expected in the timescale of HL/HE LHC.
 
@@ -823,7 +812,7 @@ $gg\rightarrow ZH$ and $gg\rightarrow ZH+1$-jet is performed.
 
 Finally, as for the VH and VHJ event generators, recently there has been
 also the completion of the NLO EW corrections matched to the parton
-shower~\cite{Granata:2017iod} showing once again the relevance of the
+shower~(\cite{Granata:2017iod}) showing once again the relevance of the
 EW corrections for the distributions for both the fixed order and the
 matched predictions.
 
@@ -908,9 +897,9 @@ and VH around $p_t\sim 2~{\rm \UTeV}$. In the \UTeV region, the $t\bar t H$ chan
 
 This picture is however significantly altered by radiative correction, whose size and impact is very different for different channels. 
 This is shown in Fig.~\ref{fig:boosted27}, where predictions include radiative corrections. More precisely, the VBF, VH and $t\bar t H$ 
-predictions have the same accuracy as the ones in Fig.~\ref{fig:boosted13}. The $ggF$ prediction contains exact LO mass effects rescaled
+predictions have the same accuracy of the ones in Fig.~\ref{fig:boosted13}. The $ggF$ prediction contains exact LO mass effects rescaled
 by the NLO $K-$factor in the $m_t$ approximation. This is expected to provide an excellent approximation of the exact NLO result. 
-Radiative corrections enhance the relative importance of the $ggF$ and $t\bar t H$ channels, which still dominate over VBF well into the
+Radiative correction enhance the relative importance of the $ggF$ and $t\bar t H$ channels, which still dominate over VBF well into the
 multi-\UTeV region. At large $p_t \sim 1.5~{\rm \UTeV}$, the $t\bar t H$ channel becomes the dominant one. 
 
 Obtaining accurate and precise theoretical predictions in the boosted region is very challenging. Nevertheless, it is natural
