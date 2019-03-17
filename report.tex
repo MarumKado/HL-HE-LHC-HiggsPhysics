@@ -21,9 +21,9 @@
 \begin{document}
 \newcounter{ncontacts}
 \newcommand{\fcontact}[1]{\StrCount{#1}{,}[\tmp]\setcounter{ncontacts}{\tmp}
-  Contact\ifthenelse{\value{ncontacts} > 1}{s}{}: #1}
+  Contact\ifthenelse{\value{ncontacts} > 0}{s}{}: #1}
 \newcommand{\feditor}[1]{\StrCount{#1}{,}[\tmp]\setcounter{ncontacts}{\tmp}
-  Contact Editor\ifthenelse{\value{ncontacts} > 1}{s}{}: #1}
+  Contact Editor\ifthenelse{\value{ncontacts} > 0}{s}{}: #1}
 \newcommandx{\asection}[2][1=NONE]{
   \ifthenelse{\equal{#1}{NONE}}
   {\section{#2}}{\section[#2]{#2\footnote{\feditor{#1}}}}}

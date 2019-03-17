@@ -30,6 +30,7 @@ AZH
 azimuthal
 Banerjee
 Barducci
+Barone
 baryogenesis
 Baryogenesis
 Bautista
@@ -69,10 +70,7 @@ Bonvini
 Borgonovi
 Borsato
 Boselli
-boson
-Boson
 bosonic
-bosons
 bottomonium
 boundsf
 Braibant
@@ -80,7 +78,6 @@ brane
 Breit
 BRgeneral
 brinvcombi
-Brout
 BRs
 bs
 BSM
@@ -93,7 +90,6 @@ Cadamuro
 Caillol
 Calame
 Calandri
-calorimeter
 calorimeters
 Campderros
 Caola
@@ -135,9 +131,6 @@ CMS
 CMS's
 CN
 CoGeNT
-collider
-Collider
-colliders
 collimated
 collimates
 collinear
@@ -165,8 +158,6 @@ curtin
 Curtin
 DAMA
 Das
-dataset
-datasets
 de
 De
 dec
@@ -183,7 +174,6 @@ D'eramo
 det
 dH
 DHM
-di
 diagocoup
 diagonalisation
 diagonalises
@@ -199,7 +189,6 @@ DNN
 DoE
 Donadelli
 dR
-Drell
 ds
 Duarte
 Durieux
@@ -211,8 +200,6 @@ ECFA
 EDM
 EDMs
 ee
-efficiencies
-Efficiencies
 EFTfit
 EFTintro
 EFTLAG
@@ -222,11 +209,8 @@ eH
 eHdecay
 eigen
 El
-electroweak
-Electroweak
 electroweakinos
 ELWK
-Englert
 eq
 Eq
 Eqs
@@ -334,10 +318,6 @@ hA
 haa
 Haacke
 Haddad
-hadron
-Hadron
-hadronic
-Hadronic
 hadronically
 Hadronically
 hadronisation
@@ -381,7 +361,6 @@ hhWW
 HIG
 Higgless
 higgs
-Higgs
 HiggsBounds
 Higgsed
 Higgses
@@ -439,12 +418,10 @@ interferences
 InterpretationCH
 IntroBSM
 inv
-invariance
 invariances
 irreudicible
 iso
 Iso
-isospin
 ISR
 ITk
 jbb
@@ -464,7 +441,6 @@ jW
 Kalinowski
 Kaluza
 Kamenik
-Kaon
 kaons
 Kaons
 kappaq
@@ -477,6 +453,7 @@ kinematically
 KK
 Klijnsma
 Kling
+Klute
 Kobayashi
 Koeneke
 Komaragiri
@@ -501,14 +478,11 @@ lep
 LEP
 lept
 leptonia
-leptonic
 leptonically
 lH
 Lh
 LHAPDF
-LHC
 lhcb
-LHCb
 LHeC
 Liebler
 Lindert
@@ -594,10 +568,6 @@ multi
 Multi
 multiplet
 multiplets
-muon
-Muon
-muons
-Muons
 Musolf
 MVa
 MVA
@@ -640,6 +610,7 @@ oder
 Olivares
 Onofre
 ontsch
+Optimisations
 Ortona
 ourleff
 ouv
@@ -654,7 +625,6 @@ parametrisation
 parametrisations
 parametrise
 parametrised
-Parametrised
 parametrises
 parametrising
 parSILH
@@ -679,7 +649,6 @@ Piccinini
 picoseconds
 Pierini
 Pino
-pion
 pions
 Plehn
 plet
@@ -807,6 +776,7 @@ SLC
 SLD
 SLT
 SMBO
+smearings
 SMEFT
 SMEFTsim
 SNOLAB
@@ -933,6 +903,7 @@ VBF
 VBFH
 VBS
 Vecchi
+vectorial
 Venturini
 Verducci
 Vernieri
@@ -982,7 +953,6 @@ xsec
 xSM
 xy
 xzz
-Yan
 Yann
 yu
 Yu

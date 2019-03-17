@@ -84,7 +84,7 @@ if __name__ == "__main__":
     conveners = ["Cepeda M.", "Gori S.", "Ilten P.", "Kado M.", "Riva F."]
     institutes = collections.OrderedDict()
     tex.write("\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n"
-              r"\author{Convenors: \\ " + "\n")
+              r"\author{Conveners: \\ " + "\n")
     tex.write(",\n".join([author(authors, institutes, name)
                           for name in conveners]))
     txt.write(", ".join([authors[name][1] for name in conveners]))
