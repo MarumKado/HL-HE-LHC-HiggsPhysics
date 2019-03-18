@@ -70,7 +70,10 @@ Bonvini
 Borgonovi
 Borsato
 Boselli
+boson
+Boson
 bosonic
+bosons
 bottomonium
 boundsf
 Braibant
@@ -78,6 +81,7 @@ brane
 Breit
 BRgeneral
 brinvcombi
+Brout
 BRs
 bs
 BSM
@@ -90,6 +94,7 @@ Cadamuro
 Caillol
 Calame
 Calandri
+calorimeter
 calorimeters
 Campderros
 Caola
@@ -131,6 +136,9 @@ CMS
 CMS's
 CN
 CoGeNT
+collider
+Collider
+colliders
 collimated
 collimates
 collinear
@@ -158,6 +166,8 @@ curtin
 Curtin
 DAMA
 Das
+dataset
+datasets
 de
 De
 dec
@@ -174,6 +184,7 @@ D'eramo
 det
 dH
 DHM
+di
 diagocoup
 diagonalisation
 diagonalises
@@ -189,6 +200,7 @@ DNN
 DoE
 Donadelli
 dR
+Drell
 ds
 Duarte
 Durieux
@@ -200,6 +212,8 @@ ECFA
 EDM
 EDMs
 ee
+efficiencies
+Efficiencies
 EFTfit
 EFTintro
 EFTLAG
@@ -209,8 +223,11 @@ eH
 eHdecay
 eigen
 El
+electroweak
+Electroweak
 electroweakinos
 ELWK
+Englert
 eq
 Eq
 Eqs
@@ -318,6 +335,10 @@ hA
 haa
 Haacke
 Haddad
+hadron
+Hadron
+hadronic
+Hadronic
 hadronically
 Hadronically
 hadronisation
@@ -361,6 +382,7 @@ hhWW
 HIG
 Higgless
 higgs
+Higgs
 HiggsBounds
 Higgsed
 Higgses
@@ -418,10 +440,12 @@ interferences
 InterpretationCH
 IntroBSM
 inv
+invariance
 invariances
 irreudicible
 iso
 Iso
+isospin
 ISR
 ITk
 jbb
@@ -441,6 +465,8 @@ jW
 Kalinowski
 Kaluza
 Kamenik
+kaon
+Kaon
 kaons
 Kaons
 kappaq
@@ -478,11 +504,14 @@ lep
 LEP
 lept
 leptonia
+leptonic
 leptonically
 lH
 Lh
 LHAPDF
+LHC
 lhcb
+LHCb
 LHeC
 Liebler
 Lindert
@@ -568,6 +597,10 @@ multi
 Multi
 multiplet
 multiplets
+muon
+Muon
+muons
+Muons
 Musolf
 MVa
 MVA
@@ -649,6 +682,7 @@ Piccinini
 picoseconds
 Pierini
 Pino
+pion
 pions
 Plehn
 plet
@@ -954,6 +988,7 @@ xsec
 xSM
 xy
 xzz
+Yan
 Yann
 yu
 Yu

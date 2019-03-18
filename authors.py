@@ -24,7 +24,9 @@ def author(authors, institutes, name):
         except: iid = None
         if not iid: continue
         if not iid in institutes:
-            iname = institute(iid)
+            inspire = institute(iid)
+            if inspire == None: print(iname)
+            else: iname = inspire
             institutes[iid] = toascii(iname)
         iids += [iid]
     return r"\iauthor{%s}{%s}{%s}" % (aid, toascii(name), ",".join([
@@ -40,26 +42,23 @@ def institute(iid):
     except: dct = {}
     if "ICN" in dct and dct["ICN"][0] != "obsolete": name = dct["ICN"]
     elif "legacy_ICN" in dct: name = dct["legacy_ICN"]
-    else: name = "None"; print("warning: institute ID %i does not exist" % iid)
+    else: print("warning: institute ID %i does not exist" % iid); return None
     if not isinstance(name, str): name = " ".join(name)
     name = name.replace("(main)", "")
     return r"\iinstitute{%i}{%s}" % (iid, toascii(name))
 
+
 ###############################################################################
-if __name__ == "__main__":
-    # Load the CSV file.
-    dat = urlopen("https://docs.google.com/spreadsheets/d/167WsB2xCklZalMwql"
-                  "DOZqb3BKUZTKQFi5jlz2YRt6ak/export?format=csv")
+# Load the authors from a Google document.
+def load(url):
+    dat = urlopen(url + "/export?format=csv")
     reader = csv.reader(codecs.iterdecode(dat, "utf-8"), delimiter = ",")
     header = next(reader)
     authors = {}
-    
-    # Load the authors.
     for row in reader:
         if row[6] == "n": continue
         row = [val.strip() for val in row]
         last, first, aid, iids, inames = row[0:5]
-        if not first or not last: continue
         iids = iids.split(",")
         inames = inames.split(";")
         insts = [(iid.strip(), iname.strip()) for iid, iname in
@@ -68,6 +67,20 @@ if __name__ == "__main__":
         if key in authors: authors[key][2] += insts
         else: authors[key] = [aid, " ".join([first, last]), insts]
     dat.close()
+    return authors
+
+###############################################################################
+if __name__ == "__main__":
+    # Load the authors and cross-check.
+    authors = load("https://docs.google.com/spreadsheets/d/167WsB2xCklZalMwql"
+                  "DOZqb3BKUZTKQFi5jlz2YRt6ak")
+    xchecks = load("https://docs.google.com/spreadsheets/d/1077uWusdw4eFzM7cW"
+                  "J5LpjCNDP9RMGAOTg4jPnP4FQo")
+    for xcheck in xchecks:
+        aid, miss = xchecks[xcheck][0], True
+        for name in authors:
+            if aid == authors[name][0]: miss = False; break
+        if miss and not xcheck in authors: print("%20s %20s %r" % (aid, xcheck))
     print("authors:    %i" % len(authors))
     
     # Write the preamble.
