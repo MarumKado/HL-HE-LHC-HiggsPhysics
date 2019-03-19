@@ -80,7 +80,7 @@ if __name__ == "__main__":
         aid, miss = xchecks[xcheck][0], True
         for name in authors:
             if aid == authors[name][0]: miss = False; break
-        if miss and not xcheck in authors: print("%20s %20s %r" % (aid, xcheck))
+        if miss and not xcheck in authors: print("%20s %20s" % (aid, xcheck))
     print("authors:    %i" % len(authors))
     
     # Write the preamble.
